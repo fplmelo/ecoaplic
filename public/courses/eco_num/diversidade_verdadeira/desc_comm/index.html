@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.108.0">
+<title>Medidas de diversidade verdadeira | Applied Ecology</title>
+
+
+<meta property="twitter:site" content="@apreshill">
+<meta property="twitter:creator" content="@apreshill">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="A modern, beautiful, and easily configurable blog theme for Hugo.">
+
+
+<meta property="og:site_name" content="Applied Ecology">
+<meta property="og:title" content="Medidas de diversidade verdadeira | Applied Ecology">
+<meta property="og:description" content="A modern, beautiful, and easily configurable blog theme for Hugo." />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/courses/eco_num/diversidade_verdadeira/desc_comm/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="/img/papillons.jpg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/img/papillons.jpg" >
+    
+  <meta itemprop="name" content="Medidas de diversidade verdadeira">
+<meta itemprop="description" content="Texto extraído do livro Análises Ecológicas no R (in press)
+Desafios da mensuração da diversidade verdadeira Números de Hill ou Série de Hill Embora os índices de Shannon-Wiener e Gini-Simpson sejam amplamente usados em estudos ecológicos e de conservação, eles sofrem de propriedades matemáticas e não representam a diversidade propriamente dita (L. Jost 2006). Portanto, quando o objetivo é avaliar a diversidade, os índices de Shannon-Wiener e Gini-Simpson não deveriam ser utilizados na sua forma padrão, mas transformados em números efetivos de espécies ou diversidade verdadeira (L.">
+
+<meta itemprop="wordCount" content="1168">
+<meta itemprop="keywords" content="" />
+  
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.508aa34bb4fa7ebfddd6892a4ec251e1ce46ad0e0c5be6380abc84336f01b14e.css" integrity="sha256-UIqjS7T6fr/d1okqTsJR4c5GrQ4MW&#43;Y4CryEM28BsU4=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.b98a7a2516e17eff5e237d2ab610df0b5b9fdfda6184f0231dd7a1c3841c19c2.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container single-series">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
+      <img src="/img/blogophonic-mark-dark.png" class="dib db-l h2 w-auto" alt="Applied Ecology">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About Blogophonic">About</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Talks">Talks</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/courses/" title="Courses">Courses</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/elements/" title="Element Page">Elements</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Medidas de diversidade verdadeira</h1>
+        
+        
+        
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        <script src="/rmarkdown-libs/fitvids/fitvids.min.js"></script>
+<img src = https://www.researchgate.net/profile/Sabelo-Madonsela-2/publication/320402408/figure/tbl1/AS:668390758809603@1536368183123/Alpha-diversity-indices-used-in-the-study-and-their-equations.png>
+<br>
+<div class="shareagain" style="min-width:300px;margin:1em auto;">
+<iframe src="https://ecoaplic.org/en/slides_aulas/slides_eco_num/slides_div_verdadeira.html#1" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
+<p><strong>Texto extraído do livro Análises Ecológicas no R</strong> (in press)</p>
+
+
+
+
+<h1 id="desafios-da-mensuração-da-diversidade-verdadeira">Desafios da mensuração da diversidade verdadeira
+  <a href="#desafios-da-mensura%c3%a7%c3%a3o-da-diversidade-verdadeira"></a>
+</h1>
+<p>Números de Hill ou Série de Hill
+Embora os índices de Shannon-Wiener e Gini-Simpson sejam amplamente usados em estudos ecológicos e de conservação, eles sofrem de propriedades matemáticas e não representam a diversidade propriamente dita (L. Jost 2006). Portanto, quando o objetivo é avaliar a diversidade, os índices de Shannon-Wiener e Gini-Simpson não deveriam ser utilizados na sua forma padrão, mas transformados em números efetivos de espécies ou diversidade verdadeira (L. Jost 2006). O número efetivo de espécies é o número de espécies igualmente abundantes (i.e. todas as espécies com a mesma abundância) necessárias para produzir o valor observado para um determinado índice. Por exemplo, uma comunidade com índice de Shannon-Wiener estimado de 4,5 teria um número efetivo de 90 espécies igualmente abundantes. Jost et al. (2006) usam o seguinte exemplo para explicar o conceito do número efetivo de espécies - uma comunidade com 16 espécies igualmente abundantes é duas vezes mais diversa do que uma comunidade com 8 espécies igualmente abundantes. Neste caso, a diversidade deveria ser proporcional ao número de espécies. Contudo, quando aplicamos os índices de diversidade para estas comunidades com 16 e 8 espécies (cada espécie com 5 indivíduos), o índice de Shannon-Wiener é 2,772 e 2,079, respectivamente, e o índice de Gini-Simpson é 0,937 e 0,875, respectivamente. Claramente, os valores estimados pelos índices de diversidade não representam a diferença entre as comunidades porque eles carecem de uma particularidade matemática conhecida como propriedade de duplicação.</p>
+<p>O próximo exemplo (modificado do website de Lou Jost; 
+<a href="http://www.loujost.com/%29" target="_blank" rel="noopener">http://www.loujost.com/)</a>, demostra a importância da transformação dos índices de diversidade em números efetivos de espécies. Imagine que você foi contratado para avaliar a diversidade de peixes em um riacho antes e depois da instalação de uma usina hidrelétrica. Suponha que os valores estimados pelo índice de Gini-Simpson foi de 0,99 antes da instalação e de 0,97 depois da instalação. A princípio, você poderia concluir que a diversidade diminuiu somente 2% e que a instalação da hidrelétrica não afetou a diversidade de peixes no riacho. Contudo, transformando os valores do índice de diversidade em números efetivos, percebemos que antes da instalação a diversidade do riacho equivale a 100 espécies igualmente abundantes, enquanto após a instalação, a diversidade equivale a 33 espécies igualmente abundantes. Portanto, a queda da diversidade foi de 66% e não 2%.</p>
+<p>Hill (1973) derivou uma equação geral para o cálculo do número efetivo de espécies ou diversidade verdadeira que depende apenas do valor de q e da abundância relativa das espécies.</p>
+<img src=https://jslefche.files.wordpress.com/2012/10/entropy.png width = 500>
+<p>Onde:</p>
+<p>q = é um parâmetro conhecido como ordem da diversidade e é usado para dar peso às espécies comuns ou raras. q = 0 não considera a frequência das espécies e representa a riqueza observada de espécies, q = 1 equivale a transformação do índice de Shannon-Wiener (i.e. exp(H’)) e atribui pesos às espécies com base na proporção das suas frequências e, q = 2 equivale à transformação do índice de Gini-Simpson (i.e. 1/(1-D)) e atribui peso às espécies mais comuns. Valores de q &lt;1 favorecem espécies raras, enquanto valores de q &gt; 1 favorecem espécies comuns.</p>
+<p>pi = abundância relativa de cada espécie, calculada pela proporção dos indivíduos de uma espécie pelo número total dos indivíduos na comunidade</p>
+<p>Vamos calcular o Número de Hill para as comunidades do nosso exemplo.</p>
+<p>Calculando o Número de Hill com q = 0.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(devtools)
+</span></span></code></pre></div><pre><code>## Carregando pacotes exigidos: usethis
+
+## 
+## Attaching package: 'devtools'
+
+## The following object is masked from 'package:permute':
+## 
+##     check
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(ecodados)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library </span>(vegan)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(ggplot2)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(BiodiversityR)
+</span></span></code></pre></div><pre><code>## Carregando pacotes exigidos: tcltk
+
+## BiodiversityR 2.14-1: Use command BiodiversityRGUI() to launch the Graphical User Interface; 
+## to see changes use BiodiversityRGUI(changeLog=TRUE, backward.compatibility.messages=TRUE)
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(hillR)
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic">## Dados</span>
+</span></span><span style="display:flex;"><span>composicao_especies <span style="color:#000;font-weight:bold">&lt;-</span> ecodados<span style="color:#000;font-weight:bold">::</span>composicao_anuros_div_taxonomica
+</span></span><span style="display:flex;"><span>precipitacao        <span style="color:#000;font-weight:bold">&lt;-</span> ecodados<span style="color:#000;font-weight:bold">::</span>precipitacao_div_taxonomica
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>hill_res_q_0 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">hill_taxa</span>(composicao_especies, q  <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>)
+</span></span><span style="display:flex;"><span>hill_res_q_0
+</span></span></code></pre></div><pre><code>##  Com_1  Com_2  Com_3  Com_4  Com_5  Com_6  Com_7  Com_8  Com_9 Com_10 
+##     10     10      5      5      5      6      2      4      6      4
+</code></pre>
+
+
+
+
+<h2 id="número-de-hill-para-q--1">Número de Hill para q = 1
+  <a href="#n%c3%bamero-de-hill-para-q--1"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>hill_res_q_1 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">hill_taxa</span>(composicao_especies, q  <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span>hill_res_q_1
+</span></span></code></pre></div><pre><code>##     Com_1     Com_2     Com_3     Com_4     Com_5     Com_6     Com_7     Com_8 
+## 10.000000  1.649196  2.606507  4.987156  4.420220  4.762172  2.000000  3.021912 
+##     Com_9    Com_10 
+##  5.551608  3.538328
+</code></pre>
+
+
+
+
+<h2 id="número-de-hill-para-q--2">Número de Hill para q = 2
+  <a href="#n%c3%bamero-de-hill-para-q--2"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>hill_res_q_2 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">hill_taxa</span>(composicao_especies, q  <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>)
+</span></span><span style="display:flex;"><span>hill_res_q_2
+</span></span></code></pre></div><pre><code>##     Com_1     Com_2     Com_3     Com_4     Com_5     Com_6     Com_7     Com_8 
+## 10.000000  1.206273  1.928571  4.974223  4.145078  4.300813  2.000000  2.409639 
+##     Com_9    Com_10 
+##  5.232558  3.270270
+</code></pre>
+
+
+
+
+<h2 id="resultados">Resultados
+  <a href="#resultados"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>res_hill <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">data.frame</span>(hill_res_q_0, hill_res_q_1, hill_res_q_2)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">colnames</span>(res_hill) <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#34;q=0&#34;</span>, <span style="color:#d14">&#34;q=1&#34;</span>, <span style="color:#d14">&#34;q=2&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">head</span>(res_hill)
+</span></span></code></pre></div><pre><code>##       q=0       q=1       q=2
+## Com_1  10 10.000000 10.000000
+## Com_2  10  1.649196  1.206273
+## Com_3   5  2.606507  1.928571
+## Com_4   5  4.987156  4.974223
+## Com_5   5  4.420220  4.145078
+## Com_6   6  4.762172  4.300813
+</code></pre>
+
+
+
+
+<h1 id="interpretação-dos-resultados">Interpretação dos resultados
+  <a href="#interpreta%c3%a7%c3%a3o-dos-resultados"></a>
+</h1>
+<p>Como na comunidade 1 todas as espécies são igualmente abundantes, alterar os valores de q não altera o número efetivo de espécies que permanece sempre 10. Contudo, na comunidade 2, que apresenta alta dominância de uma espécie, alterar os valores de q diminui consideravelmente a estimativa da diversidade. A vantagem dos Números de Hill é que eles são de fácil interpretação e comparação entre as comunidades. Fator ausente para os índices de diversidade.</p>
+
+
+
+
+<h1 id="exercício">Exercício
+  <a href="#exerc%c3%adcio"></a>
+</h1>
+<ol>
+<li>Reproduza as análises acima com a base do BCI ou Outra base à sua escolha</li>
+<li>Grafique os resutados num 
+<a href="https://www.google.com/search?q=diversity&#43;profile&#43;hill&#43;numbers&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwjwqKKc75H2AhW_ErkGHcnzBfUQ_AUoAnoECAEQBA&amp;biw=1848&amp;bih=887&amp;dpr=1#imgrc=urlC8AbOInzd-M" target="_blank" rel="noopener">“diversity profile”</a></li>
+<li>Tente interpretar os resultados</li>
+</ol>
+<p>Exemplo simples para você substituir com os dados de BCI</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>(df <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">data.frame</span>(C1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">10</span>, <span style="color:#099">10</span>, <span style="color:#099">10</span>, <span style="color:#099">10</span>), C2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span>, <span style="color:#099">20</span>, <span style="color:#099">35</span>, <span style="color:#099">5</span>), C3 <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">25</span>, <span style="color:#099">15</span>, <span style="color:#099">0</span>, <span style="color:#099">2</span>), row.names <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#34;sp1&#34;</span>, <span style="color:#d14">&#34;sp2&#34;</span>, <span style="color:#d14">&#34;sp3&#34;</span>, <span style="color:#d14">&#34;sp4&#34;</span>)))
+</span></span></code></pre></div><pre><code>##     C1 C2 C3
+## sp1 10  0 25
+## sp2 10 20 15
+## sp3 10 35  0
+## sp4 10  5  2
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(entropart)
+</span></span><span style="display:flex;"><span>mc<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">MetaCommunity</span>(df)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(mc)
+</span></span></code></pre></div><img src="/en/courses/eco_num/diversidade_verdadeira/desc_comm_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">summary</span>(<span style="color:#900;font-weight:bold">DivPart</span>(q<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>, mc), Correction<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;None&#34;</span>)
+</span></span></code></pre></div><pre><code>## HCDT diversity partitioning of order 0 of metaCommunity mc
+## 
+## Alpha diversity of communities: 
+## C1 C2 C3 
+##  4  3  3 
+## Total alpha diversity of the communities: 
+## [1] 3.333333
+## Beta diversity of the communities: 
+## None 
+##  1.2 
+## Gamma diversity of the metacommunity: 
+## None 
+##    4
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">summary</span>(<span style="color:#900;font-weight:bold">DivPart</span>(q<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>, mc), Correction<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;None&#34;</span>)
+</span></span></code></pre></div><pre><code>## HCDT diversity partitioning of order 1 of metaCommunity mc
+## 
+## Alpha diversity of communities: 
+##       C1       C2       C3 
+## 4.000000 2.429521 2.273918 
+## Total alpha diversity of the communities: 
+## [1] 2.806199
+## Beta diversity of the communities: 
+##     None 
+## 1.358779 
+## Gamma diversity of the metacommunity: 
+##     None 
+## 3.813005
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">summary</span>(<span style="color:#900;font-weight:bold">DivPart</span>(q<span style="color:#000;font-weight:bold">=</span><span style="color:#099">2</span>, mc), Correction<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;None&#34;</span>)
+</span></span></code></pre></div><pre><code>## HCDT diversity partitioning of order 2 of metaCommunity mc
+## 
+## Alpha diversity of communities: 
+##       C1       C2       C3 
+## 4.000000 2.181818 2.065574 
+## Total alpha diversity of the communities: 
+## [1] 2.515807
+## Beta diversity of the communities: 
+##     None 
+## 1.467046 
+## Gamma diversity of the metacommunity: 
+##     None 
+## 3.690806
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">autoplot</span>(<span style="color:#900;font-weight:bold">DivProfile</span>(q.seq <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>(<span style="color:#099">0</span>, <span style="color:#099">2</span>, <span style="color:#099">0.1</span>),MC<span style="color:#000;font-weight:bold">=</span>mc, Correction <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;None&#34;</span>))
+</span></span></code></pre></div><img src="/en/courses/eco_num/diversidade_verdadeira/desc_comm_files/figure-html/unnamed-chunk-7-2.png" width="672" />
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Tem mais coisa que pode ser explorada</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Estimadores de diversidade</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>alfa.est0<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">DivEst</span>(q <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>, mc, Simulations <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>, Correction <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;None&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(alfa.est0)
+</span></span></code></pre></div><img src="/en/courses/eco_num/diversidade_verdadeira/desc_comm_files/figure-html/unnamed-chunk-7-3.png" width="672" />
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>alfa.est1<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">DivEst</span>(q <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, mc, Simulations <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>, Correction <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;None&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(alfa.est1)
+</span></span></code></pre></div><img src="/en/courses/eco_num/diversidade_verdadeira/desc_comm_files/figure-html/unnamed-chunk-7-4.png" width="672" />
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>alfa.est2<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">DivEst</span>(q <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>, mc, Simulations <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">100</span>, Correction <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;None&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(alfa.est2)
+</span></span></code></pre></div><img src="/en/courses/eco_num/diversidade_verdadeira/desc_comm_files/figure-html/unnamed-chunk-7-5.png" width="672" />
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">January 1, 0001</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">6 minute read, 1168 words</dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="prev dtc pr2 tl v-top fw6"
+    href="/courses/eco_num/medidas_diversidade/desc_comm/">&larr; Medidas de diversidade</a>
+  
+  
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2022 RStudio, Anywhere
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/fplmelo" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/FelipePLMelo" title="twitter" target="_blank" rel="me noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://scholar.google.com.br/citations?user=ytoqEukAAAAJ&amp;hl=pt-BR" title="google-scholar" target="_blank" rel="me noopener">
+      <i class="ai ai-google-scholar fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://orcid.org/0000-0002-1271-3214" title="orcid" target="_blank" rel="me noopener">
+      <i class="ai ai-orcid fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://publons.com/researcher/1509340/felipe-pl-melo/" title="publons" target="_blank" rel="me noopener">
+      <i class="ai ai-publons fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.scopus.com/authid/detail.uri?authorId=7005124694" title="elsevier" target="_blank" rel="me noopener">
+      <i class="ai ai-elsevier fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="http://lattes.cnpq.br/1637874338382368" title="lattes" target="_blank" rel="me noopener">
+      <i class="ai ai-lattes fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="/license/" title="License">License</a>
+      
+      <a class="dib pv1 ph2 link" href="/contact/" title="Contact form">Contact</a>
+      
+      <a class="dib pv1 ph2 link" href="/contributors/" title="Contributors">Contributors</a>
+      
+    </div>
+  </nav>
+  
+    <script>
+
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (let i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) ||
+            /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  
+          continue;
+        }
+      }
+      i++;
+    }
+</script>
+
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+    
+  
+  
+</footer>
+
+      </div>
+    </body>
+</html>

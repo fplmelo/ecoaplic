@@ -1,0 +1,319 @@
+---
+title: "Descrição de comunidades biológicas"
+author: "Felipe Melo"
+date: "2 de fevereiro de 2022"
+output: html_document
+---
+
+<img src = https://aestheticmag.files.wordpress.com/2013/11/original.jpg>
+
+<br>
+
+
+
+```{r echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://ecoaplic.org/slides_aulas/slides_eco_num/slides_desc_comm.html#1" )
+```
+
+## Os atributos de uma communidade biológica são simples, em princípio
+
+1. Entidades
+1. Identidades
+1. Quantidades
+
+
+
+## Exercício Comunidades Culinárias (para etregar na forma de um Rpubs até 30 de dezembro de 2022)
+
+Fizemos um exercício muito bom em sala de aula. Criamos uma comunidades biológica com grãos e massa para simular a montagem de uma comundaidade biológica em uma ilha oceânica recém formada. Dois grupos fizeram amostragem: um grupo usou uma técnica de alatorização das amostras, soirtendo quadrados que correspondiam a 10% da área da ilha. O outro grupo usou outra tepcnica: usou dois transectos localizados de maneira planejada para maximizar a captura da diverisdade da ilha. A base de dados que geramos pode ser obtida [**NESTE LINK**](http://ecoaplic.org/content/collection/eco_num/com_cul.csv).
+
+### Agora, você precisa repetir os passos abaixo, mas fazer um esforço para comentar cada passo de exercício
+
+## Passo 1) Subir os dados no R
+
+```{r}
+base<-read.csv("https://raw.githubusercontent.com/fplmelo/ecoaplic/main/content/collection/eco_num/com_cul.csv", row.names = 1) # atenção, use o caminho onde você guardou a base que baixou anteriormente
+base # mostra a base. confira se está tudo ok
+
+```
+
+### passo 2) Começar a explorar a base
+Vamos separar as bases, e ver suas dimensões e checar se tudo está correto.
+
+Atenção: use os comandos 'dim()', 'nrow()',  'ncol()', 'rowSums()' e 'colSums()' para cada base e vá montando seu arquivo com os resutlados comentados.
+
+ver exemplo abaixo.
+```{r} 
+# Notem que usei "echo=FALSE" para não aparecer os resultados e não ficar muito longo, mas deixem o seu como TRUE
+base_q<-base[,1:10] # criamos a base dos quadrados
+base_t<-base[,11:20] # criamos também a  base dos transectos
+
+# chequem as bases com o comando abaixo
+base_q
+base_t
+
+dim(base_q) # Tabela formada por 10 linhas e 10 colunas
+colSums(base_t) # abundâncias de cada amostra da base de transectos
+
+## Explore...
+```
+
+## passo 3) Fazendo perguntas
+
+### Qual o número de espécies dos diferentes métodos?
+
+```{r message=FALSE, warning=FALSE}
+library(vegan)# Esse pacote tem um monte de análises massa para ecólogos
+library(tidyverse)
+
+specnumber(t(base_q)) # espécies de cada amostra... mas como saber o número total de espécies?
+
+base_q %>% # Aq2ui eu criei minha solição...
+  rownames_to_column("species") %>% # trouxe de volta o nomes das linhas para uma coluna
+  mutate(ab_spe=rowSums(base_q)) %>% # Criei uma coluna nova com as somas das abundâncias
+  filter(ab_spe > 0) %>% # filtrei para reter somente as somas maiores que zero, pois os zeros são espécies ausentes
+  count() # contei, BINGO!
+
+# Há muoitas outras formas...
+
+```
+
+
+### Qual a distribuição das abundâncias das espécies?
+
+```{r}
+base_q %>% 
+  rownames_to_column("species") %>%
+  mutate(ab_spe=rowSums(base_q)) %>% 
+  filter(ab_spe > 0) %>% #Até aqui usei o mesmo código de antes
+  arrange(desc(ab_spe)) %>% #em ordem decrescente mas não fixa quando for pro ggplot, aí temos que dar outro comando
+  mutate(species=factor(species, level = species)) %>% #agora ele fixou as ordens 
+  ggplot(aes(x=species, y=ab_spe))+
+  geom_line(group = 1)+geom_point(size = 3)->graf_abund_q
+
+graf_abund_q
+  
+base_t %>% 
+  rownames_to_column("species") %>%
+  mutate(ab_spe=rowSums(base_t)) %>% 
+  filter(ab_spe > 0) %>% #Até atui usei o mesmo código de antes
+  arrange(desc(ab_spe)) %>% #em ordem decrescente mas não fixa tuando for pro ggplot, aí temos tue dar outro comando
+  mutate(species=factor(species, level = species)) %>% #agora ele fixou as ordens 
+  ggplot(aes(x=species, y=ab_spe))+
+  geom_line(group = 1)+geom_point(size = 3)->graf_abund_t
+
+graf_abund_t
+
+# Agora posso unir os gráficos para melhorar a vizualização
+
+library(cowplot)
+plot_grid(graf_abund_q, graf_abund_t, labels = c("quadrados", "transectos"), ncol = 2)
+
+
+```
+
+## Estimadores de Riqueza
+
+Note que sabemos que nenhum dos métodos capturou todas as espećies que sabíamos que existia na nossa comunidade culinária. Na natureza, porém, nunca sabemos quantas especies de fato existem. Para contornar esse problema e saber se nossas amostras são representativas, existem algumas estratpegias
+
+### Curva de rarefação
+
+Leiam o excelente livro de Análises Ecológicas no R onde tem um [capítulo sobre rarefação](https://analises-ecologicas.com/cap10.html)
+
+Mas, aqui vamos usar nossos dados e com códigos mais simples
+
+### Pergunta: Será que as amostras atingiram o número real de espécies 
+
+```{r}
+
+acum_q<-specaccum(t(base_q)) # existe uma função na library vegan que faz isso... ele cria as curvas para vizualizrmos
+acum_t<-specaccum(t(base_t))
+plot(acum_q, ci.type = "poly", col = "blue", lwd = 2, ci.lty = 0, 
+    ci.col = "lightblue", main = "quadrantes", xlab = "Número de amostras", 
+    ylab = "Número de espécies")
+
+plot(acum_t, ci.type = "poly", col = "blue", lwd = 2, ci.lty = 0, 
+    ci.col = "lightblue", main = "transectos", xlab = "Número de amostras", 
+    ylab = "Número de espécies") # note que essa curva não parece assintotizada
+
+specpool(base_q)# Esses são métodos de estimação de riqueza (chao, jack1, jack2, boot, etc... os .se são os valores do erro padrão)
+specpool(base_t)# etimadores para transecto
+
+```
+
+### Quais estimadores forma mais fidedignos? Qual métodos obteve menos erro?
+
+para entender e ver códigos dessa análise veja [esse site](http://pedroj.github.io/interaccum/)
+
+
+
+### Para finalizar esse exercício, repita o que foi feito, comente seus resultados e códigos e tente clacular os índices de diversidade de Shannon e Simpson para cada um dos métodos (base_q e base_t). Comente.
+
+
+# Para brincar durante as férias é esse exercício abaixo (para entregar dia 30 de janeiro de 2023)
+
+Essa é uma base de dados reais de árvores do Panamá onde muitos biólogos estudam ecologia tropical. 
+
+
+### Vamos examinar essa comunidade
+
+```{r message=FALSE, warning=FALSE}
+library (vegan)
+library(BiodiversityR)
+data (BCI)
+BCI.env <- read.delim ('https://raw.githubusercontent.com/zdealveindy/anadat-r/master/data/bci.env.txt', row.names = 1)
+BCI.soil <- read.delim ('https://raw.githubusercontent.com/zdealveindy/anadat-r/master/data/bci.soil.txt')
+```
+
+### Estação Biológica de Barro Colorado
+
+<img src= https://www.davidzeleny.net/anadat-r/lib/exe/fetch.php/obrazky:bci_loc.jpg>
+
+### Para uma descrição completa do local de estudo [clique aqui](https://www.davidzeleny.net/anadat-r/doku.php/en:data:bci)
+
+<img src = https://www.davidzeleny.net/anadat-r/lib/exe/fetch.php/obrazky:barro_colorado_-_photo.jpg>
+
+<br>
+
+<img src=https://www.researchgate.net/profile/Eldredge-Bermingham/publication/7666672/figure/fig1/AS:277746631626753@1443231365395/The-50-ha-permanent-Forest-Dynamics-Plot-on-Barro-Colorado-Island-with-300-S-amara_W640.jpg>
+
+
+- São dados de uma série de plots 50 permanentes e contíguos de 1ha (50 ha no total) onde todas as árvores maiores que 10cm DAP (diametro à altura do peito) e uma grande quantidade de variáveis ambientais têm sido monitoradas há décadas.
+
+## Vamos ver a estrutura dessa base dados
+
+```{r}
+dim(BCI) # São 50 linhas (plots de 1 ha) e 225 colunas (espécies de árvores)
+```
+
+## A primeira tarefa de um ecólogo é *namorar* os dados. Saber coisas básicas como:
+
+1. Quantas espécies em cada amostra?
+```{r}
+specnumber(BCI) # Sim, existe uma função para isso no pacote "vegan"
+
+```
+
+2. Quantos indivíduos em cada amostra?
+```{r}
+rowSums(BCI)
+```
+
+3. Qual a abundância de cada espécie?
+```{r}
+head(colSums(BCI)) # mostra somente algumas linhas, mas se remover o head(), mostra a tabela inteira
+```
+
+## Há funções específicas no pacote **"vegan"** que são muito úteis para nálises de comunidades biológica. 
+
+## 1 - Curvas de acumulação de espécies 
+***
+
+### Código
+```{r}
+sp1<-specaccum(BCI, "random")
+sp1
+```
+
+
+### Plot
+```{r}
+plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
+boxplot(sp1, col="yellow", add=TRUE, pch="+")
+
+```
+
+## 2 - Curvas de rank-abunbdância 
+***
+
+### Código
+```{r}
+mod <- rad.lognormal(BCI[5,])
+mod
+```
+
+
+### Plot lognormal
+```{r}
+plot(mod)
+```
+
+### Código para vários modelos
+```{r}
+mod2 <- radfit(BCI[1,])
+mod2
+```
+
+### Plot com vários modelos
+```{r}
+plot(mod2)
+
+```
+
+
+## OUtro pacote, o "BiodiversityR" é muito interessante e traz suas funções úteis
+
+### Código 
+```{r}
+
+data(dune)
+data("dune.env")
+bio<-rankabuncomp(dune, dune.env, factor='Management', return.data=TRUE, specnames=c(1:2), legend=FALSE)
+bio
+```
+
+### Plot (com ggplot) 
+```{r}
+library(ggplot2)
+library(ggrepel)
+
+plotgg1 <- ggplot(data=bio, aes(x = rank, y = abundance)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping), size=1) +
+    geom_point(aes(colour=Grouping, shape=Grouping), size=5, alpha=0.7) +
+    geom_text_repel(data=subset(bio, labelit == TRUE), 
+        aes(colour=Grouping, label=species), 
+        angle=45, nudge_x=1, nudge_y=1, show.legend=FALSE) +
+    scale_color_brewer(palette = "Set1") +
+    labs(x = "rank", y = "abundance", colour = "Management", shape = "Management")
+
+plotgg1
+
+```
+
+
+```{r}
+RA.data <- rankabuncomp(dune, y=dune.env, factor='Management', 
+    return.data=TRUE, specnames=c(1:10), legend=FALSE)
+
+plotgg2 <- ggplot(data=RA.data, aes(x = rank, y = abundance)) + 
+    scale_x_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    scale_y_continuous(expand=c(0, 1), sec.axis = dup_axis(labels=NULL, name=NULL)) +
+    geom_line(aes(colour=Grouping), size=1) +
+    geom_point(aes(colour=Grouping), size=5, alpha=0.7) +
+    geom_text_repel(data=subset(RA.data, labelit == TRUE), 
+        aes(label=species), 
+        angle=45, nudge_x=1, nudge_y=1, show.legend=FALSE) +
+    scale_color_brewer(palette = "Set1") +
+    facet_wrap(~ Grouping) +
+    labs(x = "rank", y = "abundance", colour = "Management")
+
+plotgg2
+```
+
+
+# Exercício
+
+1. Faça uma análise descritiva dessa da nossa base de dados de comunidade culinária usando esses códigos.
+1. Utilize funções prontas dos pacotes mas também tente chegar so resultados esperados com funções básicas do R
+1. Comente suas análises dando uma interpretação ecológica aos gráficos, crie grpaficos!!
+
+
+# Bibliografia
+
+## [Ecologia de Comundiades na Wikipedia](https://pt.wikipedia.org/wiki/Ecologia_de_comunidades#Estrutura_da_comunidade)
+
+## [Conceptual Synthesis in Community Ecology por Mark Vellend](https://www.researchgate.net/profile/Mark-Vellend-2/publication/44689600_Conceptual_Synthesis_in_Community_Ecology/links/0a85e534c7a686647f000000/Conceptual-Synthesis-in-Community-Ecology.pdf)
+
+## [Ecologia de Comunidades USP](http://ecologia.ib.usp.br/bie5778/doku.php)

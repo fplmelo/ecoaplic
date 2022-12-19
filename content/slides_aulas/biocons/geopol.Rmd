@@ -1,0 +1,195 @@
+---
+title: "Biologia da Conservação PPGBV + PPGEtno"
+subtitle: "Aula 2 - Geopolítica da Biodiversidad"
+author: "Felipe Melo"
+institute: "Laboratório de Ecologia Aplicada - UFPE"
+date: "`r Sys.Date()`"
+encoding: "UTF-8"
+output: 
+  xaringan::moon_reader:
+    libs_dir: libs
+    css: ["robot","tamu-fonts", "cols.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      beforeInit: ["macros.js","cols_macro.js"]
+
+---
+```{r setup, include=FALSE}
+library(tidyverse)
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+xaringanExtra::use_scribble()
+xaringanExtra::use_fit_screen()
+```
+---
+class: center, middle
+
+# Geopolítica da Biodiversidade
+---
+.pull-left[
+# O que precisamos saber?
+## - Como a biodiversidade se incorporou às agendas geoplíticas?
+## - Conferências multi-laterias e órgãos internacionais
+## - IPBES e IUCN
+## - Ecologia Política da Biodiversidade
+]
+
+.pull-right[
+<img src=https://media.wired.co.uk/photos/606db0a7ef7fc50463193696/master/w_1600,c_limit/phd-front.jpg>
+
+fonte: [wired.co.uk](https://www.wired.co.uk/article/jorge-cham-phd)
+]
+
+---
+# Biofilia
+.pull-left[
+### - Capacidade inerente de associação à vida
+### - Característica intrínseca humana
+### - Nos importamos com a biodiversidade?
+
+]
+.pull-right[
+<img src= https://upload.wikimedia.org/wikipedia/commons/7/72/Erich_Fromm_1974.jpg>
+## Erich Fromm
+]
+
+---
+# "Biofiliamania"
+.pull-left[
+### - Naturalização do comportamento humano
+### - Geneticização de comportamentos
+### - "Imperativo biológico"
+### "Biophilia is a psychological phenomena that rose from deep human history resident in the genes themselves” (Wilson, E.O. Biophilia p.40)
+]
+
+.pull-right[
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Edward_O._Wilson%2C_2003_%28cropped%29.jpg">
+]
+
+---
+class: center, middle
+
+# Geopolítica da Biodiversidade: origens
+
+---
+# Estocolmo 1972
+.pull-left[
+### - Primeira conferência da ONU a tratar de problemas ambientais
+### - UNCHEN = UN Conference on Human Environment
+### - Não havia biodiversidade nos debates
+### - Desastres naturais e rejeitos humanos
+### - Desconfiança do Sul Global
+]
+.pull-right[
+
+<img src= https://i.pinimg.com/originals/9b/63/6b/9b636b3695b143c759b8ae9557455440.jpg>
+]
+
+---
+# Declaração de Estocolmo
+
+### - Meio ambiente como direito humano
+### - Poluição; uso de rescursos não-renováveis; vida silvestre; uso indevido da tecnologia; condenação ao colonialismo e apartheid
+### - Responsabilidades diferenciadas mas comuns
+### - Direito ao desenvolvimento
+
+<img src=https://www.un.org/sites/un2.un.org/files/stockholm_1972_1350x500.jpg height = 200>     [Declaração de Estocolmo](https://www.un.org/en/conferences/environment/stockholm1972)
+
+---
+# Rio de Janeiro 1992
+.pull-left[
+### - [A Carta da Terra](https://pt.wikipedia.org/wiki/A_Carta_da_Terra)
+### - Conferências sbre: Clima, Desertificação e [Biodiversidade](https://pt.wikipedia.org/wiki/Conven%C3%A7%C3%A3o_sobre_Diversidade_Biol%C3%B3gica)
+### - Agenda 21
+### - Declaração sobre as Florestas
+### - [Declaração do Rio sobre Meio Ambiente e Desenvolvimento](https://pt.wikipedia.org/wiki/Declara%C3%A7%C3%A3o_do_Rio_sobre_Meio_Ambiente_e_Desenvolvimento) 
+]
+.pull-right[
+
+<img src=https://w8e8i3u2.stackpathcdn.com/wp-content/uploads/2018/04/rio-de-janeiro.jpg width = 600>
+<img src= https://s1.static.brasilescola.uol.com.br/be/e/eco%2092.jpg>
+]
+
+---
+.pull-left[
+# Convenção da Diversidade Biológica - CDB
+### Protocolos de:
+### - Cartagena (Biosegurança)
+### - Conservação de Plantas
+### - [Nagoya (repartição de benefícios da biodiversidade)](https://www.cbd.int/abs/)
+### - Plano estratégico para a Biodiversidade 2021-2020
+
+]
+
+.pull-right[
+<img src=https://upload.wikimedia.org/wikipedia/commons/5/5a/Convention_on_Biological_Diversity2.svg>
+L.tak, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+]
+
+---
+# [As metas de Aichi](https://www.cbd.int/sp/targets/)
+
+.left-column[
+### 5 Objetivos
+### 20 metas 
+# Monitorar a biodiversidade global
+]
+.right-column[
+<img src=https://www.informea.org/sites/default/files/styles/large/public/aichitargets.png?itok=9VKpM7vK width = 4000´>
+]
+
+---
+# [Global Biodiversity Outlook](https://www.cbd.int/gbo/)
+.pull-left[
+### Monitora as metas de Aichi
+### Alimentado por relatórios nacionais [(Brasil)](https://www.cbd.int/countries/?country=br)
+## [GBO - 5](https://www.cbd.int/gbo/gbo5/publication/gbo-5-en.pdf)
+
+<img src=libs/gbo_target.png>
+
+]
+.pull-right[
+<iframe width="480" height=320" src="https://www.youtube.com/embed/Oo5IkHBEJeM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+# [Millenium Ecosystem Assessment - 2005](https://www.millenniumassessment.org/en/index.html)
+.pull-left[
+<img src=https://www.bibliovault.org/thumbs/978-1-55963-387-1-frontcover.jpg width = 400>
+]
+.pull-right[
+### - Primeira grande compilação global sobre Biodiversidade
+### - Estabelece as relaçõs entre biodiversidade e bem-estar humano
+### - Foco na tomada de decisão poítica
+### - Serviços Ecossistêmicos
+]
+
+---
+# [IPBES](https://ipbes.net/)
+.pull-left[
+
+### Atualmente é a maior iniciativa multinacional e interdisciplinar para a biodiversidade
+### Intergovernamental e independente
+### Focda em políticas públicas
+<img src=https://lh5.googleusercontent.com/GWmrA_YIoNlwvJ-QxtBuU9VFYkmqkcgM7TT-o1GqCXORQViA4ZyiJ6zf3FsH-MwLTUWZXqF7mGwGhJjWCV3oDemnV5yxtnFUwwhU68Ax01Wd7FTjE9nS56zzxPb8Fuivb_HmMQ8C>
+]
+.pull-right[
+<img src=https://ipbes.net/sites/default/files/styles/large/public/2021-06/global_assessment_cover.jpg?itok=KlZzB-bj>
+]
+
+---
+# [BPBES](https://www.bpbes.net.br/)
+.center[
+<img src=libs/bpbes.png width = 800>]
+
+---
+class: center, middle
+# FIM
+---

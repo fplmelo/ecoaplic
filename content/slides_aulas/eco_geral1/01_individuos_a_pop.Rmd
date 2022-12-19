@@ -1,0 +1,123 @@
+---
+title: "Ecologia Geral 1"
+subtitle: "Aula 2 - Bases de Ecologia Evolutiva"
+author: "Felipe Melo"
+institute: "Laboratório de Ecologia Aplicada - UFPE"
+date: "`r Sys.Date()`"
+encoding: "UTF-8"
+output: 
+  xaringan::moon_reader:
+    libs_dir: libs
+    css: ["robot","tamu-fonts"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      beforeInit: "macros.js"
+
+---
+```{r setup, include=FALSE}
+library(tidyverse)
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+xaringanExtra::use_scribble()
+xaringanExtra::use_fit_screen()
+```
+---
+class: center, middle
+
+# Fatores que determinam a distribuição e abundância de individuos?
+---
+# Gradientes ambientais
+.pull-left[
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Africa_Precipitation_Map.svg/1200px-Africa_Precipitation_Map.svg.png width = 500>]
+
+
+.pull-right[
+<img src=https://images.squarespace-cdn.com/content/v1/5e1e5ef4c84b953ac52564ba/1609862836761-LNNFNWGAGW966J9NU15W/1850-AlexandervonHumboldt-Andes.jpg width= 400>
+]
+
+---
+# Mudanças climáicas
+.center[
+<img src=https://cdn.yello.link/opwall/files/2021/02/FOW-Infographic11-2000x2000.jpg width = 500>]
+
+---
+# Gradientes e abundâncias
+
+.pull-left[
+<img src=http://ordination.okstate.edu/3Gauss.jpg>
+]
+.pull-right[
+## Você pode localizar em qual intervao do gradiente cada espécie tem sua melhor adquação?
+## Por quê?
+## Quais processos ecológicos estão envolvidos?
+]
+
+---
+# Fatores evolutivos
+.pull-left[
+<img src=https://www.macmillanhighered.com/BrainHoney/Resource/6716/digital_first_content/trunk/test/hillis2e/asset/img_ch15/c15_fig13.jpg width = 320>
+]
+
+.pull-right[
+## Características fenotípicas podem mudar e função do gradiente ambiental
+## Gradientes ambientais geram modificações ou essas *encontram* ambientes favoráveis?
+]
+
+---
+.left-column[
+# Seleção estabilizadora
+
+]
+.right-column[
+´<img src=https://www.macmillanhighered.com/BrainHoney/Resource/6716/digital_first_content/trunk/test/hillis2e/asset/img_ch15/c15_fig14.jpg>
+]
+
+---
+.left-column[
+# Seleção direcional
+]
+.right-column[
+´<img src=https://africa.cgtn.com/wp-content/photo-gallery/2016/12/ankole-long-horned-cows-1.jpg>
+]
+
+---
+.left-column[
+# Seleção diferencial
+]
+.right-column[
+´<img src=https://cdn-addjh.nitrocdn.com/BzukxzxIDWSkBjOuXIuFVkjjEriFmqlw/assets/static/optimized/rev-ca54b73/wp-content/uploads/2020/02/Theory-of-Natural-Selection-768x512.jpg>
+]
+
+---
+.center[
+<img src=https://ibiologia.com/wp-content/uploads/2019/10/types-of-selection.jpg>
+]
+
+---
+class: center, middle
+# O que isso tem a ver com abundâncias e dsitribuições?
+
+---
+background-image: url(https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:20190207095311438-0606:9781108648608:48035fig2_004.png)
+
+---
+background-image: url(https://www.researchgate.net/publication/312523742/figure/fig2/AS:452152817655811@1484813040905/Under-adverse-climate-conditions-species-abundances-are-mainly-limited-by-climate-ie.png)
+
+---
+# Então...
+
+###- Forças evolutivas e ecológicas atuam ao mesmo tempo
+###- Elas determinam distribuições e abundâncias ao longo de gradientes ambientais
+###- Traços funcionais de indivíduos podem dar uma boa noção da sua adequação 
+
+---
+class: center, middle
+# FIM
+---

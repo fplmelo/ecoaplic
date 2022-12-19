@@ -1,0 +1,461 @@
+---
+title: "Aula 3 - Estrutura de populações - crescimento populacional"
+subtitle: "Ecologia Geral 1"
+author: "Felipe Melo"
+institute: "UFPE"
+date: "2022-12-15"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["robot","tamu-fonts", "custom_slides.css", "xaringannnnnn-themer.css"]
+    nature:
+      ratio: '16:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+background-image: url(https://media.gazetadopovo.com.br/2011/01/77df3f1700bb62836714c929890ab526-gpMedium.jpg)
+
+
+
+---
+# O que é preciso saber?
+
+## - Entender o que são parâmetros populacionais
+## - Entender como esses parâmetros afetam o crescimento de populações
+## - Calcular crescimento populacional (básico)
+
+---
+class: center, middle
+# Demografia
+## Ciência que estuda os parâmetros populacionais envolvidos na dinẽmica de crescimento das populações
+
+---
+background-image: url(http://www.bio.miami.edu/dana/pix/population_dynamics.jpg)
+
+---
+.pull-left[
+# Tamanho populacional
+
+<img src=https://s2.glbimg.com/vTOQLPw-JBVl6krnb2WrwJR9Ajc=/0x0:900x1335/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/B/K/EhNO4WRGW2A98SpyAKsw/dsc5845.jpg  width = 400>
+]
+
+.pull-right[
+# Parâmetros básicos
+<br>
+## N = Tamanho da População 
+
+## N<sub>0</sub> = Tamanho da População Inicial
+
+## N<sub>t</sub> = Tamanho da População no tempo T
+
+]
+
+---
+background-image: url(http://www.bio.miami.edu/dana/pix/population_dynamics.jpg)
+
+---
+.pull-left[
+<img src=https://s2.glbimg.com/vTOQLPw-JBVl6krnb2WrwJR9Ajc=/0x0:900x1335/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/B/K/EhNO4WRGW2A98SpyAKsw/dsc5845.jpg  width = 400>
+]
+
+.pull-right[
+# A população de jacarés cresceu de 300->500
+
+## N<sub>0</sub> = 300
+
+## N<sub>t</sub> = 500
+
+### Mortes?
+### Nascimentos?
+### Imigrações?
+### Emigrações?
+
+]
+---
+.pull-left[
+<img src=https://s2.glbimg.com/vTOQLPw-JBVl6krnb2WrwJR9Ajc=/0x0:900x1335/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/B/K/EhNO4WRGW2A98SpyAKsw/dsc5845.jpg  width = 400>
+]
+
+.pull-right[
+# A população de jacarés cresceu de 300->500
+
+## N<sub>0</sub> = 300
+
+## N<sub>t</sub> = 400
+
+### Mortes (D) = 100
+### Nascimentos (B) = 200
+### Imigrações (I) = 100
+### Emigrações (E) = 100
+
+]
+
+---
+.pull-left[
+<img src=https://s2.glbimg.com/vTOQLPw-JBVl6krnb2WrwJR9Ajc=/0x0:900x1335/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/B/K/EhNO4WRGW2A98SpyAKsw/dsc5845.jpg  width = 400>
+]
+
+.pull-right[
+# A população de jacarés cresceu de 300->500
+
+## N<sub>0</sub> = 300
+
+## N<sub>t</sub> = 400
+
+### Mortes (D) = 100
+### Nascimentos (B) = 100
+### Imigrações (I) = 300
+### Emigrações (E) = 100
+
+]
+
+---
+.pull-left[
+
+# A população de jacarés cresceu de 300->500
+
+## N<sub>0</sub> = 300
+
+## N<sub>t</sub> = 400
+
+### Mortes (D) = 100
+### Nascimentos (B) = 100
+### Imigrações (I) = 300
+### Emigrações (E) = 100
+
+]
+
+.pull-right[
+
+<br><br><br><br><br><br><br><br>
+# N<sub>t</sub> = N<sub>0</sub> +(B-D)+(I-E)
+# N<sub>t</sub> - N<sub>0</sub> = (B-D)+(I-E)
+## $$\Delta N  = (B-D)+(I-E)$$
+## <red>Este é o incrementeo populacional
+
+]
+
+---
+background-image: url(libs/curva.png)
+background-size: 80%
+
+---
+class:center
+# Taxa de crescimento "r"
+--
+
+# N<sub>0</sub> = Tamaho inicial = 300
+--
+
+# N<sub>t</sub> = Tamano final = 400
+--
+
+# Delta N = incremento = 100
+--
+
+# $$r=\Delta N /N_0= 300/400 = 0,33$$
+
+---
+.pull-left[
+#Taxa de natalidade
+
+# B/N<sub>0</sub> = Nascidos/Ind = b
+]
+
+.pull-right[
+#Taxa de Mortalidade
+
+# D/N<sub>0</sub> = Nascidos/Ind = d
+]
+
+<br>
+.center[
+#$$ r = \Delta N/N_0 = (b-d) $$
+]
+
+---
+# $$ \Delta N = N_0*r $$
+
+.pull-left[
+# N<sub>0</sub> = 30 jacarés
+# B = 12 jacarés
+# b= 12/30 = 0,4
+]
+
+.pull-right[
+# N<sub>0</sub> = 30 jacarés
+# D = 6 jacarés
+# d= 6/30 = 0,2
+]
+--
+
+# $$ \Delta N =30*(0,4-0,2) = 6$$
+
+---
+# $$ \Delta N = N_0*r $$
+--
+
+# $$ N_t = N_0 + \Delta N $$
+--
+
+# $$ N_t = N_0 * (1+r) $$
+--
+
+#  $$ N_t = N_0 * \lambda^t $$
+
+# $$ \lambda = crescimento$$
+
+---
+# Crescimento geométrico -  Populações semélparas
+
+
+
+.panelset.sideways[
+
+
+<div class="panel">
+<div class="panel-name">Código para a população com Lambda = 2</div>
+
+```r
+tempo<-seq(1:10) 
+populacao<-(2^seq(1,10,by=1))
+data<-data.frame(tempo,populacao)
+
+library(ggplot2)
+ggplot(data=data, aes(tempo,populacao))+
+geom_line(group=1)+geom_point()
+```
+
+
+
+</div>
+
+<div class="panel">
+<div class="panel-name">Gráfico resultante de 10 gerações</div>
+
+<img src="02_estrutura_populacoes_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+
+</div>
+]
+
+---
+# Crescimento geométrico
+
+.panelset.sideways[
+
+
+<div class="panel">
+<div class="panel-name">Código para a população com Lambda = 3</div>
+
+```r
+tempo<-seq(1:10) 
+populacao2<-(3^seq(1,10,by=1))
+data2<-data.frame(tempo,populacao2)
+
+library(ggplot2)
+ggplot(data=data2, aes(tempo,populacao2))+
+geom_line(group=1)+geom_point()
+```
+
+
+
+</div>
+
+<div class="panel">
+<div class="panel-name">Gráfico resultante de 10 gerações</div>
+
+<img src="02_estrutura_populacoes_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+
+</div>
+]
+
+---
+# Crescimento geométrico negativo
+
+.panelset.sideways[
+
+
+<div class="panel">
+<div class="panel-name">Código para a população com Lambda = 0,7</div>
+
+```r
+tempo<-seq(1:10) 
+populacao3<-(0.7^seq(1,10,by=1))*100
+data3<-data.frame(tempo,populacao3)
+
+library(ggplot2)
+ggplot(data=data3, aes(tempo,populacao3))+
+geom_line(group=1)+geom_point()
+```
+
+
+
+</div>
+
+<div class="panel">
+<div class="panel-name">Gráfico resultante de 10 gerações</div>
+
+<img src="02_estrutura_populacoes_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+
+</div>
+]
+
+---
+# Crescimento exponencial - Populações iteróparas
+
+.pull-left[
+## Crescimento geométrico
+## $$N_t = N_0 * \lambda^t$$
+## N<sub>t</sub> = filhos
+## N<sub>0</sub> = pais
+## $$\lambda^t = filhos/pais$$
+
+]
+
+.pull-right[
+## Crescimento exponencial
+
+## $$N_t = N_0 * e^{rt}$$
+## N<sub>t</sub> = filhos + pais
+## N<sub>0</sub> = pais
+## $$ e^{rt} = b + pais - mortos$$
+]
+
+---
+# Crescimento exponencial
+
+.panelset.sideways[
+
+
+<div class="panel">
+<div class="panel-name">Código para a população com r = 0,03</div>
+
+```r
+tempo<-seq(1:100)
+f<-exp(0.03*tempo)
+populacao4<-100*seq(100, along.with=tempo)*f
+data4<-data.frame(tempo,populacao4)
+
+library(ggplot2)
+ggplot(data=data4, aes(tempo,populacao4))+
+geom_line(group=1)+geom_point()
+```
+
+
+
+</div>
+
+<div class="panel">
+<div class="panel-name">Gráfico resultante de 100 gerações</div>
+
+<img src="02_estrutura_populacoes_files/figure-html/unnamed-chunk-8-1.png" width="672" />
+
+</div>
+]
+
+---
+# Crescimento exponencial
+
+.panelset.sideways[
+
+
+<div class="panel">
+<div class="panel-name">Código para a população com r = 0,01</div>
+
+```r
+tempo<-seq(1:100) 
+f<-exp(0.1*tempo)
+populacao4<-seq(10, along.with=tempo)*f
+data4<-data.frame(tempo,populacao4)
+
+library(ggplot2)
+ggplot(data=data4, aes(tempo,populacao4))+
+geom_line(group=1)+geom_point()
+```
+
+
+
+</div>
+
+<div class="panel">
+<div class="panel-name">Gráfico resultante de 100 gerações</div>
+
+<img src="02_estrutura_populacoes_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+
+</div>
+]
+
+---
+# Crescimento exponencial
+
+.panelset.sideways[
+
+
+<div class="panel">
+<div class="panel-name">Código para a população com r = -0,01</div>
+
+```r
+tempo<-seq(1:100) 
+f<-exp(-0.1*tempo)
+populacao4<-seq(1000, along.with=tempo)*f
+data4<-data.frame(tempo,populacao4)
+
+library(ggplot2)
+ggplot(data=data4, aes(tempo,populacao4))+
+geom_line(group=1)+geom_point()
+```
+
+
+
+</div>
+
+<div class="panel">
+<div class="panel-name">Gráfico resultante de 100 gerações</div>
+
+<img src="02_estrutura_populacoes_files/figure-html/unnamed-chunk-12-1.png" width="672" />
+
+</div>
+]
+
+
+---
+# fatores que influenciam as taxas intrínsecas (r)
+
+## - Nicho ecológico
+## - Adequação dos  indivíduos
+## - História de vida (r ou K estrategistas)
+## - Capacidade de carga dos ecossistemas (K)
+
+---
+# No mundo real...
+
+<img src=http://s2.glbimg.com/EGzaTGvRkwDK6UyWqupAVwEZvi8=/0x0:763x501/620x407/s.glbimg.com/po/ek/f/original/2014/04/02/modulo_43_2_1.jpg width = 800>
+
+
+---
+#Espécies invasoras
+
+<img src=https://ve.scielo.org/img/fbpe/inci/v32n9/art04fig2.jpg width = 700>
+fonte: <https://ve.scielo.org/scielo.php?script=sci_arttext&pid=S0378-18442007000900004>
+
+---
+# Espécies ameaçadas
+
+.pull-left[
+<img src=https://cff2.earth.com/uploads/2017/01/03142656/Burramys-parvus.jpg>
+]
+.pull-right[
+<img src=https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-017-01182-3/MediaObjects/41467_2017_1182_Fig1_HTML.jpg?as=webp>
+]
+
+
+---
+class: center, middle
+
+#Por hoje é só.
+
+
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slides_aulas on Applied Ecology</title>
+    <link>/slides_aulas/</link>
+    <description>Recent content in Slides_aulas on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/slides_aulas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ecologia Numérica</title>
+      <link>/slides_aulas/slides_eco_num/slides_aula4_ordenacao/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/slides_eco_num/slides_aula4_ordenacao/</guid>
+      <description>Análise de Componentes Principais - PCA .center[ ]
+.pull-left[ # O que precisamos saber?] # O princípio é simples… SQN .center[ ] # Entendeu? Não? # Como interpretamos? .panelset[ .panel[.panel-name[ex-1] ] .panel[.panel-name[ex-2] ] .panel[.panel-name[ex-3] ] .panel[.panel-name[ex-4] ]] Autovetores (eigenvalues) .panelset[ .panel[.panel-name[objetos ‘PCA’]] .panel[.panel-name[objetos prcomp]] .panel[.panel-name[autovetores PCA]] .panel[.panel-name[autovetores prcomp]]]
+# Resumo dos autovetores .pull-left[ ] .pull-right[ ] # Resumo dos autovetores .pull-left[ ###- São o valor que informa quanta relação há entre variáveis ###- Informam a direção da vairação Aqui tem ums explicação maravilhosa] .</description>
+    </item>
+    
+    <item>
+      <title>Ecologia Numérica</title>
+      <link>/slides_aulas/slides_eco_num/slides_cca/</link>
+      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/slides_eco_num/slides_cca/</guid>
+      <description>.pull-left[ # O que precisamos saber? ###- Uma CA é um método similar aos PCA, mas… (distância de chi-quadrado) ###- Tem bom desempenho com matrizes com muitos zeros (presença e ausência de espécies) ###- É um método para reduzir a multi-dimensionalidade dos dados ###- Busca relações unimodais ] .pull-right[ ] Análises de correspondência - CA .left-column[ # São uma família de análises multivaridas que procuram por relações não lineares]</description>
+    </item>
+    
+  </channel>
+</rss>

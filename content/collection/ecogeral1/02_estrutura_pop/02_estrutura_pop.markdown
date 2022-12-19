@@ -1,0 +1,81 @@
+---
+title: "Aula 3 - Estrutura de populações"
+author: "Felipe Melo"
+date: ""
+output: html_document
+---
+
+# Slides dessa aula [AQUI](https://ecoaplic.org/slides_aulas/eco_geral1/02_estrutura_populacoes.html#1)
+
+<img src = https://www.nature.com/scitable/content/ne0000/ne0000/ne0000/ne0000/83033266/1_2.jpg >
+
+<br>
+
+## Demografia
+
+De maneira ampla, a demografia é o estudo da estrutura de populações. Ou seja, a demografia trata de entender as características das populações como: tamanho, distribuição etária, distribuição espacial, taxas de crescimento ou declínio, etc. A intenção é entender os fatores que levam à mudanças espaciais e temporais da população em questão.
+
+## Tamanho da população
+
+Esse talvez seja o parâmetro demográfico mais  importante das populações. O tamanho de uma população é: **"o número de indivíduos de uma espécies em determinada área”**. No entanto, é muito difícil saber o tamanho real de uma população e portanto diversos métodos são utilizados para estimar essa magnitude. O mais comum é *extrapolar* o número de indivíduos recenseados numa área conhecida para o total da área que se sabe, é ocupada pela população. Mas, nem sempre é fácil determinar a área de ocupação de uma população de uma espécie selvagem. Quase sempre o que temos é uma aproximação.
+
+## Efeitos do tamanho da população
+
+### Populações pequenas
+
+Quando as populações são pequenas, há uma série de problemas como a baixa probabilidade de apartamento, susceptibilidade à predação, endogamia, etc. No longo prazo, populações mantidas pequenas (seja por distúrbios naturais ou provocado pelos humanos) podem tender à extinção pois são mais suscetíveis à eventos catastróficos aleatórios ou provocados e também à depressão gênica pela endogamia.
+
+Leia o verbete da Wikipedia sobre [Populações Pequenas](https://en.wikipedia.org/wiki/Small_population_size)
+
+<img src=https://s.hdnux.com/photos/01/30/55/50/23255608/3/ratio3x2_1200.jpg>
+
+### Populações grandes
+
+Já as populações grandes possuem seus próprios “problemas” ligados principalmente à [capacidade de carga](https://pt.wikipedia.org/wiki/Capacidade_de_carga) do ecossistema onde se encontra. Isso leva a um aumento da competição intraespecífica e redução na fecundidade e natalidade. Ainda, se  a capacidade de carga é ultrapassada, pode haver degradação do ecossistema e colapso da população. 
+
+## Densidade populacional
+
+Há fenômenos que afetam as populações e que são um efeito direto de sua **densidade**. Não confundir com o tamanho populacional que se refere ao número de indivíduos. Há fenômenos que conhecemos como **denso-dependentes** ou seja, aumentam sua intensidade com a densidade populacional. Entre eles estão: mortalidade por inimigos naturais e imigração (que é a “fuga” de indivíduos de uma população).
+
+[Efeitos denso-dependentes](https://en.wikipedia.org/wiki/Density_dependence)
+
+<img src=https://cdn.the-scientist.com/assets/articleNo/64590/hImg/27896/banner-2-x.webp>
+
+## Estrutura etária
+
+Nas populações encontramos indivíduos em diferentes estágios ontogenéticos, ou idades. Juvenis não contribuem da mesma forma para a dinâmica das populações porque podem não ser férteis ou possuírem taxas de mortalidade maiores que indivíduos adultos, reprodutivos e mais eficientes em escapar de predação. Por conta disso, ecólogos descrevem as populações através de estruturas etárias que ajudam a compreender como as populações podem mudar no tempo e no espaço. 
+
+[Pirâmide populacional](https://ourworldindata.org/age-structure) 
+
+<img src=https://ourworldindata.org/uploads/2019/04/Population-Pyramid-1950-to-2100.jpg>
+
+## Fecundidade
+
+Este parâmetro se refere ao número de descendentes que cada indivíduo de uma população pode produzir em dado intervalo de tempo. Geralmente é medida como uma taxa de natalidade por fêmea por tempo. Também é um dos parâmetros que podem responder rapidamente tanto à densidade populacional quanto a eventos ambientais que afetem a fecundidade fisiológica. É, portanto , muito usado para medir tendências de populações e monitorar mudanças de populações de espécies sensíveis.
+
+[Wikipedia: Fecundidade](https://pt.wikipedia.org/wiki/Fecundidade)
+
+<img src=https://www.ecodebate.com.br/wp-content/uploads/2019/06/20190628-190628-01-3-1004-jeda_a-transicao-da-fecundidade-no-brasil-e-no-mundo-segundo-as-novas-projecoes-da-onu_html_52fd1e35ef900a94.gif>
+
+## Mortalidade
+
+Este é outro parâmetro clássico para se medir a dinâmica populacional. A taxa de mortalidade de uma população é uma medida direta que pode ser expressada por tempo ou por recorte populacional (100.000 ind, por exemplo). Para se medir com detalhe as taxas de mortalidade, usamos as **tabelas de vida** que calculam a probabilidade de um indivíduos numa certa faixa etária, passar para outra. Esse recurso é usado muito além da ecologia e é empregado por empresas seguradoras de vida, por exemplo. 
+
+Veja [esses slides](https://edisciplinas.usp.br/pluginfile.php/1699938/course/section/431018/Aula%202%20-%20Din%C3%A2mica%20populacional%20II.pdf) das e-disciplinas da USP	 
+
+## Exercício
+
+Lembre-se dessa fórumla `\(N_t = N_0 ∗ e^{rt}\)`, veja os slides e responda às seguintes perguntas
+
+1) A população humana na Terra acaba de chegar a incŕiveis 8 bilhões de pessoas. Partindo desse número como `\(N_0\)`, quantas pessoas teríamos vivendo na terra com uma taxa de crescimento constante de 0,014 em 2100? Faça um bonito gráfico!
+
+2) A população de Ararinhas-azuis está sendo reintroduzida agora na Caatinga. Inicialmente 18 animais foram soltos na natureza, sendo 9 casais. A taxa de fecundidade das ararinhas é de 4 filhotes por fêmea ao longo da vida. Quanto tempo será necessário para que a população de ararinhas-azuis dobre de tamanho? Quanto tempo vai demorar para chegar em 100 animais? Faça uns gráficos bonitos também!
+
+3) Calcule a taxa de crecimento anual de uma população de peixes que você está monitorando num trecho ro riacho do cavouco. No ano de 2018 você encontrou 150 peixes e no ano de 2022 seu censo econtrou 400 peixes.
+
+ATENÇÂO: Entregue os exercícios via Google Sala de Aula na tarefa respectiva.
+
+
+
+
+

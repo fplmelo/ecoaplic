@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ecologia da Restauração on Applied Ecology</title>
+    <link>/courses/rest_ecol/</link>
+    <description>Recent content in Ecologia da Restauração on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/courses/rest_ecol/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Evolução Histórica da Restauração Ecológica no Brasil</title>
+      <link>/courses/rest_ecol/04_hist_rest/hist_rest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/rest_ecol/04_hist_rest/hist_rest/</guid>
+      <description>Slides A restauração passou por muitas fases no Brasil A história da restauração ecológica no Brasil é fascinante. É uma ciência que tem evoluído rapidamente, com grande impacto nas políticas públicas e na formação acadêmica no Brasil. Há grupod de pesquisa por quase todos os estados e biomas brasileiros e todos têm certa ascendência comum com os grupos que se formaram nas universidades e institutos de pesquisa de São Paulo.</description>
+    </item>
+    
+    <item>
+      <title>Introdução à Ecologia da Restauração</title>
+      <link>/courses/rest_ecol/00_intro/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/rest_ecol/00_intro/intro/</guid>
+      <description>Slides Definindo Ecologia da Restauração Figura adaptada de Bradshaw 1984.
+O que você precisa entender por “restauração ecológica”? Segundo a Society for Ecological Restoration, a restauração é a aplicação de práticas e preceitos cientificamente embasados para a recuperação de ambientes degradados a um estado funcional desejado.
+Para isso algumas metas precisam ser estabelecidas:
+Qual a composição de espécies desejada? Quão parecido deve ser com o ecossistema de referência? Quais serviços ecossistêmicos devem ser recuperados?</description>
+    </item>
+    
+    <item>
+      <title>Métodos de restauração passiva </title>
+      <link>/courses/rest_ecol/02_passivos/passivos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/rest_ecol/02_passivos/passivos/</guid>
+      <description>Slides Métodos passivos de restauração ecológica Figura Paula Meli.
+O que são métodos passivos de restauração? São técnicas que utilizam processos naturais de regeneração com nenhuma ou mínima intervenção humana. A maior parte do trabalho é feita pela sucessão ecológica.
+Vantages:
+Barato; Fácil; Tende a reproduzir ecossistemas naturais Desvantegens:
+Pouco controle sobre o resultado Lento Pode favorecer especies indesejáveis Para a próxima aula Assistam este video
+Venha preparado para discutir os conceitos apresentados.</description>
+    </item>
+    
+    <item>
+      <title>Sucessão ecológica e perturbação</title>
+      <link>/courses/rest_ecol/01_sucessao/sucessao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/rest_ecol/01_sucessao/sucessao/</guid>
+      <description>Slides Sucessão ecológica Figura OpeanLearn.
+O que você precisa entender por Sucessão Ecológica? A Wikipedia define assim: “Sucessão ecológica é a sequência de comunidades, desde a colonização até à comunidade clímax, de um determinado ecossistema. Estas comunidades vão sofrendo mudanças ordenadas e graduais.”
+Para a próxima aula Leia este texto produzido pelo Prof Sérgius Gandolfi.
+Venha preparado para discutir os conceitos apresentados. vale nota</description>
+    </item>
+    
+  </channel>
+</rss>

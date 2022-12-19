@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>projects on Applied Ecology</title>
+    <link>/tags/projects/</link>
+    <description>Recent content in projects on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 27 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aula 4 - Cadeia produtiva de produtos da biodiversidade de plantas</title>
+      <link>/courses/bot_eco/produtos_biodiv/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/bot_eco/produtos_biodiv/</guid>
+      <description>Communities contributing to Biodiversity
+Slides Veja os slides dessa aula aqui
+Produtos da biodiversidade Veja esse vídeo da TV Cultura e tenha um panorama geral dos produtos da biodiversidade Basileira e como as instituições cientíicas brasieliras explorarm esses produtos.
+Das moléculas aos organismos Leia o texto da revista Pesquisa Fapesp para entender o potencial bioqúímico das plantas.
+Extrativismo: uma questão complexa Leia o verbete da Wikipedia sobre Extrativismo e reflita sobre a definição dessa atividade.</description>
+    </item>
+    
+    <item>
+      <title>Aula 5 - Carreira científica dentro e fora da academia</title>
+      <link>/courses/deseho-de-projetos/aula4-carreira/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/deseho-de-projetos/aula4-carreira/</guid>
+      <description>Pós-graduação e vida real Ha uma enorme discussão global sobre o status dos pós-graduandos na academia. Em países como a Alemanha, um estudante de PhD possui um contrato temporário de trabalho. Nos EUA, praticamente não existe mestrado e um dotorando pode (e deve) procurar dar aulas como assistente para adquirir experiência e conseguir um complemento de renda que pode ser significativo. No Brasil, temos os prazeres e agruras de ser bolsistas por 8-10 anos, antes de talvez conseguir um emprego via concurso numa universidade pública.</description>
+    </item>
+    
+    <item>
+      <title>Aula 1 - Componentes de uma pesquisa científica</title>
+      <link>/courses/deseho-de-projetos/aula01-componentes/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/courses/deseho-de-projetos/aula01-componentes/</guid>
+      <description>O que é uma pesquisa científica? Para responder essa pergunta precisaremos refletir sobre a natureza do fazer científico. Nesta primeira aula, vamos discutir sobre alguns componentes básicos da pesquisa científica. Mas ATENÇÃO, essa disciplina não é sobre filosofia da ciência (apesar de passarmos pelo assunto) mas é a compilação de uma visão pessoal minha sobre o processo de formação de um pesquisador ou pesquisadora.
+Slides Veja os slides dessa aula aqui</description>
+    </item>
+    
+  </channel>
+</rss>
