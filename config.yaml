@@ -46,7 +46,7 @@ params:
   navallcaps: yes
   orgLocal: Anywhere
   orgName: RStudio
-  sharing_image: /img/papillons.jpg
+  sharing_image: /img/logo.png
   social:
     
     - icon: github
