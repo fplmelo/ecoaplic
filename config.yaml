@@ -73,7 +73,7 @@ params:
   socialInFooter: yes
   socialInHeader: no
   textFontFamily: sans-serif
-  theme: peach
+  theme: forest
   twitter: apreshill
   utterances:
     issue_term: pathname
