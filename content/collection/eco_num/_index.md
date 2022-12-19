@@ -11,7 +11,7 @@ show_post_date: false
 show_post_thumbnail: true
 subtitle: Ecologia através dos números'.
 title: Ecologia Numérica
-weight: 2
+weight: 1
 ---
 
 

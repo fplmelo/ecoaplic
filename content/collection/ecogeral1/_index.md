@@ -1,6 +1,6 @@
 ---
 author: Felipe Melo
-date: ""
+date: "01-01-2022"
 description: |
   Ecologia de populações.
 excerpt: null
@@ -11,7 +11,7 @@ show_post_date: false
 show_post_thumbnail: true
 subtitle: Ecologia de populações.
 title: Ecologia Geral 1
-weight: 2
+weight: 1
 date: ""
 ---
 
