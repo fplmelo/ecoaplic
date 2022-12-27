@@ -4,8 +4,8 @@
     <title>Ecologia Numérica</title>
     <meta charset="utf-8" />
     <meta name="author" content="Felipe Melo" />
-    <meta name="date" content="2022-02-15" />
-    <script src="slides_diversity_measures_files/header-attrs-2.11/header-attrs.js"></script>
+    <meta name="date" content="2022-12-27" />
+    <script src="slides_diversity_measures_files/header-attrs-2.18/header-attrs.js"></script>
     <link href="slides_diversity_measures_files/remark-css-0.0.1/robot.css" rel="stylesheet" />
     <link href="slides_diversity_measures_files/remark-css-0.0.1/tamu-fonts.css" rel="stylesheet" />
     <link href="slides_diversity_measures_files/panelset-0.2.6/panelset.css" rel="stylesheet" />
@@ -21,11 +21,21 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Ecologia Numérica
+]
+.subtitle[
 ## Aula 3 - Medidas de diversidade biológica
+]
+.author[
 ### Felipe Melo
+]
+.institute[
 ### Laboratório de Ecologia Aplicada - UFPE
-### 2022-02-15
+]
+.date[
+### 2022-12-27
+]
 
 ---
 
@@ -278,6 +288,11 @@ head(alpha)
 ```
 ]
 .panel[panel-name[Plots]
+
+```
+## Carregando pacotes exigidos: viridisLite
+```
+
 &lt;img src="slides_diversity_measures_files/figure-html/unnamed-chunk-8-1.png" width="40%" /&gt;
 ]]
 
@@ -334,6 +349,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
