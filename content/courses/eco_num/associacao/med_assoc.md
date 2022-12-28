@@ -87,7 +87,7 @@ Nesse caso até um gráfico pode nos ajudar a ter uma dimensão da importância 
 image(as.matrix(spe_na))
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-4-1.png" width="600px" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-4-1.png" width="600px" />
 
 Os valores em branco são os NAs e as cores indicam as abundâncias, sendo quanto mais vermelho, mais abundante.
 
@@ -144,13 +144,13 @@ Escreva emaicxo seus códigos e interprete os resultados escrevendo embaixo
 coldiss(spe.db, diag = TRUE)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-9-1.png" width="672" />
 
 ``` r
 coldiss(spe.dh, diag = TRUE)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-10-1.png" width="672" />
 
 # Comparando comunidades com dados binários (Q-mode)
 
@@ -197,7 +197,7 @@ env.de<-dist(scale(env2)) # use a função "scale" para transformar osdados em z
 corrplot(as.matrix(env.de), is.corr = FALSE) 
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-11-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-11-1.png" width="672" />
 
 Lembrem-se que nessa matriz, os números são as amostras, que começam em 1 na nascente do rio e terminam em 30 no ponto mais distante. Conseguem ver algum padrão? tentem entender a matriz, dê exemplos de pontos muitos parecidos e outros muito dissimilares. Será que você está lendo a matriz corretamente?
 
@@ -208,7 +208,7 @@ spa.de<-dist(spa)
 coldiss(spa.de, diag = TRUE)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-12-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-12-1.png" width="672" />
 
 ``` r
 dfs.df<-as.data.frame(env$dfs, row.names = rownames(env))
@@ -216,7 +216,7 @@ riv.de<-dist(dfs.df)
 coldiss(riv.de, diag = TRUE)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-13-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-13-1.png" width="672" />
 
 # R mode para dados ambientais ou espécies
 
@@ -229,7 +229,7 @@ cor.env<-cor(env2)
 coldiss(cor.env, diag = T)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-14-1.png" width="672" />
 
 Consegue ideintificar grupos de variáveis ambientais que covariam?
 
@@ -243,7 +243,7 @@ spe.t.D16 <- dist(spe.t.chi)
 coldiss(spe.t.D16, diag = TRUE)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-15-1.png" width="672" />
 
 Consegue identificar grupos de espécies?
 
@@ -421,7 +421,7 @@ clust_rio<-hclust(jacc_dist, method = "complete")
 clust_graf<-plot(clust_rio, hang=-1)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-19-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-19-1.png" width="672" />
 
 ``` r
 clust_graf
@@ -437,7 +437,7 @@ Agora podemos plotar o dendograma onde: números amarelos são do alto rio, azui
 plot(clust_rio2)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-21-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-21-1.png" width="672" />
 
 Temos padrão?
 
@@ -599,7 +599,7 @@ clust_rio_euc<-hclust(euc_dist, method = "complete")
 clust_graf_euc<-plot(clust_rio_euc, hang=-1)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-24-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-24-1.png" width="672" />
 
 ``` r
 clust_graf_euc
@@ -622,7 +622,7 @@ Agora podemos plotar o dendograma onde: números amarelos são do alto rio, azui
 plot(clust_rio_euc2)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-26-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-26-1.png" width="672" />
 
 Novamente, temos alguma diferença que aponta para uma certa organização das espécies, mas notem que agora parecem mais misturados que quando usamos o índice de Jaccard, mas mesmo essa “mistura” tem um certo padrão, podem perceber?
 
@@ -820,7 +820,7 @@ clust_env_euc<-hclust(env_dist, method = "complete")
 clust_graf_env_euc<-plot(clust_env_euc, hang=-1)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-29-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-29-1.png" width="672" />
 
 ``` r
 clust_graf_env_euc
@@ -843,7 +843,7 @@ Agora podemos plotar o dendograma onde: números amarelos são do alto rio, azui
 plot(clust_graf_env_euc2)
 ```
 
-<img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-31-1.png" width="672" />
+<img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-31-1.png" width="672" />
 
 E agora? Dá pra entender?
 

@@ -5,7 +5,7 @@ date: ""
 output: html_document
 ---
 
-# Slides dessa ala [AQUI](https://ecoaplic.org/slides_aulas/eco_geral1/01_individuos_a_pop.html#1)
+# Slides dessa aula [AQUI](https://ecoaplic.org/slides_aulas/eco_geral1/01_individuos_a_pop.html#1)
 
 <img src = https://www.nature.com/scitable/content/ne0000/ne0000/ne0000/ne0000/83033237/fig2_1_2.jpg >
 

@@ -7,7 +7,7 @@ image_left: true
 images:
 - usga.png
 show_action_link: true
-show_social_links: true
+show_social_links: false
 subtitle: Ecology for real-world problems
 text_align_left: false
 title: Applied Ecology 

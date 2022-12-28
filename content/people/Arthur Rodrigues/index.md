@@ -1,34 +1,11 @@
 ---
-bio: Community ecoolgy, restoration and political ecology
-education:
-  courses:
-  - course: Graduation in Biological Sciences 
-    institution: Universidade Federal de Pernambuco 
-    year: 2017 – Current
-email: "barros.arthur082@gmail.com" # mantenha as aspas
-interests:
-- Socioecology
-- R markdown and Xaringan
-- Spatial Ecology
-organizations:
-- name: Universidade Federal de Pernambuco # não mudar
-  url: "www.ufpe.br" # não mudar
-role: Master Student # Escolha um desses e apague o resto
-social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'
-- icon: graduation-cap
-  icon_pack: fas
-  link: http://lattes.cnpq.br/0173987422520710 
-- icon: github
-  icon_pack: fab
-  link: https://github.com/Barros082
-superuser: false
-user_groups: ["Grad Students"] # Não mexer
 title: Arthur André de Barros Rodrigues
+show_post_date: false
 ---
- 
+
+[Arthur's CV Lattes](http://lattes.cnpq.br/0173987422520710) 
+<br>
+[PPG Etnobiologia e Conservação](http://www.pgetno.ufrpe.br/)
 ## Current Research
 
 I am currently finishing my undergraduate degree and have developed my Course Conclusion Work aiming to understand how dispersal patterns are affected by supra-annual seed fragmentation and reproduction in an area of semideciduous tropical forest in the state of Quintana Roo, Mexico. Using data collected by
@@ -44,6 +21,7 @@ With the guidance of Felipe Melo and Lucas Alencar, I am building my pre master'
 
 
 {{< figure src="Fig_2.jpg" >}} 
-Fig 2  Illustrative image of the main variables and interactions between the availability of forest resources (exemplified in the image by the forest in the center), the population's access to that resource, thereby obtaining a benefit (the arrows) and the population that receives the benefit and is actively responsible by changes in the amount of benefits withdrawn (people).
+
+Fig 2 -  Illustrative image of the main variables and interactions between the availability of forest resources (exemplified in the image by the forest in the center), the population's access to that resource, thereby obtaining a benefit (the arrows) and the population that receives the benefit and is actively responsible by changes in the amount of benefits withdrawn (people).
  
 

@@ -36,7 +36,15 @@ social:
 superuser: false
 user_groups: ["Grad Students"] # Não mexer
 title: Lucas Alencar
+show_post_date: false
+
 ---
+[Lucas' CV Lattes](http://lattes.cnpq.br/1740892227307301)
+<br>
+[Lucas' Twitter](https://twitter.com/Alenc09)
+<br>
+[Lucas' email](mailto:alencar.lucasc@gmail.com)
+
 
 ## Bio
 
