@@ -1,8 +1,8 @@
 ---
-date: "2022-01-01"
 title: "Aula 4 - Fragmentação de Paisagens"
-type: book
-weight: 40
+author: "Felipe Melo"
+date: ""
+output: html_document
 ---
 
 # Um debate científico relevante

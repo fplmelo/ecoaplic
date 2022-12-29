@@ -1,7 +1,8 @@
 ---
-date: "2022-01-01"
 title: "Aula 3 - Processos biológicos que podem ser medidos na escala de paisagens"
-type: book
+author: "Felipe Melo"
+date: ""
+output: html_document
 ---
 
 <script src="/rmarkdown-libs/fitvids/fitvids.min.js"></script>

@@ -1,8 +1,8 @@
 ---
-date: "2022-01-01"
 title: "Aula 1- Conceitos básicos de Paisagem"
-type: book
-
+author: "Felipe Melo"
+date: ""
+output: html_document
 ---
 
 <script src="/rmarkdown-libs/fitvids/fitvids.min.js"></script>

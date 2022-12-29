@@ -1,8 +1,8 @@
 ---
-date: "2022-01-01"
-title: Conservação biológica em ambientes fragmentados
-type: book
-weight: 60
+title: "Aula 6 - Conservação biológica em ambientes fragmentados"
+author: "Felipe Melo"
+date: ""
+output: html_document
 ---
 
 Em construção

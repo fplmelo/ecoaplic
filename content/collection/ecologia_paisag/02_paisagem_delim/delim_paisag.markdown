@@ -1,7 +1,8 @@
 ---
-date: "2022-01-01"
 title: "Aula 2- Definição e delimitação de paisagens"
-type: book
+author: "Felipe Melo"
+date: ""
+output: html_document
 
 ---
 

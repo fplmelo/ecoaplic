@@ -1,7 +1,8 @@
 ---
-date: "2022-04-27"
 title: "Aula 9 - Debate sobre fragmentação: Hipótese de Quantidade de Hábitat"
-type: book
+author: "Felipe Melo"
+date: ""
+output: html_document
 ---
 
 <script src="/rmarkdown-libs/fitvids/fitvids.min.js"></script>
