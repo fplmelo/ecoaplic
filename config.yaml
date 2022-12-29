@@ -100,11 +100,11 @@ menu:
       url: /contributors/
       weight: 3
   header:
-    - name: About
-      title: About Blogophonic
+    - name: About me
+      title: About me
       url: /about/
       weight: 1
-    - name: People
+    - name: Team
       title: People
       url: /people/
       weight: 2
