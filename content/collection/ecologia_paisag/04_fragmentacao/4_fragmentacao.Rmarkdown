@@ -5,7 +5,7 @@ date: ""
 output: html_document
 ---
 
-## Slides da aula [AQUI](https://ecoaplic/slides_aulas/ecol_paisag/04_intro_frag.html)
+## Slides da aula [AQUI](https://ecoaplic.org/slides_aulas/ecol_paisag/04_intro_frag.html#)
 
 # Um debate científico relevante
 
