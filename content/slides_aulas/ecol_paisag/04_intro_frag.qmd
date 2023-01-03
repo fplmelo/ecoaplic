@@ -197,9 +197,9 @@ slide-number: c/t #< collapsed/total
 
 ::::{.columns}
 
-:::{.column width="50%"} 
+:::{.column width="50%"}
 
-<img src="libs/shape.png">
+<img src="libs/shape.png"/>
 
 :::
 
@@ -218,10 +218,9 @@ slide-number: c/t #< collapsed/total
 ## Em resumo...
 
 ::::{.incremental}
-+   Estudos de fragmentação são prolíficos e influenciaram a [ecologia de paisagem]{style="color: red"}
-+   Na verdade, são  estudos que se concentraram em **paisagens fragmentadas**, mas aferira basicamente métricas de **mancha** e não de paisagem
-+   Grandes debates surigiram desde então, com grandes implicações para a conservação e manejo de paisagen
-:::
+
+-   Estudos de fragmentação são prolíficos e influenciaram a \[ecologia de paisagem\]{style="color: red"}
+-   Na verdade, são estudos que se concentraram em **paisagens fragmentadas**, mas aferira basicamente métricas de **mancha** e não de paisagem
+-   Grandes debates surigiram desde então, com grandes implicações para a conservação e manejo de paisagen :::
 
 ## Obrigado{style="text-align: center"}
-
