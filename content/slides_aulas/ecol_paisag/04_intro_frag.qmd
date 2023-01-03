@@ -18,7 +18,8 @@ slide-number: c/t #< collapsed/total
 
 :::
 
-::: {.column width="60%"} <img src="https://www.ufz.de/export/data/global/77751_regenwald_brasilien_luftaufnahme.jpg"/>
+::: {.column width="60%"} 
+<img src="https://www.ufz.de/export/data/global/77751_regenwald_brasilien_luftaufnahme.jpg"/>
 
 :::
 
@@ -50,7 +51,9 @@ slide-number: c/t #< collapsed/total
 
 :::
 
-::: {.column width="60%"} <img src="https://images.squarespace-cdn.com/content/v1/54cd1fb0e4b02137e9c3b4a2/1551329172099-SJNCJZYM2WGEFZOFT63S/91BC.gif?format=1000w"/> <img src="https://images.squarespace-cdn.com/content/v1/54cd1fb0e4b02137e9c3b4a2/1550535052616-AHJPFKQXNFRG7Z246XJC/Deforestation_Brazil1.0.png"/>
+::: {.column width="60%"} 
+<img src="https://images.squarespace-cdn.com/content/v1/54cd1fb0e4b02137e9c3b4a2/1551329172099-SJNCJZYM2WGEFZOFT63S/91BC.gif?format=1000w"/> 
+<img src="https://images.squarespace-cdn.com/content/v1/54cd1fb0e4b02137e9c3b4a2/1550535052616-AHJPFKQXNFRG7Z246XJC/Deforestation_Brazil1.0.png"/>
 
 :::
 
@@ -60,7 +63,9 @@ slide-number: c/t #< collapsed/total
 
 :::: {.columns}
 
-::: {.column width="60%"} <img src="https://news.mongabay.com/wp-content/uploads/sites/20/2016/06/1-dams.jpg"/>
+::: {.column width="60%"} 
+
+<img src="https://news.mongabay.com/wp-content/uploads/sites/20/2016/06/1-dams.jpg"/>
 
 :::
 
@@ -68,13 +73,17 @@ slide-number: c/t #< collapsed/total
 
 -   Biogeografia de ilhas
 
-::: ::::
+::: 
+
+::::
 
 ## Biogeografia de ilhas
 
 :::: {.columns}
 
-::: {.column width="60%"} <img src="https://news.mongabay.com/wp-content/uploads/sites/20/2016/06/1-dams.jpg"/>
+::: {.column width="60%"} 
+
+<img src="https://news.mongabay.com/wp-content/uploads/sites/20/2016/06/1-dams.jpg"/>
 
 :::
 
@@ -82,10 +91,16 @@ slide-number: c/t #< collapsed/total
 
 -   O que determina a quantidade de espécies numa ilha?
 
-::: {.fragment .highlight-red} ::: {.fragment .fade-in}
+::: {.fragment .highlight-red} 
+
+::: {.fragment .fade-in}
 
 -   Área
--   Distância para o continente ::: :::
+-   Distância para o continente 
+
+::: 
+
+:::
 
 :::
 
@@ -99,9 +114,11 @@ slide-number: c/t #< collapsed/total
 
 :::: {.columns}
 
-::: {.column width="60%"} <img src="https://daac.ornl.gov/LBA/guides/LC05_BIOMASS_BDFF_sites.png"/>
+::: {.column width="60%"} 
 
-### \[Produziu milhares de artigos\]{.fragment .highlight-red}
+<img src="https://daac.ornl.gov/LBA/guides/LC05_BIOMASS_BDFF_sites.png"/>
+
+### Produziu milhares de artigos{style="font-color: red;"}
 
 :::
 
@@ -158,7 +175,7 @@ slide-number: c/t #< collapsed/total
 
 :::{.column width="50%}
 
-![](https://media.springernature.com/full/springer-static/image/art%253A10.1038%252Fnature24457/MediaObjects/41586_2017_Article_BFnature24457_Fig3_HTML.jpg?as=webp)
+![](libs/edge3.webp)
 
 [Pfeifer et al (2017)](https://www.nature.com/articles/nature24457)
 
@@ -219,8 +236,10 @@ slide-number: c/t #< collapsed/total
 
 ::::{.incremental}
 
--   Estudos de fragmentação são prolíficos e influenciaram a \[ecologia de paisagem\]{style="color: red"}
+-   Estudos de fragmentação são prolíficos e influenciaram a [ecologia de paisagem]{style="color: red"}
 -   Na verdade, são estudos que se concentraram em **paisagens fragmentadas**, mas aferira basicamente métricas de **mancha** e não de paisagem
--   Grandes debates surigiram desde então, com grandes implicações para a conservação e manejo de paisagen :::
+-   Grandes debates surigiram desde então, com grandes implicações para a conservação e manejo de paisagen 
+
+:::
 
 ## Obrigado{style="text-align: center"}
