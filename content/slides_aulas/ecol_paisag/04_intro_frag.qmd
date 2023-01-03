@@ -1,0 +1,227 @@
+---
+title: "Aula 4 - Fragmentação de Paisagens"
+author: "Felipe Melo"
+format: revealjs
+editor: visual
+slide-number: c/t #< collapsed/total
+---
+
+## Introdução à fragmentação
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+-   Qais as causas da fragmentação
+-   Consequências da fragmentação sobre as biotas
+-   História e importância dos estudos de fragmentação
+
+:::
+
+::: {.column width="60%"} <img src="https://www.ufz.de/export/data/global/77751_regenwald_brasilien_luftaufnahme.jpg"/>
+
+:::
+
+::::
+
+## Um mundo fragmentado
+
+<img src="https://conservationcorridor.org/wp-content/uploads/global_road_density_Meijer_copyright-1-1024x521.png"/>
+
+## Um mundo fragmentado
+
+<img src="https://mlsmotherman.files.wordpress.com/2013/05/land-lost.jpg"/>
+
+## Um processo global
+
+<iframe width="960" height="540" src="https://www.youtube.com/embed/L9zWDtDKDS8" title="Satellite shows extent of terrible destruction to the planet - BBC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
+## Porque estudar fragmentação?
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+-   É um fenômeno proeminente
+-   Resestrutura a paisagem
+-   Afeta fortemente a biota
+
+:::
+
+::: {.column width="60%"} <img src="https://images.squarespace-cdn.com/content/v1/54cd1fb0e4b02137e9c3b4a2/1551329172099-SJNCJZYM2WGEFZOFT63S/91BC.gif?format=1000w"/> <img src="https://images.squarespace-cdn.com/content/v1/54cd1fb0e4b02137e9c3b4a2/1550535052616-AHJPFKQXNFRG7Z246XJC/Deforestation_Brazil1.0.png"/>
+
+:::
+
+::::
+
+## As bases ecológicas da fragmentação
+
+:::: {.columns}
+
+::: {.column width="60%"} <img src="https://news.mongabay.com/wp-content/uploads/sites/20/2016/06/1-dams.jpg"/>
+
+:::
+
+::: {.column width="40%"}
+
+-   Biogeografia de ilhas
+
+::: ::::
+
+## Biogeografia de ilhas
+
+:::: {.columns}
+
+::: {.column width="60%"} <img src="https://news.mongabay.com/wp-content/uploads/sites/20/2016/06/1-dams.jpg"/>
+
+:::
+
+::: {.column width="40%"}
+
+-   O que determina a quantidade de espécies numa ilha?
+
+::: {.fragment .highlight-red} ::: {.fragment .fade-in}
+
+-   Área
+-   Distância para o continente ::: :::
+
+:::
+
+::::
+
+## PDBFF - Projeto Dinâmica Biológica de Fragmentos Florestais
+
+<img src="https://photos.mongabay.com/j/BDFFP-aerial-view3.568.jpg"/>
+
+## O desenho experimetnal
+
+:::: {.columns}
+
+::: {.column width="60%"} <img src="https://daac.ornl.gov/LBA/guides/LC05_BIOMASS_BDFF_sites.png"/>
+
+### \[Produziu milhares de artigos\]{.fragment .highlight-red}
+
+:::
+
+::: {.column width="40%"}
+
+-   1ha, 10ha, 100ha, Floresta Contínua <img src="https://daac.ornl.gov/LBA/guides/LC05_BDFFP_2.JPG"/>
+
+:::
+
+::::
+
+## Barro Colorado
+
+<iframe width="1728" height="1053" src="https://www.youtube.com/embed/eFXaej1ol3U" title="Barro Colorado: A behind the Scenes Look at the Science & Scientists of the Island" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
+## Principais achados{style="text-align: center"}
+
+::::{.columns}
+
+:::{.column width="50%}
+
+### Efeitos de borda
+
+-   São fortes e proeminentes
+-   Dependem do tipo de hábitat
+-   Ecótonos artificiais
+
+:::
+
+:::{.column width="50%}
+
+<img src="libs/edge.png" width="280"/>
+
+:::
+
+::::
+
+## Principais achados{style="text-align: center"}
+
+::::{.columns}
+
+:::{.column width="50%}
+
+### Efeitos de borda
+
+-   São fortes e proeminentes
+-   Dependem do tipo de hábitat
+-   Dependem do organismo
+-   Ecótonos artificiais
+
+:::
+
+:::{.column width="50%}
+
+![](https://media.springernature.com/full/springer-static/image/art%253A10.1038%252Fnature24457/MediaObjects/41586_2017_Article_BFnature24457_Fig3_HTML.jpg?as=webp)
+
+[Pfeifer et al (2017)](https://www.nature.com/articles/nature24457)
+
+:::
+
+::::
+
+## Efeitos de área
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/7/7c/SAR(Species-area_curve).gif)
+
+:::
+
+:::{.column width="50%"}
+
+-   Relação riqueza\~área
+-   Biogeografia de ilhas
+-   Fragmentos são de distintos tamanhos
+-   Qual o tamanho cŕitico mínimo?
+
+:::
+
+::::
+
+## Efeitos de área
+
+![](libs/tabela_sp_area.png){fig-align="center"}
+
+###### [Phillips et al 2018](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ecog.02956)
+
+## Efeitos de forma
+
+::::{.columns}
+
+:::{.column width="50%"} 
+
+<img src="libs/shape.png">
+
+:::
+
+:::{.column width="50%"}
+
+-   100m de borda
+-   Efeitos sobre a área núcleo
+-   Diferenças da extensão da borda
+
+[Ewers & Didham (2007)](https://conbio.onlinelibrary.wiley.com/doi/10.1111/j.1523-1739.2007.00720.x)
+
+:::
+
+::::
+
+## Em resumo...
+
+::::{.incremental}
++   Estudos de fragmentação são prolíficos e influenciaram a [ecologia de paisagem]{style="color: red"}
++   Na verdade, são  estudos que se concentraram em **paisagens fragmentadas**, mas aferira basicamente métricas de **mancha** e não de paisagem
++   Grandes debates surigiram desde então, com grandes implicações para a conservação e manejo de paisagen
+:::
+
+## Obrigado{style="text-align: center"}
+

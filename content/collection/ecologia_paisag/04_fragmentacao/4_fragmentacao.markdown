@@ -5,6 +5,8 @@ date: ""
 output: html_document
 ---
 
+## Slides da aula [AQUI](ecoaplic/slides_aulas/ecol_paisag/04_intro_frag.html)
+
 # Um debate científico relevante
 
 A fragmentação tem sido alvo de um debate intenso na comunidade científica há décadas. As origens desse debate estão na importância que é dada ao estudo de paisagens fragmentadas. Isso porque com a excessão de algumas grandes porções de ecossistemas intéactos no mundo como a Amazônia, a bacia do Congo e as florestas boreais da Sibéria e Canadá, os ecossistemas estão fragemntados.
