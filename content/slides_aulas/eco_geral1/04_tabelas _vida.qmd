@@ -1,0 +1,243 @@
+---
+title: "Tabelas de vida e curvas de sobrevivência"
+author: "Felipe Melo"
+format: 
+  revealjs:
+    chalkboard: true
+editor: visual
+smaller: true
+  
+---
+
+## O que precisamos saber hoje?
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+::::{.incremental}
+
+-   O que são tabelas de vida?
+-   Quais são os parâmetros usados em tabelas de vida?
+-   Como se aplicam no manjeo de vida silvestre
+
+:::
+
+:::
+
+::: {.column width="60%"} 
+
+<img src="https://papp.iussp.org/sessions/papp101_s08/images/HLE_spreadsheet_01.png"/>
+
+::: 
+
+::::
+
+## Classe etária "x"
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+::::{.incremental}
+
+-   Classes estárias
+-   Representada por "x"
+-   Podemos ver o perfil etário da população
+-   É possível deduzir muitas coisas, apenas pela distribuição etária 
+
+::: 
+
+:::
+
+::: {.column width="60%"}
+
+<img src="https://www.infoescola.com/wp-content/uploads/2016/12/piramide-etaria.jpg"/>
+
+:::
+
+::::
+
+## Exemplos de pirâmides etárias
+
+<img src="https://i.ytimg.com/vi/NGwgwMgquRE/maxresdefault.jpg"/>
+
+## Número de indivíduos "a<sub>x</sub>"
+
+<img src="https://ourworldindata.org/uploads/2019/04/Population-Pyramid-1950-to-2100.jpg"/>
+
+## Taxa de sobrevivencia "l<sub>x</sub>"
+
+
+| Faixa etária   | Sobreviventes | Prop de Sobreviventes |
+|----------------|---------------|-----------------------|
+| x              | a<sub>x</sub> | l<sub>x</sub>         |
+| Ovos (x=0)     | 10000         | 1                     |
+| Instar 1 (x=1) | 800           | 0,08                  |
+| Instar 2 (x=2) | 500           | 0,05                  |
+| Instar 3 (x=3) | 450           | 0,045                 |
+| Instar 4 (x=4) | 400           | 0,04                  |
+| Adultos (x=5)  | 350           | 0,035                 |
+
+
+
+## Mortalidade absoluta "d<sub>x</sub>"
+
+| Faixa etária | Sobreviventes| Mortalidade |
+|--|--|--|
+|x | a<sub>x</sub> | d<sub>x</sub> | 
+|Ovos (x=0)|10000|9200|
+|Instar 1 (x=1)|800|300|
+|Instar 2 (x=2)|500|50|
+|Instar 3 (x=3)|450|50|
+|Instar 4 (x=4)|400|50|
+|Adultos (x=5)|350|350|
+
+## Proporções são necessárias
+
+| Faixa etária | Sobreviventes | Prop de Sobreviventes | Prop de mortos |
+|--|--|--|--|
+|x | a<sub>x</sub> | l<sub>x</sub> | q<sub>x</sub> | 
+|Ovos (x=0)|10000|1|0,92|
+|Instar 1 (x=1)|800|0,08|0,375|
+|Instar 2 (x=2)|500|0,05|0,10|
+|Instar 3 (x=3)|450|0,045|0,11|
+|Instar 4 (x=4)|400|0,04|0,12|
+|Adultos (x=5)|350|0,035|1|
+
+## Mais proporções
+
+| Faixa etária | Sobreviventes | Prop de Sobreviventes | Prop de mortos | Fecundidade | "Killing power"|
+|--|--|--|--|--|--|
+|x | a<sub>x</sub> | l<sub>x</sub> | q<sub>x</sub> | m<sub>x</sub> |k<sub>x</sub>|
+|Ovos (x=0)|10000|1|0,92|-|1,09|
+|Instar 1 (x=1)|800|0,08|0,375|-|0,2|
+|Instar 2 (x=2)|500|0,05|0,10|-|0,045 |
+|Instar 3 (x=3)|450|0,045|0,11|-|0,05|
+|Instar 4 (x=4)|400|0,04|0,12|-|0,057|
+|Adultos (x=5)|350|0,035|1|22,8| -|
+
+## Em resumo
+
+| Parâmetro | Defnição| 
+|--|--|
+|x| Estágio de vida ou clsse etária ou estágio ontogenético ou tamanho...|
+|a<sub>x</sub>| Número de indivíduos observadosem cada classe de "x" |
+|l<sub>x</sub>| Taxa de sobreviventes ou proporção de indivíduos que passa de x a x+1 |
+|d<sub>x</sub>| Mortalidade ou  número de indivíduos que não sobrevive a cada geração "x"|
+|q<sub>x</sub>| Taxa de mortalidade, ou proportção de indivíduos mortos para cada classe de "x"|
+|k<sub>x</sub>| Força da mortalidade ou "killing power", representada pela razão logaritimzada dos parâmtetros de sobrevivência entre x e x+1|
+
+## Continuação...
+| Parâmetro | Defnição| 
+|--|--|
+|F<sub>x</sub>| Fecundidade total ou número de proles deixado por cada estágio de "x"|
+|m<sub>x</sub>| Fecundidade por indivíduo, portanto normalizada pelo número de indivíduos da populção em cada estágio "x"|
+|l<sub>x</sub>*m<sub>x</sub>| Taxa de repordução por sobrevivente |
+|Rl<sub>0</sub>| Taxa reprodutiva líquida|
+
+## Aplicação das tabelas de vida
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<img src=http://www.petersenshunting.com/files/2015/08/rockmtn_bighorn_f.jpg>
+
+:::
+
+::: {.column width="50%"}
+
+### Espécies caçadas recreativamente
+
+
+:::
+
+::::
+
+## Aplicação das tabelas de vida
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<img src=https://i0.wp.com/files.agro20.com.br/uploads/2020/06/Sardinha-2.jpg?fit=1024%2C576&ssl=1>
+
+:::
+
+::: {.column width="50%"}
+
+- ### Espécies exploradas comercialmente
+
+:::
+
+::::
+
+## Curvas de sobrevivência
+
+<img src=https://cdn.britannica.com/42/6542-050-B6E0E2B9/survivorship-curve-II-Type-I-curves-III.jpg>
+
+## Curva "TIPO 1"
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Baixa mortalidade ao longo da vida
+- Maioria da prpole chega à fase reprodutiva
+- K estrategistas
+
+:::
+
+::: {.column width="50%"}
+
+<img src=https://cdn.britannica.com/42/6542-050-B6E0E2B9/survivorship-curve-II-Type-I-curves-III.jpg>
+
+:::
+
+::::
+
+## Curva "TIPO 2"
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Mortalidade mais ou menos constante ao longo da vida
+- Independente da idade... há predadores especializados?
+
+
+:::
+
+::: {.column width="50%"}
+
+<img src=https://cdn.britannica.com/42/6542-050-B6E0E2B9/survivorship-curve-II-Type-I-curves-III.jpg>
+
+:::
+
+::::
+
+## Curva "TIPO 3"
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Mortalidade inicial muito alta
+- Poucos indipiduos chegam à idade reprodutiva
+- Mortalidade denso-dependente forte
+- r estrategistas
+
+
+:::
+
+::: {.column width="50%"}
+
+<img src=https://cdn.britannica.com/42/6542-050-B6E0E2B9/survivorship-curve-II-Type-I-curves-III.jpg>
+
+:::
+
+::::
+
+## FIM
+
