@@ -1,0 +1,280 @@
+---
+title: "Ecologia Numérica"
+subtitle: "Aula 3 - Medidas de diversidade biológica"
+author: "Felipe Melo"
+institute: "Laboratório de Ecologia Aplicada - UFPE"
+date: "2023-02-07"
+encoding: "UTF-8"
+output: 
+  xaringan::moon_reader:
+    libs_dir: libs
+    css: ["robot","tamu-fonts"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "macros.js"
+
+---
+
+
+
+
+# Diversidade Taxonômica 
+.center[
+<img src=libs/div.png width = 700>
+]
+
+---
+# Precisamos saber:
+
+--
+## O que é diversidade?
+
+--
+## Quais as métricas mais usadas?
+
+--
+## Quais são os prós e contras?
+
+---
+class: middle, center
+
+<img src=libs/pool.png>
+
+---
+class: middle, center
+
+<img src=libs/pool2.png>
+
+---
+class: middle, center
+# Será que amostramos todas as espécies?
+
+---
+class: middle, center
+
+<img src=libs/pool4.png>
+
+---
+class: middle, center
+
+<img src=libs/pool4.png>
+
+---
+class: middle, center
+
+<img src=libs/pool5.png>
+
+---
+
+class: middle, center
+
+<img src=libs/pool5.png>
+
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Palau_archipelago.jpg/800px-Palau_archipelago.jpg?20130206141308)
+
+---
+class: center
+background-size: contain
+background-image: url(https://mensura-r.netlify.app/post/rarefacao/index_files/figure-html/unnamed-chunk-1-1.png)
+
+---
+class: center
+background-size: contain
+background-image: url(https://media-exp1.licdn.com/dms/image/C5612AQGnHwvEoxwFkg/article-inline_image-shrink_1500_2232/0/1521073928942?e=1650499200&v=beta&t=u0Tsq1KoZSpFgwI90FmdUd27Ei6AASwIU33Oo5aTxRM)
+
+---
+class: middle, center
+
+# O método mais atual
+
+---
+#Exemplo de rarefação - Morcegos em 3 localidades
+.panelset[.panel[.panel-name[Código]
+
+
+```r
+library(iNEXT)
+library(devtools)
+#devtools::install_github("paternogbc/ecodados")
+library(ecodados)
+
+dados_rarefacao <- rarefacao_morcegos
+resultados_morcegos <- iNEXT(dados_rarefacao, q = 0, datatype = "abundance", endpoint = 800)
+# q refere-se a família *Hill-numbers* (Hill 1973) onde 0 = riqueza de espécies, 1 =  diversidade de Shannon, e 2 = diversidade de Simpson.
+# Veja mais detalhes sobre os números de Hill no Capítulo 7 onde tratamos de extrapolações.
+# datatype refere-se ao tipo de dados que você vai analisar (e.g. abudância, incidência).
+# endpoint refere-se ao valor de referência que você determina para a extrapolação.
+```
+]
+.panel[.panel-name[Gráfico]
+
+```r
+ggiNEXT(resultados_morcegos, type = 1)
+```
+
+<img src="slides_diversity_measures_files/figure-html/unnamed-chunk-2-1.png" width="35%" />
+]]
+
+---
+#Exemplo de rarefação - Morcegos em 3 localidades
+.panelset[.panel[.panel-name[Código]
+
+
+```r
+library(iNEXT)
+library(devtools)
+#devtools::install_github("paternogbc/ecodados")
+library(ecodados)
+
+dados_rarefacao <- rarefacao_morcegos
+resultados_morcegos <- iNEXT(dados_rarefacao, q = 0, datatype = "abundance", endpoint = 800)
+# q refere-se a família *Hill-numbers* (Hill 1973) onde 0 = riqueza de espécies, 1 =  diversidade de Shannon, e 2 = diversidade de Simpson.
+# Veja mais detalhes sobre os números de Hill no Capítulo 7 onde tratamos de extrapolações.
+# datatype refere-se ao tipo de dados que você vai analisar (e.g. abudância, incidência).
+# endpoint refere-se ao valor de referência que você determina para a extrapolação.
+```
+]
+.panel[.panel-name[Gráfico]
+
+```r
+ggiNEXT(resultados_morcegos, type = 1)
+```
+
+<img src="slides_diversity_measures_files/figure-html/unnamed-chunk-4-1.png" width="35%" />
+]]
+
+---
+#Exemplo de rarefação - Répteis em 2 localidades
+.panelset[.panel[.panel-name[Código]
+
+
+```r
+rarefacao_repteis <- rarefacao_repteis
+resultados_repteis <- iNEXT(rarefacao_repteis, q = 0, datatype = "abundance", endpoint = 200)
+```
+]
+.panel[.panel-name[Gráfico]
+
+```r
+ggiNEXT(resultados_repteis, type = 1)
+```
+
+<img src="slides_diversity_measures_files/figure-html/unnamed-chunk-6-1.png" width="35%" />
+]]
+
+---
+class: middle, center
+
+# Índices de diversidade baseados em abundância
+
+---
+class: middle, center
+
+# São uma tentativa de ponderar a riqueza de espécies pela abundância específica das espécies
+
+---
+class: center
+# Quantas espécies existem nessa figura?
+<img src=libs/peixe.png>
+
+--
+
+# Riqueza = 5
+
+
+---
+class: center
+# Quantas espécies existem nessa figura?
+<img src=libs/peixe2.png>
+
+--
+
+# Riqueza = 5
+
+## A riqueza desconsidera a abundância
+
+---
+class: center
+# Quantas espécies existem nessa figura?
+<img src=libs/peixe.png>
+
+--
+
+# Riqueza = 5
+
+## A riqueza desconsidera a abundância
+
+---
+# Riqueza + Abundância
+.pull-left[
+<img src=libs/peixe3.png>
+]
+
+.pull-right[
+## Riqueza = 5
+## Índice de Shannon = 0,94
+
+<br>
+<br>
+
+## Riqueza = 5
+## Índice de Shannon = 1,61
+]
+---
+# Exemplos
+.panelset[.panel[panel-name[Código]
+
+```r
+data(BCI)
+data("BCI.env")
+
+# Shannon
+H <- diversity(BCI)
+
+# Riqueza
+richness <- specnumber(BCI)  
+
+# Equitatividade de Pielou
+evenness <- H/log(richness)
+  
+# Create alpha diversity dataframe including environmental data
+alpha <- cbind(shannon = H, richness = richness, pielou = evenness, BCI.env)
+alpha$site<-as.factor(seq(1:50))
+head(alpha)
+```
+
+```
+##    shannon richness    pielou UTM.EW  UTM.NS elevation   convex    slope
+## 1 4.018412       93 0.8865579 625754 1011569  130.2525  -7.8725 6.694828
+## 2 3.848471       84 0.8685692 625754 1011669  136.8100 -10.7000 5.086842
+## 3 3.814060       90 0.8476046 625754 1011769  143.6775 -14.6675 3.104794
+## 4 3.976563       94 0.8752597 625754 1011869  147.0075 -16.7575 1.872813
+## 5 3.969940      101 0.8602030 625754 1011969  144.3850 -12.4850 5.118725
+## 6 3.776575       85 0.8500724 625854 1011569  136.8750  -9.6850 2.945532
+##      aspectEW   aspectNS site
+## 1 -0.89108252 -0.4538413    1
+## 2 -0.21903766 -0.9757164    2
+## 3  0.03051372 -0.9995343    3
+## 4 -0.86414183 -0.5032483    4
+## 5 -0.67148116  0.7410216    5
+## 6 -0.86532324 -0.5012142    6
+```
+]
+.panel[panel-name[Plots]
+
+```
+## Carregando pacotes exigidos: viridisLite
+```
+
+<img src="slides_diversity_measures_files/figure-html/unnamed-chunk-8-1.png" width="40%" />
+]]
+
+---
+class: middle, center
+
+# Vamos treinar

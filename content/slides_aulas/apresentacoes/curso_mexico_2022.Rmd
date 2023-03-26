@@ -5,10 +5,10 @@ author: "Felipe Melo"
 institute: "Laboratório de Ecologia Aplicada - UFPE"
 date: "`r Sys.Date()`"
 output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    css: ["robot","tamu-fonts", "custom_slides.css"]
-    nature:
+xaringan::moon_reader:
+lib_dir: libs
+css: ["robot","tamu-fonts", "custom_slides.css"]
+      nature:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
@@ -16,6 +16,7 @@ output:
       beforeInit: "macros.js"
       
 ---
+
 ```{r xaringan-tile-view, echo=FALSE}
 xaringanExtra::use_tile_view()
 #xaringanExtra::use_scribble()

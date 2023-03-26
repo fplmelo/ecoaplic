@@ -1,0 +1,339 @@
+---
+title: "Biocultural Restoration of Social-Ecological Landscapes"
+subtitle: "Research interests and plans for NTU"
+author: "Dr. Felipe Melo"
+institute: ""
+date: ""
+encoding: "UTF-8"
+output: 
+  xaringan::moon_reader:
+    libs_dir: libs
+    css: ["custom_slides.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "macros.js"
+      
+---
+
+
+
+
+# Presentation structure
+--
+
+##- Research interests and background
+--
+
+##- Future plans for NTU
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/usga_land.png")
+class: center, middle
+--
+.content-box-gray[
+# Research interests and background
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/mahli.png")
+.pull-right[
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+[Malhi et al (2014) Annual Review of Environment and Resources](https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-030713-155141)]
+
+---
+backgound-color:
+class: center, middle
+
+# How is biodiversity organized in human-modified landscapes?
+---
+background-position: center
+background-size: cover
+background-image: url("libs/neoland.png")
+class: center
+--
+.content-box-gray[
+# Biotic homogenization]
+--
+.pull-left[
+<img src=libs/biotic.png width = 400>>
+<img src= libs/fewwiners.png width = 400>>
+<img src= libs/filgueiras.png width = 400>
+]
+
+--
+.pull-right[
+<img src= libs/fig_win.jpg width = 500>
+<img src=libs/boti.jpeg width = 150>
+<img src=libs/capes.jpg width = 70>
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/landscape.png")
+class: center
+--
+.content-box-gray[
+# Landscape ecology
+]
+--
+.pull-left[
+<img src=libs/pathways.png width = 400>
+<img src= libs/sedlings.png width = 400>
+<img src= libs/design_vic.png width = 400>]
+
+--
+.pull-right[
+<img src= libs/sec_suc.png width = 500>
+
+
+<img src=libs/conacyt.png width = 70>
+<img src=libs/facepe.png width = 70>
+<img src=libs/cnpq.png width = 70>
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/frag_land.jpg")
+class: center
+--
+.content-box-gray[
+# Functional ecology
+]
+--
+.pull-left[
+<img src=libs/geb.png width = 400>
+<img src= libs/bae.png width = 400>
+]
+--
+.pull-right[
+<img src= libs/geb_fig.png width = 500>
+.content-box-gray[[Pinho et al 2021](https://onlinelibrary.wiley.com/doi/abs/10.1111/geb.13309)]
+
+<img src=libs/facepe.png width = 70>
+<img src=libs/cnpq.png width = 70>
+]
+
+
+---
+class: center, middle
+# How people benefit from biodiversity?
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/vaqueiro.png")
+class: center
+--
+.content-box-gray[
+# Social-Ecological Landscapes
+]
+.pull-left[
+<img src= libs/sena_paper.png  width = 400>
+<img src=libs/specht.png width = 400>
+<img src= libs/calaca.png width = 400>
+
+]
+--
+.pull-right[
+<img src= libs/sena_fig.png width = 350>
+
+.content-box-gray[[Sena et al 2021](https://onlinelibrary.wiley.com/doi/full/10.1111/rec.13599)]
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/pasto.jpeg")
+class: center
+--
+.content-box-gray[
+# Political Ecology of Restoration
+]
+--
+.pull-left[
+<img src= libs/wef_paper.png width = 400>
+<img src=libs/priority.png width = 400>
+<img src= libs/meli.png  width = 400>
+]
+--
+.pull-right[
+<br><br><br>
+<img src= libs/wef.png width = 500>
+
+.content-box-gray[[Melo et al 2021](https://www.nature.com/articles/s41893-020-00608-z)]
+
+<img src=libs/funbio.jpg width = 90>
+<img src=libs/cnpq.png width = 70>]
+
+
+---
+background-position: center
+background-size: 80%
+background-image: url("libs/2.png")
+
+---
+background-position: center, middle
+background-size: 120%
+background-image: url("libs/research_plan.jpg")
+class: middle, center
+.content-box-gray[
+# Research Plans]
+
+
+
+---
+background-position: center, middle
+background-size: 120%
+background-image: url("libs/milpa.jpg")
+class: middle, center
+.content-box-gray[
+# Objective 1: Evaluate the functional strucure of social-ecological landscapes]
+
+---
+## Fucntional profile of proliferating species
+.pull-left[
+### - SLA, LA y LDMC
+### - HMax, Masa de Semillas y WD
+
+<img src=libs/gs.png width = 800>
+]
+
+--
+
+.pull-right[
+<img src=libs/rest_func.png>
+]
+---
+.pull-left[
+## Biocultural Restoration
+### - Ethnobotany inventories, ILK
+### - Costumary uses of plants
+
+<img src = libs/zapote.jpg>
+]
+.pull-right[
+
+<img src=libs/sena_fig.png width = 600>
+[Sena et al 2022](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+]
+---
+.pull-left[
+## Landscape strucutre
+### - **Landscape composition:** Habitat amount, land-use types
+### - **Landscape configuration:** Extent of edge areas, isolation
+
+]
+.pull-right[
+<br><br><br><br>
+<img src =libs/landvar.png>
+]
+---
+.left-column[
+## Trait-environement relationships
+
+###- Functional syndromes
+###- Environmental gradients
+###- Species abudance in landscapes
+]
+.right-column[
+<img src=libs/rlq.png width=600>
+]
+
+---
+background-position: center, middle
+background-size: 120%
+background-image: url("libs/cenote.jpg")
+class: middle, center
+.content-box-gray[
+# Objective 2: Promote the creation of an East-African Alliance for Restoration]
+
+---
+# [Atlantic Forest Restoration Pact - Brazil](https://pactomataatlantica.org.br/)
+.pull-left[<img src=https://www.pactomataatlantica.org.br/wp-content/uploads/2021/06/logo-pacto-seo.png width=600>]
+
+.pull-right[<img src=https://pactomataatlantica.org.br/wp-content/uploads/2021/05/mapa-restauracao.jpg width = 600>
+
+]
+
+---
+# East-African Alliance for Restoration
+.pull-left[<img src=libs/veg_kenya.png width=700>]
+.pull-right[
+## Principles
+### - Mapping opportunities for restoration
+### - Establishment of common priinciples
+### - Coordination of actors
+### - Social-economical commitments
+
+]
+
+
+---
+class: center, middle, inverse
+# Plans for NTU
+
+---
+.left-column[
+
+# New Reseach  Group 
+
+### Ecology and management of social-ecological landscapes
+### Biodiversity-Ecosystem fucntioning relationships
+
+]
+.right-column[
+
+.right[
+
+### On the role of forest or improving human well-being
+<img src=libs/wef.png width= 700>
+
+]
+]
+
+---
+# Training and capacity building
+.pull-left[
+
+## [Conservation and Ecology at NTU](https://www.ntu.ac.uk/course/conservation-ecology#pgCourseList)
+
+<img src=libs/squir.png>
+]
+.pull-right[
+## Courses I can teach:
+### Field course on ecology of tropical landscapes
+### Restoration Ecology
+### Political Ecology
+]
+
+---
+# Fundraising potential
+.pull-left[
+
+
+<img src=libs/gcrf.png>
+
+.pull-left[
+<img src=https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Department_for_Environment%2C_Food_and_Rural_Affairs_logo.svg/1920px-Department_for_Environment%2C_Food_and_Rural_Affairs_logo.svg.png width = 200>]
+.pull-right[
+<img src=https://wikiimg.tojsiabtv.com/wikipedia/en/thumb/c/c4/Vectorised_colour_logo_of_the_Royal_Geographical_Society.svg/1200px-Vectorised_colour_logo_of_the_Royal_Geographical_Society.svg.png width = 200>
+
+]]
+
+---
+
+class: middle, center
+
+# Thank you
+# Obrigado

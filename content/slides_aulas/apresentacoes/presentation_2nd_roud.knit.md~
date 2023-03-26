@@ -1,0 +1,482 @@
+---
+title: "Biodiversity in social-ecological landscapes"
+subtitle: "Research, teaching and outreach strategies"
+author: "Dr. Felipe Melo"
+institute: ""
+date: ""
+encoding: "UTF-8"
+output: 
+  xaringan::moon_reader:
+    libs_dir: libs
+    css: ["custom_slides.css", "default","default-fonts"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "macros.js"
+      
+
+---
+
+
+
+# Presentation structure
+--
+
+##- Research interests and background
+--
+
+##- Teaching philosophy and practice
+--
+
+##- Science outreach achievements
+--
+
+##- Future plans for the Copernicus Institute
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/usga_land.png")
+class: center, middle
+--
+.content-box-gray[
+# Research interests and background
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/mahli.png")
+.pull-right[
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+[Malhi et al (2014) Annual Review of Environment and Resources](https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-030713-155141)]
+
+---
+backgound-color:
+class: center, middle
+
+# How is biodiversity organized in human-modified landscapes?
+---
+background-position: center
+background-size: cover
+background-image: url("libs/neoland.png")
+class: center
+--
+.content-box-gray[
+# Biotic homogenization]
+--
+.pull-left[
+<img src=libs/biotic.png width = 400>>
+<img src= libs/fewwiners.png width = 400>>
+<img src= libs/filgueiras.png width = 400>
+]
+
+--
+.pull-right[
+<img src= libs/fig_win.jpg width = 500>
+<img src=libs/boti.jpeg width = 150>
+<img src=libs/capes.jpg width = 70>
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/landscape.png")
+class: center
+--
+.content-box-gray[
+# Landscape ecology
+]
+--
+.pull-left[
+<img src=libs/pathways.png width = 400>
+<img src= libs/sedlings.png width = 400>
+<img src= libs/design_vic.png width = 400>]
+
+--
+.pull-right[
+<img src= libs/sec_suc.png width = 500>
+
+
+<img src=libs/conacyt.png width = 70>
+<img src=libs/facepe.png width = 70>
+<img src=libs/cnpq.png width = 70>
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/frag_land.jpg")
+class: center
+--
+.content-box-gray[
+# Functional ecology
+]
+--
+.pull-left[
+<img src=libs/geb.png width = 400>
+<img src= libs/bae.png width = 400>
+]
+--
+.pull-right[
+<img src= libs/geb_fig.png width = 500>
+.content-box-gray[[Pinho et al 2021](https://onlinelibrary.wiley.com/doi/abs/10.1111/geb.13309)]
+
+<img src=libs/facepe.png width = 70>
+<img src=libs/cnpq.png width = 70>
+]
+
+
+---
+class: center, middle
+# How people benefit from biodiversity?
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/vaqueiro.png")
+class: center
+--
+.content-box-gray[
+# Social-Ecological Landscapes
+]
+.pull-left[
+<img src= libs/sena_paper.png  width = 400>
+<img src=libs/specht.png width = 400>
+<img src= libs/calaca.png width = 400>
+
+]
+--
+.pull-right[
+<img src= libs/sena_fig.png width = 350>
+
+.content-box-gray[[Sena et al 2021](https://onlinelibrary.wiley.com/doi/full/10.1111/rec.13599)]
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/pasto.png")
+class: center
+--
+.content-box-gray[
+# Political Ecology of Restoration
+]
+--
+.pull-left[
+<img src= libs/wef_paper.png width = 400>
+<img src=libs/priority.png width = 400>
+<img src= libs/meli.png  width = 400>
+]
+--
+.pull-right[
+<br><br><br>
+<img src= libs/wef.png width = 500>
+
+.content-box-gray[[Melo et al 2021](https://www.nature.com/articles/s41893-020-00608-z)]
+
+<img src=libs/funbio.jpg width = 90>
+<img src=libs/cnpq.png width = 70>]
+
+
+---
+background-position: center
+background-size: 80%
+background-image: url("libs/2.png")
+
+---
+background-position: center, middle
+background-size: 120%
+background-image: url("libs/teaching.jpeg")
+class: middle, center
+.content-box-gray[
+# Teaching philosophy and practice]
+
+---
+background-position: center, middle
+background-size: cover
+background-image: url("libs/freire.jpg")
+class: center
+--
+.content-box-gray[
+# Paulo Freire's **critical pedagogy**
+]
+
+--
+<img src=libs/critical2.png width = 600>
+
+---
+background-position: center, middle
+background-size: cover
+background-image: url("libs/curso_chajul.jpg")
+
+--
+class: center
+.content-box-gray[
+# Real-world problem solving
+]
+
+<img src=libs/pbl.jpg width = 800>
+
+---
+background-position: center, middle
+background-size: 100%
+background-image: url("libs/cc.jpg")
+
+--
+class: center
+.content-box-gray[
+# in-Field learning
+]
+.pull-left[
+<img src=libs/livro_cc.png width = 350>]
+.pull-right[
+<img src=libs/paper_estud.png width = 500>
+<img src=libs/cc_paper.png width = 500>]
+
+
+---
+# Training new scientists (BSc)
+.pull-left[
+
+## [Global Sustainability Science](https://www.uu.nl/bachelors/en/global-sustainability-science)
+
+<img src=libs/bsc_uu.png width=380>
+]
+.pull-right[
+## Planned courses
+### Field-course in ecology and conservation of novel landscapes
+### Landscape Ecology
+### Restoration Ecology
+]
+---
+# Training new scientists (MSc)
+.pull-left[
+## [Sustainable Development](https://www.uu.nl/masters/en/sustainable-development)
+
+<img src=libs/master.png width=400>
+]
+.pull-right[
+## Planned courses
+### Field-course in ecology and conservation of novel landscapes
+### Landscape Ecology
+### Political Ecology
+### Conservation in the Global South
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/cc_mex.jpeg")
+
+--
+.content-box-gray[
+#Field-course in Ecology and Conservation of Novel Landscapes]
+.pull-left[
+
+.content-box-gray[
+##Goals
+### - Conceptualize novel landscapes
+### - Identify key knowledge gaps
+### - Improve writing and analytical skills
+### - Identify  key conservation challenges
+]]
+
+
+---
+background-position: center, middle
+background-size: 150%
+background-image: url("libs/jargon.jpg")
+class: center, middle
+.content-box-gray[
+# Science outreach]
+
+---
+# Science dissemination
+.left-column[
+## A weekly radio show on STEM [@olaboratiofm](https://www.instagram.com/olaboratoriofm/)
+### Organized by lab team <br> (PhD and PosDocs)
+### Public funds
+]
+.right-column[
+
+<img src=libs/labfm.png width = 650>
+]
+
+---
+# Science dissemination
+.left-column[
+## New languages
+### [Special issue on the Caatinga dryforest](https://pp.nexojornal.com.br/temas/?pagina=2&tema=Biodiversidade)
+
+<img src=libs/bpbes.png>
+]
+.right-column[
+
+<img src=libs/nexo.png width = 650>
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/tatu2.png")
+class: center
+--
+.content-box-gray[
+# Public Policy on Biodiversity Conservation
+]
+--
+.pull-left[
+<img src= libs/eolic.png width = 400>
+<img src= libs/fuleco1.png width = 400>
+<img src= libs/fuleco2.png  width = 400>
+]
+--
+.pull-right[
+<img src= libs/ipbes.png width = 500>
+]
+
+---
+<iframe width="1100" height="600" src="https://www.youtube.com/embed/rQHAgyrXims" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+background-position: center, middle
+background-size: contain
+background-image: url("libs/research_plan.jpg")
+class: center, middle
+.content-box-gray[
+# How do my plans align with research at Copernicus Institute?]
+
+---
+class: center, middle
+# Research program:
+# **Biodiversity in social-ecological landscapes**
+
+---
+background-position: center, middle
+background-size: cover
+background-image: url("libs/homen_caatinga.jpg")
+class: center, middle
+
+.content-box-gray[
+# Q1) What is the contribution of nature to human livelihoods in tropical forests?
+]
+
+---
+.left-column[
+
+## Forest security  
+##The role of forest for people in working landscapes
+
+**Research Grant 70k€**
+<img src="libs/cnpq.png" width= 650>
+
+
+]
+.right-column[
+
+.right[
+<br><br>
+<br><br>
+<img src=libs/wef.png width= 800>
+
+[Melo et al (2021)](https://www.nature.com/articles/s41893-020-00608-z)
+]
+]
+
+---
+.left-column[
+## Forest~Poverty
+## Boom-and-bust development
+####Alencar et al (in prep)
+
+<img src=libs/caat.jpg>
+]
+.right-column[
+.center[
+<img src=libs/forest_poverty.png width = 750>]]
+
+---
+background-image: url("libs/vulne.png")
+background-size: cover
+
+---
+background-position: center, middle
+background-size: cover
+background-image: url("libs/frag_land2.jpg")
+class: center, middle
+
+.content-box-gray[
+# Q2) How are biodiversity and ecosystem functions related in working landscapes?]
+---
+.left-column[
+## cDEEP - Caatina Dry Ecosystem Ecological Program
+### - Nutrient availability
+### - Invasive species
+### - Drought
+**Research Grants of 68k €**
+
+<img src="libs/cnpq.png" width= 100>
+<img src="libs/funbio.jpg" width= 100>
+
+]
+.right-column[
+<iframe width="780" height="521" src="https://www.youtube.com/embed/C21RHdxeu3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+###- in partnership with [Dr. Thiago Gonçalves-Souza](https://scholar.google.com/citations?user=TjaP2l8AAAAJ&hl=pt-BR)
+]
+
+---
+background-size: cover
+background-image: url("libs/cdeep_result.png")
+
+.content-box-gray[Carmo et al (under review)]
+
+
+---
+# Fundraising strategy: <span style="color:red"> Biodiversity in working landscapes</span> 
+.pull-left[
+## Public funds
+
+<img src=libs/erc_eu.png width = 250>
+<img src=libs/nwo.jpg width = 150>
+
+]
+.pull-right[
+## Diverse sources
+<img src= libs/horizon.png>
+<img src=libs/efc.jpg width = 150>
+<img src= libs/biodiversa.png>
+]
+
+---
+# Expand collaboration networks
+.pull-left[
+## -New dedicated Research Group: **Biodiversity in Social-Ecological Landscapes**
+## -Recruit BSC, MSC and PhD students
+]
+
+.pull-right[
+.content-box-gray[
+<img src=libs/darwin_heading.png width = 600>]
+
+<img src=libs/land.png width = 400>
+
+<img src=libs/globalgoals.png width = 400>
+]
+
+
+---
+background-position: center
+background-size: 100%
+background-image: url("libs/sdg.png")
+
+---
+
+class: middle, center
+# Dankuwel
+# Thank you
+# Obrigado
