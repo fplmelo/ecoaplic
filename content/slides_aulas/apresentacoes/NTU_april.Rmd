@@ -194,7 +194,17 @@ class: center
 <img src=libs/funbio.jpg width = 90>
 <img src=libs/cnpq.png width = 70>]
 
+---
+background-position: center
+background-size: cover
+background-image: url("libs/fpp_map.jpg")
+class: center
+.content-box-gray[
+# Forest and development
+]
 
+--
+<img src=libs/gec_pic.png width = 700>
 ---
 background-position: center
 background-size: 80%
@@ -406,27 +416,6 @@ background-position: center, middle
 background-size: 100%
 background-image: url("libs/cifor.png")
 class: middle, center
-
----
-# [Atlantic Forest Restoration Pact - Brazil](https://pactomataatlantica.org.br/)
-.pull-left[<img src=https://www.pactomataatlantica.org.br/wp-content/uploads/2021/06/logo-pacto-seo.png width=600>]
-
-.pull-right[<img src=https://pactomataatlantica.org.br/wp-content/uploads/2021/05/mapa-restauracao.jpg width = 600>
-
-]
-
----
-# East-African Alliance for Restoration
-.pull-left[<img src=libs/veg_kenya.png width=700>]
-.pull-right[
-## Principles
-### - Mapping opportunities for restoration
-### - Establishment of common priinciples
-### - Coordination of actors
-### - Social-economical commitments
-
-]
-
 
 ---
 class: center, middle, inverse
