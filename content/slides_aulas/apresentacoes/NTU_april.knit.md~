@@ -1,5 +1,5 @@
 ---
-title: "Biodiversity in social-ecological landscapes"
+title: "Ecological restoration of social-ecological landscapes"
 subtitle: "Research, teaching and outreach strategies"
 author: "Dr. Felipe Melo"
 institute: ""
@@ -28,14 +28,50 @@ output:
 ##- Research interests and background
 --
 
+##- Teaching philosophy and practice
+--
+
+##- Science outreach achievements
+--
+
 ##- Future plans for NTU
+
+---
+class: center, middle
+
+# Nice to meet you
+# I am Felipe
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/recife.png")
+class: center, middle
+
+---
+background-position: center
+background-size: 85%
+background-image: url("libs/family.jpg")
+class: center, middle
+
+---
+background-position: center
+background-size: 85%
+background-image: url("libs/guitar.jpg")
+class: center, middle
+
+---
+background-position: center
+background-size: 85%
+background-image: url("libs/dogs.jpg")
+class: center, middle
 
 ---
 background-position: center
 background-size: cover
 background-image: url("libs/usga_land.png")
 class: center, middle
---
+
 .content-box-gray[
 # Research interests and background
 ]
@@ -127,8 +163,12 @@ class: center
 
 
 ---
+background-position: center
+background-size: cover
+background-image: url("libs/biodiv.webp")
 class: center, middle
-# How people benefit from biodiversity?
+.content-box-gray[
+# How people benefit from biodiversity?]
 
 ---
 background-position: center
@@ -137,7 +177,7 @@ background-image: url("libs/vaqueiro.png")
 class: center
 --
 .content-box-gray[
-# Social-Ecological Landscapes
+# Socio-Ecological Landscapes
 ]
 .pull-left[
 <img src= libs/sena_paper.png  width = 400>
@@ -145,7 +185,7 @@ class: center
 <img src= libs/calaca.png width = 400>
 
 ]
---
+
 .pull-right[
 <img src= libs/sena_fig.png width = 350>
 
@@ -177,11 +217,160 @@ class: center
 <img src=libs/funbio.jpg width = 90>
 <img src=libs/cnpq.png width = 70>]
 
+---
+background-position: center
+background-size: cover
+background-image: url("libs/fpp_map.jpg")
+class: center
+.content-box-gray[
+# Forest and development
+]
 
+--
+.right[
+<img src=libs/gec_pic.png width = 700>
+]
 ---
 background-position: center
 background-size: 80%
 background-image: url("libs/2.png")
+
+---
+background-position: center, middle
+background-size: 120%
+background-image: url("libs/teaching.jpeg")
+class: middle, center
+.content-box-gray[
+# Teaching philosophy and practice]
+
+---
+background-position: center, middle
+background-size: cover
+background-image: url("libs/freire.jpg")
+class: center
+--
+.content-box-gray[
+# Paulo Freire's **critical pedagogy**
+]
+
+--
+<img src=libs/critical2.png width = 600>
+
+---
+background-position: center, middle
+background-size: cover
+background-image: url("libs/curso_chajul.jpg")
+
+--
+class: center
+.content-box-gray[
+# Real-world problem solving
+]
+
+<img src=libs/pbl.jpg width = 800>
+
+---
+background-position: center, middle
+background-size: 100%
+background-image: url("libs/cc.jpg")
+
+--
+class: center
+.content-box-gray[
+# in-Field learning
+]
+.pull-left[
+<img src=libs/livro_cc.png width = 350>]
+.pull-right[
+<img src=libs/paper_estud.png width = 500>
+<img src=libs/cc_paper.png width = 500>]
+
+
+---
+# Training new scientists (BSc)
+.pull-left[
+
+## [Conservation and Ecology at NTU](https://www.ntu.ac.uk/course/conservation-ecology#pgCourseList)
+
+<img src=libs/squir.png>
+]
+.pull-right[
+## Proposed courses
+### Field course on ecology and conservation of novel landscapes
+### Restoration Ecology
+### Political Ecology
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/cc_mex.jpeg")
+
+--
+.content-box-gray[
+#Field-course in Ecology and Conservation of Novel Landscapes]
+.pull-left[
+
+.content-box-gray[
+##Goals
+### - Conceptualize novel landscapes
+### - Identify key knowledge gaps
+### - Improve writing and analytical skills
+### - Identify  key conservation challenges
+]]
+
+---
+background-position: center, middle
+background-size: 150%
+background-image: url("libs/jargon.jpg")
+class: center, middle
+.content-box-gray[
+# Science outreach]
+
+---
+# Science dissemination
+.left-column[
+## A weekly radio show on STEM [@olaboratiofm](https://www.instagram.com/olaboratoriofm/)
+### Organized by lab team <br> (PhD and PosDocs)
+### Public funds
+]
+.right-column[
+
+<img src=libs/labfm.png width = 650>
+]
+
+---
+# Science dissemination
+.left-column[
+## New languages
+### [Special issue on the Caatinga dryforest](https://pp.nexojornal.com.br/temas/?pagina=2&tema=Biodiversidade)
+
+<img src=libs/bpbes.png>
+]
+.right-column[
+
+<img src=libs/nexo.png width = 650>
+]
+
+---
+background-position: center
+background-size: cover
+background-image: url("libs/tatu2.png")
+class: center
+--
+.content-box-gray[
+# Public Policy for Biodiversity Conservation
+]
+--
+.pull-left[
+<img src= libs/eolic.png width = 400>
+<img src= libs/fuleco1.png width = 400>
+<img src= libs/fuleco2.png  width = 400>
+]
+--
+.pull-right[
+<img src= libs/ipbes.png width = 500>
+]
 
 ---
 background-position: center, middle
@@ -199,18 +388,15 @@ background-size: 120%
 background-image: url("libs/milpa.jpg")
 class: middle, center
 .content-box-gray[
-# Objective 1: Evaluate the functional strucure of social-ecological landscapes]
+# Functional organization of plant communities in social-ecological landscapes]
 
 ---
-## Fucntional profile of proliferating species
+## Functional profile of winner and loser species
 .pull-left[
-### - SLA, LA y LDMC
-### - HMax, Masa de Semillas y WD
+### - Leaf and wood traits
 
 <img src=libs/gs.png width = 800>
 ]
-
---
 
 .pull-right[
 <img src=libs/rest_func.png>
@@ -218,8 +404,8 @@ class: middle, center
 ---
 .pull-left[
 ## Biocultural Restoration
-### - Ethnobotany inventories, ILK
-### - Costumary uses of plants
+### - Ethnobotanical plant inventories (ILK)
+### - Costumary uses of plants (nature values)
 
 <img src = libs/zapote.jpg>
 ]
@@ -230,7 +416,7 @@ class: middle, center
 ]
 ---
 .pull-left[
-## Landscape strucutre
+## Landscape Ecology 
 ### - **Landscape composition:** Habitat amount, land-use types
 ### - **Landscape configuration:** Extent of edge areas, isolation
 
@@ -239,17 +425,6 @@ class: middle, center
 <br><br><br><br>
 <img src =libs/landvar.png>
 ]
----
-.left-column[
-## Trait-environement relationships
-
-###- Functional syndromes
-###- Environmental gradients
-###- Species abudance in landscapes
-]
-.right-column[
-<img src=libs/rlq.png width=600>
-]
 
 ---
 background-position: center, middle
@@ -257,80 +432,55 @@ background-size: 120%
 background-image: url("libs/cenote.jpg")
 class: middle, center
 .content-box-gray[
-# Objective 2: Promote the creation of an East-African Alliance for Restoration]
-
----
-# [Atlantic Forest Restoration Pact - Brazil](https://pactomataatlantica.org.br/)
-.pull-left[<img src=https://www.pactomataatlantica.org.br/wp-content/uploads/2021/06/logo-pacto-seo.png width=600>]
-
-.pull-right[<img src=https://pactomataatlantica.org.br/wp-content/uploads/2021/05/mapa-restauracao.jpg width = 600>
-
+# Expand Restoration Network
 ]
 
 ---
-# East-African Alliance for Restoration
-.pull-left[<img src=libs/veg_kenya.png width=700>]
-.pull-right[
-## Principles
-### - Mapping opportunities for restoration
-### - Establishment of common priinciples
-### - Coordination of actors
-### - Social-economical commitments
 
-]
-
+background-position: center, middle
+background-size: 100%
+background-image: url("libs/cifor.png")
+class: middle, center
 
 ---
 class: center, middle, inverse
 # Plans for NTU
 
 ---
-.left-column[
+background-position: center, middle
+background-size: 100%
+background-image: url("libs/future_eco.png")
+class: middle, center
 
-# New Reseach  Group 
-
-### Ecology and management of social-ecological landscapes
-### Biodiversity-Ecosystem fucntioning relationships
-
-]
-.right-column[
-
-.right[
-
-### On the role of forest or improving human well-being
-<img src=libs/wef.png width= 700>
-
-]
-]
 
 ---
-# Training and capacity building
-.pull-left[
-
-## [Conservation and Ecology at NTU](https://www.ntu.ac.uk/course/conservation-ecology#pgCourseList)
-
-<img src=libs/squir.png>
-]
-.pull-right[
-## Courses I can teach:
-### Field course on ecology of tropical landscapes
-### Restoration Ecology
-### Political Ecology
-]
+background-position: center, middle
+background-size: 100%
+background-image: url("libs/five_areas.jpeg")
+class: middle, center
 
 ---
-# Fundraising potential
-.pull-left[
+background-position: center, middle
+background-size: 100%
+background-image: url("libs/living_lab.jpeg")
+class: middle, center
 
+--
 
-<img src=libs/gcrf.png>
+.content-box-gray[
+#"The urgency of climate change and biodiversity loss requires a strong focus on ecological learning through implementation, experimentation and practice."]
 
-.pull-left[
-<img src=https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Department_for_Environment%2C_Food_and_Rural_Affairs_logo.svg/1920px-Department_for_Environment%2C_Food_and_Rural_Affairs_logo.svg.png width = 200>]
-.pull-right[
-<img src=https://wikiimg.tojsiabtv.com/wikipedia/en/thumb/c/c4/Vectorised_colour_logo_of_the_Royal_Geographical_Society.svg/1200px-Vectorised_colour_logo_of_the_Royal_Geographical_Society.svg.png width = 200>
+---
+background-position: center, middle
+background-size: 100%
+background-image: url("libs/wholescapes.jpeg")
+class: middle, center
 
-]]
+--
+
+.content-box-gray[
+#"There is a need to understand the connections and trade-offs which act across these very different scales using the idea of “wholescapes”."]
+
 
 ---
 
