@@ -7,16 +7,17 @@ show_social_links: true # specify social accounts in site config
 audio_link_label: "" # leave blank to exclude
 link_list_label: "Affiliations" # bookmarks, elsewhere, etc.
 link_list:
-- name: UFPE
+
+- name: Nottingham Trent University
+  url: https://www.ntu.ac.uk
+  
+- name: Universidade Federal de Pernambuco
   url: https://www.ufpe.br
   
-- name: PPG Biologia Vegetal
-  url: https://www.ppgbv.com.br/
+- name: Associação Brasileira de Ciência Ecológica e Conservação
+  url: https://www.abecor.org.br/
   
-- name: PPG Etnobiologia e Conservação
-  url: http://www.pgetno.ufrpe.br/
-  
-- name: CEPAN
+- name: Centro de Pesquisas Ambeitnais do Nordeste  - CEPAN
   url: https://cepan.org.br
 
 ---
