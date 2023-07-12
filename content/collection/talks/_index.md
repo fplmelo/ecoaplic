@@ -23,6 +23,8 @@ weight: 2
 
 - [SOBRE 2022](https://ecoaplic.org/slides_aulas/apresentacoes/sobre_2022#1)
 
+- [Armadillo NTU](https://ecoaplic.org/slides_aulas/apresentacoes/tatu.html#/title-slide)
+
 
 ## Autor
 
