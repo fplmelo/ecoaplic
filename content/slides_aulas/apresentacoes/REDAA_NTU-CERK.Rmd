@@ -1,0 +1,96 @@
+---
+title: "BioRestNet: A Network for Biocultural Restoration"
+subtitle: "NTU + CERK"
+author: ""
+institute: ""
+date: ""
+encoding: "UTF-8"
+output: 
+  xaringan::moon_reader:
+    libs_dir: libs
+    css: ["custom_slides.css", "default","default-fonts"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+      beforeInit: "macros.js"
+      
+      
+---
+
+
+```{r, echo=FALSE}
+xaringanExtra::use_tile_view()
+xaringanExtra::use_scribble()
+xaringanExtra::use_fit_screen()
+library(xaringanExtra)
+library(xaringanthemer)
+style_xaringan(
+
+  background_color = "#F5F5F2"
+
+)
+```
+
+# Presentation structure
+--
+
+##- REDAA strategy and opportunities
+--
+
+##- Draft of main ideas
+--
+
+##- Important dates
+
+---
+class: middle, center
+# What REDAA says?
+
+---
+class: center
+# - Geographycal prioritisation
+
+.pull-left[
+<img src = libs/redaa2.png>
+
+## Biodiversity hotspots
+]
+
+--
+.pull-right[
+
+<img src=https://www.freepnglogos.com/uploads/tick-png/check-mark-tick-vector-graphic-21.png width=200>
+
+]
+
+---
+class: center
+# - Geographycal prioritisation
+
+.pull-left[
+<img src = libs/redaa3.png>
+
+## Restoration  hotspots
+]
+
+--
+.pull-right[
+
+<img src=https://www.freepnglogos.com/uploads/tick-png/check-mark-tick-vector-graphic-21.png width=200>
+
+]
+
+---
+class: center, middle
+<img src = libs/redaa5.png>
+
+---
+class: center, middle
+<img src = libs/redaa6.png>
+
+---
+
+
+
