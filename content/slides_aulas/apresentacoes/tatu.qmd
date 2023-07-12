@@ -38,7 +38,7 @@ Fuleco = **Foo**tball + **Eco**logy
 :::: {.columns}
 
 ::: {.column width="50%"}
-Hyper-diverse tropical dry forest
+H   yper-diverse tropical dry forest
 
 <img src= https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489119840-f11984-01-9780128160961.jpg>
 
