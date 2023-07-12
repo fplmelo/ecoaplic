@@ -8,7 +8,7 @@ editor: visual
 ## 2014 FIFA Word Cup
 ### The shame
 
-<img src=https://i.dailymail.co.uk/i/pix/2014/07/09/article-2685283-1F7FDE1D00000578-666_634x620.jpg>
+<img src=https://i.dailymail.co.uk/i/pix/2014/07/09/article-2685283-1F7FDE1D00000578-666_634x620.jpg width = 900>
 
 
 ## The opportunity
@@ -38,7 +38,7 @@ Fuleco = **Foo**tball + **Eco**logy
 :::: {.columns}
 
 ::: {.column width="50%"}
-Dry hyper-diverse tropical dry forest
+Hyper-diverse tropical dry forest
 
 <img src= https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489119840-f11984-01-9780128160961.jpg>
 
