@@ -1,8 +1,12 @@
 /*-- scss:defaults --*/
 
-$body-bg: #191919;
+$body-bg:  #9e043d;
 $body-color: #fff;
 $link-color: #42affa;
+
+.test-background {
+    background-color: #9e043d !important;
+}
 
 /*-- scss:rules --*/
 
@@ -11,16 +15,7 @@ $link-color: #42affa;
   padding-left: 0.5em;
 }
 
-// fonts
 
-$font-family-sans-serif: "Palatino Linotype", "Book Antiqua", Palatino,
-  FreeSerif, serif !default;
-$presentation-font-size-root: 40px;
-$presentation-font-smaller: 0.7;
-$presentation-h1-font-size:	2.5em;
-$presentation-h2-font-size:	1.6em;
-$presentation-h3-font-size:	1.3em;
-$presentation-h4-font-size:	1em;
 
 
 

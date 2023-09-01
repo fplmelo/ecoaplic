@@ -1,19 +1,21 @@
 ---
 title: "Conservation Priorities"
 author: "Felipe Melo"
-format: revealjs
-editor: visual
+format:
+  revealjs:
+    incremental: true
+    chalkboard: true
 ---
 
-## Who am I?
+## Who am I? 
 
 Hi, my name is Felipe Melo and I'll be your main teacher/tutor during this module dedicated to discuss **Conservation Priorities**
 
 :::: {.columns}
 
-::: {.column width="50%"} 
+::: {.column width="50%"}
 
-<img src="https://ecoaplic.org/about/sidebar/avatar.jpg" width="400"/>
+<img src="https://ecoaplic.org/about/sidebar/avatar.jpg"width="400"/>
 
 :::
 
@@ -25,40 +27,48 @@ Hi, my name is Felipe Melo and I'll be your main teacher/tutor during this modul
 
 ::::
 
-
-## A little of my history
+## A brief of my history
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="50%"} 
+
 BSc in Biology
--   Effects of defaunation on seed dispersal
-<img src="https://insider.si.edu/wp-content/uploads/2012/07/Ziegler_CRW_9028_RJ-630x420.jpg" width="500"/>
+
+-   Effects of defaunation on seed dispersal <img src="https://insider.si.edu/wp-content/uploads/2012/07/Ziegler_CRW_9028_RJ-630x420.jpg" width="500"/> 
+
 :::
 
 ::: {.column width="50%"} 
+
 MSc in Ecology
--   Effects of defaunation on seed dispersal
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S0169534713000037-gr1b1.jpg" width="500"/>
+
+-   Effects of defaunation on seed dispersal <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0169534713000037-gr1b1.jpg" width="500"/> 
+
 :::
 
 ::::
 
-## A little of my history
+## A brief of my history
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
 PhD in Ecology
--   Forest regeneration
-<img src="https://www.historyhit.com/app/uploads/fly-images/5150075/Calakmul-788x537.jpg" width="500"/>
+
+-   Forest regeneration 
+
+<img src="https://www.historyhit.com/app/uploads/fly-images/5150075/Calakmul-788x537.jpg" width="500"/> 
+
 :::
 
-::: {.column width="50%"} 
+::: {.column width="50%"}
+
 -   More contact with diverse conservation challenges
 -   Deep immersion in local communities
--   Learn to listens
+-   Learn to listens 
+
 :::
 
 ::::
@@ -75,15 +85,15 @@ PhD in Ecology
 
 Applied Ecology Lab
 
-- 21 BSC
-- 9 MSc 
-- 6 PhD
+-   21 BSC
+-   9 MSc
+-   6 PhD
 
 :::
 
-::: {.column width="50%"} 
+::: {.column width="50%"}
 
-<img src="img/labufpe.jpg" width="600"/> 
+<img src="img/labufpe.jpg" width="600"/>
 
 :::
 
@@ -97,39 +107,69 @@ Applied Ecology Lab
 
 National and International Forums
 
-<img src=https://pbs.twimg.com/profile_images/1244188044703432704/q9XjT8TZ_400x400.png>
+<img src="https://pbs.twimg.com/profile_images/1244188044703432704/q9XjT8TZ_400x400.png"/>
 
 :::
 
-::: {.column width="50%"} 
+::: {.column width="50%"}
 
-<img src=img/talk.jpg>
+<img src="img/talk.jpg"/>
 
 :::
 
 ::::
 
-## Creation of Protected Areas
+# Conservation priorities{.center}
 
+## Module Aims
 
+To understand why, where and how conservation conflicts emerge, and how to set priorities for conservation in a changing world 
+
+<img src=https://extinctionrebellion.de/media/images/case_for_convivial_conservatio.2e16d0ba.fill-768x432-c75.png> 
+
+## Module Contents{.incremental}
+
+- History of **conservation conflicts**
+- Political Ecology
+- Systematic planning of conservation
+- Several conservation debates
+- World views
+
+# Get prepared to share your world views!! {.center}
+
+## Now, a story...{.center}
 
 ## 2014 FIFA Word Cup
+::::{.columns}
+:::{.column width="50%"}
+::: {.fragment}
+### Expectation
+<img src=https://bolavip.com/export/sites/bolavip/img/2022/06/30/gettyimages-989680130_x1x.jpg_853787323.jpg>
+:::
+:::
 
-### The shame
+:::{.column width="50%"}
+::: {.fragment}
+### Reality
 
 <img src="https://i.dailymail.co.uk/i/pix/2014/07/09/article-2685283-1F7FDE1D00000578-666_634x620.jpg" width="900"/>
+:::
+:::
+::::
 
 ## The opportunity
 
 :::: {.columns}
 
 ::: {.column width="50%"} 
+
 Fuleco = **Foo**tball + **Eco**logy
 
 <img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Mascote_Copa.png"/> 
+
 :::
 
-::: {.column width="50%"} 
+::: {.column width="50%"}
 
 <img src="https://s2.glbimg.com/xkGe6E18AKKCYPDxcBHy9ECzFWOHdcy2r_WS_LvLLbNIoz-HdGixxa_8qOZvMp3w/s.glbimg.com/jo/g1/f/original/2012/09/12/montagem_tatu.jpg"/> 
 :::
@@ -138,13 +178,14 @@ Fuleco = **Foo**tball + **Eco**logy
 
 ## *Tolypeutes tricinctus*
 
-<img src="libs/fuleco_mapa.png" width="800"/>
+<img src="img/fuleco_mapa.png" width="800"/>
 
 ## Caatinga
 
 :::: {.columns}
 
 ::: {.column width="50%"} 
+
 Hyper-diverse tropical dry forest
 
 <img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489119840-f11984-01-9780128160961.jpg"/>
@@ -157,7 +198,6 @@ Hyper-diverse tropical dry forest
 -   High level of economic poverty
 -   Forest-dependent people
 
-
 :::
 
 ::::
@@ -166,7 +206,7 @@ Hyper-diverse tropical dry forest
 
 :::: {.columns}
 
-::: {.column width="60%"} 
+::: {.column width="60%"}
 
 1 - Conservation plan
 
@@ -176,11 +216,12 @@ Hyper-diverse tropical dry forest
 
 :::
 
-::: {.column width="40%"} 
+::: {.column width="40%"}
 
 <img src="img/fuleco1.png"/>
 
 <img src="img/capa_bio.jpg" width="300"/> 
+
 :::
 
 ::::

@@ -6,51 +6,44 @@ editor: visual
 ---
 
 ## 2014 FIFA Word Cup
+
 ### The shame
 
-<img src=https://i.dailymail.co.uk/i/pix/2014/07/09/article-2685283-1F7FDE1D00000578-666_634x620.jpg width = 900>
-
+<img src="https://i.dailymail.co.uk/i/pix/2014/07/09/article-2685283-1F7FDE1D00000578-666_634x620.jpg" width="900"/>
 
 ## The opportunity
 
 :::: {.columns}
 
-::: {.column width="50%"}
-Fuleco = **Foo**tball + **Eco**logy
+::: {.column width="50%"} Fuleco = **Foo**tball + **Eco**logy
 
-<img src= https://upload.wikimedia.org/wikipedia/pt/b/bf/Mascote_Copa.png>
-:::
+<img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Mascote_Copa.png"/> :::
 
-::: {.column width="50%"}
-<img src = libs/tatu.png>
-:::
+::: {.column width="50%"} <img src="libs/tatu.png"/> :::
 
 ::::
 
-
 ## *Tolypeutes tricinctus*
 
-
-<img src=libs/fuleco_mapa.png width = 800>
+<img src="libs/fuleco_mapa.png" width="800"/>
 
 ## Caatinga
 
 :::: {.columns}
 
-::: {.column width="50%"}
-H   yper-diverse tropical dry forest
+::: {.column width="50%"} H yper-diverse tropical dry forest
 
-<img src= https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489119840-f11984-01-9780128160961.jpg>
+<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489119840-f11984-01-9780128160961.jpg"/>
 
 :::
 
 ::: {.column width="50%"}
-- < 5% within Protected Areas
-- High level of economic poverty
-- Forest-dependent people
 
-<img src=libs/caat_seca2.jpg width = 400>
-:::
+-   \< 5% within Protected Areas
+-   High level of economic poverty
+-   Forest-dependent people
+
+<img src="libs/caat_seca2.jpg" width="400"/> :::
 
 ::::
 
@@ -58,8 +51,7 @@ H   yper-diverse tropical dry forest
 
 :::: {.columns}
 
-::: {.column width="60%"}
-1 - Conservation plan
+::: {.column width="60%"} 1 - Conservation plan
 
 2 - Invest on the "Parks of the cup"
 
@@ -67,47 +59,43 @@ H   yper-diverse tropical dry forest
 
 :::
 
-::: {.column width="40%"}
-<img src=libs/fuleco1.png>
+::: {.column width="40%"} <img src="libs/fuleco1.png"/>
 
-<img src=libs/capa_bio.jpg width = 300>
-:::
+<img src="libs/capa_bio.jpg" width="300"/> :::
 
 ::::
 
-##  Armadillo 1 x 0 Threats
+## Armadillo 1 x 0 Threats
 
 :::: {.columns}
 
 ::: {.column width="60%"}
 
-<img src=libs/cons_tatu.png width = 400>
-
+<img src="libs/cons_tatu.png" width="400"/>
 
 :::
 
 ::: {.column width="40%"}
 
-<img src=libs/cons_tatu2.png>
+<img src="libs/cons_tatu2.png"/>
 
 :::
 
 ::::
 
-##  Armadillo 1 x 1 Threats
+## Armadillo 1 x 1 Threats
 
 :::: {.columns}
 
 ::: {.column width="60%"}
 
-<img src=https://www.ecodebate.com.br/foto/ucs.jpg width = 400>
-
+<img src="https://www.ecodebate.com.br/foto/ucs.jpg" width="400"/>
 
 :::
 
 ::: {.column width="40%"}
 
-<img src=https://i0.wp.com/oeco.org.br/wp-content/uploads/2020/08/Oeco_Ja%C3%BA_Duda-Menegassi.jpeg?w=1152&ssl=1>
+<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2020/08/Oeco_Ja%C3%BA_Duda-Menegassi.jpeg?w=1152&amp;ssl=1"/>
 
 :::
 
@@ -115,38 +103,41 @@ H   yper-diverse tropical dry forest
 
 ### Brazil invests only R$ 1.02 per hectare of protected area
 
-##  Armadillo 2 x 1 Threats
+## Armadillo 2 x 1 Threats
 
 :::: {.columns}
 
 ::: {.column width="60%"}
 
-<img src=https://i0.wp.com/www.oeco.org.br/wp-content/uploads/2015/12/Per%C3%ADmetro.png width = 600>
-
+<img src="https://i0.wp.com/www.oeco.org.br/wp-content/uploads/2015/12/Per%C3%ADmetro.png" width="600"/>
 
 :::
 
 ::: {.column width="40%"}
 
-- 110k hectares of Protected Area
-- Named after the Armadillo
+-   110k hectares of Protected Area
+-   Named after the Armadillo
 
 :::
 
 ::::
 
 ## An endless game...
+
 ### unsolved conflicts
 
-<img src=https://i0.wp.com/oeco.org.br/wp-content/uploads/2019/09/Chato.jpg?fit=1152%2C768&ssl=1>
+<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2019/09/Chato.jpg?fit=1152%2C768&amp;ssl=1"/>
 
 ## An endless game...
+
 ### unsolved conflicts
 
-<img src=https://i0.wp.com/oeco.org.br/wp-content/uploads/2022/12/Producao-de-caprinos-e-ovinos-e-uma-atividade-desenvolvida-ha-seculos-na-comunidade-rural-Ico-de-Ne-Gomes-muito-antes-da-delimitacao-da-area-da-Reserva-Tatu-Bola-em-Petrolina-Foto-Acervo-pessoal-Lucival.jpeg?w=960&ssl=1>
+<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2022/12/Producao-de-caprinos-e-ovinos-e-uma-atividade-desenvolvida-ha-seculos-na-comunidade-rural-Ico-de-Ne-Gomes-muito-antes-da-delimitacao-da-area-da-Reserva-Tatu-Bola-em-Petrolina-Foto-Acervo-pessoal-Lucival.jpeg?w=960&amp;ssl=1"/>
 
-##
+## 
 
-<iframe width="1128" height="635" src="https://www.youtube.com/embed/rQHAgyrXims" title="O gol do Tatu-bola (The armadillo&#39;s goal)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1128" height="635" src="https://www.youtube.com/embed/rQHAgyrXims" title="O gol do Tatu-bola (The armadillo&#39;s goal)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
 
 ## The end?
