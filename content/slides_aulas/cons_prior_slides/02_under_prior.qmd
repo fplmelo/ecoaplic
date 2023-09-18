@@ -1,5 +1,6 @@
 ---
-title: "Conservation Priorities"
+title: "2-Understanding Priorities"
+subtitle: " "
 author: "Felipe Melo"
 format:
   revealjs:
@@ -8,69 +9,60 @@ format:
     logo: img/ntu_logo.png
     footer: "Conservation Priorities 2023"
     slide-number: true
+    transition: slide
+    background-transition: fade
+
 ---
 
-## Who am I? 
-
-Hi, my name is Felipe Melo and I'll be your main teacher/tutor during this module dedicated to discuss **Conservation Priorities**
+## What is a priority? 
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
-<img src="https://ecoaplic.org/about/sidebar/avatar.jpg"width="400"/>
+<img src="https://dictionary.cambridge.org/external/images/og-image.png"width="400"/>
 
 :::
 
 ::: {.column width="50%"}
 
-[ecoaplic.org](www.ecoaplic.org)
+### *something that is very important and must be dealt with before other things*
 
 :::
 
 ::::
 
-## A brief of my history
+## [The Trolley problem](https://en.wikipedia.org/wiki/Trolley_problem)
 
-:::: {.columns}
+<a title="Original:  McGeddon Vector:  Zapyon, CC BY-SA 4.0 &lt;https://creativecommons.org/licenses/by-sa/4.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Trolley_Problem.svg"><img width="512" alt="Trolley Problem" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Trolley_Problem.svg/512px-Trolley_Problem.svg.png"></a>
 
-::: {.column width="50%"} 
+:::{.fragment}
 
-BSc in Biology
-
--   Effects of defaunation on seed dispersal <img src="https://insider.si.edu/wp-content/uploads/2012/07/Ziegler_CRW_9028_RJ-630x420.jpg" width="500"/> 
+### Chosing priorities in conservation can be an ethical problem
 
 :::
 
-::: {.column width="50%"} 
 
-MSc in Ecology
-
--   Effects of defaunation on seed dispersal <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0169534713000037-gr1b1.jpg" width="500"/> 
-
-:::
-
-::::
-
-## A brief of my history
+## Sacred places
 
 :::: {.columns}
 
 ::: {.column width="50%"}
 
-PhD in Ecology
+ [India](https://www.bbc.com/future/article/20220726-how-religious-worship-is-boosting-conservation-in-india)
 
--   Forest regeneration 
+<img src="https://ychef.files.bbci.co.uk/1600x900/p0cp3hj8.webp" width="500"/> 
 
-<img src="https://www.historyhit.com/app/uploads/fly-images/5150075/Calakmul-788x537.jpg" width="500"/> 
+"Religious practices have preserved an estimated 100,000-150,000 sacred groves across India"
 
 :::
 
 ::: {.column width="50%"}
+[Church of Forest- Ethiopia](https://emergencemagazine.org/film/the-church-forests-of-ethiopia/)
 
--   More contact with diverse conservation challenges
--   Deep immersion in local communities
--   Learn to listens 
+<img src=https://emergencemagazine.org/app/uploads/2021/01/CF_drone2_WEB-1024x575.jpg>
+
+"small pockets of old-growth forest still surround Ethiopia’s churches" 
 
 :::
 
