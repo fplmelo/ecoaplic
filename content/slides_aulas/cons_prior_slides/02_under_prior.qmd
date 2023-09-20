@@ -42,6 +42,7 @@ format:
 
 :::
 
+## Some ways to set "priorities"{.center}
 
 ## Sacred places
 
@@ -68,232 +69,130 @@ format:
 
 ::::
 
-## Work for Environmental NGO
+## Game reserves - Tanzania
 
-<img src="img/book_cepan.png" width="500"/>
+<img src="https://www.africahunting.com/attachments/hunting_tanzania-gif.59497/" width="600"/>
 
-## Academia
 
-:::: {.columns}
+## National Parks
 
-::: {.column width="50%"}
+<img src=https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2021/06/29145128/lake-district-5200654_1920.jpg>
 
-Applied Ecology Lab
+Lake District - UK
 
--   21 BSC
--   9 MSc
--   6 PhD
+## National Parks
 
-:::
+<img src=https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2021/10/15094713/A-jungle-lodge-by-a-river-in-Manu-National-Park-Peru.jpg width = 900>
 
-::: {.column width="50%"}
+Manu - Peru
 
-<img src="img/labufpe.jpg" width="600"/>
+## Indigenous Lands
 
-:::
 
-::::
+![](https://wheretheleavesfall.com/media/images/2021-08-15-07.35.40.original.jpg){.absolute left=0 width="1000" height="600"}
 
-## Public Policies for Conservation
+![](https://www.mott.org/wp-content/uploads/2017/03/Xingu-Basin-Map.jpg){.absolute top=100 left=0 width="250" height="300"}
+
+## Indigenous Lands
+
+
+![](https://cdnuploads.aa.com.tr/uploads/Contents/2022/11/29/thumbs_b_c_461634550bbfee10229441c2a15a0688.jpg?v=140300)
+
+Sami - Finland
+
+## Species-focused conservation
+
+![](https://cdn-images.zoobeauval.com/90QH1Cs9igJmliUeIctAYzW_6Rw=/1600x950/https%3A%2F%2Fs3.eu-west-3.amazonaws.com%2Fimages.zoobeauval.com%2F2021%2F04%2Fsaga-pandas-header-606dcfbed5911.jpg)
+
+## Species-focused conservation
+
+![](https://imagens.ebc.com.br/ssHQbA5eVOGutrcvUXriNWv6whY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/ave_cyanopsitta_spixii_ararinha_azul_foto_camile_ugarini.jpg?itok=RsYMXNq9)
+
+Spix macaw
+
+## Species-focused conservation
+
+![](https://upload.wikimedia.org/wikipedia/commons/d/d0/Two_Psychrolutes_marcidus.jpg){.absolute right=100 width="650" height="550"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/7/7b/Cropped-UAPS-logo.png){.absolute top=200 left=0 width="250" height="200"}
+
+Blobfish
+
+## Priorities are a matter of "scarcity"
 
 ::: {.columns}
 
 ::: {.column width="50%"}
 
-National and International Forums
+### What is scarse?{style="background-color: yellow"}
 
-<img src="https://pbs.twimg.com/profile_images/1244188044703432704/q9XjT8TZ_400x400.png"/>
+- Resources
+- Opportunities
+- Knowledge
+- [Everything!!]{style="color: red;"}
 
 :::
 
+
 ::: {.column width="50%"}
 
-<img src="img/talk.jpg"/>
+:::{.fragment}
+
+<img src=https://d1sjtleuqoc1be.cloudfront.net/wp-content/uploads/2017/10/23215501/Untitled-design-4-860x574.jpg>
+
+:::
 
 :::
 
 ::::
 
-# Conservation priorities{.center}
+## Power of knowledge
 
-## Module Aims
-
-To understand why, where and how conservation conflicts emerge, and how to set priorities for conservation in a changing world 
-
-<img src=https://extinctionrebellion.de/media/images/case_for_convivial_conservatio.2e16d0ba.fill-768x432-c75.png> 
-
-## Module Contents{.incremental}
-
-- History of **conservation conflicts**
-- Political Ecology
-- Systematic planning of conservation
-- Several conservation debates
-- World views
-
-# Get prepared to share your world views!! {.center}
-
-## Now, a story...{.center}
-
-## 2014 FIFA Word Cup
 ::::{.columns}
-:::{.column width="50%"}
-::: {.fragment}
-### Expectation
-<img src=https://bolavip.com/export/sites/bolavip/img/2022/06/30/gettyimages-989680130_x1x.jpg_853787323.jpg>
-:::
+
+:::{.column width="30%"}
+How much do we know about biodiversity?
 :::
 
-:::{.column width="50%"}
-::: {.fragment}
-### Reality
+:::{.column width="70%"}
 
-<img src="https://i.dailymail.co.uk/i/pix/2014/07/09/article-2685283-1F7FDE1D00000578-666_634x620.jpg" width="900"/>
-:::
-:::
-::::
+![](img/biodiv.webp)
 
-## The opportunity
-
-:::: {.columns}
-
-::: {.column width="50%"} 
-
-Fuleco = **Foo**tball + **Eco**logy
-
-<img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Mascote_Copa.png"/> 
-
-:::
-
-::: {.column width="50%"}
-
-<img src="https://s2.glbimg.com/xkGe6E18AKKCYPDxcBHy9ECzFWOHdcy2r_WS_LvLLbNIoz-HdGixxa_8qOZvMp3w/s.glbimg.com/jo/g1/f/original/2012/09/12/montagem_tatu.jpg"/> 
+[Getting the measure of biodiversity](https://www.nature.com/articles/35012221)
 :::
 
 ::::
 
-## *Tolypeutes tricinctus*
+## Power of knowledge
 
-<img src="img/fuleco_mapa.png" width="800"/>
+::::{.columns}
 
-## Caatinga
-
-:::: {.columns}
-
-::: {.column width="50%"} 
-
-Hyper-diverse tropical dry forest
-
-<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489119840-f11984-01-9780128160961.jpg"/>
-
+:::{.column width="30%"}
+How much do we know about biodiversity?
 :::
 
-::: {.column width="50%"}
+:::{.column width="70%"}
 
--   \< 5% within Protected Areas
--   High level of economic poverty
--   Forest-dependent people
+![](img/plant_biodiv.png)
+
+[Patterns of vascular plant diversity at continental to global scale](https://www.researchgate.net/publication/215672861_Patterns_of_vascular_plant_diversity_at_continental_to_global_scale)
 
 :::
 
 ::::
 
-## The challenge
+## Power of knowledge
 
-:::: {.columns}
+![](https://upload.wikimedia.org/wikipedia/commons/9/98/Map_of_the_megadiverse_countries.svg)
 
-::: {.column width="60%"}
+[17 Mega Diverse Countries](https://en.wikipedia.org/wiki/Megadiverse_countries)
 
-1 - Conservation plan
+## Power of politics
 
-2 - Invest on the "Parks of the cup"
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kyoto_Protocol_parties.svg/2880px-Kyoto_Protocol_parties.svg.png)
 
-3 - Create 1k ha of PA for each goal scored
+[Kyoto Protocol](https://en.wikipedia.org/wiki/Kyoto_Protocol)
 
-:::
+## Power of politics
 
-::: {.column width="40%"}
-
-<img src="img/fuleco1.png"/>
-
-<img src="img/capa_bio.jpg" width="300"/> 
-
-:::
-
-::::
-
-## Armadillo 1 x 0 Threats
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<img src="img/cons_tatu.png" width="400"/>
-
-:::
-
-::: {.column width="40%"}
-
-<img src="img/cons_tatu2.png"/>
-
-:::
-
-::::
-
-## Armadillo 1 x 1 Threats
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<img src="https://www.ecodebate.com.br/foto/ucs.jpg" width="400"/>
-
-:::
-
-::: {.column width="40%"}
-
-<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2020/08/Oeco_Ja%C3%BA_Duda-Menegassi.jpeg?w=1152&amp;ssl=1"/>
-
-:::
-
-::::
-
-### Brazil invests only R$ 1.02 per hectare of protected area
-
-## Armadillo 2 x 1 Threats
-
-:::: {.columns}
-
-::: {.column width="60%"}
-
-<img src="https://i0.wp.com/www.oeco.org.br/wp-content/uploads/2015/12/Per%C3%ADmetro.png" width="600"/>
-
-:::
-
-::: {.column width="40%"}
-
--   110k hectares of Protected Area
--   Named after the Armadillo
-
-:::
-
-::::
-
-## An endless game...
-
-### unsolved conflicts
-
-<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2019/09/Chato.jpg?fit=1152%2C768&amp;ssl=1"/>
-
-## An endless game...
-
-### unsolved conflicts
-
-<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2022/12/Producao-de-caprinos-e-ovinos-e-uma-atividade-desenvolvida-ha-seculos-na-comunidade-rural-Ico-de-Ne-Gomes-muito-antes-da-delimitacao-da-area-da-Reserva-Tatu-Bola-em-Petrolina-Foto-Acervo-pessoal-Lucival.jpeg?w=960&amp;ssl=1"/>
-
-## 
-
-<iframe width="1128" height="635" src="https://www.youtube.com/embed/rQHAgyrXims" title="O gol do Tatu-bola (The armadillo&#39;s goal)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-
-</iframe>
-
-## The end?
+## The end
