@@ -195,4 +195,54 @@ How much do we know about biodiversity?
 
 ## Power of politics
 
-## The end
+![](https://www.iucn.org/themes/custom/iucnsub/logo.svg){.absolute top=100 width=20%}
+
+![](https://international-partnerships.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-05/sdg-wheel-landscape-white-bg_en.png?itok=XaUGogrB){.absolute top=300 width=30%}
+![](https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Convention_on_Biological_Diversity_logo.svg/1200px-Convention_on_Biological_Diversity_logo.svg.png){.absolute top=500 width=30%}
+![](https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/1200px-WWF_logo.svg.png){.absolute top=100 right=100 width=15%}
+![](https://www.fws.gov/sites/default/files/styles/large/public/2020-08/conservation_international.png?itok=FIW5mO_P){.absolute top=100 right=300 width=20%}
+![](https://www.iwmc.org/wp-content/uploads/2021/05/44450209.jpeg){.absolute top=400 right=300 width=20%}
+
+## Power of politics
+::::{.columns}
+
+:::{.column width="70%"}
+
+![](img/boi.png)
+
+:::
+
+:::{.column width="30%" .nonincremental}
+
+- £1bn
+- A source of political manipulation
+- Crucial for local communities
+
+:::
+
+::::
+
+## Power of people
+
+<iframe width="1128" height="635" src="https://www.youtube.com/embed/1ZNgLqFVcxc" title="Povos indígenas do Brasil protestam em Brasília" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Power of people
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/79RM-aDSNaA" title="Peru protests: Indigenous women and police clash in anti-government demonstrations" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Decolonize conservation
+![](https://assets.teenvogue.com/photos/61df0201192e956300d6cff3/4:3/w_4444,h_3333,c_limit/GettyImages-1235065026.jpg){.absolute left= 300}
+
+## [Understand power in conservation](https://doi.org/10.1111/csp2.12877)
+
+![](img/power_cons.jpg){.absolute top=100 right=300 width=50%}
+
+## Review
+you should now:
+
+- Understand the nature of establishing priorities
+- How power affects the prioritization exercises
+- The intrinsic biased nature of prioritization
+- The need to pay attention to power in conservation
+
+## The end{.center}
