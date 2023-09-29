@@ -73,175 +73,100 @@ format:
 ![](img/conbio_soule.png){.absolute width=1000}
 
 
-## CB is an Applied Science
+## CB is Applied Science
 
-![](img/conbio.webp)
-
-[Components, processes, and interactions of social-ecological systems as they relate to conservation biology](https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/j.1523-1739.2010.01544.x)
-
-## National Parks
-
-<img src=https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2021/10/15094713/A-jungle-lodge-by-a-river-in-Manu-National-Park-Peru.jpg width = 900>
-
-Manu - Peru
-
-## Indigenous Lands
+![](img/conbio.webp){.absolute left=200 width=550}
 
 
-![](https://wheretheleavesfall.com/media/images/2021-08-15-07.35.40.original.jpg){.absolute left=0 width="1000" height="600"}
+## CB has *goals* 
+:::{.nonincremental}
 
-![](https://www.mott.org/wp-content/uploads/2017/03/Xingu-Basin-Map.jpg){.absolute top=100 left=0 width="250" height="300"}
+1. to evaluate human impacts on biological diversity and 
+2. to develop practical approaches to prevent the extinction of species [(Soulé 1986)](https://www.amazon.co.uk/Conservation-Biology-Science-Scarcity-Diversity/dp/0878937951)
 
-## Indigenous Lands
+:::
+:::{.fragment}
+### [- Solve the extinction crisis]{style="color: red;"}
+:::
 
 
-![](https://cdnuploads.aa.com.tr/uploads/Contents/2022/11/29/thumbs_b_c_461634550bbfee10229441c2a15a0688.jpg?v=140300)
-
-Sami - Finland
-
-## Species-focused conservation
-
-![](https://cdn-images.zoobeauval.com/90QH1Cs9igJmliUeIctAYzW_6Rw=/1600x950/https%3A%2F%2Fs3.eu-west-3.amazonaws.com%2Fimages.zoobeauval.com%2F2021%2F04%2Fsaga-pandas-header-606dcfbed5911.jpg)
-
-## Species-focused conservation
-
-![](https://imagens.ebc.com.br/ssHQbA5eVOGutrcvUXriNWv6whY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/ave_cyanopsitta_spixii_ararinha_azul_foto_camile_ugarini.jpg?itok=RsYMXNq9)
-
-Spix macaw
-
-## Species-focused conservation
-
-![](https://upload.wikimedia.org/wikipedia/commons/d/d0/Two_Psychrolutes_marcidus.jpg){.absolute right=100 width="650" height="550"}
-
-![](https://upload.wikimedia.org/wikipedia/commons/7/7b/Cropped-UAPS-logo.png){.absolute top=200 left=0 width="250" height="200"}
-
-Blobfish
-
-## Priorities are a matter of "scarcity"
-
+## The conservation thinking
 ::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="60%"}
+Henry David Thoreau (1817-62)
 
-### What is scarse?{style="background-color: yellow"}
+The "human nature"
 
-- Resources
-- Opportunities
-- Knowledge
-- [Everything!!]{style="color: red;"}
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Thoreau.jpg">
+:::
 
+::: {.column width="40%"}
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Walden_Thoreau.jpg/800px-Walden_Thoreau.jpg width= 300>
+:::
+::::
+
+## The conservation thinking
+:::: {.columns}
+
+::: {.column width="60%"}
+John Muir (1838-1914)
+
+The "father" of the Yosemite National Park.
+
+<img src="https://i.guim.co.uk/img/media/a0fa94ab6a6045640b61e47f55f9f15ce5eee9f8/0_41_2384_1430/master/2384.jpg?width=620&quality=85&auto=format&fit=max&s=9d713445ee714f7c654a9a53ab925dd6" width= 500>
 :::
 
 
-::: {.column width="50%"}
-
+::: {.column width="40%"}
 :::{.fragment}
+[Now famous by his racist views](https://www.theguardian.com/environment/2020/jul/23/john-muir-sierra-club-apologizes-for-racist-views)
 
-<img src=https://d1sjtleuqoc1be.cloudfront.net/wp-content/uploads/2017/10/23215501/Untitled-design-4-860x574.jpg>
-
+##### "As the most iconic figure in Sierra Club history, Muir’s words and actions carry an especially heavy weight. They continue to hurt and alienate Indigenous people and people of color.”
 :::
-
 :::
-
 ::::
 
-## Power of knowledge
+## Early establishment of conservation structures
 
+- ### US national parks system (1872)
+- ### Canadian national parks system (1885)
+- ### Civil society organizations (embryos de NGO's)
+
+## Regulation on hunting
+
+<iframe width="1128" height="635" src="https://www.youtube.com/embed/cvQal0YmszY" title="Looney Tunes Classic | Elmer Season | Boomerang Official" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Civil-society organizations
 ::::{.columns}
+::: {.column width="50%"}
 
-:::{.column width="30%"}
-How much do we know about biodiversity?
+![](img/ducks.png)
+
 :::
 
-:::{.column width="70%"}
+::: {.column width="50%"}
 
-![](img/biodiv.webp)
-
-[Getting the measure of biodiversity](https://www.nature.com/articles/35012221)
-:::
-
-::::
-
-## Power of knowledge
-
-::::{.columns}
-
-:::{.column width="30%"}
-How much do we know about biodiversity?
-:::
-
-:::{.column width="70%"}
-
-![](img/plant_biodiv.png)
-
-[Patterns of vascular plant diversity at continental to global scale](https://www.researchgate.net/publication/215672861_Patterns_of_vascular_plant_diversity_at_continental_to_global_scale)
+![](img/wildlife.png)
 
 :::
 
 ::::
 
-## Power of knowledge
+## Area-based & game management
+:::: {.columns}
 
-![](https://upload.wikimedia.org/wikipedia/commons/9/98/Map_of_the_megadiverse_countries.svg)
+::: {.column width="50%"}
 
-[17 Mega Diverse Countries](https://en.wikipedia.org/wiki/Megadiverse_countries)
-
-## Power of politics
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kyoto_Protocol_parties.svg/2880px-Kyoto_Protocol_parties.svg.png)
-
-[Kyoto Protocol](https://en.wikipedia.org/wiki/Kyoto_Protocol)
-
-## Power of politics
-
-![](https://www.iucn.org/themes/custom/iucnsub/logo.svg){.absolute top=100 width=20%}
-
-![](https://international-partnerships.ec.europa.eu/sites/default/files/styles/oe_theme_medium_no_crop/public/2022-05/sdg-wheel-landscape-white-bg_en.png?itok=XaUGogrB){.absolute top=300 width=30%}
-![](https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Convention_on_Biological_Diversity_logo.svg/1200px-Convention_on_Biological_Diversity_logo.svg.png){.absolute top=500 width=30%}
-![](https://upload.wikimedia.org/wikipedia/en/thumb/2/24/WWF_logo.svg/1200px-WWF_logo.svg.png){.absolute top=100 right=100 width=15%}
-![](https://www.fws.gov/sites/default/files/styles/large/public/2020-08/conservation_international.png?itok=FIW5mO_P){.absolute top=100 right=300 width=20%}
-![](https://www.iwmc.org/wp-content/uploads/2021/05/44450209.jpeg){.absolute top=400 right=300 width=20%}
-
-## Power of politics
-::::{.columns}
-
-:::{.column width="70%"}
-
-![](img/boi.png)
+![](https://nationalsafetysigns.com.au/wp-content/uploads/2015/04/EN-7024-PROTECTED-AREA-KEEP-OUT.png)
 
 :::
 
-:::{.column width="30%" .nonincremental}
+::: {.column width="50%"}
 
-- £1bn
-- A source of political manipulation
-- Crucial for local communities
+![](https://tpwd.texas.gov/education/hunter-education/online-course/images-conservation/DSC_0085CopyCopynotext.png)
 
 :::
-
 ::::
 
-## Power of people
 
-<iframe width="1128" height="635" src="https://www.youtube.com/embed/1ZNgLqFVcxc" title="Povos indígenas do Brasil protestam em Brasília" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## Power of people
-
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/79RM-aDSNaA" title="Peru protests: Indigenous women and police clash in anti-government demonstrations" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## Decolonize conservation
-![](https://assets.teenvogue.com/photos/61df0201192e956300d6cff3/4:3/w_4444,h_3333,c_limit/GettyImages-1235065026.jpg){.absolute left= 300}
-
-## [Understand power in conservation](https://doi.org/10.1111/csp2.12877)
-
-![](img/power_cons.jpg){.absolute top=100 right=300 width=50%}
-
-## Review
-you should now:
-
-- Understand the nature of establishing priorities
-- How power affects the prioritization exercises
-- The intrinsic biased nature of prioritization
-- The need to pay attention to power in conservation
-
-## The end{.center}
