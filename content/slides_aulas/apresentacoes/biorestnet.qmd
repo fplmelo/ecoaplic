@@ -1,0 +1,89 @@
+---
+title: "BioRestNet: a network of biocultural restoration"
+author: "Felipe Melo"
+format:
+  revealjs:
+    incremental: true
+    chalkboard: true
+    logo: ntu_logo.png
+    footer: "Darwin Initiative 2023-2024"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## What is the purpose of this presentaiton?
+
+- Set the principles and design of the project
+- Understand the role of each institution involved
+- A FAQ for the project
+
+## A brief history
+::::{.columns}
+:::{.column width="50%"}
+![](https://www.fao.org/fileadmin/user_upload/faoweb/plant-treaty/images/medium_Darwin-logo.jpg){width=300}
+
+:::
+
+:::{.column width="50%"}
+The Darwin Initiative is a UK government grants scheme that helps to protect biodiversity and the natural environment through [locally based projects]{style="color: red;"} worldwide.
+
+:::
+::::
+
+- The role of local institutions is [crucial]{style="color: red;"}
+
+## This is research-action grant
+::::{.columns}
+:::{.column width="50%"}
+![](libs/dar_proj.png){width=500}
+
+Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-project/) to browse for project on the same funding scheme
+
+:::
+:::{.column width="50%"}
+-     A quick browse will give a glimpse of the nature of project
+-     I recommend you browse a few ones
+-     The last call funded 29 projects
+-     We are competing among 73 (1 out 3)
+-     Only a fraction have Universities as lead applicants
+-   A **strong** integration must be shown
+:::
+::::
+
+## Some lessons
+- This is a coupled **research-action** grant
+- Both dimensions must be contemplated
+- We can share responsibilities in all dimensions
+- It is important to recognize the greatest potential of each partner
+
+## BioRestNet: a network of biocultural restoration{.center}
+
+## Why a network?
+::::{.columns}
+:::{.column width="50%"}
+![](https://www.lebow.drexel.edu/sites/default/files/legacy/story/1501077931-network.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   It is the best way to scale up restoration
+-   Allows sharing of knowledge
+-   Strengthen actions
+-   Creates models
+:::
+::::
+
+## Biocultural restoration
+
+![](https://www.mdpi.com/land/land-08-00005/article_deploy/html/images/land-08-00005-g001.png){width=700}
+
+
+## Core principles
+:::{.column width="50%"}
+
+-   Based on TEK
+-   Potential for social engagement
+-   Decolonial perspective
+-   Co-constructed models
+:::
+::::
