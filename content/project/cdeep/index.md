@@ -12,7 +12,7 @@ summary: The present project aims to assess how human disturbance and changes in
   LTER Catimbau is also part of the ILTER (International Long Term Ecological Research)
   network joins several other long-lasting projects developed around the world.
 layout: single
-subtitle: biological invasion, nutrient availability and ecosystem fucntion in the Caatinga
+subtitle: biological invasion, nutrient availability and ecosystem function in the Caatinga
 tags:
 - project
 title: cDEEP - Caatina Dry Ecosystem Ecological Program
