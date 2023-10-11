@@ -215,15 +215,23 @@ Crouzelles et al 2018
 :::
 
 ## What's next?
+:::{.nonincremental}
 ::::{.columns}
 :::{.column width="50%"}
-image
+- Include sensible social information
+- Account for land inequality
+- Avoid reproducing injustice
+- Balance 
 :::
 
 :::{.column width="50%"}
-text
+
+<img src=libs/socio_rest.png>
+
+[Marinaho et al 2023](https://doi.org/10.1007/s43621-023-00141-x)
 :::
 ::::
+:::
 
 ## Aknowledgements
 :::{.nonincremental}
@@ -245,3 +253,9 @@ text
 :::
 
 ## Thank you{.center}
+
+felipe.melo@ntu.ac.uk
+
+felipe.plmelo@ufpe.br
+
+![www.ecoaplic.org](www.ecoaplic.org)
