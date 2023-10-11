@@ -51,7 +51,7 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 :::
 ::::
 
-## Important notes
+## Some lessons
 - This is a coupled **research-action** grant
 - Both dimensions must be contemplated
 - We can share responsibilities in all dimensions
@@ -69,17 +69,16 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 -   It is the best way to scale up restoration
 -   Allows sharing of knowledge
 -   Strengthen actions
--   Co-creates models
+-   Creates models
 :::
 ::::
 
-## Research Component (NTU+JKU+MKU){.center}
+## Research Component{.center}
 
 ## Biocultural restoration
 
 ![](https://www.mdpi.com/land/land-08-00005/article_deploy/html/images/land-08-00005-g001.png){width=700}
 
-[Ekblom et al 2019](https://www.mdpi.com/2073-445X/8/1/5)
 
 ## Core principles
 ::::{.columns}
@@ -90,14 +89,12 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 -   Based on TEK
 -   Potential for social engagement
 -   Decolonial perspective
--   Co-constructed models of intervention
+-   Co-constructed models
 :::
 :::
 
 :::{.column width="50%"}
 ![](libs/biocult-core.jpg){width=700}
-
-[Gavin et al 2019](https://doi.org/10.1016/j.tree.2014.12.005)
 :::
 ::::
 
@@ -108,11 +105,11 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 :::{.column width="50%"}
 :::{.nonincremental}
 
-**Module 1 - Assess biocultural landscape**
+Assess biocultural landscape
 
 - List of culturally important species
-- Traditional uses and functional attributes
-- Species distribution
+- Uses, functional attributes
+- Species occurrence
 
 :::
 :::
@@ -120,10 +117,10 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 :::{.column width="50%"}
 :::{.fragment}
 :::{.nonincremental}
-**Module 2 - Test diversity-functioning relationships**
+Testing diversity-functioning
 
-- Effects of diversity
-- Gradients of disturbances
+- Simulate diversity
+- Simulate disturbances
 - Simulate climate change (e.g. water, temp)
 :::
 :::
@@ -131,7 +128,7 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 ::::
 
 ## Module 1 - Assessment of biocultural landscape
-#### Objetive 1 - Species' uses and its fucntional traits
+#### Objetive 1 - Inventory useful species and its fucntional traits
 ::::{.columns}
 :::{.column width="50%"}
 
@@ -141,7 +138,6 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 
 :::{.column width="50%"}
 - We'll add a species x uses table
-- Culturally important species and their functional profile
 
 
 :::
@@ -149,7 +145,7 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 ::::
 
 ## Module 1 - Assessment of biocultural landscape
-#### Objetive 2 - find the biocultiural core of species
+#### Objetive 2 - Extract and map occureene of the biocultiural core of species
 :::{.fragment}
 :::{.nonincremental}
 ::::{.columns}
@@ -161,7 +157,7 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 :::{.column width="50%"}
 
 - Sort species per "importance"
-- Understand conservation status of the biocultural core
+- Map the biocultural core
   - The most useful species (amount to be set)
 
 :::
@@ -211,13 +207,13 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 ::::
 
 ## Module 2 - BEF experiment
-### Objetive 5 - Test the effect of diversity on EF
+#### Objetive 5 - Test the effect of diversity on EF
 
 ![](libs/bef_cafe.png){width=600}
 
 
 ## Module 2 - BEF experiment
-### Objetive 5 - Test the effect of diversity on EF
+#### Objetive 5 - Test the effect of diversity on EF
 ::::{.columns}
 :::{.column width="50%"}
 ![](libs/bef_prev.png){width=700}
@@ -234,7 +230,7 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 :::
 ::::
 
-## Action Component <br> (local Kenyan partners){.center}
+## Action Component{.center}
 
 ## Training local community hubs
 ::::{.columns}
@@ -260,15 +256,17 @@ Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-pro
 
 :::{.column width="50%"}
 
-- Conceiving and establish the Network
-  - Formalization
+- Create and establish the Network
+  - Formalization of network
   - Set principles and mission
   - Intermediate market
-  - Public policy oriented
+  - Public policy intended
 
 :::
 ::::
 
-##
-![](libs/flux_biorestnet.png)
+## Roles and sharing
+
+
+
 
