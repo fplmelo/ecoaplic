@@ -1,0 +1,251 @@
+---
+title: "<h2>Using land inequality to inform restoration stretegies for the Brazilian dryforest<h2>"
+author: "**Felipe Melo** <br> Nottingham Trent University - UK <br> Universidade Federal de Pernambuco - Brazil"
+format: pptx
+---
+
+## Contents of this talk
+
+::::{.columns}
+:::{.column width="50%"}
+- A critical appraisal of apolitical restoration
+- Land inequality and restoration
+- Restoration to address inequality
+:::
+
+:::{.column width="50%"}
+
+![](libs/neoland.png)
+
+:::
+::::
+
+## Modeling priorities for restoration
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/rest_ma.png)
+
+Crouzelles et al 2018
+:::
+:::{.column width="50%"}
+:::{.nonincremental}
+- Spatially explicit 
+- Systematic
+- Multi-criteria
+- [Lack people's dimensions]{style="color: red;"}
+:::
+:::
+::::
+
+## Modeling priorities for restoration
+
+::::{.columns}
+:::{.column width="60%"}
+
+![](libs/strass.webp){width=800}
+
+[Strassburg et al 2020](https://www.nature.com/articles/s41586-020-2784-9)
+:::
+
+:::{.column width="40%"}
+:::{.nonincremental}
+- Immagined scenarios
+- Cost-effectiveness
+- Benefits
+- [Reduced people's dimensions]{style="color: red;"}
+:::
+:::
+::::
+
+## Against apolitical restoration
+![](libs/wef.png)
+
+[Melo et al 2021](https://www.nature.com/articles/s41893-020-00608-z)
+
+## Our study{.center}
+
+## Context
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="70%"}
+
+![](libs/bolsa_fam.png){width="900"}
+
+:::
+:::{.column width="30%"}
+
+- Brazil has a rather advanced restortaion movement
+- Different Biome awereness
+- Rural poverty + forest poverty
+- Severe [land inequality]{style="color: red;"}
+:::
+::::
+:::
+
+## Methods
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+- Information on forest cover (MapBiomas.org)
+- Land tenure database (imaglora.org)
+- Brazilian Forest Code
+  - Calculate vegetation deficits per property
+  - Small vs large landowners
+:::
+
+:::{.column width="50%"}
+![](libs/malha_ex.png)
+:::
+::::
+:::
+
+## Land share in Caatinga municiaplities
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+
+- ~ 1 million registered properties in 1204 municiaplities
+  - 97.8% Small properties
+       - 17.9 Mha
+       - 51% forested
+  - 2.2% Large properties
+       - 15.2 Mha
+       - 69% forested
+:::
+
+:::{.column width="50%"}
+
+
+![](libs/share_land.png)
+
+:::
+::::
+:::
+
+## Distribution of legal vegetation deficit
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/deficit1.png)
+
+:::
+:::{.column width="50%"}
+
+- Spatially clumped
+- Following agribusiness areas
+
+:::
+::::
+:::
+
+## Share of vegetation deficit
+| Type of landowner | N of properties | Legal Deficit (ha) |
+|---------|:-----|------:|:------:|
+| Large      | 2,986   |    139,644 |
+| Small     | 141,144  |   143,501 |
+|       |     |      |      |
+
+
+## Share of vegetation deficit
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/deficit2.png)
+
+:::
+:::{.column width="50%"}
+:::{.fragment}
+:::{.nonincremental}
+- Large holders
+  - Spatially clumped (coast and main river)
+  - Following agribusiness areas
+- Small holders
+  - Dryer regions
+  - Familiar agriculture
+  
+:::
+:::
+:::
+::::
+
+
+## Adapated strategies 
+| Type of prevailing deficit | Restoration strategy | 
+|-----|:-----|
+| Large holders     | Active restoration; legal compliance; restoration supply chain   | 
+| Small holders   | Agorforestry; biocutlural restoration  |
+| Hybrid      | Context dependent combination of all strategies     | 
+
+## Spatialization of restoration strategies
+![](libs/deficit4.png)
+
+
+## Restoration must not reproduce land inequality
+
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+  - Smallholders
+    - ~1ha
+    - small-scale farms
+  - [Scale up agroforestry]{style="color: red;"}
+
+:::
+
+:::{.column width="50%"}
+  - Largeholders
+    - ~40ha
+    - Intesive land use
+  - [Impulse restoration supply chain]{style="color: red;"}
+
+:::
+::::
+:::
+
+## What's next?
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+- Include sensible social information
+- Account for land inequality
+- Avoid reproducing injustice
+- Balance 
+:::
+
+:::{.column width="50%"}
+
+<img src=libs/socio_rest.png>
+
+[Marinaho et al 2023](https://doi.org/10.1007/s43621-023-00141-x)
+:::
+::::
+:::
+
+## Aknowledgements
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](libs/cnpq.png)
+![](libs/ufpe.png)
+:::
+
+:::{.column width="50%"}
+**Co-authors**
+
+- Adriana Pelegrinni Manhães
+- Guilherme Mazochinni
+- Vinicius Guidoti
+
+:::
+::::
+:::
+
+## Thank you{.center}
+
+felipe.melo@ntu.ac.uk
+
+felipe.plmelo@ufpe.br
+

@@ -1,5 +1,5 @@
 ---
-title: "<h2>Using land inequality to inform restoration stretegies for the Brazilian dryforest<h2>"
+title: "<h2>Using land inequality to inform restoration strategies for the Brazilian dryforest<h2>"
 author: "**Felipe Melo** <br> Nottingham Trent University - UK <br> Universidade Federal de Pernambuco - Brazil"
 format:
   revealjs:
@@ -17,9 +17,9 @@ format:
 
 ::::{.columns}
 :::{.column width="50%"}
-- A critical appraisal of apolitical restoration
+- A brief appraisal of apolitical restoration
 - Land inequality and restoration
-- Restoration to address inequality
+- A case study in the Caatinga forest, Brazil
 :::
 
 :::{.column width="50%"}
@@ -60,7 +60,7 @@ Crouzelles et al 2018
 
 :::{.column width="40%"}
 :::{.nonincremental}
-- Immagined scenarios
+- Imagined scenarios
 - Cost-effectiveness
 - Benefits
 - [Reduced people's dimensions]{style="color: red;"}
@@ -85,8 +85,8 @@ Crouzelles et al 2018
 :::
 :::{.column width="30%"}
 
-- Brazil has a rather advanced restortaion movement
-- Different Biome awereness
+- Brazil has a rather advanced restoration movement
+- Different Biome awareness
 - Rural poverty + forest poverty
 - Severe [land inequality]{style="color: red;"}
 :::
@@ -98,7 +98,7 @@ Crouzelles et al 2018
 ::::{.columns}
 :::{.column width="50%"}
 - Information on forest cover (MapBiomas.org)
-- Land tenure database (imaglora.org)
+- Land tenure database (imaflora.org)
 - Brazilian Forest Code
   - Calculate vegetation deficits per property
   - Small vs large landowners
@@ -110,12 +110,12 @@ Crouzelles et al 2018
 ::::
 :::
 
-## Land share in Caatinga municiaplities
+## Land share in Caatinga municipalities
 :::{.nonincremental}
 ::::{.columns}
 :::{.column width="50%"}
 
-- ~ 1 million registered properties in 1204 municiaplities
+- ~ 1 million registered properties in 1204 municipalities
   - 97.8% Small properties
        - 17.9 Mha
        - 51% forested
@@ -152,10 +152,10 @@ Crouzelles et al 2018
 
 ## Share of vegetation deficit
 | Type of landowner | N of properties | Legal Deficit (ha) |
-|---------|:-----|------:|:------:|
+|---------|:-----|------:|
 | Large      | 2,986   |    139,644 |
 | Small     | 141,144  |   143,501 |
-|       |     |      |      |
+|       |     |      |     
 
 
 ## Share of vegetation deficit
@@ -198,7 +198,7 @@ Crouzelles et al 2018
 ::::{.columns}
 :::{.column width="50%"}
   - Smallholders
-    - ~1ha
+    - ~1ha deficit
     - small-scale farms
   - [Scale up agroforestry]{style="color: red;"}
 
@@ -206,22 +206,22 @@ Crouzelles et al 2018
 
 :::{.column width="50%"}
   - Largeholders
-    - ~40ha
-    - Intesive land use
+    - ~40ha deficit
+    - Intensive land use
   - [Impulse restoration supply chain]{style="color: red;"}
 
 :::
 ::::
 :::
 
-## What's next?
+## Take-home message
 :::{.nonincremental}
 ::::{.columns}
 :::{.column width="50%"}
 - Include sensible social information
 - Account for land inequality
 - Avoid reproducing injustice
-- Balance 
+- Balance between opportunities
 :::
 
 :::{.column width="50%"}
