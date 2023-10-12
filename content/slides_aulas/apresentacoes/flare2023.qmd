@@ -1,5 +1,5 @@
 ---
-title: "<h1>Using land inequality to inform restoration in the Brazilian Caatinga<h1>"
+title: "<h2>Using land inequality to inform restoration stretegies for the Brazilian dryforest<h2>"
 author: "**Felipe Melo** <br> Nottingham Trent University - UK <br> Universidade Federal de Pernambuco - Brazil"
 format:
   revealjs:
@@ -172,7 +172,7 @@ Crouzelles et al 2018
   - Spatially clumped (coast and main river)
   - Following agribusiness areas
 - Small holders
-  - Driest regions
+  - Dryer regions
   - Familiar agriculture
   
 :::
