@@ -93,6 +93,8 @@ Crouzelles et al 2018
 ::::
 :::
 
+## [The Caatinga dryforest]{style="color: white;"}{background-image=libs/vaqueiro.png background-size=cover}
+
 ## Methods
 :::{.nonincremental}
 ::::{.columns}
