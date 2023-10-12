@@ -110,6 +110,21 @@ Crouzelles et al 2018
 ::::
 :::
 
+## Brazilian Forest Code{.nostretch}
+
+Largeholder => 4 Fiscal Modules
+
+Smallholder <= 4 Fiscal Modules
+
+![](https://www.climatepolicyinitiative.org/wp-content/uploads/2022/05/FIG01_Exemplos-de-APP.png){.absolute top=100 right=50}
+
+## The "perfect world"
+
+![](libs/cf.png){.absolute top=100 right=50}
+
+## Any deviation from the perfect world creates a **"legal vegetation deficit"**{.center}
+
+
 ## Land share in Caatinga municipalities
 :::{.nonincremental}
 ::::{.columns}
