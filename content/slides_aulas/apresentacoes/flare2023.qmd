@@ -1,5 +1,5 @@
 ---
-title: "<h2>Using land inequality to inform restoration strategies for the Brazilian dryforest<h2>"
+title: "<h2>Using land inequality to inform restoration strategies for the Brazilian dry forest<h2>"
 author: "**Felipe Melo** <br> Nottingham Trent University - UK <br> Universidade Federal de Pernambuco - Brazil"
 format:
   revealjs:
@@ -74,6 +74,8 @@ Crouzelles et al 2018
 [Melo et al 2021](https://www.nature.com/articles/s41893-020-00608-z)
 
 ## Our study{.center}
+
+![](libs/land_study.png)
 
 ## Context
 :::{.nonincremental}
