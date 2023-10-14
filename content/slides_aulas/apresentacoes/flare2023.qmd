@@ -269,7 +269,7 @@ Smallholder <= 4 Fiscal Modules
 ::::
 :::
 
-## Thank you{.center}
+## Obrigado<br>Thank you <br> Asante sana{.center}
 
 felipe.melo@ntu.ac.uk
 
