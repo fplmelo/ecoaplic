@@ -209,16 +209,101 @@ Rabinowitz’s (1981) rarity typology rendered as a cube. It identifies seven fo
 Source [Berkeley](https://evolution.berkeley.edu/visualizing-life-on-earth/introducing-the-ldg/)
 :::
 :::{.column width="50%"}
-Rabinowitz’s (1981) rarity typology rendered as a cube. It identifies seven forms of rarity, along with an eighth state showing no traits of rarity (shaded cube), when species are dichotomously classified along three axes.
+Diversity is higher in the tropics
+
+- WHY?
+
 :::
 :::
 
+## Some hypotheses
+::: {.panel-tabset}
+
+## H1 - "cradle"
+
+![](https://evolution.berkeley.edu/wp-content/uploads/2021/05/ldg_cradle.gif)
+
+## H2 - low extinction
+
+![](https://evolution.berkeley.edu/wp-content/uploads/2021/05/ldg_museum.gif)
+
+## H3 - high immigration
+
+![](https://evolution.berkeley.edu/wp-content/uploads/2021/05/ldg_destination.gif)
+
+:::
+
+## More hidden patterns
+::: {.panel-tabset}
+
+
+### Nested diversity
+
+<img src=img/div_nest.webp width = 500/>
+
+[Getting the measure of biodiversity](https://www.nature.com/articles/35012221)
+
+### Age of species
+
+![](img/div_age.webp){.absolute height=500}
+
+:::
+
+## Alfred Russel Wallace
+:::columns
+:::{.column width="50%"}
+<img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQhehBm8LtcZpizY5ZUoZDUfhk_G7Fmza8oz_PgtEk7wokliT4iLwdFQl3woU3r" height=500>
+:::
+:::{.column width="50%"}
+The "father of Biogeography"
+
+:::{.nonincremental}
+- Niche
+- History
+- Species intereaction
+- SARs
+
+:::
+:::
+:::
+
+ [Darwin, historical biogeography, and the importance of overcoming binary opposites](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2699.2009.02111.x)
+
+## Niche and conservation priorities
+
+<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-030-51633-8_7/MediaObjects/470677_1_En_7_Figa_HTML.png" height= 500 >
+
+## History
+
+:::columns
+:::{.column width="50%"}
+Mammals in Americas
+![](https://images.theconversation.com/files/361877/original/file-20201006-22-19yd99d.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip)
+:::
+
+:::{.column width="50%"}
+
+Invasive Bees
+
+![](https://www.researchgate.net/publication/335666570/figure/fig1/AS:800304018759682@1567818755633/Current-and-predicted-future-spread-of-Africanized-honey-bees-in-the-Americas.png)
+:::
+:::
+
+## Species interactions
+
+![](https://www.mun.ca/biology/scarr/Geospiza_beaks.jpg)
+
+## Some applications
+
+![](https://www.researchgate.net/profile/Michael-Hoffmann-19/publication/6958884/figure/fig1/AS:280471314419712@1443880980338/Maps-of-the-nine-global-biodiversity-conservation-priority-templates-CE-crisis.png)
+
+[Brooks et al 2006](https://www.science.org/doi/10.1126/science.1127609)
 
 
 ## Today's reviews
-- The origins fo Conservation Biology is deeply linked to an utilitarian and biased view of nature (social class, gender, western)
-- The salient feature of CB is the strong focus on area-based conservation approaches
-- The efficiency of this approach is questioned, though some achievements
-- There is a need to move forward
+- It is important to have a clear scenario on the magitude and ditribution of biodiversity
+- Biogrpgraphy is a key dicipline
+- Patterns of divesity in nature are everywhere
+- Informed prioritisation demands knowledge
 
 ## The end{.center}
