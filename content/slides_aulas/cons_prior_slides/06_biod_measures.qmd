@@ -284,7 +284,7 @@ plot(fit)
 - Diversity is much more than number of species
 - Important to understand: alpha, beta and gamma
 - Phylogeny is evolutive history
-- Functinal divesity is key for modern interpretation on the value fo biodiversity
+- Functional divesity is key for modern interpretation on the value fo biodiversity
 
 
 ## The end{.center}
