@@ -1,0 +1,290 @@
+---
+title: "5-Biodiversity Measures"
+subtitle: " "
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Conservation Priorities"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+
+---
+
+## You should know today:
+
+- Understand different measures of biodiversity
+- How to combine biodiversity values into meaningful conservation information
+- [How to use]{style="color: red;"} biodiversity data for setting conservation priorities
+
+
+## What is biological diversity?
+
+"The term biodiversity (from “biological diversity”) refers to the variety of life on Earth at all its levels, from genes to ecosystems, and can encompass the evolutionary, ecological, and cultural processes that sustain life"
+
+![](img/bio_dim.jpeg)
+
+:::{.footer}
+[American Museum of Natural History](https://www.amnh.org/research/center-for-biodiversity-conservation/what-is-biodiversity)
+:::
+
+## Muldimensionality of diversity
+![](img/bio_dim.jpeg)
+
+
+
+## Many dimensions of diversity
+
+![](https://www.pnas.org/cms/10.1073/pnas.1706461114/asset/bbb1d3e7-2432-4c42-881a-93edc98b2841/assets/graphic/pnas.1706461114fig02.jpeg){fig-align="center"}
+
+:::{.footer}
+[Brum et al 2017](https://www.pnas.org/doi/10.1073/pnas.1706461114?doi=10.1073/pnas.1706461114)
+:::
+
+## Taxonomic diversity{.center}
+
+## Diversity indexes
+::: columns
+:::{.column width="50%"}
+
+A quantitative measure of difference
+
+- What can be measured as "difference"
+- Types of "things"
+- Quantities of each type of "thing"
+
+:::
+:::{.column width="50%"}
+![](https://www.webpages.uidaho.edu/veg_measure/modules/lessons/module%209%28composition&diversity%29/Pix/Diverse_Comm.jpg)
+:::
+:::
+
+## Estimate diversity
+
+![](https://o.quizlet.com/yX.fLOiVdO00qnmfPxvJnw_b.png){fig-align="center"}
+
+## How diverse are these communities?
+::: columns
+:::{.column width="70%"}
+
+![](https://o.quizlet.com/yX.fLOiVdO00qnmfPxvJnw_b.png){fig-align="center"}
+
+:::
+:::{.column width="30%"}
+- 7 species
+- 14 individuals
+:::
+:::
+
+## What diversity informs?
+::: columns
+:::{.column width="50%"}
+**Richness**
+
+Number of types (any type defined)
+
+:::
+:::{.column width="50%"}
+**Evenness**
+
+How abundances are distributes across types
+:::
+:::
+
+![](https://o.quizlet.com/yX.fLOiVdO00qnmfPxvJnw_b.png){fig-align="center"}
+
+## The scale of diversity
+
+![](https://i2.wp.com/www.differencebetween.com/wp-content/uploads/2021/10/Alpha-Beta-and-Gamma-Diversity.jpg?resize=768%2C363&ssl=1)
+
+## Alpha diversiy
+
+::: columns
+:::{.column width="50%"}
+By National Academy of Sciences: Robert H. Whittaker (1920—1980)
+
+![](https://upload.wikimedia.org/wikipedia/en/0/01/Whittaker-Robert-H-1920-1980.jpg)
+
+:::
+:::{.column width="50%"}
+
+$$
+\gamma = \alpha*\beta
+$$
+
+:::{.nonincremental}
+
+- Alpha = Diversity of a local
+- Beta = Difference between locals
+- Gamma = Diversity of all locals
+
+:::
+
+:::
+:::
+
+##
+
+![](https://i2.wp.com/www.differencebetween.com/wp-content/uploads/2021/10/Alpha-Beta-and-Gamma-Diversity.jpg?resize=768%2C363&ssl=1)
+
+## Beta diverrsity
+
+- ![](https://methodsblog.files.wordpress.com/2015/05/beta1.jpg)
+
+- ![](https://methodsblog.files.wordpress.com/2015/05/beta2.jpg)
+
+:::{.footer}
+[What is Beta Diversity? by Dr Andrés Baselga](https://methodsblog.com/2015/05/27/beta_diversity/)
+:::
+
+## Different meanings for "difference"
+- ![](https://methodsblog.files.wordpress.com/2015/05/beta3.jpg)
+- ![](https://methodsblog.files.wordpress.com/2015/05/beta4.jpg)
+
+
+:::{.footer}
+[What is Beta Diversity? by Dr Andrés Baselga](https://methodsblog.com/2015/05/27/beta_diversity/)
+:::
+
+## Different meanings for "difference"
+
+![](https://methodsblog.files.wordpress.com/2015/05/beta5.jpg)
+
+
+## betapart: an R package
+
+```{r}
+library(betapart)
+library(vegan)
+
+```
+
+:::{.panel-tabset}
+## For presence/absence
+```{r}
+data(ceram.s)
+ceram.dist<-beta.pair(ceram.s, index.family="jac")
+ceram.dist
+```
+
+## Plot PA-turnover
+```{r}
+fit <- hclust(ceram.dist$beta.jtu, method="ward")
+plot(fit)
+
+```
+
+## Plot PA-nestedness
+```{r}
+fit <- hclust(ceram.dist$beta.jne, method="ward")
+plot(fit)
+
+```
+
+:::
+
+## Applications for conservation
+
+![](https://ars.els-cdn.com/content/image/1-s2.0-S016953471500289X-gr1b4_lrg.jpg)
+
+:::{.footer}
+[Socolar et al 2016 - How Should Beta-Diversity Inform Biodiversity Conservation?](https://doi.org/10.1016/j.tree.2015.11.005)
+:::
+
+## SLOSS Debate
+
+![](https://ecologydomine.files.wordpress.com/2022/09/slossfig.jpg?w=604)
+
+:::{.footer}
+[Sure, small patches are important, but that important?](https://ecologydomine.wordpress.com/2022/09/24/if-something-seems-too-good-to-be-true/)
+:::
+
+## Beta diversity of plants
+
+![](https://scx2.b-cdn.net/gfx/news/2023/scientists-present-the.jpg){fig-align="center"}
+
+:::{.footer}
+[Geographic patterns of plant β-diversity](https://www.sciencedirect.com/science/article/pii/S2468265923001075?via%3Dihub#fig1)
+:::
+
+## Biotic homogenization
+
+![](https://ars.els-cdn.com/content/image/1-s2.0-S0006320715301567-fx1_lrg.jpg){fig-align="center"}
+
+## Phylogenetic diversity{.center}
+
+## Basic definition
+![](https://ars.els-cdn.com/content/image/1-s2.0-S0169534712002881-gr1b1.jpg){fig-align="center"}
+
+:::{.footer}
+[Phylogenetic diversity and nature conservation](https://www.sciencedirect.com/science/article/pii/S0169534712002881)
+:::
+
+## Relationships with gradients
+
+![](img/phylo_bird.jpg)
+
+:::{.footer}
+[Landscape heterogeneity shapes bird phylogenetic](https://onlinelibrary.wiley.com/doi/full/10.1111/btp.12881)
+:::
+
+## Phylo and Functional diversity
+
+![](img/phylo_paper.png)
+
+:::{.footer}
+[The merging of community ecology and phylogenetic biology](https://www.researchgate.net/profile/Jeannine-Cavender-Bares/publication/26244584_The_merging_of_community_ecology_and_phylogenetic_biology/links/5b29d7fb4585150c633fa790/The-merging-of-community-ecology-and-phylogenetic-biology.pdf)
+:::
+
+## Functional diversity{.center}
+
+## Function is key
+
+![](https://www.oceanlifecentre.dk/-/media/Sites/OceanLife/news/2019/trait-collection-figure.ashx?mw=700&hash=8221333DF339AADE6C419A5426810FB7)
+
+## Calculate it... not that easy
+
+![](https://besjournals.onlinelibrary.wiley.com/cms/asset/04512447-703c-4a4a-8353-7ba65baf13b8/mee313424-fig-0001-m.jpg)
+
+## Calculate it... not that easy
+
+![](https://d3i71xaburhd42.cloudfront.net/f4a88d60b86900c31f0f6f5d72a184da075d6f00/4-Figure1-1.png)
+
+## Biodiversity~Function
+
+![](https://ars.els-cdn.com/content/image/1-s2.0-S0272771415001389-gr1_lrg.jpg)
+
+:::{.footer}
+[Marine biodiversity and ecosystem function](https://www.sciencedirect.com/science/article/pii/S0272771415001389#fig1:~:text=Pages%2046%2D64-,Marine%20biodiversity%20and%20ecosystem%20function,-relationships%3A%20The%20potential)
+:::
+
+## Applications for conservation
+
+![](https://www.researchgate.net/profile/Fernanda-Brum-2/publication/318134861/figure/fig1/AS:512388174102529@1499174268409/The-top-17-of-cells-selected-according-to-zonation-prioritization-based-on-the-taxonomic.png)
+
+:::{.footer}
+[Global priorities for conservation](https://www.pnas.org/doi/full/10.1073/pnas.1706461114)
+:::
+
+## Applications for conservation
+
+![](https://www.pnas.org/cms/10.1073/pnas.1706461114/asset/04dd20ba-ede2-4a19-83e5-7462fef2516f/assets/graphic/pnas.1706461114fig03.jpeg)
+
+:::{.footer}
+[Global priorities for conservation](https://www.pnas.org/doi/full/10.1073/pnas.1706461114)
+:::
+
+
+## Today's review
+- Diversity is much more than number of species
+- Important to understand: alpha, beta and gamma
+- Phylogeny is evolutive history
+- Functinal divesity is key for modern interpretation on the value fo biodiversity
+
+
+## The end{.center}
