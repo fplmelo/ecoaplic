@@ -1,0 +1,62 @@
+---
+title: "Come to the Restoration side of the force"
+subtitle: " "
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "NTU research seminars"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+
+---
+
+## By the end of this talk I want to:
+
+- Showcase how restoration hooked me
+- The research opportunities when dealing with restoration
+- A general call for jumping on the Restoration boat
+
+
+## Research interests and background{background-image=libs/usga_land.png}
+
+## {background-image=libs/mahli.png background-size="900px"}
+
+:::{.footer}
+[Malhi et al (2014) Annual Review of Environment and Resources](https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-030713-155141)
+
+:::
+
+## {.center}
+
+![](https://www.seraustralasia.com/standards/images/Fig2.png)
+
+:::{.footer}
+[Society for Ecological Restoration](https://www.seraustralasia.com/standards/principle2.html)
+
+:::
+
+## {.center}
+
+![](https://www.seraustralasia.com/standards/images/Fig3.png)
+
+:::{.footer}
+[Malhi et al (2014) Annual Review of Environment and Resources](https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-030713-155141)
+
+:::
+
+## 
+:::{.columns}
+:::{.column width=50%}
+
+:::
+:::{.column width=50%}
+
+:::
+:::
+
