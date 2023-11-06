@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="04_biod_mag_files/libs/clipboard/clipboard.min.js"></script>
-<script src="04_biod_mag_files/libs/quarto-html/tabby.min.js"></script>
-<script src="04_biod_mag_files/libs/quarto-html/popper.min.js"></script>
-<script src="04_biod_mag_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="04_biod_mag_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="04_biod_mag_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="04_biod_mag_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="06_biod_measures_files/libs/clipboard/clipboard.min.js"></script>
+<script src="06_biod_measures_files/libs/quarto-html/tabby.min.js"></script>
+<script src="06_biod_measures_files/libs/quarto-html/popper.min.js"></script>
+<script src="06_biod_measures_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="06_biod_measures_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="06_biod_measures_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="06_biod_measures_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.280">
 
   <meta name="author" content="Felipe Melo">
-  <title>4-Biodiversity Magnitude</title>
+  <title>5-Biodiversity Measures</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="04_biod_mag_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="04_biod_mag_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="06_biod_measures_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="06_biod_measures_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,13 +29,13 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="04_biod_mag_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link href="04_biod_mag_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="04_biod_mag_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="04_biod_mag_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="04_biod_mag_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="04_biod_mag_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="04_biod_mag_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="06_biod_measures_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="06_biod_measures_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="06_biod_measures_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="06_biod_measures_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="06_biod_measures_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="06_biod_measures_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="06_biod_measures_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -326,7 +326,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">4-Biodiversity Magnitude</h1>
+  <h1 class="title">5-Biodiversity Measures</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -340,344 +340,409 @@ Felipe Melo
 <section id="you-should-know-today" class="slide level2">
 <h2>You should know today:</h2>
 <ul>
-<li class="fragment">Basic notions on the magnitude of biodiversity</li>
-<li class="fragment">How biodiversity is organized in space and time</li>
+<li class="fragment">Understand different measures of biodiversity</li>
+<li class="fragment">How to combine biodiversity values into meaningful conservation information</li>
 <li class="fragment"><span style="color: red;">How to use</span> biodiversity data for setting conservation priorities</li>
 </ul>
 </section>
-<section id="history-of-life-on-earth" class="slide level2">
-<h2>History of life on Earth</h2>
-<p><img src="https://www.researchgate.net/profile/Dirk-Olbers/publication/263466153/figure/fig10/AS:296039673286669@1447592766800/Development-of-life-on-Earth-shown-as-a-spiralling-timeline_W640.jpg" height="500/"></p>
+<section id="what-is-biological-diversity" class="slide level2">
+<h2>What is biological diversity?</h2>
+<p>“The term biodiversity (from “biological diversity”) refers to the variety of life on Earth at all its levels, from genes to ecosystems, and can encompass the evolutionary, ecological, and cultural processes that sustain life”</p>
+
+<img data-src="img/bio_dim.jpeg" class="r-stretch"><div class="footer">
+<p><a href="https://www.amnh.org/research/center-for-biodiversity-conservation/what-is-biodiversity">American Museum of Natural History</a></p>
+</div>
 </section>
-<section id="we-live-on-the-most-diverse-time-ever" class="slide level2">
-<h2>We live on the most diverse time, ever</h2>
+<section id="muldimensionality-of-diversity" class="slide level2">
+<h2>Muldimensionality of diversity</h2>
+
+<img data-src="img/bio_dim.jpeg" class="r-stretch"></section>
+<section id="many-dimensions-of-diversity" class="slide level2">
+<h2>Many dimensions of diversity</h2>
+
+<img data-src="https://www.pnas.org/cms/10.1073/pnas.1706461114/asset/bbb1d3e7-2432-4c42-881a-93edc98b2841/assets/graphic/pnas.1706461114fig02.jpeg" class="r-stretch quarto-figure-center"><div class="footer">
+<p><a href="https://www.pnas.org/doi/10.1073/pnas.1706461114?doi=10.1073/pnas.1706461114">Brum et al 2017</a></p>
+</div>
+</section>
+<section id="taxonomic-diversity" class="slide level2 center">
+<h2>Taxonomic diversity</h2>
+</section>
+<section id="diversity-indexes" class="slide level2">
+<h2>Diversity indexes</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780123852274000055-f06-27-9780123852274.jpg?" width="800/"></p>
-</div><div class="column" style="width:50%;">
+<p>A quantitative measure of difference</p>
 <ul>
-<li class="fragment">Mass extinctions</li>
-<li class="fragment">Life always recovered</li>
-<li class="fragment">Let’s take a closer look…</li>
+<li class="fragment">What can be measured as “difference”</li>
+<li class="fragment">Types of “things”</li>
+<li class="fragment">Quantities of each type of “thing”</li>
 </ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="https://www.webpages.uidaho.edu/veg_measure/modules/lessons/module%209%28composition&amp;diversity%29/Pix/Diverse_Comm.jpg"></p>
+</div>
+</div>
+</section>
+<section id="estimate-diversity" class="slide level2">
+<h2>Estimate diversity</h2>
+
+<img data-src="https://o.quizlet.com/yX.fLOiVdO00qnmfPxvJnw_b.png" class="r-stretch quarto-figure-center"></section>
+<section id="how-diverse-are-these-communities" class="slide level2">
+<h2>How diverse are these communities?</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://o.quizlet.com/yX.fLOiVdO00qnmfPxvJnw_b.png"></p>
+</figure>
+</div>
+</div><div class="column" style="width:30%;">
+<ul>
+<li class="fragment">7 species</li>
+<li class="fragment">14 individuals</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="what-diversity-informs" class="slide level2">
+<h2>What diversity informs?</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Richness</strong></p>
+<p>Number of types (any type defined)</p>
+</div><div class="column" style="width:50%;">
+<p><strong>Evenness</strong></p>
+<p>How abundances are distributes across types</p>
+</div>
+</div>
+
+<img data-src="https://o.quizlet.com/yX.fLOiVdO00qnmfPxvJnw_b.png" class="r-stretch quarto-figure-center"></section>
+<section id="the-scale-of-diversity" class="slide level2">
+<h2>The scale of diversity</h2>
+
+<img data-src="https://i2.wp.com/www.differencebetween.com/wp-content/uploads/2021/10/Alpha-Beta-and-Gamma-Diversity.jpg?resize=768%2C363&amp;ssl=1" class="r-stretch"></section>
+<section id="alpha-diversiy" class="slide level2">
+<h2>Alpha diversiy</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>By National Academy of Sciences: Robert H. Whittaker (1920—1980)</p>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/en/0/01/Whittaker-Robert-H-1920-1980.jpg"></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[
+\gamma = \alpha*\beta
+\]</span></p>
+<div>
+<ul>
+<li>Alpha = Diversity of a local</li>
+<li>Beta = Difference between locals</li>
+<li>Gamma = Diversity of all locals</li>
+</ul>
+</div>
 </div>
 </div>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
 
-<img data-src="img/five_ext.png" class="r-stretch"><p>source: <a href="https://ourworldindata.org/mass-extinctions">Our World in Data</a></p>
+<img data-src="https://i2.wp.com/www.differencebetween.com/wp-content/uploads/2021/10/Alpha-Beta-and-Gamma-Diversity.jpg?resize=768%2C363&amp;ssl=1" class="r-stretch"></section>
+<section id="beta-diverrsity" class="slide level2">
+<h2>Beta diverrsity</h2>
+<ul>
+<li class="fragment"><p><img data-src="https://methodsblog.files.wordpress.com/2015/05/beta1.jpg"></p></li>
+<li class="fragment"><p><img data-src="https://methodsblog.files.wordpress.com/2015/05/beta2.jpg"></p></li>
+</ul>
+<div class="footer">
+<p><a href="https://methodsblog.com/2015/05/27/beta_diversity/">What is Beta Diversity? by Dr Andrés Baselga</a></p>
+</div>
 </section>
-<section id="changes-in-space-and-time" class="slide level2">
-<h2>Changes in space and time</h2>
+<section id="different-meanings-for-difference" class="slide level2">
+<h2>Different meanings for “difference”</h2>
+<ul>
+<li class="fragment"><img data-src="https://methodsblog.files.wordpress.com/2015/05/beta3.jpg"></li>
+<li class="fragment"><img data-src="https://methodsblog.files.wordpress.com/2015/05/beta4.jpg"></li>
+</ul>
+<div class="footer">
+<p><a href="https://methodsblog.com/2015/05/27/beta_diversity/">What is Beta Diversity? by Dr Andrés Baselga</a></p>
+</div>
+</section>
+<section id="different-meanings-for-difference-1" class="slide level2">
+<h2>Different meanings for “difference”</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Continental_Drift_%28740_million-to-Today%29.gif/1280px-Continental_Drift_%28740_million-to-Today%29.gif?20200305223554" class="r-stretch"></section>
-<section id="we-live-in-what-is-the-result-of-4.5-bi-years-of-evolution" class="slide level2 center">
-<h2>We live in what is the result of 4.5 Bi years of evolution</h2>
-</section>
-<section id="three-principles-to-understand" class="slide level2">
-<h2>Three principles to understand</h2>
-<ul>
-<li class="fragment">Speciation</li>
-<li class="fragment">Extinction</li>
-<li class="fragment">Dispersion</li>
-</ul>
-</section>
-<section id="why-are-there-so-many-species-on-earth" class="slide level2">
-<h2>Why are there so many species on Earth?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li class="fragment">What do we mean by species?
-<ul>
-<li class="fragment">Biological</li>
-<li class="fragment">Phylogenetic</li>
-<li class="fragment">Molecular</li>
-</ul></li>
-<li class="fragment">Where is the border?</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img src="https://images.theconversation.com/files/271121/original/file-20190426-121233-1y7l2qo.jpg?ixlib=rb-1.1.0&amp;q=45&amp;auto=format&amp;w=1000&amp;fit=clip"></p>
+<img data-src="https://methodsblog.files.wordpress.com/2015/05/beta5.jpg" class="r-stretch"></section>
+<section id="betapart-an-r-package" class="slide level2">
+<h2>betapart: an R package</h2>
+<div class="cell">
+
 </div>
-</div>
-</section>
-<section id="some-known-relationships" class="slide level2 center">
-<h2>Some known relationships</h2>
-</section>
-<section id="life-is-not-randomly-distributed" class="slide level2">
-<h2>Life is not randomly distributed</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="img/land_sea.png"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment">Habitats are not random
-<ul>
-<li class="fragment">More land on North</li>
-<li class="fragment">More sea on South</li>
-</ul></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="species-area-relationship-sar" class="slide level2">
-<h2>Species-Area Relationship (SAR)</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Humbolt</a></li><li><a href="#tabset-1-2">Hidden patterns</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">For presence/absence</a></li><li><a href="#tabset-1-2">Plot PA-turnover</a></li><li><a href="#tabset-1-3">Plot PA-nestedness</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="img/sar.png"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment"><a href="https://en.wikipedia.org/wiki/Alexander_von_Humboldt">Alexander Von Humbolt</a> observed that within a region species richness increased with increasing explored area, but only up to a limit.</li>
-</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>$beta.jtu
+            AL         AT         BG        CBH         CH         ES
+AT  0.44878049                                                       
+BG  0.24309392 0.29249012                                            
+CBH 0.25274725 0.16170213 0.32214765                                 
+CH  0.46376812 0.09852217 0.27678571 0.15311005                      
+ES  0.46376812 0.45714286 0.58152174 0.48484848 0.37130802           
+FR  0.40201005 0.25101215 0.38596491 0.23754789 0.07960199 0.35714286
+GR  0.30851064 0.50000000 0.42296073 0.42767296 0.48031496 0.64000000
+HU  0.41000000 0.19246862 0.24899598 0.18333333 0.20465116 0.50171821
+IT  0.29946524 0.16949153 0.43712575 0.18840580 0.08910891 0.49577465
+MK  0.54106280 0.55502392 0.26436782 0.37634409 0.59534884 0.59534884
+PT  0.63576159 0.53900709 0.49635036 0.41538462 0.53900709 0.03809524
+RO  0.32631579 0.16170213 0.27659574 0.28268551 0.19626168 0.54925373
+SL  0.47846890 0.18181818 0.17204301 0.05714286 0.24742268 0.39622642
+SS  0.19318182 0.17721519 0.33226837 0.21428571 0.18779343 0.56842105
+            FR         GR         HU         IT         MK         PT
+AT                                                                   
+BG                                                                   
+CBH                                                                  
+CH                                                                   
+ES                                                                   
+FR                                                                   
+GR  0.51612903                                                       
+HU  0.31660232 0.48611111                                            
+IT  0.09917355 0.51253482 0.26294821                                 
+MK  0.56190476 0.34065934 0.47474747 0.47474747                      
+PT  0.37795276 0.43939394 0.52857143 0.36507937 0.72839506           
+RO  0.35125448 0.50000000 0.10434783 0.32989691 0.41884817 0.51798561
+SL  0.17204301 0.41121495 0.19148936 0.05714286 0.54807692 0.58904110
+SS  0.27715356 0.54452926 0.14468085 0.35692308 0.36756757 0.42748092
+            RO         SL
+AT                       
+BG                       
+CBH                      
+CH                       
+ES                       
+FR                       
+GR                       
+HU                       
+IT                       
+MK                       
+PT                       
+RO                       
+SL  0.14207650           
+SS  0.20000000 0.16216216
+
+$beta.jne
+             AL          AT          BG         CBH          CH          ES
+AT  0.119921802                                                            
+BG  0.272807137 0.106838740                                                
+CBH 0.249084249 0.105955865 0.024130666                                    
+CH  0.075650971 0.091743319 0.168419765 0.181476418                        
+ES  0.189356884 0.090476190 0.012145807 0.032196970 0.157172996            
+FR  0.157249209 0.040175594 0.060237619 0.054267054 0.143087086 0.083850932
+GR  0.297549968 0.113941019 0.062214477 0.079102112 0.155044155 0.024335664
+HU  0.134401544 0.006701505 0.110593057 0.096078431 0.082848837 0.077991932
+IT  0.256466963 0.147581645 0.009933075 0.047089083 0.244224422 0.007003130
+MK  0.017076733 0.105560018 0.284927959 0.216638370 0.066129762 0.145722591
+PT  0.098537928 0.205087396 0.269751330 0.310247154 0.179607626 0.593291623
+RO  0.206530926 0.086389475 0.043404255 0.017314488 0.152223166 0.035911104
+SL  0.026076555 0.161529458 0.272000311 0.295798319 0.079766260 0.196130273
+SS  0.338171317 0.187605657 0.049388434 0.089511754 0.246847096 0.015335293
+             FR          GR          HU          IT          MK          PT
+AT                                                                         
+BG                                                                         
+CBH                                                                        
+CH                                                                         
+ES                                                                         
+FR                                                                         
+GR  0.090170180                                                            
+HU  0.030261152 0.114967056                                                
+IT  0.119464439 0.042172560 0.120385126                                    
+MK  0.119756138 0.297894876 0.132799695 0.194042334                        
+PT  0.311023622 0.336363636 0.212605042 0.359058566 0.062081129            
+RO  0.028882506 0.075916230 0.087809037 0.051055474 0.188925684 0.241871019
+SL  0.201940729 0.223567655 0.164442842 0.336239496 0.037826161 0.129268763
+SS  0.125323222 0.016745248 0.191952812 0.035518784 0.266807432 0.333665581
+             RO          SL
+AT                         
+BG                         
+CBH                        
+CH                         
+ES                         
+FR                         
+GR                         
+HU                         
+IT                         
+MK                         
+PT                         
+RO                         
+SL  0.244642247            
+SS  0.109904153 0.322887672
+
+$beta.jac
+           AL        AT        BG       CBH        CH        ES        FR
+AT  0.5687023                                                            
+BG  0.5159011 0.3993289                                                  
+CBH 0.5018315 0.2676580 0.3462783                                        
+CH  0.5394191 0.1902655 0.4452055 0.3345865                              
+ES  0.6531250 0.5476190 0.5936675 0.5170455 0.5284810                    
+FR  0.5592593 0.2911877 0.4462025 0.2918149 0.2226891 0.4409938          
+GR  0.6060606 0.6139410 0.4851752 0.5067751 0.6353591 0.6643357 0.6062992
+HU  0.5444015 0.1991701 0.3595890 0.2794118 0.2875000 0.5797101 0.3468635
+IT  0.5559322 0.3170732 0.4470588 0.2354949 0.3333333 0.5027778 0.2186380
+MK  0.5581395 0.6605839 0.5492958 0.5929825 0.6614786 0.7410714 0.6816609
+PT  0.7342995 0.7440945 0.7661017 0.7256318 0.7186147 0.6313869 0.6889764
+RO  0.5328467 0.2480916 0.3200000 0.3000000 0.3484848 0.5851648 0.3801370
+SL  0.5045455 0.3433476 0.4440433 0.3529412 0.3271889 0.5923567 0.3739837
+SS  0.5313531 0.3648208 0.3816568 0.3037975 0.4346405 0.5837563 0.4024768
+           GR        HU        IT        MK        PT        RO        SL
+AT                                                                       
+BG                                                                       
+CBH                                                                      
+CH                                                                       
+ES                                                                       
+FR                                                                       
+GR                                                                       
+HU  0.6010782                                                            
+IT  0.5547074 0.3833333                                                  
+MK  0.6385542 0.6075472 0.6687898                                        
+PT  0.7757576 0.7411765 0.7241379 0.7904762                              
+RO  0.5759162 0.1921569 0.3809524 0.6077739 0.7598566                    
+SL  0.6347826 0.3559322 0.3933824 0.5859031 0.7183099 0.3867188          
+SS  0.5612745 0.3366337 0.3924419 0.6343750 0.7611465 0.3099042 0.4850498</code></pre>
 </div>
 </div>
 </div>
 <div id="tabset-1-2">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="img/sars.webp"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment">Neutral models, though weird, help to explain SAR</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="species-area-relationship-sar-1" class="slide level2">
-<h2>Species-Area Relationship (SAR)</h2>
-<div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Data</a></li><li><a href="#tabset-2-2">Model</a></li><li><a href="#tabset-2-3">Plot</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1">
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>         a   s
-1     0.52  48
-2     2.33   7
-3     2.59  52
-4     4.66  14
-5     4.84  42
-6    11.40  22
-7    18.39 103
-8    19.42  48
-9    46.62  79
-10   51.80 119
-11  116.55  47
-12  165.76 319
-13  505.05 306
-14  525.77 224
-15  634.55  80
-16 1007.51 193</code></pre>
-</div>
-</div>
-</div>
-<div id="tabset-2-2">
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Model:
-Logarithmic
-
-Call: 
-S == c + z * log(A)
-
-Did the model converge: TRUE
-
-Residuals:
-        0%        25%        50%        75%       100% 
--115.68753  -38.74990  -11.36383   25.67070  163.95994 
-
-Parameters:
-     Estimate  Std. Error     t value    Pr(&gt;|t|)        2.5%  97.5%
-c   0.2915341  34.5985767   0.0084262   0.9933958 -68.9056193 69.489
-z  30.2802630   8.3203931   3.6392827   0.0026812  13.6394768 46.921
-
-R-squared: 0.49, Adjusted R-squared: 0.41
-AIC: 187.19, AICc: 189.19, BIC: 189.51
-Observed shape: convex up, Asymptote: FALSE
-
-
-Warning: The fitted values of the model contain negative values (i.e. negative species richness values)</code></pre>
-</div>
-</div>
-</div>
-<div id="tabset-2-3">
 <div class="cell">
 <div class="cell-output-display">
-<p><img data-src="04_biod_mag_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+<p><img data-src="06_biod_measures_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-1-3">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="06_biod_measures_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="island-biogeography" class="slide level2">
-<h2>Island Biogeography</h2>
-<div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Distance</a></li><li><a href="#tabset-3-2">Size</a></li><li><a href="#tabset-3-3">Theory</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1">
-<p><img data-src="https://www.researchgate.net/profile/Laura-Glendinning/publication/324495329/figure/fig1/AS:769651810267136@1560510699084/A-basic-diagram-depicting-the-island-biogeography-model-This-model-states-that.jpg"></p>
-<p>source: <a href="https://www.researchgate.net/publication/324495329_Sheep_lung_microbiota">Laura Glendinning</a></p>
-</div>
-<div id="tabset-3-2">
-<p><img data-src="https://osu-wams-blogs-uploads.s3.amazonaws.com/blogs.dir/2786/files/2020/07/islands.png"></p>
-</div>
-<div id="tabset-3-3">
-<p><img data-src="img/island_biog.jpg"> source: <a href="https://www.sciencedirect.com/science/article/pii/S096098222100988X#fig3">Matthews &amp; triantis 2021</a></p>
-</div>
-</div>
-</div>
-</section>
-<section id="biogeographic-frontiers-of-the-earth" class="slide level2">
-<h2>Biogeographic frontiers of the Earth</h2>
-<p><a href="https://en.wikipedia.org/wiki/Biogeographic_realm"><strong>Biogeographic Realms</strong></a> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ecozones.svg/1920px-Ecozones.svg.png"></p>
-</section>
-<section id="the-wallace-line" class="slide level2">
-<h2>The Wallace line</h2>
+<section id="applications-for-conservation" class="slide level2">
+<h2>Applications for conservation</h2>
 
-<img data-src="https://64.media.tumblr.com/06ec4f9747754d130291f6036aae04d6/tumblr_o98sc1kDN31sq04bjo1_1280.jpg" class="r-stretch"></section>
-<section id="endemisms" class="slide level2">
-<h2>Endemisms</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="https://www.researchgate.net/profile/Douglas-Boyes/publication/336343580/figure/fig3/AS:817566788370435@1571934520763/Rabinowitzs-1981-rarity-typology-rendered-as-a-cube-It-identifies-seven-forms-of.png"></p>
-<p>Source <a href="https://www.researchgate.net/publication/336343580_Bucking_the_trend_the_diversity_of_Anthropocene_'winners'_among_British_moths">Boyes et al 2019</a></p>
-</div><div class="column" style="width:50%;">
-<p>Rabinowitz’s (1981) rarity typology rendered as a cube. It identifies seven forms of rarity, along with an eighth state showing no traits of rarity (shaded cube), when species are dichotomously classified along three axes.</p>
-</div>
+<img data-src="https://ars.els-cdn.com/content/image/1-s2.0-S016953471500289X-gr1b4_lrg.jpg" class="r-stretch"><div class="footer">
+<p><a href="https://doi.org/10.1016/j.tree.2015.11.005">Socolar et al 2016 - How Should Beta-Diversity Inform Biodiversity Conservation?</a></p>
 </div>
 </section>
-<section id="diversity" class="slide level2">
-<h2>Diversity</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="https://evolution.berkeley.edu/wp-content/uploads/2021/05/diversity_globe2.jpg"></p>
-<p>Source <a href="https://evolution.berkeley.edu/visualizing-life-on-earth/introducing-the-ldg/">Berkeley</a></p>
-</div><div class="column" style="width:50%;">
-<p>Diversity is higher in the tropics</p>
-<ul>
-<li class="fragment">WHY?</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="some-hypotheses" class="slide level2">
-<h2>Some hypotheses</h2>
-<div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">H1 - “cradle”</a></li><li><a href="#tabset-4-2">H2 - low extinction</a></li><li><a href="#tabset-4-3">H3 - high immigration</a></li></ul>
-<div class="tab-content">
-<div id="tabset-4-1">
-<p><img data-src="https://evolution.berkeley.edu/wp-content/uploads/2021/05/ldg_cradle.gif"></p>
-</div>
-<div id="tabset-4-2">
-<p><img data-src="https://evolution.berkeley.edu/wp-content/uploads/2021/05/ldg_museum.gif"></p>
-</div>
-<div id="tabset-4-3">
-<p><img data-src="https://evolution.berkeley.edu/wp-content/uploads/2021/05/ldg_destination.gif"></p>
-</div>
-</div>
-</div>
-</section>
-<section id="more-hidden-patterns" class="slide level2">
-<h2>More hidden patterns</h2>
-<div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Nested diversity</a></li><li><a href="#tabset-5-2">Age of species</a></li></ul>
-<div class="tab-content">
-<div id="tabset-5-1">
-<p><img src="img/div_nest.webp" width="500/"></p>
-<p><a href="https://www.nature.com/articles/35012221">Getting the measure of biodiversity</a></p>
-</div>
-<div id="tabset-5-2">
-<p><img data-src="img/div_age.webp" class="absolute" style="height: 500px; "></p>
-</div>
-</div>
-</div>
-</section>
-<section id="alfred-russel-wallace" class="slide level2">
-<h2>Alfred Russel Wallace</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQhehBm8LtcZpizY5ZUoZDUfhk_G7Fmza8oz_PgtEk7wokliT4iLwdFQl3woU3r" height="500"></p>
-</div><div class="column" style="width:50%;">
-<p>The “father of Biogeography”</p>
-<div>
-<ul>
-<li>Niche</li>
-<li>History</li>
-<li>Species intereaction</li>
-<li>SARs</li>
-</ul>
-</div>
-</div>
-</div>
-<p><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2699.2009.02111.x">Darwin, historical biogeography, and the importance of overcoming binary opposites</a></p>
-</section>
-<section id="niche-and-conservation-priorities" class="slide level2">
-<h2>Niche and conservation priorities</h2>
-<p><img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-030-51633-8_7/MediaObjects/470677_1_En_7_Figa_HTML.png" height="500"></p>
-</section>
-<section id="history" class="slide level2">
-<h2>History</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Mammals in Americas <img data-src="https://images.theconversation.com/files/361877/original/file-20201006-22-19yd99d.jpg?ixlib=rb-1.1.0&amp;q=45&amp;auto=format&amp;w=1000&amp;fit=clip"></p>
-</div><div class="column" style="width:50%;">
-<p>Invasive Bees</p>
-<p><img data-src="https://www.researchgate.net/publication/335666570/figure/fig1/AS:800304018759682@1567818755633/Current-and-predicted-future-spread-of-Africanized-honey-bees-in-the-Americas.png"></p>
-</div>
-</div>
-</section>
-<section id="species-interactions" class="slide level2">
-<h2>Species interactions</h2>
+<section id="sloss-debate" class="slide level2">
+<h2>SLOSS Debate</h2>
 
-<img data-src="https://www.mun.ca/biology/scarr/Geospiza_beaks.jpg" class="r-stretch"></section>
-<section id="some-applications" class="slide level2">
-<h2>Some applications</h2>
-
-<img data-src="https://www.researchgate.net/profile/Michael-Hoffmann-19/publication/6958884/figure/fig1/AS:280471314419712@1443880980338/Maps-of-the-nine-global-biodiversity-conservation-priority-templates-CE-crisis.png" class="r-stretch"><p><a href="https://www.science.org/doi/10.1126/science.1127609">Brooks et al 2006</a></p>
+<img data-src="https://ecologydomine.files.wordpress.com/2022/09/slossfig.jpg?w=604" class="r-stretch"><div class="footer">
+<p><a href="https://ecologydomine.wordpress.com/2022/09/24/if-something-seems-too-good-to-be-true/">Sure, small patches are important, but that important?</a></p>
+</div>
 </section>
-<section id="todays-reviews" class="slide level2">
-<h2>Today’s reviews</h2>
+<section id="beta-diversity-of-plants" class="slide level2">
+<h2>Beta diversity of plants</h2>
+
+<img data-src="https://scx2.b-cdn.net/gfx/news/2023/scientists-present-the.jpg" class="r-stretch quarto-figure-center"><div class="footer">
+<p><a href="https://www.sciencedirect.com/science/article/pii/S2468265923001075?via%3Dihub#fig1">Geographic patterns of plant β-diversity</a></p>
+</div>
+</section>
+<section id="biotic-homogenization" class="slide level2">
+<h2>Biotic homogenization</h2>
+
+<img data-src="https://ars.els-cdn.com/content/image/1-s2.0-S0006320715301567-fx1_lrg.jpg" class="r-stretch quarto-figure-center"></section>
+<section id="phylogenetic-diversity" class="slide level2 center">
+<h2>Phylogenetic diversity</h2>
+</section>
+<section id="basic-definition" class="slide level2">
+<h2>Basic definition</h2>
+
+<img data-src="https://ars.els-cdn.com/content/image/1-s2.0-S0169534712002881-gr1b1.jpg" class="r-stretch quarto-figure-center"><div class="footer">
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0169534712002881">Phylogenetic diversity and nature conservation</a></p>
+</div>
+</section>
+<section id="relationships-with-gradients" class="slide level2">
+<h2>Relationships with gradients</h2>
+
+<img data-src="img/phylo_bird.jpg" class="r-stretch"><div class="footer">
+<p><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/btp.12881">Landscape heterogeneity shapes bird phylogenetic</a></p>
+</div>
+</section>
+<section id="phylo-and-functional-diversity" class="slide level2">
+<h2>Phylo and Functional diversity</h2>
+
+<img data-src="img/phylo_paper.png" class="r-stretch"><div class="footer">
+<p><a href="https://www.researchgate.net/profile/Jeannine-Cavender-Bares/publication/26244584_The_merging_of_community_ecology_and_phylogenetic_biology/links/5b29d7fb4585150c633fa790/The-merging-of-community-ecology-and-phylogenetic-biology.pdf">The merging of community ecology and phylogenetic biology</a></p>
+</div>
+</section>
+<section id="functional-diversity" class="slide level2 center">
+<h2>Functional diversity</h2>
+</section>
+<section id="function-is-key" class="slide level2">
+<h2>Function is key</h2>
+
+<img data-src="https://www.oceanlifecentre.dk/-/media/Sites/OceanLife/news/2019/trait-collection-figure.ashx?mw=700&amp;hash=8221333DF339AADE6C419A5426810FB7" class="r-stretch"></section>
+<section id="calculate-it-not-that-easy" class="slide level2">
+<h2>Calculate it… not that easy</h2>
+
+<img data-src="https://besjournals.onlinelibrary.wiley.com/cms/asset/04512447-703c-4a4a-8353-7ba65baf13b8/mee313424-fig-0001-m.jpg" class="r-stretch"></section>
+<section id="calculate-it-not-that-easy-1" class="slide level2">
+<h2>Calculate it… not that easy</h2>
+
+<img data-src="https://d3i71xaburhd42.cloudfront.net/f4a88d60b86900c31f0f6f5d72a184da075d6f00/4-Figure1-1.png" class="r-stretch"></section>
+<section id="biodiversityfunction" class="slide level2">
+<h2>Biodiversity~Function</h2>
+
+<img data-src="https://ars.els-cdn.com/content/image/1-s2.0-S0272771415001389-gr1_lrg.jpg" class="r-stretch"><div class="footer">
+<p><a href="https://www.sciencedirect.com/science/article/pii/S0272771415001389#fig1:~:text=Pages%2046%2D64-,Marine%20biodiversity%20and%20ecosystem%20function,-relationships%3A%20The%20potential">Marine biodiversity and ecosystem function</a></p>
+</div>
+</section>
+<section id="applications-for-conservation-1" class="slide level2">
+<h2>Applications for conservation</h2>
+
+<img data-src="https://www.researchgate.net/profile/Fernanda-Brum-2/publication/318134861/figure/fig1/AS:512388174102529@1499174268409/The-top-17-of-cells-selected-according-to-zonation-prioritization-based-on-the-taxonomic.png" class="r-stretch"><div class="footer">
+<p><a href="https://www.pnas.org/doi/full/10.1073/pnas.1706461114">Global priorities for conservation</a></p>
+</div>
+</section>
+<section id="applications-for-conservation-2" class="slide level2">
+<h2>Applications for conservation</h2>
+
+<img data-src="https://www.pnas.org/cms/10.1073/pnas.1706461114/asset/04dd20ba-ede2-4a19-83e5-7462fef2516f/assets/graphic/pnas.1706461114fig03.jpeg" class="r-stretch"><div class="footer">
+<p><a href="https://www.pnas.org/doi/full/10.1073/pnas.1706461114">Global priorities for conservation</a></p>
+</div>
+</section>
+<section id="todays-review" class="slide level2">
+<h2>Today’s review</h2>
 <ul>
-<li class="fragment">It is important to have a clear scenario on the magitude and ditribution of biodiversity</li>
-<li class="fragment">Biogrpgraphy is a key dicipline</li>
-<li class="fragment">Patterns of divesity in nature are everywhere</li>
-<li class="fragment">Informed prioritisation demands knowledge</li>
+<li class="fragment">Diversity is much more than number of species</li>
+<li class="fragment">Important to understand: alpha, beta and gamma</li>
+<li class="fragment">Phylogeny is evolutive history</li>
+<li class="fragment">Functional divesity is key for modern interpretation on the value fo biodiversity</li>
 </ul>
 </section>
 <section id="the-end" class="slide level2 center">
 <h2>The end</h2>
 
 <img src="img/ntu_logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-<p>Conservation Priorities</p>
+
 </div>
 </section>
     </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="04_biod_mag_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="04_biod_mag_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="04_biod_mag_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="04_biod_mag_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="04_biod_mag_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="04_biod_mag_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="04_biod_mag_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="04_biod_mag_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="04_biod_mag_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="04_biod_mag_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="04_biod_mag_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="06_biod_measures_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
