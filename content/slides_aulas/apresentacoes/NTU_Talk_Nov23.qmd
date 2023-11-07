@@ -298,13 +298,13 @@ The Darwin Initiative is a UK government grants scheme that helps to protect bio
 
 ## {background-image=libs/five_areas.jpeg background-size=cover}
 
-## Join US
+## Join us!{.center}
 
 ## Aknowledgements
-![](libs/uzal.jpeg){.absolute top=200 left=0 width="250" height="200"}
-![](libs/marcello.jpg){.absolute top=430 left=0 width="250" height="200"}
-![](libs/rihana.jpg){.absolute top=200 left=300 width="250" height="200"}
-![](libs/andrew.jpg){.absolute top=430 left=300 width="250" height="200"}
+![](libs/uzal.jpeg){.absolute top=200 left=0 width="290" height="200"}
+![](libs/marcello.jpg){.absolute top=430 left=0 width="290" height="200"}
+![](libs/rihana.jpg){.absolute top=200 left=300 width="290" height="200"}
+![](libs/andrew.jpg){.absolute top=430 left=300 width="290" height="200"}
 
 ## 
 {{< video libs/mangue.mp4 >}}

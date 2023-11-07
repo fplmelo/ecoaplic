@@ -25,6 +25,8 @@ weight: 2
 
 - [Armadillo NTU](https://ecoaplic.org/slides_aulas/apresentacoes/tatu.html#/title-slide)
 
+- [NTU Research Seminar](https://ecoaplic.org/slides_aulas/apresentacoes/NTU_Talk_Nov23.html#/title-slide)
+
 
 ## Autor
 
