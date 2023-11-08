@@ -59,7 +59,7 @@ format:
 [Filgueiras et al (2021) Trends in Ecol &  Evol](https://doi.org/10.1016/j.tree.2021.02.006)
 :::
 
-## Biogeogrpahical patterns
+## Biogeographical patterns
 
 ![](libs/geb_fig.png){fig-align="center"}
 
@@ -98,6 +98,12 @@ format:
 
 ![](libs/meli.png){fig-align="center"}
 
+## Restoration policy
+![](libs/wef.png)
+
+:::{.footer}
+[Melo et al (2021) Nature Sutainability](https://www.nature.com/articles/s41893-020-00608-z)
+:::
 
 ## Restoration for NTU{.center}
 
