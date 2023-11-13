@@ -1,0 +1,43 @@
+---
+title: "Ex2 - Protected Areas"
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "NTU research seminars"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+
+---
+
+## Protected Areas and Biodiversity Conservation 2:Design a marine Reserve
+
+## 
+![](img/ex2_sea.jpg)
+
+## Let's get the data
+
+![](img/table2.png)
+
+
+## Solution 1
+![](img/ex2_sea.jpg)
+
+## Solution 2
+![](img/ex2_sea.jpg)
+
+## Solution 3
+
+![](img/ex2_sea.jpg)
+
+## Solution 4
+![](img/ex2_sea.jpg)
+
+##
+
+
