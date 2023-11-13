@@ -1,0 +1,14 @@
+Species,site_a,site_b,site_c,site_d,site_e,site_f,site_g,site_h,site_i
+Eastern hemlock (Tsuga canadensis),1,0,1,0,0,0,1,0,1
+Chestnut oak (Quercus prinus),0,0,1,1,0,1,1,1,1
+Orb-web spider spp. (Araneidae),1,0,0,1,1,0,1,1,1
+Rove Beetle spp. (Staphylinidae),1,1,1,0,0,0,0,0,0
+Blue-winged warbler (Vermivora pinus),1,0,1,0,1,1,0,0,0
+Ovenbird (Seiurus aurocapillus),0,1,0,1,0,1,0,0,0
+Gray Treefrog  (Hyla versicolor),1,0,0,1,0,0,1,0,0
+Marbled salamander (Ambystoma opacum),0,0,0,0,1,0,0,0,0
+Painted turtle (Chrysemys picta),0,1,0,0,0,1,0,0,0
+Smooth Green Snake (Opheodrys vernalis),1,0,0,0,1,1,0,1,0
+New England cottontail (Sylvilagus transitionalis),1,0,0,1,1,0,1,1,1
+Eastern small-footed bat (Myotis leibii),1,0,0,0,0,0,1,1,0
+Rock vole (Microtus chrotorrhinus),0,1,1,1,0,1,0,0,1

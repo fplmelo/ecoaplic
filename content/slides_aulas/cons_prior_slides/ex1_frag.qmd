@@ -1,0 +1,147 @@
+---
+title: "Ex1 - Protected Areas"
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "NTU research seminars"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+
+---
+
+## Protected Areas and Biodiversity Conservation I: Reserve Selection in New England Forests
+
+## 
+![](img/ex1_land.jpg)
+
+## Let's get the data
+
+![](img/data.png)
+
+
+## Let's get the data
+
+```{r}
+setwd("~/ecoaplic/content/slides_aulas/cons_prior_slides/data")
+data1<-read.csv("data1.csv", row.names = 1)
+data1
+
+```
+
+## Explore data
+::: panel-tabset
+
+#### Code - Richness
+
+```{r echo=TRUE}
+library(vegan)
+
+
+richness<-specnumber(t(data1))
+
+```
+
+#### result - Richness
+
+```{r}
+
+richness
+
+```
+:::
+
+## Explore data
+::: panel-tabset
+
+#### Code - Shannon
+
+```{r echo=TRUE}
+library(vegan)
+library(BiodiversityR)
+
+shannon<-diversity(t(data1))
+
+```
+
+#### result - Shannon
+
+```{r}
+
+shannon
+
+```
+:::
+
+## Explore data
+::: panel-tabset
+
+#### Code - Beta Diversity
+
+```{r echo=TRUE}
+library(vegan)
+
+beta<-dist(t(data1))
+
+
+```
+
+#### result - Beta Diversity
+
+```{r}
+
+beta
+
+```
+
+
+:::
+## Visual inspection
+::: panel-tabset
+
+#### Graph - Beta Diversity
+
+
+```{r}
+fit <- hclust(beta, method="ward")
+plot(fit)
+```
+
+#### Graph 2 - Beta Diversity
+
+```{r, echo=FALSE, include=FALSE}
+
+nmds<-metaMDS(t(data1))
+nmds.p<-as.data.frame(nmds$points)
+
+```
+
+```{r}
+library(tidyverse)
+ggplot(nmds.p, aes(MDS1, MDS2, label = rownames(nmds.p)))+geom_label()
+```
+
+:::
+
+## What about size of the fragments
+::: panel-tabset
+#### Size of fragments
+
+```{r, include=TRUE, echo=TRUE}
+size<-c(20, 2,10,25,18,19,15,30,3)
+d1<-data.frame(size,richness)
+
+```
+#### Plot
+
+```{r}
+ggplot(d1, aes(size, richness))+geom_point(size=3)
+
+```
+:::
+
