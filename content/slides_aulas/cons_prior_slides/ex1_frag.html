@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="NTU_Talk_Nov23_files/libs/clipboard/clipboard.min.js"></script>
-<script src="NTU_Talk_Nov23_files/libs/quarto-html/tabby.min.js"></script>
-<script src="NTU_Talk_Nov23_files/libs/quarto-html/popper.min.js"></script>
-<script src="NTU_Talk_Nov23_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="NTU_Talk_Nov23_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="NTU_Talk_Nov23_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="NTU_Talk_Nov23_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="NTU_Talk_Nov23_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="NTU_Talk_Nov23_files/libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="NTU_Talk_Nov23_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
+<script src="ex1_frag_files/libs/clipboard/clipboard.min.js"></script>
+<script src="ex1_frag_files/libs/quarto-html/tabby.min.js"></script>
+<script src="ex1_frag_files/libs/quarto-html/popper.min.js"></script>
+<script src="ex1_frag_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="ex1_frag_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="ex1_frag_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="ex1_frag_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="ex1_frag_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.353">
 
   <meta name="author" content="Felipe Melo">
-  <title>A Restoration Research Program for NTU</title>
+  <title>Ex1 - Protected Areas</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="NTU_Talk_Nov23_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="NTU_Talk_Nov23_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="ex1_frag_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="ex1_frag_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,14 +29,79 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="NTU_Talk_Nov23_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="NTU_Talk_Nov23_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="NTU_Talk_Nov23_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="NTU_Talk_Nov23_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="NTU_Talk_Nov23_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="NTU_Talk_Nov23_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="NTU_Talk_Nov23_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="ex1_frag_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="ex1_frag_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="ex1_frag_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="ex1_frag_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="ex1_frag_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="ex1_frag_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="ex1_frag_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -329,7 +392,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">A Restoration Research Program for NTU</h1>
+  <h1 class="title">Ex1 - Protected Areas</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -340,302 +403,190 @@ Felipe Melo
 </div>
 
 </section>
-<section id="by-the-end-of-this-talk-i-want-to" class="slide level2">
-<h2>By the end of this talk I want to:</h2>
-<ul>
-<li class="fragment">Showcase how restoration hooked me</li>
-<li class="fragment">The research opportunities around restoration</li>
-<li class="fragment">A general call for jumping on the Restoration boat</li>
-</ul>
+<section id="protected-areas-and-biodiversity-conservation-i-reserve-selection-in-new-england-forests" class="slide level2">
+<h2>Protected Areas and Biodiversity Conservation I: Reserve Selection in New England Forests</h2>
 </section>
-<section id="research-interests-and-background" class="slide level2" data-background-image="libs/usga_land.png" data-background-opacity="0.7">
-<h2>Research interests and background</h2>
-</section>
-<section id="section" class="slide level2" data-background-image="libs/mahli.png" data-background-size="contain">
+<section id="section" class="slide level2">
 <h2></h2>
-<div class="footer">
-<p><a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-030713-155141">Malhi et al (2014) Annual Review of Environment and Resources</a></p>
-</div>
-</section>
-<section id="forest-sucession-via-seed-dispersal" class="slide level2">
-<h2>Forest sucession via seed dispersal</h2>
-<p><img data-src="libs/seedrain.png"> <img data-src="libs/seedling.png"></p>
-</section>
-<section id="landscape-perspective" class="slide level2">
-<h2>Landscape perspective</h2>
 
-<img data-src="libs/hope_fig.jpg" class="r-stretch quarto-figure-center"><div class="footer">
-<p><a href="https://www.sciencedirect.com/science/article/pii/S0169534713000037">Melo et al (2013) Trends in Ecol &amp; Evol</a></p>
-</div>
-</section>
-<section id="landscape-perspective-1" class="slide level2">
-<h2>Landscape perspective</h2>
+<img data-src="img/ex1_land.jpg" class="r-stretch"></section>
+<section id="lets-get-the-data" class="slide level2">
+<h2>Let’s get the data</h2>
 
-<img data-src="libs/sec_suc.png" class="r-stretch quarto-figure-center"><div class="footer">
-<p><a href="https://www.sciencedirect.com/science/article/pii/S0169534713000037">Arroyo et al (2017) Biol Rev</a></p>
-</div>
-</section>
-<section id="biotic-homogenization" class="slide level2">
-<h2>Biotic homogenization</h2>
-
-<img data-src="https://ars.els-cdn.com/content/image/1-s2.0-S0169534721000562-gr2_lrg.jpg" class="r-stretch quarto-figure-center"><div class="footer">
-<p><a href="https://doi.org/10.1016/j.tree.2021.02.006">Filgueiras et al (2021) Trends in Ecol &amp; Evol</a></p>
-</div>
-</section>
-<section id="biogeographical-patterns" class="slide level2">
-<h2>Biogeographical patterns</h2>
-
-<img data-src="libs/geb_fig.png" class="r-stretch quarto-figure-center"><div class="footer">
-<p><a href="https://doi.org/10.1111/geb.13309">Pinho et al (2021) Global Ecol &amp; Biog</a></p>
-</div>
-</section>
-<section id="applications" class="slide level2">
-<h2>Applications</h2>
-
-<img data-src="libs/optimal.jpg" class="r-stretch quarto-figure-center"><div class="footer">
-<p><a href="https://publons.com/publon/10.1111/ele.13535">Arroyo et al (2021) Ecol Lett</a></p>
-</div>
-</section>
-<section id="forest-and-people" class="slide level2">
-<h2>Forest and people</h2>
-
-<img data-src="libs/fore_food.png" class="r-stretch quarto-figure-center"><div class="footer">
-<p><a href="https://publons.com/publon/10.1111/ele.13535">Alencar et al (2023) Land Degrad &amp; Devel</a></p>
-</div>
-</section>
-<section id="forest-and-people-1" class="slide level2">
-<h2>Forest and people</h2>
-
-<img data-src="libs/land_ineq.jpg" class="r-stretch quarto-figure-center"><div class="footer">
-<p><a href="https://publons.com/publon/10.1111/ele.13535">Melo et al (2023) Lands &amp; Urban Plann</a></p>
-</div>
-</section>
-<section id="restoration-policy" class="slide level2">
-<h2>Restoration policy</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="libs/priority.png"></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="libs/meli.png"></p>
-</figure>
-</div>
-</section>
-<section id="restoration-policy-1" class="slide level2">
-<h2>Restoration policy</h2>
-
-<img data-src="libs/wef.png" class="r-stretch"><div class="footer">
-<p><a href="https://www.nature.com/articles/s41893-020-00608-z">Melo et al (2021) Nature Sutainability</a></p>
-</div>
-</section>
-<section id="restoration-for-ntu" class="slide level2 center">
-<h2>Restoration for NTU</h2>
-</section>
-<section id="biorestnet-a-network-of-biocultural-restoration" class="slide level2 center">
-<h2>BioRestNet: a network of biocultural restoration</h2>
-</section>
-<section id="why-a-network" class="slide level2">
-<h2>Why a network?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="https://www.lebow.drexel.edu/sites/default/files/legacy/story/1501077931-network.jpg" width="600"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment">It is the best way to scale up restoration</li>
-<li class="fragment">Allows sharing of knowledge</li>
-<li class="fragment">Strengthen actions</li>
-<li class="fragment">Creates models</li>
-</ul>
+<img data-src="img/data.png" class="r-stretch"></section>
+<section id="lets-get-the-data-1" class="slide level2">
+<h2>Let’s get the data</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>                                                   site_a site_b site_c site_d
+Eastern hemlock (Tsuga canadensis)                      1      0      1      0
+Chestnut oak (Quercus prinus)                           0      0      1      1
+Orb-web spider spp. (Araneidae)                         1      0      0      1
+Rove Beetle spp. (Staphylinidae)                        1      1      1      0
+Blue-winged warbler (Vermivora pinus)                   1      0      1      0
+Ovenbird (Seiurus aurocapillus)                         0      1      0      1
+Gray Treefrog  (Hyla versicolor)                        1      0      0      1
+Marbled salamander (Ambystoma opacum)                   0      0      0      0
+Painted turtle (Chrysemys picta)                        0      1      0      0
+Smooth Green Snake (Opheodrys vernalis)                 1      0      0      0
+New England cottontail (Sylvilagus transitionalis)      1      0      0      1
+Eastern small-footed bat (Myotis leibii)                1      0      0      0
+Rock vole (Microtus chrotorrhinus)                      0      1      1      1
+                                                   site_e site_f site_g site_h
+Eastern hemlock (Tsuga canadensis)                      0      0      1      0
+Chestnut oak (Quercus prinus)                           0      1      1      1
+Orb-web spider spp. (Araneidae)                         1      0      1      1
+Rove Beetle spp. (Staphylinidae)                        0      0      0      0
+Blue-winged warbler (Vermivora pinus)                   1      1      0      0
+Ovenbird (Seiurus aurocapillus)                         0      1      0      0
+Gray Treefrog  (Hyla versicolor)                        0      0      1      0
+Marbled salamander (Ambystoma opacum)                   1      0      0      0
+Painted turtle (Chrysemys picta)                        0      1      0      0
+Smooth Green Snake (Opheodrys vernalis)                 1      1      0      1
+New England cottontail (Sylvilagus transitionalis)      1      0      1      1
+Eastern small-footed bat (Myotis leibii)                0      0      1      1
+Rock vole (Microtus chrotorrhinus)                      0      1      0      0
+                                                   site_i
+Eastern hemlock (Tsuga canadensis)                      1
+Chestnut oak (Quercus prinus)                           1
+Orb-web spider spp. (Araneidae)                         1
+Rove Beetle spp. (Staphylinidae)                        0
+Blue-winged warbler (Vermivora pinus)                   0
+Ovenbird (Seiurus aurocapillus)                         0
+Gray Treefrog  (Hyla versicolor)                        0
+Marbled salamander (Ambystoma opacum)                   0
+Painted turtle (Chrysemys picta)                        0
+Smooth Green Snake (Opheodrys vernalis)                 0
+New England cottontail (Sylvilagus transitionalis)      1
+Eastern small-footed bat (Myotis leibii)                0
+Rock vole (Microtus chrotorrhinus)                      1</code></pre>
 </div>
 </div>
 </section>
-<section id="research-component" class="slide level2 center">
-<h2>Research Component</h2>
-</section>
-<section id="biocultural-restoration" class="slide level2">
-<h2>Biocultural restoration</h2>
-
-<img data-src="https://www.mdpi.com/land/land-08-00005/article_deploy/html/images/land-08-00005-g001.png" width="700" class="r-stretch"></section>
-<section id="core-principles" class="slide level2">
-<h2>Core principles</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div>
-<ul>
-<li>Based on TEK</li>
-<li>Potential for social engagement</li>
-<li>Decolonial perspective</li>
-<li>Co-constructed models</li>
-</ul>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="libs/biocult-core.jpg" width="700"></p>
+<section id="explore-data" class="slide level2">
+<h2>Explore data</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Code - Richness</a></li><li><a href="#tabset-1-2">result - Richness</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a></span>
+<span id="cb2-4"><a href="#cb2-4"></a>richness<span class="ot">&lt;-</span><span class="fu">specnumber</span>(<span class="fu">t</span>(data1))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-</section>
-<section id="the-projects-design" class="slide level2">
-<h2>The project’s design</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div>
-<p>Biocultural landscape</p>
-<ul>
-<li>Culturally important species</li>
-<li>Database on functional traits</li>
-<li>Landscape perspective</li>
-</ul>
-</div>
-</div><div class="column" style="width:50%;">
-<p><img data-src="libs/biocult.png"></p>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>site_a site_b site_c site_d site_e site_f site_g site_h site_i 
+     8      4      5      6      5      6      6      5      5 </code></pre>
 </div>
 </div>
-</section>
-<section id="objective-1---inventory-useful-species-and-its-functional-traits" class="slide level2">
-<h2>Objective 1 - Inventory useful species and its functional traits</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="libs/fundiv.jpg"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment">We’ll add a species x uses table</li>
-<li class="fragment">Use a framework from Functional Ecology</li>
-<li class="fragment">Test functionality of culturally important species</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="objective-2---model-distribution-against-climate-change" class="slide level2">
-<h2>Objective 2 - Model distribution against climate change</h2>
-<div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="libs/climate_kenya.png"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Distribution of the Biocultural core of species</li>
-<li>Current and future climate</li>
-<li>Priority areas for Biocultural Restoration</li>
-<li>Sensitive areas</li>
-</ul>
 </div>
 </div>
 </div>
 </section>
-<section id="objective-3---controlled-experiments-on-bef" class="slide level2">
-<h2>Objective 3 - Controlled experiments on BEF</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="libs/design.jpeg" width="350"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment">A randomized-structured experiment</li>
-<li class="fragment">Placed at the Savanna site</li>
-<li class="fragment">Control and simulate
-<ul>
-<li class="fragment">Disturbance</li>
-<li class="fragment">Climate variables (water)</li>
-</ul></li>
-</ul>
-<h4 id="inspired-by-nutnnet">- inspired by <a href="https://nutnet.org/">NutNNet</a></h4>
+<section id="explore-data-1" class="slide level2">
+<h2>Explore data</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Code - Shannon</a></li><li><a href="#tabset-2-2">result - Shannon</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">library</span>(BiodiversityR)</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a>shannon<span class="ot">&lt;-</span><span class="fu">diversity</span>(<span class="fu">t</span>(data1))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-</section>
-<section id="objetive-4---test-the-effect-of-diversity-on-ef" class="slide level2">
-<h2>Objetive 4 - Test the effect of diversity on EF</h2>
-
-<img data-src="libs/bef_cafe.png" width="600" class="r-stretch"></section>
-<section id="objetive-4---test-the-effect-of-diversity-on-ef-1" class="slide level2">
-<h2>Objetive 4 - Test the effect of diversity on EF</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="libs/cdeep.jpeg" width="700"> Photo: Felipe Melo (Brazil)</p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment">Control and manipulate diversity
-<ul>
-<li class="fragment">Taxonomic</li>
-<li class="fragment">Functional</li>
-<li class="fragment">Phylogenetic</li>
-</ul></li>
-<li class="fragment">Understand EF responses</li>
-</ul>
+<div id="tabset-2-2">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>  site_a   site_b   site_c   site_d   site_e   site_f   site_g   site_h 
+2.079442 1.386294 1.609438 1.791759 1.609438 1.791759 1.791759 1.609438 
+  site_i 
+1.609438 </code></pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="action-component" class="slide level2 center">
-<h2>Action Component</h2>
-</section>
-<section id="training-local-community-hubs" class="slide level2">
-<h2>Training local community hubs</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="libs/seedcol.jpg" width="700"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment">Map communities at the Coastal, Montane and Savannah
-<ul>
-<li class="fragment">Workshops for seed collectors</li>
-<li class="fragment">Restoration Supply Chain</li>
-<li class="fragment">Gender equity</li>
-</ul></li>
-</ul>
+<section id="explore-data-2" class="slide level2">
+<h2>Explore data</h2>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Code - Beta Diversity</a></li><li><a href="#tabset-3-2">result - Beta Diversity</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">library</span>(vegan)</span>
+<span id="cb6-2"><a href="#cb6-2"></a></span>
+<span id="cb6-3"><a href="#cb6-3"></a>beta<span class="ot">&lt;-</span><span class="fu">dist</span>(<span class="fu">t</span>(data1))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-</section>
-<section id="structuring-of-the-biocultural-restoration-network" class="slide level2">
-<h2>Structuring of the Biocultural Restoration Network</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="libs/comm_net.jpg" width="700"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li class="fragment">Create and establish the Network
-<ul>
-<li class="fragment">Formalization of network</li>
-<li class="fragment">Set principles and mission</li>
-<li class="fragment">Intermediate market</li>
-<li class="fragment">Public policy intended</li>
-</ul></li>
-</ul>
+<div id="tabset-3-2">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>         site_a   site_b   site_c   site_d   site_e   site_f   site_g   site_h
+site_b 3.162278                                                               
+site_c 2.645751 2.236068                                                      
+site_d 2.828427 2.449490 2.645751                                             
+site_e 2.236068 3.000000 2.828427 2.645751                                    
+site_f 3.162278 2.000000 2.236068 2.449490 2.645751                           
+site_g 2.000000 3.162278 2.645751 2.000000 2.645751 3.162278                  
+site_h 2.236068 3.000000 2.828427 2.236068 2.000000 2.645751 1.732051         
+site_i 2.645751 2.645751 2.000000 1.732051 2.449490 2.645751 1.732051 2.000000</code></pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
-<section id="what-is-next" class="slide level2 center">
-<h2>What is next?</h2>
-</section>
-<section id="find-the-money" class="slide level2">
-<h2>Find the money</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="https://www.fao.org/fileadmin/user_upload/faoweb/plant-treaty/images/medium_Darwin-logo.jpg" width="300"></p>
-</div><div class="column" style="width:50%;">
-<p>The Darwin Initiative is a UK government grants scheme that helps to protect biodiversity and the natural environment through <span style="color: red;">locally based projects</span> worldwide.</p>
+<section id="visual-inspection" class="slide level2">
+<h2>Visual inspection</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Graph - Beta Diversity</a></li><li><a href="#tabset-4-2">Graph 2 - Beta Diversity</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="ex1_frag_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
 </div>
 </div>
-<ul>
-<li class="fragment">The role of local institutions is <span style="color: red;">crucial</span></li>
-</ul>
+</div>
+<div id="tabset-4-2">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="ex1_frag_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="section-1" class="slide level2" data-background-image="libs/BES_report.png" data-background-size="contain">
-<h2></h2>
-</section>
-<section id="section-2" class="slide level2" data-background-image="libs/five_areas.jpeg" data-background-size="cover">
-<h2></h2>
-</section>
-<section id="join-us" class="slide level2 center">
-<h2>Join us!</h2>
-</section>
-<section id="aknowledgements" class="slide level2">
-<h2>Aknowledgements</h2>
-<p><img data-src="libs/uzal.jpeg" class="absolute" style="top: 200px; left: 0px; width: 290px; height: 200px; "> <img data-src="libs/marcello.jpg" class="absolute" style="top: 430px; left: 0px; width: 290px; height: 200px; "> <img data-src="libs/rihana.jpg" class="absolute" style="top: 200px; left: 300px; width: 290px; height: 200px; "> <img data-src="libs/andrew.jpg" class="absolute" style="top: 430px; left: 300px; width: 290px; height: 200px; "></p>
-</section>
-<section id="section-3" class="slide level2">
-<h2></h2>
-<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="libs/mangue.mp4"></video>
-
-<img src="libs/ntu_logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+<section id="what-about-size-of-the-fragments" class="slide level2">
+<h2>What about size of the fragments</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Size of fragments</a></li><li><a href="#tabset-5-2">Plot</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>size<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">2</span>,<span class="dv">10</span>,<span class="dv">25</span>,<span class="dv">18</span>,<span class="dv">19</span>,<span class="dv">15</span>,<span class="dv">30</span>,<span class="dv">3</span>)</span>
+<span id="cb8-2"><a href="#cb8-2"></a>d1<span class="ot">&lt;-</span><span class="fu">data.frame</span>(size,richness)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-5-2">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="ex1_frag_files/figure-revealjs/unnamed-chunk-12-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><img src="img/ntu_logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
 
 </div>
 </section>
@@ -643,20 +594,20 @@ Felipe Melo
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="NTU_Talk_Nov23_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="ex1_frag_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -852,6 +803,44 @@ Felipe Melo
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
@@ -998,7 +987,6 @@ Felipe Melo
       }
     });
     </script>
-    
     
 
 </body></html>
