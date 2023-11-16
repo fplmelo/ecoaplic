@@ -182,13 +182,6 @@ Blobfish
 :::
 
 ## Global assessments of SCP
-![](img/global_scp.png)
-
-:::{.footer}
-[Global Biodiversity Conservation Priorities ](http://dx.doi.org/10.13140/RG.2.2.16283.08486)
-:::
-
-## Global assessments of SCP
 ![](img/global_map1.png)
 
 
