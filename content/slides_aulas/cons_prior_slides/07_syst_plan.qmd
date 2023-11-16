@@ -174,12 +174,49 @@ Blobfish
 [Considering people in systematic conservation planning: insights from land system science](https://doi.org/10.1002/fee.1824)
 :::
 
+## Global assessments of SCP
+![](img/global_scp.png)
+
+:::{.footer}
+[Strengthening synergies: how action to achieve post-2020 ](http://dx.doi.org/10.13140/RG.2.2.16283.08486)
+:::
+
+## Global assessments of SCP
+![](img/global_scp.png)
+
+:::{.footer}
+[Global Biodiversity Conservation Priorities ](http://dx.doi.org/10.13140/RG.2.2.16283.08486)
+:::
+
+## Global assessments of SCP
+![](img/global_map1.png)
+
+
+:::{.footer}
+[Global Biodiversity Conservation Priorities ](http://dx.doi.org/10.1126/science.1127609)
+:::
+
+## Global assessments of SCP
+![](img/global_map2.png)
+
+
+:::{.footer}
+[Global Biodiversity Conservation Priorities ](http://dx.doi.org/10.1126/science.1127609)
+:::
+
+## Global assessments of SCP
+![](img/global_map3.png)
+
+
+:::{.footer}
+[Global Biodiversity Conservation Priorities ](http://dx.doi.org/10.1126/science.1127609)
+:::
 
 ## Today's review
-- Diversity is much more than number of species
-- Important to understand: alpha, beta and gamma
-- Phylogeny is evolutive history
-- Functional diversity is key for modern interpretation on the value fo biodiversity
+- Systematic conservation planning is a powerful tool
+- Quantitative variables and goals are needed
+- It is a transparent tool
+- Helps to make conservation publicly debated
 
 
 ## The end{.center}
