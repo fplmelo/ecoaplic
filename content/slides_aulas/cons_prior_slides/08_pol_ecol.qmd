@@ -44,7 +44,8 @@ format:
 
 ## {.center background-image=https://www.greenpeace.org/static/planet4-brasil-stateless/2021/12/cb0202c5-chico-mendes-1024x627.jpg background-size=cover}
 
-### Envionmentalism without social class struggle is just gardnering
+### Envionmentalism without social class 
+### struggle is gardnering
 
 ## Fortress conservation{.center}
 
