@@ -66,25 +66,124 @@ format:
 
 ## Caatinga + Segurança Alimentar
 
-![](https://onlinelibrary.wiley.com/cms/asset/322527cf-242c-457e-9f2e-bc424f85c7f8/ldr4848-fig-0004-m.jpg){fig-align=center width="120%"}
+![](https://onlinelibrary.wiley.com/cms/asset/322527cf-242c-457e-9f2e-bc424f85c7f8/ldr4848-fig-0004-m.jpg){fig-align=left width="120%"}
+
 
 :::{.footer}
 [Alencar et al (2023)](https://doi.org/10.1002/ldr.4848)
 :::
 
-## A vida na Caatinga 
+## Concentração de terra na Caatinga
+:::{.nonincremental}
 ::::{.columns}
 :::{.column width="50%"}
 
-![](libs/bodes.png)
-
+- ~ 1 milão de propriedades em 1204 municípios
+  - 97,8% pequenas propriedades
+       - 17,9 Mha
+       - 51% coberta com Caatinga
+  - 2.2% Grandes proprietários
+       - 15,2 Mha
+       - 69% coberto com Caatinga
 :::
 
 :::{.column width="50%"}
 
-![](https://nexuscaatinga.com.br/wp-content/uploads/revslider/SliderPincipal/agricultura-e1619648140747-1200x565.jpg)
+
+![](libs/share_land.png)
 
 :::
 ::::
+:::
+
+## Distribuição do déficit florestal
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/deficit2.png)
+
+:::
+:::{.column width="50%"}
+:::{.fragment}
+:::{.nonincremental}
+- Grandes proprietários
+  - Agrupados ao longo do rio SF
+  - Agronegócio MATOPIBA
+- Pequenos proprietários
+  - regiões mais secas
+  - agricultura familiar 
+  
+:::
+:::
+:::
+::::
+
+## O papel da Caatinga para o bem-estar humano
+![](libs/wef.png)
+
+:::{.footer}
+[Melo et al (2021)](https://doi.org/10.1038/s41893-020-00608-z)
+
+:::
+
+## [O socioecossitema da Caatinga]{style="color: white;"}{background-image=libs/vaqueiro.png background-size=cover}
+
+## Manejo biocultural
+
+![](https://focadoemvoce.com/wp-content/uploads/2022/03/indioraizeiro1.jpg)
+
+## Manejo biocultural
+
+![](https://www.undp.org/sites/g/files/zskgke326/files/migration/br/Produtos-da-sociobiodiversidade-da-Caatinga.jpg)
+
+## Manejo biocultural
+![](https://i.ytimg.com/vi/HCLdQH9E7Mg/maxresdefault.jpg)
+
+## Identidade cultural Caatingueira
+
+![](https://cdn.brasildefato.com.br/media/f184a9dbd79763762c04e01745b84b89.jpg)
+
+## Força política
+
+::: {layout-ncol=2}
+![2018](https://multimidia.gazetadopovo.com.br/media/info/2018/eleicoes-2018/graficos/mapa-resultado-eleicao-2018-presidente-br-2turno.jpg?1)
+
+![2022](https://f.i.uol.com.br/fotografia/2022/10/30/1667173942635f0e36b9956_1667173942_1x1_sm.jpg)
+:::
+
+## Em resumo
+- Floresta não garante, mas ajuda na segurança alimentar
+- Modelos de desenvolvimento com Caatinga
+- Nova fronteira agrícola
+
+## Agradecimentos
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](libs/cnpq.png)
+![](libs/ufpe.png)
+:::
+
+:::{.column width="50%"}
+**Co-autores**
+
+- Adriana Pelegrinni Manhães
+- Guilherme Mazochinni
+- Vinicius Guidoti
+- Lucas Alencar
+- Luke Parry
+
+:::
+::::
+:::
+
+## Obrigado{.center}
+
+felipe.melo@ntu.ac.uk
+
+felipe.plmelo@ufpe.br
+
+![www.ecoaplic.org](www.ecoaplic.org)
+
 
 
