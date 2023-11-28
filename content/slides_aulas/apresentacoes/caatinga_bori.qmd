@@ -1,0 +1,90 @@
+---
+title: "O papel da Caatinga para a segurança alimentar"
+author: "**Felipe Melo** <br> Nottingham Trent University - UK <br> Universidade Federal de Pernambuco - Brasil"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    #footer: "Workshop Segurança Alimentar Agência Bori"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    auto-stretch: true
+---
+
+## O que vamos discutir
+- Um panorama geral sobre a Caatinga
+- Porque a Caatinga pode ser considerada uma região socioecológica distinta
+- Desafios para quebrar estereótipos
+- Entender o papel da Caatinga para a segurança alimentar
+
+##  {.center background-image=libs/caat_seca.jpg background-size=cover}
+
+
+##  {.center background-image=libs/caat_verde.jpg background-size=cover}
+
+## {.center background-image=libs/caat_seca2.jpg background-size=cover}
+### Ter uma estação seca é uma condição,
+### não uma "maldição"
+
+## {.center background-image=libs/mapbiom_caat22.png background-size=contain}
+
+## {.center background-image=libs/pessoas.png background-size=cover}
+
+## Densidade populacional da Caatinga
+![](https://aredeurbana.files.wordpress.com/2022/02/dens_mun_2021.png?w=1024){fig-align=center width=1200}
+
+## Condição socioeconômica
+
+![](libs/bolsa_fam.png){fig-align=center width=900}
+
+## Caatinga + Pessoas
+
+![](libs/caat_people.png)
+
+:::{.footer}
+[Alencar et al (em revisão)]()
+:::
+
+## Caatinga + Desenvolvimento
+
+![](libs/fig3.jpg){fig-align=center width="120%"}
+
+:::{.footer}
+[Alencar et al (em revisão)]()
+:::
+
+## Caatinga + Segurança Alimentar
+
+![](libs/food_sec.png){fig-align=center width="120%"}
+
+:::{.footer}
+[Alencar et al (2023)](https://doi.org/10.1002/ldr.4848)
+:::
+
+
+## Caatinga + Segurança Alimentar
+
+![](https://onlinelibrary.wiley.com/cms/asset/322527cf-242c-457e-9f2e-bc424f85c7f8/ldr4848-fig-0004-m.jpg){fig-align=center width="120%"}
+
+:::{.footer}
+[Alencar et al (2023)](https://doi.org/10.1002/ldr.4848)
+:::
+
+## A vida na Caatinga 
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/bodes.png)
+
+:::
+
+:::{.column width="50%"}
+
+![](https://nexuscaatinga.com.br/wp-content/uploads/revslider/SliderPincipal/agricultura-e1619648140747-1200x565.jpg)
+
+:::
+::::
+
+
