@@ -1,0 +1,188 @@
+---
+title: "9- Climate Change and Conservation Priorities"
+subtitle: " "
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Conservation Priorities"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+## You should know today:
+
+- What is climate change
+- How climate change affects conservation
+- Moderate the use of "climate change" in conservation discourses
+- [Develop your own political views on climate change]{style="color: red;"} 
+
+
+## What is climate change?
+
+<iframe width="775" height="436" src="https://www.youtube.com/embed/n4e5UPu1co0" title="Climate change in 60 seconds | The Royal Society" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Effects on biodiversity
+
+![](https://assets.weforum.org/editor/VHDku8U-MRl2oixOyNc4a2JRAtOCd7RHE6jMQMBO2mM.jpg)
+
+:::footer
+[World Ecoomic Forum](https://www.weforum.org/agenda/2021/05/twin-crises-biodiversity-loss-and-mitigating-climate-change-tackled-together/)
+:::
+
+## Effects on biodiversity
+
+![](https://www.science.org/cms/10.1126/science.aai9214/asset/de109df1-bdb9-47bd-8701-532bdc2b16a4/assets/graphic/355_aai9214_f1.jpeg)
+
+:::footer
+[Biodiversity redistribution under climate change](https://doi.org/10.1126/science.aai9214)
+:::
+
+## Effects on biodiversity
+
+![](img/clim1.png)
+
+:::footer
+[Biodiversity redistribution under climate change](https://doi.org/10.1126/science.aai9214)
+:::
+
+## Effects on biodiversity
+
+![](img/clim2.png)
+
+:::footer
+[Biodiversity redistribution under climate change](https://doi.org/10.1126/science.aai9214)
+:::
+
+## A systemic problem
+
+![](https://www.scientists4climate.be/wp-content/uploads/2020/02/1.jpg)
+
+:::footer
+[The biodiversity crisis and its tight link with climate change](https://www.scientists4climate.be/the-biodiversity-crisis-and-its-tight-link-with-climate-change/)
+:::
+
+## ![](img/causes_cc.webp)
+
+## {.center background-image=https://uploads-ssl.webflow.com/5f61f0c70b3e6a8abeb20d65/60395ef51149336d90700c97_shutterstock_419154886.png}
+### Power generation
+
+## Coal is the King
+![](https://www.visualcapitalist.com/wp-content/uploads/2023/08/Screenshot-2023-08-11-125303.png)
+
+## Hydropower vs Conservation
+
+![](https://www.science.org/cms/10.1126/sciadv.abe1470/asset/ae872450-a435-4b3a-8c30-510fceec88bd/assets/graphic/abe1470-f1.jpeg)
+
+:::footer
+[How green can Amazon hydropower be? ](https://doi.org/10.1126/sciadv.abe1470)
+:::
+
+## Hydropower vs Conservation
+
+![](https://www.science.org/cms/10.1126/sciadv.abe1470/asset/ae872450-a435-4b3a-8c30-510fceec88bd/assets/graphic/abe1470-f1.jpeg)
+
+:::footer
+[How green can Amazon hydropower be? ](https://doi.org/10.1126/sciadv.abe1470)
+:::
+
+## Methane (CH4) emissions tripple
+![](https://www.newphytologist.org/img/upload/images/Resende_et_al_Foto02_arvores_mortas_a_jusante.jpg){width=1000}
+
+
+:::footer
+[How green can Amazon hydropower be? ](https://doi.org/10.1126/sciadv.abe1470)
+:::
+
+## Socioecological collapse
+![](https://www.openglobalrights.org/userfiles/file/PuentesNovember.jpg){width=1000}
+
+
+:::footer
+[The (Im)Possibility of Agonistic Politics](https://www.sciencedirect.com/science/article/pii/S0016718521002104)
+:::
+
+## Wind power
+![](https://www.evwind.es/wp-content/uploads/2014/06/Wind_Power-Capacity-672x372.jpg){width=1000}
+
+## Wind power vs. Conservation
+![](https://ars.els-cdn.com/content/image/1-s2.0-S2530064419300537-gr1.jpg)
+
+:::footer
+[Green versus green?](https://www.sciencedirect.com/science/article/pii/S2530064419300537#fig0005)
+:::
+
+## Wind power vs. Conservation
+<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2019/09/Chato.jpg?fit=1152%2C768&amp;ssl=1"/>
+
+## {.center background-image=https://assets.telegraphindia.com/telegraph/2021/Nov/1636909678_15edittop.jpg}
+
+### Manufacturing goods/Consumerism
+
+## <iframe width="1271" height="715" src="https://www.youtube.com/embed/9GorqroigqM" title="Story of Stuff (2007, versão oficial)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Seeting conservation priorities under climate change{.center}
+
+## Complex tasks
+![](img/cc_consprior.png){heigth=1200}
+
+:::footer
+[How to set conservation priorities](https://theconversation.com/how-to-set-conservation-priorities-in-response-to-climate-change-81928#:~:text=Assigning%20levels%20of%20threat%20to,adaptive%20variation%20into%20the%20population.)
+:::
+
+## Complex tasks
+![](img/cc_consprior.png){heigth=1200}
+
+:::footer
+[How to set conservation priorities](https://theconversation.com/how-to-set-conservation-priorities-in-response-to-climate-change-81928#:~:text=Assigning%20levels%20of%20threat%20to,adaptive%20variation%20into%20the%20population.)
+:::
+
+## How robust is it?
+![](img/cc_prior.jpg){width=700}
+
+:::footer
+[How robust are global conservation priorities to climate change?](https://www.sciencedirect.com/science/article/pii/S0959378013001222#fig0010)
+:::
+
+## How robust is it?
+![](img/cc_prior2.jpg){width=700}
+
+:::footer
+[How robust are global conservation priorities to climate change?](https://www.sciencedirect.com/science/article/pii/S0959378013001222#fig0010)
+:::
+
+## Climate change and restoration
+:::columns
+:::{.column width=50%}
+![](https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41586-020-2784-9/MediaObjects/41586_2020_2784_Fig1_HTML.png?as=webp){width=500}
+:::
+:::{.column width=50%}
+a–e, Priority areas for restoration, focused on biodiversity (a), the mitigation of climate change (b), minimizing costs (c), biodiversity and the mitigation of climate change (d) and all three criteria (e).
+:::
+:::
+
+## Climate change and restoration
+![](img/fleisch.png)
+
+![](img/elias.png)
+
+## ![](img/biac.jpeg){width=800}
+
+:::footer
+[How Social Considerations Improve Restoration ](https://academic.oup.com/bioscience/article/73/2/134/6865284)
+:::
+
+## Review
+- Climate became a widespread concern
+- We need carefully address climate change in conservation
+- There is no such a thing as apolitical climate change
+- All conservation agendas are currently adapting to CC
+
+## The end{.center}
