@@ -1,0 +1,53 @@
+---
+title: "10 - Module Review"
+subtitle: " "
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Conservation Priorities"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+## This review is intended to:
+
+- Pinpoint the most important subjects discussed
+- General clarifications
+- [Simulation for the exam]{style="color: red;"} 
+
+
+## Sbject 1 - A broad view of conservation
+
+- What are the challenges of conservation?
+- What are the sources of biases
+- History, current trends, etc...
+- Opinion is important, neutrality should be avoided
+
+## Subject 2 - Core principles and tools of SCP
+- What are Systematic Conservation Plans?
+- What are the tools and core principles
+- Have some examples in mind...
+
+## Subject 3 - Climate change
+- What is climate changes, causes and consequences for the biodiversity?
+- Differ natural processes from human-driven causes of CC
+- How species respond to climate change?
+- How climate change overlaps with other human-caused disturbances?
+- Bear in mind examples of biodiversity responses to CC
+
+## Subject 4 - Political Ecology
+- Know how to define Political Ecology
+- Relevant principles of Political Ecology
+- How can PE help conservation?
+
+## Subject 5 - Applications
+- Apply all your knowledge to make critical evaluation of conservation priorities
+
