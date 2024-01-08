@@ -104,10 +104,10 @@ menu:
       title: About me
       url: /about/
       weight: 1
-    - name: Team
-      title: People
-      url: /people/
-      weight: 2
+    # - name: Team
+    #   title: People
+    #   url: /people/
+    #   weight: 2
     - name: Blog
       title: Blog
       url: /blog/
