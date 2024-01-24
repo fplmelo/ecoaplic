@@ -15,11 +15,17 @@ editor: visual
 
 :::: {.columns}
 
-::: {.column width="50%"} Fuleco = **Foo**tball + **Eco**logy
+::: {.column width="50%"} 
 
-<img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Mascote_Copa.png"/> :::
+Fuleco = **Foo**tball + **Eco**logy
 
-::: {.column width="50%"} <img src="libs/tatu.png"/> :::
+<img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Mascote_Copa.png"/> 
+
+:::
+
+::: {.column width="50%"} 
+<img src="libs/tatu.png"/> 
+:::
 
 ::::
 
@@ -31,7 +37,8 @@ editor: visual
 
 :::: {.columns}
 
-::: {.column width="50%"} H yper-diverse tropical dry forest
+::: {.column width="50%"} 
+Hyper-diverse tropical dry forest
 
 <img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489119840-f11984-01-9780128160961.jpg"/>
 
@@ -43,7 +50,9 @@ editor: visual
 -   High level of economic poverty
 -   Forest-dependent people
 
-<img src="libs/caat_seca2.jpg" width="400"/> :::
+<img src="libs/caat_seca2.jpg" width="400"/> 
+
+:::
 
 ::::
 
@@ -51,7 +60,9 @@ editor: visual
 
 :::: {.columns}
 
-::: {.column width="60%"} 1 - Conservation plan
+::: {.column width="60%"} 
+
+1 - Conservation plan
 
 2 - Invest on the "Parks of the cup"
 
@@ -59,9 +70,13 @@ editor: visual
 
 :::
 
-::: {.column width="40%"} <img src="libs/fuleco1.png"/>
+::: {.column width="40%"} 
 
-<img src="libs/capa_bio.jpg" width="300"/> :::
+<img src="libs/fuleco1.png"/>
+
+<img src="libs/capa_bio.jpg" width="300"/> 
+
+:::
 
 ::::
 
