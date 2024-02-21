@@ -53,13 +53,13 @@ Googling the term: "Impact in research"
 ::: 
 ::::
 
-## Task Two - Changes in Imapct
+## Changes in Imapct
 
 -   Cambridge has a [guide to impact](https://www.research-strategy.admin.cam.ac.uk/pathwaytoimpact/index.html#:~:text=We%20have%20developed%20this%20tool,for%20more%20general%20impact%20planning.)
 
 - [St Andrews' gudie to impact](https://impact.wp.st-andrews.ac.uk/pathways-to-impact/)
 
-## How I apporach impac?
+## How I apporach impact?
 
 :::: columns 
 
@@ -78,7 +78,7 @@ Prospective way
 
 Retrospective way
 
--   Produce divulgation pieces
+-   Produce for general public
 -   Talk to media
 -   Get involved in political forum
 
@@ -86,13 +86,7 @@ Retrospective way
 
 :::
 
-## Task three
-
-![](FLR_NTU_files/libs/ntu.png)
-
-"For REF 2021, impact is defined as the effect on, change or benefit to the economy, society, culture, public policy or services, health, the environment or quality of life, beyond academia"
-
-## Task Four - Interview
+## Interview
 
 :::: columns 
 
@@ -109,7 +103,7 @@ Ecology, Biodiversity Conservation
 
 Brazil
 
-H index: 26126	*Google Scholar
+H index: 81	*Google Scholar
 
 :::
 ::::
