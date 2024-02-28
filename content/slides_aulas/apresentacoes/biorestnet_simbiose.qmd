@@ -1,0 +1,96 @@
+---
+title: "BioRestNet: a network of biocultural restoration"
+author: "Felipe Melo"
+format:
+  revealjs:
+    incremental: true
+    chalkboard: true
+    #logo: ntu_logo.png
+    footer: ""
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+
+## Why a network?
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](https://www.lebow.drexel.edu/sites/default/files/legacy/story/1501077931-network.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   It is the best way to scale up restoration
+-   Allows sharing of knowledge
+-   Strengthen actions
+-   Creates models
+:::
+::::
+:::
+
+
+## Core principles of Biocultural Approaches
+::::{.columns}
+
+:::{.column width="50%"}
+:::{.nonincremental}
+
+-   Value TEK
+-   Improve social engagement
+-   Decolonize Restoration/Conservation
+-   Co-constructed models
+:::
+:::
+
+:::{.column width="50%"}
+![](libs/biocult-core.jpg){width=700}
+:::
+::::
+
+## An example from the Caatinga forest
+
+::::{.columns}
+
+:::{.column width="50%"}
+:::{.nonincremental}
+
+- Culturally important species
+- Database on plant uses
+- Multiple benefits
+- Maintain Caatinga natural features
+
+[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+
+:::
+:::
+
+:::{.column width="50%"}
+
+![](libs/biocult.png)
+:::
+::::
+
+## An example from the Caatinga forest{.nostretch}
+
+
+![](libs/fun_bioc.jpg){fig-align=center, width=75%}
+
+[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+
+## Goals of the BioRestNet
+:::{.nonincremental}
+
+* A worldwide database on traditional uses of biodiversity
+  * Plants & Animals
+  * inspired on [TRY](https://www.try-db.org/TryWeb/Home.php) and [GlobUNT](https://patspo.shinyapps.io/GlobalUsefulTrees/)
+* Compilation of main traditional management techniques
+* Offer info on species usefulness 
+
+:::
+
+## Thank you
+
+
+
+
