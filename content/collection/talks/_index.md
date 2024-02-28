@@ -27,6 +27,8 @@ weight: 2
 
 - [NTU Research Seminar](https://ecoaplic.org/slides_aulas/apresentacoes/NTU_Talk_Nov23.html#/title-slide)
 
+- [SimBiose/ESIIL 2024](https://ecoaplic.org/slides_aulas/apresentacoes/biorestnet_simbiose.html#/title-slide)
+
 
 ## Autor
 
