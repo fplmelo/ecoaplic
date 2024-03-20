@@ -1,5 +1,5 @@
 ---
-title: "Biocultural Restortaion"
+title: "BioRestNet: A Network of Biocultural Restortaion"
 subtitle: " "
 author: "Felipe Melo"
 institute: "Nottingham Trent University"
