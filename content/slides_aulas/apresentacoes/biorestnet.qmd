@@ -12,6 +12,52 @@ format:
     background-transition: fade
 ---
 
+## What is the purpose of this presentaiton?
+
+- Set the principles and design of the project
+- Understand the role of each institution involved
+- A FAQ for the project
+
+## A brief history
+::::{.columns}
+:::{.column width="50%"}
+![](https://www.fao.org/fileadmin/user_upload/faoweb/plant-treaty/images/medium_Darwin-logo.jpg){width=300}
+
+:::
+
+:::{.column width="50%"}
+The Darwin Initiative is a UK government grants scheme that helps to protect biodiversity and the natural environment through [locally based projects]{style="color: red;"} worldwide.
+
+:::
+::::
+
+- The role of local institutions is [crucial]{style="color: red;"}
+
+## This is research-action grant
+::::{.columns}
+:::{.column width="50%"}
+![](libs/dar_proj.png){width=500}
+
+Click [here](https://www.darwininitiative.org.uk/project/funding-scheme/main-project/) to browse for project on the same funding scheme
+
+:::
+:::{.column width="50%"}
+-     A quick browse will give a glimpse of the nature of project
+-     I recommend you browse a few ones
+-     The last call funded 29 projects
+-     We are competing among 73 (1 out 3)
+-     Only a fraction have Universities as lead applicants
+-   A **strong** integration must be shown
+:::
+::::
+
+## Some lessons
+- This is a coupled **research-action** grant
+- Both dimensions must be contemplated
+- We can share responsibilities in all dimensions
+- It is important to recognize the greatest potential of each partner
+
+## BioRestNet: a network of biocultural restoration{.center}
 
 ## Why a network?
 ::::{.columns}
@@ -27,23 +73,22 @@ format:
 :::
 ::::
 
+## Research Component{.center}
 
-## Why Biocultural Restoration?
+## Biocultural restoration
 
-![](https://www.mdpi.com/land/land-08-00005/article_deploy/html/images/land-08-00005-g001.png){width=700 fig-align="center"}
-
-[Ekblom et al (2019) ](https://doi.org/10.3390/land8010005)
+![](https://www.mdpi.com/land/land-08-00005/article_deploy/html/images/land-08-00005-g001.png){width=700}
 
 
-## Core principles of Biocultural Restoration
+## Core principles
 ::::{.columns}
 
 :::{.column width="50%"}
 :::{.nonincremental}
 
--   Value TEK
--   Improve social engagement
--   Decolonize Restoration/Conservation
+-   Based on TEK
+-   Potential for social engagement
+-   Decolonial perspective
 -   Co-constructed models
 :::
 :::
@@ -53,46 +98,171 @@ format:
 :::
 ::::
 
-## An example from the Caatinga forest
+## The project's design
 
 ::::{.columns}
 
 :::{.column width="50%"}
 :::{.nonincremental}
 
-- Culturally important species
-- Database on plant uses
-- Multiple benefits
-- Maintain Caatinga natural features
+Assess biocultural landscape
 
-[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+- List of culturally important species
+- Uses, functional attributes
+- Species occurrence
 
 :::
 :::
 
 :::{.column width="50%"}
+:::{.fragment}
+:::{.nonincremental}
+Testing diversity-functioning
 
-![](libs/biocult.png)
+- Simulate diversity
+- Simulate disturbances
+- Simulate climate change (e.g. water, temp)
+:::
+:::
 :::
 ::::
 
-## Goals of the BioRestNet
+## Module 1 - Assessment of biocultural landscape
+#### Objetive 1 - Inventory useful species and its fucntional traits
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/fundiv.jpg)
+
+:::
+
+:::{.column width="50%"}
+- We'll add a species x uses table
+
+
+:::
+
+::::
+
+## Module 1 - Assessment of biocultural landscape
+#### Objetive 2 - Extract and map occureene of the biocultiural core of species
+:::{.fragment}
 :::{.nonincremental}
-
-* A worldwide database on traditional uses of biodiversity
-  * Plants & Animals
-  * inspired on [TRY](https://www.try-db.org/TryWeb/Home.php) and [GlobUNT](https://patspo.shinyapps.io/GlobalUsefulTrees/)
-* Compilation of main traditional management techniques
-* Offer info on species usefulness 
+::::{.columns}
+:::{.column width="50%"}
+![](libs/ranksp.png)
 
 :::
 
-## 
+:::{.column width="50%"}
 
-:::{.r-stack}
-
-Thank you
+- Sort species per "importance"
+- Map the biocultural core
+  - The most useful species (amount to be set)
 
 :::
 
+::::
+:::
+:::
 
+## Module 1 - Assessment of biocultural landscape
+#### Objetive 3 - Model distribution against climate change
+
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](libs/climate_kenya.png)
+
+:::
+
+:::{.column width="50%"}
+
+- Distribution of the biocultural core of species
+- Current and future climate
+- Pirotiry areas for Biocultural Restoration
+- Sensitive areas
+
+:::
+
+::::
+:::
+
+## Module 2 - BEF experiment
+### Objective 4 - Test climate and distubance
+::::{.columns}
+:::{.column width="50%"}
+![](libs/design.jpeg){width=350}
+:::
+:::{.column width="50%"}
+- A randomized-structured experiment
+- Placed at the Savanna site
+- Control and simulate
+  - Disturbance
+  - Climate variables (water)
+
+#### - inspired by [NutNNet](https://nutnet.org/)
+
+:::
+::::
+
+## Module 2 - BEF experiment
+#### Objetive 5 - Test the effect of diversity on EF
+
+![](libs/bef_cafe.png){width=600}
+
+
+## Module 2 - BEF experiment
+#### Objetive 5 - Test the effect of diversity on EF
+::::{.columns}
+:::{.column width="50%"}
+![](libs/bef_prev.png){width=700}
+:::
+
+:::{.column width="50%"}
+
+- Control and manipulate diversity
+  - Taxonomic
+  - Functional
+  - Phylogenetic
+- Understand EF responses
+
+:::
+::::
+
+## Action Component{.center}
+
+## Training local community hubs
+::::{.columns}
+:::{.column width="50%"}
+![](libs/seedcol.jpg){width=700}
+:::
+
+:::{.column width="50%"}
+
+- Map communities at the Coastal, Montane and Savannah
+  - Workshops for seed collectors
+  - Restoration Supply Chain
+  - Gender equity
+
+:::
+::::
+
+## Structuring of the Biocultural Restoration Network
+::::{.columns}
+:::{.column width="50%"}
+![](libs/comm_net.jpg){width=700}
+:::
+
+:::{.column width="50%"}
+
+- Create and establish the Network
+  - Formalization of network
+  - Set principles and mission
+  - Intermediate market
+  - Public policy intended
+
+:::
+::::
+
+## Roles and sharing
