@@ -29,7 +29,7 @@ weight: 2
 
 - [SimBiose/ESIIL 2024](https://ecoaplic.org/slides_aulas/apresentacoes/biorestnet_simbiose.html#/title-slide)
 
-- [NTU VC FLR Amrch 2024](https://ecoaplic.org/slides_aulas/apresentacoes/Felipe_VC_FLR_March24.html#/title-slide)
+- [NTU VC FLR March 2024](https://ecoaplic.org/slides_aulas/apresentacoes/Felipe_VC_FLR_March24.html#/title-slide)
 ## Autor
 
 
