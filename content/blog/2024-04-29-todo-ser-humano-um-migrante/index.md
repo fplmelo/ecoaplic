@@ -28,4 +28,20 @@ Agora eu definitivamente entendi. Nem todos são iguais. Alguns passaportes pode
 
 Amo o México, amo seu povo e sua natureza. Tenho México tatuado no meu corpo na forma de um mapa no braço e uma deusa azteca nas costas. Continuarei amando este lugar do planeta que considero minha segunda casa e adorando sua gente, que sempre me acolheu tão amavelmente. Até a próxima, México.
 
-![](images/porta.jpeg)
+
+
+![](images/porta.jpeg){width=300}
+Porta da cela onde fiquei
+
+
+<img src="images/cama.jpeg" alt="" width="300px"/>
+Colchão onde dormi
+
+<img src="images/zap.jpeg" alt="" width="300px"/>
+
+Comunicando com o servicõ consular brasileiro no México, onde reconhece que a informação nos sites oficiais mexicanos é mentirosa.
+
+
+
+
+
