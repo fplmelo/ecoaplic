@@ -32,23 +32,15 @@ Amo o México, amo seu povo e sua natureza. Tenho México tatuado no meu corpo n
 
 <img src="images/porta.jpeg" alt="" width="300px"/>
 
-<br>
-
-Porta da cela onde fiquei
-
 
 <img src="images/cama.jpeg" alt="" width="300px"/>
 
-<br>
-
-Colchão onde dormi
 
 <img src="images/zap.jpeg" alt="" width="300px"/>
 
 <br>
 
-Comunicando com o servicõ consular brasileiro no México, onde reconhece que a informação nos sites oficiais mexicanos é mentirosa.
-
+Acima imagens da cela e da conversa com a representação consular brasieira no México onde sugerem ter consciência da informação mentirosa no site do governo mexicano.
 
 
 
