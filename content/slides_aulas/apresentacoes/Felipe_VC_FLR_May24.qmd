@@ -1,0 +1,73 @@
+---
+title: "BioRestNet: A Network of Biocultural Restortaion"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: libs/ntu_logo.png
+    #footer: "NTU research seminars"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+
+---
+
+
+## Why a network?
+::::{.columns}
+:::{.column width="50%"}
+![](https://www.lebow.drexel.edu/sites/default/files/legacy/story/1501077931-network.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   It is the best way to scale up actions
+-   Allows sharing of knowledge
+-   Strengthen actors
+-   Inspire others
+:::
+::::
+
+## Workshop on Biocultural Restortaion Kenya
+::::{.columns}
+:::{.column width="50%"}
+![](libs/site_biorest.png){width=600}
+
+[LINK](https://fplmelo.github.io/biorestnet/)
+
+:::
+:::{.column width="50%"}
+- 20 participants
+- 8 countries
+- diverse backgrounds
+
+:::
+::::
+
+## Expected outputs
+
+::::{.columns}
+:::{.column width="50%"}
+- improvements on the design of our research project
+- Expand collaborations (networking)
+- Produce a perspective paper
+
+:::
+:::{.column width="50%"}
+
+![](libs/research_plan.jpg)
+
+:::
+::::
+
+## Acknowledgements
+
+- Mike Baynham
+- Fiona Mckerlie
+- VC FLR program
+
+![](ntu_logo.png)
