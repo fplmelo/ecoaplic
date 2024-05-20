@@ -16,7 +16,9 @@ format:
     #auto-stretch: true
 
 ---
+## Hello
 
+![](libs/Research.png){width=1000}
 
 ## Why a network?
 ::::{.columns}
@@ -68,6 +70,6 @@ format:
 
 - Mike Baynham
 - Fiona Mckerlie
-- VC FLR program
+- VC FLR programme
 
 ![](ntu_logo.png)
