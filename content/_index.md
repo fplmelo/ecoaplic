@@ -2,7 +2,9 @@
 action_label: Read More &rarr;
 action_link: /about
 action_type: text
-description: This lab is the joint effort of many people that share a common principle, Ecology and Conservation must be political to address the real-world problems. We are interested in all kinds of human interventions on natural systems and how biotas respond to them. Functional ecology, landcape ecology, restoration, conservation sciences and political ecology move us. Our research team is proud of all human diversity and we welcome all interested people to join and work with us.
+
+description: We are a team of passionate researchers driven by a shared belief - ecology and conservation must be political to solve real-world challenges. Our focus is understanding human-nature interactions. Our interests are functional ecology, landscape ecology, restoration ecology, conservation science and political ecology. We value diversity and welcome anyone interested in joining our mission.
+
 image_left: true
 images:
 - usga.png
