@@ -4,7 +4,7 @@ categories:
 - project
 date: "2023-10-01"
 draft: false
-excerpt: Forest, water, energy and food security in the Brazilian dry forests
+excerpt: Restoration for people and nature through sharing and integrating knowledge
 summary: 
 layout: single
 subtitle: Restoration for people and nature through sharing and integrating knowledge

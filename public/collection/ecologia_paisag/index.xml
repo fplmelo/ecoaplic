@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ecologia de Paisagens on Applied Ecology</title>
+    <link>/collection/ecologia_paisag/</link>
+    <description>Recent content in Ecologia de Paisagens on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/collection/ecologia_paisag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Efeitos biológicos da fragmentação de ecossistemas</title>
+      <link>/collection/ecologia_paisag/05_frag_efeittos/5_fragm_efeitos/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/05_frag_efeittos/5_fragm_efeitos/</guid>
+      <description>Em construção</description>
+    </item>
+    
+    <item>
+      <title>Pré-requisitos computacionais</title>
+      <link>/collection/ecologia_paisag/r_rstudio/instacao_rstudio/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/r_rstudio/instacao_rstudio/</guid>
+      <description>Para cursar essa disciplina, vamos precisar usa a linguagem R como auxílio do Rstudio Instalar o R Para instalar o R clique aqui Instalar o Rstudio Para instalar o Rstudio clique aqui Se precisar de ajuda, veja o vídeo abaixo Rmarkdwon Para instalar o Rmarkdown, siga esse tutorial Rpubs e Rmarkdown Crie um documento node de R markdown no Rstudio. Escolha HTML como formato de output Edite seu documento e quando finalizado, clique em &amp;ldquo;Knit&amp;rdquo; Quando seu documento aparecer em uma nova janela, clique em publicar e siga os passos para publicar em Rpubs Veja mais esse vídeo tutorial (em espnhol)</description>
+    </item>
+    
+    <item>
+      <title>Aula 1- Conceitos básicos de Paisagem</title>
+      <link>/collection/ecologia_paisag/01_intro/intro_eco_pais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/01_intro/intro_eco_pais/</guid>
+      <description>&lt;script src=&#34;/rmarkdown-libs/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Aula 2- Definição e delimitação de paisagens</title>
+      <link>/collection/ecologia_paisag/02_paisagem_delim/delim_paisag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/02_paisagem_delim/delim_paisag/</guid>
+      <description>&lt;script src=&#34;/rmarkdown-libs/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Aula 3 - Processos biológicos que podem ser medidos na escala de paisagens</title>
+      <link>/collection/ecologia_paisag/03_processos_biol/3_processos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/03_processos_biol/3_processos/</guid>
+      <description> Chase et al 2020
+O que determina como as espécies “estão” numa paisagem? Filtros ambientais É a interação entre as condições dadas pela estrutura de uma paisagem e o nicho da espécies que estão tentando sobreviver nessa paisagem.
+Intrações bióticas Processos de predação, facilitação, mutualismos diversos vão definir quais espécies coexistem numa paisagem
+Dispersão Refere-se ao movimento de esécies, proágulos e genes numa paisagem
+Exercício: Debate sobre fragmentação na ecologia de paisagem Vamos dividr turma em 3 (três grupos): Filtros abientais Interações Bióticas Dispersão Cada grupo deve apresentar um seminário com slides explicando como esses processos ecológicos podem ser usados para entender a dinãmica de comunidades biológicas em paisagens </description>
+    </item>
+    
+    <item>
+      <title>Aula 4 - Fragmentação de Paisagens</title>
+      <link>/collection/ecologia_paisag/04_fragmentacao/4_fragmentacao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/04_fragmentacao/4_fragmentacao/</guid>
+      <description>Slides da aula AQUI Um debate científico relevante A fragmentação tem sido alvo de um debate intenso na comunidade científica há décadas. As origens desse debate estão na importância que é dada ao estudo de paisagens fragmentadas. Isso porque com a excessão de algumas grandes porções de ecossistemas intéactos no mundo como a Amazônia, a bacia do Congo e as florestas boreais da Sibéria e Canadá, os ecossistemas estão fragemntados.</description>
+    </item>
+    
+    <item>
+      <title>Aula 6 - Conservação biológica em ambientes fragmentados</title>
+      <link>/collection/ecologia_paisag/06_frag_conser/6_frag_conservacao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/06_frag_conser/6_frag_conservacao/</guid>
+      <description>Em construção</description>
+    </item>
+    
+    <item>
+      <title>Aula 8 - Efeitos da fragmentação sobre a biodiversidade</title>
+      <link>/collection/ecologia_paisag/08_frag_biodiv/8_frag_biod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/08_frag_biodiv/8_frag_biod/</guid>
+      <description>Em construção</description>
+    </item>
+    
+    <item>
+      <title>Aula 9 - Debate sobre fragmentação: Hipótese de Quantidade de Hábitat</title>
+      <link>/collection/ecologia_paisag/09_frag_debate/9_frag_debate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/09_frag_debate/9_frag_debate/</guid>
+      <description>Qual a relevcia relativa entre a composição e configuração da paisagem? Hipótese da quantidade de hábitat ou (HAH em inglês) #FIM</description>
+    </item>
+    
+  </channel>
+</rss>

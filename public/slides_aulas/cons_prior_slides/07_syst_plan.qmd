@@ -1,0 +1,215 @@
+---
+title: "7-Systematic conservation planning"
+subtitle: " "
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Conservation Priorities"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+## You should know today:
+
+- The principles of SCP
+- The potentials of SCP as a conservation tool
+- [How to use]{style="color: red;"} biodiversity data for setting conservation priorities
+
+
+## What is systematic conservation planning (SCP)?
+
+"Systematic Conservation Planning is a technique that emerged in the 1980s (Kirkpatrick, 1983) to guide objective decisions about the nature and location of conservation actions. Most approaches allow the operator to compile a “shopping list” of conservation values which is then fulfilled using a prioritization algorithm that trades off attributes for elimination from the list with a measure of cost."
+
+:::{.footer}
+[Encyclopedia of the Anthropocene, 2018](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/systematic-conservation-planning)
+:::
+
+## Let's recall...{.center}
+
+## CB has *goals* 
+:::{.nonincremental}
+
+1. to evaluate human impacts on biological diversity and 
+2. to develop practical approaches to prevent the extinction of species [(Soulé 1986)](https://www.amazon.co.uk/Conservation-Biology-Science-Scarcity-Diversity/dp/0878937951)
+
+:::
+:::{.fragment}
+#### [- Solve the extinction crisis]{style="color: red;"}
+:::
+
+## Some ways to set "priorities"{.center}
+
+## Sacred places
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+ [India](https://www.bbc.com/future/article/20220726-how-religious-worship-is-boosting-conservation-in-india)
+
+<img src="https://ychef.files.bbci.co.uk/1600x900/p0cp3hj8.webp" width="500"/> 
+
+"Religious practices have preserved an estimated 100,000-150,000 sacred groves across India"
+
+:::
+
+::: {.column width="50%"}
+[Church of Forest- Ethiopia](https://emergencemagazine.org/film/the-church-forests-of-ethiopia/)
+
+<img src=https://emergencemagazine.org/app/uploads/2021/01/CF_drone2_WEB-1024x575.jpg>
+
+"small pockets of old-growth forest still surround Ethiopia’s churches" 
+
+:::
+
+::::
+
+## Game reserves - Tanzania
+
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Parks_Tanzania.svg/1024px-Parks_Tanzania.svg.png width="600"/>
+
+
+## National Parks
+
+<img src=https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2021/06/29145128/lake-district-5200654_1920.jpg>
+
+Lake District - UK
+
+## National Parks
+
+<img src=https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2021/10/15094713/A-jungle-lodge-by-a-river-in-Manu-National-Park-Peru.jpg width = 900>
+
+Manu - Peru
+
+## Species-focused conservation
+
+![](https://cdn-images.zoobeauval.com/90QH1Cs9igJmliUeIctAYzW_6Rw=/1600x950/https%3A%2F%2Fs3.eu-west-3.amazonaws.com%2Fimages.zoobeauval.com%2F2021%2F04%2Fsaga-pandas-header-606dcfbed5911.jpg)
+
+## Species-focused conservation
+
+![](https://imagens.ebc.com.br/ssHQbA5eVOGutrcvUXriNWv6whY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/ave_cyanopsitta_spixii_ararinha_azul_foto_camile_ugarini.jpg?itok=RsYMXNq9)
+
+Spix macaw
+
+## Species-focused conservation
+
+![](https://upload.wikimedia.org/wikipedia/commons/d/d0/Two_Psychrolutes_marcidus.jpg){.absolute right=100 width="650" height="550"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/7/7b/Cropped-UAPS-logo.png){.absolute top=200 left=0 width="250" height="200"}
+
+Blobfish
+
+## Tha majority is not systematic {.center}
+
+## Representativeness
+
+![](img/pa_global.jpg)
+
+## {background-image=img/rep.png background-size=contain}
+
+### Representativeness
+
+## {background-image=img/pa_am.jpg background-size=contain}
+
+:::{.footer}
+[The representativeness of protected areas for Amazonian](https://onlinelibrary.wiley.com/doi/10.1002/aqc.3528)
+:::
+
+## Persistence
+:::{.r-stack}
+![](img/pa_sa.jpg){.fragment}
+
+![](img/pa_sa2.jpg){.fragment width="800"}
+:::
+
+## Irrepleceability
+![](img/end_birds.png)
+
+- What is the role of beta diversity?
+
+## Irrepleceability
+![](img/maps.png)
+
+:::{.footer}
+[Global pattern of terrestrial vertebrate diversity and conservation](http://dx.doi.org/10.1073/pnas.1302251110)
+:::
+
+## Systematic conservation planning{.center}
+
+## 1. Measure and map biodiversity
+![](img/mammals.png)
+
+:::{.footer}
+[Gradients of mammalian biodiversity through space and time](http://dx.doi.org/10.1093/jmammal/gyz024)
+:::
+
+## 2. Identify conservation goals for the planning region
+
+<img src=https://community.rspb.org.uk/resized-image/__size/960x720/__key/communityserver-blogs-components-weblogfiles/00-00-01-57-64/3125.1854.4643.a877b48572aa4aa7cfd32f52afe4495f.png width = 1500>
+
+## 3. Review existing conservation areas
+
+![](img/comple.png)
+
+:::{.footer}
+[Why biodiversity surveys are good value](https://www.nature.com/articles/18339)
+:::
+
+## 4. Select additional conservation areas
+
+<img src=https://dondealban.netlify.app/publication/2021-biol-conserv/featured_hu5fed2b3187fa0504eb1c1261700d544d_824278_720x0_resize_q90_lanczos.jpg>
+
+## 5. Considering people
+![](img/scp1.jpg)
+
+:::{.footer}
+[Considering people in systematic conservation planning: insights from land system science](https://doi.org/10.1002/fee.1824)
+:::
+
+## Global assessments of SCP
+![](img/global_scp.png)
+
+:::{.footer}
+[Strengthening synergies: how action to achieve post-2020 ](http://dx.doi.org/10.13140/RG.2.2.16283.08486)
+:::
+
+## Global assessments of SCP
+![](img/global_map1.png)
+
+
+:::{.footer}
+[Global Biodiversity Conservation Priorities ](http://dx.doi.org/10.1126/science.1127609)
+:::
+
+## Global assessments of SCP
+![](img/global_map2.png)
+
+
+:::{.footer}
+[Global Biodiversity Conservation Priorities ](http://dx.doi.org/10.1126/science.1127609)
+:::
+
+## Global assessments of SCP
+![](img/global_map3.png)
+
+
+:::{.footer}
+[Global Biodiversity Conservation Priorities ](http://dx.doi.org/10.1126/science.1127609)
+:::
+
+## Today's review
+- Systematic conservation planning is a powerful tool
+- Quantitative variables and goals are needed
+- It is a transparent tool
+- Helps to make conservation publicly debated
+
+
+## The end{.center}

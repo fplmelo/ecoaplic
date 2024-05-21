@@ -1,0 +1,131 @@
+---
+title: "BioRestNet: A Network of Biocultural Restortaion"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: libs/ntu_logo.png
+    #footer: "NTU research seminars"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+
+---
+
+
+## Why a network?
+::::{.columns}
+:::{.column width="50%"}
+![](https://www.lebow.drexel.edu/sites/default/files/legacy/story/1501077931-network.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   It is the best way to scale up restoration
+-   Allows sharing of knowledge
+-   Strengthen actions
+-   Creates models
+:::
+::::
+
+## Research Component{.center}
+
+## Biocultural restoration
+
+![](https://www.mdpi.com/land/land-08-00005/article_deploy/html/images/land-08-00005-g001.png){width=700}
+
+
+
+## Theme 1 - Biocultural Restoration
+
+:::{.columns}
+
+:::{.column width=40%}
+![](libs/woman_mush.jpg)
+:::
+
+:::{.column width=60%}
+- Compile the culturally important species
+- Understand the multiple use for humans
+- Assess the value the biocultural core of species
+:::
+:::
+
+## Theme 2 - Functional Effectiveness
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/fundiv.jpg)
+
+:::
+
+:::{.column width="50%"}
+- What is the functional profile of the culturally important species?
+- How much ecological function is retained?
+
+
+:::
+
+::::
+
+## Theme 2 - Functional Effectiveness
+::::{.columns}
+:::{.column width="50%"}
+![](libs/design.jpeg){width=350}
+:::
+:::{.column width="50%"}
+- A randomized-structured experiment
+- Placed at the Savanna site
+- Control and simulate
+  - Disturbance
+  - Climate variables (water)
+
+#### - inspired by [NutNNet](https://nutnet.org/)
+:::
+:::
+
+
+## Theme 3 - Landscape Drivers of Change
+
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](libs/ldsf.webp)
+
+:::
+
+:::{.column width="50%"}
+
+- Distribution of the Biocultural core of species
+- Current and future climate
+- Priority areas for Biocultural Restoration
+- Sensitive areas
+
+:::
+::::
+:::
+
+## Action Component{.center}
+
+## Training local community hubs
+::::{.columns}
+:::{.column width="50%"}
+![](libs/seedcol.jpg){width=700}
+:::
+
+:::{.column width="50%"}
+
+- Map communities at the Coastal, Montane and Savannah
+  - Workshops for seed collectors
+  - Restoration Supply Chain
+  - Gender equity
+
+:::
+::::
+
+## Thank you {.center}
+

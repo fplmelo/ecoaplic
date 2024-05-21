@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.108.0">
+<title>Bases de dados Ecológicos | Applied Ecology</title>
+
+
+<meta property="twitter:site" content="@apreshill">
+<meta property="twitter:creator" content="@apreshill">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="A modern, beautiful, and easily configurable blog theme for Hugo.">
+
+
+<meta property="og:site_name" content="Applied Ecology">
+<meta property="og:title" content="Bases de dados Ecológicos | Applied Ecology">
+<meta property="og:description" content="A modern, beautiful, and easily configurable blog theme for Hugo." />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/collection/eco_num/base_dados/base_dados/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="/img/logo.png" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/img/logo.png" >
+    
+  <meta itemprop="name" content="Bases de dados Ecológicos">
+<meta itemprop="description" content="Slides
+Matriz de presencias e ausências As bases de dados do R que serão usadas no nosso curso são reais e vêem de repositórios livres de dados e exemplos do próprio R para a área de ecologia. No entanto, para iniciar nossas atividades, vamos contruir uma base de dados fictícia apenas para entender sua estrutura.
+A estrutura básica de bases de dados biológicos é a de matrizes que contem ‘n’ colunas e ‘r’ linhas (n x r).">
+
+<meta itemprop="wordCount" content="2698">
+<meta itemprop="keywords" content="" />
+  
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.92dfcd41e6de8ee9bdf4891b6db7aba055136f3e07bb0945cad731e21d441835.css" integrity="sha256-kt/NQebejum99IkbbberoFUTbz4HuwlFytcx4h1EGDU=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.497d999f2b48966a21ca2081707593f581b3fb3c76574127b91c7ef1f68ce29c.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container single-series">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
+      <img src="/img/logo.png" class="dib db-l h2 w-auto" alt="Applied Ecology">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About me">About me</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Videos">Videos</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/collection/" title="Courses">Courses</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/contact/" title="Contact">Contact</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/press/" title="Press">Press</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<main class="page-main ph4 pt4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 pr3-l">
+      <header class="post-header">
+        <h4 class="breadcrumb pb5">
+
+  
+    
+      
+  
+    
+      
+  
+    
+      
+  
+
+    
+    
+      <a href="/collection/">Aulas</a>
+    
+  
+
+    
+    
+      <a href="/collection/eco_num/">Ecologia Numérica</a>
+    
+  
+
+    
+    
+      Bases de dados Ecológicos
+    
+  
+
+</h4>
+
+
+
+
+        
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Bases de dados Ecológicos</h1>
+        
+        
+        
+        
+        
+      
+        
+      </header>
+      <section class="post-body pt5 pb4">
+        <script src="/rmarkdown-libs/fitvids/fitvids.min.js"></script>
+<p><em>Slides</em></p>
+<div class="shareagain" style="min-width:300px;margin:1em auto;" data-exeternal="1">
+<iframe src="http://ecoaplic.org/slides_aulas/slides_eco_num/slied_base_dados.html#1" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
+
+
+
+
+<h2 id="matriz-de-presencias-e-ausências">Matriz de presencias e ausências
+  <a href="#matriz-de-presencias-e-aus%c3%aancias"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>As bases de dados do R que serão usadas no nosso curso são reais e vêem de repositórios livres de dados e exemplos do próprio R para a área de ecologia. No entanto, para iniciar nossas atividades, vamos contruir uma base de dados fictícia apenas para entender sua estrutura.</p>
+<p>A estrutura básica de bases de dados biológicos é a de matrizes que contem ‘n’ colunas e ‘r’ linhas (n x r). Geralmente temos espécies nas linhas e localidades nas colunas. Veja abaixo como criar uma matriz simples de 10 linhas e 4 colunas. As células serão preenchidas apenas com “1” e “0” indicando se a espécie está presente ou ausente da localidade amostrada.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">set.seed</span>(<span style="color:#099">999</span>) <span style="color:#998;font-style:italic"># vai gerar sempre o mesmo resultado com as funções abaixo</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(tidyverse)
+</span></span></code></pre></div><pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+## ✔ ggplot2 3.4.0      ✔ purrr   0.3.5 
+## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
+## ✔ tidyr   1.2.1      ✔ stringr 1.4.1 
+## ✔ readr   2.1.2      ✔ forcats 0.5.2 
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::filter() masks stats::filter()
+## ✖ dplyr::lag()    masks stats::lag()
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">tibble</span>(
+</span></span><span style="display:flex;"><span>  spec <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">paste0</span>(<span style="color:#d14">&#34;sp&#34;</span>, <span style="color:#099">1</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span>),
+</span></span><span style="display:flex;"><span>  siteA <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">1</span>), replace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">TRUE</span>, size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>),
+</span></span><span style="display:flex;"><span>  siteB <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">1</span>), replace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">TRUE</span>, size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>),
+</span></span><span style="display:flex;"><span>  siteC <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">1</span>), replace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">TRUE</span>, size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>),
+</span></span><span style="display:flex;"><span>  siteD <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">1</span>), replace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">TRUE</span>, size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>)
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><pre><code>## # A tibble: 10 × 5
+##    spec  siteA siteB siteC siteD
+##    &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;
+##  1 sp1       0     0     1     0
+##  2 sp2       1     0     0     0
+##  3 sp3       0     1     0     1
+##  4 sp4       0     0     0     1
+##  5 sp5       0     0     1     1
+##  6 sp6       1     0     1     1
+##  7 sp7       0     1     0     0
+##  8 sp8       1     1     0     0
+##  9 sp9       1     0     0     0
+## 10 sp10      1     0     0     0
+</code></pre>
+
+
+
+
+<h3 id="exercício-1">Exercício 1
+  <a href="#exerc%c3%adcio-1"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Agora crie a sua base de dados, modificando os parâmetros do código acima para atender aos seguintes requisitos:</p>
+<ol>
+<li>20 espécies</li>
+<li>8 localidades</li>
+<li>Faça no seu computador</li>
+</ol>
+<ul>
+<li>Obviamente essas bases podem ser “subidas” ao R sem maiores problemas e o ideal é que você faça isso mesmo. Crie suas bases de dados numa planilha e salve-as em formato TXT ou CSV com muita atenção ao separadores e codificação (geralmente UTF-8)</li>
+</ul>
+
+
+
+
+<h2 id="exemplo-2-matriz-de-abundâncias">Exemplo 2 (matriz de abundâncias)
+  <a href="#exemplo-2-matriz-de-abund%c3%a2ncias"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Agora podemos usar os mesmos comandos para gear uma matriz dessa vez com abundâncias fictícias. Portanto no lugar de zeros e uns, teremos números inteiros entre zero e infinito (em tese). Essas matrizes são mais realistas pois dão ideia da representatividade de cada espécie nas comunidades biológicas amostradas.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">set.seed</span>(<span style="color:#099">999</span>) <span style="color:#998;font-style:italic"># vai gerar sempre o mesmo resultado com as funções abaixo</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">tibble</span>(
+</span></span><span style="display:flex;"><span>  spec <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">paste0</span>(<span style="color:#d14">&#34;sp&#34;</span>, <span style="color:#099">1</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span>),
+</span></span><span style="display:flex;"><span>  siteA <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span>), replace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">TRUE</span>, size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>), <span style="color:#998;font-style:italic">#agora vai ter números aleatórios entre 0 e 10</span>
+</span></span><span style="display:flex;"><span>  siteB <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">floor</span>(<span style="color:#900;font-weight:bold">runif</span>(<span style="color:#099">10</span>, min<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>, max<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>)), <span style="color:#998;font-style:italic"># aqui também</span>
+</span></span><span style="display:flex;"><span>  siteC <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">20</span>), replace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">FALSE</span>, size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>), <span style="color:#998;font-style:italic"># aqui também mas até 20</span>
+</span></span><span style="display:flex;"><span>  siteD <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample.int</span>(<span style="color:#099">20</span>, <span style="color:#099">10</span>) <span style="color:#998;font-style:italic"># aqui também até 20</span>
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><pre><code>## # A tibble: 10 × 5
+##    spec  siteA siteB siteC siteD
+##    &lt;chr&gt; &lt;int&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
+##  1 sp1      10     0     4    15
+##  2 sp2       3     9    18    16
+##  3 sp3       6     1    11    11
+##  4 sp4       8     7     8     2
+##  5 sp5       0     1    20     9
+##  6 sp6       9     8    17     1
+##  7 sp7       9     1     9    18
+##  8 sp8       5     0    14    17
+##  9 sp9       2     9     3     8
+## 10 sp10      6     6     7    12
+</code></pre>
+
+
+
+
+<h3 id="exercício-2">Exercício 2
+  <a href="#exerc%c3%adcio-2"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Novamente crie a sua base de dados, modificando os parâmetros do código acima para atender aos seguintes requisitos:</p>
+<ol>
+<li>30 espécies</li>
+<li>10 localidades</li>
+<li>Abundâncias devem variar entre 0-20 em 5 localidades e entre 0-50 em outras 5 localidades</li>
+</ol>
+
+
+
+
+<h2 id="sumários">Sumários
+  <a href="#sum%c3%a1rios"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Qualquer análise de dados em ecologia começa com uma boa chacagem dos seu dados. Precisamos saber como se comportam os dados e para isso podemo começar com algumas funções simples como ‘summary’ (pactote base do R) ou ‘summarize’ (pacote tidyverse). Para isso, vamos pegar a matriz gerada com as abundâncias e dar a ela um nome, tranformando-a assim num objeto.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">set.seed</span>(<span style="color:#099">999</span>) <span style="color:#998;font-style:italic"># vai gerar sempre o mesmo resultado com as funções abaixo</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">tibble</span>(
+</span></span><span style="display:flex;"><span>  spec <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">paste0</span>(<span style="color:#d14">&#34;sp&#34;</span>, <span style="color:#099">1</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span>),
+</span></span><span style="display:flex;"><span>  siteA <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">10</span>), replace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">TRUE</span>, size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>), <span style="color:#998;font-style:italic">#agora vai ter números aleatórios entre 0 e 10</span>
+</span></span><span style="display:flex;"><span>  siteB <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">floor</span>(<span style="color:#900;font-weight:bold">runif</span>(<span style="color:#099">10</span>, min<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>, max<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>)), <span style="color:#998;font-style:italic"># aqui também</span>
+</span></span><span style="display:flex;"><span>  siteC <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample</span>(<span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">0</span><span style="color:#000;font-weight:bold">:</span><span style="color:#099">20</span>), replace<span style="color:#000;font-weight:bold">=</span><span style="color:#000;font-weight:bold">FALSE</span>, size<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>), <span style="color:#998;font-style:italic"># aqui também mas até 20</span>
+</span></span><span style="display:flex;"><span>  siteD <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">sample.int</span>(<span style="color:#099">20</span>, <span style="color:#099">10</span>) <span style="color:#998;font-style:italic"># aqui também até 20</span>
+</span></span><span style="display:flex;"><span>)<span style="color:#000;font-weight:bold">-&gt;</span> base1 <span style="color:#998;font-style:italic"># note que esse comando &#34;-&gt;&#34; apontou para um objeto de nome &#39;base1&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>base1 <span style="color:#998;font-style:italic"># eis a nossa base agora com as espécies como nomes das linhas</span>
+</span></span></code></pre></div><pre><code>## # A tibble: 10 × 5
+##    spec  siteA siteB siteC siteD
+##    &lt;chr&gt; &lt;int&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt;
+##  1 sp1      10     0     4    15
+##  2 sp2       3     9    18    16
+##  3 sp3       6     1    11    11
+##  4 sp4       8     7     8     2
+##  5 sp5       0     1    20     9
+##  6 sp6       9     8    17     1
+##  7 sp7       9     1     9    18
+##  8 sp8       5     0    14    17
+##  9 sp9       2     9     3     8
+## 10 sp10      6     6     7    12
+</code></pre>
+
+
+
+
+<h3 id="exercício-3">Exercício 3
+  <a href="#exerc%c3%adcio-3"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Abaixo temos um exemplo de resumo básico dos dados.
+Um resumo geral da tabela com a função mais simples do R que mostra apenas alguns “momentos” da distribuição dos dados organizados por colunas, nesse caso, por sítio de estudo.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">summary</span>(base1)
+</span></span></code></pre></div><pre><code>##      spec               siteA           siteB          siteC      
+##  Length:10          Min.   : 0.00   Min.   :0.00   Min.   : 3.00  
+##  Class :character   1st Qu.: 3.50   1st Qu.:1.00   1st Qu.: 7.25  
+##  Mode  :character   Median : 6.00   Median :3.50   Median :10.00  
+##                     Mean   : 5.80   Mean   :4.20   Mean   :11.10  
+##                     3rd Qu.: 8.75   3rd Qu.:7.75   3rd Qu.:16.25  
+##                     Max.   :10.00   Max.   :9.00   Max.   :20.00  
+##      siteD      
+##  Min.   : 1.00  
+##  1st Qu.: 8.25  
+##  Median :11.50  
+##  Mean   :10.90  
+##  3rd Qu.:15.75  
+##  Max.   :18.00
+</code></pre>
+<p>Existem outras funções do pacote tidyverse que podem ser utilizadas com maior objetividade e para manipulações específicas. Para um curso introdutório completo de “tidyverse” veja essa maravilha aqui do Maurício Vancine 
+<a href="https://mauriciovancine.github.io/disciplina-analise-geoespacial-r/01_aulas/04_pres_intro_geocomp_r.html" target="_blank" rel="noopener">Introdução ao tidyverse</a></p>
+
+
+
+
+<h2 id="agora-podemos-começar-a-namorar-nosos-dados">Agora podemos começar a <em>namorar</em> nosos dados
+  <a href="#agora-podemos-come%c3%a7ar-a-namorar-nosos-dados"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+
+
+
+
+<h3 id="livro-numerical-ecology-with-r">Livro: Numerical Ecology with R
+  <a href="#livro-numerical-ecology-with-r"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Vamos usar muitos exemplos desse livro durante a disciplina e para acostumar, vamos começar por tentar reproduzir os exercícios do 
+<a href="http://adn.biol.umontreal.ca/~numericalecology/numecolR/NEwR-2ed_code_data.zip" target="_blank" rel="noopener">Capítulo 2: “Exploratpry Data Analysis”</a></p>
+
+
+
+
+<h2 id="extraindo-dados">Extraindo dados
+  <a href="#extraindo-dados"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p><em>Para baixar o livro <em>Numerical Ecology with R</em>, 
+<a href="https://github.com/fplmelo/eco_numerica/raw/558d6c1302c3bff19831c0eee28f53b0a3eb1c69/data/Numerical%20Ecology%20with%20R.pdf" target="_blank" rel="noopener">clique aqui</a></em></p>
+<p><em>Para acessar os dados 
+<a href="http://adn.biol.umontreal.ca/~numericalecology/numecolR/NEwR-2ed_code_data.zip" target="_blank" rel="noopener">clique aqui</a></em></p>
+<p>Salve a pasta descompactada no diretório local correspondente ao seu repositório do <em>GitHub</em></p>
+<p>Agora é só carregar as bases de dados usando o comando “load”, lembrando de colocar o caminho para o arquivo segundo</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># Vamos carregar os dados que o livro usa como exemplo</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">load</span>(<span style="color:#d14">&#34;/home/felipe/Google Drive/github/ecoaplic/content/collection/eco_num/r_data/NEwR-2ed_code_data/NEwR2-Data/Doubs.RData&#34;</span>) <span style="color:#998;font-style:italic"># mude o caminho para o seu próprio´</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>spe <span style="color:#998;font-style:italic"># matriz de abundância de espécies de peixes</span>
+</span></span></code></pre></div><pre><code>##    Cogo Satr Phph Babl Thth Teso Chna Pato Lele Sqce Baba Albi Gogo Eslu Pefl
+## 1     0    3    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 2     0    5    4    3    0    0    0    0    0    0    0    0    0    0    0
+## 3     0    5    5    5    0    0    0    0    0    0    0    0    0    1    0
+## 4     0    4    5    5    0    0    0    0    0    1    0    0    1    2    2
+## 5     0    2    3    2    0    0    0    0    5    2    0    0    2    4    4
+## 6     0    3    4    5    0    0    0    0    1    2    0    0    1    1    1
+## 7     0    5    4    5    0    0    0    0    1    1    0    0    0    0    0
+## 8     0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+## 9     0    0    1    3    0    0    0    0    0    5    0    0    0    0    0
+## 10    0    1    4    4    0    0    0    0    2    2    0    0    1    0    0
+## 11    1    3    4    1    1    0    0    0    0    1    0    0    0    0    0
+## 12    2    5    4    4    2    0    0    0    0    1    0    0    0    0    0
+## 13    2    5    5    2    3    2    0    0    0    0    0    0    0    0    0
+## 14    3    5    5    4    4    3    0    0    0    1    1    0    1    1    0
+## 15    3    4    4    5    2    4    0    0    3    3    2    0    2    0    0
+## 16    2    3    3    5    0    5    0    4    5    2    2    1    2    1    1
+## 17    1    2    4    4    1    2    1    4    3    2    3    4    1    1    2
+## 18    1    1    3    3    1    1    1    3    2    3    3    3    2    1    3
+## 19    0    0    3    5    0    1    2    3    2    1    2    2    4    1    1
+## 20    0    0    1    2    0    0    2    2    2    3    4    3    4    2    2
+## 21    0    0    1    1    0    0    2    2    2    2    4    2    5    3    3
+## 22    0    0    0    1    0    0    3    2    3    4    5    1    5    3    4
+## 23    0    0    0    0    0    0    0    0    0    1    0    0    0    0    0
+## 24    0    0    0    0    0    0    1    0    0    2    0    0    1    0    0
+## 25    0    0    0    0    0    0    0    0    1    1    0    0    2    1    0
+## 26    0    0    0    1    0    0    1    0    1    2    2    1    3    2    1
+## 27    0    0    0    1    0    0    1    1    2    3    4    1    4    4    1
+## 28    0    0    0    1    0    0    1    1    2    4    3    1    4    3    2
+## 29    0    1    1    1    1    1    2    2    3    4    5    3    5    5    4
+## 30    0    0    0    0    0    0    1    2    3    3    3    5    5    4    5
+##    Rham Legi Scer Cyca Titi Abbr Icme Gyce Ruru Blbj Alal Anan
+## 1     0    0    0    0    0    0    0    0    0    0    0    0
+## 2     0    0    0    0    0    0    0    0    0    0    0    0
+## 3     0    0    0    0    0    0    0    0    0    0    0    0
+## 4     0    0    0    0    1    0    0    0    0    0    0    0
+## 5     0    0    2    0    3    0    0    0    5    0    0    0
+## 6     0    0    0    0    2    0    0    0    1    0    0    0
+## 7     0    0    0    0    0    0    0    0    0    0    0    0
+## 8     0    0    0    0    0    0    0    0    0    0    0    0
+## 9     0    0    0    0    1    0    0    0    4    0    0    0
+## 10    0    0    0    0    0    0    0    0    0    0    0    0
+## 11    0    0    0    0    0    0    0    0    0    0    0    0
+## 12    0    0    0    0    0    0    0    0    0    0    0    0
+## 13    0    0    0    0    0    0    0    0    0    0    0    0
+## 14    0    0    0    0    0    0    0    0    0    0    0    0
+## 15    0    0    0    0    1    0    0    0    0    0    0    0
+## 16    0    1    0    1    1    0    0    0    1    0    0    0
+## 17    1    1    0    1    1    0    0    0    2    0    2    1
+## 18    2    1    0    1    1    0    0    1    2    0    2    1
+## 19    2    1    1    1    2    1    0    1    5    1    3    1
+## 20    3    2    2    1    4    1    0    2    5    2    5    2
+## 21    3    2    2    2    4    3    1    3    5    3    5    2
+## 22    3    3    2    3    4    4    2    4    5    4    5    2
+## 23    0    0    0    0    0    0    0    0    1    0    2    0
+## 24    0    1    0    0    0    0    0    2    2    1    5    0
+## 25    0    0    1    0    0    0    0    1    1    0    3    0
+## 26    2    2    1    1    3    2    1    4    4    2    5    2
+## 27    3    3    1    2    5    3    2    5    5    4    5    3
+## 28    4    4    2    4    4    3    3    5    5    5    5    4
+## 29    5    5    2    3    3    4    4    5    5    4    5    4
+## 30    5    3    5    5    5    5    5    5    5    5    5    5
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>spa <span style="color:#998;font-style:italic"># matriz espacial</span>
+</span></span></code></pre></div><pre><code>##          X       Y
+## 1   85.678  20.000
+## 2   84.955  20.100
+## 3   92.301  23.796
+## 4   91.280  26.431
+## 5   92.005  29.163
+## 6   95.954  36.315
+## 7   98.201  38.799
+## 8   99.455  46.406
+## 9  109.782  55.865
+## 10 130.641  66.576
+## 11 142.748  81.258
+## 12 147.270  85.839
+## 13 156.817  89.516
+## 14 159.435  92.791
+## 15 150.820  91.084
+## 16 132.662  87.956
+## 17 128.298  93.918
+## 18 130.560 102.446
+## 19 128.459 105.428
+## 20 114.862 103.129
+## 21  97.163  90.245
+## 22  88.200  86.373
+## 23  79.596  83.508
+## 24  74.753  78.734
+## 25  67.146  74.683
+## 26  53.770  71.598
+## 27  43.637  68.673
+## 28  30.514  61.166
+## 29  20.495  43.848
+## 30   0.000  41.562
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>env <span style="color:#998;font-style:italic"># matriz ambiental</span>
+</span></span></code></pre></div><pre><code>##      dfs ele  slo   dis  pH har  pho  nit  amm  oxy  bod
+## 1    0.3 934 48.0  0.84 7.9  45 0.01 0.20 0.00 12.2  2.7
+## 2    2.2 932  3.0  1.00 8.0  40 0.02 0.20 0.10 10.3  1.9
+## 3   10.2 914  3.7  1.80 8.3  52 0.05 0.22 0.05 10.5  3.5
+## 4   18.5 854  3.2  2.53 8.0  72 0.10 0.21 0.00 11.0  1.3
+## 5   21.5 849  2.3  2.64 8.1  84 0.38 0.52 0.20  8.0  6.2
+## 6   32.4 846  3.2  2.86 7.9  60 0.20 0.15 0.00 10.2  5.3
+## 7   36.8 841  6.6  4.00 8.1  88 0.07 0.15 0.00 11.1  2.2
+## 8   49.1 792  2.5  1.30 8.1  94 0.20 0.41 0.12  7.0  8.1
+## 9   70.5 752  1.2  4.80 8.0  90 0.30 0.82 0.12  7.2  5.2
+## 10  99.0 617  9.9 10.00 7.7  82 0.06 0.75 0.01 10.0  4.3
+## 11 123.4 483  4.1 19.90 8.1  96 0.30 1.60 0.00 11.5  2.7
+## 12 132.4 477  1.6 20.00 7.9  86 0.04 0.50 0.00 12.2  3.0
+## 13 143.6 450  2.1 21.10 8.1  98 0.06 0.52 0.00 12.4  2.4
+## 14 152.2 434  1.2 21.20 8.3  98 0.27 1.23 0.00 12.3  3.8
+## 15 164.5 415  0.5 23.00 8.6  86 0.40 1.00 0.00 11.7  2.1
+## 16 185.9 375  2.0 16.10 8.0  88 0.20 2.00 0.05 10.3  2.7
+## 17 198.5 349  0.5 24.30 8.0  92 0.20 2.50 0.20 10.2  4.6
+## 18 211.0 333  0.8 25.00 8.0  90 0.50 2.20 0.20 10.3  2.8
+## 19 224.6 310  0.5 25.90 8.1  84 0.60 2.20 0.15 10.6  3.3
+## 20 247.7 286  0.8 26.80 8.0  86 0.30 3.00 0.30 10.3  2.8
+## 21 282.1 262  1.0 27.20 7.9  85 0.20 2.20 0.10  9.0  4.1
+## 22 294.0 254  1.4 27.90 8.1  88 0.20 1.62 0.07  9.1  4.8
+## 23 304.3 246  1.2 28.80 8.1  97 2.60 3.50 1.15  6.3 16.4
+## 24 314.7 241  0.3 29.76 8.0  99 1.40 2.50 0.60  5.2 12.3
+## 25 327.8 231  0.5 38.70 7.9 100 4.22 6.20 1.80  4.1 16.7
+## 26 356.9 214  0.5 39.10 7.9  94 1.43 3.00 0.30  6.2  8.9
+## 27 373.2 206  1.2 39.60 8.1  90 0.58 3.00 0.26  7.2  6.3
+## 28 394.7 195  0.3 43.20 8.3 100 0.74 4.00 0.30  8.1  4.5
+## 29 422.0 183  0.6 67.70 7.8 110 0.45 1.62 0.10  9.0  4.2
+## 30 453.0 172  0.2 69.00 8.2 109 0.65 1.60 0.10  8.2  4.4
+</code></pre>
+
+
+
+
+<h3 id="exercício-4">Exercício 4
+  <a href="#exerc%c3%adcio-4"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Usando essas bases de dados, tente reproduzir alguns dos gráficos que estão nos slides, pelo menos dois.</p>
+<p>Agora, crie suas próprias perguntas e explore os dados. Lembre-se, são dados de uma comunidade de peixes amostradas em 30 localidades de um rio na Suiça Temos tanto a localização geográfica dessas amostras quanto as características ambientais do rio nessas localidades.</p>
+<p>Exemplo de perguntas:</p>
+<ul>
+<li>Onde há mais riqueza de peixes?</li>
+<li>Onde há mais abundância de peixes?</li>
+<li>Quais espécies occorrem mais na nascente?</li>
+</ul>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="prev dtc pr2 tl v-top fw6"
+    href="/collection/eco_num/cluster/cluster/">&larr; Análise de Clusters</a>
+  
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="/collection/eco_num/betadiv/betadiv/">Beta-diversidade &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+
+<aside class="page-sidebar" role="complementary">
+                         
+ 
+
+
+
+
+
+
+
+
+
+
+
+  <img src="/collection/featured-sidebar.jpeg" class="db ma0">
+
+                         
+ 
+
+
+
+<div class="flex items-start sticky ph4 pb4 flex-row">
+  <div class="w-two-thirds w-50-l ph0">
+    <h2 class="mv3 f5 fw7 ttu tracked">
+      <a class="no-underline dim" href="/collection/">Content</a></h2>
+    <nav id="SectionTableOfContents" aria-label="SectionTableOfContents">
+        <ul>
+        
+          
+          
+          
+          <details open class="active">
+            <summary class="active" hugo-nav="/collection/eco_num/"><a href="/collection/eco_num/">Ecologia Numérica</a></summary>
+            
+              
+              <li class="" hugo-nav="/collection/eco_num/associacao/med_assoc/"><a href="/collection/eco_num/associacao/med_assoc/">Medidas de Associação</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_num/cluster/cluster/"><a href="/collection/eco_num/cluster/cluster/">Análise de Clusters</a></li>
+            
+              
+              <li class="active" hugo-nav="/collection/eco_num/base_dados/base_dados/"><a href="/collection/eco_num/base_dados/base_dados/">Bases de dados Ecológicos</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_num/betadiv/betadiv/"><a href="/collection/eco_num/betadiv/betadiv/">Beta-diversidade</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_num/descricao_comunidade/desc_comm/"><a href="/collection/eco_num/descricao_comunidade/desc_comm/">Descrição de comunidades biológicas</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_num/experimentos/experimentos/"><a href="/collection/eco_num/experimentos/experimentos/">Desenho de Experimentos</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_num/func_div/div_func/"><a href="/collection/eco_num/func_div/div_func/">Diversidade Funcional   </a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_num/medidas_diversidade/desc_comm/"><a href="/collection/eco_num/medidas_diversidade/desc_comm/">Medidas de diversidade</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_num/diversidade_verdadeira/desc_comm/"><a href="/collection/eco_num/diversidade_verdadeira/desc_comm/">Medidas de diversidade verdadeira</a></li>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/ecologia_paisag/"><a href="/collection/ecologia_paisag/">Ecologia de Paisagens</a></summary>
+            
+              
+              <li class="" hugo-nav="/collection/ecologia_paisag/05_frag_efeittos/5_fragm_efeitos/"><a href="/collection/ecologia_paisag/05_frag_efeittos/5_fragm_efeitos/">Efeitos biológicos da fragmentação de ecossistemas</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecologia_paisag/r_rstudio/instacao_rstudio/"><a href="/collection/ecologia_paisag/r_rstudio/instacao_rstudio/">Pré-requisitos computacionais</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecologia_paisag/01_intro/intro_eco_pais/"><a href="/collection/ecologia_paisag/01_intro/intro_eco_pais/">Aula 1- Conceitos básicos de Paisagem</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecologia_paisag/02_paisagem_delim/delim_paisag/"><a href="/collection/ecologia_paisag/02_paisagem_delim/delim_paisag/">Aula 2- Definição e delimitação de paisagens</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecologia_paisag/03_processos_biol/3_processos/"><a href="/collection/ecologia_paisag/03_processos_biol/3_processos/">Aula 3 - Processos biológicos que podem ser medidos na escala de paisagens</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecologia_paisag/04_fragmentacao/4_fragmentacao/"><a href="/collection/ecologia_paisag/04_fragmentacao/4_fragmentacao/">Aula 4 - Fragmentação de Paisagens</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecologia_paisag/06_frag_conser/6_frag_conservacao/"><a href="/collection/ecologia_paisag/06_frag_conser/6_frag_conservacao/">Aula 6 - Conservação biológica em ambientes fragmentados</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecologia_paisag/08_frag_biodiv/8_frag_biod/"><a href="/collection/ecologia_paisag/08_frag_biodiv/8_frag_biod/">Aula 8 - Efeitos da fragmentação sobre a biodiversidade</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecologia_paisag/09_frag_debate/9_frag_debate/"><a href="/collection/ecologia_paisag/09_frag_debate/9_frag_debate/">Aula 9 - Debate sobre fragmentação: Hipótese de Quantidade de Hábitat</a></li>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/ecogeral1/"><a href="/collection/ecogeral1/">Ecologia Geral 1</a></summary>
+            
+              
+              <li class="" hugo-nav="/collection/ecogeral1/01_individuos/01_individuos/"><a href="/collection/ecogeral1/01_individuos/01_individuos/">Aula 2 - Bases de Ecologia Evolutiva</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecogeral1/02_estrutura_pop/02_estrutura_pop/"><a href="/collection/ecogeral1/02_estrutura_pop/02_estrutura_pop/">Aula 3 - Estrutura de populações</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/ecogeral1/03_crescimento-populacional/03_crescimento_populacional/"><a href="/collection/ecogeral1/03_crescimento-populacional/03_crescimento_populacional/">Aula 4 - Tabelas de vida e estrutura etária</a></li>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/eco_geral2/"><a href="/collection/eco_geral2/">Ecologia Geral 2</a></summary>
+            
+              
+              <li class="" hugo-nav="/collection/eco_geral2/ameacas/amea%C3%A7as/"><a href="/collection/eco_geral2/ameacas/amea%C3%A7as/">Ameaças à Biodiversidade</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_geral2/intro/intro_bio/"><a href="/collection/eco_geral2/intro/intro_bio/">Introdução à Biodiversidade</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_geral2/biocons/biocons/"><a href="/collection/eco_geral2/biocons/biocons/">Introdução à Biologia da Conservação</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/eco_geral2/magnitude/magnitude/"><a href="/collection/eco_geral2/magnitude/magnitude/">Padrões de Distribuição e Magnitude da Biodiversidade</a></li>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/socio_rest/"><a href="/collection/socio_rest/">Restauración ecológica con participación social</a></summary>
+            
+              
+              <li class="" hugo-nav="/collection/socio_rest/04_restauacion_biocultural/restauracion-biocultural/"><a href="/collection/socio_rest/04_restauacion_biocultural/restauracion-biocultural/">Restauración Biocultural</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/socio_rest/05_restauracion_biocultural2/restauracion-biocultural/"><a href="/collection/socio_rest/05_restauracion_biocultural2/restauracion-biocultural/">Restauración Biocultural - clase 2</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/socio_rest/01_ecologia_politica/01_ecol_pol/"><a href="/collection/socio_rest/01_ecologia_politica/01_ecol_pol/">Ecología Política</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/socio_rest/02_intro_dryforest/02_intro_dryfor/"><a href="/collection/socio_rest/02_intro_dryforest/02_intro_dryfor/">Introducción a los Bosques Tropicales Secos</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/socio_rest/03_restauracion_mov_social/03_mov_soc_rest/"><a href="/collection/socio_rest/03_restauracion_mov_social/03_mov_soc_rest/">Restauración como movimiento social</a></li>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/bot_eco/"><a href="/collection/bot_eco/">Botânica Econômica</a></summary>
+            
+              
+              <li class="" hugo-nav="/collection/bot_eco/manejo_florestal/"><a href="/collection/bot_eco/manejo_florestal/">Aula 5 - Manejo Florestal</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/bot_eco/plantas_medicinais/"><a href="/collection/bot_eco/plantas_medicinais/">Aula 3 - Plantas Medicinais</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/bot_eco/produtos_biodiv/"><a href="/collection/bot_eco/produtos_biodiv/">Aula 4 - Cadeia produtiva de produtos da biodiversidade de plantas</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/bot_eco/valoracao_biod/"><a href="/collection/bot_eco/valoracao_biod/">Aula 2 - Valoração da Biodiversidade &#43; Plantas Alimentícias</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/bot_eco/amea%C3%A7as_e_almentacao/"><a href="/collection/bot_eco/amea%C3%A7as_e_almentacao/">Aula 1 - Ameaças à diversidade de plantas</a></li>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/bio_cons/"><a href="/collection/bio_cons/">Biologia da Conservação</a></summary>
+            
+              
+              <li class="" hugo-nav="/collection/bio_cons/01_intro_biod/"><a href="/collection/bio_cons/01_intro_biod/">1- Introdução à Biodiversidade</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/bio_cons/02_geopolitica_ambiental/"><a href="/collection/bio_cons/02_geopolitica_ambiental/">2- Geopolítica da Biodiversidade</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/bio_cons/03_intro_biocons/"><a href="/collection/bio_cons/03_intro_biocons/">3 - História da Biologia da Conservação</a></li>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/deseho-de-projetos/"><a href="/collection/deseho-de-projetos/">Desenho de Projetos</a></summary>
+            
+              
+              <li class="" hugo-nav="/collection/deseho-de-projetos/carreira-cientifica/"><a href="/collection/deseho-de-projetos/carreira-cientifica/">Aula 5 - Carreira científica dentro e fora da academia</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/deseho-de-projetos/componentes-de-uma-pesquisa-cient%C3%ADfica/"><a href="/collection/deseho-de-projetos/componentes-de-uma-pesquisa-cient%C3%ADfica/">Aula 1 - Componentes de uma pesquisa científica</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/deseho-de-projetos/filosofia-da-ciencia/"><a href="/collection/deseho-de-projetos/filosofia-da-ciencia/">Aula 2 - Filosofia da Ciência</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/deseho-de-projetos/planejamento/"><a href="/collection/deseho-de-projetos/planejamento/">Aula 3 - Planejando sua Pós-graduação</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/deseho-de-projetos/escrever-projeto/"><a href="/collection/deseho-de-projetos/escrever-projeto/">Aula 4 - Escrevendo o projeto</a></li>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/cons_prior/"><a href="/collection/cons_prior/">Conservation Priorities</a></summary>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/rest_ecol/"><a href="/collection/rest_ecol/">Ecologia da Restauração</a></summary>
+            
+              
+              <li class="" hugo-nav="/collection/rest_ecol/04_hist_rest/hist_rest/"><a href="/collection/rest_ecol/04_hist_rest/hist_rest/">Evolução Histórica da Restauração Ecológica no Brasil</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/rest_ecol/00_intro/intro/"><a href="/collection/rest_ecol/00_intro/intro/">Introdução à Ecologia da Restauração</a></li>
+            
+              
+              <li class="" hugo-nav="/collection/rest_ecol/02_passivos/passivos/"><a href="/collection/rest_ecol/02_passivos/passivos/">Métodos de restauração passiva </a></li>
+            
+              
+              <li class="" hugo-nav="/collection/rest_ecol/01_sucessao/sucessao/"><a href="/collection/rest_ecol/01_sucessao/sucessao/">Sucessão ecológica e perturbação</a></li>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/rm_da_ntu/"><a href="/collection/rm_da_ntu/">Research Methods and Data Analysis</a></summary>
+            
+          </details>
+          
+          </li>
+        
+          
+          
+          
+          <details  class="">
+            <summary class="" hugo-nav="/collection/talks/"><a href="/collection/talks/">Talks and thoughts</a></summary>
+            
+          </details>
+          
+          </li>
+        
+        </ul>
+    </nav>
+  </div>
+  <details id="PageTableOfContents">
+    <summary><h2 class="mv0 f5 fw7 ttu tracked dib">On this page<h2></summary>
+    <div class="pl2 pr0 mh0">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#matriz-de-presencias-e-ausências">Matriz de presencias e ausências</a></li>
+    <li><a href="#exemplo-2-matriz-de-abundâncias">Exemplo 2 (matriz de abundâncias)</a></li>
+    <li><a href="#sumários">Sumários</a></li>
+    <li><a href="#agora-podemos-começar-a-namorar-nosos-dados">Agora podemos começar a <em>namorar</em> nosos dados</a></li>
+    <li><a href="#extraindo-dados">Extraindo dados</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+  
+</div>
+
+</aside>
+
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2024 RStudio, Anywhere
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/fplmelo" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/FelipePLMelo" title="twitter" target="_blank" rel="me noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://scholar.google.com.br/citations?user=ytoqEukAAAAJ&amp;hl=pt-BR" title="google-scholar" target="_blank" rel="me noopener">
+      <i class="ai ai-google-scholar fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://orcid.org/0000-0002-1271-3214" title="orcid" target="_blank" rel="me noopener">
+      <i class="ai ai-orcid fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://publons.com/researcher/1509340/felipe-pl-melo/" title="publons" target="_blank" rel="me noopener">
+      <i class="ai ai-publons fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.scopus.com/authid/detail.uri?authorId=7005124694" title="elsevier" target="_blank" rel="me noopener">
+      <i class="ai ai-elsevier fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="http://lattes.cnpq.br/1637874338382368" title="lattes" target="_blank" rel="me noopener">
+      <i class="ai ai-lattes fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="/license/" title="License">License</a>
+      
+      <a class="dib pv1 ph2 link" href="/contact/" title="Contact form">Contact</a>
+      
+      <a class="dib pv1 ph2 link" href="/contributors/" title="Contributors">Contributors</a>
+      
+    </div>
+  </nav>
+  
+    <script>
+
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (let i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) ||
+            /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  
+          continue;
+        }
+      }
+      i++;
+    }
+</script>
+
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+    
+  
+  
+</footer>
+
+      </div>
+    </body>
+</html>

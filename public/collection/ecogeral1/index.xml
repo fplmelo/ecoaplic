@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ecologia Geral 1 on Applied Ecology</title>
+    <link>/collection/ecogeral1/</link>
+    <description>Recent content in Ecologia Geral 1 on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/collection/ecogeral1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aula 2 - Bases de Ecologia Evolutiva</title>
+      <link>/collection/ecogeral1/01_individuos/01_individuos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecogeral1/01_individuos/01_individuos/</guid>
+      <description>Slides dessa aula AQUI Fatores que limitam a distribuição e abundância dos indivíduos Nesta aula vamos entender quais são os principais fatores que determinam onde ocorrem os indíviduos de uma populaçõe e em que quantidade eles ocorrem. Vimos na aula passada que os indivíduos possuem uma característica que é medidada no nível do organismo, a adequação ou fitness. Em resumo, o conjuto das respostas individuais de adequação de cada indivíduo aos gradientes naturais aos que estão sujeitos vão determinar em última instância, sua distribuição e abndância como populações.</description>
+    </item>
+    
+    <item>
+      <title>Aula 3 - Estrutura de populações</title>
+      <link>/collection/ecogeral1/02_estrutura_pop/02_estrutura_pop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecogeral1/02_estrutura_pop/02_estrutura_pop/</guid>
+      <description>Slides dessa aula AQUI Demografia De maneira ampla, a demografia é o estudo da estrutura de populações. Ou seja, a demografia trata de entender as características das populações como: tamanho, distribuição etária, distribuição espacial, taxas de crescimento ou declínio, etc. A intenção é entender os fatores que levam à mudanças espaciais e temporais da população em questão.
+Tamanho da população Esse talvez seja o parâmetro demográfico mais importante das populações.</description>
+    </item>
+    
+    <item>
+      <title>Aula 4 - Tabelas de vida e estrutura etária</title>
+      <link>/collection/ecogeral1/03_crescimento-populacional/03_crescimento_populacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecogeral1/03_crescimento-populacional/03_crescimento_populacional/</guid>
+      <description>Slides dessa aula AQUI Estrutura etária Entender a estrutura etária de uma população é fundamental para compreender suas taxas de crescimento e mortalidade bem como modelar o que poderá acontecer com populações no futuro. Estrutura pode ser repartida em &amp;ldquo;componentes&amp;rdquo; e &amp;ldquo;configurações&amp;rdquo;. Os componentes de uma populaçõa são a quantidade de indívudos e sua configuração é a que estágio ontogenético (classe etária) ou sexo pertencem os indivíduos. Não todos os indivíduos de uma população são reprodutivos por cuasa por idade ou sexo.</description>
+    </item>
+    
+  </channel>
+</rss>

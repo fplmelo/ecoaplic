@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>restauração on Applied Ecology</title>
+    <link>/tags/restaura%C3%A7%C3%A3o/</link>
+    <description>Recent content in restauração on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/restaura%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webinário BPBES - Restauração da Caatinga e COP 15 da Biodiversidade</title>
+      <link>/talk/bpbes_webinar/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/bpbes_webinar/</guid>
+      <description>Uma boa conversa sobre restauração, justiça ambiental, biodiversidade e Caatinga</description>
+    </item>
+    
+    <item>
+      <title>Pinheiro Nativo - Caatinga</title>
+      <link>/talk/pinheiro_nativo/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/pinheiro_nativo/</guid>
+      <description>Participação no projeto maravilhoso da colega Nívea Santos que mistura música e ciência. Aqui, falamos sobre a Caatinga, sua biodiversidade, musicalidade e conservação. Teve poesia, música e muita ciência</description>
+    </item>
+    
+  </channel>
+</rss>

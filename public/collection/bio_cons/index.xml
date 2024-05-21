@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Biologia da Conservação on Applied Ecology</title>
+    <link>/collection/bio_cons/</link>
+    <description>Recent content in Biologia da Conservação on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/collection/bio_cons/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introdução à Biodiversidade</title>
+      <link>/collection/bio_cons/01_intro_biod/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/bio_cons/01_intro_biod/</guid>
+      <description>História e evolução do conceito de diversidade biológica</description>
+    </item>
+    
+    <item>
+      <title>Geopolítica da Biodiversidade</title>
+      <link>/collection/bio_cons/02_geopolitica_ambiental/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/bio_cons/02_geopolitica_ambiental/</guid>
+      <description>Como a biodiversidade entrou na agenda global</description>
+    </item>
+    
+    <item>
+      <title>História da Biologia da Conservação</title>
+      <link>/collection/bio_cons/03_intro_biocons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/bio_cons/03_intro_biocons/</guid>
+      <description>As origens e influências do pensamento conservacionista</description>
+    </item>
+    
+  </channel>
+</rss>

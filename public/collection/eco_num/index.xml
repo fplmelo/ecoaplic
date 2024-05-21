@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ecologia Numérica on Applied Ecology</title>
+    <link>/collection/eco_num/</link>
+    <description>Recent content in Ecologia Numérica on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="/collection/eco_num/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Medidas de Associação</title>
+      <link>/collection/eco_num/associacao/med_assoc/</link>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/associacao/med_assoc/</guid>
+      <description>Na ecologia usamos muitas medidas que fazem uma ligação entre pares de dados. Esses pares de dados podem ser espécies, ou locais de coleta. Há uma enorme variedade de métricas que vão nos oferecer uma medida de associação entre pares. Essas medidas são reportadas na forma de índices ou métricas que têm naturezas distintas, mas todas tem a particularidade de gerar uma matriz quadrada e simétrica de dimensões n x n quando se comparam objetos ou p x p quando se comparam variáveis (as letras são conveções).</description>
+    </item>
+    
+    <item>
+      <title>Análise de Clusters</title>
+      <link>/collection/eco_num/cluster/cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/cluster/cluster/</guid>
+      <description>Análise de Clusters Slides
+Segundo os autores do livro Numerical Ecology, a interpretação de um dendograma típíco das análises de cluster, demanda um certo grau de abstração, vejamos. Um cluster serve para particionar (i.e. criar fornteiras) conjuntos de objetos (Q mode) ou variáveis (R-mode). Dessa forma, podemos identificar o grau de semelhança (ou diferença) entre sujeitos analisados. Para isso, a análise cria uma tipologia, que é uma estrutura completa e complexa, na forma de uma árvore ou nuvem de pontos que informa sobre essa semelhança/diferença.</description>
+    </item>
+    
+    <item>
+      <title>Bases de dados Ecológicos</title>
+      <link>/collection/eco_num/base_dados/base_dados/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/base_dados/base_dados/</guid>
+      <description>Slides
+Matriz de presencias e ausências As bases de dados do R que serão usadas no nosso curso são reais e vêem de repositórios livres de dados e exemplos do próprio R para a área de ecologia. No entanto, para iniciar nossas atividades, vamos contruir uma base de dados fictícia apenas para entender sua estrutura.
+A estrutura básica de bases de dados biológicos é a de matrizes que contem ‘n’ colunas e ‘r’ linhas (n x r).</description>
+    </item>
+    
+    <item>
+      <title>Beta-diversidade</title>
+      <link>/collection/eco_num/betadiv/betadiv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/betadiv/betadiv/</guid>
+      <description>Beta diversidade é medir diferença entre comunidades Exemplo Vamos usar os dados de um artigo em que participei para medir a diverisdade beta dentro de paisagens com diferentes graus de desmatamento. Plant β-diversity in fragmented rain forests: testing floristic homogenization and differentiation hypotheses https://doi.org/10.1111/1365-2745.12153
+Nessa figura vemos as paisagens estudadas. São três, LDL, IDL e HDL. Elas se diferenciam pelo grau de desmatamento que cada uma apresenta. LDL = LOW deforestain level, IDL = INTERMEDIATE deforestation level e HDL = HIGH deforestaion level.</description>
+    </item>
+    
+    <item>
+      <title>Descrição de comunidades biológicas</title>
+      <link>/collection/eco_num/descricao_comunidade/desc_comm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/descricao_comunidade/desc_comm/</guid>
+      <description>Os atributos de uma communidade biológica são simples, em princípio Entidades Identidades Quantidades Exercício Comunidades Culinárias (para etregar na forma de um Rpubs até 30 de dezembro de 2022) Fizemos um exercício muito bom em sala de aula. Criamos uma comunidades biológica com grãos e massa para simular a montagem de uma comundaidade biológica em uma ilha oceânica recém formada. Dois grupos fizeram amostragem: um grupo usou uma técnica de alatorização das amostras, soirtendo quadrados que correspondiam a 10% da área da ilha.</description>
+    </item>
+    
+    <item>
+      <title>Desenho de Experimentos</title>
+      <link>/collection/eco_num/experimentos/experimentos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/experimentos/experimentos/</guid>
+      <description>Slides
+Bibliografia básica Design and Analysis of Experiments with R
+Noções básicas de Experimentos Ecológicos Experimentos ecológicos não diferem de qualquer outro experimento científico. Esses têm uma lógica similar que precisa ser seguida e dominada para que análises de dados ecológicos possam ser planejadas e realizadas com sucesso.
+O que precisamos saber? - Definir um objetivo Qual o objetivo do experimento? A resposta a essa pergunta é porque o experimento precisa ser realizado.</description>
+    </item>
+    
+    <item>
+      <title>Diversidade Funcional   </title>
+      <link>/collection/eco_num/func_div/div_func/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/func_div/div_func/</guid>
+      <description>Slides das aulas gentilmente cedidos pelo Prof. Dr. Thiago Gonçalves Souza podem ser biaxados AQUI Para esse módulo é importante a seguintes leituras para entender sobre diversidade funcional e como calculá-la. Functional diversity: an overview of its history and applicability Exercício Este último exerćicio consiste em reproduzir as análises do livro Ecologia No R - Cap 8 Diversidade Funcional
+Lembre de instalar o pacote do livro para ter acesso aos dados usados nos exemplos</description>
+    </item>
+    
+    <item>
+      <title>Medidas de diversidade</title>
+      <link>/collection/eco_num/medidas_diversidade/desc_comm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/medidas_diversidade/desc_comm/</guid>
+      <description>Desafios da mensuração da diversidade Vimos que as comunidades biológicas são estruturas complexas, com muitas informações. Para descrever uma comunidades biológica usamos com frequência duas dessas infromações:
+Riqueza Abundância específica (de cada espécie) A riqueza em si é uma medida de diversidade. Ela informa quantas espécies há numa comunidade mas despreza suas abundâncias.
+Compare as comunidades abaixo
+Perceba que os valores de riqueza são exatamente iguais para cada comunidade 4 espécies.</description>
+    </item>
+    
+    <item>
+      <title>Medidas de diversidade verdadeira</title>
+      <link>/collection/eco_num/diversidade_verdadeira/desc_comm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/diversidade_verdadeira/desc_comm/</guid>
+      <description>Texto extraído do livro Análises Ecológicas no R (in press)
+Desafios da mensuração da diversidade verdadeira Números de Hill ou Série de Hill Embora os índices de Shannon-Wiener e Gini-Simpson sejam amplamente usados em estudos ecológicos e de conservação, eles sofrem de propriedades matemáticas e não representam a diversidade propriamente dita (L. Jost 2006). Portanto, quando o objetivo é avaliar a diversidade, os índices de Shannon-Wiener e Gini-Simpson não deveriam ser utilizados na sua forma padrão, mas transformados em números efetivos de espécies ou diversidade verdadeira (L.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,309 @@
+---
+title: "4-Biodiversity Magnitude"
+subtitle: " "
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Conservation Priorities"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    auto-stretch: true
+
+---
+
+## You should know today:
+
+- Basic notions on the magnitude of biodiversity
+- How biodiversity is organized in space and time
+- [How to use]{style="color: red;"} biodiversity data for setting conservation priorities
+
+
+## History of life on Earth
+
+<img src="https://www.researchgate.net/profile/Dirk-Olbers/publication/263466153/figure/fig10/AS:296039673286669@1447592766800/Development-of-life-on-Earth-shown-as-a-spiralling-timeline_W640.jpg" height = 500/>
+
+## We live on the most diverse time, ever
+::: columns
+::: {.column width="50%"}
+<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780123852274000055-f06-27-9780123852274.jpg?" width= 800/>
+:::
+::: {.column width="50%"}
+- Mass extinctions
+- Life always recovered
+- Let's take a closer look...
+:::
+:::
+
+##
+![](img/five_ext.png)
+
+source: [Our World in Data](https://ourworldindata.org/mass-extinctions)
+
+## Changes in space and time
+
+<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Continental_Drift_%28740_million-to-Today%29.gif/1280px-Continental_Drift_%28740_million-to-Today%29.gif?20200305223554>
+
+## We live in what is the result of 4.5 Bi years of evolution{.center}
+
+## Three principles to understand 
+- Speciation
+- Extinction
+- Dispersion
+
+## Why are there so many species on Earth?
+:::columns
+:::{.column width="50%"}
+- What do we mean by species?
+  - Biological
+  - Phylogenetic
+  - Molecular
+- Where is the border?
+
+:::
+:::{.column width="50%"}
+<img src=https://images.theconversation.com/files/271121/original/file-20190426-121233-1y7l2qo.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip>
+:::
+:::
+
+## Some known relationships{.center}
+
+## Life is not randomly distributed
+
+:::columns
+:::{.column width="50%"}
+
+![](img/land_sea.png)
+
+:::
+
+:::{.column width="50%"}
+- Habitats are not random
+  - More land on North
+  - More sea on South
+  
+:::
+:::
+
+## Species-Area Relationship (SAR)
+
+::: {.panel-tabset}
+
+## Humbolt
+:::columns
+:::{.column width="50%"}
+
+![](img/sar.png)
+
+:::
+
+:::{.column width="50%"}
+-  [Alexander Von Humbolt](https://en.wikipedia.org/wiki/Alexander_von_Humboldt) observed that within a region species richness increased with increasing explored area, but only up to a limit.
+  
+:::
+:::
+
+## Hidden patterns
+:::columns
+:::{.column width="50%"}
+
+![](img/sars.webp)
+
+:::
+
+:::{.column width="50%"}
+-  Neutral models, though weird, help to explain SAR
+  
+:::
+:::
+
+:::
+
+## Species-Area Relationship (SAR)
+
+::: {.panel-tabset}
+
+## Data
+```{r}
+library(sars)
+data(galap)
+galap
+```
+
+
+## Model
+```{r}
+#load an example dataset (Preston, 1962), fit the logarithmic SAR model using
+#the grid_start method of selecting starting parameter values, return a model 
+#fit summary and plot the model fit. 
+
+fit <- sar_loga(data = galap, grid_start = "partial") 
+summary(fit) 
+
+
+```
+
+## Plot
+
+```{r}
+plot(fit)
+
+```
+
+
+:::
+
+## Island Biogeography
+
+::: {.panel-tabset}
+
+### Distance
+
+![](https://www.researchgate.net/profile/Laura-Glendinning/publication/324495329/figure/fig1/AS:769651810267136@1560510699084/A-basic-diagram-depicting-the-island-biogeography-model-This-model-states-that.jpg)
+
+source: [Laura Glendinning](https://www.researchgate.net/publication/324495329_Sheep_lung_microbiota)
+
+### Size 
+
+![](https://osu-wams-blogs-uploads.s3.amazonaws.com/blogs.dir/2786/files/2020/07/islands.png)
+
+### Theory
+
+![](img/island_biog.jpg)
+source: [Matthews & triantis 2021](https://www.sciencedirect.com/science/article/pii/S096098222100988X#fig3)
+:::
+
+## Biogeographic frontiers of the Earth
+[**Biogeographic Realms**](https://en.wikipedia.org/wiki/Biogeographic_realm)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ecozones.svg/1920px-Ecozones.svg.png"/>
+
+
+## The Wallace line
+
+![](https://64.media.tumblr.com/06ec4f9747754d130291f6036aae04d6/tumblr_o98sc1kDN31sq04bjo1_1280.jpg)
+
+## Endemisms
+
+:::columns
+:::{.column width="50%"}
+
+![](https://www.researchgate.net/profile/Douglas-Boyes/publication/336343580/figure/fig3/AS:817566788370435@1571934520763/Rabinowitzs-1981-rarity-typology-rendered-as-a-cube-It-identifies-seven-forms-of.png)
+
+Source [Boyes et al 2019](https://www.researchgate.net/publication/336343580_Bucking_the_trend_the_diversity_of_Anthropocene_'winners'_among_British_moths)
+:::
+:::{.column width="50%"}
+Rabinowitz’s (1981) rarity typology rendered as a cube. It identifies seven forms of rarity, along with an eighth state showing no traits of rarity (shaded cube), when species are dichotomously classified along three axes.
+:::
+:::
+
+## Diversity
+:::columns
+:::{.column width="50%"}
+
+![](https://evolution.berkeley.edu/wp-content/uploads/2021/05/diversity_globe2.jpg)
+
+Source [Berkeley](https://evolution.berkeley.edu/visualizing-life-on-earth/introducing-the-ldg/)
+:::
+:::{.column width="50%"}
+Diversity is higher in the tropics
+
+- WHY?
+
+:::
+:::
+
+## Some hypotheses
+::: {.panel-tabset}
+
+## H1 - "cradle"
+
+![](https://evolution.berkeley.edu/wp-content/uploads/2021/05/ldg_cradle.gif)
+
+## H2 - low extinction
+
+![](https://evolution.berkeley.edu/wp-content/uploads/2021/05/ldg_museum.gif)
+
+## H3 - high immigration
+
+![](https://evolution.berkeley.edu/wp-content/uploads/2021/05/ldg_destination.gif)
+
+:::
+
+## More hidden patterns
+::: {.panel-tabset}
+
+
+### Nested diversity
+
+<img src=img/div_nest.webp width = 500/>
+
+[Getting the measure of biodiversity](https://www.nature.com/articles/35012221)
+
+### Age of species
+
+![](img/div_age.webp){.absolute height=500}
+
+:::
+
+## Alfred Russel Wallace
+:::columns
+:::{.column width="50%"}
+<img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQhehBm8LtcZpizY5ZUoZDUfhk_G7Fmza8oz_PgtEk7wokliT4iLwdFQl3woU3r" height=500>
+:::
+:::{.column width="50%"}
+The "father of Biogeography"
+
+:::{.nonincremental}
+- Niche
+- History
+- Species intereaction
+- SARs
+
+:::
+:::
+:::
+
+ [Darwin, historical biogeography, and the importance of overcoming binary opposites](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2699.2009.02111.x)
+
+## Niche and conservation priorities
+
+<img src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-3-030-51633-8_7/MediaObjects/470677_1_En_7_Figa_HTML.png" height= 500 >
+
+## History
+
+:::columns
+:::{.column width="50%"}
+Mammals in Americas
+![](https://images.theconversation.com/files/361877/original/file-20201006-22-19yd99d.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip)
+:::
+
+:::{.column width="50%"}
+
+Invasive Bees
+
+![](https://www.researchgate.net/publication/335666570/figure/fig1/AS:800304018759682@1567818755633/Current-and-predicted-future-spread-of-Africanized-honey-bees-in-the-Americas.png)
+:::
+:::
+
+## Species interactions
+
+![](https://www.mun.ca/biology/scarr/Geospiza_beaks.jpg)
+
+## Some applications
+
+![](https://www.researchgate.net/profile/Michael-Hoffmann-19/publication/6958884/figure/fig1/AS:280471314419712@1443880980338/Maps-of-the-nine-global-biodiversity-conservation-priority-templates-CE-crisis.png)
+
+[Brooks et al 2006](https://www.science.org/doi/10.1126/science.1127609)
+
+
+## Today's reviews
+- It is important to have a clear scenario on the magitude and ditribution of biodiversity
+- Biogrpgraphy is a key dicipline
+- Patterns of divesity in nature are everywhere
+- Informed prioritisation demands knowledge
+
+## The end{.center}

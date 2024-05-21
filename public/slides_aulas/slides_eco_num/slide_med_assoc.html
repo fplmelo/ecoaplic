@@ -4,24 +4,24 @@
     <title>Ecologia Numérica</title>
     <meta charset="utf-8" />
     <meta name="author" content="Felipe Melo" />
-    <meta name="date" content="2022-08-29" />
-    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
-    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
-    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
-    <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
-    <script src="libs/tile-view-0.2.6/tile-view.js"></script>
-    <script src="libs/clipboard-2.0.6/clipboard.min.js"></script>
-    <link href="libs/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
-    <script src="libs/shareon-1.4.1/shareon.min.js"></script>
-    <link href="libs/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
-    <script src="libs/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
-    <script src="libs/fabric-4.3.1/fabric.min.js"></script>
-    <link href="libs/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
-    <script src="libs/xaringanExtra-scribble-0.0.1/scribble.js"></script>
-    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
-    <script src="libs/xaringanExtra_fit-screen-0.2.6/fit-screen.js"></script>
-    <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
-    <script src="libs/panelset-0.2.6/panelset.js"></script>
+    <meta name="date" content="2021-03-12" />
+    <script src="slide_med_assoc_files/header-attrs-2.6/header-attrs.js"></script>
+    <link href="slide_med_assoc_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="slide_med_assoc_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="slide_med_assoc_files/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="slide_med_assoc_files/tile-view-0.2.6/tile-view.js"></script>
+    <script src="slide_med_assoc_files/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="slide_med_assoc_files/shareon-1.4.1/shareon.min.css" rel="stylesheet" />
+    <script src="slide_med_assoc_files/shareon-1.4.1/shareon.min.js"></script>
+    <link href="slide_med_assoc_files/xaringanExtra-shareagain-0.2.6/shareagain.css" rel="stylesheet" />
+    <script src="slide_med_assoc_files/xaringanExtra-shareagain-0.2.6/shareagain.js"></script>
+    <script src="slide_med_assoc_files/fabric-4.3.1/fabric.min.js"></script>
+    <link href="slide_med_assoc_files/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="slide_med_assoc_files/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30}) })</script>
+    <script src="slide_med_assoc_files/xaringanExtra_fit-screen-0.2.6/fit-screen.js"></script>
+    <link href="slide_med_assoc_files/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="slide_med_assoc_files/panelset-0.2.6/panelset.js"></script>
   </head>
   <body>
     <textarea id="source">
@@ -31,7 +31,7 @@ class: center, middle, inverse, title-slide
 ## Aula 2 - Medidas de Associação
 ### Felipe Melo
 ### Laboratório de Ecologia Aplicada - UFPE
-### 2022-08-29
+### 2021-03-12
 
 ---
 
@@ -166,12 +166,7 @@ class: center, middle
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create({
-"ratio": "16:9",
-"highlightStyle": "github",
-"highlightLines": true,
-"countIncrementalSlides": false
-});
+<script>var slideshow = remark.create();
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
@@ -236,24 +231,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
       links[i].target = '_blank';
     }
   }
-})();
-// adds .remark-code-has-line-highlighted class to <pre> parent elements
-// of code chunks containing highlighted lines with class .remark-code-line-highlighted
-(function(d) {
-  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
-  const preParents = [];
-  const findPreParent = function(line, p = 0) {
-    if (p > 1) return null; // traverse up no further than grandparent
-    const el = line.parentElement;
-    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
-  };
-
-  for (let line of hlines) {
-    let pre = findPreParent(line);
-    if (pre && !preParents.includes(pre)) preParents.push(pre);
-  }
-  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
-})(document);</script>
+})();</script>
 
 <script>
 slideshow._releaseMath = function(el) {

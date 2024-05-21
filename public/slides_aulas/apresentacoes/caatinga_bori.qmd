@@ -1,0 +1,189 @@
+---
+title: "O papel da Caatinga para a segurança alimentar"
+author: "**Felipe Melo** <br> Nottingham Trent University - UK <br> Universidade Federal de Pernambuco - Brasil"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    #footer: "Workshop Segurança Alimentar Agência Bori"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    auto-stretch: true
+---
+
+## O que vamos discutir
+- Um panorama geral sobre a Caatinga
+- Porque a Caatinga pode ser considerada uma região socioecológica distinta
+- Desafios para quebrar estereótipos
+- Entender o papel da Caatinga para a segurança alimentar
+
+##  {.center background-image=libs/caat_seca.jpg background-size=cover}
+
+
+##  {.center background-image=libs/caat_verde.jpg background-size=cover}
+
+## {.center background-image=libs/caat_seca2.jpg background-size=cover}
+### Ter uma estação seca é uma condição,
+### não uma "maldição"
+
+## {.center background-image=libs/mapbiom_caat22.png background-size=contain}
+
+## {.center background-image=libs/pessoas.png background-size=cover}
+
+## Densidade populacional da Caatinga
+![](https://aredeurbana.files.wordpress.com/2022/02/dens_mun_2021.png?w=1024){fig-align=center width=1200}
+
+## Condição socioeconômica
+
+![](libs/bolsa_fam.png){fig-align=center width=900}
+
+## Caatinga + Pessoas
+
+![](libs/caat_people.png)
+
+:::{.footer}
+[Alencar et al (em revisão)]()
+:::
+
+## Caatinga + Desenvolvimento
+
+![](libs/fig3.jpg){fig-align=center width="120%"}
+
+:::{.footer}
+[Alencar et al (em revisão)]()
+:::
+
+## Caatinga + Segurança Alimentar
+
+![](libs/food_sec.png){fig-align=center width="120%"}
+
+:::{.footer}
+[Alencar et al (2023)](https://doi.org/10.1002/ldr.4848)
+:::
+
+
+## Caatinga + Segurança Alimentar
+
+![](https://onlinelibrary.wiley.com/cms/asset/322527cf-242c-457e-9f2e-bc424f85c7f8/ldr4848-fig-0004-m.jpg){fig-align=left width="120%"}
+
+
+:::{.footer}
+[Alencar et al (2023)](https://doi.org/10.1002/ldr.4848)
+:::
+
+## Concentração de terra na Caatinga
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+
+- ~ 1 milão de propriedades em 1204 municípios
+  - 97,8% pequenas propriedades
+       - 17,9 Mha
+       - 51% coberta com Caatinga
+  - 2.2% Grandes proprietários
+       - 15,2 Mha
+       - 69% coberto com Caatinga
+:::
+
+:::{.column width="50%"}
+
+
+![](libs/share_land.png)
+
+:::
+::::
+:::
+
+## Distribuição do déficit florestal
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/deficit2.png)
+
+:::
+:::{.column width="50%"}
+:::{.fragment}
+:::{.nonincremental}
+- Grandes proprietários
+  - Agrupados ao longo do rio SF
+  - Agronegócio MATOPIBA
+- Pequenos proprietários
+  - regiões mais secas
+  - agricultura familiar 
+  
+:::
+:::
+:::
+::::
+
+## O papel da Caatinga para o bem-estar humano
+![](libs/wef.png)
+
+:::{.footer}
+[Melo et al (2021)](https://doi.org/10.1038/s41893-020-00608-z)
+
+:::
+
+## [O socioecossitema da Caatinga]{style="color: white;"}{background-image=libs/vaqueiro.png background-size=cover}
+
+## Manejo biocultural
+
+![](https://focadoemvoce.com/wp-content/uploads/2022/03/indioraizeiro1.jpg)
+
+## Manejo biocultural
+
+![](https://www.undp.org/sites/g/files/zskgke326/files/migration/br/Produtos-da-sociobiodiversidade-da-Caatinga.jpg)
+
+## Manejo biocultural
+![](https://i.ytimg.com/vi/HCLdQH9E7Mg/maxresdefault.jpg)
+
+## Identidade cultural Caatingueira
+
+![](https://cdn.brasildefato.com.br/media/f184a9dbd79763762c04e01745b84b89.jpg)
+
+## Força política
+
+::: {layout-ncol=2}
+![2018](https://multimidia.gazetadopovo.com.br/media/info/2018/eleicoes-2018/graficos/mapa-resultado-eleicao-2018-presidente-br-2turno.jpg?1)
+
+![2022](https://f.i.uol.com.br/fotografia/2022/10/30/1667173942635f0e36b9956_1667173942_1x1_sm.jpg)
+:::
+
+## Em resumo
+- Floresta não garante, mas ajuda na segurança alimentar
+- Modelos de desenvolvimento com Caatinga
+- Nova fronteira agrícola
+
+## Agradecimentos
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](libs/cnpq.png)
+![](libs/ufpe.png)
+:::
+
+:::{.column width="50%"}
+**Co-autores**
+
+- Adriana Pelegrinni Manhães
+- Guilherme Mazochinni
+- Vinicius Guidoti
+- Lucas Alencar
+- Luke Parry
+
+:::
+::::
+:::
+
+## Obrigado{.center}
+
+felipe.melo@ntu.ac.uk
+
+felipe.plmelo@ufpe.br
+
+![www.ecoaplic.org](www.ecoaplic.org)
+
+
+

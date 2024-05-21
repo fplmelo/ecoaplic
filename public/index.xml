@@ -6,121 +6,7 @@
     <description>Recent content on Applied Ecology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Netlify</title>
-      <link>/courses/day02/01-netlify/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/courses/day02/01-netlify/</guid>
-      <description>So far, we&amp;rsquo;ve been leveraging GitHub Pages for publishing. This works great, but for blogdown we&amp;rsquo;ll start using Netlify. Let&amp;rsquo;s start RIGHT NOW with a site we&amp;rsquo;ve already built and published.
-Pre-requisites Pick either your postcards site, or your distill site from day 01. Refresh your memory- which repository was it again?</description>
-    </item>
-    
-    <item>
-      <title>A first post</title>
-      <link>/blog/spoonful-series/01-spoonful/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/spoonful-series/01-spoonful/</guid>
-      <description> Hi, I&#39;m the here-bot cat! Use me to find your way in your website.
-Here I am: content/blog/spoonful-series/01-spoonful.md To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}
-My content section is: blog My layout is: single-series does this work? or this? Let&amp;rsquo;s start.
-beginning middle end </description>
-    </item>
-    
-    <item>
-      <title>A GitHub profile</title>
-      <link>/courses/day01/01-github/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/courses/day01/01-github/</guid>
-      <description>Profile https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/personalizing-your-profile
-Pin projects to profile https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile
-Profile README This is new! Let&amp;rsquo;s do it:
-https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme</description>
-    </item>
-    
-    <item>
-      <title>Prework</title>
-      <link>/courses/prework/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/courses/prework/</guid>
-      <description>Welcome to the Introducing Yourself Online workshop! We look forward to meeting you. Before attending the workshop, please complete the following prework.
-Set up RStudio Cloud Sign up for a free RStudio Cloud account at https://rstudio.cloud/ before the workshop. I recommend logging in with an existing Google or GitHub account, if you have one (rather than creating a new account with another password you have to remember). I want you to be able to work from your own laptop in this workshop, but Cloud is an important back-up plan should you run into troubles.</description>
-    </item>
-    
-    <item>
-      <title>A postcard</title>
-      <link>/courses/day01/02-postcards/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/courses/day01/02-postcards/</guid>
-      <description>Pre-requisites First, make sure you have the latest version of the postcards package installed from CRAN:
-install.packages(&amp;#34;postcards&amp;#34;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
-Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS). packageVersion(&amp;#34;postcards&amp;#34;) [1] ‘0.2.0’ Create GitHub repo Online.
-Clone GitHub repo usethis::create_from_github(&amp;#34;https://github.com/apreshill/global-postcard.git&amp;#34;) ✨ Commit &amp;amp; Push! ✨</description>
-    </item>
-    
-    <item>
-      <title>A second post</title>
-      <link>/blog/spoonful-series/02-spoonful/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/spoonful-series/02-spoonful/</guid>
-      <description> Hi, I&#39;m the here-bot cat! Use me to find your way in your website.
-Here I am: content/blog/spoonful-series/02-spoonful/index.md To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}
-My content section is: blog My layout is: single-series Images in this page bundle: /blog/spoonful-series/02-spoonful/sidebar-inverse.jpg part 2! does this work? now for some very cool things more get ready! </description>
-    </item>
-    
-    <item>
-      <title>Using blogdown</title>
-      <link>/courses/day02/02-blogdown/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/courses/day02/02-blogdown/</guid>
-      <description>Pre-requisites First, make sure you have the latest version of the blogdown package installed from CRAN:
-install.packages(&amp;#34;blogdoown&amp;#34;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
-Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS). packageVersion(&amp;#34;blogdown&amp;#34;) [1] ‘1.0’ Create GitHub repo Online.
-Clone GitHub repo usethis::create_from_github(&amp;#34;https://github.com/apreshill/global-blogdown.git&amp;#34;) ✨ Commit &amp;amp; Push! ✨</description>
-    </item>
-    
-    <item>
-      <title>A third post</title>
-      <link>/blog/spoonful-series/03-spoonful/</link>
-      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/spoonful-series/03-spoonful/</guid>
-      <description>Hi, I&#39;m the here-bot cat! Use me to find your way in your website.
-Here I am: content/blog/spoonful-series/03-spoonful/index.markdown Here is my R Markdown source file: blog/spoonful-series/03-spoonful/index.Rmarkdown You&#39;ll want to edit this file, then re-knit to see the changes take effect in your site preview.
-To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}
-My content section is: blog My layout is: single-series Images in this page bundle: /blog/spoonful-series/03-spoonful/featured-photo.</description>
-    </item>
-    
-    <item>
-      <title>A distill site</title>
-      <link>/courses/day01/03-distill/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/courses/day01/03-distill/</guid>
-      <description>Pre-requisites First, make sure you have the latest version of the distill package installed from CRAN:
-install.packages(&amp;quot;distill&amp;quot;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:
-Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS). &amp;lt;!-- --&amp;gt; packageVersion(&amp;quot;distill&amp;quot;) [1] ‘1.2’ Create GitHub repo Online.
-Clone GitHub repo usethis::create_from_github(&amp;quot;https://github.com/apreshill/global-distill.git&amp;quot;) ✨ Commit &amp;amp; Push!</description>
-    </item>
-    
-    <item>
-      <title>Warm woolen mittens</title>
-      <link>/courses/day02/03-blogdown/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/courses/day02/03-blogdown/</guid>
-      <description> Hi, I&#39;m the here-bot cat! Use me to find your way in your website.
-Here I am: content/courses/day02/03-blogdown/index.md To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}
-My content section is: courses My layout is: single-series part 2! does this work? now for some very cool things more get ready! </description>
-    </item>
-    
+    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fragmentação de Paisagens</title>
       <link>/courses/ecologia_paisag/04_fragmentacao/4_fragmentacao/</link>
@@ -128,6 +14,15 @@ My content section is: courses My layout is: single-series part 2! does this wor
       
       <guid>/courses/ecologia_paisag/04_fragmentacao/4_fragmentacao/</guid>
       <description>Um fenômeno importante mas muito mal compreendido</description>
+    </item>
+    
+    <item>
+      <title>Efeitos biológicos da fragmentação de ecossistemas</title>
+      <link>/collection/ecologia_paisag/05_frag_efeittos/5_fragm_efeitos/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/05_frag_efeittos/5_fragm_efeitos/</guid>
+      <description>Em construção</description>
     </item>
     
     <item>
@@ -167,9 +62,78 @@ My content section is: courses My layout is: single-series part 2! does this wor
     </item>
     
     <item>
+      <title>Mentiras e Desinformação Ameaçam Matar o Tatu-Bola</title>
+      <link>/press/marcozero/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/press/marcozero/</guid>
+      <description>Pernambuco tem uma das maiores áreas protegidas da Caatinga, você sabia? Localizada nos município de Petrolina, Lagoa Grande e Santa Maria da Boa Vista, o Refúgio de Vida Silvestre Tatu-Bola abrange uma área de mais de 110 mil hectares com um trecho de Caatinga bem preservado e habitado tatu que inspirou o Fuleco, nome do mascote da Copa do Mundo de 2014. É nesse espaço também que várias populações tradicionais humanas como quilombolas e outros pequenos agricultores vivem há séculos, manejando a Caatinga com suas suas roças e bodes. Seres humanos e Caatinga vivem juntos nessa região, por isso o RVS Tatu-Bola foi criado para garantir que essa convivência continuasse indefinidamente.</description>
+    </item>
+    
+    <item>
+      <title>Todo ser humano é um migrante</title>
+      <link>/blog/2024-04-29-todo-ser-humano-um-migrante/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2024-04-29-todo-ser-humano-um-migrante/</guid>
+      <description>O Contexto Sou cidadão brasileiro e cheguei ao México num voo proveniente do Reino Unido, onde moro legalmente há um ano com visto de Global Talent, específico para trabalhos especializados em universidades, IT ou artes e quando já se tem uma carreira estabelecida e reconhecimento internacional. Estou empregado pela Nottingham Trent University atualmente e gozando de uma licença não remunerada da Universidade Federal de Pernambuco - UFPE onde trabalhei por 13 anos consecutivos.</description>
+    </item>
+    
+    <item>
+      <title>BioRestNet - A Network of Biocultural Restoration</title>
+      <link>/project/biorestnet/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/project/biorestnet/</guid>
+      <description>Brief This proposal is a joint initiative led by Nottingham Trent University (NTU) and our local partner Centre for Ecosystem Restoration Kenya (CERK) to develop and promote biocultural models of ecosystem restoration. The aim of this project is to develop a network of practitioners and researchers around an innovative concept of ecological restoration that merges both traditional ecological knowledge and science-based evidence. To achieve this goal we use two complementary strategies.</description>
+    </item>
+    
+    <item>
+      <title>Fair winds or fowl? Clean energy clashes with conservation in Brazil’s Caatinga</title>
+      <link>/press/eolic_mongabay/</link>
+      <pubDate>Fri, 01 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/press/eolic_mongabay/</guid>
+      <description>Brazil is among the top 10 countries in terms of installed capacity for wind power; 85% of the 10,000-plus turbines in operation are in the Caatinga biome, where winds are ideal for energy generation.</description>
+    </item>
+    
+    <item>
+      <title>A colonização estética da Caatinga</title>
+      <link>/blog/2023-01-03-a-coloniza-o-est-tica-da-caatinga/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023-01-03-a-coloniza-o-est-tica-da-caatinga/</guid>
+      <description>Faça esse exercício se nunca esteve nesse que é o único bioma exclusivamente brasileiro. Pense na natureza da Caatinga&amp;hellip; Cactos, né? Acontece que a Caatinga não é o único ecossistema americano que possui cactos em abundância. Há zonas semiáridas e desérticas na América do Sul, Central e do Norte, repletos de cactos. As plantas da família Cactaceae são (quase) exclusivas das Américas, E são de uma beleza plástica incrível, como se vê na imagem abaixo.</description>
+    </item>
+    
+    <item>
+      <title>Mais gente, menos natureza?</title>
+      <link>/talk/meteoro/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/meteoro/</guid>
+      <description>Video muito bom do Meteoro Brasil inspirado num debate corrente sobre o &amp;ldquo;problema&amp;rdquo; da superpopulação humana do qual participei como co-autor de dois artigos de resposta.</description>
+    </item>
+    
+    <item>
+      <title>Ameaças à Biodiversidade</title>
+      <link>/collection/eco_geral2/ameacas/amea%C3%A7as/</link>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_geral2/ameacas/amea%C3%A7as/</guid>
+      <description>Slides Leituras sugeridas Panorama Global da Biodiversidade 5 Especial Biota Fapesp Mais um texto legal da Pesquisa Fapesp Um video sobre o BPBES Exercício para entrega Acesso o Portal Nexo Políticas Públicas BPBES
+Passeie pelo material disponível, se informe um pouco sobre os temas de seu interesse.
+Escolha um dos seguintes formatos:
+Video Pergunte a um pesquisador exemplo
+Texto de opnião exemplo
+Bibliografia básica exemplo
+Perguntas que a ciência já respondeu exemplo</description>
+    </item>
+    
+    <item>
       <title>Ameaças à Biodiversidade</title>
       <link>/courses/eco_geral2/ameacas/amea%C3%A7as/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/courses/eco_geral2/ameacas/amea%C3%A7as/</guid>
       <description>Slides Leituras sugeridas Panorama Global da Biodiversidade 5 Especial Biota Fapesp Mais um texto legal da Pesquisa Fapesp Um video sobre o BPBES Exercício para entrega Acesso o Portal Nexo Políticas Públicas BPBES
@@ -182,24 +146,23 @@ Perguntas que a ciência já respondeu exemplo</description>
     </item>
     
     <item>
-      <title>Ameaças à Biodiversidade</title>
-      <link>/courses/eco_geral2/amea%C3%A7as/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      <title>Introdução à Biodiversidade</title>
+      <link>/collection/eco_geral2/intro/intro_bio/</link>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>/courses/eco_geral2/amea%C3%A7as/</guid>
-      <description>Slides Leituras sugeridas Panorama Global da Biodiversidade 5 Especial Biota Fapesp Mais um texto legal da Pesquisa Fapesp Um video sobre o BPBES Exercício para entrega Acesso o Portal Nexo Políticas Públicas BPBES
-Passeie pelo material disponível, se informe um pouco sobre os temas de seu interesse.
-Escolha um dos seguintes formatos:
-Video Pergunte a um pesquisador exemplo
-Texto de opnião exemplo
-Bibliografia básica exemplo
-Perguntas que a ciência já respondeu exemplo</description>
+      <guid>/collection/eco_geral2/intro/intro_bio/</guid>
+      <description>Slides O que é preciso saber sobre biodiversidade? Aprenda a definir biodiversidade, com suas palavras e para públicos diferentes
+Wikipedia em Português
+Wikipedia em Inglês
+Consulte fontes diferentes sobre a definição de biodiversidade, tente entender como o coneito muda com o tempo e como se incorporou na agenda de conservação, disptando espaço com as mudanças climáticas e poluição (essa última historicamente dominante)
+Evolução histórica do conceito de biodiversidade
+Entenda a questão dos valores ligados à biodiversidade</description>
     </item>
     
     <item>
       <title>Introdução à Biodiversidade</title>
       <link>/courses/eco_geral2/intro/intro_bio/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/courses/eco_geral2/intro/intro_bio/</guid>
       <description>Slides O que é preciso saber sobre biodiversidade? Aprenda a definir biodiversidade, com suas palavras e para públicos diferentes
@@ -212,18 +175,18 @@ Entenda a questão dos valores ligados à biodiversidade</description>
     
     <item>
       <title>Introdução à Biologia da Conservação</title>
-      <link>/courses/eco_geral2/biocons/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      <link>/collection/eco_geral2/biocons/biocons/</link>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>/courses/eco_geral2/biocons/</guid>
-      <description> Slides Biologia da conservação Ciência interndisciplinar que tem como objetivo resolver a crise da biodiversidade. É uma disciplina nova, surgidda à partir da constatação de que a humanidade passa por uma crise tremenda de extinção de espécies. Não se restringe apenas à biologia, apesar de seu nome e de sua origem dentro do campo das ciências nauturais.
-O que é biologia da conservação? Princípios da Biologia da Conservação Veja esse video de dois biólogos que criaram uma empresa dedicada à biologia da conservação Podcast Papagaio de Primata Antropocene Magazine Instituto de Pesquisa Ecológicas História do pensamento conservacionista </description>
+      <guid>/collection/eco_geral2/biocons/biocons/</guid>
+      <description>Slides Biologia da conservação Ciência interndisciplinar que tem como objetivo resolver a crise da biodiversidade. É uma disciplina nova, surgidda à partir da constatação de que a humanidade passa por uma crise tremenda de extinção de espécies. Não se restringe apenas à biologia, apesar de seu nome e de sua origem dentro do campo das ciências nauturais.
+O que é biologia da conservação? Princípios da Biologia da Conservação Veja esse video de dois biólogos que criaram uma empresa dedicada à biologia da conservação Podcast Papagaio de Primata Antropocene Magazine Instituto de Pesquisa Ecológicas História do pensamento conservacionista Exercício Veja o filme: A próxima refeição.</description>
     </item>
     
     <item>
       <title>Introdução à Biologia da Conservação</title>
       <link>/courses/eco_geral2/biocons/biocons/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/courses/eco_geral2/biocons/biocons/</guid>
       <description>Slides Biologia da conservação Ciência interndisciplinar que tem como objetivo resolver a crise da biodiversidade. É uma disciplina nova, surgidda à partir da constatação de que a humanidade passa por uma crise tremenda de extinção de espécies. Não se restringe apenas à biologia, apesar de seu nome e de sua origem dentro do campo das ciências nauturais.
@@ -232,20 +195,30 @@ O que é biologia da conservação? Princípios da Biologia da Conservação Vej
     
     <item>
       <title>Padrões de Distribuição e Magnitude da Biodiversidade</title>
-      <link>/courses/eco_geral2/magnitude/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      <link>/collection/eco_geral2/magnitude/magnitude/</link>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>/courses/eco_geral2/magnitude/</guid>
+      <guid>/collection/eco_geral2/magnitude/magnitude/</guid>
       <description>Slides Leituras sugeridas O verbete da Wikipedia é um bom começo Aqui temos um bom resumo em português sobre biogeografia Uma animação sobre os continentes Assista esse pequeno vídeo sobre a atuação de um laaboratório de biogeografia Aqui mais um vídeo muito esclarecedor sobre como a biogeografia pode ajudar na conservação Exercício 1) Veja os vídeos e dê uma lida no material sugerido 2) Agora, entenda o que são e como são gerados os mapas de prioridades para conservação oficiais do MMA 3) Agora, conheça como foi feito o exercício de criação de Áreas Prioritárias para a Caatinga 4) Dê uma olhada no Mapa gerado pelo exercício 5) Faça uma apresentação em PPT (use ppt do Google Docs) sobre a importância do planejamento sustemático da conservação (isso que está descrito nos textos e vídeos, que é basicamente usar informação biológica disponível para selecionar áreas).</description>
     </item>
     
     <item>
       <title>Padrões de Distribuição e Magnitude da Biodiversidade</title>
       <link>/courses/eco_geral2/magnitude/magnitude/</link>
-      <pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>/courses/eco_geral2/magnitude/magnitude/</guid>
       <description>Slides Leituras sugeridas O verbete da Wikipedia é um bom começo Aqui temos um bom resumo em português sobre biogeografia Uma animação sobre os continentes Assista esse pequeno vídeo sobre a atuação de um laaboratório de biogeografia Aqui mais um vídeo muito esclarecedor sobre como a biogeografia pode ajudar na conservação Exercício 1) Veja os vídeos e dê uma lida no material sugerido 2) Agora, entenda o que são e como são gerados os mapas de prioridades para conservação oficiais do MMA 3) Agora, conheça como foi feito o exercício de criação de Áreas Prioritárias para a Caatinga 4) Dê uma olhada no Mapa gerado pelo exercício 5) Faça uma apresentação em PPT (use ppt do Google Docs) sobre a importância do planejamento sustemático da conservação (isso que está descrito nos textos e vídeos, que é basicamente usar informação biológica disponível para selecionar áreas).</description>
+    </item>
+    
+    <item>
+      <title>Restauración Biocultural</title>
+      <link>/collection/socio_rest/04_restauacion_biocultural/restauracion-biocultural/</link>
+      <pubDate>Thu, 29 Sep 2022 08:21:55 -0300</pubDate>
+      
+      <guid>/collection/socio_rest/04_restauacion_biocultural/restauracion-biocultural/</guid>
+      <description>¿Qué es Restauración Biocultural? Es una visión integral y decolonizadora de la restauración ecológica que preconiza que la recuparación de ecosistemas degradados no se puede bases solamente en la reconstrucción de sus caracterísitcas biofísicas pero debe contemplar los valores y costumbres de toda la población residente desde las fases de planeación hasta los beneficios resultantes.
+Dr. Robin Wall Kimmerer Urges Biocultural Approach to Restoration of Degraded Ecosystems at 9th World Conference on Ecological Restoration</description>
     </item>
     
     <item>
@@ -255,6 +228,16 @@ O que é biologia da conservação? Princípios da Biologia da Conservação Vej
       
       <guid>/courses/socio_rest/04_restauacion_biocultural/restauracion-biocultural/</guid>
       <description>¿Qué es Restauración Biocultural? Es una visión integral y decolonizadora de la restauración ecológica que preconiza que la recuparación de ecosistemas degradados no se puede bases solamente en la reconstrucción de sus caracterísitcas biofísicas pero debe contemplar los valores y costumbres de toda la población residente desde las fases de planeación hasta los beneficios resultantes.
+Dr. Robin Wall Kimmerer Urges Biocultural Approach to Restoration of Degraded Ecosystems at 9th World Conference on Ecological Restoration</description>
+    </item>
+    
+    <item>
+      <title>Restauración Biocultural - clase 2</title>
+      <link>/collection/socio_rest/05_restauracion_biocultural2/restauracion-biocultural/</link>
+      <pubDate>Thu, 29 Sep 2022 08:21:55 -0300</pubDate>
+      
+      <guid>/collection/socio_rest/05_restauracion_biocultural2/restauracion-biocultural/</guid>
+      <description>Video Clase AQUI ¿Qué es Restauración Biocultural? Es una visión integral y decolonizadora de la restauración ecológica que preconiza que la recuparación de ecosistemas degradados no se puede bases solamente en la reconstrucción de sus caracterísitcas biofísicas pero debe contemplar los valores y costumbres de toda la población residente desde las fases de planeación hasta los beneficios resultantes.
 Dr. Robin Wall Kimmerer Urges Biocultural Approach to Restoration of Degraded Ecosystems at 9th World Conference on Ecological Restoration</description>
     </item>
     
@@ -270,11 +253,29 @@ Dr. Robin Wall Kimmerer Urges Biocultural Approach to Restoration of Degraded E
     
     <item>
       <title>Medidas de Associação</title>
+      <link>/collection/eco_num/associacao/med_assoc/</link>
+      <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/associacao/med_assoc/</guid>
+      <description>Na ecologia usamos muitas medidas que fazem uma ligação entre pares de dados. Esses pares de dados podem ser espécies, ou locais de coleta. Há uma enorme variedade de métricas que vão nos oferecer uma medida de associação entre pares. Essas medidas são reportadas na forma de índices ou métricas que têm naturezas distintas, mas todas tem a particularidade de gerar uma matriz quadrada e simétrica de dimensões n x n quando se comparam objetos ou p x p quando se comparam variáveis (as letras são conveções).</description>
+    </item>
+    
+    <item>
+      <title>Medidas de Associação</title>
       <link>/courses/eco_num/associacao/med_assoc/</link>
       <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>/courses/eco_num/associacao/med_assoc/</guid>
       <description>Na ecologia usamos muitas medidas que fazem uma ligação entre pares de dados. Esses pares de dados podem ser espécies, ou locais de coleta. Há uma enorme variedade de métricas que vão nos oferecer uma medida de associação entre pares. Essas medidas são reportadas na forma de índices ou métricas que têm naturezas distintas, mas todas tem a particularidade de gerar uma matriz quadrada e simétrica de dimensões n x n quando se comparam objetos ou p x p quando se comparam variáveis (as letras são conveções).</description>
+    </item>
+    
+    <item>
+      <title>cDEEP - Caatina Dry Ecosystem Ecological Program</title>
+      <link>/project/cdeep/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cdeep/</guid>
+      <description>The present project aims to assess how human disturbance and changes in rainfall regime affect the Caatinga ecosystem’s biota at different levels of biological organization (i.e, from populations to ecosystem level), by correlating these aspects with the theoretical reference shown in macro trends already documented in the tropics. The LTER Catimbau is also part of the ILTER (International Long Term Ecological Research) network joins several other long-lasting projects developed around the world.</description>
     </item>
     
     <item>
@@ -287,23 +288,12 @@ Dr. Robin Wall Kimmerer Urges Biocultural Approach to Restoration of Degraded E
     </item>
     
     <item>
-      <title>Ecologia Numérica</title>
-      <link>/slides_aulas/slides_eco_num/slides_aula4_ordenacao/</link>
-      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      <title>IPBES Nexus Assessment</title>
+      <link>/press/ipbes_nexus/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/slides_aulas/slides_eco_num/slides_aula4_ordenacao/</guid>
-      <description>Análise de Componentes Principais - PCA .center[ ]
-.pull-left[ # O que precisamos saber?] # O princípio é simples… SQN .center[ ] # Entendeu? Não? # Como interpretamos? .panelset[ .panel[.panel-name[ex-1] ] .panel[.panel-name[ex-2] ] .panel[.panel-name[ex-3] ] .panel[.panel-name[ex-4] ]] Autovetores (eigenvalues) .panelset[ .panel[.panel-name[objetos ‘PCA’]] .panel[.panel-name[objetos prcomp]] .panel[.panel-name[autovetores PCA]] .panel[.panel-name[autovetores prcomp]]]
-# Resumo dos autovetores .pull-left[ ] .pull-right[ ] # Resumo dos autovetores .pull-left[ ###- São o valor que informa quanta relação há entre variáveis ###- Informam a direção da vairação Aqui tem ums explicação maravilhosa] .</description>
-    </item>
-    
-    <item>
-      <title>Ecologia Numérica</title>
-      <link>/slides_aulas/slides_eco_num/slides_cca/</link>
-      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/slides_aulas/slides_eco_num/slides_cca/</guid>
-      <description>.pull-left[ # O que precisamos saber? ###- Uma CA é um método similar aos PCA, mas… (distância de chi-quadrado) ###- Tem bom desempenho com matrizes com muitos zeros (presença e ausência de espécies) ###- É um método para reduzir a multi-dimensionalidade dos dados ###- Busca relações unimodais ] .pull-right[ ] Análises de correspondência - CA .left-column[ # São uma família de análises multivaridas que procuram por relações não lineares]</description>
+      <guid>/press/ipbes_nexus/</guid>
+      <description>o IPBES produz periodicamente relatórios sobre o papel da biodiversidade no bem-estar humano. Agora chegou a vez de pensar como a biodiversidade, incluindo a restauração ecológica e uso sustentável de recursos naturais podem promover seguranças hídrica, alimenttar e energética. Nosso lab estará representado no IPBES Nexus Assessment, com Felipe Melo como autor líder do capítulo 5.4 &lt;strong&gt;Options for delivering sustainable approaches to elements of the nexus (biodiversity conservation, restoration and sustainable use)&lt;/strong&gt;. O trabalhos começam já em fevereiro com reunião virtual e devem ter seguimento com uma reunião presencial em Bonn, Alemanha no mês de maio.</description>
     </item>
     
     <item>
@@ -339,6 +329,15 @@ Exercício: Debate sobre fragmentação na ecologia de paisagem Vamos dividr tur
     
     <item>
       <title>Pré-requisitos computacionais</title>
+      <link>/collection/ecologia_paisag/r_rstudio/instacao_rstudio/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/r_rstudio/instacao_rstudio/</guid>
+      <description>Para cursar essa disciplina, vamos precisar usa a linguagem R como auxílio do Rstudio Instalar o R Para instalar o R clique aqui Instalar o Rstudio Para instalar o Rstudio clique aqui Se precisar de ajuda, veja o vídeo abaixo Rmarkdwon Para instalar o Rmarkdown, siga esse tutorial Rpubs e Rmarkdown Crie um documento node de R markdown no Rstudio. Escolha HTML como formato de output Edite seu documento e quando finalizado, clique em &amp;ldquo;Knit&amp;rdquo; Quando seu documento aparecer em uma nova janela, clique em publicar e siga os passos para publicar em Rpubs Veja mais esse vídeo tutorial (em espnhol)</description>
+    </item>
+    
+    <item>
+      <title>Pré-requisitos computacionais</title>
       <link>/courses/ecologia_paisag/r_rstudio/instacao_rstudio/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
@@ -347,157 +346,206 @@ Exercício: Debate sobre fragmentação na ecologia de paisagem Vamos dividr tur
     </item>
     
     <item>
-      <title>Set up your social</title>
-      <link>/blog/social/</link>
-      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+      <title>On poverty and forests</title>
+      <link>/blog/sobre-floretas-e-pobreza/</link>
+      <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/social/</guid>
-      <description>There are five places where you can choose to show social icons. Here is the tl;dr:
-site header (set in config.toml), site footer (set in config.toml), homepage (set in content/_index.md), about page in the sidebar (set in content/about/sidebar/index.md), and contact page (set in content/form/contact.md). Read on to learn how to set up your social icons, and how to show/hide them.
-Configure social Wherever you end up wanting to show your social icons, you&amp;rsquo;ll need to start by setting up the links in your site config.</description>
+      <guid>/blog/sobre-floretas-e-pobreza/</guid>
+      <description>*Translated from original in Portugues by google translator
+The recent statement by Brazil&amp;rsquo;s Environment Minister at COP26 raised many reactions from environmentalists and the media. To state so bluntly that forest is synonymous with poverty is an immeasurable sleaze, but to say that the opposite is true is also to ignore a broad academic discussion on the subject. There is indeed a (spatial) correlation between forest and poverty1, but whether the forest causes poverty or whether poverty allows the forest to exist is an issue still under debate with evidence showing both sides2.</description>
     </item>
     
     <item>
-      <title>Style your site colors</title>
-      <link>/blog/color-themes/</link>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Três plantas invasoras que ameaçam a conservação da Caatinga</title>
+      <link>/press/invasoras_vagner/</link>
+      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/color-themes/</guid>
-      <description>You can totally customize your site&amp;rsquo;s theme colors within minutes of creating a new site. Read on to find out how, and decide which of the three options meets your needs.
-Use a color theme Hugo Apéro includes 8 built-in color themes that work &amp;ldquo;out of the box.&amp;rdquo; This means you can use a color theme to quickly customize the look of your site without needing to write any CSS. You can select the color theme in your config.</description>
+      <guid>/press/invasoras_vagner/</guid>
+      <description>Espécies invasoras competem por espaço e nutrientes com espécies nativas e ameaçam a sobrevivência de espécies endêmicas do mais brasileiro dos biomas.</description>
     </item>
     
     <item>
-      <title>Style your site typography</title>
-      <link>/blog/fonts/</link>
-      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Aula 5 - Manejo Florestal</title>
+      <link>/collection/bot_eco/manejo_florestal/</link>
+      <pubDate>Wed, 18 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/fonts/</guid>
-      <description>As with color themes, you can completely customize your site&amp;rsquo;s fonts within minutes of creating a new site. How you do it depends on how much control and customization you need.
-Embedded fonts Hugo Apéro includes 6 embedded fonts that work &amp;ldquo;out of the box.&amp;rdquo; We selected 3 serif and 3 sans-serif options that we thought looked good with this theme, in our humble opinions. All embedded fonts include real italics so you may emphasize to your heart&amp;rsquo;s content ❤️!</description>
+      <guid>/collection/bot_eco/manejo_florestal/</guid>
+      <description>Slides Veja os slides dessa aula aqui
+O que é o manejo florestal Bom, esse termo é usado para definir a exploração planejada de recursos da floresta, sejam madeireiros ou não-madeireiros. O Brasil, que tem uma das maiores extensões de florestas do mundo, possui uma instituição dedicada a isso que é chamada de Serviço Florestal Brasileiro e está inserido no Ministério da Agricultura, Pecuária e Abastacimento - MAPA. O Serviço Florestal Brasileiro é um órgão de extrema importância, pois é responsável por grande parte das políticas públicas de ordenamento e incentivo da economia florestal.</description>
     </item>
     
     <item>
-      <title>An evergreen post</title>
-      <link>/blog/evergreen/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Aula 3 - Plantas Medicinais</title>
+      <link>/collection/bot_eco/plantas_medicinais/</link>
+      <pubDate>Tue, 03 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/evergreen/</guid>
-      <description>Rendering mathematical equations Examples from the mathjax demo. But they work with katex as well.
-Rmarkdown In .Rmarkdown documents, you can use either
-$a \ne 0$ to get inline math: \(a \ne 0\). There is no conflict with using dollar symbols regularly, because knitr automatically escapes freestanding dollar symbols.
-And you can use
-$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$ to get a math paragraph:
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.</description>
+      <guid>/collection/bot_eco/plantas_medicinais/</guid>
+      <description>Slides Veja os slides dessa aula aqui
+Vamos ver um pequeno vídeo sobre a pesquisa em plantas medicinais na Unifesp Etnobotânica &amp;ldquo;A etnobotânica pode ser definida como o estudo da relação existente entre o Homem e as Plantas e o modo como essas plantas são usadas como recursos&amp;rdquo; Rocha et al 2014
+A etnobotânica é uma ciência muito antiga, tendo sua origem nos estudos antropológicos e etnográficos. No entanto, a troca de experiências entre pessoas do mesmo grupo ou de grupos diferentes aibre plantas é tão antiga quanto ao humanidade.</description>
     </item>
     
     <item>
-      <title>A campfire</title>
-      <link>/talk/campfire/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Aula 4 - Cadeia produtiva de produtos da biodiversidade de plantas</title>
+      <link>/collection/bot_eco/produtos_biodiv/</link>
+      <pubDate>Tue, 27 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/talk/campfire/</guid>
-      <description>I&amp;rsquo;m really excited to give this talk! Stay tuned for video and slides.</description>
+      <guid>/collection/bot_eco/produtos_biodiv/</guid>
+      <description>Communities contributing to Biodiversity
+Slides Veja os slides dessa aula aqui
+Produtos da biodiversidade Veja esse vídeo da TV Cultura e tenha um panorama geral dos produtos da biodiversidade Basileira e como as instituições cientíicas brasieliras explorarm esses produtos.
+Das moléculas aos organismos Leia o texto da revista Pesquisa Fapesp para entender o potencial bioqúímico das plantas.
+Extrativismo: uma questão complexa Leia o verbete da Wikipedia sobre Extrativismo e reflita sobre a definição dessa atividade.</description>
     </item>
     
     <item>
-      <title>Using panelsets</title>
-      <link>/blog/seedling/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Aula 2 - Valoração da Biodiversidade &#43; Plantas Alimentícias</title>
+      <link>/collection/bot_eco/valoracao_biod/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/seedling/</guid>
-      <description>Courtesy of panelset.js by Garrick Aden-Buie, from his xaringanExtra package: https://pkg.garrickadenbuie.com/xaringanExtra/#/panelset
-For example, this panelset:
-Hello! 👋 hello
-Goodbye 💨 goodbye
-Was created by combining this theme&amp;rsquo;s panelset and panel shortcodes:
-{{&amp;lt; panelset class=&amp;#34;greetings&amp;#34; &amp;gt;}} {{&amp;lt; panel name=&amp;#34;Hello! :wave:&amp;#34; &amp;gt;}} hello {{&amp;lt; /panel &amp;gt;}} {{&amp;lt; panel name=&amp;#34;Goodbye :dash:&amp;#34; &amp;gt;}} goodbye {{&amp;lt; /panel &amp;gt;}} {{&amp;lt; /panelset &amp;gt;}} You could also revert to HTML as well. For example, this panelset:
-Question Which came first: the 🐔 or the 🥚?</description>
+      <guid>/collection/bot_eco/valoracao_biod/</guid>
+      <description>Slides Veja os slides dessa aula aqui
+Como valorar a biodiversidade? A conservação da biodiversidade é um tema que desperta muitas paixões e visões. Um dos temas mais polêmicos sobre a biodiversidade é sua valorização ou valoração. Valores são, por definição, um atributo relativo e de natureza distinta. Quando nos referimos à valor, pensamos quase sempre em algo de natureza monetária. Outras culturas, atribuem com maior frequência valores culturais (no sentido amplo) à natureza.</description>
     </item>
     
     <item>
-      <title>A seedling</title>
-      <link>/talk/second-seedling/</link>
-      <pubDate>Fri, 01 Jan 2021 14:15:59 -0600</pubDate>
+      <title>Introdução à Biodiversidade</title>
+      <link>/collection/bio_cons/01_intro_biod/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/talk/second-seedling/</guid>
-      <description></description>
+      <guid>/collection/bio_cons/01_intro_biod/</guid>
+      <description>História e evolução do conceito de diversidade biológica</description>
     </item>
     
     <item>
-      <title>An Rmarkdown post</title>
-      <link>/blog/rmarkdown/</link>
-      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      <title>Geopolítica da Biodiversidade</title>
+      <link>/collection/bio_cons/02_geopolitica_ambiental/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/rmarkdown/</guid>
-      <description> Air quality with(airquality, boxplot(Temp ~ Month)) with(airquality, plot(Ozone ~ Temp)) mlev &amp;lt;- levels(with(airquality, as.factor(Month))) with(airquality, plot(Ozone ~ Temp, pch = as.numeric(mlev), col = mlev)) </description>
+      <guid>/collection/bio_cons/02_geopolitica_ambiental/</guid>
+      <description>Como a biodiversidade entrou na agenda global</description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/blog/2020-12-01-r-rmarkdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <title>Aula 5 - Carreira científica dentro e fora da academia</title>
+      <link>/collection/deseho-de-projetos/carreira-cientifica/</link>
+      <pubDate>Sat, 12 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2020-12-01-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/collection/deseho-de-projetos/carreira-cientifica/</guid>
+      <description>Pós-graduação e vida real Ha uma enorme discussão global sobre o status dos pós-graduandos na academia. Em países como a Alemanha, um estudante de PhD possui um contrato temporário de trabalho. Nos EUA, praticamente não existe mestrado e um dotorando pode (e deve) procurar dar aulas como assistente para adquirir experiência e conseguir um complemento de renda que pode ser significativo. No Brasil, temos os prazeres e agruras de ser bolsistas por 8-10 anos, antes de talvez conseguir um emprego via concurso numa universidade pública.</description>
     </item>
     
     <item>
-      <title>A seedling</title>
-      <link>/talk/seedling/</link>
-      <pubDate>Mon, 13 Jan 2020 14:15:59 -0600</pubDate>
+      <title>Ecologia e sociodiversidade da Caatinga</title>
+      <link>/press/nexo-portal/</link>
+      <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/talk/seedling/</guid>
-      <description></description>
+      <guid>/press/nexo-portal/</guid>
+      <description>Seria um clichê dizer que a Caatinga é o único bioma exclusivamente brasileiro e que, por isso, deveríamos entendê-lo melhor. Há inúmeras razões relevantes para compreender esse “lugar” para além da sua exclusividade brasileira.</description>
     </item>
     
     <item>
-      <title>Tachyons for Style</title>
-      <link>/project/giraffes/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Biodiversidade queimada</title>
+      <link>/press/cienciahoje/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/project/giraffes/</guid>
-      <description>Tachyons is a design system that allows you to design gorgeous interfaces in the browser with little effort. Because Speed Building this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML. So, rather than writing every line of CSS, you apply the style you need as you write your HTML with easy to understand shorthand class names.</description>
+      <guid>/press/cienciahoje/</guid>
+      <description>A extração de lenha por famílias pobres do NE do Brasil pode impactar os poucos remanescentes de Mata Atlântica que ainda restam, modificando sua composição e reduzindo sua capacidade de fixar carbono.</description>
     </item>
     
     <item>
-      <title>CSS Grid Scaffold</title>
-      <link>/blog/css-grid-scaffold/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Biodiversity-friendly landscapes</title>
+      <link>/press/mongabay/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/css-grid-scaffold/</guid>
-      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.” — Chris House, A Complete Guide to CSS Grid Layout 1
-Overview Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips.</description>
+      <guid>/press/mongabay/</guid>
+      <description>Here we discuss how to create biodiversity-freindly Tropical landscapes</description>
     </item>
     
     <item>
-      <title>Palmer Penguins</title>
-      <link>/project/penguins/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Eólicas ameaçam a Caatinga</title>
+      <link>/press/eolicas/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/project/penguins/</guid>
-      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.” — Chris House, A Complete Guide to CSS Grid Layout 1
-Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips. Most times, while fighting with floats and widths of content and sidebars or just basically trying to get something beside something else without using a stupid TABLE.</description>
+      <guid>/press/eolicas/</guid>
+      <description>Felipe Melo, professor do Departamento de Botânica da Universidade Federal de Pernambuco (UFPE) e um dos autores do artigo, concedeu entrevista para ((o))eco, esclarecendo sobre a necessidade de diálogo e estratégias para evitar conflitos entre conservação e geração de energia limpa.</description>
     </item>
     
     <item>
-      <title>Bakeoff</title>
-      <link>/project/bakeoff/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Segurança Florestal é tema de peesquisa</title>
+      <link>/press/segur_flores/</link>
+      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>/project/bakeoff/</guid>
-      <description>Formspree makes it easy to receive submissions from HTML forms on your static website. Functional Form This theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used. Please use your actual email address.</description>
+      <guid>/press/segur_flores/</guid>
+      <description>O professor Felipe Melo, da Universidade Federal de Pernambuco (UFPE), se uniu a oito colaboradores para sugerir que a &lt;strong&gt;segurança florestal&lt;/strong&gt; deve ser a quarta dimensão fundamental da estrutura WEF nexus, como forma de acelerar o ritmo e a magnitude das mudanças necessárias para alcançar os 17 Objetivos de Desenvolvimento Sustentável (ODS) propostos pela ONU.</description>
     </item>
     
     <item>
-      <title>Built-in Contact Form</title>
-      <link>/blog/built-in-contact-form/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Aula 1 - Ameaças à diversidade de plantas</title>
+      <link>/collection/bot_eco/amea%C3%A7as_e_almentacao/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/built-in-contact-form/</guid>
-      <description>Formspree makes it easy to receive submissions from HTML forms on your static website. Functional Form This theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used. Please use your actual email address.</description>
+      <guid>/collection/bot_eco/amea%C3%A7as_e_almentacao/</guid>
+      <description>Slides Veja os slides dessa aula aqui
+A diversidade de plantas Leia o texto publicado na Pesquisa Fapesp sobre a diversidade de plantas no Brasil.
+Leia também essa materia do G1
+Ameaças à diversidade de plantas Você conhece o Centro Nacional de Conservação da Flora? Se nõa, dê uma olhada no site e procure saber o que é e como trabalha para a conservaçaõ das plantas em território brasileiro.</description>
+    </item>
+    
+    <item>
+      <title>Aula 1 - Componentes de uma pesquisa científica</title>
+      <link>/collection/deseho-de-projetos/componentes-de-uma-pesquisa-cient%C3%ADfica/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/deseho-de-projetos/componentes-de-uma-pesquisa-cient%C3%ADfica/</guid>
+      <description>O que é uma pesquisa científica? Para responder essa pergunta precisaremos refletir sobre a natureza do fazer científico. Nesta primeira aula, vamos discutir sobre alguns componentes básicos da pesquisa científica. Mas ATENÇÃO, essa disciplina não é sobre filosofia da ciência (apesar de passarmos pelo assunto) mas é a compilação de uma visão pessoal minha sobre o processo de formação de um pesquisador ou pesquisadora.
+Slides Veja os slides dessa aula aqui</description>
+    </item>
+    
+    <item>
+      <title>Aula 2 - Filosofia da Ciência</title>
+      <link>/collection/deseho-de-projetos/filosofia-da-ciencia/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/deseho-de-projetos/filosofia-da-ciencia/</guid>
+      <description>Sobre a necessidade de um pouco de filosofia A ciência é uma das atividades humanas mais antigas e segunda alguns filósofos, é a mais nobre de todas as peripécias do cérebro. Sendo assim, nós que fazemos ciência precisamos conhecer nem que seja um pouco dessa história. Nesse módulo, vamos fazer um breve passeio pelos princípios e fundamentos básicos da ciência para entender como e porque essa maneira de apreensçao do conhecimento difere das outras e como podemos fazer que a nossa ciência seja de boa qualidade.</description>
+    </item>
+    
+    <item>
+      <title>Aula 3 - Planejando sua Pós-graduação</title>
+      <link>/collection/deseho-de-projetos/planejamento/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/deseho-de-projetos/planejamento/</guid>
+      <description>Agora chegamos ao ponto chave desta disciplina, pelo menos para a maioria de vocês. Fazer uma pó-graduação é um momento bem diferente da vida. É totalmente diferente de fazer uma graduação (ou pelo menos deveria). A grande diferença aqui é que você é o principal responsável para que sua pós-graduação seja proveitosa, lhe renda um bom aprendizado e um bom momento de vida.
+Slides Veja os slides dessa aula aqui</description>
+    </item>
+    
+    <item>
+      <title>Aula 4 - Escrevendo o projeto</title>
+      <link>/collection/deseho-de-projetos/escrever-projeto/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/deseho-de-projetos/escrever-projeto/</guid>
+      <description>Escrever, como vimos, é uma prática eterna na vida de m pesqusiador e deve ser também na vida e um estudante de PG. Escrever não é fácil mas pe fundamental para o suceso de uma carreira acadêmica plena. Organizar as ideias em um projeto é relativamente simples, mas a maioria das pessoas tem grandes disficuldades em colocar no papel as ideias. Essa aula vai falar sobre aos principais elementos de um projeto, aqueles que são chave para um bom projeto e que servirão como um bom organizador das ideias.</description>
+    </item>
+    
+    <item>
+      <title>Webinário BPBES - Restauração da Caatinga e COP 15 da Biodiversidade</title>
+      <link>/talk/bpbes_webinar/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/bpbes_webinar/</guid>
+      <description>Uma boa conversa sobre restauração, justiça ambiental, biodiversidade e Caatinga</description>
+    </item>
+    
+    <item>
+      <title>Pinheiro Nativo - Caatinga</title>
+      <link>/talk/pinheiro_nativo/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/pinheiro_nativo/</guid>
+      <description>Participação no projeto maravilhoso da colega Nívea Santos que mistura música e ciência. Aqui, falamos sobre a Caatinga, sua biodiversidade, musicalidade e conservação. Teve poesia, música e muita ciência</description>
     </item>
     
     <item>
@@ -528,6 +576,525 @@ Formspree requires a (free) account and new form to be set up. The link is made 
     </item>
     
     <item>
+      <title>The Armdadillo&#39;s Goal</title>
+      <link>/talk/tatu_bola/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/tatu_bola/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nexus-Caatinga</title>
+      <link>/project/nexus/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/nexus/</guid>
+      <description>This project aims to understand the role of forests as a fourth dimension of the water, energy and food security nexus (WEF-Nexus). We want to lnow hpw land tenure inequalities, human livelihoods and forest cover are associated.</description>
+    </item>
+    
+    <item>
+      <title>PELD-Catimbau</title>
+      <link>/project/peld_catimbau/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/peld_catimbau/</guid>
+      <description>The present project aims to assess how human disturbance and changes in rainfall regime affect the Caatinga ecosystem’s biota at different levels of biological organization (i.e, from populations to ecosystem level), by correlating these aspects with the theoretical reference shown in macro trends already documented in the tropics. The LTER Catimbau is also part of the ILTER (International Long Term Ecological Research) network joins several other long-lasting projects developed around the world.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/cidades_cnpq_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/cidades_cnpq_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/tatu_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/tatu_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior/1_intro_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior/1_intro_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/ecol_paisag/04_intro_frag_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/ecol_paisag/04_intro_frag_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title>História da Biologia da Conservação</title>
+      <link>/collection/bio_cons/03_intro_biocons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/bio_cons/03_intro_biocons/</guid>
+      <description>As origens e influências do pensamento conservacionista</description>
+    </item>
+    
+    <item>
+      <title>Análise de Clusters</title>
+      <link>/collection/eco_num/cluster/cluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/cluster/cluster/</guid>
+      <description>Análise de Clusters Slides
+Segundo os autores do livro Numerical Ecology, a interpretação de um dendograma típíco das análises de cluster, demanda um certo grau de abstração, vejamos. Um cluster serve para particionar (i.e. criar fornteiras) conjuntos de objetos (Q mode) ou variáveis (R-mode). Dessa forma, podemos identificar o grau de semelhança (ou diferença) entre sujeitos analisados. Para isso, a análise cria uma tipologia, que é uma estrutura completa e complexa, na forma de uma árvore ou nuvem de pontos que informa sobre essa semelhança/diferença.</description>
+    </item>
+    
+    <item>
       <title>Análise de Clusters</title>
       <link>/courses/eco_num/cluster/cluster/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -535,6 +1102,122 @@ Formspree requires a (free) account and new form to be set up. The link is made 
       <guid>/courses/eco_num/cluster/cluster/</guid>
       <description>Análise de Clusters Slides
 Segundo os autores do livro Numerical Ecology, a interpretação de um dendograma típíco das análises de cluster, demanda um certo grau de abstração, vejamos. Um cluster serve para particionar (i.e. criar fornteiras) conjuntos de objetos (Q mode) ou variáveis (R-mode). Dessa forma, podemos identificar o grau de semelhança (ou diferença) entre sujeitos analisados. Para isso, a análise cria uma tipologia, que é uma estrutura completa e complexa, na forma de uma árvore ou nuvem de pontos que informa sobre essa semelhança/diferença.</description>
+    </item>
+    
+    <item>
+      <title>Arthur André de Barros Rodrigues</title>
+      <link>/people/arthur-rodrigues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/people/arthur-rodrigues/</guid>
+      <description>Arthur&amp;rsquo;s CV Lattes PPG Etnobiologia e Conservação
+Current Research I am currently finishing my undergraduate degree and have developed my Course Conclusion Work aiming to understand how dispersal patterns are affected by supra-annual seed fragmentation and reproduction in an area of semideciduous tropical forest in the state of Quintana Roo, Mexico. Using data collected by Melo et al., 2010 I analyzed the effective diversity of the region and built GLM&amp;rsquo;s to indicate the relationship between the independent (fragment area and year) and dependent variables (Hills diversity in its three exponents).</description>
+    </item>
+    
+    <item>
+      <title>Aula 1- Conceitos básicos de Paisagem</title>
+      <link>/collection/ecologia_paisag/01_intro/intro_eco_pais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/01_intro/intro_eco_pais/</guid>
+      <description>&lt;script src=&#34;/rmarkdown-libs/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Aula 2 - Bases de Ecologia Evolutiva</title>
+      <link>/collection/ecogeral1/01_individuos/01_individuos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecogeral1/01_individuos/01_individuos/</guid>
+      <description>Slides dessa aula AQUI Fatores que limitam a distribuição e abundância dos indivíduos Nesta aula vamos entender quais são os principais fatores que determinam onde ocorrem os indíviduos de uma populaçõe e em que quantidade eles ocorrem. Vimos na aula passada que os indivíduos possuem uma característica que é medidada no nível do organismo, a adequação ou fitness. Em resumo, o conjuto das respostas individuais de adequação de cada indivíduo aos gradientes naturais aos que estão sujeitos vão determinar em última instância, sua distribuição e abndância como populações.</description>
+    </item>
+    
+    <item>
+      <title>Aula 2- Definição e delimitação de paisagens</title>
+      <link>/collection/ecologia_paisag/02_paisagem_delim/delim_paisag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/02_paisagem_delim/delim_paisag/</guid>
+      <description>&lt;script src=&#34;/rmarkdown-libs/fitvids/fitvids.min.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>Aula 3 - Estrutura de populações</title>
+      <link>/collection/ecogeral1/02_estrutura_pop/02_estrutura_pop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecogeral1/02_estrutura_pop/02_estrutura_pop/</guid>
+      <description>Slides dessa aula AQUI Demografia De maneira ampla, a demografia é o estudo da estrutura de populações. Ou seja, a demografia trata de entender as características das populações como: tamanho, distribuição etária, distribuição espacial, taxas de crescimento ou declínio, etc. A intenção é entender os fatores que levam à mudanças espaciais e temporais da população em questão.
+Tamanho da população Esse talvez seja o parâmetro demográfico mais importante das populações.</description>
+    </item>
+    
+    <item>
+      <title>Aula 3 - Processos biológicos que podem ser medidos na escala de paisagens</title>
+      <link>/collection/ecologia_paisag/03_processos_biol/3_processos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/03_processos_biol/3_processos/</guid>
+      <description> Chase et al 2020
+O que determina como as espécies “estão” numa paisagem? Filtros ambientais É a interação entre as condições dadas pela estrutura de uma paisagem e o nicho da espécies que estão tentando sobreviver nessa paisagem.
+Intrações bióticas Processos de predação, facilitação, mutualismos diversos vão definir quais espécies coexistem numa paisagem
+Dispersão Refere-se ao movimento de esécies, proágulos e genes numa paisagem
+Exercício: Debate sobre fragmentação na ecologia de paisagem Vamos dividr turma em 3 (três grupos): Filtros abientais Interações Bióticas Dispersão Cada grupo deve apresentar um seminário com slides explicando como esses processos ecológicos podem ser usados para entender a dinãmica de comunidades biológicas em paisagens </description>
+    </item>
+    
+    <item>
+      <title>Aula 4 - Fragmentação de Paisagens</title>
+      <link>/collection/ecologia_paisag/04_fragmentacao/4_fragmentacao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/04_fragmentacao/4_fragmentacao/</guid>
+      <description>Slides da aula AQUI Um debate científico relevante A fragmentação tem sido alvo de um debate intenso na comunidade científica há décadas. As origens desse debate estão na importância que é dada ao estudo de paisagens fragmentadas. Isso porque com a excessão de algumas grandes porções de ecossistemas intéactos no mundo como a Amazônia, a bacia do Congo e as florestas boreais da Sibéria e Canadá, os ecossistemas estão fragemntados.</description>
+    </item>
+    
+    <item>
+      <title>Aula 4 - Tabelas de vida e estrutura etária</title>
+      <link>/collection/ecogeral1/03_crescimento-populacional/03_crescimento_populacional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecogeral1/03_crescimento-populacional/03_crescimento_populacional/</guid>
+      <description>Slides dessa aula AQUI Estrutura etária Entender a estrutura etária de uma população é fundamental para compreender suas taxas de crescimento e mortalidade bem como modelar o que poderá acontecer com populações no futuro. Estrutura pode ser repartida em &amp;ldquo;componentes&amp;rdquo; e &amp;ldquo;configurações&amp;rdquo;. Os componentes de uma populaçõa são a quantidade de indívudos e sua configuração é a que estágio ontogenético (classe etária) ou sexo pertencem os indivíduos. Não todos os indivíduos de uma população são reprodutivos por cuasa por idade ou sexo.</description>
+    </item>
+    
+    <item>
+      <title>Aula 6 - Conservação biológica em ambientes fragmentados</title>
+      <link>/collection/ecologia_paisag/06_frag_conser/6_frag_conservacao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/06_frag_conser/6_frag_conservacao/</guid>
+      <description>Em construção</description>
+    </item>
+    
+    <item>
+      <title>Aula 8 - Efeitos da fragmentação sobre a biodiversidade</title>
+      <link>/collection/ecologia_paisag/08_frag_biodiv/8_frag_biod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/08_frag_biodiv/8_frag_biod/</guid>
+      <description>Em construção</description>
+    </item>
+    
+    <item>
+      <title>Aula 9 - Debate sobre fragmentação: Hipótese de Quantidade de Hábitat</title>
+      <link>/collection/ecologia_paisag/09_frag_debate/9_frag_debate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/ecologia_paisag/09_frag_debate/9_frag_debate/</guid>
+      <description>Qual a relevcia relativa entre a composição e configuração da paisagem? Hipótese da quantidade de hábitat ou (HAH em inglês) #FIM</description>
+    </item>
+    
+    <item>
+      <title>Bases de dados Ecológicos</title>
+      <link>/collection/eco_num/base_dados/base_dados/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/base_dados/base_dados/</guid>
+      <description>Slides
+Matriz de presencias e ausências As bases de dados do R que serão usadas no nosso curso são reais e vêem de repositórios livres de dados e exemplos do próprio R para a área de ecologia. No entanto, para iniciar nossas atividades, vamos contruir uma base de dados fictícia apenas para entender sua estrutura.
+A estrutura básica de bases de dados biológicos é a de matrizes que contem ‘n’ colunas e ‘r’ linhas (n x r).</description>
     </item>
     
     <item>
@@ -550,12 +1233,32 @@ A estrutura básica de bases de dados biológicos é a de matrizes que contem �
     
     <item>
       <title>Beta-diversidade</title>
+      <link>/collection/eco_num/betadiv/betadiv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/betadiv/betadiv/</guid>
+      <description>Beta diversidade é medir diferença entre comunidades Exemplo Vamos usar os dados de um artigo em que participei para medir a diverisdade beta dentro de paisagens com diferentes graus de desmatamento. Plant β-diversity in fragmented rain forests: testing floristic homogenization and differentiation hypotheses https://doi.org/10.1111/1365-2745.12153
+Nessa figura vemos as paisagens estudadas. São três, LDL, IDL e HDL. Elas se diferenciam pelo grau de desmatamento que cada uma apresenta. LDL = LOW deforestain level, IDL = INTERMEDIATE deforestation level e HDL = HIGH deforestaion level.</description>
+    </item>
+    
+    <item>
+      <title>Beta-diversidade</title>
       <link>/courses/eco_num/betadiv/betadiv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/courses/eco_num/betadiv/betadiv/</guid>
       <description>Beta diversidade é medir diferença entre comunidades Exemplo Vamos usar os dados de um artigo em que participei para medir a diverisdade beta dentro de paisagens com diferentes graus de desmatamento. Plant β-diversity in fragmented rain forests: testing floristic homogenization and differentiation hypotheses https://doi.org/10.1111/1365-2745.12153
 Nessa figura vemos as paisagens estudadas. São três, LDL, IDL e HDL. Elas se diferenciam pelo grau de desmatamento que cada uma apresenta. LDL = LOW deforestain level, IDL = INTERMEDIATE deforestation level e HDL = HIGH deforestaion level.</description>
+    </item>
+    
+    <item>
+      <title>BioRestNet: A Network for Biocultural Restoration</title>
+      <link>/slides_aulas/apresentacoes/redaa_ntu-cerk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/redaa_ntu-cerk/</guid>
+      <description>Presentation structure &amp;ndash;
+##- REDAA strategy and opportunities ##- Draft of main ideas ##- Important dates</description>
     </item>
     
     <item>
@@ -572,11 +1275,32 @@ Allison Horst 🐕 (awesome illustrations of campfires, seedlings, and evergreen
     
     <item>
       <title>Descrição de comunidades biológicas</title>
+      <link>/collection/eco_num/descricao_comunidade/desc_comm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/descricao_comunidade/desc_comm/</guid>
+      <description>Os atributos de uma communidade biológica são simples, em princípio Entidades Identidades Quantidades Exercício Comunidades Culinárias (para etregar na forma de um Rpubs até 30 de dezembro de 2022) Fizemos um exercício muito bom em sala de aula. Criamos uma comunidades biológica com grãos e massa para simular a montagem de uma comundaidade biológica em uma ilha oceânica recém formada. Dois grupos fizeram amostragem: um grupo usou uma técnica de alatorização das amostras, soirtendo quadrados que correspondiam a 10% da área da ilha.</description>
+    </item>
+    
+    <item>
+      <title>Descrição de comunidades biológicas</title>
       <link>/courses/eco_num/descricao_comunidade/desc_comm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/courses/eco_num/descricao_comunidade/desc_comm/</guid>
       <description>Os atributos de uma communidade biológica são simples, em princípio Entidades Identidades Quantidades Vamos examinar essa comunidade library (vegan) library(BiodiversityR) data (BCI) BCI.env &amp;lt;- read.delim (&amp;#39;https://raw.githubusercontent.com/zdealveindy/anadat-r/master/data/bci.env.txt&amp;#39;, row.names = 1) BCI.soil &amp;lt;- read.delim (&amp;#39;https://raw.githubusercontent.com/zdealveindy/anadat-r/master/data/bci.soil.txt&amp;#39;) Estação Biológica de Barro Colorado Para uma descrição completa do local de estudo clique aqui São dados de uma série de plots 50 permanentes e contíguos de 1ha (50 ha no total) onde todas as árvores maiores que 10cm DAP (diametro à altura do peito) e uma grande quantidade de variáveis ambientais têm sido monitoradas há décadas.</description>
+    </item>
+    
+    <item>
+      <title>Desenho de Experimentos</title>
+      <link>/collection/eco_num/experimentos/experimentos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/experimentos/experimentos/</guid>
+      <description>Slides
+Bibliografia básica Design and Analysis of Experiments with R
+Noções básicas de Experimentos Ecológicos Experimentos ecológicos não diferem de qualquer outro experimento científico. Esses têm uma lógica similar que precisa ser seguida e dominada para que análises de dados ecológicos possam ser planejadas e realizadas com sucesso.
+O que precisamos saber? - Definir um objetivo Qual o objetivo do experimento? A resposta a essa pergunta é porque o experimento precisa ser realizado.</description>
     </item>
     
     <item>
@@ -593,12 +1317,34 @@ O que precisamos saber? - Definir um objetivo Qual o objetivo do experimento? A 
     
     <item>
       <title>Diversidade Funcional   </title>
+      <link>/collection/eco_num/func_div/div_func/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/func_div/div_func/</guid>
+      <description>Slides das aulas gentilmente cedidos pelo Prof. Dr. Thiago Gonçalves Souza podem ser biaxados AQUI Para esse módulo é importante a seguintes leituras para entender sobre diversidade funcional e como calculá-la. Functional diversity: an overview of its history and applicability Exercício Este último exerćicio consiste em reproduzir as análises do livro Ecologia No R - Cap 8 Diversidade Funcional
+Lembre de instalar o pacote do livro para ter acesso aos dados usados nos exemplos</description>
+    </item>
+    
+    <item>
+      <title>Diversidade Funcional   </title>
       <link>/courses/eco_num/func_div/div_func/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/courses/eco_num/func_div/div_func/</guid>
       <description>Slides das aulas gentilmente cedidos pelo Prof. Dr. Thiago Gonçalves Souza podem ser biaxados AQUI Para esse módulo é importante a seguintes leituras para entender sobre diversidade funcional e como calculá-la. Functional diversity: an overview of its history and applicability Exercício Este último exerćicio consiste em reproduzir as análises do livro Ecologia No R - Cap 8 Diversidade Funcional
 Lembre de instalar o pacote do livro para ter acesso aos dados usados nos exemplos</description>
+    </item>
+    
+    <item>
+      <title>Ecología Política</title>
+      <link>/collection/socio_rest/01_ecologia_politica/01_ecol_pol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/socio_rest/01_ecologia_politica/01_ecol_pol/</guid>
+      <description>Definindo Ecologia Política Fuente: Sur-Sul
+¿Qué necesitas saber sobre Ecología Política? Según la wikipedia.org, ecológia política es:
+“La ecología política es el estudio de las relaciones entre los factores políticos, económicos y sociales con los conflictos y cambios ambientales. La ecología política difiere de los estudios ecológicos apolíticos al politizar los problemas y fenómenos ambientales.”
+La Ecología Política es por lo tanto, una manera de evaluar problemas ambientales como la restauración de ecosistemas desde el precepto de la justicia social.</description>
     </item>
     
     <item>
@@ -615,11 +1361,32 @@ La Ecología Política es por lo tanto, una manera de evaluar problemas ambienta
     
     <item>
       <title>Evolução Histórica da Restauração Ecológica no Brasil</title>
+      <link>/collection/rest_ecol/04_hist_rest/hist_rest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/rest_ecol/04_hist_rest/hist_rest/</guid>
+      <description>Slides A restauração passou por muitas fases no Brasil A história da restauração ecológica no Brasil é fascinante. É uma ciência que tem evoluído rapidamente, com grande impacto nas políticas públicas e na formação acadêmica no Brasil. Há grupod de pesquisa por quase todos os estados e biomas brasileiros e todos têm certa ascendência comum com os grupos que se formaram nas universidades e institutos de pesquisa de São Paulo.</description>
+    </item>
+    
+    <item>
+      <title>Evolução Histórica da Restauração Ecológica no Brasil</title>
       <link>/courses/rest_ecol/04_hist_rest/hist_rest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/courses/rest_ecol/04_hist_rest/hist_rest/</guid>
       <description>Slides A restauração passou por muitas fases no Brasil A história da restauração ecológica no Brasil é fascinante. É uma ciência que tem evoluído rapidamente, com grande impacto nas políticas públicas e na formação acadêmica no Brasil. Há grupod de pesquisa por quase todos os estados e biomas brasileiros e todos têm certa ascendência comum com os grupos que se formaram nas universidades e institutos de pesquisa de São Paulo.</description>
+    </item>
+    
+    <item>
+      <title>Introdução à Ecologia da Restauração</title>
+      <link>/collection/rest_ecol/00_intro/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/rest_ecol/00_intro/intro/</guid>
+      <description>Slides Definindo Ecologia da Restauração Figura adaptada de Bradshaw 1984.
+O que você precisa entender por “restauração ecológica”? Segundo a Society for Ecological Restoration, a restauração é a aplicação de práticas e preceitos cientificamente embasados para a recuperação de ambientes degradados a um estado funcional desejado.
+Para isso algumas metas precisam ser estabelecidas:
+Qual a composição de espécies desejada? Quão parecido deve ser com o ecossistema de referência? Quais serviços ecossistêmicos devem ser recuperados?</description>
     </item>
     
     <item>
@@ -632,6 +1399,20 @@ La Ecología Política es por lo tanto, una manera de evaluar problemas ambienta
 O que você precisa entender por “restauração ecológica”? Segundo a Society for Ecological Restoration, a restauração é a aplicação de práticas e preceitos cientificamente embasados para a recuperação de ambientes degradados a um estado funcional desejado.
 Para isso algumas metas precisam ser estabelecidas:
 Qual a composição de espécies desejada? Quão parecido deve ser com o ecossistema de referência? Quais serviços ecossistêmicos devem ser recuperados?</description>
+    </item>
+    
+    <item>
+      <title>Introducción a los Bosques Tropicales Secos</title>
+      <link>/collection/socio_rest/02_intro_dryforest/02_intro_dryfor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/socio_rest/02_intro_dryforest/02_intro_dryfor/</guid>
+      <description>Definición de Bosques Tropicales Secos Fuente: Fact-Sheet CIFOR
+Bosques tropicales son la mitad de los bosques tropicales y subtropicales del mundo y son caracterizadas por experimetnaren larogs periodos secos.
+Lecturas recomenadadas Un resumen de hechos sobre los bosques tropicales secos por CIFOR
+Artpiculo clásico sobre Ecologia de Bosques Tropicales Secos de Ariel y Lugo
+Murphy y Lugo 1986, otro cçlásico
+Número especial del periódico Sutainability sobre restauracipon de Bosques Secos</description>
     </item>
     
     <item>
@@ -649,12 +1430,43 @@ Número especial del periódico Sutainability sobre restauracipon de Bosques Sec
     </item>
     
     <item>
+      <title>José Vagner Rebouças Filho</title>
+      <link>/people/v%C3%A1gner-rebou%C3%A7as/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/people/v%C3%A1gner-rebou%C3%A7as/</guid>
+      <description>Bio I have a degree in Biological Sciences and a Master in Natural Sciences from the State University of Ceará, where I worked with monitoring of invasive species in the Caatinga. I&amp;rsquo;m currently doing a PhD in Plant Biology at the Federal University of Pernambuco, where I develop research on the role of exotic plants in socio-ecological systems in the Caatinga. In addition, I am a founding member and content producer on the @identplantas page on instagram, which focuses on teaching taxonomic identification to train professionals to work in the environmental area of flora through courses, lectures and thematic events in the field of botany.</description>
+    </item>
+    
+    <item>
       <title>License</title>
       <link>/license/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/license/</guid>
       <description>My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.</description>
+    </item>
+    
+    <item>
+      <title>Lucas Alencar</title>
+      <link>/people/lucas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/people/lucas/</guid>
+      <description>Lucas&amp;rsquo; CV Lattes Lucas&amp;rsquo; Twitter Lucas&amp;rsquo; email
+Bio I graduated in Biological Sciences with an emphasis on Environmental Sciences at the Federal University of Pernambuco. I completed my Master&amp;rsquo;s Degree in Ecology at the National Institute of Amazonian Research, working with landscape ecology and deforestation patterns in the Amazon. I am interested in the areas of socioecology, landscape ecology, land use and land cover and sustainability. I am also interested in using tools such as R and geotechnologies.</description>
+    </item>
+    
+    <item>
+      <title>Medidas de diversidade</title>
+      <link>/collection/eco_num/medidas_diversidade/desc_comm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/medidas_diversidade/desc_comm/</guid>
+      <description>Desafios da mensuração da diversidade Vimos que as comunidades biológicas são estruturas complexas, com muitas informações. Para descrever uma comunidades biológica usamos com frequência duas dessas infromações:
+Riqueza Abundância específica (de cada espécie) A riqueza em si é uma medida de diversidade. Ela informa quantas espécies há numa comunidade mas despreza suas abundâncias.
+Compare as comunidades abaixo
+Perceba que os valores de riqueza são exatamente iguais para cada comunidade 4 espécies.</description>
     </item>
     
     <item>
@@ -671,12 +1483,36 @@ Perceba que os valores de riqueza são exatamente iguais para cada comunidade 4 
     
     <item>
       <title>Medidas de diversidade verdadeira</title>
+      <link>/collection/eco_num/diversidade_verdadeira/desc_comm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/eco_num/diversidade_verdadeira/desc_comm/</guid>
+      <description>Texto extraído do livro Análises Ecológicas no R (in press)
+Desafios da mensuração da diversidade verdadeira Números de Hill ou Série de Hill Embora os índices de Shannon-Wiener e Gini-Simpson sejam amplamente usados em estudos ecológicos e de conservação, eles sofrem de propriedades matemáticas e não representam a diversidade propriamente dita (L. Jost 2006). Portanto, quando o objetivo é avaliar a diversidade, os índices de Shannon-Wiener e Gini-Simpson não deveriam ser utilizados na sua forma padrão, mas transformados em números efetivos de espécies ou diversidade verdadeira (L.</description>
+    </item>
+    
+    <item>
+      <title>Medidas de diversidade verdadeira</title>
       <link>/courses/eco_num/diversidade_verdadeira/desc_comm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/courses/eco_num/diversidade_verdadeira/desc_comm/</guid>
       <description>Texto extraído do livro Análises Ecológicas no R (in press)
 Desafios da mensuração da diversidade verdadeira Números de Hill ou Série de Hill Embora os índices de Shannon-Wiener e Gini-Simpson sejam amplamente usados em estudos ecológicos e de conservação, eles sofrem de propriedades matemáticas e não representam a diversidade propriamente dita (L. Jost 2006). Portanto, quando o objetivo é avaliar a diversidade, os índices de Shannon-Wiener e Gini-Simpson não deveriam ser utilizados na sua forma padrão, mas transformados em números efetivos de espécies ou diversidade verdadeira (L.</description>
+    </item>
+    
+    <item>
+      <title>Métodos de restauração passiva </title>
+      <link>/collection/rest_ecol/02_passivos/passivos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/rest_ecol/02_passivos/passivos/</guid>
+      <description>Slides Métodos passivos de restauração ecológica Figura Paula Meli.
+O que são métodos passivos de restauração? São técnicas que utilizam processos naturais de regeneração com nenhuma ou mínima intervenção humana. A maior parte do trabalho é feita pela sucessão ecológica.
+Vantages:
+Barato; Fácil; Tende a reproduzir ecossistemas naturais Desvantegens:
+Pouco controle sobre o resultado Lento Pode favorecer especies indesejáveis Para a próxima aula Assistam este video
+Venha preparado para discutir os conceitos apresentados.</description>
     </item>
     
     <item>
@@ -694,6 +1530,35 @@ Venha preparado para discutir os conceitos apresentados.</description>
     </item>
     
     <item>
+      <title>Presentation Ninja</title>
+      <link>/slides_aulas/apresentacoes/ntu_april/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/ntu_april/</guid>
+      <description>background-image: url( https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+???
+Image credit: Wikimedia Commons
+class: inverse, center, middle
+Get Started Hello World Install the xaringan package from Github:
+remotes::install_github(&amp;#34;yihui/xaringan&amp;#34;) –
+You are recommended to use the RStudio IDE, but you do not have to.
+Create a new R Markdown document from the menu File -&amp;gt; New File -&amp;gt; R Markdown -&amp;gt; From Template -&amp;gt; Ninja Presentation;1 –
+Click the Knit button to compile it; –</description>
+    </item>
+    
+    <item>
+      <title>Restauración como movimiento social</title>
+      <link>/collection/socio_rest/03_restauracion_mov_social/03_mov_soc_rest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/socio_rest/03_restauracion_mov_social/03_mov_soc_rest/</guid>
+      <description> ¿Cómo podemos entender la restauración como movimiento social? Fuente: Trillion Tree Campaign
+Movimientos nacionales y locales de restauración Pacto pela Restauração da Mata Atlântica Rede de Sementes do Xingú
+Geopolítica de la restauración - UNEP ###- Rewildin Europe ###- trillionTrees ###- 1t.org ###- Década de la Restauración
+Tarea Elija un movimiento regional o local de restauración Haga búsquedas sobre la actuación de dicho movimiento Escriba un cuartilla sobre el movieinto elegido, destacando actores, misión y logros </description>
+    </item>
+    
+    <item>
       <title>Restauración como movimiento social</title>
       <link>/courses/socio_rest/03_restauracion_mov_social/03_mov_soc_rest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -703,6 +1568,18 @@ Venha preparado para discutir os conceitos apresentados.</description>
 Movimientos nacionales y locales de restauración Pacto pela Restauração da Mata Atlântica Rede de Sementes do Xingú
 Geopolítica de la restauración - UNEP ###- Rewildin Europe ###- trillionTrees ###- 1t.org ###- Década de la Restauración
 Tarea Elija un movimiento regional o local de restauración Haga búsquedas sobre la actuación de dicho movimiento Escriba un cuartilla sobre el movieinto elegido, destacando actores, misión y logros </description>
+    </item>
+    
+    <item>
+      <title>Sucessão ecológica e perturbação</title>
+      <link>/collection/rest_ecol/01_sucessao/sucessao/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/collection/rest_ecol/01_sucessao/sucessao/</guid>
+      <description>Slides Sucessão ecológica Figura OpeanLearn.
+O que você precisa entender por Sucessão Ecológica? A Wikipedia define assim: “Sucessão ecológica é a sequência de comunidades, desde a colonização até à comunidade clímax, de um determinado ecossistema. Estas comunidades vão sofrendo mudanças ordenadas e graduais.”
+Para a próxima aula Leia este texto produzido pelo Prof Sérgius Gandolfi.
+Venha preparado para discutir os conceitos apresentados. vale nota</description>
     </item>
     
     <item>

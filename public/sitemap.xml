@@ -2,17 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/courses/day02/01-netlify/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
+    <loc>/collection/eco_num/</loc>
+    <lastmod>2022-08-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/spoonful-series/01-spoonful/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+    <loc>/collection/ecologia_paisag/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/day01/01-github/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+    <loc>/collection/ecogeral1/</loc>
   </url><url>
-    <loc>/courses/prework/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+    <loc>/collection/eco_geral2/</loc>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/socio_rest/</loc>
+    <lastmod>2022-09-29T08:21:55-03:00</lastmod>
   </url><url>
     <loc>/courses/socio_rest/</loc>
     <lastmod>2022-09-29T08:21:55-03:00</lastmod>
@@ -20,41 +22,35 @@
     <loc>/courses/eco_num/</loc>
     <lastmod>2022-08-23T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/collection/bot_eco/</loc>
+    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/bio_cons/</loc>
+    <lastmod>2021-07-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/bio_cons/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/deseho-de-projetos/</loc>
+    <lastmod>2021-06-12T11:27:16-03:00</lastmod>
   </url><url>
     <loc>/courses/deseho-de-projetos/</loc>
     <lastmod>2021-06-12T11:27:16-03:00</lastmod>
   </url><url>
-    <loc>/courses/day01/</loc>
-    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
+    <loc>/collection/cons_prior/</loc>
   </url><url>
-    <loc>/courses/day01/02-postcards/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/spoonful-series/02-spoonful/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/day02/02-blogdown/</loc>
-    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+    <loc>/collection/rest_ecol/</loc>
   </url><url>
     <loc>/courses/rest_ecol/</loc>
   </url><url>
-    <loc>/courses/talks/</loc>
+    <loc>/collection/rm_da_ntu/</loc>
   </url><url>
-    <loc>/courses/day02/</loc>
-    <lastmod>2021-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/spoonful-series/03-spoonful/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/day01/03-distill/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/day02/03-blogdown/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
+    <loc>/collection/talks/</loc>
   </url><url>
     <loc>/courses/ecologia_paisag/04_fragmentacao/4_fragmentacao/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/ecologia_paisag/05_frag_efeittos/5_fragm_efeitos/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/ecologia_paisag/05_frag_efeittos/5_fragm_efeitos/</loc>
@@ -69,53 +65,110 @@
     <loc>/courses/ecologia_paisag/08_frag_biodiv/8_frag_biod/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/eco_geral2/ameacas/amea%C3%A7as/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/courses/eco_geral2/amea%C3%A7as/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/press/marcozero/</loc>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/press/</loc>
+    <lastmod>2024-05-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2024-04-29-todo-ser-humano-um-migrante/</loc>
+    <lastmod>2024-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/biorestnet/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/project/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/project/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/press/eolic_mongabay/</loc>
+    <lastmod>2023-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/2023-01-03-a-coloniza-o-est-tica-da-caatinga/</loc>
+    <lastmod>2023-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/conserva%C3%A7%C3%A3o/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/meteoro/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/eco_geral2/ameacas/amea%C3%A7as/</loc>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/courses/eco_geral2/ameacas/amea%C3%A7as/</loc>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/</loc>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/eco_geral2/intro/intro_bio/</loc>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/eco_geral2/intro/intro_bio/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/eco_geral2/biocons/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <loc>/collection/eco_geral2/biocons/biocons/</loc>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/eco_geral2/biocons/biocons/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/eco_geral2/magnitude/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <loc>/collection/eco_geral2/magnitude/magnitude/</loc>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/eco_geral2/magnitude/magnitude/</loc>
-    <lastmod>2022-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/socio_rest/04_restauacion_biocultural/restauracion-biocultural/</loc>
+    <lastmod>2022-09-29T08:21:55-03:00</lastmod>
   </url><url>
     <loc>/courses/socio_rest/04_restauacion_biocultural/restauracion-biocultural/</loc>
+    <lastmod>2022-09-29T08:21:55-03:00</lastmod>
+  </url><url>
+    <loc>/collection/socio_rest/05_restauracion_biocultural2/restauracion-biocultural/</loc>
     <lastmod>2022-09-29T08:21:55-03:00</lastmod>
   </url><url>
     <loc>/courses/socio_rest/05_restauracion_biocultural2/restauracion-biocultural/</loc>
     <lastmod>2022-09-29T08:21:55-03:00</lastmod>
   </url><url>
+    <loc>/collection/eco_num/associacao/med_assoc/</loc>
+    <lastmod>2022-08-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/eco_num/associacao/med_assoc/</loc>
     <lastmod>2022-08-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/cdeep/</loc>
+    <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/ecologia_paisag/09_frag_debate/9_frag_debate/</loc>
     <lastmod>2022-04-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/slides_aulas/slides_eco_num/slides_aula4_ordenacao/</loc>
-    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/slides_aulas/slides_eco_num/slides_cca/</loc>
-    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/slides_aulas/</loc>
-    <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+    <loc>/press/ipbes_nexus/</loc>
+    <lastmod>2022-02-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/ecologia_paisag/01_intro/intro_eco_pais/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
@@ -126,8 +179,20 @@
     <loc>/courses/ecologia_paisag/03_processos_biol/3_processos/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/collection/ecologia_paisag/r_rstudio/instacao_rstudio/</loc>
+    <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/ecologia_paisag/r_rstudio/instacao_rstudio/</loc>
     <lastmod>2022-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/sobre-floretas-e-pobreza/</loc>
+    <lastmod>2021-11-26T09:32:53-03:00</lastmod>
+  </url><url>
+    <loc>/press/invasoras_vagner/</loc>
+    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/bot_eco/manejo_florestal/</loc>
+    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/bot_eco/manejo_florestal/</loc>
     <lastmod>2021-08-18T00:00:00+00:00</lastmod>
@@ -138,11 +203,14 @@
     <loc>/tags/science/</loc>
     <lastmod>2021-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-08-18T00:00:00+00:00</lastmod>
+    <loc>/collection/bot_eco/plantas_medicinais/</loc>
+    <lastmod>2021-08-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/bot_eco/plantas_medicinais/</loc>
     <lastmod>2021-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/bot_eco/produtos_biodiv/</loc>
+    <lastmod>2021-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/bot_eco/produtos_biodiv/</loc>
     <lastmod>2021-07-27T00:00:00+00:00</lastmod>
@@ -150,10 +218,19 @@
     <loc>/tags/projects/</loc>
     <lastmod>2021-07-27T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/collection/bot_eco/valoracao_biod/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/bot_eco/valoracao_biod/</loc>
     <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/collection/bio_cons/01_intro_biod/</loc>
+    <lastmod>2021-07-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/bio_cons/01_intro_biod/</loc>
+    <lastmod>2021-07-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/bio_cons/02_geopolitica_ambiental/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/bio_cons/02_geopolitica_ambiental/</loc>
@@ -162,23 +239,53 @@
     <loc>/courses/bot_eco/</loc>
     <lastmod>2021-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/courses/eco_geral2/</loc>
-    <lastmod>2021-06-24T00:00:00+00:00</lastmod>
+    <loc>/collection/deseho-de-projetos/carreira-cientifica/</loc>
+    <lastmod>2021-06-12T11:27:16-03:00</lastmod>
   </url><url>
     <loc>/courses/deseho-de-projetos/aula4-carreira/</loc>
     <lastmod>2021-06-12T11:27:16-03:00</lastmod>
   </url><url>
+    <loc>/press/nexo-portal/</loc>
+    <lastmod>2021-06-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/press/cienciahoje/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/press/mongabay/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/press/eolicas/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/press/segur_flores/</loc>
+    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/bot_eco/amea%C3%A7as_e_almentacao/</loc>
+    <lastmod>2021-05-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/courses/bot_eco/amea%C3%A7as_e_almentacao/</loc>
     <lastmod>2021-05-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/collection/deseho-de-projetos/componentes-de-uma-pesquisa-cient%C3%ADfica/</loc>
+    <lastmod>2021-05-25T11:27:16-03:00</lastmod>
+  </url><url>
     <loc>/courses/deseho-de-projetos/aula01-componentes/</loc>
+    <lastmod>2021-05-25T11:27:16-03:00</lastmod>
+  </url><url>
+    <loc>/collection/deseho-de-projetos/filosofia-da-ciencia/</loc>
     <lastmod>2021-05-25T11:27:16-03:00</lastmod>
   </url><url>
     <loc>/courses/deseho-de-projetos/aula2-filosofia-da-ciencia/</loc>
     <lastmod>2021-05-25T11:27:16-03:00</lastmod>
   </url><url>
+    <loc>/collection/deseho-de-projetos/planejamento/</loc>
+    <lastmod>2021-05-25T11:27:16-03:00</lastmod>
+  </url><url>
     <loc>/courses/deseho-de-projetos/aula3-planejamento/</loc>
     <lastmod>2021-05-25T11:27:16-03:00</lastmod>
+  </url><url>
+    <loc>/collection/deseho-de-projetos/escrever-projeto/</loc>
+    <lastmod>2021-06-07T11:27:16-03:00</lastmod>
   </url><url>
     <loc>/courses/deseho-de-projetos/aula4-projeto/</loc>
     <lastmod>2021-06-07T11:27:16-03:00</lastmod>
@@ -186,107 +293,17 @@
     <loc>/tags/courses/</loc>
     <lastmod>2021-06-07T11:27:16-03:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/social/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/theme-features/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/style/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/color-themes/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/fonts/</loc>
-    <lastmod>2021-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/evergreen/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/evergreen/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/talk/campfire/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/talk/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/workshop/</loc>
-    <lastmod>2021-01-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/series/a-spoonful-of-hugo/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/spoonful-series/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/hugo-site/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/r/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/series/</loc>
-    <lastmod>2021-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/seedling/</loc>
-    <lastmod>2021-01-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/talk/second-seedling/</loc>
-    <lastmod>2021-01-01T14:15:59-06:00</lastmod>
-  </url><url>
-    <loc>/categories/meetup/</loc>
-    <lastmod>2021-01-01T14:15:59-06:00</lastmod>
-  </url><url>
     <loc>/courses/ecologia_paisag/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/rmarkdown/</loc>
-    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+    <loc>/tags/restaura%C3%A7%C3%A3o/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/blog/2020-12-01-r-rmarkdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
+    <loc>/talk/bpbes_webinar/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/plot/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/tags/r-markdown/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/tags/regression/</loc>
-    <lastmod>2020-12-01T21:13:14-05:00</lastmod>
-  </url><url>
-    <loc>/talk/seedling/</loc>
-    <lastmod>2020-01-13T14:15:59-06:00</lastmod>
-  </url><url>
-    <loc>/project/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/package/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/project/giraffes/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/css-grid-scaffold/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/project/penguins/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/project/bakeoff/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/built-in-contact-form/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+    <loc>/talk/pinheiro_nativo/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/contact/</loc>
     <lastmod>2019-02-25T13:38:41-06:00</lastmod>
@@ -297,41 +314,221 @@
     <loc>/elements/</loc>
     <lastmod>2019-02-18T12:27:33-06:00</lastmod>
   </url><url>
+    <loc>/categories/media/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/tatu_bola/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/nexus/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/peld_catimbau/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/cidades_cnpq_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/tatu_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior/1_intro_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/ecol_paisag/04_intro_frag_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/collection/bio_cons/03_intro_biocons/</loc>
+  </url><url>
     <loc>/courses/bio_cons/03_intro_biocons/</loc>
   </url><url>
     <loc>/about/</loc>
   </url><url>
+    <loc>/collection/eco_num/cluster/cluster/</loc>
+  </url><url>
     <loc>/courses/eco_num/cluster/cluster/</loc>
+  </url><url>
+    <loc>/people/arthur-rodrigues/</loc>
+  </url><url>
+    <loc>/collection/ecologia_paisag/01_intro/intro_eco_pais/</loc>
+  </url><url>
+    <loc>/collection/ecogeral1/01_individuos/01_individuos/</loc>
+  </url><url>
+    <loc>/collection/ecologia_paisag/02_paisagem_delim/delim_paisag/</loc>
+  </url><url>
+    <loc>/collection/ecogeral1/02_estrutura_pop/02_estrutura_pop/</loc>
+  </url><url>
+    <loc>/collection/ecologia_paisag/03_processos_biol/3_processos/</loc>
+  </url><url>
+    <loc>/collection/ecologia_paisag/04_fragmentacao/4_fragmentacao/</loc>
+  </url><url>
+    <loc>/collection/ecogeral1/03_crescimento-populacional/03_crescimento_populacional/</loc>
+  </url><url>
+    <loc>/collection/ecologia_paisag/06_frag_conser/6_frag_conservacao/</loc>
+  </url><url>
+    <loc>/collection/ecologia_paisag/08_frag_biodiv/8_frag_biod/</loc>
+  </url><url>
+    <loc>/collection/ecologia_paisag/09_frag_debate/9_frag_debate/</loc>
+  </url><url>
+    <loc>/collection/eco_num/base_dados/base_dados/</loc>
   </url><url>
     <loc>/courses/eco_num/base_dados/base_dados/</loc>
   </url><url>
+    <loc>/collection/eco_num/betadiv/betadiv/</loc>
+  </url><url>
     <loc>/courses/eco_num/betadiv/betadiv/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/redaa_ntu-cerk/</loc>
   </url><url>
     <loc>/contributors/</loc>
   </url><url>
+    <loc>/collection/eco_num/descricao_comunidade/desc_comm/</loc>
+  </url><url>
     <loc>/courses/eco_num/descricao_comunidade/desc_comm/</loc>
+  </url><url>
+    <loc>/collection/eco_num/experimentos/experimentos/</loc>
   </url><url>
     <loc>/courses/eco_num/experimentos/experimentos/</loc>
   </url><url>
+    <loc>/collection/eco_num/func_div/div_func/</loc>
+  </url><url>
     <loc>/courses/eco_num/func_div/div_func/</loc>
+  </url><url>
+    <loc>/collection/socio_rest/01_ecologia_politica/01_ecol_pol/</loc>
   </url><url>
     <loc>/courses/socio_rest/01_ecologia_politica/01_ecol_pol/</loc>
   </url><url>
+    <loc>/collection/rest_ecol/04_hist_rest/hist_rest/</loc>
+  </url><url>
     <loc>/courses/rest_ecol/04_hist_rest/hist_rest/</loc>
+  </url><url>
+    <loc>/collection/rest_ecol/00_intro/intro/</loc>
   </url><url>
     <loc>/courses/rest_ecol/00_intro/intro/</loc>
   </url><url>
+    <loc>/collection/socio_rest/02_intro_dryforest/02_intro_dryfor/</loc>
+  </url><url>
     <loc>/courses/socio_rest/02_intro_dryforest/02_intro_dryfor/</loc>
+  </url><url>
+    <loc>/people/v%C3%A1gner-rebou%C3%A7as/</loc>
   </url><url>
     <loc>/license/</loc>
   </url><url>
+    <loc>/people/lucas/</loc>
+  </url><url>
+    <loc>/collection/eco_num/medidas_diversidade/desc_comm/</loc>
+  </url><url>
     <loc>/courses/eco_num/medidas_diversidade/desc_comm/</loc>
+  </url><url>
+    <loc>/collection/eco_num/diversidade_verdadeira/desc_comm/</loc>
   </url><url>
     <loc>/courses/eco_num/diversidade_verdadeira/desc_comm/</loc>
   </url><url>
+    <loc>/collection/rest_ecol/02_passivos/passivos/</loc>
+  </url><url>
     <loc>/courses/rest_ecol/02_passivos/passivos/</loc>
   </url><url>
+    <loc>/people/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/ntu_april/</loc>
+  </url><url>
+    <loc>/collection/socio_rest/03_restauracion_mov_social/03_mov_soc_rest/</loc>
+  </url><url>
     <loc>/courses/socio_rest/03_restauracion_mov_social/03_mov_soc_rest/</loc>
+  </url><url>
+    <loc>/series/</loc>
+  </url><url>
+    <loc>/slides_aulas/</loc>
+  </url><url>
+    <loc>/collection/rest_ecol/01_sucessao/sucessao/</loc>
   </url><url>
     <loc>/courses/rest_ecol/01_sucessao/sucessao/</loc>
   </url>

@@ -1,0 +1,307 @@
+---
+title: "Conservation Priorities"
+author: "Felipe Melo"
+format:
+  revealjs:
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Conservation Priorities 2023"
+    slide-number: true
+---
+
+## Who am I? 
+
+Hi, my name is Felipe Melo and I'll be your main teacher/tutor during this module dedicated to discuss **Conservation Priorities**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<img src="https://ecoaplic.org/about/sidebar/avatar.jpg"width="400"/>
+
+:::
+
+::: {.column width="50%"}
+
+[ecoaplic.org](www.ecoaplic.org)
+
+:::
+
+::::
+
+## A brief of my history
+
+:::: {.columns}
+
+::: {.column width="50%"} 
+
+BSc in Biology
+
+-   Effects of defaunation on seed dispersal <img src="https://insider.si.edu/wp-content/uploads/2012/07/Ziegler_CRW_9028_RJ-630x420.jpg" width="500"/> 
+
+:::
+
+::: {.column width="50%"} 
+
+MSc in Ecology
+
+-   Effects of defaunation on seed dispersal <img src="https://ars.els-cdn.com/content/image/1-s2.0-S0169534713000037-gr1b1.jpg" width="500"/> 
+
+:::
+
+::::
+
+## A brief of my history
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+PhD in Ecology
+
+-   Forest regeneration 
+
+<img src="https://www.historyhit.com/app/uploads/fly-images/5150075/Calakmul-788x537.jpg" width="500"/> 
+
+:::
+
+::: {.column width="50%"}
+
+-   More contact with diverse conservation challenges
+-   Deep immersion in local communities
+-   Learn to listens 
+
+:::
+
+::::
+
+## Work for Environmental NGO
+
+<img src="img/book_cepan.png" width="500"/>
+
+## Academia
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Applied Ecology Lab
+
+-   21 BSC
+-   9 MSc
+-   6 PhD
+
+:::
+
+::: {.column width="50%"}
+
+<img src="img/labufpe.jpg" width="600"/>
+
+:::
+
+::::
+
+## Public Policies for Conservation
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+National and International Forums
+
+<img src="https://pbs.twimg.com/profile_images/1244188044703432704/q9XjT8TZ_400x400.png"/>
+
+:::
+
+::: {.column width="50%"}
+
+<img src="img/talk.jpg"/>
+
+:::
+
+::::
+
+# Conservation priorities{.center}
+
+## Module Aims
+
+To understand why, where and how conservation conflicts emerge, and how to set priorities for conservation in a changing world 
+
+<img src=https://extinctionrebellion.de/media/images/case_for_convivial_conservatio.2e16d0ba.fill-768x432-c75.png> 
+
+## Module Contents{.incremental}
+
+- History of **conservation conflicts**
+- Political Ecology
+- Systematic planning of conservation
+- Several conservation debates
+- World views
+
+# Get prepared to share your world views!! {.center}
+
+## Now, a story...{.center}
+
+## 2014 FIFA Word Cup
+::::{.columns}
+:::{.column width="50%"}
+::: {.fragment}
+### Expectation
+<img src=https://bolavip.com/export/sites/bolavip/img/2022/06/30/gettyimages-989680130_x1x.jpg_853787323.jpg>
+:::
+:::
+
+:::{.column width="50%"}
+::: {.fragment}
+### Reality
+
+<img src="https://i.dailymail.co.uk/i/pix/2014/07/09/article-2685283-1F7FDE1D00000578-666_634x620.jpg" width="900"/>
+:::
+:::
+::::
+
+## The opportunity
+
+:::: {.columns}
+
+::: {.column width="50%"} 
+
+Fuleco = **Foo**tball + **Eco**logy
+
+<img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Mascote_Copa.png"/> 
+
+:::
+
+::: {.column width="50%"}
+
+<img src="https://s2.glbimg.com/xkGe6E18AKKCYPDxcBHy9ECzFWOHdcy2r_WS_LvLLbNIoz-HdGixxa_8qOZvMp3w/s.glbimg.com/jo/g1/f/original/2012/09/12/montagem_tatu.jpg"/> 
+:::
+
+::::
+
+## *Tolypeutes tricinctus*
+
+<img src="img/fuleco_mapa.png" width="800"/>
+
+## Caatinga
+
+:::: {.columns}
+
+::: {.column width="50%"} 
+
+Hyper-diverse tropical dry forest
+
+<img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489119840-f11984-01-9780128160961.jpg"/>
+
+:::
+
+::: {.column width="50%"}
+
+-   \< 5% within Protected Areas
+-   High level of economic poverty
+-   Forest-dependent people
+
+:::
+
+::::
+
+## The challenge
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+1 - Conservation plan
+
+2 - Invest on the "Parks of the cup"
+
+3 - Create 1k ha of PA for each goal scored
+
+:::
+
+::: {.column width="40%"}
+
+<img src="img/fuleco1.png"/>
+
+<img src="img/capa_bio.jpg" width="300"/> 
+
+:::
+
+::::
+
+## Armadillo 1 x 0 Threats
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<img src="img/cons_tatu.png" width="400"/>
+
+:::
+
+::: {.column width="40%"}
+
+<img src="img/cons_tatu2.png"/>
+
+:::
+
+::::
+
+## Armadillo 1 x 1 Threats
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<img src="https://www.ecodebate.com.br/foto/ucs.jpg" width="400"/>
+
+:::
+
+::: {.column width="40%"}
+
+<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2020/08/Oeco_Ja%C3%BA_Duda-Menegassi.jpeg?w=1152&amp;ssl=1"/>
+
+:::
+
+::::
+
+### Brazil invests only R$ 1.02 per hectare of protected area
+
+## Armadillo 2 x 1 Threats
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+<img src="https://i0.wp.com/www.oeco.org.br/wp-content/uploads/2015/12/Per%C3%ADmetro.png" width="600"/>
+
+:::
+
+::: {.column width="40%"}
+
+-   110k hectares of Protected Area
+-   Named after the Armadillo
+
+:::
+
+::::
+
+## An endless game...
+
+### unsolved conflicts
+
+<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2019/09/Chato.jpg?fit=1152%2C768&amp;ssl=1"/>
+
+## An endless game...
+
+### unsolved conflicts
+
+<img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2022/12/Producao-de-caprinos-e-ovinos-e-uma-atividade-desenvolvida-ha-seculos-na-comunidade-rural-Ico-de-Ne-Gomes-muito-antes-da-delimitacao-da-area-da-Reserva-Tatu-Bola-em-Petrolina-Foto-Acervo-pessoal-Lucival.jpeg?w=960&amp;ssl=1"/>
+
+## 
+
+<iframe width="1128" height="635" src="https://www.youtube.com/embed/rQHAgyrXims" title="O gol do Tatu-bola (The armadillo&#39;s goal)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+
+## The end?

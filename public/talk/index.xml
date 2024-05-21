@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Talks that Last on Applied Ecology</title>
+    <title>List of Videos on Applied Ecology</title>
     <link>/talk/</link>
-    <description>Recent content in Talks that Last on Applied Ecology</description>
+    <description>Recent content in List of Videos on Applied Ecology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A campfire</title>
-      <link>/talk/campfire/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Mais gente, menos natureza?</title>
+      <link>/talk/meteoro/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       
-      <guid>/talk/campfire/</guid>
-      <description>I&amp;rsquo;m really excited to give this talk! Stay tuned for video and slides.</description>
+      <guid>/talk/meteoro/</guid>
+      <description>Video muito bom do Meteoro Brasil inspirado num debate corrente sobre o &amp;ldquo;problema&amp;rdquo; da superpopulação humana do qual participei como co-autor de dois artigos de resposta.</description>
     </item>
     
     <item>
-      <title>A seedling</title>
-      <link>/talk/second-seedling/</link>
-      <pubDate>Fri, 01 Jan 2021 14:15:59 -0600</pubDate>
+      <title>Webinário BPBES - Restauração da Caatinga e COP 15 da Biodiversidade</title>
+      <link>/talk/bpbes_webinar/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/talk/second-seedling/</guid>
-      <description></description>
+      <guid>/talk/bpbes_webinar/</guid>
+      <description>Uma boa conversa sobre restauração, justiça ambiental, biodiversidade e Caatinga</description>
     </item>
     
     <item>
-      <title>A seedling</title>
-      <link>/talk/seedling/</link>
-      <pubDate>Mon, 13 Jan 2020 14:15:59 -0600</pubDate>
+      <title>Pinheiro Nativo - Caatinga</title>
+      <link>/talk/pinheiro_nativo/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/talk/seedling/</guid>
+      <guid>/talk/pinheiro_nativo/</guid>
+      <description>Participação no projeto maravilhoso da colega Nívea Santos que mistura música e ciência. Aqui, falamos sobre a Caatinga, sua biodiversidade, musicalidade e conservação. Teve poesia, música e muita ciência</description>
+    </item>
+    
+    <item>
+      <title>The Armdadillo&#39;s Goal</title>
+      <link>/talk/tatu_bola/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/tatu_bola/</guid>
       <description></description>
     </item>
     

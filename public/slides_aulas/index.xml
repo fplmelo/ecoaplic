@@ -5,26 +5,505 @@
     <link>/slides_aulas/</link>
     <description>Recent content in Slides_aulas on Applied Ecology</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 31 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="/slides_aulas/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/slides_aulas/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ecologia Numérica</title>
-      <link>/slides_aulas/slides_eco_num/slides_aula4_ordenacao/</link>
-      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/slides_aulas/slides_eco_num/slides_aula4_ordenacao/</guid>
-      <description>Análise de Componentes Principais - PCA .center[ ]
-.pull-left[ # O que precisamos saber?] # O princípio é simples… SQN .center[ ] # Entendeu? Não? # Como interpretamos? .panelset[ .panel[.panel-name[ex-1] ] .panel[.panel-name[ex-2] ] .panel[.panel-name[ex-3] ] .panel[.panel-name[ex-4] ]] Autovetores (eigenvalues) .panelset[ .panel[.panel-name[objetos ‘PCA’]] .panel[.panel-name[objetos prcomp]] .panel[.panel-name[autovetores PCA]] .panel[.panel-name[autovetores prcomp]]]
-# Resumo dos autovetores .pull-left[ ] .pull-right[ ] # Resumo dos autovetores .pull-left[ ###- São o valor que informa quanta relação há entre variáveis ###- Informam a direção da vairação Aqui tem ums explicação maravilhosa] .</description>
+      <guid>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
     </item>
     
     <item>
-      <title>Ecologia Numérica</title>
-      <link>/slides_aulas/slides_eco_num/slides_cca/</link>
-      <pubDate>Mon, 31 Jan 2022 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/slides_aulas/slides_eco_num/slides_cca/</guid>
-      <description>.pull-left[ # O que precisamos saber? ###- Uma CA é um método similar aos PCA, mas… (distância de chi-quadrado) ###- Tem bom desempenho com matrizes com muitos zeros (presença e ausência de espécies) ###- É um método para reduzir a multi-dimensionalidade dos dados ###- Busca relações unimodais ] .pull-right[ ] Análises de correspondência - CA .left-column[ # São uma família de análises multivaridas que procuram por relações não lineares]</description>
+      <guid>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/cidades_cnpq_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/cidades_cnpq_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/fc_project_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_manchester_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_vc_flr_march24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/felipe_vc_flr_may24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/ntu_talk_nov23_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/simbiose_felipe_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/apresentacoes/tatu_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/tatu_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior/1_intro_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior/1_intro_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/01_intro_cons_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/02_under_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/03_hist_prior_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/04_biod_mag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/06_biod_measures_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/07_syst_plan_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/08_pol_ecol_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/09_climate_change_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/10_review_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/ex1_frag_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/cons_prior_slides/ex2_pa_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/reveal-chalkboard/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/reveal-chalkboard/readme/</guid>
+      <description>Chalkboard With this plugin you can add a chalkboard to reveal.js. The plugin provides two possibilities to include handwritten notes to your presentation:
+you can make notes directly on the slides, e.g. to comment on certain aspects, you can open a chalkboard or whiteboard on which you can make notes. The main use case in mind when implementing the plugin is classroom usage in which you may want to explain some course content and quickly need to make some notes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/slides_aulas/ecol_paisag/04_intro_frag_files/libs/revealjs/plugin/notes/speaker-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/ecol_paisag/04_intro_frag_files/libs/revealjs/plugin/notes/speaker-view/</guid>
+      <description> reveal.js - Speaker View Loading speaker view... Upcoming Time Click to Reset 0:00 AM 00:00:00 Pacing – Time to finish current slide 00:00:00 Notes </description>
+    </item>
+    
+    <item>
+      <title>BioRestNet: A Network for Biocultural Restoration</title>
+      <link>/slides_aulas/apresentacoes/redaa_ntu-cerk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/redaa_ntu-cerk/</guid>
+      <description>Presentation structure &amp;ndash;
+##- REDAA strategy and opportunities ##- Draft of main ideas ##- Important dates</description>
+    </item>
+    
+    <item>
+      <title>Presentation Ninja</title>
+      <link>/slides_aulas/apresentacoes/ntu_april/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/slides_aulas/apresentacoes/ntu_april/</guid>
+      <description>background-image: url( https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+???
+Image credit: Wikimedia Commons
+class: inverse, center, middle
+Get Started Hello World Install the xaringan package from Github:
+remotes::install_github(&amp;#34;yihui/xaringan&amp;#34;) –
+You are recommended to use the RStudio IDE, but you do not have to.
+Create a new R Markdown document from the menu File -&amp;gt; New File -&amp;gt; R Markdown -&amp;gt; From Template -&amp;gt; Ninja Presentation;1 –
+Click the Knit button to compile it; –</description>
     </item>
     
   </channel>

@@ -1,0 +1,194 @@
+---
+title: "Research Impact \n Interview with Dr. Marcelo Tabarelli"
+author: "Felipe Melo"
+format:
+  revealjs:
+    incremental: true
+    chalkboard: true
+    logo: ntu_logo.png
+    footer: "VC Future Leadership"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## Defining research impact.
+
+Googling the term: "Impact in research"
+
+-   "Research impact is the effect research has beyond academia" [(University of York)](https://www.york.ac.uk/staff/research/research-impact/impact-definition/#:~:text=Research%20impact%20is%20the%20effect,our%20environment%20and%20the%20economy%E2%80%9D.)
+-   "Shifts in understanding" ([UKRI](https://www.ukri.org/councils/esrc/impact-toolkit-for-economic-and-social-sciences/defining-impact/))
+-   "impact is defined as an effect on, change or benefit to the economy, society, culture, public policy or services, health, the environment or quality of life, beyond academia" ([Leeds](https://researchersupport.leeds.ac.uk/research-impact-resource/research-impact/))
+
+## Impact in BAU Science
+
+:::: columns 
+:::{.column width=50%}
+
+-   Contributes to improving the "system"
+-   Productivism not challenged
+-   Competition within academia 
+
+::: 
+
+:::{.column width=50%} 
+![](https://upload.wikimedia.org/wikipedia/commons/e/e8/Pyramid_of_Capitalist_System.jpg) 
+::: 
+::::
+
+## Impact in Transformative Science
+
+:::: columns 
+
+:::{.column width=50%}
+
+-   Contributes to change the "system"
+-   Publish or perish avoided
+-   Cooperation within academia 
+:::
+
+:::{.column width=50%}
+
+![](https://www.researchgate.net/profile/Franziska-Stelzer/publication/305658010/figure/fig2/AS:388406233321473@1469614670296/Three-dimensions-of-a-transformative-science-Source-Own-illustration.png) 
+::: 
+::::
+
+## Changes in Imapct
+
+-   Cambridge has a [guide to impact](https://www.research-strategy.admin.cam.ac.uk/pathwaytoimpact/index.html#:~:text=We%20have%20developed%20this%20tool,for%20more%20general%20impact%20planning.)
+
+- [St Andrews' gudie to impact](https://impact.wp.st-andrews.ac.uk/pathways-to-impact/)
+
+## How I apporach impact?
+
+:::: columns 
+
+:::{.column width=50%}
+
+Prospective way
+
+-   Being ambitious
+-   Up to date with literature
+-   Work in network
+-   Develop self-confidence
+
+:::
+
+:::{.column width=50%} 
+
+Retrospective way
+
+-   Produce for general public
+-   Talk to media
+-   Get involved in political forum
+
+::: 
+
+:::
+
+## Interview
+
+:::: columns 
+
+:::{.column width=50%}
+
+![](https://i0.wp.com/oeco.org.br/wp-content/uploads/2022/03/O-pesquisador-Marcelo-Tabarelli.-Fonte-Thomas-Koziel-1.jpg?w=640&ssl=1)
+
+:::
+:::{.column width=50%}
+
+**Dr. Marcelo Tabarelli**
+
+Ecology, Biodiversity Conservation
+
+Brazil
+
+H index: 81	*Google Scholar
+
+:::
+::::
+
+## Trajectory
+
+:::: columns 
+
+:::{.column width=50%}
+
+![](libs/early_press.png)
+
+:::
+:::{.column width=50%}
+
+**Moving research areas**
+
+Agronomy to Ecology
+
+Match with personal world views
+
+**Independence and self learning**
+
+:::
+::::
+
+## Sharp thinking
+
+:::{.nonincremental}
+:::: columns 
+:::{.column width=50%}
+
+- Challenge with ambitious ideas
+- Understand the potential of your research
+- Self confidence
+
+:::
+:::{.column width=50%}
+
+![](libs/nature_taba.png)
+
+:::
+::::
+:::
+
+## Changing department culture
+
+:::{.nonincremental}
+:::: columns 
+:::{.column width=50%}
+
+- Disruptive research
+- Sharing of opportunities
+- Ambitious research program
+- "Carriage effect"
+
+:::
+:::{.column width=50%}
+
+![](libs/taba_humb.png)
+
+:::
+::::
+:::
+
+## Societal impact
+
+:::{.nonincremental}
+:::: columns 
+:::{.column width=50%}
+
+- Multi-sectorial action (NGOs, Gov, Private)
+- The need to become "important"
+- Good media contacts
+- Legacy for conservation
+
+:::
+:::{.column width=50%}
+
+![](libs/cepan_site.png)
+
+![](libs/cepan.png)
+
+:::
+::::
+:::
+
+## The end

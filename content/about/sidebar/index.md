@@ -17,7 +17,7 @@ link_list:
 - name: Associação Brasileira de Ciência Ecológica e Conservação
   url: https://www.abecor.org.br/
   
-- name: Centro de Pesquisas Ambeitnais do Nordeste  - CEPAN
+- name: Centro de Pesquisas Ambietnais do Nordeste  - CEPAN
   url: https://cepan.org.br
 
 ---

@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.108.0">
+<title>Presentation Ninja | Applied Ecology</title>
+
+
+<meta property="twitter:site" content="@apreshill">
+<meta property="twitter:creator" content="@apreshill">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="⚔&lt;br/&gt;with xaringan">
+
+
+<meta property="og:site_name" content="Applied Ecology">
+<meta property="og:title" content="Presentation Ninja | Applied Ecology">
+<meta property="og:description" content="⚔&lt;br/&gt;with xaringan" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="/slides_aulas/apresentacoes/ntu_april/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="/img/logo.png" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="/img/logo.png" >
+    
+  <meta itemprop="name" content="Presentation Ninja">
+<meta itemprop="description" content="background-image: url( https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+???
+Image credit: Wikimedia Commons
+class: inverse, center, middle
+Get Started Hello World Install the xaringan package from Github:
+remotes::install_github(&#34;yihui/xaringan&#34;) –
+You are recommended to use the RStudio IDE, but you do not have to.
+Create a new R Markdown document from the menu File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation;1 –
+Click the Knit button to compile it; –">
+
+<meta itemprop="wordCount" content="2282">
+<meta itemprop="keywords" content="" />
+  
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.92dfcd41e6de8ee9bdf4891b6db7aba055136f3e07bb0945cad731e21d441835.css" integrity="sha256-kt/NQebejum99IkbbberoFUTbz4HuwlFytcx4h1EGDU=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.497d999f2b48966a21ca2081707593f581b3fb3c76574127b91c7ef1f68ce29c.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
+      <img src="/img/logo.png" class="dib db-l h2 w-auto" alt="Applied Ecology">
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About me">About me</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Videos">Videos</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/collection/" title="Courses">Courses</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/contact/" title="Contact">Contact</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/press/" title="Press">Press</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Presentation Ninja</h1>
+        <h4 class="f4 mt0 mb4 lh-title measure">⚔&lt;br/&gt;with xaringan</h4>
+        
+        
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/proj4/proj4.min.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+<script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="/rmarkdown-libs/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery-3.6.0.min.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/crosstalk/js/crosstalk.min.js"></script>
+<p>background-image: url(
+<a href="https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg" target="_blank" rel="noopener">https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg</a>)</p>
+<p>???</p>
+<p>Image credit: 
+<a href="https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg" target="_blank" rel="noopener">Wikimedia Commons</a></p>
+<p>class: inverse, center, middle</p>
+
+
+
+
+<h1 id="get-started">Get Started
+  <a href="#get-started"></a>
+</h1>
+<hr>
+
+
+
+
+<h1 id="hello-world">Hello World
+  <a href="#hello-world"></a>
+</h1>
+<p>Install the <strong>xaringan</strong> package from 
+<a href="https://github.com/yihui/xaringan" target="_blank" rel="noopener">Github</a>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>remotes<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">install_github</span>(<span style="color:#d14">&#34;yihui/xaringan&#34;</span>)
+</span></span></code></pre></div><p>–</p>
+<p>You are recommended to use the 
+<a href="https://www.rstudio.com/products/rstudio/" target="_blank" rel="noopener">RStudio IDE</a>, but you do not have to.</p>
+<ul>
+<li>Create a new R Markdown document from the menu <code>File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation</code>;<sup>1</sup></li>
+</ul>
+<p>–</p>
+<ul>
+<li>Click the <code>Knit</code> button to compile it;</li>
+</ul>
+<p>–</p>
+<ul>
+<li>or use the 
+<a href="https://rstudio.github.io/rstudioaddins/" target="_blank" rel="noopener">RStudio Addin</a><sup>2</sup> “Infinite Moon Reader” to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.</li>
+</ul>
+<p>.footnote[
+[1] 中文用户请看
+<a href="https://slides.yihui.org/xaringan/zh-CN.html" target="_blank" rel="noopener">这份教程</a></p>
+<p>[2] See 
+<a href="https://github.com/yihui/xaringan/issues/2" target="_blank" rel="noopener">#2</a> if you do not see the template or addin in RStudio.
+]</p>
+
+
+
+
+<h1 id="hello-ninja">Hello Ninja
+  <a href="#hello-ninja"></a>
+</h1>
+<p>As a presentation ninja, you certainly should not be satisfied by the “Hello World” example. You need to understand more about two things:</p>
+<ol>
+<li>
+<p>The 
+<a href="https://remarkjs.com" target="_blank" rel="noopener">remark.js</a> library;</p>
+</li>
+<li>
+<p>The <strong>xaringan</strong> package;</p>
+</li>
+</ol>
+<p>Basically <strong>xaringan</strong> injected the chakra of R Markdown (minus Pandoc) into <strong>remark.js</strong>. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (<strong>knitr</strong>).</p>
+<hr>
+
+
+
+
+<h1 id="remarkjs">remark.js
+  <a href="#remarkjs"></a>
+</h1>
+<p>You can see an introduction of remark.js from 
+<a href="https://remarkjs.com" target="_blank" rel="noopener">its homepage</a>. You should read the 
+<a href="https://github.com/gnab/remark/wiki" target="_blank" rel="noopener">remark.js Wiki</a> at least once to know how to</p>
+<ul>
+<li>
+<p>create a new slide (Markdown syntax<sup>*</sup> and slide properties);</p>
+</li>
+<li>
+<p>format a slide (e.g. text alignment);</p>
+</li>
+<li>
+<p>configure the slideshow;</p>
+</li>
+<li>
+<p>and use the presentation (keyboard shortcuts).</p>
+</li>
+</ul>
+<p>It is important to be familiar with remark.js before you can understand the options in <strong>xaringan</strong>.</p>
+<p>.footnote[[*] It is different with Pandoc’s Markdown! It is limited but should be enough for presentation purposes. Come on… You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js 
+<a href="https://github.com/gnab/remark/issues/142" target="_blank" rel="noopener">may be improved</a> in the future.]</p>
+<p>class: inverse, middle, center</p>
+
+
+
+
+<h1 id="using-xaringan">Using xaringan
+  <a href="#using-xaringan"></a>
+</h1>
+<hr>
+
+
+
+
+<h1 id="xaringan">xaringan
+  <a href="#xaringan"></a>
+</h1>
+<p>Provides an R Markdown output format <code>xaringan::moon_reader</code> as a wrapper for remark.js, and you can use it in the YAML metadata, e.g.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#555">---</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">title</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;A Cool Presentation&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">yolo</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">nature</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#000080">autoplay</span>:<span style="color:#bbb"> </span><span style="color:#099">30000</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#555">---</span><span style="color:#bbb">
+</span></span></span></code></pre></div><p>See the help page <code>?xaringan::moon_reader</code> for all possible options that you can use.</p>
+<hr>
+
+
+
+
+<h1 id="remarkjs-vs-xaringan">remark.js vs xaringan
+  <a href="#remarkjs-vs-xaringan"></a>
+</h1>
+<p>Some differences between using remark.js (left) and using <strong>xaringan</strong> (right):</p>
+<p>.pull-left[</p>
+<ol>
+<li>
+<p>Start with a boilerplate HTML file;</p>
+</li>
+<li>
+<p>Plain Markdown;</p>
+</li>
+<li>
+<p>Write JavaScript to autoplay slides;</p>
+</li>
+<li>
+<p>Manually configure MathJax;</p>
+</li>
+<li>
+<p>Highlight code with <code>*</code>;</p>
+</li>
+<li>
+<p>Edit Markdown source and refresh browser to see updated slides;
+]</p>
+</li>
+</ol>
+<p>.pull-right[</p>
+<ol>
+<li>
+<p>Start with an R Markdown document;</p>
+</li>
+<li>
+<p>R Markdown (can embed R/other code chunks);</p>
+</li>
+<li>
+<p>Provide an option <code>autoplay</code>;</p>
+</li>
+<li>
+<p>MathJax just works;<sup>*</sup></p>
+</li>
+<li>
+<p>Highlight code with <code>{{}}</code>;</p>
+</li>
+<li>
+<p>The RStudio addin “Infinite Moon Reader” automatically refreshes slides on changes;
+]</p>
+</li>
+</ol>
+<p>.footnote[[*] Not really. See next page.]</p>
+<hr>
+
+
+
+
+<h1 id="math-expressions">Math Expressions
+  <a href="#math-expressions"></a>
+</h1>
+<p>You can write LaTeX math expressions inside a pair of dollar signs, e.g. $+$ renders <code>\(\alpha+\beta\)</code>. You can use the display style with double dollar signs:</p>
+<pre><code>$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
+</code></pre>
+<p><code>$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$</code></p>
+<p>Limitations:</p>
+<ol>
+<li>
+<p>The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting <code>$$</code> must appear in the very beginning of a line, followed immediately by a non-space character, and the ending <code>$$</code> must be at the end of a line, led by a non-space character;</p>
+</li>
+<li>
+<p>There should not be spaces after the opening <code>$</code> or before the closing <code>$</code>.</p>
+</li>
+<li>
+<p>Math does not work on the title slide (see 
+<a href="https://github.com/yihui/xaringan/issues/61" target="_blank" rel="noopener">#61</a> for a workaround).</p>
+</li>
+</ol>
+<hr>
+
+
+
+
+<h1 id="r-code">R Code
+  <a href="#r-code"></a>
+</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># a boring regression</span>
+</span></span><span style="display:flex;"><span>fit <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">lm</span>(dist <span style="color:#000;font-weight:bold">~</span> <span style="color:#099">1</span> <span style="color:#000;font-weight:bold">+</span> speed, data <span style="color:#000;font-weight:bold">=</span> cars)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">coef</span>(<span style="color:#900;font-weight:bold">summary</span>(fit))
+</span></span></code></pre></div><pre><code>#               Estimate Std. Error   t value     Pr(&gt;|t|)
+# (Intercept) -17.579095  6.7584402 -2.601058 1.231882e-02
+# speed         3.932409  0.4155128  9.463990 1.489836e-12
+</code></pre>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dojutsu <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#d14">&#39;地爆天星&#39;</span>, <span style="color:#d14">&#39;天照&#39;</span>, <span style="color:#d14">&#39;加具土命&#39;</span>, <span style="color:#d14">&#39;神威&#39;</span>, <span style="color:#d14">&#39;須佐能乎&#39;</span>, <span style="color:#d14">&#39;無限月読&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">grep</span>(<span style="color:#d14">&#39;天&#39;</span>, dojutsu, value <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
+</span></span></code></pre></div><pre><code># [1] &quot;地爆天星&quot; &quot;天照&quot;
+</code></pre>
+<hr>
+
+
+
+
+<h1 id="r-plots">R Plots
+  <a href="#r-plots"></a>
+</h1>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">par</span>(mar <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">c</span>(<span style="color:#099">4</span>, <span style="color:#099">4</span>, <span style="color:#099">1</span>, <span style="color:#099">.1</span>))
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(cars, pch <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">19</span>, col <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;darkgray&#39;</span>, las <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">abline</span>(fit, lwd <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>)
+</span></span></code></pre></div><img src="/slides_aulas/apresentacoes/NTU_april_files/figure-html/cars-1.svg" width="672" />
+<hr>
+
+
+
+
+<h1 id="tables">Tables
+  <a href="#tables"></a>
+</h1>
+<p>If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>knitr<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">kable</span>(<span style="color:#900;font-weight:bold">head</span>(iris), format <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;html&#39;</span>)
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:right;">
+Sepal.Length
+</th>
+<th style="text-align:right;">
+Sepal.Width
+</th>
+<th style="text-align:right;">
+Petal.Length
+</th>
+<th style="text-align:right;">
+Petal.Width
+</th>
+<th style="text-align:left;">
+Species
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+5.1
+</td>
+<td style="text-align:right;">
+3.5
+</td>
+<td style="text-align:right;">
+1.4
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4.9
+</td>
+<td style="text-align:right;">
+3.0
+</td>
+<td style="text-align:right;">
+1.4
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4.7
+</td>
+<td style="text-align:right;">
+3.2
+</td>
+<td style="text-align:right;">
+1.3
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4.6
+</td>
+<td style="text-align:right;">
+3.1
+</td>
+<td style="text-align:right;">
+1.5
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5.0
+</td>
+<td style="text-align:right;">
+3.6
+</td>
+<td style="text-align:right;">
+1.4
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5.4
+</td>
+<td style="text-align:right;">
+3.9
+</td>
+<td style="text-align:right;">
+1.7
+</td>
+<td style="text-align:right;">
+0.4
+</td>
+<td style="text-align:left;">
+setosa
+</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+
+
+
+<h1 id="html-widgets">HTML Widgets
+  <a href="#html-widgets"></a>
+</h1>
+<p>I have not thoroughly tested HTML widgets against <strong>xaringan</strong>. Some may work well, and some may not. It is a little tricky.</p>
+<p>Similarly, the Shiny mode (<code>runtime: shiny</code>) does not work. I might get these issues fixed in the future, but these are not of high priority to me. I never turn my presentation into a Shiny app. When I need to demonstrate more complicated examples, I just launch them separately. It is convenient to share slides with other people when they are plain HTML/JS applications.</p>
+<p>See the next page for two HTML widgets.</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(leaflet)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">leaflet</span>() <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">addTiles</span>() <span style="color:#000;font-weight:bold">%&gt;%</span> <span style="color:#900;font-weight:bold">setView</span>(<span style="color:#099">-93.65</span>, <span style="color:#099">42.0285</span>, zoom <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">17</span>)
+</span></span></code></pre></div><div class="leaflet html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-1" style="width:100%;height:576px;"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]}],"setView":[[42.0285,-93.65],17,[]]},"evals":[],"jsHooks":[]}</script>
+<hr>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>DT<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">datatable</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">head</span>(iris, <span style="color:#099">10</span>),
+</span></span><span style="display:flex;"><span>  fillContainer <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">FALSE</span>, options <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">list</span>(pageLength <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">8</span>)
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<hr>
+
+
+
+
+<h1 id="some-tips">Some Tips
+  <a href="#some-tips"></a>
+</h1>
+<ul>
+<li>
+<p>Do not forget to try the <code>yolo</code> option of <code>xaringan::moon_reader</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">yolo</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<hr>
+
+
+
+
+<h1 id="some-tips-1">Some Tips
+  <a href="#some-tips-1"></a>
+</h1>
+<ul>
+<li>
+<p>Slides can be automatically played if you set the <code>autoplay</code> option under <code>nature</code>, e.g. go to the next slide every 30 seconds in a lightning talk:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">nature</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#000080">autoplay</span>:<span style="color:#bbb"> </span><span style="color:#099">30000</span><span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+<li>
+<p>If you want to restart the play after it reaches the last slide, you may set the sub-option <code>loop</code> to TRUE, e.g.,</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">nature</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#000080">autoplay</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#000080">interval</span>:<span style="color:#bbb"> </span><span style="color:#099">30000</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#000080">loop</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<hr>
+
+
+
+
+<h1 id="some-tips-2">Some Tips
+  <a href="#some-tips-2"></a>
+</h1>
+<ul>
+<li>
+<p>A countdown timer can be added to every page of the slides using the <code>countdown</code> option under <code>nature</code>, e.g. if you want to spend one minute on every page when you give the talk, you can set:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">nature</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#000080">countdown</span>:<span style="color:#bbb"> </span><span style="color:#099">60000</span><span style="color:#bbb">
+</span></span></span></code></pre></div><p>Then you will see a timer counting down from <code>01:00</code>, to <code>00:59</code>, <code>00:58</code>, … When the time is out, the timer will continue but the time turns red.</p>
+</li>
+</ul>
+<hr>
+
+
+
+
+<h1 id="some-tips-3">Some Tips
+  <a href="#some-tips-3"></a>
+</h1>
+<ul>
+<li>
+<p>The title slide is created automatically by <strong>xaringan</strong>, but it is just another remark.js slide added before your other slides.</p>
+<p>The title slide is set to <code>class: center, middle, inverse, title-slide</code> by default. You can change the classes applied to the title slide with the <code>titleSlideClass</code> option of <code>nature</code> (<code>title-slide</code> is always applied).</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">nature</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#000080">titleSlideClass</span>:<span style="color:#bbb"> </span>[top, left, inverse]<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<p>–</p>
+<ul>
+<li>
+<p>If you’d like to create your own title slide, disable <strong>xaringan</strong>’s title slide with the <code>seal = FALSE</code> option of <code>moon_reader</code>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">seal</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">false</span><span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+</ul>
+<hr>
+
+
+
+
+<h1 id="some-tips-4">Some Tips
+  <a href="#some-tips-4"></a>
+</h1>
+<ul>
+<li>
+<p>There are several ways to build incremental slides. See 
+<a href="https://slides.yihui.org/xaringan/incremental.html" target="_blank" rel="noopener">this presentation</a> for examples.</p>
+</li>
+<li>
+<p>The option <code>highlightLines: true</code> of <code>nature</code> will highlight code lines that start with <code>*</code>, or are wrapped in <code>{{ }}</code>, or have trailing comments <code>#&lt;&lt;</code>;</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">nature</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#000080">highlightLines</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span></code></pre></div><p>See examples on the next page.</p>
+</li>
+</ul>
+<hr>
+
+
+
+
+<h1 id="some-tips-5">Some Tips
+  <a href="#some-tips-5"></a>
+</h1>
+<p>.pull-left[
+An example using a leading <code>*</code>:</p>
+<pre><code>```r
+if (TRUE) {
+** message(&quot;Very important!&quot;)
+}
+```
+</code></pre>
+<p>Output:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">if </span>(<span style="color:#000;font-weight:bold">TRUE</span>) {
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">*</span> <span style="color:#900;font-weight:bold">message</span>(<span style="color:#d14">&#34;Very important!&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>This is invalid R code, so it is a plain fenced code block that is not executed.
+]</p>
+<p>.pull-right[
+An example using <code>{{}}</code>:</p>
+<pre><code>```{r tidy=FALSE}
+if (TRUE) {
+*{{ message(&quot;Very important!&quot;) }}
+}
+```
+</code></pre>
+<p>Output:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">if </span>(<span style="color:#000;font-weight:bold">TRUE</span>) {
+</span></span><span style="display:flex;"><span>{{ <span style="color:#900;font-weight:bold">message</span>(<span style="color:#d14">&#34;Very important!&#34;</span>) }}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><pre><code>## Very important!
+</code></pre>
+<p>It is valid R code so you can run it. Note that <code>{{}}</code> can wrap an R expression of multiple lines.
+]</p>
+<hr>
+
+
+
+
+<h1 id="some-tips-6">Some Tips
+  <a href="#some-tips-6"></a>
+</h1>
+<p>An example of using the trailing comment <code>#&lt;&lt;</code> to highlight lines:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>```{r tidy=FALSE}
+</span></span><span style="display:flex;"><span>library(ggplot2)
+</span></span><span style="display:flex;"><span>ggplot(mtcars) + 
+</span></span><span style="display:flex;"><span>  aes(mpg, disp) + 
+</span></span><span style="display:flex;"><span>  geom_point() +   #<span style="color:#a61717;background-color:#e3d2d2">&lt;</span>&lt;
+</span></span><span style="display:flex;"><span>  <span style="color:#000080">geom_smooth</span><span style="color:#a61717;background-color:#e3d2d2">()</span>    <span style="color:#a61717;background-color:#e3d2d2">#&lt;&lt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">```</span>
+</span></span></code></pre></div><p>Output:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(ggplot2)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>(mtcars) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">aes</span>(mpg, disp) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_point</span>() <span style="color:#000;font-weight:bold">+</span>   <span style="color:#998;font-style:italic">#&lt;&lt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_smooth</span>()    <span style="color:#998;font-style:italic">#&lt;&lt;</span>
+</span></span></code></pre></div><hr>
+
+
+
+
+<h1 id="some-tips-7">Some Tips
+  <a href="#some-tips-7"></a>
+</h1>
+<p>When you enable line-highlighting, you can also use the chunk option <code>highlight.output</code> to highlight specific lines of the text output from a code chunk. For example, <code>highlight.output = TRUE</code> means highlighting all lines, and <code>highlight.output = c(1, 3)</code> means highlighting the first and third line.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>```{r, highlight.output=c(1, 3)}
+</span></span><span style="display:flex;"><span>head(iris)
+</span></span><span style="display:flex;"><span>```
+</span></span></code></pre></div><pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa
+</code></pre>
+<p>Question: what does <code>highlight.output = c(TRUE, FALSE)</code> mean? (Hint: think about R’s recycling of vectors)</p>
+<hr>
+
+
+
+
+<h1 id="some-tips-8">Some Tips
+  <a href="#some-tips-8"></a>
+</h1>
+<ul>
+<li>
+<p>To make slides work offline, you need to download a copy of remark.js in advance, because <strong>xaringan</strong> uses the online version by default (see the help page <code>?xaringan::moon_reader</code>).</p>
+</li>
+<li>
+<p>You can use <code>xaringan::summon_remark()</code> to download the latest or a specified version of remark.js. By default, it is downloaded to <code>libs/remark-latest.min.js</code>.</p>
+</li>
+<li>
+<p>Then change the <code>chakra</code> option in YAML to point to this file, e.g.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">chakra</span>:<span style="color:#bbb"> </span>libs/remark-latest.min.js<span style="color:#bbb">
+</span></span></span></code></pre></div></li>
+<li>
+<p>If you used Google fonts in slides (the default theme uses <em>Yanone Kaffeesatz</em>, <em>Droid Serif</em>, and <em>Source Code Pro</em>), they won’t work offline unless you download or install them locally. The Heroku app 
+<a href="https://google-webfonts-helper.herokuapp.com/fonts" target="_blank" rel="noopener">google-webfonts-helper</a> can help you download fonts and generate the necessary CSS.</p>
+</li>
+</ul>
+<hr>
+
+
+
+
+<h1 id="macros">Macros
+  <a href="#macros"></a>
+</h1>
+<ul>
+<li>
+<p>remark.js 
+<a href="https://github.com/yihui/xaringan/issues/80" target="_blank" rel="noopener">allows users to define custom macros</a> (JS functions) that can be applied to Markdown text using the syntax <code>![:macroName arg1, arg2, ...]</code> or <code>![:macroName arg1, arg2, ...](this)</code>. For example, before remark.js initializes the slides, you can define a macro named <code>scale</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>remark.macros.scale <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">function</span> (percentage) {
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">var</span> url <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">this</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#39;&lt;img src=&#34;&#39;</span> <span style="color:#000;font-weight:bold">+</span> url <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;&#34; style=&#34;width: &#39;</span> <span style="color:#000;font-weight:bold">+</span> percentage <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;&#34; /&gt;&#39;</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>Then the Markdown text</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#000080">:scale 50%</span>](<span style="color:#008080">image.jpg</span>)
+</span></span></code></pre></div><p>will be translated to</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#000080">img</span> <span style="color:#008080">src</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;image.jpg&#34;</span> <span style="color:#008080">style</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;width: 50%&#34;</span> /&gt;
+</span></span></code></pre></div></li>
+</ul>
+<hr>
+
+
+
+
+<h1 id="macros-continued">Macros (continued)
+  <a href="#macros-continued"></a>
+</h1>
+<ul>
+<li>
+<p>To insert macros in <strong>xaringan</strong> slides, you can use the option <code>beforeInit</code> under the option <code>nature</code>, e.g.,</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">nature</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">      </span><span style="color:#000080">beforeInit</span>:<span style="color:#bbb"> </span><span style="color:#d14">&#34;macros.js&#34;</span><span style="color:#bbb">
+</span></span></span></code></pre></div><p>You save your remark.js macros in the file <code>macros.js</code>.</p>
+</li>
+<li>
+<p>The <code>beforeInit</code> option can be used to insert arbitrary JS code before <code>remark.create()</code>. Inserting macros is just one of its possible applications.</p>
+</li>
+</ul>
+<hr>
+
+
+
+
+<h1 id="css">CSS
+  <a href="#css"></a>
+</h1>
+<p>Among all options in <code>xaringan::moon_reader</code>, the most challenging but perhaps also the most rewarding one is <code>css</code>, because it allows you to customize the appearance of your slides using any CSS rules or hacks you know.</p>
+<p>You can see the default CSS file 
+<a href="https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css" target="_blank" rel="noopener">here</a>. You can completely replace it with your own CSS files, or define new rules to override the default. See the help page <code>?xaringan::moon_reader</code> for more information.</p>
+<hr>
+
+
+
+
+<h1 id="css-1">CSS
+  <a href="#css-1"></a>
+</h1>
+<p>For example, suppose you want to change the font for code from the default “Source Code Pro” to “Ubuntu Mono”. You can create a CSS file named, say, <code>ubuntu-mono.css</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#000;font-weight:bold">import</span> <span style="color:#000080">url</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000080">https</span><span style="color:#000;font-weight:bold">://</span><span style="color:#000080">fonts</span>.<span style="color:#458;font-weight:bold">googleapis</span>.<span style="color:#458;font-weight:bold">com</span><span style="color:#000;font-weight:bold">/</span><span style="color:#000080">css</span><span style="color:#000;font-weight:bold">?</span><span style="color:#000080">family</span><span style="color:#000;font-weight:bold">=</span><span style="color:#000080">Ubuntu</span><span style="color:#000;font-weight:bold">+</span><span style="color:#000080">Mono</span>:<span style="color:#3c5d5d;font-weight:bold">400</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000080">700</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000080">400italic</span><span style="color:#000;font-weight:bold">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>.<span style="color:#458;font-weight:bold">remark-code</span><span style="color:#000;font-weight:bold">,</span> .<span style="color:#458;font-weight:bold">remark-inline-code</span> { <span style="color:#000;font-weight:bold">font-family</span>: <span style="color:#d14">&#39;Ubuntu Mono&#39;</span>; }
+</span></span></code></pre></div><p>Then set the <code>css</code> option in the YAML metadata:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">css</span>:<span style="color:#bbb"> </span>[<span style="color:#d14">&#34;default&#34;</span>,<span style="color:#bbb"> </span><span style="color:#d14">&#34;ubuntu-mono.css&#34;</span>]<span style="color:#bbb">
+</span></span></span></code></pre></div><p>Here I assume <code>ubuntu-mono.css</code> is under the same directory as your Rmd.</p>
+<p>See 
+<a href="https://github.com/yihui/xaringan/issues/83" target="_blank" rel="noopener">yihui/xaringan#83</a> for an example of using the 
+<a href="https://github.com/tonsky/FiraCode" target="_blank" rel="noopener">Fira Code</a> font, which supports ligatures in program code.</p>
+<hr>
+
+
+
+
+<h1 id="css-with-sass">CSS (with Sass)
+  <a href="#css-with-sass"></a>
+</h1>
+<p><strong>xaringan</strong> also supports Sass support via <strong>rmarkdown</strong>. Suppose you want to use the same color for different elements, e.g., first heading and bold text. You can create a <code>.scss</code> file, say <code>mytheme.scss</code>, using the 
+<a href="https://sass-lang.com/" target="_blank" rel="noopener">sass</a> syntax with variables:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#008080">$mycolor</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#099">#ff0000</span>; 
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">.remark-slide-content</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000080">h1</span> { <span style="color:#008080">color</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#008080">$mycolor</span>; }
+</span></span><span style="display:flex;"><span><span style="color:#458;font-weight:bold">.remark-slide-content</span> <span style="color:#000080">strong</span> { <span style="color:#008080">color</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#008080">$mycolor</span>; }
+</span></span></code></pre></div><p>Then set the <code>css</code> option in the YAML metadata using this file placed under the same directory as your Rmd:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">css</span>:<span style="color:#bbb"> </span>[<span style="color:#d14">&#34;default&#34;</span>,<span style="color:#bbb"> </span><span style="color:#d14">&#34;mytheme.scss&#34;</span>]<span style="color:#bbb">
+</span></span></span></code></pre></div><p>This requires <strong>rmarkdown</strong> &gt;= 2.8 and the 
+<a href="https://rstudio.github.io/sass/" target="_blank" rel="noopener"><strong>sass</strong></a> package. You can learn more about <strong>rmarkdown</strong> and <strong>sass</strong> support in 
+<a href="https://blog.rstudio.com/2021/04/15/2021-spring-rmd-news/#sass-and-scss-support-for-html-based-output" target="_blank" rel="noopener">this blog post</a> and in 
+<a href="https://rstudio.github.io/sass/articles/sass.html" target="_blank" rel="noopener"><strong>sass</strong> overview vignette</a>.</p>
+<hr>
+
+
+
+
+<h1 id="themes">Themes
+  <a href="#themes"></a>
+</h1>
+<p>Don’t want to learn CSS? Okay, you can use some user-contributed themes. A theme typically consists of two CSS files <code>foo.css</code> and <code>foo-fonts.css</code>, where <code>foo</code> is the theme name. Below are some existing themes:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">names</span>(xaringan<span style="color:#000;font-weight:bold">:::</span><span style="color:#900;font-weight:bold">list_css</span>())
+</span></span></code></pre></div><pre><code>##  [1] &quot;chocolate-fonts&quot;  &quot;chocolate&quot;        &quot;default-fonts&quot;   
+##  [4] &quot;default&quot;          &quot;duke-blue&quot;        &quot;fc-fonts&quot;        
+##  [7] &quot;fc&quot;               &quot;glasgow_template&quot; &quot;hygge-duke&quot;      
+## [10] &quot;hygge&quot;            &quot;ki-fonts&quot;         &quot;ki&quot;              
+## [13] &quot;kunoichi&quot;         &quot;lucy-fonts&quot;       &quot;lucy&quot;            
+## [16] &quot;metropolis-fonts&quot; &quot;metropolis&quot;       &quot;middlebury-fonts&quot;
+## [19] &quot;middlebury&quot;       &quot;nhsr-fonts&quot;       &quot;nhsr&quot;            
+## [22] &quot;ninjutsu&quot;         &quot;rladies-fonts&quot;    &quot;rladies&quot;         
+## [25] &quot;robot-fonts&quot;      &quot;robot&quot;            &quot;rutgers-fonts&quot;   
+## [28] &quot;rutgers&quot;          &quot;shinobi&quot;          &quot;tamu-fonts&quot;      
+## [31] &quot;tamu&quot;             &quot;uio-fonts&quot;        &quot;uio&quot;             
+## [34] &quot;uo-fonts&quot;         &quot;uo&quot;               &quot;uol-fonts&quot;       
+## [37] &quot;uol&quot;              &quot;useR-fonts&quot;       &quot;useR&quot;            
+## [40] &quot;uwm-fonts&quot;        &quot;uwm&quot;              &quot;wic-fonts&quot;       
+## [43] &quot;wic&quot;
+</code></pre>
+<hr>
+
+
+
+
+<h1 id="themes-1">Themes
+  <a href="#themes-1"></a>
+</h1>
+<p>To use a theme, you can specify the <code>css</code> option as an array of CSS filenames (without the <code>.css</code> extensions), e.g.,</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000080">output</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">xaringan::moon_reader</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#000080">css</span>:<span style="color:#bbb"> </span>[default, metropolis, metropolis-fonts]<span style="color:#bbb">
+</span></span></span></code></pre></div><p>If you want to contribute a theme to <strong>xaringan</strong>, please read 
+<a href="https://yihui.org/en/2017/10/xaringan-themes" target="_blank" rel="noopener">this blog post</a>.</p>
+<p>background-image: url(
+<a href="https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg" target="_blank" rel="noopener">https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg</a>)
+background-size: 100px
+background-position: 90% 8%</p>
+
+
+
+
+<h1 id="sharingan">Sharingan
+  <a href="#sharingan"></a>
+</h1>
+<p>The R package name <strong>xaringan</strong> was derived<sup>1</sup> from <strong>Sharingan</strong>, a dōjutsu in the Japanese anime <em>Naruto</em> with two abilities:</p>
+<ul>
+<li>
+<p>the “Eye of Insight”</p>
+</li>
+<li>
+<p>the “Eye of Hypnotism”</p>
+</li>
+</ul>
+<p>I think a presentation is basically a way to communicate insights to the audience, and a great presentation may even “hypnotize” the audience.<sup>2,3</sup></p>
+<p>.footnote[
+[1] In Chinese, the pronounciation of <em>X</em> is <em>Sh</em> /ʃ/ (as in <em>shrimp</em>). Now you should have a better idea of how to pronounce my last name <em>Xie</em>.</p>
+<p>[2] By comparison, bad presentations only put the audience to sleep.</p>
+<p>[3] Personally I find that setting background images for slides is a killer feature of remark.js. It is an effective way to bring visual impact into your presentations.
+]</p>
+<hr>
+
+
+
+
+<h1 id="naruto-terminology">Naruto terminology
+  <a href="#naruto-terminology"></a>
+</h1>
+<p>The <strong>xaringan</strong> package borrowed a few terms from Naruto, such as</p>
+<ul>
+<li>
+<p>
+<a href="https://naruto.fandom.com/wiki/Sharingan" target="_blank" rel="noopener">Sharingan</a> (写輪眼; the package name)</p>
+</li>
+<li>
+<p>The 
+<a href="https://naruto.fandom.com/wiki/Moon_Reader" target="_blank" rel="noopener">moon reader</a> (月読; an attractive R Markdown output format)</p>
+</li>
+<li>
+<p>
+<a href="https://naruto.fandom.com/wiki/Chakra" target="_blank" rel="noopener">Chakra</a> (查克拉; the path to the remark.js library, which is the power to drive the presentation)</p>
+</li>
+<li>
+<p>
+<a href="https://naruto.fandom.com/wiki/Nature_Transformation" target="_blank" rel="noopener">Nature transformation</a> (性質変化; transform the chakra by setting different options)</p>
+</li>
+<li>
+<p>The 
+<a href="https://naruto.fandom.com/wiki/Infinite_Tsukuyomi" target="_blank" rel="noopener">infinite moon reader</a> (無限月読; start a local web server to continuously serve your slides)</p>
+</li>
+<li>
+<p>The 
+<a href="https://naruto.fandom.com/wiki/Summoning_Technique" target="_blank" rel="noopener">summoning technique</a> (download remark.js from the web)</p>
+</li>
+</ul>
+<p>You can click the links to know more about them if you want. The jutsu “Moon Reader” may seem a little evil, but that does not mean your slides are evil.</p>
+<hr>
+<p>class: center</p>
+
+
+
+
+<h1 id="hand-seals-印">Hand seals (印)
+  <a href="#hand-seals-%e5%8d%b0"></a>
+</h1>
+<p>Press <code>h</code> or <code>?</code> to see the possible ninjutsu you can use in remark.js.</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mudra-Naruto-KageBunshin.svg" alt=""></p>
+<hr>
+<p>class: center, middle</p>
+
+
+
+
+<h1 id="thanks">Thanks!
+  <a href="#thanks"></a>
+</h1>
+<p>Slides created via the R package 
+<a href="https://github.com/yihui/xaringan" target="_blank" rel="noopener"><strong>xaringan</strong></a>.</p>
+<p>The chakra comes from 
+<a href="https://remarkjs.com" target="_blank" rel="noopener">remark.js</a>, 
+<a href="https://yihui.org/knitr/" target="_blank" rel="noopener"><strong>knitr</strong></a>, and 
+<a href="https://rmarkdown.rstudio.com" target="_blank" rel="noopener">R Markdown</a>.</p>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">January 1, 0001</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">11 minute read, 2282 words</dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+    <a class="prev dtc pr2 tl v-top fw6"
+    href="/slides_aulas/apresentacoes/redaa_ntu-cerk/">&larr; BioRestNet: A Network for Biocultural Restoration</a>
+  
+  
+  
+</div>
+
+      </footer>
+    </article>
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2024 RStudio, Anywhere
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/fplmelo" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/FelipePLMelo" title="twitter" target="_blank" rel="me noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://scholar.google.com.br/citations?user=ytoqEukAAAAJ&amp;hl=pt-BR" title="google-scholar" target="_blank" rel="me noopener">
+      <i class="ai ai-google-scholar fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://orcid.org/0000-0002-1271-3214" title="orcid" target="_blank" rel="me noopener">
+      <i class="ai ai-orcid fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://publons.com/researcher/1509340/felipe-pl-melo/" title="publons" target="_blank" rel="me noopener">
+      <i class="ai ai-publons fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://www.scopus.com/authid/detail.uri?authorId=7005124694" title="elsevier" target="_blank" rel="me noopener">
+      <i class="ai ai-elsevier fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="http://lattes.cnpq.br/1637874338382368" title="lattes" target="_blank" rel="me noopener">
+      <i class="ai ai-lattes fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+      <a class="dib pv1 ph2 link" href="/license/" title="License">License</a>
+      
+      <a class="dib pv1 ph2 link" href="/contact/" title="Contact form">Contact</a>
+      
+      <a class="dib pv1 ph2 link" href="/contributors/" title="Contributors">Contributors</a>
+      
+    </div>
+  </nav>
+  
+    <script>
+
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (let i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) ||
+            /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  
+          continue;
+        }
+      }
+      i++;
+    }
+</script>
+
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+    
+  
+  
+</footer>
+
+      </div>
+    </body>
+</html>

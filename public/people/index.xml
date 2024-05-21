@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>People on Applied Ecology</title>
+    <link>/people/</link>
+    <description>Recent content in People on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="/people/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arthur André de Barros Rodrigues</title>
+      <link>/people/arthur-rodrigues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/people/arthur-rodrigues/</guid>
+      <description>Arthur&amp;rsquo;s CV Lattes PPG Etnobiologia e Conservação
+Current Research I am currently finishing my undergraduate degree and have developed my Course Conclusion Work aiming to understand how dispersal patterns are affected by supra-annual seed fragmentation and reproduction in an area of semideciduous tropical forest in the state of Quintana Roo, Mexico. Using data collected by Melo et al., 2010 I analyzed the effective diversity of the region and built GLM&amp;rsquo;s to indicate the relationship between the independent (fragment area and year) and dependent variables (Hills diversity in its three exponents).</description>
+    </item>
+    
+    <item>
+      <title>José Vagner Rebouças Filho</title>
+      <link>/people/v%C3%A1gner-rebou%C3%A7as/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/people/v%C3%A1gner-rebou%C3%A7as/</guid>
+      <description>Bio I have a degree in Biological Sciences and a Master in Natural Sciences from the State University of Ceará, where I worked with monitoring of invasive species in the Caatinga. I&amp;rsquo;m currently doing a PhD in Plant Biology at the Federal University of Pernambuco, where I develop research on the role of exotic plants in socio-ecological systems in the Caatinga. In addition, I am a founding member and content producer on the @identplantas page on instagram, which focuses on teaching taxonomic identification to train professionals to work in the environmental area of flora through courses, lectures and thematic events in the field of botany.</description>
+    </item>
+    
+    <item>
+      <title>Lucas Alencar</title>
+      <link>/people/lucas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/people/lucas/</guid>
+      <description>Lucas&amp;rsquo; CV Lattes Lucas&amp;rsquo; Twitter Lucas&amp;rsquo; email
+Bio I graduated in Biological Sciences with an emphasis on Environmental Sciences at the Federal University of Pernambuco. I completed my Master&amp;rsquo;s Degree in Ecology at the National Institute of Amazonian Research, working with landscape ecology and deforestation patterns in the Amazon. I am interested in the areas of socioecology, landscape ecology, land use and land cover and sustainability. I am also interested in using tools such as R and geotechnologies.</description>
+    </item>
+    
+  </channel>
+</rss>

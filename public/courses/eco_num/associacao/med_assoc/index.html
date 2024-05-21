@@ -38,9 +38,9 @@
 
 
     
-        <meta property="og:image" content="/img/papillons.jpg" >
+        <meta property="og:image" content="/img/logo.png" >
         <meta property="twitter:card" content="summary_large_image">
-        <meta name="twitter:image" content="/img/papillons.jpg" >
+        <meta name="twitter:image" content="/img/logo.png" >
     
   <meta itemprop="name" content="Medidas de Associação">
 <meta itemprop="description" content="Na ecologia usamos muitas medidas que fazem uma ligação entre pares de dados. Esses pares de dados podem ser espécies, ou locais de coleta. Há uma enorme variedade de métricas que vão nos oferecer uma medida de associação entre pares. Essas medidas são reportadas na forma de índices ou métricas que têm naturezas distintas, mas todas tem a particularidade de gerar uma matriz quadrada e simétrica de dimensões n x n quando se comparam objetos ou p x p quando se comparam variáveis (as letras são conveções)."><meta itemprop="datePublished" content="2022-08-23T00:00:00+00:00" />
@@ -54,27 +54,27 @@
   <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
   
   
-  <link rel="stylesheet" href="/style.main.min.508aa34bb4fa7ebfddd6892a4ec251e1ce46ad0e0c5be6380abc84336f01b14e.css" integrity="sha256-UIqjS7T6fr/d1okqTsJR4c5GrQ4MW&#43;Y4CryEM28BsU4=" media="screen">
+  <link rel="stylesheet" href="/style.main.min.92dfcd41e6de8ee9bdf4891b6db7aba055136f3e07bb0945cad731e21d441835.css" integrity="sha256-kt/NQebejum99IkbbberoFUTbz4HuwlFytcx4h1EGDU=" media="screen">
   
   
   <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
   
   
-  <script src="/main.min.b98a7a2516e17eff5e237d2ab610df0b5b9fdfda6184f0231dd7a1c3841c19c2.js" type="text/javascript"></script>
+  <script src="/main.min.497d999f2b48966a21ca2081707593f581b3fb3c76574127b91c7ef1f68ce29c.js" type="text/javascript"></script>
 </head>
 <body>
-      <div class="grid-container single-series">
+      <div class="grid-container">
 <header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
   <nav class="site-nav db dt-l w-100" role="navigation">
     <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="/" title="Home">
-      <img src="/img/blogophonic-mark-dark.png" class="dib db-l h2 w-auto" alt="Applied Ecology">
+      <img src="/img/logo.png" class="dib db-l h2 w-auto" alt="Applied Ecology">
     </a>
     <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
       
         
         
         
-      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About Blogophonic">About</a>
+      <a class="link f6 f5-l dib pv1 ph2 " href="/about/" title="About me">About me</a>
       
         
         
@@ -89,17 +89,22 @@
         
         
         
-      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Talks">Talks</a>
+      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Videos">Videos</a>
       
         
         
         
-      <a class="link f6 f5-l dib pv1 ph2 active" href="/courses/" title="Courses">Courses</a>
+      <a class="link f6 f5-l dib pv1 ph2 " href="/collection/" title="Courses">Courses</a>
       
         
         
         
-      <a class="link f6 f5-l dib pv1 ph2 " href="/elements/" title="Element Page">Elements</a>
+      <a class="link f6 f5-l dib pv1 ph2 " href="/contact/" title="Contact">Contact</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/press/" title="Press">Press</a>
       
       
     </div>
@@ -112,8 +117,8 @@
       <header class="post-header">
         <h1 class="f1 lh-solid measure-narrow mb3 fw4">Medidas de Associação</h1>
         
-        
-        
+        <p class="f6 measure lh-copy mv1">By Felipe Melo</p>
+        <p class="f7 db mv0 ttu">August 23, 2022</p>
 
       
 
@@ -207,7 +212,7 @@
 </code></pre>
 <p>Nesse caso até um gráfico pode nos ajudar a ter uma dimensão da importância dos zeros NAs</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">image</span>(<span style="color:#900;font-weight:bold">as.matrix</span>(spe_na))
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-4-1.png" width="600px" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-4-1.png" width="600px" />
 <p>Os valores em branco são os NAs e as cores indicam as abundâncias, sendo quanto mais vermelho, mais abundante.</p>
 
 
@@ -265,9 +270,9 @@
 <p>Tente fazer uma representação gráfica de cada uma dessas matrizes com os diferentes índices e compará-la</p>
 <p>Escreva emaicxo seus códigos e interprete os resultados escrevendo embaixo</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">coldiss</span>(spe.db, diag <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-9-1.png" width="672" />
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">coldiss</span>(spe.dh, diag <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-10-1.png" width="672" />
 
 
 
@@ -327,7 +332,7 @@ Neste artigo
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>env2<span style="color:#000;font-weight:bold">&lt;-</span> env[,<span style="color:#099">-1</span>] <span style="color:#998;font-style:italic"># remover &#39;dfs&#39; que é uma variável espacial, não ambiental</span>
 </span></span><span style="display:flex;"><span>env.de<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">dist</span>(<span style="color:#900;font-weight:bold">scale</span>(env2)) <span style="color:#998;font-style:italic"># use a função &#34;scale&#34; para transformar osdados em z-scores, já que dados de magnitude muito diferentes podem criar disorções no cálculo de distâncias.</span>
 </span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">corrplot</span>(<span style="color:#900;font-weight:bold">as.matrix</span>(env.de), is.corr <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">FALSE</span>) 
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-11-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-11-1.png" width="672" />
 <p>Lembrem-se que nessa matriz, os números são as amostras, que começam em 1 na nascente do rio e terminam em 30 no ponto mais distante. Conseguem ver algum padrão? tentem entender a matriz, dê exemplos de pontos muitos parecidos e outros muito dissimilares. Será que você está lendo a matriz corretamente?</p>
 
 
@@ -341,11 +346,11 @@ Neste artigo
 </h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>spa.de<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">dist</span>(spa)
 </span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">coldiss</span>(spa.de, diag <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-12-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-12-1.png" width="672" />
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>dfs.df<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">as.data.frame</span>(env<span style="color:#000;font-weight:bold">$</span>dfs, row.names <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">rownames</span>(env))
 </span></span><span style="display:flex;"><span>riv.de<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">dist</span>(dfs.df)
 </span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">coldiss</span>(riv.de, diag <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-13-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-13-1.png" width="672" />
 
 
 
@@ -366,7 +371,7 @@ Neste artigo
 </h2>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>cor.env<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">cor</span>(env2)
 </span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">coldiss</span>(cor.env, diag <span style="color:#000;font-weight:bold">=</span> <span style="color:#999">T</span>)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-14-1.png" width="672" />
 <p>Consegue ideintificar grupos de variáveis ambientais que covariam?</p>
 
 
@@ -383,7 +388,7 @@ Neste artigo
 </span></span><span style="display:flex;"><span>spe.t.chi <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">decostand</span>(spe.t, <span style="color:#d14">&#34;chi.square&#34;</span>)
 </span></span><span style="display:flex;"><span>spe.t.D16 <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">dist</span>(spe.t.chi)
 </span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">coldiss</span>(spe.t.D16, diag <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-15-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-15-1.png" width="672" />
 <p>Consegue identificar grupos de espécies?</p>
 
 
@@ -551,14 +556,14 @@ Neste artigo
 <p>Talvez a melhor maneira de visualizar esses pontos seja fazendo um dendograma</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>clust_rio<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">hclust</span>(jacc_dist, method <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;complete&#34;</span>)
 </span></span><span style="display:flex;"><span>clust_graf<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">plot</span>(clust_rio, hang<span style="color:#000;font-weight:bold">=</span><span style="color:#099">-1</span>)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-19-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-19-1.png" width="672" />
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>clust_graf
 </span></span></code></pre></div><pre><code>## NULL
 </code></pre>
 <p>Mas não cosigo ver se os grupos que atribui de alto, médio e baixo rio, realmente agrupam as espécies. Vamos fazer algumas modificações nas bases para poder ver se nossa ideia faz sentido, ou seja, se as espécies se agrupam entre alto, médio e baixo rio.</p>
 <p>Agora podemos plotar o dendograma onde: números amarelos são do alto rio, azuis do médio rio e verdes do baixo rio.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(clust_rio2)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-21-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-21-1.png" width="672" />
 <p>Temos padrão?</p>
 <p>E se usássemos em vez do índice de Jaccard, a distância euclidiana? Será que teríamos mais sensibilidade para identificar esses agrupamentos que imaginamos que existem?</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>euc_dist<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">vegdist</span>(spe[,<span style="color:#099">-28</span>], method <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;euclidean&#34;</span>) <span style="color:#998;font-style:italic"># agora é com a distância euclideana</span>
@@ -697,7 +702,7 @@ Neste artigo
 <p>E agora, compare os resultados com aqueles do índice de Jaccard, alguma coisa mudou?</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>clust_rio_euc<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">hclust</span>(euc_dist, method <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;complete&#34;</span>)
 </span></span><span style="display:flex;"><span>clust_graf_euc<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">plot</span>(clust_rio_euc, hang<span style="color:#000;font-weight:bold">=</span><span style="color:#099">-1</span>)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-24-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-24-1.png" width="672" />
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>clust_graf_euc
 </span></span></code></pre></div><pre><code>## NULL
 </code></pre>
@@ -708,7 +713,7 @@ Neste artigo
 </span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">labels_colors</span>(clust_rio_euc2) <span style="color:#000;font-weight:bold">&lt;-</span> colorCode[rio]<span style="color:#900;font-weight:bold">[order.dendrogram</span>(clust_rio_euc2)]
 </span></span></code></pre></div><p>Agora podemos plotar o dendograma onde: números amarelos são do alto rio, azuis do médio rio e pretos do baixo rio.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(clust_rio_euc2)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-26-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-26-1.png" width="672" />
 <p>Novamente, temos alguma diferença que aponta para uma certa organização das espécies, mas notem que agora parecem mais misturados que quando usamos o índice de Jaccard, mas mesmo essa “mistura” tem um certo padrão, podem perceber?</p>
 <p>Aparentemente o <em>médio rio</em> é uma interseção entre comunidades de baixo e alto rio. Será que as variáveis ambientais conseguem explicar isso?</p>
 <p>Vamos aplicar o mesmo passo-à-passo para a matriz ambiental</p>
@@ -879,7 +884,7 @@ Neste artigo
 <p>Tem coisa interessante aqui… o que será?</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>clust_env_euc<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">hclust</span>(env_dist, method <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;complete&#34;</span>)
 </span></span><span style="display:flex;"><span>clust_graf_env_euc<span style="color:#000;font-weight:bold">&lt;-</span><span style="color:#900;font-weight:bold">plot</span>(clust_env_euc, hang<span style="color:#000;font-weight:bold">=</span><span style="color:#099">-1</span>)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-29-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-29-1.png" width="672" />
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>clust_graf_env_euc
 </span></span></code></pre></div><pre><code>## NULL
 </code></pre>
@@ -890,7 +895,7 @@ Neste artigo
 </span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">labels_colors</span>(clust_graf_env_euc2) <span style="color:#000;font-weight:bold">&lt;-</span> colorCode[rio]<span style="color:#900;font-weight:bold">[order.dendrogram</span>(clust_graf_env_euc2)]
 </span></span></code></pre></div><p>Agora podemos plotar o dendograma onde: números amarelos são do alto rio, azuis do médio rio e pretos do baixo rio.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">plot</span>(clust_graf_env_euc2)
-</span></span></code></pre></div><img src="/collection/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-31-1.png" width="672" />
+</span></span></code></pre></div><img src="/courses/eco_num/associacao/med_assoc_files/figure-html/unnamed-chunk-31-1.png" width="672" />
 <p>E agora? Dá pra entender?</p>
 <p>Então, bora trabalhar!!!</p>
 <p><img src="https://media.giphy.com/media/o28elTLxOjiRW/giphy.gif" alt=""></p>
@@ -998,7 +1003,7 @@ Neste artigo
 <footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
   <nav class="db dt-l w-100">
     <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
-      &copy; 2022 RStudio, Anywhere
+      &copy; 2024 RStudio, Anywhere
       <span class="middot-divider"></span>
       Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
       <br />

@@ -1,0 +1,103 @@
+---
+title: "Forest Citizenship and Education"
+subtitle: "Projeto Educar"
+author: "Felipe Melo & Luke Parry"
+format: 
+  revealjs: 
+    theme: [default, custom.scss]
+    chalkboard: true
+editor: visual
+
+---
+
+
+## Presentation
+
+- This is a basic presentation on the roles of each participant of this joint project
+- The idea is to use it as a baseline for understanding roles, goals and tasks
+
+
+## Arthus Rodrigues (bebê)
+
+Arthur tem uma tese dividida em dois capítulos
+
+- Capítulo 1: Potencial do uso das "Capabilities Approch" no estudo do bem-estar humano de FPP
+- Capítulo 2: Estudo de caso sobre performance escolar entre diferentes categorias de grupos sociais
+
+## Arthus Rodrigues (bebê)
+
+As prioridades de Arthur, são:
+
+1) Concluir a escritura do cappitulo de revisão
+2) Realizar a coleta de dados do capítulo 2
+
+## Lucas Alencar
+
+Lucas terá uma participação curta e intensa nessa fase do projeto. Sua resposabilidade é basicamente concentrada na montagem da base de dados. Isso inclui atividades de:
+
+- Data mining
+- Organization and cleaning
+- Spatialization
+
+A tarefa principal é montar a base de dados com informaçõẽs sobre as escolas rurais baseando-se no [Censo Escolar](https://censobasico.inep.gov.br/censobasico/) para a Caatinga em Amazônia
+
+## Lucas Alencar
+
+As prioridades de Lucas são:
+
+1) Coletar os dados secundários de todas as escolas rurais da Amazônmia e Caatinga
+2) Fazer a limpeza dos dados
+3) Criar colunas com informção de localização geográfica das escolas (município, estado e lat/long)
+
+## Henrique Magalhães
+
+Herinque tem a função de coordenar o trabalho no Brasil e manter regularidade de reuniões online com Felipe e Luke. Henrique precisa co-orientar Arthur e ajudar e participar com Lucas na coleta das informações da base do **Censo Escolar**. isso permitirá que Henrique possa participar intelectualmente das análises e da escritura de todos os artigos oriundos do projeto e da co-orientação de Arthur.
+
+## Pasta Compartilhada
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Temos uma pasta compartilhada e organizada para os trabalhos
+
+<img src=libs/pasta_educar.png>
+
+:::
+
+::: {.column width="50%"}
+
+1. Literatura --> Coloquem aqui a literatura relevante que vão encontrando
+2. Dados --> Onde moram os dados que Lucas vai compilar
+3. Resultados --> Rpubs e Docs com resutlados para serem discutidos
+
+:::
+
+::::
+
+
+
+## Pasta Compartilhada
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Temos uma pasta compartilhada e organizada para os trabalhos
+
+<img src=libs/pasta_educar.png>
+
+:::
+
+::: {.column width="50%"}
+
+Ainda temos dois documentos improtantes:
+
+1. Notas e comentários sobre a literatura consultada
+2. Plano de trabalho mais detalhado
+
+:::
+
+::::
+
+## Fim

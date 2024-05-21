@@ -55,17 +55,14 @@
   background-size: cover;
 }
 
-/******************
- * Media Rules
- ****************/
+.title-slide {
+  background-image: url(libs/cop_inst.jpg);
+  background-size: cover;
+  background-position: bottom, right;
+}
 
-@page { margin: 0; }
-@media print {
-  .remark-slide-scaler {
-    width: 100% !important;
-    height: 100% !important;
-    transform: scale(1) !important;
-    top: 0 !important;
-    left: 0 !important;
-  }
+.inverse {
+  background-color: #9e043d;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
 }

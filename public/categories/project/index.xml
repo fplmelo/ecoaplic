@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>project on Applied Ecology</title>
+    <link>/categories/project/</link>
+    <description>Recent content in project on Applied Ecology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BioRestNet - A Network of Biocultural Restoration</title>
+      <link>/project/biorestnet/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/project/biorestnet/</guid>
+      <description>Brief This proposal is a joint initiative led by Nottingham Trent University (NTU) and our local partner Centre for Ecosystem Restoration Kenya (CERK) to develop and promote biocultural models of ecosystem restoration. The aim of this project is to develop a network of practitioners and researchers around an innovative concept of ecological restoration that merges both traditional ecological knowledge and science-based evidence. To achieve this goal we use two complementary strategies.</description>
+    </item>
+    
+    <item>
+      <title>cDEEP - Caatina Dry Ecosystem Ecological Program</title>
+      <link>/project/cdeep/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/project/cdeep/</guid>
+      <description>The present project aims to assess how human disturbance and changes in rainfall regime affect the Caatinga ecosystem’s biota at different levels of biological organization (i.e, from populations to ecosystem level), by correlating these aspects with the theoretical reference shown in macro trends already documented in the tropics. The LTER Catimbau is also part of the ILTER (International Long Term Ecological Research) network joins several other long-lasting projects developed around the world.</description>
+    </item>
+    
+    <item>
+      <title>Nexus-Caatinga</title>
+      <link>/project/nexus/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/nexus/</guid>
+      <description>This project aims to understand the role of forests as a fourth dimension of the water, energy and food security nexus (WEF-Nexus). We want to lnow hpw land tenure inequalities, human livelihoods and forest cover are associated.</description>
+    </item>
+    
+    <item>
+      <title>PELD-Catimbau</title>
+      <link>/project/peld_catimbau/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/peld_catimbau/</guid>
+      <description>The present project aims to assess how human disturbance and changes in rainfall regime affect the Caatinga ecosystem’s biota at different levels of biological organization (i.e, from populations to ecosystem level), by correlating these aspects with the theoretical reference shown in macro trends already documented in the tropics. The LTER Catimbau is also part of the ILTER (International Long Term Ecological Research) network joins several other long-lasting projects developed around the world.</description>
+    </item>
+    
+  </channel>
+</rss>
