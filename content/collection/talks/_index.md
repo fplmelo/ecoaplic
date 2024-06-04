@@ -32,7 +32,9 @@ weight: 2
 - [NTU VC FLR March 2024](https://ecoaplic.org/slides_aulas/apresentacoes/Felipe_VC_FLR_March24.html#/title-slide)
 
 - [NTU VC FLR May 2024](https://ecoaplic.org/slides_aulas/apresentacoes/felipe_vc_flr_may24#/title-slide)
-## Autor
+
+- [Kenya Biocultural Workshop](https://ecoaplic.org/slides_aulas/apresentacoes/biorestnet_workshop_kenya#/title-slide)
+
 
 
 
