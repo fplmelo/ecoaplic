@@ -1,9 +1,10 @@
 ---
 title: "BioRestNet: a network of biocultural restoration"
 author: "Felipe Melo"
+from: markdown+emoji
 format:
   revealjs:
-    incremental: false
+    incremental: true
     chalkboard: true
     logo: libs/ntu_logo.png
     footer: ""
@@ -13,11 +14,12 @@ format:
 ---
 
 ## What are the current challenges of ecological restoration?
-- Improved techniques of restoration [&#xf164;]
-- Informed planning
-- Geopolitical momentum
-- Environmental justice
-- Ecological knowledge gaps
+
+- Improved techniques of restoration :+1:
+- Informed planning :+1:
+- Geopolitical momentum :+1:
+- Environmental justice :-1:
+- Ecological knowledge gaps :-1:
 
 ## How to pursue environmental justice and develop a competitive research agenda on restoration?{.center}
 
@@ -30,7 +32,7 @@ format:
 :::
 :::{.column width="50%"}
 -   Knowledge frontier
--   Decolonal
+-   Decolonial
 -   Would benefit from validation
 -   Mostly related to nature
 :::
