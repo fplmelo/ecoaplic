@@ -16,98 +16,58 @@ format:
     background-transition: fade
 ---
 
-## {background-image="libs/usga.png"}
+## {background-image="libs/vaqueiro.png"}
 
-## {background-image="libs/carbuca.jpg"}
-
-## {background-image="libs/pasto.jpeg"}
+## {background-image="libs/roca_caat.jpg"}
 
 ## {background-image="libs/homen_caatinga.jpg"}
+
 
 ## Antromas 
 ![](libs/anthromes.png){fig-align=center width=150%}
 
 Fonte: Erle Ellis
 
+## Erros históricos da "Conservação"
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/keep_out.png)
+:::
+:::{.column width="50%"}
+
+- Expulsão de comunidades tradicionais
+- Aumento da pobreza
+- Conflitos por terra
+- Modelos excludentes
+
+:::
+::::
+
 ## Desigualdade
 
 ![](libs/worldbank_iplc.jpeg){fig-align=center width=150%}
 
-## Enrome importância de IP&LC
+## A importância de PI&CL
 
 ![](libs/iplc_land.png){fig-align=center width=150%}
 
 ## Qual o papel da restauração nesse contexto?{.center}
 
 
-## Algumas contribuições da restauração
+## A restauração avança!
 
 - Oferecer métodos confiávies :+1:
 - Planejamento sistemático :+1:
 - Importância geopolítica :+1:
 - [Justiça Ambiental]{style="color:red"} :-1:
-- [Transdiciplinaridade]{style="color:red"} :-1:
+- [Transdisciplinaridade]{style="color:red"} :-1:
 
-## Métodos bem fundamentados
-
-::::{.columns}
-:::{.column width="50%"}
-
-![](libs/rest_func.png)
-
-:::
-:::{.column width="50%"}
-:::{.nonincremental}
-- Teoria sucessional
-- Sólida base ecosisiológica
-- Funções ecossistêmicas
-- Taxas de recuperação
-:::
-:::
-::::
-
-## Planejamento
-
-::::{.columns}
-:::{.column width="50%"}
-
-![](libs/rest_ma.png)
-
-Crouzelles et al 2018
-:::
-:::{.column width="50%"}
-:::{.nonincremental}
-- Espacialmente definido 
-- Sistemático (reproduzível)
-- Multi-criterio
-
-:::
-:::
-::::
+## Como construir uma agenda de pesquisa/ação para desenvolver o potencial inclusivo da restauração?{.center}
 
 
-
-
-
-## Como contribuir para uma restauração inclusiva numa agenda de pesquisa robusta?{.center}
-
-## Alguns fatos
-::::{.columns}
-:::{.column width="50%"}
-
-- Áreas manjeadas por PI&CL são 2x maiores que Áreas Protegidas
-- Abrigam muito biodiversidade
-- Sustentam 1 Bi de pessoas
-:::
-
-:::{.column width="50%"}
-![](libs/baobab.png)
-
-:::
-::::
-
-
-## Saberes Ecológicos Locais - SEL
+## Conhecimentos Ecológicos Locais - CEL
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -116,9 +76,9 @@ Crouzelles et al 2018
 :::
 :::{.column width="50%"}
 -   Fonteira de conhecimento
--   Ajuda a decolonizar a ciência
+-   Ajudam a decolonizar a ciência
 -   Precisa ser reconhecido
--   Está em franco processo de desaparição
+-   Está ameaçado
 :::
 ::::
 
@@ -134,16 +94,14 @@ Crouzelles et al 2018
 
 :::{.column width="50%"}
 :::{.inverse}
-- Mapeamento participatório
-- Biografias da pasiagem
+- Mapeamento participativo
+- Biografia das paisagens
 - Seleção de métricas relevantes
 :::
 :::
 ::::
 
-
-
-## CEL para melhorar a Ecologia
+## CEL para a Ciência Ecológica
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -164,21 +122,22 @@ Crouzelles et al 2018
 ## CEL para Restauração
 
 ::::{.columns}
-:::{.column width="50%"}
-![](libs/neoland.png)
+:::{.column width="70%"}
+![](libs/pessoas.png)
 
 :::
 
-:::{.column width="50%"}
+:::{.column width="30%"}
 
-- Fortalecimento de soberania
-- Reafirmação do CEL
+- Representatividade
+- Diversidade de valores
 - Justiça Ambiental
 - Soberania territorial
 
 :::
 ::::
 
+## A Caatinga como um laboratório vivo de Restauração Biocultural {.center}
 
 ## O Modelo da Caatinga
 
@@ -204,6 +163,10 @@ Crouzelles et al 2018
 ::::
 
 ## 
+![](libs/fun_bioc.jpg)
+[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+
+## 
 ![](libs/hudson.png){fig-align=center, width=95%}
 
 Toscano et al (under review)
@@ -225,10 +188,10 @@ Toscano et al (under review)
 - ~ 1 milhão de propriedades em 1204 municípios
   - 97.8% pequenas
        - 17.9 Mha
-       - 51% Caatingada
+       - 51% Vegetação Nativa
   - 2.2% Grande propriedades
        - 15.2 Mha
-       - 69% Caatingada
+       - 69% Vegetação Nativa
 :::
 
 :::{.column width="50%"}
@@ -250,25 +213,12 @@ Toscano et al (under review)
 :::
 :::{.column width="50%"}
 
-- Agrupada espcialmente
-- Relacionada a áreas de agronegócio
+![](libs/deficit2.png)
+
 
 :::
 ::::
 :::
-
-## Em resumo
-| Tipo de propriedade | # de propriedades | Déficit vegetacional (ha) |
-|---------|:-----|------:|
-| Grande      | 2,986   |    139,644 |
-| Pequena     | 141,144  |   143,501 |
-|       |     |      |     
-
-
-## Desigualdade continua
-
-![](libs/deficit2.png)
-
 
 
 ## Estratégias diferenciadas 
@@ -279,7 +229,7 @@ Toscano et al (under review)
 | Híbridas      | Combinações de medidas de acordo ao contexto     | 
 
 ## Espacializando as estratégias
-![](libs/deficit4.png)
+![](libs/deficit4.png){fig-align=center}
 
 
 ## Não podemos reproduzir desigualdades
@@ -353,6 +303,7 @@ fonte: Alencar et al under review
 :::
 
 ## Agradecimentos
+
 :::{.nonincremental}
 ::::{.columns}
 :::{.column width="50%"}
@@ -363,7 +314,6 @@ fonte: Alencar et al under review
 
 :::{.column width="50%"}
 **Colaboradoes**
-
 - Adriana Pelegrinni Manhães
 - Guilherme Mazochinni
 - Vinicius Guidoti
@@ -376,9 +326,8 @@ fonte: Alencar et al under review
 ::::
 :::
 
-## 
 
-## Obrigado<br>Thank you <br> Asante sana{.center}
+## Obrigado{.center}
 
 felipe.melo@ntu.ac.uk
 
@@ -386,6 +335,5 @@ felipe.plmelo@ufpe.br
 
 ![www.ecoaplic.org](www.ecoaplic.org)
 
-##
 
 
