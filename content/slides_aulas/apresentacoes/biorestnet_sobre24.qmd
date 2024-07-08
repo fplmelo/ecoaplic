@@ -286,14 +286,6 @@ fonte: Alencar et al under review
 ::::
 
 
-## Novos Desafios: Quênia
-
-![](libs/glf.jpg){fig-align=center, width=120%}
-
-## Restauração para pessoas
-
-![](libs/maasai_plant.png)
-
 ## Rede de Restauração Biocultural
 
 ![](libs/biorestnet.jpeg){fig-align=center, width=120%}
@@ -320,13 +312,13 @@ fonte: Alencar et al under review
 
 :::{.nonincremental}
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="40%"}
 ![](libs/cnpq.png)
 ![](libs/ufpe.png)
 ![](libs/ntu_logo.png)
 :::
 
-:::{.column width="50%"}
+:::{.column width="60%"}
 **Colaboradoes**
 
 - Adriana Pelegrinni Manhães (UFRJ)
