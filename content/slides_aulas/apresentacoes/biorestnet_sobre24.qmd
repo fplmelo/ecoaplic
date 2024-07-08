@@ -143,6 +143,7 @@ Fonte: Erle Ellis
 :::{.nonincremental}
 ::::{.columns}
 :::{.column width="50%"}
+::: {style="font-size: 90%;"}
 - Espécies culturalmente importantes
 - Multípos benefícios (lenha, medicinal, etc...)
 - Relativamente aundantes
@@ -150,15 +151,17 @@ Fonte: Erle Ellis
 
 [Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
 :::
+:::
 :::{.column width="50%"}
 
-![](libs/biocult.png)
+![](libs/biocult.png){width=90%}
 :::
 ::::
 :::
 
 ## 
-![](libs/fun_bioc.jpg)
+![](libs/fun_bioc.jpg){fig-align=center, width=85%}
+
 [Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
 
 ## 
@@ -203,12 +206,12 @@ Toscano et al (under review)
 ::::{.columns}
 :::{.column width="50%"}
 
-![](libs/deficit1.png)
+![](libs/deficit1.png){width=90%}
 
 :::
 :::{.column width="50%"}
 
-![](libs/deficit2.png)
+![](libs/deficit2.png){width=90%}
 
 
 :::
@@ -314,14 +317,16 @@ fonte: Alencar et al under review
 :::
 
 :::{.column width="50%"}
+::: {style="font-size: 80%;"}
 - Adriana Pelegrinni Manhães (UFRJ)
+- Pedro Sena (CEPAN)
 - Guilherme Mazochinni (Unicamp)
 - Vinicius Guidoti (Kynetec)
 - Lucas Alencar (U Manchester)
 - Antonio Uzal (NTU)
 - Harrison Nabaala (Enarau, Quênia)
 - Andrew Gichira (CERK, Quênia)
-
+:::
 :::
 ::::
 :::
@@ -335,7 +340,7 @@ felipe.plmelo@ufpe.br
 
 ![www.ecoaplic.org](www.ecoaplic.org)
 
-![](libs/qr_ecoaplic.png){fig-align=center width=40%}
+![](libs/qr_ecoaplic.png){fig-align=center width=35%}
 
 
 
