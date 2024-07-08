@@ -180,7 +180,7 @@ Toscano et al (under review)
 
 ![](libs/land_study.png)
 
-## Em números...
+## Quem é dono da Caatinga?
 :::{.nonincremental}
 ::::{.columns}
 :::{.column width="50%"}
@@ -220,22 +220,29 @@ Toscano et al (under review)
 ::::
 :::
 
+## Em números
+
+| Tipo de propriedade | # de propriedades | Déficit legal (ha) |
+|---------|:-----|------:|
+| Grande      | 2,986   |    139,644 |
+| Pequena     | 141,144  |   143,501 |
+|       |     |      |   
+
 
 ## Estratégias diferenciadas 
 | Tipo de déficit | Estratégia de Restauração | 
 |-----|:-----|
 | Grandes propriedades     | Restauração ativa; adequação legal; cadeia de suprimentos   | 
 | Pequenas pripriedades   | Agrofloresta; Restauração Biocultural  |
-| Híbridas      | Combinações de medidas de acordo ao contexto     | 
+| Híbrido      | Combinações de medidas de acordo ao contexto     | 
 
 ## Espacializando as estratégias
 ![](libs/deficit4.png){fig-align=center}
 
 
+## Caatinga mata fome?{.center}
 
-## Floresta mata fome?
-
-
+##
 ![](libs/fore_food.png){fig-align=center}
 
 Fonte: [Alencar et al 2023](https://onlinelibrary.wiley.com/doi/full/10.1002/ldr.4848)
@@ -298,7 +305,7 @@ fonte: Alencar et al under review
 - Incluir camadas de informação social
 - Considerar as diferentes desigualdades
 - Não reproduzir injustiças
-- Priorizar as oportunidades
+- Priorizar as oportunidades localmente
 :::
 
 :::{.column width="50%"}
@@ -322,11 +329,11 @@ fonte: Alencar et al under review
 :::{.column width="50%"}
 **Colaboradoes**
 
-- Adriana Pelegrinni Manhães
-- Guilherme Mazochinni
-- Vinicius Guidoti
-- Lucas Alencar
-- Antonio Uzal
+- Adriana Pelegrinni Manhães (UFRJ)
+- Guilherme Mazochinni (Unicamp)
+- Vinicius Guidoti (Kynetec)
+- Lucas Alencar (U Manchester)
+- Antonio Uzal (NTU)
 - Harrison Nabaala (Enarau, Quênia)
 - Andrew Gichira (CERK, Quênia)
 
@@ -335,13 +342,15 @@ fonte: Alencar et al under review
 :::
 
 
-## Obrigado{.center}
+## Obrigado
 
 felipe.melo@ntu.ac.uk
 
 felipe.plmelo@ufpe.br
 
 ![www.ecoaplic.org](www.ecoaplic.org)
+
+![](libs/qr_ecoaplic.png){fig-align=center}
 
 
 
