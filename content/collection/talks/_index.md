@@ -35,6 +35,8 @@ weight: 2
 
 - [Kenya Biocultural Workshop](https://ecoaplic.org/slides_aulas/apresentacoes/biorestnet_workshop_kenya#/title-slide)
 
+- [SOBRE 2024](https://ecoaplic.org/slides_aulas/apresentacoes/biorestnet_sobre24#/title-slide)
+
 
 
 
