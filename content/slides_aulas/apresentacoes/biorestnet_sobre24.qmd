@@ -232,27 +232,6 @@ Toscano et al (under review)
 ![](libs/deficit4.png){fig-align=center}
 
 
-## Não podemos reproduzir desigualdades
-
-:::{.nonincremental}
-::::{.columns}
-:::{.column width="50%"}
-  - Pequenas propriedades
-    - ~1ha deficit
-    - Agricultura familiar
-  - [Restauração Biocultural]{style="color: red;"}
-
-:::
-
-:::{.column width="50%"}
-  - Grandes proprietários
-    - ~40ha deficit
-    - Usos intensivos
-  - [Adequação legal ambiental]{style="color: red;"}
-
-:::
-::::
-:::
 
 ## Floresta mata fome?
 
@@ -267,22 +246,50 @@ Fonte: [Alencar et al 2023](https://onlinelibrary.wiley.com/doi/full/10.1002/ldr
 
 Fonte: [Alencar et al under review]()
 
-## Pessoas e Caatingas?
+## Pessoas e Caatingas
 
 ![](libs/fig_catChange.jpg){fig-align=center, width=120%, height=150%}
 
 fonte: Alencar et al under review
 
-## Pessoas e Caatingas?
+
+## Pessoas e Caatingas
 
 ![](libs/fpp_state.jpg){fig-align=center, width=120%}
 
 fonte: Alencar et al under review
 
+## Rede de Restauração da Caatinga - RECAA
+
+::::{.columns}
+
+:::{.column width="30%"}
+
+![](libs/recaa.png)
+
+:::
+:::{.column width="70%"}
+- Gentes da Caatinga (coletivos)
+- Saberes da Caatinga (ciência)
+- Olhos da Caatinga (monitoramento)
+- Águas da Caatinga (segurança hídrica)
+
+:::
+
+::::
+
+
+## Novos Desafios: Quênia
+
+![](libs/glf.jpg){fig-align=center, width=120%}
+
+## Restauração para pessoas
+
+![](libs/maasai_plant.png)
+
 ## Rede de Restauração Biocultural
 
 ![](libs/biorestnet.jpeg){fig-align=center, width=120%}
-
 
 ## Principais lições
 :::{.nonincremental}
@@ -314,6 +321,7 @@ fonte: Alencar et al under review
 
 :::{.column width="50%"}
 **Colaboradoes**
+
 - Adriana Pelegrinni Manhães
 - Guilherme Mazochinni
 - Vinicius Guidoti
