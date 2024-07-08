@@ -140,27 +140,22 @@ Fonte: Erle Ellis
 ## A Caatinga como um laboratório vivo de Restauração Biocultural {.center}
 
 ## O Modelo da Caatinga
-
-::::{.columns}
-
-:::{.column width="50%"}
 :::{.nonincremental}
-
+::::{.columns}
+:::{.column width="50%"}
 - Espécies culturalmente importantes
 - Multípos benefícios (lenha, medicinal, etc...)
 - Relativamente aundantes
 - Mantém diversidade
 
 [Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
-
 :::
-:::
-
 :::{.column width="50%"}
 
 ![](libs/biocult.png)
 :::
 ::::
+:::
 
 ## 
 ![](libs/fun_bioc.jpg)
@@ -302,7 +297,7 @@ fonte: Alencar et al under review
 
 :::{.column width="50%"}
 
-![](libs/maasai_woman.jpeg){height=70%}
+![](libs/maasai_woman.jpeg){width=60%}
 
 :::
 ::::
@@ -312,15 +307,13 @@ fonte: Alencar et al under review
 
 :::{.nonincremental}
 ::::{.columns}
-:::{.column width="40%"}
+:::{.column width="50%"}
 ![](libs/cnpq.png)
 ![](libs/ufpe.png)
 ![](libs/ntu_logo.png)
 :::
 
-:::{.column width="60%"}
-**Colaboradoes**
-
+:::{.column width="50%"}
 - Adriana Pelegrinni Manhães (UFRJ)
 - Guilherme Mazochinni (Unicamp)
 - Vinicius Guidoti (Kynetec)
@@ -342,7 +335,7 @@ felipe.plmelo@ufpe.br
 
 ![www.ecoaplic.org](www.ecoaplic.org)
 
-![](libs/qr_ecoaplic.png){fig-align=center}
+![](libs/qr_ecoaplic.png){fig-align=center width=40%}
 
 
 
