@@ -37,6 +37,8 @@ weight: 2
 
 - [SOBRE 2024](https://ecoaplic.org/slides_aulas/apresentacoes/biorestnet_sobre24#/title-slide)
 
+- [ARES Research Conference 2024](https://ecoaplic.org/slides_aulas/apresentacoes/ARES_RC_2024#/title-slide)
+
 
 
 
