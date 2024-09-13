@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+
+// _variables.scss
+$primary-color: #336699; // Exemplo de cor primária
+$secondary-color: #99CCFF; // Exemplo de cor secundária
+$neutral-color: #FFFFFF; // Branco
+$font-family: 'Arial', sans-serif;
+
+// _base.scss
+body {
+  font-family: $font-family;
+  background-color: $neutral-color;
+}
+
+// _sections.scss
+.slide {
+  // Estilos para cada slide
+  color: $primary-color;
+}
+
+.title {
+  // Estilos para títulos
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  // Estilos para subtítulos
+}
+
+// _components.scss
+.button {
+  // Estilos para botões
+  background-color: $primary-color;
+  color: $neutral-color;
+}
+
+// _layout.scss
+// Estilos para layout geral da apresentação

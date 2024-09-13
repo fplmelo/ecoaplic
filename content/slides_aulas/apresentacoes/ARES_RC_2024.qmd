@@ -123,19 +123,19 @@ format:
 :::{.column width="50%"}
 :::{.nonincremental}
 
-- Culturally important species
+- Culturally important  [Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
 - Database on plant uses
 - Multiple benefits
-- Maintain Caatinga natural features
+- Maintain natural features
 
-[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
 
+![](libs/sena_highlight.png){.absolute bottom=0 width=40%}
 :::
 :::
 
 :::{.column width="50%"}
 
-![](libs/biocult.png)
+![](libs/biocult.png){.absolute top=50 right=20}
 :::
 ::::
 
@@ -175,7 +175,7 @@ source: [Conservation through Reconciliation](https://conservation-reconciliatio
 
 [Reyes-Garcia 2023](https://www.researchgate.net/publication/366847200_Biocultural_vulnerability_exposes_threats_of_culturally_important_species)
 
-## Meaniningful Functional Traits
+## Meaningful Functional Traits
 
 ::::{.columns}
 :::{.column width="50%"}
@@ -215,11 +215,6 @@ source: [Conservation through Reconciliation](https://conservation-reconciliatio
 :::
 ::::
 
-## Workflow of the LDSF
-
-![](libs/ldsf_wrkflw.png){width=1000 fig-align="center"}
-
-We want to add Landscape Biograpahies and gender-based mapping
 
 ## Module 3 - Local manipulative experiment
 

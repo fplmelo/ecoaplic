@@ -4,6 +4,7 @@ author: "Felipe Melo"
 from: markdown+emoji
 format:
   revealjs:
+    theme: [default, custom.scss]
     incremental: true
     chalkboard: true
     logo: libs/ntu_logo.png
