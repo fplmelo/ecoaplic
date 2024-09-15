@@ -250,6 +250,9 @@ felipe.melo@ntu.ac.uk
 
 ![](libs/qr_ecoaplic.png){fig-align=center width=35%}
 
+#
+
+
 
 
 
