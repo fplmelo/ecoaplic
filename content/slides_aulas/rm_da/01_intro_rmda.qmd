@@ -1,0 +1,104 @@
+---
+title: "1-Introduction to RM&DA"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+## You should know today:
+
+- How this module is structured
+- How to navigate NOW page
+- What are the basic set-ups needed on your device
+- [Get the dimension]{style="color: red;"} of the work needed
+
+
+## Who am I?
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](img/profile.png)
+
+:::
+
+:::{.column width="50%"}
+- Started at NTU may 2023
+- Ecologist/Conservationist
+- Tropical Ecosystems
+- Applied Sciences
+
+I taught RM & DA before [many times]{style="color: red;"}
+
+more info: [My website](www.ecoaplic.org)
+
+:::
+::::
+
+## How this module is organized?
+
+![](img/toolkit.png){fig-align="center"}
+
+## Two main workflows
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**Data Analysis**
+
+- Cover all aspects of dealing with data
+- Mostly focused on the basics
+- Less is More in Statistics
+
+:::
+
+:::{.column width="50%" .fragment}
+**Research Methods**
+
+- Cover the theoretical and philosophical aspects of **doing science**
+- Focused on making sense of science
+- Writing and reading skills
+
+:::
+::::
+
+## Weekly Schedule
+
+![](img/schedule.png)
+
+![](img/leg_table.png){.absolute top=100 right=0 width="150"}
+
+## Sessions
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**Very Important**
+
+- Pre-sessions
+- Sessions
+- Post-sessions
+
+*It may vary*
+
+:::
+
+:::{.column width="50%" .fragment}
+
+![](img/pre_session.png)
+
+:::
+::::
+
+## The end{.center}
