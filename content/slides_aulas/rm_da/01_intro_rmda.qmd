@@ -3,6 +3,7 @@ title: "1-Introduction to RM&DA"
 subtitle: " "
 author: "Felipe Melo"
 institute: "Nottingham Trent University - UK"
+from: markdown+emoji
 format:
   revealjs:
     theme: [default, custom.scss]
@@ -100,5 +101,72 @@ more info: [My website](www.ecoaplic.org)
 
 :::
 ::::
+
+## Main tools
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**Microsoft Teams**
+
+- Used to deliver sessions
+- Drop-in sessions
+- Group activities
+
+![](https://teach.cbs.dk/wp-content/uploads/2022/01/Microsoft_Teams_Android_Smartphone.jpeg)
+:::
+
+:::{.column width="50%" .fragment}
+
+**NOW page**
+
+- All Resources
+- Virtual learning tools
+- Submission of exams
+
+![](https://now.ntu.ac.uk/d2l/lp/navbars/6605/theme/viewimage/34273789/view?v=20.24.8.21027)
+
+:::
+::::
+
+## Resources (... and many more online)
+
+
+![](https://r4ds.hadley.nz/cover.jpg){.absolute right=20}
+![](https://moderndive.com/images/logos/book_cover.png){.absolute left=20}
+
+## Finding help
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**We can help you with**
+
+- Activities
+- Software troubles
+- Stats (after some proof of individual effort)
+
+:smiley:
+
+:::
+
+:::{.column width="50%" .fragment}
+
+**What we cannot**
+
+- Mark exams twice
+- Comment on unsubmitted Formative assessment
+- Solve exercises for you
+
+:broken_heart:
+
+:::
+::::
+
+## Feedback and Assessment
+
+* Feedback opportunities throughout the module
+* Formative assessment: multiple opportunities
+- A more ‘formal’ opportunity that will help you to understand the standard required and guidelines of a scientific journal (and make you read a paper!).
+
+## What are your expecations?{.center}
 
 ## The end{.center}
