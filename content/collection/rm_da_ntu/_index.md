@@ -19,7 +19,7 @@ weight: 2
 
 ## Contents
 
-- Introduction to Research Methods
+- [Introduction to Research Methods](https://ecoaplic.org/slides_aulas/rmda/01_intro_rmda.html)
 - Dynamic reports and reproducibility (GitHub + Quarto)
 - Experiential Design
 - Description of variables
@@ -51,7 +51,7 @@ By the end of this module, you should be able to:
 - All learning activities of this module are designed to allow you to meet the learning outcomes. 
 
 
-## Engange with tis module
+## Engange with this module
 
 Attendance to both face to face and online live sessions is very important, and compulsory. Although some sessions will be recorded, you might have questions, or you might benefit from one of your peer's questions. Attendance to sessions also helps to build our community, which is based on an understanding that different students learn at a different pace and they come to the module with different experiences and skills.
 
