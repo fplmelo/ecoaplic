@@ -172,6 +172,54 @@ more info: [My website](www.ecoaplic.org)
 
 ![](https://quarto.org/docs/get-started/hello/images/rstudio-hello.png)
 
+## Every week
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**Tuesdays**
+
+- Some data analyses
+- Some research methods
+
+:::
+
+:::{.column width="50%" .fragment}
+**Thursdays**
+
+- Drop-in sessions
+- Tutorials
+
+:::
+::::
+
+## Doing Science
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**Is not a gift**
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQI6xOpvNvJFq5DQVEfCicuIVXSyCPGqFJ3x2v7GqXBg3S8Pjnn0cl7BSxbmFIQJOoK0&usqp=CAU)
+
+:::
+
+:::{.column width="50%" .fragment}
+**Effort and repetition**
+
+![](https://www.uksport.gov.uk/-/media/images/the-british-womens-4x100m-relay-team-celebrate-at-tokyo-2020.ashx?w=680&mw=680&hash=F4E2D3C9851E543D532CD4640703ED61&h=433&crop=1)
+
+:::
+::::
+
+## {background-image="https://i0.wp.com/phenomenex.blog/wp-content/uploads/2017/10/PinkyandtheBrain.TheBrain.png" background-size="contain"}
+
+## {background-image="https://www.chbe.gatech.edu/sites/default/files/styles/gtcoe_max/public/2024-02/junglebiolab1.webp?itok=V7TS06KO" background-size="cover"}
+
+## {background-image="https://www.ilovephd.com/wp-content/uploads/2021/08/phd-memes-10.jpg" background-size="contain"}
+
+## {background-image="https://i.pinimg.com/736x/64/c1/ed/64c1ed41a154c80f7cd8a2d60e7265be.jpg"}
+
+## {background-image="https://www.siliconrepublic.com/wp-content/uploads/2014/12/img/scientist-what-I-do-meme.jpg"}
+
 
 ## What are your expectations?{.center}
 
