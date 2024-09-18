@@ -167,6 +167,12 @@ more info: [My website](www.ecoaplic.org)
 * Formative assessment: multiple opportunities
 - A more ‘formal’ opportunity that will help you to understand the standard required and guidelines of a scientific journal (and make you read a paper!).
 
-## What are your expecations?{.center}
+
+## Your Workbook
+
+![](https://quarto.org/docs/get-started/hello/images/rstudio-hello.png)
+
+
+## What are your expectations?{.center}
 
 ## The end{.center}

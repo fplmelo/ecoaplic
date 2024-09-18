@@ -3,11 +3,16 @@ title: "Conservation Priorities"
 author: "Felipe Melo"
 format:
   revealjs:
+    theme: [default, custom.scss]
     incremental: true
     chalkboard: true
     logo: img/ntu_logo.png
-    footer: "Conservation Priorities 2023"
+    #footer: "Conservation Priorities"
     slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
 ---
 
 ## Who am I? 
@@ -70,7 +75,7 @@ PhD in Ecology
 
 -   More contact with diverse conservation challenges
 -   Deep immersion in local communities
--   Learn to listens 
+-   Learn to listen 
 
 :::
 
