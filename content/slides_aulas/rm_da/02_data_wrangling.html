@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="01_intro_rmda_files/libs/clipboard/clipboard.min.js"></script>
-<script src="01_intro_rmda_files/libs/quarto-html/tabby.min.js"></script>
-<script src="01_intro_rmda_files/libs/quarto-html/popper.min.js"></script>
-<script src="01_intro_rmda_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="01_intro_rmda_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="01_intro_rmda_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="01_intro_rmda_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="01_intro_rmda_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="02_data_wrangling_files/libs/clipboard/clipboard.min.js"></script>
+<script src="02_data_wrangling_files/libs/quarto-html/tabby.min.js"></script>
+<script src="02_data_wrangling_files/libs/quarto-html/popper.min.js"></script>
+<script src="02_data_wrangling_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="02_data_wrangling_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="02_data_wrangling_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="02_data_wrangling_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="02_data_wrangling_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.555">
 
   <meta name="author" content="Felipe Melo">
-  <title>1-Introduction to RM&amp;DA</title>
+  <title>2-Data Wrangling</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="01_intro_rmda_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="01_intro_rmda_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="02_data_wrangling_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="02_data_wrangling_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -95,13 +95,13 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="01_intro_rmda_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="01_intro_rmda_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="01_intro_rmda_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="01_intro_rmda_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="01_intro_rmda_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="01_intro_rmda_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="01_intro_rmda_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="02_data_wrangling_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="02_data_wrangling_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="02_data_wrangling_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="02_data_wrangling_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="02_data_wrangling_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="02_data_wrangling_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="02_data_wrangling_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -387,13 +387,17 @@
       margin-right: 0; 
     }
   </style>
+  <link href="02_data_wrangling_files/libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="02_data_wrangling_files/libs/countdown-0.4.0/countdown.js"></script>
+  <script src="02_data_wrangling_files/libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="02_data_wrangling_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">1-Introduction to RM&amp;DA</h1>
+  <h1 class="title">2-Data Wrangling</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -408,211 +412,328 @@ Felipe Melo
 
 </section>
 <section id="you-should-know-today" class="slide level2">
-<h2>You should know today:</h2>
+<h2>You should know today</h2>
 <ul>
-<li>How this module is structured</li>
-<li>How to navigate NOW page</li>
-<li>What are the basic set-ups needed on your device</li>
-<li><span style="color: red;">Get the dimension</span> of the work needed</li>
+<li>Why data wrangling?</li>
+<li>How to plan data wrangling</li>
+<li>Basic skills</li>
+<li>Application with an example</li>
 </ul>
 </section>
-<section id="who-am-i" class="slide level2">
-<h2>Who am I?</h2>
+<section id="before-we-begin" class="slide level2">
+<h2>Before we begin</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="img/profile.png"></p>
+<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Attention_Sign.svg/1162px-Attention_Sign.svg.png"></p>
 </div><div class="column" style="width:50%;">
 <ul>
-<li>Started at NTU may 2023</li>
-<li>Ecologist/Conservationist</li>
-<li>Tropical Ecosystems</li>
-<li>Applied Sciences</li>
-</ul>
-<p>I taught RM &amp; DA before <span style="color: red;">many times</span></p>
-<p>more info: <a href="www.ecoaplic.org">My website</a></p>
-</div>
-</div>
-</section>
-<section id="how-this-module-is-organized" class="slide level2">
-<h2>How this module is organized?</h2>
-
-<img data-src="img/toolkit.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="two-main-workflows" class="slide level2">
-<h2>Two main workflows</h2>
-<div class="columns">
-<div class="column fragment" style="width:50%;">
-<p><strong>Data Analysis</strong></p>
-<ul>
-<li>Cover all aspects of dealing with data</li>
-<li>Mostly focused on the basics</li>
-<li>Less is More in Statistics</li>
-</ul>
-</div><div class="column fragment" style="width:50%;">
-<p><strong>Research Methods</strong></p>
-<ul>
-<li>Cover the theoretical and philosophical aspects of <strong>doing science</strong></li>
-<li>Focused on making sense of science</li>
-<li>Writing and reading skills</li>
+<li>R and Rstudio installed</li>
+<li>Don’t panic</li>
+<li>Everything is reproducible</li>
+<li>You’ll have to train to fix the content</li>
 </ul>
 </div>
 </div>
 </section>
-<section id="weekly-schedule" class="slide level2">
-<h2>Weekly Schedule</h2>
-<p><img data-src="img/schedule.png"></p>
-<p><img data-src="img/leg_table.png" class="absolute" style="top: 100px; right: 0px; width: 150px; "></p>
-</section>
-<section id="sessions" class="slide level2">
-<h2>Sessions</h2>
-<div class="columns">
-<div class="column fragment" style="width:50%;">
-<p><strong>Very Important</strong></p>
-<ul>
-<li>Pre-sessions</li>
-<li>Sessions</li>
-<li>Post-sessions</li>
-</ul>
-<p><em>It may vary</em></p>
-</div><div class="column fragment" style="width:50%;">
-<p><img data-src="img/pre_session.png"></p>
-</div>
-</div>
-</section>
-<section id="main-tools" class="slide level2">
-<h2>Main tools</h2>
-<div class="columns">
-<div class="column fragment" style="width:50%;">
-<p><strong>Microsoft Teams</strong></p>
-<ul>
-<li>Used to deliver sessions</li>
-<li>Drop-in sessions</li>
-<li>Group activities</li>
-</ul>
-<p><img data-src="https://teach.cbs.dk/wp-content/uploads/2022/01/Microsoft_Teams_Android_Smartphone.jpeg"></p>
-</div><div class="column fragment" style="width:50%;">
-<p><strong>NOW page</strong></p>
-<ul>
-<li>All Resources</li>
-<li>Virtual learning tools</li>
-<li>Submission of exams</li>
-</ul>
-<p><img data-src="https://now.ntu.ac.uk/d2l/lp/navbars/6605/theme/viewimage/34273789/view?v=20.24.8.21027"></p>
-</div>
-</div>
-</section>
-<section id="resources-and-many-more-online" class="slide level2">
-<h2>Resources (… and many more online)</h2>
-<p><img data-src="https://r4ds.hadley.nz/cover.jpg" class="absolute" style="right: 20px; "> <img data-src="https://moderndive.com/images/logos/book_cover.png" class="absolute" style="left: 20px; "></p>
-</section>
-<section id="finding-help" class="slide level2">
-<h2>Finding help</h2>
-<div class="columns">
-<div class="column fragment" style="width:50%;">
-<p><strong>We can help you with</strong></p>
-<ul>
-<li>Activities</li>
-<li>Software troubles</li>
-<li>Stats (after some proof of individual effort)</li>
-</ul>
-<p><span class="emoji" data-emoji="smiley">😃</span></p>
-</div><div class="column fragment" style="width:50%;">
-<p><strong>What we cannot</strong></p>
-<ul>
-<li>Mark exams twice</li>
-<li>Comment on unsubmitted Formative assessment</li>
-<li>Solve exercises for you</li>
-</ul>
-<p><span class="emoji" data-emoji="broken_heart">💔</span></p>
-</div>
-</div>
-</section>
-<section id="feedback-and-assessment" class="slide level2">
-<h2>Feedback and Assessment</h2>
-<ul>
-<li>Feedback opportunities throughout the module</li>
-<li>Formative assessment: multiple opportunities</li>
-<li>A more ‘formal’ opportunity that will help you to understand the standard required and guidelines of a scientific journal (and make you read a paper!).</li>
-</ul>
-</section>
-<section id="your-workbook" class="slide level2">
-<h2>Your Workbook</h2>
-
-<img data-src="https://quarto.org/docs/get-started/hello/images/rstudio-hello.png" class="r-stretch"></section>
-<section id="every-week" class="slide level2">
-<h2>Every week</h2>
-<div class="columns">
-<div class="column fragment" style="width:50%;">
-<p><strong>Tuesdays</strong></p>
-<ul>
-<li>Some data analyses</li>
-<li>Some research methods</li>
-</ul>
-</div><div class="column fragment" style="width:50%;">
-<p><strong>Thursdays</strong></p>
-<ul>
-<li>Drop-in sessions</li>
-<li>Tutorials</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="doing-science" class="slide level2">
-<h2>Doing Science</h2>
-<div class="columns">
-<div class="column fragment" style="width:50%;">
-<p><strong>Is not a gift</strong></p>
-<p><img data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQI6xOpvNvJFq5DQVEfCicuIVXSyCPGqFJ3x2v7GqXBg3S8Pjnn0cl7BSxbmFIQJOoK0&amp;usqp=CAU.png"></p>
-</div><div class="column fragment" style="width:50%;">
-<p><strong>Effort and repetition</strong></p>
-<p><img data-src="https://www.uksport.gov.uk/-/media/images/the-british-womens-4x100m-relay-team-celebrate-at-tokyo-2020.ashx?w=680&amp;mw=680&amp;hash=F4E2D3C9851E543D532CD4640703ED61&amp;h=433&amp;crop=1"></p>
-</div>
-</div>
-</section>
-<section id="section" class="slide level2" data-background-image="https://i0.wp.com/phenomenex.blog/wp-content/uploads/2017/10/PinkyandtheBrain.TheBrain.png" data-background-size="contain">
-<h2></h2>
-</section>
-<section id="section-1" class="slide level2" data-background-image="https://www.chbe.gatech.edu/sites/default/files/styles/gtcoe_max/public/2024-02/junglebiolab1.webp?itok=V7TS06KO" data-background-size="cover">
-<h2></h2>
-</section>
-<section id="section-2" class="slide level2" data-background-image="https://www.ilovephd.com/wp-content/uploads/2021/08/phd-memes-10.jpg" data-background-size="contain">
-<h2></h2>
-</section>
-<section id="section-3" class="slide level2" data-background-image="https://i.pinimg.com/736x/64/c1/ed/64c1ed41a154c80f7cd8a2d60e7265be.jpg">
-<h2></h2>
-</section>
-<section id="section-4" class="slide level2" data-background-image="https://www.siliconrepublic.com/wp-content/uploads/2014/12/img/scientist-what-I-do-meme.jpg">
-<h2></h2>
-</section>
-<section id="how-to-have-fun-with-data" class="slide level2">
-<h2>How to have fun with data?</h2>
+<section id="tibbles---click-on-the-title" class="slide level2">
+<h2><a href="https://tibble.tidyverse.org/">Tibbles</a> &lt;- click on the title</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="|1-2|3|4|5-9|10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">ggplot</span>(penguins, </span>
-<span id="cb1-2"><a href=""></a>       <span class="fu">aes</span>(<span class="at">x =</span> flipper_length_mm, <span class="at">y =</span> bill_length_mm)) <span class="sc">+</span></span>
-<span id="cb1-3"><a href=""></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
-<span id="cb1-4"><a href=""></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"darkorange"</span>,<span class="st">"purple"</span>,<span class="st">"cyan4"</span>)) <span class="sc">+</span></span>
-<span id="cb1-5"><a href=""></a>  <span class="fu">labs</span>(</span>
-<span id="cb1-6"><a href=""></a>    <span class="at">title =</span> <span class="st">"Flipper and bill length"</span>,</span>
-<span id="cb1-7"><a href=""></a>    <span class="at">subtitle =</span> <span class="st">"Dimensions for penguins at Palmer Station LTER"</span>,</span>
-<span id="cb1-8"><a href=""></a>    <span class="at">x =</span> <span class="st">"Flipper length (mm)"</span>, <span class="at">y =</span> <span class="st">"Bill length (mm)"</span>,</span>
-<span id="cb1-9"><a href=""></a>    <span class="at">color =</span> <span class="st">"Penguin species"</span>, <span class="at">shape =</span> <span class="st">"Penguin species"</span></span>
-<span id="cb1-10"><a href=""></a>  ) <span class="sc">+</span></span>
-<span id="cb1-11"><a href=""></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="|,4,5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href=""></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb1-3"><a href=""></a></span>
+<span id="cb1-4"><a href=""></a><span class="fu">data</span>(<span class="st">"penguins"</span>)</span>
+<span id="cb1-5"><a href=""></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb1-6"><a href=""></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 5
+   species island    bill_length_mm bill_depth_mm flipper_length_mm
+   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;
+ 1 Adelie  Torgersen           39.1          18.7               181
+ 2 Adelie  Torgersen           39.5          17.4               186
+ 3 Adelie  Torgersen           40.3          18                 195
+ 4 Adelie  Torgersen           NA            NA                  NA
+ 5 Adelie  Torgersen           36.7          19.3               193
+ 6 Adelie  Torgersen           39.3          20.6               190
+ 7 Adelie  Torgersen           38.9          17.8               181
+ 8 Adelie  Torgersen           39.2          19.6               195
+ 9 Adelie  Torgersen           34.1          18.1               193
+10 Adelie  Torgersen           42            20.2               190
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+<p><img data-src="https://tibble.tidyverse.org/logo.svg" class="absolute" style="top: 10px; right: 10px; width: 10%; "></p>
+</section>
+<section id="your-turn" class="slide level2">
+<h2>Your turn</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_8e78a63c" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">15</span></code>
+</div>
+</div>
+</div>
+<p>1- Load tidyverse</p>
+<p>2- load “palmerpenguins” dataset</p>
+<p>3- call the data</p>
+<ul>
+<li>type penguins</li>
+</ul>
+</section>
+<section id="the-pipe" class="slide level2">
+<h2>The PIPE</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="https://magrittr.tidyverse.org/logo.png"></p>
+<p>more about the package <a href="https://magrittr.tidyverse.org/reference/pipe.html">magrittr</a></p>
+</div><div class="column fragment" style="width:70%;">
+<ul>
+<li>“Take what is on the left and use it as the first argument on what comes next</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a>penguins <span class="sc">%&gt;%</span> <span class="co"># take the opbject penguins</span></span>
+<span id="cb3-2"><a href=""></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>) <span class="co"># then, select the columns 1 to 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 3
+   species island    bill_length_mm
+   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;
+ 1 Adelie  Torgersen           39.1
+ 2 Adelie  Torgersen           39.5
+ 3 Adelie  Torgersen           40.3
+ 4 Adelie  Torgersen           NA  
+ 5 Adelie  Torgersen           36.7
+ 6 Adelie  Torgersen           39.3
+ 7 Adelie  Torgersen           38.9
+ 8 Adelie  Torgersen           39.2
+ 9 Adelie  Torgersen           34.1
+10 Adelie  Torgersen           42  
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="why-data-wrangling" class="slide level2">
+<h2>Why data wrangling</h2>
+<ul>
+<li>your data is NEVER ready to analyse</li>
+<li>you need to get to know your data</li>
+<li>do some inspections</li>
+<li>ask some questions</li>
+</ul>
+</section>
+<section id="section" class="slide level2" data-background-image="https://media.licdn.com/dms/image/v2/C5612AQFIS6Q8CBEWHQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520242783151?e=1732147200&amp;v=beta&amp;t=zkmPqo85HLNtJJuEHZG4nHmnVHQM_ezLxAchuKxc3wI">
+<h2></h2>
+</section>
+<section id="section-1" class="slide level2" data-background-image="https://preview.redd.it/8ruxxxe7d9d31.jpg?auto=webp&amp;s=8aea753b10e0c1346031283090c9d589ae953c14">
+<h2></h2>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<div class="tenor-gif-embed" data-postid="7671930" data-share-method="host" data-aspect-ratio="1.35135" data-width="100%">
+<a href="https://tenor.com/view/lady-and-the-tramp-dog-eat-spaghetti-kiss-gif-7671930">Lady And The Tramp Dog GIF</a>from <a href="https://tenor.com/search/lady+and+the+tramp-gifs">Lady And The Tramp GIFs</a>
+</div>
+<script type="text/javascript" async="" src="https://tenor.com/embed.js"></script>
+<p>”</p>
+</section>
+<section id="data-exploration" class="slide level2">
+<h2>Data exploration</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>penguins <span class="sc">%&gt;%</span> <span class="co"># take the opbject penguins</span></span>
+<span id="cb5-2"><a href=""></a>  <span class="fu">write.csv</span>(., <span class="st">"penguins.csv"</span>) <span class="co"># then, save as .csv</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href=""></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      species          island    bill_length_mm  bill_depth_mm  
+ Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  
+ Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  
+ Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  
+                                 Mean   :43.92   Mean   :17.15  
+                                 3rd Qu.:48.50   3rd Qu.:18.70  
+                                 Max.   :59.60   Max.   :21.50  
+                                 NA's   :2       NA's   :2      
+ flipper_length_mm  body_mass_g       sex           year     
+ Min.   :172.0     Min.   :2700   female:165   Min.   :2007  
+ 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  
+ Median :197.0     Median :4050   NA's  : 11   Median :2008  
+ Mean   :200.9     Mean   :4202                Mean   :2008  
+ 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  
+ Max.   :231.0     Max.   :6300                Max.   :2009  
+ NA's   :2         NA's   :2                                 </code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="types-of-variable" class="slide level2">
+<h2>Types of variable</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb8-2"><a href=""></a>  <span class="fu">str</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [344 × 8] (S3: tbl_df/tbl/data.frame)
+ $ species          : Factor w/ 3 levels "Adelie","Chinstrap",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ island           : Factor w/ 3 levels "Biscoe","Dream",..: 3 3 3 3 3 3 3 3 3 3 ...
+ $ bill_length_mm   : num [1:344] 39.1 39.5 40.3 NA 36.7 39.3 38.9 39.2 34.1 42 ...
+ $ bill_depth_mm    : num [1:344] 18.7 17.4 18 NA 19.3 20.6 17.8 19.6 18.1 20.2 ...
+ $ flipper_length_mm: int [1:344] 181 186 195 NA 193 190 181 195 193 190 ...
+ $ body_mass_g      : int [1:344] 3750 3800 3250 NA 3450 3650 3625 4675 3475 4250 ...
+ $ sex              : Factor w/ 2 levels "female","male": 2 1 1 NA 1 2 1 2 NA NA ...
+ $ year             : int [1:344] 2007 2007 2007 2007 2007 2007 2007 2007 2007 2007 ...</code></pre>
+</div>
+</div>
+</section>
+<section id="types-of-variables" class="slide level2">
+<h2>Types of variables</h2>
+<div class="columns">
+<div class="column fragment">
+<p><strong>Categorical</strong></p>
+<p><img data-src="https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_3.png"></p>
+</div><div class="column fragment">
+<p><strong>Numerical</strong></p>
+<p><img data-src="https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_4.png"></p>
+</div>
+</div>
+</section>
+<section id="summarising-data" class="slide level2">
+<h2>Summarising data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href=""></a><span class="fu">library</span>(vtable)</span>
+<span id="cb10-2"><a href=""></a><span class="fu">library</span>(gt)</span>
+<span id="cb10-3"><a href=""></a></span>
+<span id="cb10-4"><a href=""></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb10-5"><a href=""></a>  <span class="fu">vtable</span>(., <span class="at">lush =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section>
-<section id="how-to-have-fun-with-data-output" class="slide level2 output-location-slide"><h2>How to have fun with data?</h2><div class="cell output-location-slide">
+<section id="summarising-data-output" class="slide level2 output-location-slide"><h2>Summarising data</h2><div class="cell output-location-slide">
 <div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="01_intro_rmda_files/figure-revealjs/plot-penguins-1.png" width="960"></p>
-</figure>
+<table class="table caption-top" data-quarto-postprocess="true" style="margin-left: auto; margin-right: auto;">
+<caption>.</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Name</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Class</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Values</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Missing</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">species</td>
+<td style="text-align: left;">factor</td>
+<td style="text-align: left;">'Adelie' 'Chinstrap' 'Gentoo'</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">nuniq: 3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">island</td>
+<td style="text-align: left;">factor</td>
+<td style="text-align: left;">'Biscoe' 'Dream' 'Torgersen'</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">nuniq: 3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">bill_length_mm</td>
+<td style="text-align: left;">numeric</td>
+<td style="text-align: left;">Num: 32.1 to 59.6</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">mean: 43.922, sd: 5.46, nuniq: 164</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bill_depth_mm</td>
+<td style="text-align: left;">numeric</td>
+<td style="text-align: left;">Num: 13.1 to 21.5</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">mean: 17.151, sd: 1.975, nuniq: 80</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">flipper_length_mm</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">Num: 172 to 231</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">mean: 200.915, sd: 14.062, nuniq: 55</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">body_mass_g</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">Num: 2700 to 6300</td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">mean: 4201.754, sd: 801.955, nuniq: 94</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sex</td>
+<td style="text-align: left;">factor</td>
+<td style="text-align: left;">'female' 'male'</td>
+<td style="text-align: left;">11</td>
+<td style="text-align: left;">nuniq: 2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">year</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">Num: 2007 to 2009</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">mean: 2008.029, sd: 0.818, nuniq: 3</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div></section><section id="summarising-data-1" class="slide level2">
+<h2>Summarising data</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href=""></a><span class="fu">library</span>(vtable)</span>
+<span id="cb11-2"><a href=""></a><span class="fu">library</span>(gt)</span>
+<span id="cb11-3"><a href=""></a></span>
+<span id="cb11-4"><a href=""></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb11-5"><a href=""></a>  <span class="fu">group_by</span>(species) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-6"><a href=""></a>  <span class="fu">na.omit</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb11-7"><a href=""></a>  <span class="fu">summarise</span>(<span class="at">mean_bill_lengh =</span> <span class="fu">mean</span>(bill_length_mm), <span class="at">sd=</span><span class="fu">sd</span>(bill_length_mm), <span class="at">n =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 4
+  species   mean_bill_lengh    sd     n
+  &lt;fct&gt;               &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;
+1 Adelie               38.8  2.66   146
+2 Chinstrap            48.8  3.34    68
+3 Gentoo               47.6  3.11   119</code></pre>
 </div>
 </div>
-</div></section><section id="what-are-your-expectations" class="slide level2 center">
-<h2>What are your expectations?</h2>
+</div>
+<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="bottom: 15px; right: 10px; " data-fig-size="6"></p>
+<p>More codes <a href="https://dplyr.tidyverse.org/reference/summarise.html">here</a></p>
 </section>
-<section id="the-end" class="slide level2 center">
-<h2>The end</h2>
+<section id="your-turn-1" class="slide level2">
+<h2>Your turn</h2>
+<ul>
+<li>Try to reproduce</li>
+<li>Create any summary for “penguins”</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_fea568ba" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">15</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="this-goes-on-and-on" class="slide level2">
+<h2>This goes on and on…</h2>
+<ul>
+<li>Data exploration goes as far and deep as you need</li>
+<li>There is no minimum nor maximum</li>
+<li>The kye point is</li>
+</ul>
+<p><strong>This needs to make your data make sense to you</strong></p>
+</section>
+<section id="end-of-session-on-da" class="slide level2 center">
+<h2>End of session on DA</h2>
 <div class="quarto-auto-generated-content">
 <p><img src="img/ntu_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
@@ -624,20 +745,20 @@ Felipe Melo
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="01_intro_rmda_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="01_intro_rmda_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="02_data_wrangling_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

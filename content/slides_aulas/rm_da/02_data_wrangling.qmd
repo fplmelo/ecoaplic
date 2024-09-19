@@ -1,0 +1,227 @@
+---
+title: "2-Data Wrangling"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+## You should know today
+
+- Why data wrangling?
+- How to plan data wrangling
+- Basic skills
+- Application with an example
+
+
+## Before we begin
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Attention_Sign.svg/1162px-Attention_Sign.svg.png)
+
+:::
+
+:::{.column width="50%"}
+- R and Rstudio installed
+- Don't panic
+- Everything is reproducible
+- You'll have to train to fix the content
+
+
+:::
+::::
+
+## [Tibbles](https://tibble.tidyverse.org/) <- click on the title
+
+```{r}
+#| echo: true
+#| warning: false
+#| code-line-numbers: "|,4,5"
+#| output-location: default
+
+library(tidyverse)
+library(palmerpenguins)
+
+data("penguins")
+penguins %>% 
+  select(1:5)
+
+```
+![](https://tibble.tidyverse.org/logo.svg){.absolute top=10 right=10 width="10%"}
+
+## Your turn
+
+```{r}
+#| echo: false
+
+library(countdown)
+countdown(minutes = 2, seconds = 15)
+
+```
+
+
+1- Load tidyverse
+
+2- load "palmerpenguins" dataset
+
+3- call the data
+
+  - type penguins
+
+
+## The PIPE
+
+::::{.columns}
+:::{.column width="30%"}
+
+![](https://magrittr.tidyverse.org/logo.png)
+
+more about the package [magrittr](https://magrittr.tidyverse.org/reference/pipe.html)
+
+:::
+
+:::{.column width="70%" .fragment}
+
+- "Take what is on the left and use it as the first argument on what comes next
+
+```{r}
+#| echo: true
+penguins %>% # take the opbject penguins
+  select(1:3) # then, select the columns 1 to 3
+```
+
+:::
+::::
+
+## Why data wrangling
+
+- your data is NEVER ready to analyse
+- you need to get to know your data
+- do some inspections
+- ask some questions
+
+## {background-image="https://media.licdn.com/dms/image/v2/C5612AQFIS6Q8CBEWHQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520242783151?e=1732147200&v=beta&t=zkmPqo85HLNtJJuEHZG4nHmnVHQM_ezLxAchuKxc3wI"}
+
+## {background-image="https://preview.redd.it/8ruxxxe7d9d31.jpg?auto=webp&s=8aea753b10e0c1346031283090c9d589ae953c14"}
+
+## 
+<div class="tenor-gif-embed" data-postid="7671930" data-share-method="host" data-aspect-ratio="1.35135" data-width="100%"><a href="https://tenor.com/view/lady-and-the-tramp-dog-eat-spaghetti-kiss-gif-7671930">Lady And The Tramp Dog GIF</a>from <a href="https://tenor.com/search/lady+and+the+tramp-gifs">Lady And The Tramp GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>"
+
+## Data exploration
+
+```{r}
+#| echo: true
+penguins %>% # take the opbject penguins
+  write.csv(., "penguins.csv") # then, save as .csv
+```
+:::{.fragment}
+```{r}
+#| echo: true
+penguins %>% 
+  summary()
+
+```
+:::
+
+## Types of variable
+```{r}
+#| echo: true
+#| output-location: default
+
+penguins %>% 
+  str()
+
+```
+
+
+## Types of variables
+
+::::{.columns}
+:::{.column .fragment}
+**Categorical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_3.png)
+
+:::
+
+:::{.column .fragment}
+**Numerical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_4.png)
+
+:::
+::::
+
+## Summarising data
+
+```{r}
+#| echo: true
+#| output-location: slide
+#| 
+
+library(vtable)
+library(gt)
+
+penguins %>% 
+  vtable(., lush = TRUE)
+```
+
+## Summarising data
+
+```{r}
+#| echo: true
+#| output-location: column
+#| 
+
+library(vtable)
+library(gt)
+
+penguins %>% 
+  group_by(species) %>% 
+  na.omit() %>% 
+  summarise(mean_bill_lengh = mean(bill_length_mm), sd=sd(bill_length_mm), n = n())
+```
+
+![](https://dplyr.tidyverse.org/logo.png){.absolute bottom=15 right=10 fig-size=6}
+
+More codes [here](https://dplyr.tidyverse.org/reference/summarise.html)
+
+## Your turn
+
+- Try to reproduce
+- Create any summary for "penguins"
+
+```{r}
+#| echo: false
+
+library(countdown)
+countdown(minutes = 2, seconds = 15)
+
+```
+
+## This goes on and on...
+
+- Data exploration goes as far and deep as you need
+- There is no minimum nor maximum
+- The kye point is
+
+**This needs to make your data make sense to you**
+
+
+## End of session on DA {.center}
+

@@ -174,7 +174,8 @@ more info: [My website](www.ecoaplic.org)
 
 ## Every week
 
-:::{.columns}
+::::{.columns}
+
 :::{.column width="50%" .fragment}
 **Tuesdays**
 
@@ -220,7 +221,7 @@ more info: [My website](www.ecoaplic.org)
 
 ## {background-image="https://www.siliconrepublic.com/wp-content/uploads/2014/12/img/scientist-what-I-do-meme.jpg"}
 
-## How to make beautiful graphs?
+## How to have fun with data?
 ```{r}
 #| echo: false
 library(tidyverse)
@@ -247,6 +248,8 @@ ggplot(penguins,
   ) +
   theme_minimal()
 ```
+
+
 ## What are your expectations?{.center}
 
 ## The end{.center}

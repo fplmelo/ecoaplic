@@ -1,0 +1,124 @@
+---
+title: "2.2-Research Questions"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+## You should know today
+
+- How to elaborate research question
+- The logic behind a good research question
+- The importance of literacy
+
+## How science progress?
+
+::::{.columns}
+:::{.column}
+
+![](https://pedley-smith.uk/wp-content/uploads/2014/04/eureka_1_.gif)
+
+![](https://scottberkun.com/wp-content/uploads/2010/01/Newton_apple.jpg)
+:::
+
+:::{.column .fragment}
+
+- Random discoveries?
+- Illumination?
+- Some crazy nerd
+
+:::
+::::
+
+## Inductivism vs Deductivism
+
+![](https://www.simplypsychology.org/wp-content/uploads/inductive-deductive.jpg){fig-align="center"}
+
+## When to pose a question?
+
+- A scientific question preceeds the hypotheses
+- Comes after a good screening of theory
+
+## Types of questions
+
+::::{.columns}
+:::{.column}
+**Bad questions**
+
+- Is there amy difference between A and B?
+- Is A bigger than B?
+- Can X influence Y?
+- Are there little green people out there?
+
+:::
+
+:::{.column .fragment}
+**Good questions**
+
+- What explains differences between A and B?
+- What makes A bigger than B?
+- How X can influence Y?
+- How can evolution lead to little green people out there?
+-
+
+:::
+::::
+
+## Let's train a bit
+
+Create a good and a bad scientific question about evolution of horses
+
+![](https://www.geographyrealm.com/wp-content/uploads/2022/06/horse-evolution-Aldona-Adobe-358922732.jpg)
+
+```{r}
+#| echo: false
+
+library(countdown)
+countdown(minutes = 3, seconds = 00)
+
+```
+
+## The importance of a good question
+
+- There is no good research based on bad questions
+- A good question always push knowledge further
+- It is difficult, really.
+- Needs training
+
+## Inspiration vs Transpiration
+
+::::{.columns}
+
+:::{.column}
+
+![](https://upload.wikimedia.org/wikipedia/en/2/24/Jo%C3%A3o_Cabral.jpg)
+
+**João Cabral de Mello Neto**
+:::
+
+:::{.column}
+
+*"Poetry is the result of a lot of effort and literacy. I don't believe in such a thing as inspiration for writing a good poem"*
+
+:::
+
+::::
+
+## What is science for you?
+
+## End of session on RM {.center}
+
