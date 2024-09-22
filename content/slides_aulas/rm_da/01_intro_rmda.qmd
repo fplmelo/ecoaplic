@@ -252,4 +252,15 @@ ggplot(penguins,
 
 ## What are your expectations?{.center}
 
+
+## Quarto Website
+
+![](img/penguins.png){fig-aling="center"}
+
+## Your Quarto Website is your workbook for this module
+
+
+
+
+
 ## The end{.center}
