@@ -1,5 +1,5 @@
 ---
-title: "2-Data Wrangling"
+title: "3 - Data Exploration"
 subtitle: " "
 author: "Felipe Melo"
 institute: "Nottingham Trent University - UK"
@@ -21,10 +21,9 @@ format:
 
 ## You should know today
 
-- Why data wrangling?
-- How to plan data wrangling
-- Basic skills
-- Application with an example
+- Make questions to your data?
+- Explore the basic features of your data
+- Make simple exploratory graphics
 
 
 ## Before we begin
@@ -45,6 +44,16 @@ format:
 
 :::
 ::::
+
+## What questions should I make to the data?{.center}
+
+## Back to Spreadsheets
+
+[The Pnguins file](https://raw.githubusercontent.com/fplmelo/ecoaplic/refs/heads/main/content/slides_aulas/rm_da/penguins.csv)
+
+
+
+
 
 ## [Tibbles](https://tibble.tidyverse.org/) <- click on the title
 

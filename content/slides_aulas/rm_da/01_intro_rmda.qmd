@@ -79,7 +79,6 @@ more info: [My website](www.ecoaplic.org)
 
 ![](img/schedule.png)
 
-![](img/leg_table.png){.absolute top=100 right=0 width="150"}
 
 ## Sessions
 
@@ -193,6 +192,10 @@ more info: [My website](www.ecoaplic.org)
 :::
 ::::
 
+:::{.fragment}
+[**But it may vary, depending on how "hard" is the week**]{style="color:red;"}
+:::
+
 ## Doing Science
 
 :::{.columns}
@@ -258,6 +261,8 @@ ggplot(penguins,
 ![](img/penguins.png){fig-aling="center"}
 
 ## Your Quarto Website is your workbook for this module
+
+[Example Here](https://ecoaplic.org/collection/rm_da_ntu/hello.html)
 
 
 
