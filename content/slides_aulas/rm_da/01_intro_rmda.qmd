@@ -192,7 +192,7 @@ more info: [My website](www.ecoaplic.org)
 :::
 ::::
 
-:::{.fragment}
+:::{.fragment .callout-important}
 [**But it may vary, depending on how "hard" is the week**]{style="color:red;"}
 :::
 
@@ -253,8 +253,6 @@ ggplot(penguins,
 ```
 
 
-## What are your expectations?{.center}
-
 
 ## Quarto Website
 
@@ -265,7 +263,7 @@ ggplot(penguins,
 [Example Here](https://ecoaplic.org/collection/rm_da_ntu/hello.html)
 
 
-
+## What are your expectations?{.center}
 
 
 ## The end{.center}
