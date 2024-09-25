@@ -49,7 +49,7 @@ format:
 
 ## Back to Spreadsheets
 
-[The Pnguins file](https://raw.githubusercontent.com/fplmelo/ecoaplic/refs/heads/main/content/slides_aulas/rm_da/penguins.csv)
+[The Penguins file](https://raw.githubusercontent.com/fplmelo/ecoaplic/refs/heads/main/content/slides_aulas/rm_da/penguins.csv)
 
 
 
@@ -147,7 +147,7 @@ penguins %>%
 ```
 :::
 
-## Types of variable
+## Types of variables
 ```{r}
 #| echo: true
 #| output-location: default
@@ -178,16 +178,25 @@ penguins %>%
 
 ## Summarising data
 
+```{css}
+#| echo: false
+
+.reveal table {
+  font-size: smaller;
+}
+
+```
+
+
 ```{r}
 #| echo: true
 #| output-location: slide
-#| 
 
 library(vtable)
 library(gt)
 
 penguins %>% 
-  vtable(., lush = TRUE)
+  vtable(lush = TRUE)
 ```
 
 ## Summarising data
@@ -195,7 +204,7 @@ penguins %>%
 ```{r}
 #| echo: true
 #| output-location: column
-#| 
+#| code-line-numbers: "|,3,4,5,6,7"
 
 library(vtable)
 library(gt)
@@ -203,7 +212,10 @@ library(gt)
 penguins %>% 
   group_by(species) %>% 
   na.omit() %>% 
-  summarise(mean = mean(bill_length_mm), sd=sd(bill_length_mm), n = n())
+  summarise(mean = mean(bill_length_mm), 
+            sd=sd(bill_length_mm), 
+            n = n()) |> 
+  gt()
 ```
 
 ![](https://dplyr.tidyverse.org/logo.png){.absolute bottom=15 right=10 fig-size=6}

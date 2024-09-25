@@ -24,7 +24,9 @@ library(palmerpenguins)
 
 #### Notes
 
-Here I can write some notes and explore the formatting functions of the document
+- Felipe is too boring
+
+- This module is going to be a nightmare
 
 
 ## Week 2 - ???
@@ -52,3 +54,6 @@ ggplot(penguins,
   ) +
   theme_minimal()
 ```
+
+
+## Week 3 - ???
