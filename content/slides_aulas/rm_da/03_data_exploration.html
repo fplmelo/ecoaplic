@@ -512,7 +512,7 @@ Felipe Melo
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_fc676cb8" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_317b3e03" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">15</span></code>
 </div>
@@ -669,7 +669,7 @@ Felipe Melo
 </ul>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_65e421cf" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_d2cf68db" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">15</span></code>
 </div>
@@ -684,21 +684,22 @@ Felipe Melo
 <li>Start to imagine before coding</li>
 </ul>
 </section>
-<section id="visualization-can-always-be-better" class="slide level2">
-<h2>Visualization can always be better</h2>
+<section id="check-distributions" class="slide level2">
+<h2>Check distributions</h2>
 <div class="cell columns column-output-location">
 <div class="column">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>penguins <span class="sc">%&gt;%</span> </span>
 <span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">na.omit</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb12-3"><a href="#cb12-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>species, </span>
-<span id="cb12-4"><a href="#cb12-4"></a>             <span class="at">y =</span> body_mass_g,</span>
-<span id="cb12-5"><a href="#cb12-5"></a>         <span class="at">group=</span>sex,</span>
-<span id="cb12-6"><a href="#cb12-6"></a>         <span class="at">fill=</span>sex,</span>
-<span id="cb12-7"><a href="#cb12-7"></a>         <span class="at">color=</span>sex))<span class="sc">+</span></span>
-<span id="cb12-8"><a href="#cb12-8"></a>  <span class="fu">geom_jitter</span>()<span class="sc">+</span></span>
-<span id="cb12-9"><a href="#cb12-9"></a>  </span>
+<span id="cb12-3"><a href="#cb12-3"></a>  <span class="fu">pivot_longer</span>(bill_length_mm<span class="sc">:</span>body_mass_g, <span class="at">names_to =</span> <span class="st">"trait"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb12-4"><a href="#cb12-4"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>value,</span>
+<span id="cb12-5"><a href="#cb12-5"></a>         <span class="at">group=</span>species,</span>
+<span id="cb12-6"><a href="#cb12-6"></a>         <span class="at">fill=</span>species,</span>
+<span id="cb12-7"><a href="#cb12-7"></a>         <span class="at">color=</span>species))<span class="sc">+</span></span>
+<span id="cb12-8"><a href="#cb12-8"></a>  <span class="fu">geom_density</span>(<span class="at">alpha=</span><span class="fl">0.7</span>)<span class="sc">+</span></span>
+<span id="cb12-9"><a href="#cb12-9"></a>  <span class="fu">facet_grid</span>(<span class="sc">~</span>trait, <span class="at">scales =</span> <span class="st">"free_x"</span> )<span class="sc">+</span></span>
 <span id="cb12-10"><a href="#cb12-10"></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">16</span>),</span>
-<span id="cb12-11"><a href="#cb12-11"></a>        <span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">16</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-11"><a href="#cb12-11"></a>        <span class="at">axis.title=</span><span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">16</span>))<span class="sc">+</span></span>
+<span id="cb12-12"><a href="#cb12-12"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <p><img data-src="03_data_exploration_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
@@ -706,6 +707,72 @@ Felipe Melo
 </div>
 </div>
 </section>
+<section id="the-importance-of-distributions" class="slide level2">
+<h2>The importance of distributions</h2>
+
+<img data-src="img/dist.png" class="r-stretch"><p>source:<a href="https://gregorygundersen.com/blog/2020/04/11/moments/" class="uri">https://gregorygundersen.com/blog/2020/04/11/moments/</a></p>
+</section>
+<section id="moments-of-centrality" class="slide level2">
+<h2>Moments of centrality</h2>
+
+<img data-src="img/mean.png" class="r-stretch"><p>Mean, median and mode</p>
+</section>
+<section id="moments-of-dispersion" class="slide level2">
+<h2>Moments of dispersion</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="https://media.geeksforgeeks.org/wp-content/uploads/20230810105933/measure-of-depression.png"></p>
+</div><div class="column fragment" style="width:50%;">
+<ul>
+<li>Variance</li>
+<li>Standard deviation</li>
+<li>Standard Error</li>
+<li>Range</li>
+<li>Quantiles</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="checking-via-histogram" class="slide level2">
+<h2>Checking via histogram</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">set.seed</span>(<span class="dv">999</span>)</span>
+<span id="cb13-2"><a href="#cb13-2"></a>normal<span class="ot">&lt;-</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb13-3"><a href="#cb13-3"></a>normal <span class="sc">%&gt;%</span> </span>
+<span id="cb13-4"><a href="#cb13-4"></a>  <span class="fu">as.tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb13-5"><a href="#cb13-5"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(value))<span class="sc">+</span></span>
+<span id="cb13-6"><a href="#cb13-6"></a>  <span class="fu">geom_histogram</span>(<span class="at">color=</span><span class="st">"#DD4A48"</span>, <span class="at">fill=</span><span class="st">"#DD4A48"</span>)<span class="sc">+</span></span>
+<span id="cb13-7"><a href="#cb13-7"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept=</span><span class="fu">c</span>(<span class="fu">mean</span>(normal), (<span class="fu">mean</span>(normal)<span class="sc">+</span><span class="fu">sd</span>(normal)),<span class="fu">mean</span>(normal)<span class="sc">-</span><span class="fu">sd</span>(normal)), </span>
+<span id="cb13-8"><a href="#cb13-8"></a>             <span class="at">linetype=</span><span class="st">"dashed"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<p><img data-src="03_data_exploration_files/figure-revealjs/unnamed-chunk-14-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="checking-via-bokplot" class="slide level2">
+<h2>Checking via bokplot</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">set.seed</span>(<span class="dv">999</span>)</span>
+<span id="cb14-2"><a href="#cb14-2"></a>normal<span class="ot">&lt;-</span><span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb14-3"><a href="#cb14-3"></a>normal <span class="sc">%&gt;%</span> </span>
+<span id="cb14-4"><a href="#cb14-4"></a>  <span class="fu">as.tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb14-5"><a href="#cb14-5"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(value))<span class="sc">+</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a>  <span class="fu">geom_boxplot</span>(<span class="at">fill=</span><span class="st">"#DD4A48"</span>,<span class="at">alpha=</span><span class="fl">0.7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<p><img data-src="03_data_exploration_files/figure-revealjs/unnamed-chunk-15-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="workflow" class="slide level2">
+<h2>Workflow</h2>
+
+<img data-src="https://teachdatascience.com/post/screencast/cycle.png" class="r-stretch"></section>
 <section id="end-of-session-on-da" class="slide level2 center">
 <h2>End of session on DA</h2>
 

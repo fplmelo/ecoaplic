@@ -288,7 +288,7 @@ countdown(minutes = 2, seconds = 15)
 - Don't just correlate random things
 - Start to imagine before coding
 
-## Visualization can always be better
+## Check distributions
 
 ```{r}
 #| echo: true
@@ -297,17 +297,81 @@ countdown(minutes = 2, seconds = 15)
 
 penguins %>% 
   na.omit() %>% 
-  ggplot(aes(x=species, 
-             y = body_mass_g,
-         group=sex,
-         fill=sex,
-         color=sex))+
-  geom_jitter()+
-  
+  pivot_longer(bill_length_mm:body_mass_g, names_to = "trait") %>% 
+  ggplot(aes(x=value,
+         group=species,
+         fill=species,
+         color=species))+
+  geom_density(alpha=0.7)+
+  facet_grid(~trait, scales = "free_x" )+
   theme(axis.text=element_text(size=16),
-        axis.title=element_text(size=16))
+        axis.title=element_text(size=16))+
+  theme_minimal()
 
 ```
+
+## The importance of distributions
+
+![](img/dist.png)
+
+source:<https://gregorygundersen.com/blog/2020/04/11/moments/>
+
+## Moments of centrality
+
+![](img/mean.png)
+
+Mean, median and mode
+
+## Moments of dispersion
+:::{.columns}
+:::{.column width="50%"}
+![](https://media.geeksforgeeks.org/wp-content/uploads/20230810105933/measure-of-depression.png)
+:::
+:::{.column width="50%" .fragment}
+- Variance
+- Standard deviation
+- Standard Error
+- Range
+- Quantiles
+:::
+:::
+
+## Checking via histogram
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+set.seed(999)
+normal<-rnorm(100)
+normal %>% 
+  as.tibble() %>% 
+  ggplot(aes(value))+
+  geom_histogram(color="#DD4A48", fill="#DD4A48")+
+  geom_vline(xintercept=c(mean(normal), (mean(normal)+sd(normal)),mean(normal)-sd(normal)), 
+             linetype="dashed")
+
+```
+
+## Checking via bokplot
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+set.seed(999)
+normal<-rnorm(100)
+normal %>% 
+  as.tibble() %>% 
+  ggplot(aes(value))+
+  geom_boxplot(fill="#DD4A48",alpha=0.7)
+
+```
+
+
+## Workflow 
+
+![](https://teachdatascience.com/post/screencast/cycle.png)
 
 ## End of session on DA {.center}
 
