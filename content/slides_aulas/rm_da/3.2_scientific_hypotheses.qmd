@@ -126,11 +126,24 @@ countdown(minutes = 3, seconds = 00)
  - Don't use a subheading
  - Never reefer to statistical hypotheses
  
-## Example 1
-![](img/dif_hyp.png)
+## The "If/then" method
 
-[text](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2745.12153)
+ - *If* drug X have an effect on reducing headache, *then*
+ - *When* many exotic species are introduced in the ecosystem, *then* the likelihood of severe ecological disruption increases
+ 
+## The *statement* method
 
+- Drug X reduce the headaches because it blocks the neuroreceptors of pain
+- Exotic species in high quantities disrupts ecological mutualistic networks
+
+## How good is my hypothesis?
+:::{.incremental}
+
+- Testable? :smiley:
+- Objective? :smiley:
+- Relevant? :smiley:
+
+::: 
 
 ## End of session on RM {.center}
 
