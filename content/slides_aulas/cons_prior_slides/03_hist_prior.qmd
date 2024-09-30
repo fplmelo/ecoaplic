@@ -1,13 +1,14 @@
 ---
 title: "3-A brief history of conservation priorities"
 subtitle: " "
-author: "Antonio Uzal"
+author: "Felipe Melo"
 format:
   revealjs:
+    theme: [default, custom.scss]
     incremental: true
     chalkboard: true
     logo: img/ntu_logo.png
-    footer: "Conservation Priorities 2023"
+    footer: "Conservation Priorities 2024"
     slide-number: true
     transition: slide
     background-transition: fade
