@@ -1,0 +1,136 @@
+---
+title: "3.2-Scientific Hypotheses"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: false
+    logo: img/ntu_logo.png
+    #footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+    embed-resources: false
+
+---
+
+## You should know today
+
+- How to elaborate a sound scientific hypothesis
+- How to differentiate scientific and statistical hypotheses
+- Connecting hypotheses and questions
+- How to write hypotheses in scientific texts
+
+## Why we need a hypothesis?
+
+::::{.columns}
+:::{.column}
+
+![source: Mad About Science](img/mad.gif)
+:::
+
+:::{.column .fragment .incremental}
+
+- Candidate explanation to a phenomenon
+- Contain previsions and expectations
+- Feedback theory
+- [Advance Science]{style="color:red"}
+
+:::
+::::
+
+## The mechanics of Science
+
+![By Efbrazil - Own work, CC BY-SA 4.0,](https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/The_Scientific_Method.svg/1024px-The_Scientific_Method.svg.png){fig-align="center"}
+
+## It is a statement
+- It is affirmative
+- It is not a questions
+- Must lead to expectations if confirmed
+- Self-explanatory
+
+## {background-image="https://www.opodo.co.uk/blog/wp-content/uploads/sites/12/2018/11/natural-phenomena-6.jpg.webp"}
+
+### What is the cause of *aurora borealis*?{.center}
+
+## {background-image="https://www.opodo.co.uk/blog/wp-content/uploads/sites/12/2018/11/natural-phenomena-6.jpg.webp"}
+
+### This is the manifestation of joy of the Gods<br> that throw some bright blanket in the night sky
+
+
+## {background-image="https://www.opodo.co.uk/blog/wp-content/uploads/sites/12/2018/11/natural-phenomena-6.jpg.webp"}
+
+### Auroras result from emissions of photons in Earth's upper <br> atmosphere, above 80 km (50 mi), from ionized nitrogen <br> atoms regaining an electron, and oxygen atoms and <br>nitrogen  based molecules returning from an excited state<br> to ground state
+
+
+## Types of hypotheses
+
+::::{.columns}
+:::{.column}
+**Scientific Hypotheses**
+
+- Candidate statements to explain an observed phenomenon
+- Meant to generate logical predictions
+- Working guidelines
+
+:::
+
+:::{.column .fragment}
+**Statistical Hypotheses**
+
+- Logical predictions
+- Confirmed by stats
+- Can be drawn in a graph
+
+:::
+::::
+
+## Statistical hypotheses
+![](https://miro.medium.com/v2/resize:fit:740/1*BVoaV9v4RMi6vAcinhvJKA.png)
+
+## <iframe width="1273" height="716" src="https://www.youtube.com/embed/KdpaukMLl0w"></iframe>
+
+
+## Let's train a bit
+
+Given the question: What caused the increase in body mass during the evolution of horses?
+
+### Create both a *scientific* and a *statistical* <br>hypotheses about thee size of horses
+
+![](https://www.geographyrealm.com/wp-content/uploads/2022/06/horse-evolution-Aldona-Adobe-358922732.jpg)
+
+
+```{r}
+#| echo: false
+
+library(countdown)
+countdown(minutes = 3, seconds = 00)
+
+```
+
+## A good working hypothesis is everything
+
+- A wrong hypotheses will misguide you
+- A good hypothesis will keep you excited and up to date.
+- Needs training
+
+## How to write hypotheses?
+
+ - You should tell a story
+ - Don't use a subheading
+ - Never reefer to statistical hypotheses
+ 
+## Example 1
+![](img/dif_hyp.png)
+
+[text](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2745.12153)
+
+
+## End of session on RM {.center}
+
