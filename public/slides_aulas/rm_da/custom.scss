@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+
+
+
+// colors
+$body-bg: #FFFFFF !default;
+$body-color: #000 !default;
+$link-color: #2a76dd !default;
+$selection-bg: #26351c !default;
+
+// headings
+$presentation-heading-font: "Palatino Linotype", "Book Antiqua", Palatino,
+  FreeSerif, serif !default;
+$presentation-heading-color: #9e043d!default;
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.3em;
+}
+section.slide h3 {
+  color: white !important;
+  background-color: #9e043d !important;
+  width: 250vw;
+  position: relative;
+  left: -20vw;
+  padding-left: 20vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+

@@ -1,0 +1,377 @@
+---
+title: "3 - Data Exploration"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+## You should know today
+
+- Make questions to your data?
+- Explore the basic features of your data
+- Make simple exploratory graphics
+
+
+## Before we begin
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Attention_Sign.svg/1162px-Attention_Sign.svg.png)
+
+:::
+
+:::{.column width="50%"}
+- R and Rstudio installed
+- Don't panic
+- Everything is reproducible
+- You'll have to train to fix the content
+
+
+:::
+::::
+
+## What questions should I make to the data?{.center}
+
+## Back to Spreadsheets
+
+[The Penguins file](https://raw.githubusercontent.com/fplmelo/ecoaplic/refs/heads/main/content/slides_aulas/rm_da/penguins.csv)
+
+
+
+
+
+## We know this data
+
+```{r}
+#| echo: true
+#| warning: false
+#| code-line-numbers: "|,4,5"
+#| output-location: default
+
+library(tidyverse)
+library(palmerpenguins)
+
+data("penguins")
+penguins %>% 
+  select(1:5)
+
+```
+
+## How to visually check continuous variables?{.center}
+
+## Histograms
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: default
+
+library(tidyverse)
+library(palmerpenguins)
+
+data("penguins")
+penguins %>% 
+group_by(species) %>% 
+  ggplot(aes(x=bill_length_mm, color=species, fill=species))+
+  geom_histogram()
+
+```
+
+## Boxplots
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+
+library(tidyverse)
+library(palmerpenguins)
+
+data("penguins")
+penguins %>% 
+group_by(species) %>% 
+  ggplot(aes(x=species, 
+             y=bill_length_mm, 
+             color=species, 
+             fill=species))+
+  geom_boxplot(alpha=0.5)+
+  theme(axis.text=element_text(size=16),
+        axis.title=element_text(size=16))
+
+```
+
+
+## Your turn
+
+- Try to reproduce with any other continuous variable
+- |Do a Historgram and a Boxplot
+
+```{r}
+#| echo: false
+
+library(countdown)
+countdown(minutes = 2, seconds = 15)
+
+```
+
+
+## Checking categorical varibles{.center}
+
+## Species of penguin
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+
+library(tidyverse)
+library(palmerpenguins)
+
+penguins %>% 
+  ggplot(aes(x=species,
+             color=species, 
+             fill=species))+
+  geom_bar(alpha=0.5)+
+  theme(axis.text=element_text(size=16),
+        axis.title=element_text(size=16))
+
+```
+
+## Observations per year
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+
+library(tidyverse)
+library(palmerpenguins)
+
+penguins %>% 
+  ggplot(aes(x=year,
+             color=species, 
+             fill=species))+
+  geom_bar()+
+  theme(axis.text=element_text(size=16),
+        axis.title=element_text(size=16))
+
+```
+
+## Observations per island
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+
+library(tidyverse)
+library(palmerpenguins)
+
+penguins %>% 
+  ggplot(aes(x=island,
+             color=species, 
+             fill=species))+
+  geom_bar()+
+  theme(axis.text=element_text(size=16),
+        axis.title=element_text(size=16))
+
+```
+
+
+## Visualising correlations
+
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+
+penguins %>% 
+  ggplot(aes(x=bill_length_mm, 
+             y = bill_depth_mm))+
+  geom_point()+
+  theme(axis.text=element_text(size=16),
+        axis.title=element_text(size=16))
+
+```
+
+## Visualising correlations per species
+
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+
+penguins %>% 
+  ggplot(aes(x=bill_length_mm, 
+             y = bill_depth_mm,
+             color=species, 
+             fill=species))+
+  geom_point()+
+  theme(axis.text=element_text(size=16),
+        axis.title=element_text(size=16))
+
+```
+
+
+## Boddy mass per sex
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+
+penguins %>% 
+  na.omit() %>% 
+  ggplot(aes(x=sex, 
+             y = body_mass_g,
+             color=species, 
+             fill=species))+
+  geom_boxplot(alpha=0.7)+
+  theme(axis.text=element_text(size=16),
+        axis.title=element_text(size=16))
+
+```
+
+## Boddy mass per sex (iverting groups)
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+
+penguins %>% 
+  na.omit() %>% 
+  ggplot(aes(x=species, 
+             y = body_mass_g,
+             color=sex, 
+             fill=sex))+
+  geom_boxplot(alpha=0.7)+
+  theme(axis.text=element_text(size=16),
+        axis.title=element_text(size=16))
+
+```
+
+## Your turn
+
+- Can boby mass predict bill length?
+- Do sex explain flipper length
+
+```{r}
+#| echo: false
+
+library(countdown)
+countdown(minutes = 2, seconds = 15)
+
+```
+
+
+## Exploring data is asking relevant questions
+
+- This is not mining 
+- Don't just correlate random things
+- Start to imagine before coding
+
+## Check distributions
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+
+penguins %>% 
+  na.omit() %>% 
+  pivot_longer(bill_length_mm:body_mass_g, names_to = "trait") %>% 
+  ggplot(aes(x=value,
+         group=species,
+         fill=species,
+         color=species))+
+  geom_density(alpha=0.7)+
+  facet_grid(~trait, scales = "free_x" )+
+  theme(axis.text=element_text(size=16),
+        axis.title=element_text(size=16))+
+  theme_minimal()
+
+```
+
+## The importance of distributions
+
+![](img/dist.png)
+
+source:<https://gregorygundersen.com/blog/2020/04/11/moments/>
+
+## Moments of centrality
+
+![](img/mean.png)
+
+Mean, median and mode
+
+## Moments of dispersion
+:::{.columns}
+:::{.column width="50%"}
+![](https://media.geeksforgeeks.org/wp-content/uploads/20230810105933/measure-of-depression.png)
+:::
+:::{.column width="50%" .fragment}
+- Variance
+- Standard deviation
+- Standard Error
+- Range
+- Quantiles
+:::
+:::
+
+## Checking via histogram
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+set.seed(999)
+normal<-rnorm(100)
+normal %>% 
+  as.tibble() %>% 
+  ggplot(aes(value))+
+  geom_histogram(color="#DD4A48", fill="#DD4A48")+
+  geom_vline(xintercept=c(mean(normal), (mean(normal)+sd(normal)),mean(normal)-sd(normal)), 
+             linetype="dashed")
+
+```
+
+## Checking via bokplot
+
+```{r}
+#| echo: true
+#| warning: false
+#| output-location: column
+set.seed(999)
+normal<-rnorm(100)
+normal %>% 
+  as.tibble() %>% 
+  ggplot(aes(value))+
+  geom_boxplot(fill="#DD4A48",alpha=0.7)
+
+```
+
+
+## Workflow 
+
+![](https://teachdatascience.com/post/screencast/cycle.png)
+
+## End of session on DA {.center}
+

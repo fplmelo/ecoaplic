@@ -1,0 +1,269 @@
+---
+title: "1-Introduction to RM&DA"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+## You should know today:
+
+- How this module is structured
+- How to navigate NOW page
+- What are the basic set-ups needed on your device
+- [Get the dimension]{style="color: red;"} of the work needed
+
+
+## Who am I?
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](img/profile.png)
+
+:::
+
+:::{.column width="50%"}
+- Started at NTU may 2023
+- Ecologist/Conservationist
+- Tropical Ecosystems
+- Applied Sciences
+
+I taught RM & DA before [many times]{style="color: red;"}
+
+more info: [My website](www.ecoaplic.org)
+
+:::
+::::
+
+## How this module is organized?
+
+![](img/toolkit.png){fig-align="center"}
+
+## Two main workflows
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**Data Analysis**
+
+- Cover all aspects of dealing with data
+- Mostly focused on the basics
+- Less is More in Statistics
+
+:::
+
+:::{.column width="50%" .fragment}
+**Research Methods**
+
+- Cover the theoretical and philosophical aspects of **doing science**
+- Focused on making sense of science
+- Writing and reading skills
+
+:::
+::::
+
+## Weekly Schedule
+
+![](img/schedule.png)
+
+
+## Sessions
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**Very Important**
+
+- Pre-sessions
+- Sessions
+- Post-sessions
+
+*It may vary*
+
+:::
+
+:::{.column width="50%" .fragment}
+
+![](img/pre_session.png)
+
+:::
+::::
+
+## Main tools
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**Microsoft Teams**
+
+- Used to deliver sessions
+- Drop-in sessions
+- Group activities
+
+![](https://teach.cbs.dk/wp-content/uploads/2022/01/Microsoft_Teams_Android_Smartphone.jpeg)
+:::
+
+:::{.column width="50%" .fragment}
+
+**NOW page**
+
+- All Resources
+- Virtual learning tools
+- Submission of exams
+
+![](https://now.ntu.ac.uk/d2l/lp/navbars/6605/theme/viewimage/34273789/view?v=20.24.8.21027)
+
+:::
+::::
+
+## Resources (... and many more online)
+
+
+![](https://r4ds.hadley.nz/cover.jpg){.absolute right=20}
+![](https://moderndive.com/images/logos/book_cover.png){.absolute left=20}
+
+## Finding help
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**We can help you with**
+
+- Activities
+- Software troubles
+- Stats (after some proof of individual effort)
+
+:smiley:
+
+:::
+
+:::{.column width="50%" .fragment}
+
+**What we cannot**
+
+- Mark exams twice
+- Comment on unsubmitted Formative assessment
+- Solve exercises for you
+
+:broken_heart:
+
+:::
+::::
+
+## Feedback and Assessment
+
+* Feedback opportunities throughout the module
+* Formative assessment: multiple opportunities
+- A more ‘formal’ opportunity that will help you to understand the standard required and guidelines of a scientific journal (and make you read a paper!).
+
+
+## Your Workbook
+
+![](https://quarto.org/docs/get-started/hello/images/rstudio-hello.png)
+
+## Every week
+
+::::{.columns}
+
+:::{.column width="50%" .fragment}
+**Tuesdays**
+
+- Some data analyses
+- Some research methods
+
+:::
+
+:::{.column width="50%" .fragment}
+**Thursdays**
+
+- Drop-in sessions
+- Tutorials
+
+:::
+::::
+
+:::{.fragment .callout-important}
+[**But it may vary, depending on how "hard" is the week**]{style="color:red;"}
+:::
+
+## Doing Science
+
+:::{.columns}
+:::{.column width="50%" .fragment}
+**Is not a gift**
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQI6xOpvNvJFq5DQVEfCicuIVXSyCPGqFJ3x2v7GqXBg3S8Pjnn0cl7BSxbmFIQJOoK0&usqp=CAU)
+
+:::
+
+:::{.column width="50%" .fragment}
+**Effort and repetition**
+
+![](https://www.uksport.gov.uk/-/media/images/the-british-womens-4x100m-relay-team-celebrate-at-tokyo-2020.ashx?w=680&mw=680&hash=F4E2D3C9851E543D532CD4640703ED61&h=433&crop=1)
+
+:::
+::::
+
+## {background-image="https://i0.wp.com/phenomenex.blog/wp-content/uploads/2017/10/PinkyandtheBrain.TheBrain.png" background-size="contain"}
+
+## {background-image="https://www.chbe.gatech.edu/sites/default/files/styles/gtcoe_max/public/2024-02/junglebiolab1.webp?itok=V7TS06KO" background-size="cover"}
+
+## {background-image="https://www.ilovephd.com/wp-content/uploads/2021/08/phd-memes-10.jpg" background-size="contain"}
+
+## {background-image="https://i.pinimg.com/736x/64/c1/ed/64c1ed41a154c80f7cd8a2d60e7265be.jpg"}
+
+## {background-image="https://www.siliconrepublic.com/wp-content/uploads/2014/12/img/scientist-what-I-do-meme.jpg"}
+
+## How to have fun with data?
+```{r}
+#| echo: false
+library(tidyverse)
+library(palmerpenguins)
+```
+
+
+```{r}
+#| label: plot-penguins
+#| warning: false
+#| echo: true
+#| code-line-numbers: "|1-2|3|4|5-9|10"
+#| output-location: slide
+
+ggplot(penguins, 
+       aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(
+    title = "Flipper and bill length",
+    subtitle = "Dimensions for penguins at Palmer Station LTER",
+    x = "Flipper length (mm)", y = "Bill length (mm)",
+    color = "Penguin species", shape = "Penguin species"
+  ) +
+  theme_minimal()
+```
+
+
+
+## Quarto Website
+
+![](img/penguins.png){fig-aling="center"}
+
+## Your Quarto Website is your workbook for this module
+
+[Example Here](https://ecoaplic.org/collection/rm_da_ntu/hello.html)
+
+
+## What are your expectations?{.center}
+
+
+## The end{.center}
