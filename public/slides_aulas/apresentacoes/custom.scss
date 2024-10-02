@@ -29,3 +29,24 @@ section.slide h3 {
   padding-bottom: 5px;
 }
 
+// Text box
+
+.inverse {
+  data-background: #562457;
+}
+
+// Styles
+
+.subtitle {
+  font-size: 70px;
+  color:  #9e043d !important;
+}
+
+.reveal .slide-logo {
+  height: 60px !important;
+  width: 50px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+

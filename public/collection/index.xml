@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aulas on Applied Ecology</title>
+    <title>Modules on Applied Ecology</title>
     <link>/collection/</link>
-    <description>Recent content in Aulas on Applied Ecology</description>
+    <description>Recent content in Modules on Applied Ecology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 28 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="/collection/index.xml" rel="self" type="application/rss+xml" />

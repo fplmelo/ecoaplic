@@ -4,12 +4,73 @@ author: "Felipe Melo"
 format: 
   html:
     toc: true
+    toc-depth: 3
+editor: source
 
 ---
 
-## Week 1
+## Week 1 - Introduction
 
-### Data Analyses
+### Formative exercise 1 - Making your workbook online
+
+Some people reported difficulties when dealing with this 1st formative exercise.
+
+**This is expected**, don't panic. Those people dealing with R for the first time always suffer a bit.
+
+R is a programming language and learning how to code in a new language brings some challenges. However, as anything in life, you need persistence and a routine of training. 
+
+So far, nearly half of the students submitted their first formative exercise.
+
+```{r}
+#| label: formative exercise stats
+#| include: true
+#| warning: false
+#| echo: true
+
+library(tidyverse)
+
+tibble(number=as.character(seq(1:78)), # creating tibble with variables "stds" and "number" of lenght 78
+       name="studs") %>% 
+  unite(stud_number,name,number, sep = "_") %>% # making them into a single variable
+  mutate(submitted=sample(c(rep(TRUE, 34), rep(FALSE, 44)), 78 ,replace = F))->first_ex # creating a variable with random TRUE and FALSE for submission
+
+first_ex %>% 
+  count(submitted) %>% # generate a count per level
+  group_by(submitted) # make it into a table for easy check
+  
+```
+
+
+This is totally expected, keep trying.
+
+You'll have the chance to update your workbook for the next **formative exercises**.
+
+A common question is related to the difference between *formative exercises* and *formative assessments*
+
+**Table 1**. Differences between formative exercises and assessments for this module
+
+| Formative exercise  | formative assessment  |
+|--------|--------|
+| training code, organizing your workbook, important to keep track of your own advance  | This is an assessment that aims to evaluate your knowledge related to a buch of content   |
+| It is not mandatory   | Mandatory   |
+| very little feedback | More detailed feedback   |
+| post-sessions of every week | two fixed calendar dates   |
+
+### Installing Quarto
+
+Some people reported theyu cant install *Quarto*, specially in Apple devices such as MacBooks
+
+Follow the tutorial bellow. It is simple and straignthforward. You should be able to reproduce it, otherwise, there should be more serious IT issues such as outdated OS or related.
+
+**For Mac users**
+
+<iframe width="900" height="600" src="https://www.youtube.com/embed/4rKWIJXe3mA" title="Installing Quarto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+**For Windows users**
+
+<iframe width="900" height="600" src="https://www.youtube.com/embed/JQ8WbI2_Rc4" title="Downloading and Installing Quarto on Windows" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ```{r}
 #| label: load-packages
@@ -19,37 +80,75 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+### Common "errors"
 
-* Introduction to the Module [paste the link]()
-* This site must be online now
+- Installing Quarto
 
-### Research Methods
+If you still can't install Quarto after following these tutorials, you should speak to NTU's DT Support. This might be the case if you are using a device prodived to you by NTU with the NTU windows OS. These devices impose a lot of restrictions and I **don't** reccomend using these devices if you can avoid them for daily activities. If you do not count with your own laptop, please speak to me and we'll find a solution for you.
 
-Some notes on the content of the module
+- Fail to render Quarto (*.qmd)
+
+Some people reported they can't render the ".qmd" file. This is likely due to fail in the code chunks. If anything is missing or work in your code, Quarto won't render. This is important and helps you to keep you code functional and **recproducible**. 
+
+::: {.callout-warning}
+## Fail to render
+
+![](img/error_render.png)
+:::
 
 
-## Week 2 - Meet the penguins
+::: {.callout-tip}
+## Use source rather than visual mode
 
-![](https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png){style="float:right;" fig-alt="Illustration of three species of Palmer Archipelago penguins: Chinstrap, Gentoo, and Adelie. Artwork by @allison_horst." width="401"}
+:::{.columns}
+:::{column}
+![](img/source.png)
+:::
+:::{column}
 
-The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for `{r} nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
+- This will give you line numbers easily
+- Help you to find "where" the error is
+- In this case, there is a package missing: "ggplot2"
 
-The plot below shows the relationship between flipper and bill lengths of these penguins.
+:::
+:::
+:::
 
-```{r}
-#| label: plot-penguins
-#| warning: false
-#| echo: false
+- Fail to install R packages
 
-ggplot(penguins, 
-       aes(x = flipper_length_mm, y = bill_length_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  scale_color_manual(values = c("darkorange","purple","cyan4")) +
-  labs(
-    title = "Flipper and bill length",
-    subtitle = "Dimensions for penguins at Palmer Station LTER",
-    x = "Flipper length (mm)", y = "Bill length (mm)",
-    color = "Penguin species", shape = "Penguin species"
-  ) +
-  theme_minimal()
-```
+Some people reported they can't install a packages like "ggplot2". First, whe you install "tidyverse", ggplot comes together and you don't need to install them again. Second, everytime this happens and it hapeens quite often for **all of us**, the most important thing is to look at the error log. It will give you a hint on how to solve. Copy and past in google and try to read the threads... yes I know, it is boring but you'll need to do it form time to time and learn how to solve your issues on your own. You won't have the support of a teacher forever.
+
+See this exmample related to the above error
+
+![](img/error_ggplot.png)
+
+It says, there is no package  called 'numsell' and this must be a dependency that is missing. 
+
+::: {.callout-tip}
+## Try to install dependencies
+
+install.packages("munsell")
+
+then
+
+install.packages("tidyverse") # remember it comes with ggplot already
+
+:::
+
+::: {.callout-tip}
+## Google it!
+
+Copy and paste the error message in google and try to find a solution
+
+:::
+
+- Make sure you have the latest versions of R and Rstudio
+
+This is obvious but sometimes many of the above errors can be fixed by keeping R and RStudio updated.
+
+- Fail to access Dropbox on NOW Page
+
+This is likely due to enrollment issues and tend to be solved with time. Don't worry, keep working on your files, make them online and if the error persists, contact NTU support as I have no power on NOW pages rather than editing the content on it.
+
+
+## Week 2 - Upcoming...

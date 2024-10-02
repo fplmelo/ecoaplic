@@ -1,0 +1,260 @@
+---
+title: "BioRestNet: a network of biocultural restoration"
+author: "Felipe Melo"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: libs/ntu_logo.png
+    footer: ""
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## What are the current challenges of ecological restoration?
+
+- Improved techniques of restoration :+1:
+- Informed planning :+1:
+- Geopolitical momentum :+1:
+- Environmental justice :-1:
+- Ecological knowledge gaps :-1:
+
+## How to pursue environmental justice and develop a competitive research agenda on restoration?{.center}
+
+## Traditional Ecological Knowledge - TEK
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/seedcol.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   Knowledge frontier
+-   Decolonial
+-   Would benefit from validation
+-   Mostly related to nature
+:::
+::::
+
+## TEK for Assessing Landscapes
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/part_map.jpg)
+
+![](libs/part_map2.jpg)
+
+:::
+
+:::{.column width="50%"}
+- Participatory mapping
+- Landscape Biographies
+- Unforseen landscape metrics
+:::
+::::
+
+
+
+## TEK for Ecology
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/rest_func.png)
+
+:::
+
+:::{.column width="50%"}
+
+- Functional profile of useful species
+- Functioning of managed ecosystems
+- Role of secondary succession
+- Technical recommendations
+
+:::
+::::
+
+## TEK for adding value to restoration
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/neoland.png)
+
+:::
+
+:::{.column width="50%"}
+
+- Restoration for livelihoods
+- Enforcement of TEK
+- Environmental Justice
+
+:::
+::::
+
+## Why a network?
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](https://www.lebow.drexel.edu/sites/default/files/legacy/story/1501077931-network.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   It is the best way to scale up restoration
+-   Allows sharing of knowledge
+-   Strengthen actions
+-   Creates models
+:::
+::::
+:::
+
+
+## Core principles of Biocultural Approaches
+
+![](libs/biocult-core.jpg){width=900 fig-align="center"}
+
+source: Gavin et al 2015
+
+
+## An example from the Brazilian Caatinga
+
+::::{.columns}
+
+:::{.column width="50%"}
+:::{.nonincremental}
+
+- Culturally important species
+- Database on plant uses
+- Multiple benefits
+- Maintain Caatinga natural features
+
+[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+
+:::
+:::
+
+:::{.column width="50%"}
+
+![](libs/biocult.png)
+:::
+::::
+
+## 
+
+![](libs/hudson.png){fig-align=center, width=95%}
+
+Toscano et al (under review)
+
+## Goals of the BioRestNet
+:::{.nonincremental}
+
+* A worldwide database on TEK ontribution to restoration
+  * Plants & Animals
+  * inspired on [TRY](https://www.try-db.org/TryWeb/Home.php) and [GlobUNT](https://patspo.shinyapps.io/GlobalUsefulTrees/)
+* Ecological assessments of TEK
+* Generate participatory models of restoration
+
+:::
+
+## Experimental Design of the BioRestNet in Kenya
+
+## Module 1 - Biocultural Inventory{.center}
+
+
+## Question: What are the plants and animals that contribute more to both ecosystem functioning and livelihoods?
+
+## Assessment of Culturally Important Species
+
+![](libs/firstnations.jpg){.r-stack}
+source: [Conservation through Reconciliation](https://conservation-reconciliation.ca/)
+
+## Asembling of databases of Culturally Important Species
+
+![](libs/bicult_sp.png){.r-stack}
+
+[Reyes-Garcia 2023](https://www.researchgate.net/publication/366847200_Biocultural_vulnerability_exposes_threats_of_culturally_important_species)
+
+## Meaniningful Functional Traits
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/traits_plants.jpg)
+
+:::
+
+:::{.column width="50%"}
+
+![](libs/zootrait.jpeg)
+
+:::
+::::
+
+
+
+## Module 2 - Landscape Scale{.center}
+
+
+## Question: How landscape features affects biodiversity and livelihoods in the Savannah?
+
+
+## Assessing Working Landscapes
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/ldsf.jpg)
+
+:::
+
+:::{.column width="50%"}
+- [The Land Degradation Surveillance Framework (LDSF)](http://landscapeportal.org/blog/2015/03/25/the-land-degradation-surveillance-framework-ldsf/)
+- 100km² landscapes
+- 16 cluster
+- 10 plots per cluster
+:::
+::::
+
+## Workflow of the LDSF
+
+![](libs/ldsf_wrkflw.png){width=1000 fig-align="center"}
+
+We want to add Landscape Biograpahies and gender-based mapping
+
+## Module 3 - Local manipulative experiment
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/design.jpeg)
+
+:::
+
+:::{.column width="50%"}
+
+- Simulate biodiversity
+- Functional diversity
+- Measure Ecosystem Functions
+
+:::
+::::
+
+## How to mainstream Biocultural Restoration?
+
+- What are the best landscape perspectives?
+- How to integrate TEK into productive restoration models?
+- How to create an effetive network of Biocutlural Restoration?
+
+# Asante Sana{.center}
+
+
+
+
+
+
+
+
+
+
+
+

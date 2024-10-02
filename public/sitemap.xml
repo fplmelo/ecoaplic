@@ -119,9 +119,6 @@
     <loc>/courses/eco_geral2/ameacas/amea%C3%A7as/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/collection/</loc>
-    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/courses/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -135,6 +132,9 @@
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/courses/eco_geral2/biocons/biocons/</loc>
+    <lastmod>2022-12-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/collection/</loc>
     <lastmod>2022-12-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/collection/eco_geral2/magnitude/magnitude/</loc>
@@ -326,6 +326,10 @@
     <loc>/project/peld_catimbau/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/slides_aulas/apresentacoes/ares_rc_2024_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/ares_rc_2024_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
     <loc>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/notes/speaker-view/</loc>
   </url><url>
     <loc>/slides_aulas/apresentacoes/biorestnet_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
@@ -333,6 +337,14 @@
     <loc>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/notes/speaker-view/</loc>
   </url><url>
     <loc>/slides_aulas/apresentacoes/biorestnet_simbiose_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/biorestnet_sobre24_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/biorestnet_sobre24_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/biorestnet_workshop_kenya_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/biorestnet_workshop_kenya_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
   </url><url>
     <loc>/slides_aulas/apresentacoes/caatinga_bori_files/libs/revealjs/plugin/notes/speaker-view/</loc>
   </url><url>
@@ -359,6 +371,10 @@
     <loc>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/notes/speaker-view/</loc>
   </url><url>
     <loc>/slides_aulas/apresentacoes/flare2023_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/flare_2024_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/apresentacoes/flare_2024_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
   </url><url>
     <loc>/slides_aulas/apresentacoes/flr_ntu_files/libs/revealjs/plugin/notes/speaker-view/</loc>
   </url><url>
@@ -425,6 +441,16 @@
     <loc>/slides_aulas/eco_geral1/04_tabelas-_vida_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
   </url><url>
     <loc>/slides_aulas/ecol_paisag/04_intro_frag_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/rm_da/01_intro_rmda_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/rm_da/01_intro_rmda_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/rm_da/03_data_exploration_files/libs/revealjs/plugin/notes/speaker-view/</loc>
+  </url><url>
+    <loc>/slides_aulas/rm_da/03_data_exploration_files/libs/revealjs/plugin/reveal-chalkboard/readme/</loc>
+  </url><url>
+    <loc>/slides_aulas/rm_da/3.2_scientific_hypotheses_files/libs/revealjs/plugin/notes/speaker-view/</loc>
   </url><url>
     <loc>/collection/bio_cons/03_intro_biocons/</loc>
   </url><url>

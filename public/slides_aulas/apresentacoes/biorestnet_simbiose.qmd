@@ -3,15 +3,85 @@ title: "BioRestNet: a network of biocultural restoration"
 author: "Felipe Melo"
 format:
   revealjs:
-    incremental: true
+    incremental: false
     chalkboard: true
-    #logo: ntu_logo.png
+    logo: libs/ntu_logo.png
     footer: ""
     slide-number: true
     transition: slide
     background-transition: fade
 ---
 
+## What are the current challenges of ecological restoration?
+- Improved techniques of restoration
+- Informed planning 
+- Geopolitical momentum
+- Environmental justice
+- Ecological knowledge gaps
+
+## How to pursue environmental justice and develop a competitive research agenda on restoration?
+
+## Traditional Ecological Knowledge - TEK
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/seedcol.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   Knowledge frontier
+-   Decolonal
+-   Would benefit from validation
+-   Mostly related to nature
+:::
+::::
+
+## TEK for Landscapes
+::::{.columns}
+:::{.column width="50%"}
+
+:::
+
+:::{.column width="50%"}
+- Participative mapping
+- 
+:::
+::::
+
+## TEK for Ecology
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/rest_func.png)
+
+:::
+
+:::{.column width="50%"}
+
+- Functional profile of useful species
+- Functioning of managed ecosystems
+- Role of secondary succession
+- Technical recommendations
+
+:::
+::::
+
+## TEK for adding value to restoration
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/neoland.png)
+
+:::
+
+:::{.column width="50%"}
+
+- Restoration for livelihoods
+- Enforcement of TEK
+- Environmental Justice
+
+:::
+::::
 
 ## Why a network?
 :::{.nonincremental}
@@ -31,24 +101,11 @@ format:
 
 
 ## Core principles of Biocultural Approaches
-::::{.columns}
 
-:::{.column width="50%"}
-:::{.nonincremental}
+![](libs/biocult-core.jpg){width=1000}
 
--   Value TEK
--   Improve social engagement
--   Decolonize Restoration/Conservation
--   Co-constructed models
-:::
-:::
 
-:::{.column width="50%"}
-![](libs/biocult-core.jpg){width=700}
-:::
-::::
-
-## An example from the Caatinga forest
+## An example from the Brazilian Caatinga
 
 ::::{.columns}
 
@@ -71,7 +128,7 @@ format:
 :::
 ::::
 
-## An example from the Caatinga forest{.nostretch}
+## An example from the Brazilian Caatinga{.nostretch}
 
 
 ![](libs/fun_bioc.jpg){fig-align=center, width=75%}
@@ -81,15 +138,17 @@ format:
 ## Goals of the BioRestNet
 :::{.nonincremental}
 
-* A worldwide database on traditional uses of biodiversity
+* A worldwide database on TEK ontribution to restoration
   * Plants & Animals
   * inspired on [TRY](https://www.try-db.org/TryWeb/Home.php) and [GlobUNT](https://patspo.shinyapps.io/GlobalUsefulTrees/)
-* Compilation of main traditional management techniques
-* Offer info on species usefulness 
+* Ecological assessments of TEK
+* Generate participatory models of restoration
 
 :::
 
-## Thank you
+## Our experimental design in Kenya
+
+
 
 
 

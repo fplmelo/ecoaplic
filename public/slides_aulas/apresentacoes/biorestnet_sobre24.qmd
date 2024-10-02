@@ -1,0 +1,346 @@
+---
+title: "Restauração Biocultural"
+subtitle: "desafios para uma agenda inclusiva"
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK <br> & <br> Universidade Federal de Pernambuco - UFPE"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: libs/sobre.png
+    footer: ""
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## {background-image="libs/vaqueiro.png"}
+
+## {background-image="libs/roca_caat.jpg"}
+
+## {background-image="libs/homen_caatinga.jpg"}
+
+
+## Antromas 
+![](libs/anthromes.png){fig-align=center width=150%}
+
+Fonte: Erle Ellis
+
+## Erros históricos da "Conservação"
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/keep_out.png)
+:::
+:::{.column width="50%"}
+
+- Expulsão de comunidades tradicionais
+- Aumento da pobreza
+- Conflitos por terra
+- Modelos excludentes
+
+:::
+::::
+
+## Desigualdade
+
+![](libs/worldbank_iplc.jpeg){fig-align=center width=150%}
+
+## A importância de PI&CL
+
+![](libs/iplc_land.png){fig-align=center width=150%}
+
+## Qual o papel da restauração nesse contexto?{.center}
+
+
+## A restauração avança!
+
+- Oferecer métodos confiávies :+1:
+- Planejamento sistemático :+1:
+- Importância geopolítica :+1:
+- [Justiça Ambiental]{style="color:red"} :-1:
+- [Transdisciplinaridade]{style="color:red"} :-1:
+
+## Como construir uma agenda de pesquisa/ação para desenvolver o potencial inclusivo da restauração?{.center}
+
+
+## Conhecimentos Ecológicos Locais - CEL
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/seedcol.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   Fonteira de conhecimento
+-   Ajudam a decolonizar a ciência
+-   Precisa ser reconhecido
+-   Está ameaçado
+:::
+::::
+
+## CEL para entender paisagens
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/part_map.jpg)
+
+![](libs/part_map2.jpg)
+
+:::
+
+:::{.column width="50%"}
+:::{.inverse}
+- Mapeamento participativo
+- Biografia das paisagens
+- Seleção de métricas relevantes
+:::
+:::
+::::
+
+## CEL para a Ciência Ecológica
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/sucessao.jpg)
+
+:::
+
+:::{.column width="50%"}
+
+- Entender performance das espécies
+- Teoria sucessional prática
+- Percepção de ameaças à biodiversidade
+- Informação sobre interações 
+
+:::
+::::
+
+## CEL para Restauração
+
+::::{.columns}
+:::{.column width="70%"}
+![](libs/pessoas.png)
+
+:::
+
+:::{.column width="30%"}
+
+- Representatividade
+- Diversidade de valores
+- Justiça Ambiental
+- Soberania territorial
+
+:::
+::::
+
+## A Caatinga como um laboratório vivo de Restauração Biocultural {.center}
+
+## O Modelo da Caatinga
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+::: {style="font-size: 90%;"}
+- Espécies culturalmente importantes
+- Multípos benefícios (lenha, medicinal, etc...)
+- Relativamente aundantes
+- Mantém diversidade
+
+[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+:::
+:::
+:::{.column width="50%"}
+
+![](libs/biocult.png){width=90%}
+:::
+::::
+:::
+
+## 
+![](libs/fun_bioc.jpg){fig-align=center, width=85%}
+
+[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+
+## 
+![](libs/hudson.png){fig-align=center, width=95%}
+
+Toscano et al (under review)
+
+## Restauração não pode ser apolítica
+![](libs/ipbes_nexus.png){fig-align=center, width=105%}
+
+[Melo et al 2021](https://www.nature.com/articles/s41893-020-00608-z)
+
+## Desigualdade de acesso à terra{.center}
+
+![](libs/land_study.png)
+
+## Quem é dono da Caatinga?
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+
+- ~ 1 milhão de propriedades em 1204 municípios
+  - 97.8% pequenas
+       - 17.9 Mha
+       - 51% Vegetação Nativa
+  - 2.2% Grande propriedades
+       - 15.2 Mha
+       - 69% Vegetação Nativa
+:::
+
+:::{.column width="50%"}
+
+
+![](libs/share_land.png)
+
+:::
+::::
+:::
+
+## Déficit de vegetação
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/deficit1.png){width=90%}
+
+:::
+:::{.column width="50%"}
+
+![](libs/deficit2.png){width=90%}
+
+
+:::
+::::
+:::
+
+## Em números
+
+| Tipo de propriedade | # de propriedades | Déficit legal (ha) |
+|---------|:-----|------:|
+| Grande      | 2,986   |    139,644 |
+| Pequena     | 141,144  |   143,501 |
+|       |     |      |   
+
+
+## Estratégias diferenciadas 
+| Tipo de déficit | Estratégia de Restauração | 
+|-----|:-----|
+| Grandes propriedades     | Restauração ativa; adequação legal; cadeia de suprimentos   | 
+| Pequenas pripriedades   | Agrofloresta; Restauração Biocultural  |
+| Híbrido      | Combinações de medidas de acordo ao contexto     | 
+
+## Espacializando as estratégias
+![](libs/deficit4.png){fig-align=center}
+
+
+## Caatinga mata fome?{.center}
+
+##
+![](libs/fore_food.png){fig-align=center}
+
+Fonte: [Alencar et al 2023](https://onlinelibrary.wiley.com/doi/full/10.1002/ldr.4848)
+
+## Caatinga vs. desenvolvimento
+
+![](libs/gec_pic.png){fig-align=center, width=120%}
+
+Fonte: [Alencar et al under review]()
+
+## Pessoas e Caatingas
+
+![](libs/fig_catChange.jpg){fig-align=center, width=120%, height=150%}
+
+fonte: Alencar et al under review
+
+
+## Pessoas e Caatingas
+
+![](libs/fpp_state.jpg){fig-align=center, width=120%}
+
+fonte: Alencar et al under review
+
+## Rede de Restauração da Caatinga - RECAA
+
+::::{.columns}
+
+:::{.column width="30%"}
+
+![](libs/recaa.png)
+
+:::
+:::{.column width="70%"}
+- Gentes da Caatinga (coletivos)
+- Saberes da Caatinga (ciência)
+- Olhos da Caatinga (monitoramento)
+- Águas da Caatinga (segurança hídrica)
+
+:::
+
+::::
+
+
+## Rede de Restauração Biocultural
+
+![](libs/biorestnet.jpeg){fig-align=center, width=120%}
+
+## Principais lições
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+- Incluir camadas de informação social
+- Considerar as diferentes desigualdades
+- Não reproduzir injustiças
+- Priorizar as oportunidades localmente
+:::
+
+:::{.column width="50%"}
+
+![](libs/maasai_woman.jpeg){width=60%}
+
+:::
+::::
+:::
+
+## Agradecimentos
+
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](libs/cnpq.png)
+![](libs/ufpe.png)
+![](libs/ntu_logo.png)
+:::
+
+:::{.column width="50%"}
+::: {style="font-size: 80%;"}
+- Adriana Pelegrinni Manhães (UFRJ)
+- Pedro Sena (CEPAN)
+- Guilherme Mazochinni (Unicamp)
+- Vinicius Guidoti (Kynetec)
+- Lucas Alencar (U Manchester)
+- Antonio Uzal (NTU)
+- Harrison Nabaala (Enarau, Quênia)
+- Andrew Gichira (CERK, Quênia)
+:::
+:::
+::::
+:::
+
+
+## Obrigado
+
+felipe.melo@ntu.ac.uk
+
+felipe.plmelo@ufpe.br
+
+![www.ecoaplic.org](www.ecoaplic.org)
+
+![](libs/qr_ecoaplic.png){fig-align=center width=35%}
+
+
+
