@@ -1,5 +1,5 @@
 ---
-title: "Assessing multiple benefits of people-centered biocultural restoration"
+title: "Assessing multiple benefits of <br> people-centered biocultural restoration"
 subtitle: ""
 author: "Felipe Melo"
 institute: "Nottingham Trent University - UK <br> Universidade Federal de Pernambuco - Brasil"
@@ -8,12 +8,14 @@ format:
   revealjs:
     theme: [default, custom.scss]
     incremental: true
-    chalkboard: true
+#    chalkboard: false
     logo: "" 
     footer: "FLARE 2024"
     slide-number: true
     transition: slide
-    background-transition: fade
+ #   background-transition: fade
+    embed-resources: true
+    auto-stretch: false
 ---
 
 ## {background-image="libs/vaqueiro.png"}
@@ -93,16 +95,15 @@ format:
 - Maintain natural features
 
 
-![](libs/sena_highlight.png){.absolute bottom=0 width=40%}
+![](libs/sena_highlight.png){.absolute bottom=10 width=50%}
 :::
 :::
 
 :::{.column width="50%"}
 
-![](libs/biocult.png){.absolute top=50 right=20}
+![](libs/biocult.png){.absolute top=50 right=20 width=50%}
 :::
 ::::
-
 
 
 ## {background-image=libs/caat_seca.jpg background-size="cover"}
@@ -118,12 +119,11 @@ format:
 
 
 
-## 
+## The study {.center}
 
-![](libs/hudson.png){fig-align=center, width=95%}
+![](libs/hudson.png){fig-align="center" width=65%}
 
 Toscano et al (*in press*) Cons Biol
-
 
 ## Meaningful Functional Traits
 
@@ -139,33 +139,39 @@ Toscano et al (*in press*) Cons Biol
 - Usefulness to people
 - Food security
 - Energy security
+- Water security
+- Economic security
 - Health
 
 :::
 ::::
 
+## Simulated ecosystem
 
+![](libs/game_ideal.png){fig-align="center"}
 
+## Role of exotic species (in red)
 
+![](libs/circ_chart.png){fig-align="center"  width=55%}
+
+## How much drift from original ecosystem?
+
+![](libs/fun_prof.png){fig-align="center" width=75%}
+
+## How much drift from original ecosystem?
+
+![](libs/fun_div.png){fig-align="center" width=75%}
+
+## 
+
+![](libs/hudson.png){fig-align="center" width=85%}
 
 
 # Thank you
 
 felipe.melo@ntu.ac.uk
 
-![www.ecoaplic.org](www.ecoaplic.org)
-
-![](libs/qr_ecoaplic.png){fig-align=center width=35%}
-
-#
-
-
-
-
-
-
-
-
+![](libs/qr_ecoaplic.png){fig-align="center" width=35%}
 
 
 
