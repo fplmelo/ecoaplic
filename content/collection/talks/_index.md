@@ -39,6 +39,8 @@ weight: 2
 
 - [ARES Research Conference 2024](https://ecoaplic.org/slides_aulas/apresentacoes/ARES_RC_2024#/title-slide)
 
+- [FLARE 2024](https://ecoaplic.org/slides_aulas/apresentacoes/FLARE_2024#/title-slide)
+
 
 
 
