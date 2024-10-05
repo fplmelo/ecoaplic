@@ -146,9 +146,11 @@ Toscano et al (*in press*) Cons Biol
 :::
 ::::
 
-## Simulated ecosystem
+## {background-image=libs/game_ideal.png background-size="cover"}
 
-![](libs/game_ideal.png){fig-align="center"}
+### Simulated ecosystem
+
+
 
 ## Role of exotic species (in red)
 
@@ -165,6 +167,12 @@ Toscano et al (*in press*) Cons Biol
 ## 
 
 ![](libs/hudson.png){fig-align="center" width=85%}
+
+## Aknowledgements
+
+- Hudson Toscano (UFERSA)
+- Cristina Baldauf (UFERSA)
+- Gabriel da Costa Ferreira (UFERSA)
 
 
 # Thank you
