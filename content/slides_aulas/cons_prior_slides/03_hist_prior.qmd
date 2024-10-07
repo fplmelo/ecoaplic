@@ -5,7 +5,7 @@ author: "Felipe Melo"
 format:
   revealjs:
     theme: [default, custom.scss]
-    incremental: true
+    incremental: false
     chalkboard: true
     logo: img/ntu_logo.png
     footer: "Conservation Priorities 2024"
@@ -37,7 +37,7 @@ format:
 
 ::: {.column width="50%"}
 
-### **...Soulé argued:** *'one must act before knowing all the facts; [crisis disciplines]{style="color: red;"} are thus a mixture of science and art, and their pursuit requires intuition as well as information'*
+ **...Soulé argued:** *'one must act before knowing all the facts; [crisis disciplines]{style="color: red;"} are thus a mixture of science and art, and their pursuit requires intuition as well as information'*
 
 :::
 
@@ -204,14 +204,14 @@ The "father" of the Yosemite National Park, USA.
 ::::
 :::
 
-## Only 10% in "connected"
-![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-020-18457-x/MediaObjects/41467_2020_18457_Fig1_HTML.png?as=webp){width=700}
+## Only 10% is "connected"
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-020-18457-x/MediaObjects/41467_2020_18457_Fig1_HTML.png?as=webp){width=700 fig-align="center"}
 
 ## [The "paper park paradox"](https://oceana.org/blog/the-paper-park-paradox/)
 ::::{.columns}
 :::{.column width=50%}
 :::{.nonincremental}
-- It is cheap draw in a map
+- It is cheaper to draw a map
 - Focus on "desert" areas
 - They have some efficiency
 :::
@@ -222,9 +222,15 @@ The "father" of the Yosemite National Park, USA.
 :::
 ::::
 
+## What stop deforestation?
+
+![](https://www.journals.uchicago.edu/na101/home/literatum/publisher/uchicago/journals/content/reep/2023/reep.2023.17.issue-2/725051/20230905/images/large/fg1_online.jpeg){fig-align="center"}
+
+source: [Busch & Ferreti-Gallon 2023](https://www.journals.uchicago.edu/doi/10.1086/725051)
+
 ## Limitations and shortfalls
 ::::{.columns}
-:::{.column width=50%}
+:::{.column width=50% .non-incremental}
 - [10 million displaced](https://assets.publishing.service.gov.uk/media/57a08c7de5274a31e0001256/Insights57.pdf)
 - Conservation refugees
 - Poverty
@@ -251,7 +257,7 @@ From: [Averting biodiversity collapse in tropical forest protected areas](https:
 ## To be continued...
 
 ## Today's reviews
-- The origins fo Conservation Biology is deeply linked to an utilitarian and biased view of nature (social class, gender, western)
+- The origins fo Conservation Biology are deeply linked to an utilitarian and biased view of nature (social class, gender, western)
 - The salient feature of CB is the strong focus on area-based conservation approaches
 - The efficiency of this approach is questioned, though some achievements
 - There is a need to move forward
