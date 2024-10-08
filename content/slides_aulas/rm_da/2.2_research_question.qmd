@@ -8,7 +8,7 @@ format:
   revealjs:
     theme: [default, custom.scss]
     incremental: false
-    chalkboard: false
+    chalkboard: true
     logo: img/ntu_logo.png
     #footer: "Research Methods & Data Analysis"
     slide-number: true
@@ -16,7 +16,7 @@ format:
     background-transition: fade
     #auto-stretch: true
     title-block-banner: true
-    embed-resources: true
+    embed-resources: false
 
 ---
 
