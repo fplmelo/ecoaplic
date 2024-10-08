@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="02_data_wrangling_files/libs/clipboard/clipboard.min.js"></script>
-<script src="02_data_wrangling_files/libs/quarto-html/tabby.min.js"></script>
-<script src="02_data_wrangling_files/libs/quarto-html/popper.min.js"></script>
-<script src="02_data_wrangling_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="02_data_wrangling_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="02_data_wrangling_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="02_data_wrangling_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="05_chose_analysis_files/libs/clipboard/clipboard.min.js"></script>
+<script src="05_chose_analysis_files/libs/quarto-html/tabby.min.js"></script>
+<script src="05_chose_analysis_files/libs/quarto-html/popper.min.js"></script>
+<script src="05_chose_analysis_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="05_chose_analysis_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="05_chose_analysis_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="05_chose_analysis_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.2.280">
 
   <meta name="author" content="Felipe Melo">
-  <title>2-Data Wrangling</title>
+  <title>4-Choosing the right analysis</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="02_data_wrangling_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="02_data_wrangling_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="05_chose_analysis_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="05_chose_analysis_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -93,13 +93,13 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="02_data_wrangling_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <link href="02_data_wrangling_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="02_data_wrangling_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="02_data_wrangling_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="02_data_wrangling_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="02_data_wrangling_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="02_data_wrangling_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="05_chose_analysis_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link href="05_chose_analysis_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="05_chose_analysis_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="05_chose_analysis_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="05_chose_analysis_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="05_chose_analysis_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="05_chose_analysis_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -384,18 +384,15 @@
       margin-right: 0; 
     }
   </style>
-  
-  <link href="02_data_wrangling_files/libs/countdown-0.4.0/countdown.css" rel="stylesheet">
-  <script src="02_data_wrangling_files/libs/countdown-0.4.0/countdown.js"></script>
-  <script src="02_data_wrangling_files/libs/kePrint-0.0.1/kePrint.js"></script>
-  <link href="02_data_wrangling_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+  <link href="05_chose_analysis_files/libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="05_chose_analysis_files/libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">2-Data Wrangling</h1>
+  <h1 class="title">4-Choosing the right analysis</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -410,181 +407,15 @@ Felipe Melo
 
 </section>
 <section id="you-should-know-today" class="slide level2">
-<h2>You should know today</h2>
+<h2>You should know today:</h2>
 <ul>
-<li>Why data wrangling?</li>
-<li>How to plan data wrangling</li>
-<li>Basic skills</li>
-<li>Application with an example</li>
+<li>Identify the nature of variables</li>
+<li>Foresee the types of analyses</li>
+<li>Draw graphics of predicted results</li>
 </ul>
 </section>
-<section id="before-we-begin" class="slide level2">
-<h2>Before we begin</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="img/attention.png"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>R and Rstudio installed</li>
-<li>Don’t panic</li>
-<li>Everything is reproducible</li>
-<li>You’ll have to train to fix the content</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="tibbles---click-on-the-title" class="slide level2">
-<h2><a href="https://tibble.tidyverse.org/">Tibbles</a> &lt;- click on the title</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="|,4,5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(palmerpenguins)</span>
-<span id="cb1-3"><a href="#cb1-3"></a></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="fu">data</span>(<span class="st">"penguins"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb1-6"><a href="#cb1-6"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 344 × 5
-   species island    bill_length_mm bill_depth_mm flipper_length_mm
-   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;
- 1 Adelie  Torgersen           39.1          18.7               181
- 2 Adelie  Torgersen           39.5          17.4               186
- 3 Adelie  Torgersen           40.3          18                 195
- 4 Adelie  Torgersen           NA            NA                  NA
- 5 Adelie  Torgersen           36.7          19.3               193
- 6 Adelie  Torgersen           39.3          20.6               190
- 7 Adelie  Torgersen           38.9          17.8               181
- 8 Adelie  Torgersen           39.2          19.6               195
- 9 Adelie  Torgersen           34.1          18.1               193
-10 Adelie  Torgersen           42            20.2               190
-# ℹ 334 more rows</code></pre>
-</div>
-</div>
-<p><img data-src="https://tibble.tidyverse.org/logo.svg" class="absolute" style="top: 10px; right: 10px; width: 10%; "></p>
-</section>
-<section id="your-turn" class="slide level2">
-<h2>Your turn</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div class="countdown" id="timer_facde5c6" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
-<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">15</span></code>
-</div>
-</div>
-</div>
-<p>1- Load tidyverse</p>
-<p>2- load “palmerpenguins” dataset</p>
-<p>3- call the data</p>
-<ul>
-<li>type penguins</li>
-</ul>
-</section>
-<section id="the-pipe" class="slide level2">
-<h2>The PIPE</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
-<p><img data-src="https://magrittr.tidyverse.org/logo.png"></p>
-<p>more about the package <a href="https://magrittr.tidyverse.org/reference/pipe.html">magrittr</a></p>
-</div><div class="column fragment" style="width:70%;">
-<ul>
-<li>“Take what is on the left and use it as the first argument on what comes next</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>penguins <span class="sc">%&gt;%</span> <span class="co"># take the opbject penguins</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">select</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>) <span class="co"># then, select the columns 1 to 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 344 × 3
-   species island    bill_length_mm
-   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;
- 1 Adelie  Torgersen           39.1
- 2 Adelie  Torgersen           39.5
- 3 Adelie  Torgersen           40.3
- 4 Adelie  Torgersen           NA  
- 5 Adelie  Torgersen           36.7
- 6 Adelie  Torgersen           39.3
- 7 Adelie  Torgersen           38.9
- 8 Adelie  Torgersen           39.2
- 9 Adelie  Torgersen           34.1
-10 Adelie  Torgersen           42  
-# ℹ 334 more rows</code></pre>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="why-data-wrangling" class="slide level2">
-<h2>Why data wrangling</h2>
-<ul>
-<li>your data is NEVER ready to analyse</li>
-<li>you need to get to know your data</li>
-<li>do some inspections</li>
-<li>ask some questions</li>
-</ul>
-</section>
-<section id="section" class="slide level2" data-background-image="https://media.licdn.com/dms/image/v2/C5612AQFIS6Q8CBEWHQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520242783151?e=1732147200&amp;v=beta&amp;t=zkmPqo85HLNtJJuEHZG4nHmnVHQM_ezLxAchuKxc3wI">
-<h2></h2>
-</section>
-<section id="section-1" class="slide level2" data-background-image="https://preview.redd.it/8ruxxxe7d9d31.jpg?auto=webp&amp;s=8aea753b10e0c1346031283090c9d589ae953c14">
-<h2></h2>
-</section>
-<section id="section-2" class="slide level2">
-<h2></h2>
-<div class="tenor-gif-embed" data-postid="7671930" data-share-method="host" data-aspect-ratio="1.35135" data-width="100%">
-<a href="https://tenor.com/view/lady-and-the-tramp-dog-eat-spaghetti-kiss-gif-7671930">Lady And The Tramp Dog GIF</a>from <a href="https://tenor.com/search/lady+and+the+tramp-gifs">Lady And The Tramp GIFs</a>
-</div>
-<script type="text/javascript" async="" src="https://tenor.com/embed.js"></script>
-<p>”</p>
-</section>
-<section id="data-exploration" class="slide level2">
-<h2>Data exploration</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>penguins <span class="sc">%&gt;%</span> <span class="co"># take the opbject penguins</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">write.csv</span>(., <span class="st">"penguins.csv"</span>) <span class="co"># then, save as .csv</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>      species          island    bill_length_mm  bill_depth_mm  
- Adelie   :152   Biscoe   :168   Min.   :32.10   Min.   :13.10  
- Chinstrap: 68   Dream    :124   1st Qu.:39.23   1st Qu.:15.60  
- Gentoo   :124   Torgersen: 52   Median :44.45   Median :17.30  
-                                 Mean   :43.92   Mean   :17.15  
-                                 3rd Qu.:48.50   3rd Qu.:18.70  
-                                 Max.   :59.60   Max.   :21.50  
-                                 NA's   :2       NA's   :2      
- flipper_length_mm  body_mass_g       sex           year     
- Min.   :172.0     Min.   :2700   female:165   Min.   :2007  
- 1st Qu.:190.0     1st Qu.:3550   male  :168   1st Qu.:2007  
- Median :197.0     Median :4050   NA's  : 11   Median :2008  
- Mean   :200.9     Mean   :4202                Mean   :2008  
- 3rd Qu.:213.0     3rd Qu.:4750                3rd Qu.:2009  
- Max.   :231.0     Max.   :6300                Max.   :2009  
- NA's   :2         NA's   :2                                 </code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="types-of-variable" class="slide level2">
-<h2>Types of variable</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">str</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>tibble [344 × 8] (S3: tbl_df/tbl/data.frame)
- $ species          : Factor w/ 3 levels "Adelie","Chinstrap",..: 1 1 1 1 1 1 1 1 1 1 ...
- $ island           : Factor w/ 3 levels "Biscoe","Dream",..: 3 3 3 3 3 3 3 3 3 3 ...
- $ bill_length_mm   : num [1:344] 39.1 39.5 40.3 NA 36.7 39.3 38.9 39.2 34.1 42 ...
- $ bill_depth_mm    : num [1:344] 18.7 17.4 18 NA 19.3 20.6 17.8 19.6 18.1 20.2 ...
- $ flipper_length_mm: int [1:344] 181 186 195 NA 193 190 181 195 193 190 ...
- $ body_mass_g      : int [1:344] 3750 3800 3250 NA 3450 3650 3625 4675 3475 4250 ...
- $ sex              : Factor w/ 2 levels "female","male": 2 1 1 NA 1 2 1 2 NA NA ...
- $ year             : int [1:344] 2007 2007 2007 2007 2007 2007 2007 2007 2007 2007 ...</code></pre>
-</div>
-</div>
-</section>
-<section id="types-of-variables" class="slide level2">
-<h2>Types of variables</h2>
+<section id="types-of-variables-review" class="slide level2">
+<h2>Types of variables (review)</h2>
 <div class="columns">
 <div class="column fragment">
 <p><strong>Categorical</strong></p>
@@ -595,328 +426,293 @@ Felipe Melo
 </div>
 </div>
 </section>
-<section id="summarising-data" class="slide level2">
-<h2>Summarising data</h2>
+<section id="back-to-the-toolbox" class="slide level2">
+<h2>Back to the toolbox</h2>
+
+<img data-src="img/toolkit.png" class="r-stretch quarto-figure-center"></section>
+<section id="check-your-variables" class="slide level2">
+<h2>Check your variables</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">library</span>(vtable)</span>
-<span id="cb10-2"><a href="#cb10-2"></a><span class="fu">library</span>(gt)</span>
-<span id="cb10-3"><a href="#cb10-3"></a></span>
-<span id="cb10-4"><a href="#cb10-4"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb10-5"><a href="#cb10-5"></a>  <span class="fu">vtable</span>(., <span class="at">lush =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(palmerpenguins)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 344
+Columns: 8
+$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
+$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
+$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
+$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
+$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
+$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
+$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
+$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
 </div>
-
+</div>
 </section>
-<section id="summarising-data-output" class="slide level2 output-location-slide"><h2>Summarising data</h2><div class="cell output-location-slide">
-<div class="cell-output-display">
-
-<table class="table" style="margin-left: auto; margin-right: auto;">
-<caption>.</caption>
- <thead>
-  <tr>
-   <th style="text-align:left;"> Name </th>
-   <th style="text-align:left;"> Class </th>
-   <th style="text-align:left;"> Values </th>
-   <th style="text-align:left;"> Missing </th>
-   <th style="text-align:left;"> Summary </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> species </td>
-   <td style="text-align:left;"> factor </td>
-   <td style="text-align:left;"> 'Adelie' 'Chinstrap' 'Gentoo' </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> nuniq: 3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> island </td>
-   <td style="text-align:left;"> factor </td>
-   <td style="text-align:left;"> 'Biscoe' 'Dream' 'Torgersen' </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> nuniq: 3 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> bill_length_mm </td>
-   <td style="text-align:left;"> numeric </td>
-   <td style="text-align:left;"> Num: 32.1 to 59.6 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> mean: 43.922, sd: 5.46, nuniq: 164 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> bill_depth_mm </td>
-   <td style="text-align:left;"> numeric </td>
-   <td style="text-align:left;"> Num: 13.1 to 21.5 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> mean: 17.151, sd: 1.975, nuniq: 80 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> flipper_length_mm </td>
-   <td style="text-align:left;"> integer </td>
-   <td style="text-align:left;"> Num: 172 to 231 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> mean: 200.915, sd: 14.062, nuniq: 55 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> body_mass_g </td>
-   <td style="text-align:left;"> integer </td>
-   <td style="text-align:left;"> Num: 2700 to 6300 </td>
-   <td style="text-align:left;"> 2 </td>
-   <td style="text-align:left;"> mean: 4201.754, sd: 801.955, nuniq: 94 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> sex </td>
-   <td style="text-align:left;"> factor </td>
-   <td style="text-align:left;"> 'female' 'male' </td>
-   <td style="text-align:left;"> 11 </td>
-   <td style="text-align:left;"> nuniq: 2 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> year </td>
-   <td style="text-align:left;"> integer </td>
-   <td style="text-align:left;"> Num: 2007 to 2009 </td>
-   <td style="text-align:left;"> 0 </td>
-   <td style="text-align:left;"> mean: 2008.029, sd: 0.818, nuniq: 3 </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div></section><section id="summarising-data-1" class="slide level2">
-<h2>Summarising data</h2>
+<section id="is-there-an-association-between-species-and-sex" class="slide level2">
+<h2>Is there an association between “Species” and “Sex”?</h2>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">library</span>(vtable)</span>
-<span id="cb11-2"><a href="#cb11-2"></a><span class="fu">library</span>(gt)</span>
-<span id="cb11-3"><a href="#cb11-3"></a></span>
-<span id="cb11-4"><a href="#cb11-4"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb11-5"><a href="#cb11-5"></a>  <span class="fu">group_by</span>(species) <span class="sc">%&gt;%</span> </span>
-<span id="cb11-6"><a href="#cb11-6"></a>  <span class="fu">na.omit</span>() <span class="sc">%&gt;%</span> </span>
-<span id="cb11-7"><a href="#cb11-7"></a>  <span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(bill_length_mm), <span class="at">sd=</span><span class="fu">sd</span>(bill_length_mm), <span class="at">n =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">na.omit</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    <span class="at">x=</span> species, </span>
+<span id="cb3-5"><a href="#cb3-5"></a>    <span class="at">color=</span>sex, </span>
+<span id="cb3-6"><a href="#cb3-6"></a>    <span class="at">fill=</span>sex))<span class="sc">+</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>)<span class="ot">-&gt;</span> cat_x_cat</span>
+<span id="cb3-8"><a href="#cb3-8"></a>cat_x_cat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 × 4
-  species    mean    sd     n
-  &lt;fct&gt;     &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;
-1 Adelie     38.8  2.66   146
-2 Chinstrap  48.8  3.34    68
-3 Gentoo     47.6  3.11   119</code></pre>
+<div class="cell-output-display">
+<p><img data-src="05_chose_analysis_files/figure-revealjs/cat_cat_graph-1.png" width="960"></p>
 </div>
 </div>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://dplyr.tidyverse.org/logo.png" class="absolute" style="bottom: 15px; right: 10px; "></p>
-</figure>
-</div>
-<p>More codes <a href="https://dplyr.tidyverse.org/reference/summarise.html">here</a></p>
 </section>
-<section id="your-turn-1" class="slide level2">
-<h2>Your turn</h2>
-<ul>
-<li>Try to reproduce</li>
-<li>Create any summary for “penguins”</li>
-</ul>
+<section id="how-species-differ-in-bill-length" class="slide level2">
+<h2>How species differ in bill length?</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">na.omit</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(</span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="at">x=</span> species, </span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="at">y=</span> bill_length_mm,</span>
+<span id="cb4-6"><a href="#cb4-6"></a>    <span class="at">color=</span>species, </span>
+<span id="cb4-7"><a href="#cb4-7"></a>    <span class="at">fill=</span>species))<span class="sc">+</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>  <span class="fu">geom_boxplot</span>(<span class="at">alpha=</span><span class="fl">0.7</span>)<span class="ot">-&gt;</span> cat_x_num</span>
+<span id="cb4-9"><a href="#cb4-9"></a></span>
+<span id="cb4-10"><a href="#cb4-10"></a>cat_x_num</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<p><img data-src="05_chose_analysis_files/figure-revealjs/cat_num_graph-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="what-is-the-relationship-between-bill-leght-and-flipper-lenght" class="slide level2">
+<h2>What is the relationship between bill leght and flipper lenght?</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">na.omit</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(</span>
+<span id="cb5-4"><a href="#cb5-4"></a>    <span class="at">x=</span> bill_length_mm, </span>
+<span id="cb5-5"><a href="#cb5-5"></a>    <span class="at">y=</span> flipper_length_mm,</span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="at">color=</span>species))<span class="sc">+</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a>  <span class="fu">geom_point</span>()<span class="ot">-&gt;</span> num_x_num</span>
+<span id="cb5-8"><a href="#cb5-8"></a></span>
+<span id="cb5-9"><a href="#cb5-9"></a>num_x_num</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<p><img data-src="05_chose_analysis_files/figure-revealjs/num_num_graph-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="can-body-mass-predict-sex" class="slide level2">
+<h2>Can body mass predict sex?</h2>
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">na.omit</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(</span>
+<span id="cb6-4"><a href="#cb6-4"></a>    <span class="at">x=</span> body_mass_g, </span>
+<span id="cb6-5"><a href="#cb6-5"></a>    <span class="at">y=</span> sex,</span>
+<span id="cb6-6"><a href="#cb6-6"></a>    <span class="at">color=</span>species))<span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>  <span class="fu">geom_point</span>()<span class="ot">-&gt;</span> num_x_cat</span>
+<span id="cb6-8"><a href="#cb6-8"></a></span>
+<span id="cb6-9"><a href="#cb6-9"></a>num_x_cat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<p><img data-src="05_chose_analysis_files/figure-revealjs/num_cat_graph-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-four-families-of-statistical-tests" class="slide level2">
+<h2>The four families of statistical tests</h2>
+
+<img data-src="05_chose_analysis_files/figure-revealjs/all%20graphs-1.png" width="960" class="r-stretch"></section>
+<section id="frequency-tests" class="slide level2">
+<h2>Frequency tests</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_1e4bb6e4" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<p><img data-src="05_chose_analysis_files/figure-revealjs/freq%20test-1.png" width="960"></p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Chi-square</li>
+<li>G-tests</li>
+<li>Contingecy tables</li>
+<li>Log-linear models</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<p>Powerful for testing associations between categorical variables</p>
+</div>
+</section>
+<section id="examples-of-frequancy-tests" class="slide level2">
+<h2>Examples of frequancy tests</h2>
+</section>
+<section id="mean-tests" class="slide level2">
+<h2>Mean tests</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="05_chose_analysis_files/figure-revealjs/mean%20test-1.png" width="960"></p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>T-tests (two levels)</li>
+<li>Anovas (3+ levels)</li>
+<li>Non-parametric equivalents</li>
+<li>Nested and two-way…</li>
+<li>Post-hoc tests (Tukey HSD, Student, etc.)</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<p>Widely used for testing differences in means</p>
+</div>
+</section>
+<section id="example-of-mean-tests" class="slide level2">
+<h2>Example of Mean Tests</h2>
+</section>
+<section id="correlations-and-models" class="slide level2">
+<h2>Correlations and models</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="05_chose_analysis_files/figure-revealjs/corr%20test-1.png" width="960"></p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Correlations</li>
+</ul>
+<p>– many variations</p>
+<ul>
+<li>Linear models</li>
+</ul>
+<p>– many variations</p>
+</div>
+</div>
+<div class="fragment">
+<p>Highly predictive and powerful but depend on many conditions</p>
+</div>
+</section>
+<section id="logistic-models" class="slide level2">
+<h2>Logistic models</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="05_chose_analysis_files/figure-revealjs/log%20test-1.png" width="960"></p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Logistic models</li>
+<li>Predictive of odds</li>
+<li>Similar inlogic to frequency tests</li>
+<li>Similar in calculation to linear models</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<p>Highly predictive and powerful but can be complex to interpret</p>
+</div>
+</section>
+<section id="examples-of-logistic-models" class="slide level2">
+<h2>Examples of logistic models</h2>
+</section>
+<section id="your-turn" class="slide level2">
+<h2>Your turn</h2>
+
+<img data-src="img/life_exp.png" style="width:70.0%" class="r-stretch quarto-figure-center"><p>source: <a href="https://ourworldindata.org/the-history-of-global-economic-inequality">Our World in Data</a></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_c39516d0" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">15</span></code>
 </div>
 </div>
 </div>
 </section>
-<section id="this-goes-on-and-on" class="slide level2">
-<h2>This goes on and on…</h2>
-<ul>
-<li>Data exploration goes as far and deep as you need</li>
-<li>There is no minimum nor maximum</li>
-<li>The key point is</li>
-</ul>
-<p><strong>This needs to make your data make sense to you</strong></p>
-</section>
-<section id="subset-data" class="slide level2">
-<h2>Subset data</h2>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">select</span>(body_mass_g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 344 × 1
-   body_mass_g
-         &lt;int&gt;
- 1        3750
- 2        3800
- 3        3250
- 4          NA
- 5        3450
- 6        3650
- 7        3625
- 8        4675
- 9        3475
-10        4250
-# ℹ 334 more rows</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="subset-data-1" class="slide level2">
-<h2>Subset data</h2>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">filter</span>(species<span class="sc">==</span><span class="st">"Gentoo"</span>, </span>
-<span id="cb15-3"><a href="#cb15-3"></a>         bill_length_mm <span class="sc">&gt;</span> <span class="dv">50</span>, </span>
-<span id="cb15-4"><a href="#cb15-4"></a>         sex<span class="sc">==</span><span class="st">"male"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb15-5"><a href="#cb15-5"></a>  <span class="fu">select</span>(bill_length_mm, </span>
-<span id="cb15-6"><a href="#cb15-6"></a>         bill_depth_mm) <span class="sc">%&gt;%</span> </span>
-<span id="cb15-7"><a href="#cb15-7"></a>  <span class="fu">arrange</span>(bill_depth_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column">
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 21 × 2
-   bill_length_mm bill_depth_mm
-            &lt;dbl&gt;         &lt;dbl&gt;
- 1           51.3          14.2
- 2           50.2          14.3
- 3           50.1          15  
- 4           50.7          15  
- 5           50.4          15.3
- 6           52.5          15.6
- 7           54.3          15.7
- 8           50.8          15.7
- 9           50.4          15.7
-10           53.4          15.8
-# ℹ 11 more rows</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="add-new-columns" class="slide level2">
-<h2>Add new columns</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">select</span>(bill_length_mm, </span>
-<span id="cb17-3"><a href="#cb17-3"></a>         bill_depth_mm) <span class="sc">%&gt;%</span> </span>
-<span id="cb17-4"><a href="#cb17-4"></a>  <span class="fu">mutate</span>(<span class="at">bill_volume=</span>bill_length_mm<span class="sc">+</span>bill_depth_mm) <span class="sc">%&gt;%</span> </span>
-<span id="cb17-5"><a href="#cb17-5"></a>  <span class="fu">mutate</span>(<span class="at">log_bill_volume=</span><span class="fu">log</span>(bill_volume)) <span class="sc">%&gt;%</span> </span>
-<span id="cb17-6"><a href="#cb17-6"></a>  <span class="fu">mutate</span>(<span class="at">bill_categ=</span><span class="fu">ifelse</span>(bill_volume<span class="sc">&lt;</span><span class="dv">60</span>, <span class="st">"small"</span>, <span class="st">"big"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 344 × 5
-   bill_length_mm bill_depth_mm bill_volume log_bill_volume bill_categ
-            &lt;dbl&gt;         &lt;dbl&gt;       &lt;dbl&gt;           &lt;dbl&gt; &lt;chr&gt;     
- 1           39.1          18.7        57.8            4.06 small     
- 2           39.5          17.4        56.9            4.04 small     
- 3           40.3          18          58.3            4.07 small     
- 4           NA            NA          NA             NA    &lt;NA&gt;      
- 5           36.7          19.3        56              4.03 small     
- 6           39.3          20.6        59.9            4.09 small     
- 7           38.9          17.8        56.7            4.04 small     
- 8           39.2          19.6        58.8            4.07 small     
- 9           34.1          18.1        52.2            3.96 small     
-10           42            20.2        62.2            4.13 big       
-# ℹ 334 more rows</code></pre>
-</div>
-</div>
-</section>
-<section id="reshape-data-tidyr" class="slide level2">
-<h2>Reshape data <a href="https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf">Tidyr</a></h2>
-<p>Long format</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb19" data-code-line-numbers="6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb19-2"><a href="#cb19-2"></a>  <span class="fu">select</span>(bill_length_mm, </span>
-<span id="cb19-3"><a href="#cb19-3"></a>         bill_depth_mm,</span>
-<span id="cb19-4"><a href="#cb19-4"></a>         year) <span class="sc">%&gt;%</span> </span>
-<span id="cb19-5"><a href="#cb19-5"></a>  <span class="fu">pivot_longer</span>(<span class="at">col=</span><span class="fu">c</span>(bill_length_mm<span class="sc">:</span>bill_depth_mm), </span>
-<span id="cb19-6"><a href="#cb19-6"></a>               <span class="at">names_to =</span> <span class="st">"bill_feature"</span>, <span class="at">values_to =</span> <span class="st">"value"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 688 × 3
-    year bill_feature   value
-   &lt;int&gt; &lt;chr&gt;          &lt;dbl&gt;
- 1  2007 bill_length_mm  39.1
- 2  2007 bill_depth_mm   18.7
- 3  2007 bill_length_mm  39.5
- 4  2007 bill_depth_mm   17.4
- 5  2007 bill_length_mm  40.3
- 6  2007 bill_depth_mm   18  
- 7  2007 bill_length_mm  NA  
- 8  2007 bill_depth_mm   NA  
- 9  2007 bill_length_mm  36.7
-10  2007 bill_depth_mm   19.3
-# ℹ 678 more rows</code></pre>
-</div>
-</div>
-<p><img data-src="https://tidyr.tidyverse.org/logo.png" class="absolute" style="bottom: 10px; right: 10px; "></p>
-</section>
-<section id="reshape-data-tidyr-1" class="slide level2">
-<h2>Reshape data <a href="https://github.com/rstudio/cheatsheets/blob/main/tidyr.pdf">Tidyr</a></h2>
-<p>Wide format</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb21" data-code-line-numbers="6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>penguins <span class="sc">%&gt;%</span> </span>
-<span id="cb21-2"><a href="#cb21-2"></a>  <span class="fu">mutate</span>(<span class="at">row =</span> <span class="fu">row_number</span>()) <span class="sc">%&gt;%</span> <span class="co"># needed to add a rwoo number to identify each row as separate case</span></span>
-<span id="cb21-3"><a href="#cb21-3"></a>  <span class="fu">select</span>(row, species, island, body_mass_g) <span class="sc">%&gt;%</span> </span>
-<span id="cb21-4"><a href="#cb21-4"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> island, <span class="at">values_from =</span> body_mass_g)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 344 × 5
-     row species Torgersen Biscoe Dream
-   &lt;int&gt; &lt;fct&gt;       &lt;int&gt;  &lt;int&gt; &lt;int&gt;
- 1     1 Adelie       3750     NA    NA
- 2     2 Adelie       3800     NA    NA
- 3     3 Adelie       3250     NA    NA
- 4     4 Adelie         NA     NA    NA
- 5     5 Adelie       3450     NA    NA
- 6     6 Adelie       3650     NA    NA
- 7     7 Adelie       3625     NA    NA
- 8     8 Adelie       4675     NA    NA
- 9     9 Adelie       3475     NA    NA
-10    10 Adelie       4250     NA    NA
-# ℹ 334 more rows</code></pre>
-</div>
-</div>
-</section>
-<section id="your-turn-2" class="slide level2">
-<h2>Your turn</h2>
-<ul>
-<li>Try to reproduce</li>
-<li>Create any wide and long formats for “penguins”</li>
-</ul>
+<section id="your-turn-again" class="slide level2">
+<h2>Your turn again</h2>
+
+<iframe src="https://ourworldindata.org/grapher/income-share-distribution-after-tax-lis?showSelectionOnlyInTable=1&amp;tab=chart" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+</iframe>
+<p>source: <a href="https://ourworldindata.org/economic-inequality">Our World in Data</a></p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_2806bf96" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_67583fd9" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
-<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">15</span></code>
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">15</span></code>
 </div>
 </div>
 </div>
 </section>
-<section id="the-correct-data-format" class="slide level2">
-<h2>The correct data format</h2>
+<section id="it-is-very-important-to-practice" class="slide level2 center">
+<h2>It is very important to practice</h2>
+</section>
+<section id="step-1---make-a-question" class="slide level2">
+<h2>Step 1 - Make a question</h2>
+<ul>
+<li>Name the variables in your question</li>
+</ul>
+</section>
+<section id="step-2---make-a-prediction-with-a-graph" class="slide level2">
+<h2>Step 2 - Make a prediction with a graph</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_15bdc9fa" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="step-3---identify-the-family-of-tests" class="slide level2">
+<h2>Step 3 - Identify the “family” of tests</h2>
 
-<img data-src="https://ohi-science.org/data-science-training/img/tidy_data.png" class="r-stretch"></section>
-<section id="end-of-session-on-da" class="slide level2 center">
-<h2>End of session on DA</h2>
+<img data-src="05_chose_analysis_files/figure-revealjs/all%20graphs2-1.png" width="960" class="r-stretch"></section>
+<section id="end-of-da-class" class="slide level2 center">
+<h2>End of DA class</h2>
 
 <img src="img/ntu_logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
-
+<p>Research Methods &amp; Data Analysis</p>
 </div>
 </section>
     </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="02_data_wrangling_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="02_data_wrangling_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="05_chose_analysis_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
