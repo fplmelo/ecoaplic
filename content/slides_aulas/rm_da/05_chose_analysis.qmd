@@ -178,7 +178,64 @@ cat_x_cat
 Powerful for testing associations between categorical variables
 :::
 
-## Examples of frequancy tests
+## Examples of frequency tests
+Contingency tables
+
+
+
+|  | Pro-refugees | Anti-refugees | 
+|---------|:-----:|:------:|
+| Tories      | 12   |    68 |   
+| Labours     | 55  |   45 |  
+| Socialists   | 65    |    2 | 
+| Reform UK | 5  |  87 |
+
+## Let's code it
+
+```{r}
+#| label: cont table
+#| echo: true
+#| output-location: column-fragment
+
+tibble(
+  party = c("tories", "labours", "socialists", "reform uk"),
+  pro_refugees = c(12, 55, 65, 5),
+  anti_refugees = c(68, 45, 2, 87)) |> 
+  pivot_longer(cols = c(pro_refugees, anti_refugees),
+               names_to = "stance",
+               values_to = "count") |>  
+  uncount(count) |> 
+  mutate(value=rep(1, 339)) |> 
+  summarise(n = dplyr::n(), .by = c(party, stance)) -> refugee
+
+refugee
+```
+
+## Let's graph it
+
+```{r}
+refugee |> 
+  ggplot(aes(party, n, color=stance, fill=stance))+
+  geom_col(position = "dodge")
+
+```
+
+## Let's test it
+
+```{r}
+#| label: chi tests
+#| echo: true
+#| output-location: column
+
+refugee |> 
+  pivot_wider(names_from = stance, values_from = n) |> # make it iinto a contingency table
+  select(-party) |> # remove first column
+  chisq.test() # run the test
+
+
+```
+
+The interpretation of frequency tests are quite challenging!
 
 ## Mean tests
 :::{.columns}
@@ -208,6 +265,47 @@ Widely used for testing differences in means
 :::
 
 ## Example of Mean Tests
+:::{.columns}
+:::{.column}
+
+Graph
+
+```{r}
+#| label: mean test2
+#| output-location: default
+#| echo: true
+
+penguins |> 
+  na.omit() |> 
+  ggplot(aes(sex,bill_length_mm, color=sex, fill=sex))+
+  geom_jitter(size=2)+
+  geom_boxplot(alpha=0.7)
+  
+```
+:::
+:::{.column}
+
+T-test
+```{r}
+#| echo: true
+
+summary(lm(bill_length_mm~sex, data=penguins))
+```
+:::
+:::
+
+## Example of Mean Tests
+
+```{r}
+#| label: mean test3
+#| output-location: column
+penguins |> 
+  na.omit() |> 
+  ggplot(aes(species,bill_length_mm, color=species, fill=species))+
+  geom_jitter(size=2)+
+  geom_boxplot(alpha=0.7)
+  
+```
 
 ## Correlations and models
 :::{.columns}
@@ -267,8 +365,6 @@ num_x_cat
 Highly predictive and powerful but  can be complex to interpret
 
 :::
-
-## Examples of logistic models
 
 ## Your turn
 

@@ -18,26 +18,117 @@ format:
     title-block-banner: true
 
 ---
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+library(countdown)
+
+```
 
 ## You should know today:
 
 - Understand the basics of the logic of scientific thinking
 - Use this logic to address you research
+- Relate: questions, hypotheses & prediction
 
 
-## How science evolved?
+## How science works?
 
-::::{.columns}
-:::{.column .fragment}
-**Observation**
+<iframe width="1128" height="635" src="https://www.youtube.com/embed/zYMq_-5ADas" title="The Hypothetico-Deductive Model" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Get used to a workflow
+:::{.frament}
+
+1) Question: How can climate location affect sexual dimorphism in penguins?
+2) Hypothesis: Colder temperature leads to larger bodies thus reducing dimorphism
+3) Prediction: Penguins in colder island have similar body measures
+:::
 
 
+## Let's check it out
+
+```{r}
+#| echo: false
+penguins |> 
+  mutate(temp=ifelse(body_mass_g<3600, "hotter", "colder")) |> 
+  na.omit() |> 
+  ggplot(aes(temp, body_mass_g, color=sex, fill=sex))+
+  geom_boxplot(alpha=0.7)
+```
+
+## Your turn
+
+1) Make a question
+2) Create a hypothesis
+3) Draw a prediction
+
+```{r}
+#| echo: false
+
+library(countdown)
+countdown(minutes = 2, seconds = 00)
+
+```
+
+## Common errors
+:::{.columns}
+:::{.column}
+
+![](https://cdn.pixabay.com/photo/2013/07/13/10/42/traffic-157617_1280.png)
 
 :::
 
-:::{.column .fragment}
-
+:::{.column .incremental}
+- "I have so many data and what to see what comes out of it"
+- "I still don't have a clear hypothesis or prediction but I started collecting my data"
+- "My research doesn't need a hypothesis"
 
 :::
-::::
+:::
+
+## Workflow [(from wikipedia)](https://en.wikipedia.org/wiki/Hypothetico-deductive_model)
+:::{.incremental}
+- 1- Based on observation, previous collected data and literature, find a knowledge gap
+
+- 2- Form a hypothesis that explains the phenomenon
+
+- 3- Deduce some expected patterns, assuming your hypotheses is **true**
+
+- 4- Design a experiment to test your hypothesis
+:::
+
+##
+![](https://www.researchgate.net/profile/Gordana-Dodig-Crnkovic/publication/237257709/figure/fig2/AS:669504807915522@1536633793084/Diagram-describing-iterative-nature-of-the-hypothetico-deductive-method.png)
+
+source: [Crnkovic and Crnkovic 2014](https://www.researchgate.net/publication/237257709_Computing_Curricula_Teaching_Theory_of_Science_to_Computer_Science_Students_Science_Education_Curriculum_Research_and_Development)
+
+## 
+![](img/bats_abs.png)
+
+## Knowledge vs Data
+
+:::{.columns}
+:::{.column}
+![](img/finch1.png)
+:::
+
+:::{.column}
+
+![](img/finch2.png)
+
+:::
+:::
+
+source: [Kalinowski & Pelakh 2023](https://onlinelibrary.wiley.com/doi/full/10.1002/tea.21892)
+
+
+## How science advances?
+
+![](https://cdn.prod.website-files.com/6609e5640a3868d8df142f19/660b2a9b7ce2e664f7152a33_kuhn-cycle.001.png)
+
+## Are you doing science right?
+
+
+
+
 
