@@ -101,7 +101,7 @@ format:
 
 Given the question: What caused the increase in body mass during the evolution of horses?
 
-### Create both a *scientific* and a *statistical* <br>hypotheses about thee size of horses
+### Create both a *scientific* and a *statistical* <br>hypotheses about the size of horses
 
 ![](https://www.geographyrealm.com/wp-content/uploads/2022/06/horse-evolution-Aldona-Adobe-358922732.jpg)
 
