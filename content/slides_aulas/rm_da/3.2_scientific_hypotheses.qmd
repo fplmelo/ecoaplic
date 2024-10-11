@@ -8,9 +8,9 @@ format:
   revealjs:
     theme: [default, custom.scss]
     incremental: false
-    chalkboard: false
+    chalkboard: true
     logo: img/ntu_logo.png
-    #footer: "Research Methods & Data Analysis"
+    footer: "Research Methods & Data Analysis"
     slide-number: true
     transition: slide
     background-transition: fade
@@ -146,4 +146,9 @@ countdown(minutes = 3, seconds = 00)
 ::: 
 
 ## End of session on RM {.center}
+
+```{r}
+
+renderthis::to_pdf("3.2_scientific_hypotheses.html")
+```
 

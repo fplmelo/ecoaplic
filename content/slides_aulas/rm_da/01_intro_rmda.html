@@ -8,7 +8,7 @@
 <link href="01_intro_rmda_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="01_intro_rmda_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="01_intro_rmda_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.555">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Felipe Melo">
   <title>1-Introduction to RM&amp;DA</title>
@@ -42,7 +42,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -70,7 +70,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -84,7 +84,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -430,8 +430,7 @@ Felipe Melo
 </ul>
 <p>I taught RM &amp; DA before <span style="color: red;">many times</span></p>
 <p>more info: <a href="www.ecoaplic.org">My website</a></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="how-this-module-is-organized" class="slide level2">
 <h2>How this module is organized?</h2>
@@ -454,8 +453,7 @@ Felipe Melo
 <li>Focused on making sense of science</li>
 <li>Writing and reading skills</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="weekly-schedule" class="slide level2">
 <h2>Weekly Schedule</h2>
@@ -474,8 +472,7 @@ Felipe Melo
 <p><em>It may vary</em></p>
 </div><div class="column fragment" style="width:50%;">
 <p><img data-src="img/pre_session.png"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="main-tools" class="slide level2">
 <h2>Main tools</h2>
@@ -496,8 +493,7 @@ Felipe Melo
 <li>Submission of exams</li>
 </ul>
 <p><img data-src="https://now.ntu.ac.uk/d2l/lp/navbars/6605/theme/viewimage/34273789/view?v=20.24.8.21027"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="resources-and-many-more-online" class="slide level2">
 <h2>Resources (… and many more online)</h2>
@@ -522,8 +518,7 @@ Felipe Melo
 <li>Solve exercises for you</li>
 </ul>
 <p><span class="emoji" data-emoji="broken_heart">💔</span></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="feedback-and-assessment" class="slide level2">
 <h2>Feedback and Assessment</h2>
@@ -552,8 +547,7 @@ Felipe Melo
 <li>Drop-in sessions</li>
 <li>Tutorials</li>
 </ul>
-</div>
-</div>
+</div></div>
 <div class="fragment">
 <div class="callout callout-important callout-titled callout-style-default">
 <div class="callout-body">
@@ -579,8 +573,7 @@ Felipe Melo
 </div><div class="column fragment" style="width:50%;">
 <p><strong>Effort and repetition</strong></p>
 <p><img data-src="https://www.uksport.gov.uk/-/media/images/the-british-womens-4x100m-relay-team-celebrate-at-tokyo-2020.ashx?w=680&amp;mw=680&amp;hash=F4E2D3C9851E543D532CD4640703ED61&amp;h=433&amp;crop=1"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="section" class="slide level2" data-background-image="https://i0.wp.com/phenomenex.blog/wp-content/uploads/2017/10/PinkyandtheBrain.TheBrain.png" data-background-size="contain">
 <h2></h2>
@@ -924,18 +917,7 @@ Felipe Melo
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -967,7 +949,29 @@ Felipe Melo
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -975,7 +979,7 @@ Felipe Melo
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

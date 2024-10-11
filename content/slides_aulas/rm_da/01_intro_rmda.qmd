@@ -267,3 +267,8 @@ ggplot(penguins,
 
 
 ## The end{.center}
+
+```{r}
+
+renderthis::to_pdf("01_intro_rmda.html")
+```

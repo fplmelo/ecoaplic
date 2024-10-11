@@ -385,3 +385,10 @@ normal %>%
 
 ## End of session on DA {.center}
 
+```{r}
+
+renderthis::to_pdf("02_data_wrangling.html")
+```
+
+
+

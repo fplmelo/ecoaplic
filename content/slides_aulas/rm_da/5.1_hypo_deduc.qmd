@@ -128,7 +128,10 @@ source: [Kalinowski & Pelakh 2023](https://onlinelibrary.wiley.com/doi/full/10.1
 
 ## Are you doing science right?
 
+```{r}
 
+renderthis::to_pdf("5.1_hypo_deduc.html")
+```
 
 
 
