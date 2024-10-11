@@ -51,9 +51,19 @@ format:
 
 [The Penguins file](https://raw.githubusercontent.com/fplmelo/ecoaplic/refs/heads/main/content/slides_aulas/rm_da/penguins.csv)
 
+```{r}
+#| label: load pengins from external source
+#| echo: true
+penguins_df<-read.csv("https://raw.githubusercontent.com/fplmelo/ecoaplic/refs/heads/main/content/slides_aulas/rm_da/penguins.csv")
+penguins_df
+
+```
 
 
 
+## 
+![](img/dataviz_flow2.png)
+source: Andrew Gard <https://www.youtube.com/@EquitableEquations>
 
 ## We know this data
 
@@ -230,7 +240,7 @@ penguins %>%
 ```
 
 
-## Boddy mass per sex
+## Body mass per sex
 
 ```{r}
 #| echo: true
@@ -249,7 +259,7 @@ penguins %>%
 
 ```
 
-## Boddy mass per sex (iverting groups)
+## Body mass per sex (iverting groups)
 
 ```{r}
 #| echo: true
