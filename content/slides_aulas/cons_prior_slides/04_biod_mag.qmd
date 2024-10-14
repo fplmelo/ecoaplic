@@ -95,7 +95,7 @@ source: [Our World in Data](https://ourworldindata.org/mass-extinctions)
 
 ## Humbolt
 :::columns
-:::{.column width="50%"}
+:::{.column width="50%" fig-align="center"}
 
 ![](img/sar.png)
 
@@ -109,13 +109,13 @@ source: [Our World in Data](https://ourworldindata.org/mass-extinctions)
 
 ## Hidden patterns
 :::columns
-:::{.column width="50%"}
+:::{.column width="50%" fig-align="center"}
 
 ![](img/sars.webp)
 
 :::
 
-:::{.column width="50%"}
+:::{.column width="50%" fig-align="center"}
 -  Neutral models, though weird, help to explain SAR
   
 :::
@@ -159,7 +159,7 @@ plot(fit)
 
 ## Island Biogeography
 
-::: {.panel-tabset}
+::: {.panel-tabset fig-align="center" width="80%"}
 
 ### Distance
 
@@ -217,7 +217,7 @@ Diversity is higher in the tropics
 :::
 
 ## Some hypotheses
-::: {.panel-tabset}
+::: {.panel-tabset fig-align="center"}
 
 ## H1 - "cradle"
 
@@ -234,24 +234,26 @@ Diversity is higher in the tropics
 :::
 
 ## More hidden patterns
-::: {.panel-tabset}
+::: {.panel-tabset fig-align="center"}
 
 
 ### Nested diversity
 
-<img src=img/div_nest.webp width = 500/>
+![](img/div_nest.webp){width="40%" fig-align="center"}
+
 
 [Getting the measure of biodiversity](https://www.nature.com/articles/35012221)
 
-### Age of species
 
-![](img/div_age.webp){.absolute height=500}
+### Age of species
+:::
+![](img/div_age.webp){width="30%" fig-align="center" style="transform: rotate(270deg);"}
 
 :::
 
 ## Alfred Russel Wallace
 :::columns
-:::{.column width="50%"}
+:::{.column width="50%" fig-align="center"}
 <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcQhehBm8LtcZpizY5ZUoZDUfhk_G7Fmza8oz_PgtEk7wokliT4iLwdFQl3woU3r" height=500>
 :::
 :::{.column width="50%"}
@@ -263,11 +265,12 @@ The "father of Biogeography"
 - Species intereaction
 - SARs
 
+[Darwin, historical biogeography, and the importance of overcoming binary opposites](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2699.2009.02111.x)
 :::
 :::
 :::
 
- [Darwin, historical biogeography, and the importance of overcoming binary opposites](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2699.2009.02111.x)
+ 
 
 ## Niche and conservation priorities
 
@@ -295,15 +298,15 @@ Invasive Bees
 
 ## Some applications
 
-![](https://www.researchgate.net/profile/Michael-Hoffmann-19/publication/6958884/figure/fig1/AS:280471314419712@1443880980338/Maps-of-the-nine-global-biodiversity-conservation-priority-templates-CE-crisis.png)
+![](https://www.researchgate.net/profile/Michael-Hoffmann-19/publication/6958884/figure/fig1/AS:280471314419712@1443880980338/Maps-of-the-nine-global-biodiversity-conservation-priority-templates-CE-crisis.png){width="80%"}
 
 [Brooks et al 2006](https://www.science.org/doi/10.1126/science.1127609)
 
 
 ## Today's reviews
-- It is important to have a clear scenario on the magitude and ditribution of biodiversity
-- Biogrpgraphy is a key dicipline
-- Patterns of divesity in nature are everywhere
+- It is important to have a clear scenario on the magnitude and distribution of biodiversity
+- Biography is a key discipline
+- Patterns of diversity in nature are everywhere
 - Informed prioritisation demands knowledge
 
 ## The end{.center}
