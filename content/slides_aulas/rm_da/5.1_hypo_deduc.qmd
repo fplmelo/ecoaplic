@@ -1,5 +1,5 @@
 ---
-title: "4.1-Hypothetical-Deductive Thinking"
+title: "5.1-Hypothetico-Deductive Reasoning"
 subtitle: " "
 author: "Felipe Melo"
 institute: "Nottingham Trent University - UK"
