@@ -1,0 +1,254 @@
+---
+title: "5-Freqency Tests"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+
+```
+
+
+## You should know today:
+
+- Know when to use frequency tests
+- Work with tables and graphs
+- Understand the logic of independence between variables
+
+
+## Types of variables (review)
+
+::::{.columns}
+:::{.column .fragment}
+**Categorical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_3.png)
+
+:::
+
+:::{.column .fragment}
+**Numerical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_4.png)
+
+:::
+::::
+
+## Back to the toolbox
+
+![](img/toolkit.png){fig-align="center"}
+
+
+## Let's imagine Ladybirds
+
+:::{.panel-tabset}
+
+## Ladybirds
+
+![](img/ladybirds.png){width="40%" fig-align="center"}
+
+## Code
+
+```{r}
+#| label: table
+#| include: true
+#| echo: true
+ladybirds <- tribble(
+  ~Habitat, ~Site, ~Colour, ~Number,
+  "Rural", "R1", "Black", 10,
+  "Rural", "R2", "Black", 3,
+  "Rural", "R3", "Black", 4,
+  "Rural", "R4", "Black", 7,
+  "Rural", "R5", "Black", 6,
+  "Rural", "R1", "Red", 15,
+  "Rural", "R2", "Red", 18,
+  "Rural", "R3", "Red", 9,
+  "Rural", "R4", "Red", 12,
+  "Rural", "R5", "Red", 16,
+  "Industrial", "U1", "Black", 32,
+  "Industrial", "U2", "Black", 25,
+  "Industrial", "U3", "Black", 25,
+  "Industrial", "U4", "Black", 17,
+  "Industrial", "U5", "Black", 16,
+  "Industrial", "U1", "Red", 17,
+  "Industrial", "U2", "Red", 23,
+  "Industrial", "U3", "Red", 21,
+  "Industrial", "U4", "Red", 9,
+  "Industrial", "U5",  
+ "Red", 15
+)
+
+
+```
+
+## Data
+
+```{r}
+
+ladybirds
+```
+
+## Table 1
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+ladybirds%>% 
+  group_by(Habitat, Colour) %>% 
+  summarize(count = sum(Number)) |> 
+  kable()
+
+
+```
+
+## Table 2
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+
+ladybirds%>% 
+  group_by(Habitat, Colour) %>% 
+  summarize(count = sum(Number)) %>% 
+  spread(Colour, count, fill = 0) |> 
+  kable()
+```
+:::
+
+## Is there an association between colour and habitat?{.center}
+
+## Tweaking tables
+
+:::{.panel-tabset}
+
+## Code
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+ladybirds |> 
+  group_by(Habitat, Colour) |> 
+  summarize(count = sum(Number)) |> 
+  mutate(prop=count/sum(count)) |>   # our new proportion variable
+  kable()
+```
+
+## Code 2
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+ladybirds |> 
+  group_by(Habitat, Colour) |> 
+  summarize(count = sum(Number)) |> 
+  mutate(prop=count/sum(count)) |>   # our new proportion variable
+  select(Habitat, Colour, prop) |> 
+  spread(Habitat, prop) |> 
+  kable()
+```
+
+## Code 3
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+library(janitor)
+ladybirds |> 
+  group_by(Habitat, Colour) %>% 
+  summarize(count = sum(Number)) %>% 
+  spread(Colour, count, fill = 0)|> 
+  adorn_totals(c("row", "col")) |> 
+  kable()
+  
+
+
+```
+:::
+
+## Proportions
+
+:::{.panel-tabset}
+
+## Total
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+ladybirds |> 
+  group_by(Habitat, Colour) %>% 
+  summarize(count = sum(Number)) %>% 
+  spread(Colour, count, fill = 0) |> 
+  column_to_rownames("Habitat") |> 
+  proportions() |> 
+  kable()
+```
+
+## Rows
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+ladybirds |> 
+  group_by(Habitat, Colour) %>% 
+  summarise(count = sum(Number)) %>% 
+  spread(Colour, count, fill = 0) |> 
+  column_to_rownames("Habitat") |> 
+  as.matrix()->t
+  proportions(t,1) |> 
+    kable()
+```
+
+## Columns
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+ladybirds |> 
+  group_by(Habitat, Colour) %>% 
+  summarise(count = sum(Number)) %>% 
+  spread(Colour, count, fill = 0) |> 
+  column_to_rownames("Habitat") |> 
+  as.matrix()->t
+  proportions(t,2) |> 
+    kable()
+```
+:::
+
+## All at once
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+CrossTable(t)
+
+
+```
+
+
+## End of DA class{.center}
