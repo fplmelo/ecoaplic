@@ -1,5 +1,5 @@
 ---
-title: "5-Freqency Tests"
+title: "5-Frequency Tests"
 subtitle: " "
 author: "Felipe Melo"
 institute: "Nottingham Trent University - UK"
@@ -138,7 +138,10 @@ ladybirds%>%
 ```
 :::
 
-## Is there an association between colour and habitat?{.center}
+## How habitat type influences morphotype occurrence of ladybirds?{.center}
+
+## Is there an association between habitat and LB morphotype?{.center}
+
 
 ## Tweaking tables
 
@@ -194,7 +197,7 @@ ladybirds |>
 
 :::{.panel-tabset}
 
-## Total
+## Totals
 ```{r}
 #| include: true
 #| echo: true
@@ -239,7 +242,7 @@ ladybirds |>
 ```
 :::
 
-## All at once
+## All important at once
 
 ```{r}
 #| include: true
@@ -247,8 +250,257 @@ ladybirds |>
 #| output-location: default
 CrossTable(t)
 
+```
+
+## Proportions can be tricky
+
+- 2/3 of LB are found in Industrial areas 
+- It is rare fo find a black LB in rural areas
+- Red LB don't show any habitat preference
+- Black LB prefer Industrual areas
+
+:::{.fragment}
+- **How many more infor can we extract from this table?**
+:::
+
+## Drug abuse and Marihuana
+
+| Marihuana | abuse| no abuse|
+|:----------|-----:|---:|
+|Yes |   35|  205|
+|No      |    8|  48|
+
+:::{.fragment}
+- Marihuana leads to other drugs?
+
+:::
+
+## Placebo effect
+
+| Cure | treatment| placebo| no treatment|
+|:----------|-----:|---:|---:|
+|Yes |   43|  31| 27|
+|No      |    12|  24| 28|
+
+:::{.fragment}
+- Most people is cured anyway
+- Treatment improves positive resolution
+
+:::
+
+## The frequency tests{.center}
+
+## Chi-square test
+
+$$Chisquare  = (Obs-Esp)²/Esp$$
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+CrossTable(t, expected = TRUE, prop.r = FALSE, 
+           prop.t = FALSE, prop.c = FALSE, prop.chisq = TRUE, chisq=FALSE)
+```
+
+## Testing rows
+:::{.panel-tabset}
+
+## Black LB
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+
+t[,1] # first line, Blacks
+chisq.test(t[,1])$expected
+chisq.test(t[,1])
+```
+
+## Red LB
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+t[,2] # second line, Reds
+chisq.test(t[,2])$expected
+chisq.test(t[,2])
+```
+
+:::
+
+
+## Testing columns
+
+:::{.panel-tabset}
+
+## Industrial
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+
+t[1,]
+chisq.test(t[1,])$expected
+chisq.test(t[1,])
 
 ```
 
+## Rural
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+
+t[2,]
+chisq.test(t[2,])$expected
+chisq.test(t[2,])
+
+```
+:::
+
+## Distributions
+:::{.panel-tabset}
+## Data
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column  
+pop<-tribble(
+  ~age, ~country, ~pop,
+       "0-10","UK", 50,
+       "0-10","BRA", 120,
+       "11-20","UK", 70,
+       "11-20","BRA", 140,
+       "21-30","UK", 110,
+       "21-30","BRA", 150,
+       "31-40","UK", 150,
+       "31-40","BRA", 180,
+       "40-50","UK", 180,
+       "40-50","BRA", 180,
+       "50-60","UK", 150,
+       "50-60","BRA", 90,
+       "60-70","UK", 130,
+       "60-70","BRA", 50)
+
+```
+
+## Graph
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+pop |> 
+  ggplot(aes(x=age, y= pop, color=country, fill=country))+
+  geom_col(position="dodge")+
+  theme(axis.text=element_text(size = 18),
+        axis.title = element_text(size=18))
+```
+
+## Chi square test
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+pop |> 
+  group_by(country, age) %>% 
+  #summarise(count = sum(Number)) %>% 
+  spread(country, pop, fill = 0) |> 
+  column_to_rownames("age") |> 
+  as.matrix() -> t2
+  chisq.test(t2)
+
+  chisq.test(t2)$expected
+
+```
+
+:::
+
+## Loglinear models
+
+- Based on contingency tables with multiple levels
+- Can model data
+- Based on odds ratio
+
+:::{.fragment}
+
+### BEAUTIFUL
+:::
+
+## Multiple contingency tables
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default  
+
+library(MASS)
+pop |> 
+  rename(male=pop) |> 
+  mutate(female=ifelse(country=="UK", male^1.01, male^1.03)) |> 
+  pivot_longer(cols = male:female, names_to = "sex")->dat.mod
+
+model1<-glm(value~age*country*sex, data=dat.mod, family="poisson")
+
+summary(model1)
+
+
+```
+
+## Frequency tests
+
+- Chi-square test
+- Z-test
+- G test
+- Binomial tests
+- Loglinear models*
+
+## Key points
+- Can you identify when you need a frequency test?
+- Are you able to extract the info from the tables and graphics?
+- Can you interpret correctly the results?
+
+## Types of frequency test
+
+:::{.panel-tabset}
+## Observed vs Expected
+```{r}
+coin<-tibble(face=c("tip","toss"), value=c(27,24))
+kable(coin)
+chisq.test(coin[,2]) # using only the numerical value
+```
+
+## Independency
+
+```{r}
+
+coin2<-tibble(face=rep(c("tip","toss"),2), biased=c("no","no","yes","yes"), value=c(27,24, 39,12)) |> 
+  spread(biased, value)
+kable(coin2)
+
+chisq.test(coin2[,-1])$expected
+
+chisq.test(x=c(27,24, 39,12), p = c(25.5,25.5,25.5,25.5), rescale.p=TRUE)
+
+```
+
+:::
 
 ## End of DA class{.center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

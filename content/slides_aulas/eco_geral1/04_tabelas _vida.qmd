@@ -103,35 +103,35 @@ smaller: true
 
 ## Mais proporções
 
-| Faixa etária   | Sobreviventes | Prop de Sobreviventes | Prop de mortos | Fecundidade   | "Killing power" |
-|----------------|---------------|-----------------------|----------------|---------------|-----------------|
-| x              | a<sub>x</sub> | l<sub>x</sub>         | q<sub>x</sub>  | m<sub>x</sub> | k<sub>x</sub>   |
-| Ovos (x=0)     | 10000         | 1                     | 0,92           | \-            | 1,09            |
-| Instar 1 (x=1) | 800           | 0,08                  | 0,375          | \-            | 0,2             |
-| Instar 2 (x=2) | 500           | 0,05                  | 0,10           | \-            | 0,045           |
-| Instar 3 (x=3) | 450           | 0,045                 | 0,11           | \-            | 0,05            |
-| Instar 4 (x=4) | 400           | 0,04                  | 0,12           | \-            | 0,057           |
-| Adultos (x=5)  | 350           | 0,035                 | 1              | 22,8          | \-              |
+| Faixa etária | Sobreviventes | Prop de Sobreviventes | Prop de mortos | Fecundidade | "Killing power" |
+|------------|------------|------------|------------|------------|------------|
+| x | a<sub>x</sub> | l<sub>x</sub> | q<sub>x</sub> | m<sub>x</sub> | k<sub>x</sub> |
+| Ovos (x=0) | 10000 | 1 | 0,92 | \- | 1,09 |
+| Instar 1 (x=1) | 800 | 0,08 | 0,375 | \- | 0,2 |
+| Instar 2 (x=2) | 500 | 0,05 | 0,10 | \- | 0,045 |
+| Instar 3 (x=3) | 450 | 0,045 | 0,11 | \- | 0,05 |
+| Instar 4 (x=4) | 400 | 0,04 | 0,12 | \- | 0,057 |
+| Adultos (x=5) | 350 | 0,035 | 1 | 22,8 | \- |
 
 ## Em resumo
 
-| Parâmetro     | Defnição                                                                                                                      |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------|
-| x             | Estágio de vida ou clsse etária ou estágio ontogenético ou tamanho...                                                         |
-| a<sub>x</sub> | Número de indivíduos observadosem cada classe de "x"                                                                          |
-| l<sub>x</sub> | Taxa de sobreviventes ou proporção de indivíduos que passa de x a x+1                                                         |
-| d<sub>x</sub> | Mortalidade ou número de indivíduos que não sobrevive a cada geração "x"                                                      |
-| q<sub>x</sub> | Taxa de mortalidade, ou proportção de indivíduos mortos para cada classe de "x"                                               |
+| Parâmetro | Defnição |
+|--------------|----------------------------------------------------------|
+| x | Estágio de vida ou clsse etária ou estágio ontogenético ou tamanho... |
+| a<sub>x</sub> | Número de indivíduos observadosem cada classe de "x" |
+| l<sub>x</sub> | Taxa de sobreviventes ou proporção de indivíduos que passa de x a x+1 |
+| d<sub>x</sub> | Mortalidade ou número de indivíduos que não sobrevive a cada geração "x" |
+| q<sub>x</sub> | Taxa de mortalidade, ou proportção de indivíduos mortos para cada classe de "x" |
 | k<sub>x</sub> | Força da mortalidade ou "killing power", representada pela razão logaritimzada dos parâmtetros de sobrevivência entre x e x+1 |
 
 ## Continuação...
 
-| Parâmetro                    | Defnição                                                                                                  |
-|------------------------------|-----------------------------------------------------------------------------------------------------------|
-| F<sub>x</sub>                | Fecundidade total ou número de proles deixado por cada estágio de "x"                                     |
-| m<sub>x</sub>                | Fecundidade por indivíduo, portanto normalizada pelo número de indivíduos da populção em cada estágio "x" |
-| l<sub>x</sub>\*m<sub>x</sub> | Taxa de repordução por sobrevivente                                                                       |
-| Rl<sub>0</sub>               | Taxa reprodutiva líquida                                                                                  |
+| Parâmetro | Defnição |
+|------------------|------------------------------------------------------|
+| F<sub>x</sub> | Fecundidade total ou número de proles deixado por cada estágio de "x" |
+| m<sub>x</sub> | Fecundidade por indivíduo, portanto normalizada pelo número de indivíduos da populção em cada estágio "x" |
+| l<sub>x</sub>\*m<sub>x</sub> | Taxa de repordução por sobrevivente |
+| Rl<sub>0</sub> | Taxa reprodutiva líquida |
 
 ## Aplicação das tabelas de vida
 

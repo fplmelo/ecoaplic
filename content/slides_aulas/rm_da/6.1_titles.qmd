@@ -1,0 +1,159 @@
+---
+title: "6.1 - How to make good titles?"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+
+```
+
+
+## You should know today:
+
+- Understand the logic behind a title of a research piece
+- Evaluate quality of titles
+- Create good titles
+
+
+## What is a title?
+
+:::{.fragment}
+![](img/title1.png)
+:::
+
+:::{.fragment}
+- Geographical scope
+- Methods
+- Taxonomic group
+- Effect
+:::
+
+## What is not a title?
+
+:::{.fragment}
+![](img/title2.png)
+:::
+
+## Basic features of titles
+
+:::{.columns}
+:::{.column}
+**Good title**
+- Short
+- Informative
+- Jargon-less
+- Wide
+- Keywords
+:::
+
+:::{.column}
+**Bad Title**
+- Long
+- Over informative
+- Too specialized
+- Narrow
+- Non-keywords
+:::
+:::
+
+## Descriptive titles
+
+![](img/title_desc.png){fig-align=right width="70%"}
+
+![](img/title_desc2.png){fig-align=left}
+
+## Methodological titles
+
+![](img/title_met.png){fig-align=right width="50%"}
+
+![](img/title_met2.png){fig-align=left width="60%"}
+
+## "Spoiler" title
+
+![](img/title_spoil.png){fig-align=right width="70%"}
+
+![](img/title_spoil2.png){fig-align=left}
+
+## Interrogative titles
+
+![](img/title_int.png){fig-align=right width="70%"}
+
+![](img/title_int2.png){fig-align=left width="70%"}
+
+## Key elements of a good title{.center}
+
+## The "hook"
+
+![](img/hook.png)
+
+![](img/hook2.png)
+
+:::{.fragment}
+[What called your attention?]{style="color:red;"}
+:::
+
+## Key terms
+
+:::{.fragment .incremental}
+![](img/key_terms.png)
+
+- [too much!]{style="color:red;"}
+:::
+
+:::{.fragment}
+
+![](img/key_terms2.png){width=60% fig-align="right"}
+
+:::
+
+## The main topic
+
+![](img/source.png){width=60%}
+
+![](img/source2.png){width=60%}
+
+## Quick task
+
+- [Read this abstract](img/ab_title.png)
+- Write a title
+
+```{r}
+#| echo: false
+
+library(countdown)
+countdown(minutes = 4, seconds = 15)
+
+```
+
+
+
+
+
+
+
+
+
+
+

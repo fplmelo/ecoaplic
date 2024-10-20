@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Felipe Melo">
-  <title>5-Freqency Tests</title>
+  <title>5-Frequency Tests</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -393,7 +393,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">5-Freqency Tests</h1>
+  <h1 class="title">5-Frequency Tests</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -579,8 +579,11 @@ Felipe Melo
 </div>
 </div>
 </section>
-<section id="is-there-an-association-between-colour-and-habitat" class="slide level2 center">
-<h2>Is there an association between colour and habitat?</h2>
+<section id="how-habitat-type-influences-morphotype-occurrence-of-ladybirds" class="slide level2 center">
+<h2>How habitat type influences morphotype occurrence of ladybirds?</h2>
+</section>
+<section id="is-there-an-association-between-habitat-and-lb-morphotype" class="slide level2 center">
+<h2>Is there an association between habitat and LB morphotype?</h2>
 </section>
 <section id="tweaking-tables" class="slide level2">
 <h2>Tweaking tables</h2>
@@ -721,7 +724,7 @@ Felipe Melo
 <section id="proportions" class="slide level2">
 <h2>Proportions</h2>
 <div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Total</a></li><li><a href="#tabset-3-2">Rows</a></li><li><a href="#tabset-3-3">Columns</a></li></ul>
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Totals</a></li><li><a href="#tabset-3-2">Rows</a></li><li><a href="#tabset-3-3">Columns</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1">
 <div class="cell">
@@ -830,8 +833,8 @@ Felipe Melo
 </div>
 </div>
 </section>
-<section id="all-at-once" class="slide level2">
-<h2>All at once</h2>
+<section id="all-important-at-once" class="slide level2">
+<h2>All important at once</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href=""></a><span class="fu">CrossTable</span>(t)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -870,6 +873,488 @@ Column Total |       145 |       155 |       300 |
 -------------|-----------|-----------|-----------|
 
  </code></pre>
+</div>
+</div>
+</section>
+<section id="proportions-can-be-tricky" class="slide level2">
+<h2>Proportions can be tricky</h2>
+<ul>
+<li>2/3 of LB are found in Industrial areas</li>
+<li>It is rare fo find a black LB in rural areas</li>
+<li>Red LB don’t show any habitat preference</li>
+<li>Black LB prefer Industrual areas</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>How many more infor can we extract from this table?</strong></li>
+</ul>
+</div>
+</section>
+<section id="drug-abuse-and-marihuana" class="slide level2">
+<h2>Drug abuse and Marihuana</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Marihuana</th>
+<th style="text-align: right;">abuse</th>
+<th style="text-align: right;">no abuse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">205</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">48</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<ul>
+<li>Marihuana leads to other drugs?</li>
+</ul>
+</div>
+</section>
+<section id="placebo-effect" class="slide level2">
+<h2>Placebo effect</h2>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Cure</th>
+<th style="text-align: right;">treatment</th>
+<th style="text-align: right;">placebo</th>
+<th style="text-align: right;">no treatment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Yes</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">No</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">28</td>
+</tr>
+</tbody>
+</table>
+<div class="fragment">
+<ul>
+<li>Most people is cured anyway</li>
+<li>Treatment improves positive resolution</li>
+</ul>
+</div>
+</section>
+<section id="the-frequency-tests" class="slide level2 center">
+<h2>The frequency tests</h2>
+</section>
+<section id="chi-square-test" class="slide level2">
+<h2>Chi-square test</h2>
+<p><span class="math display">\[Chisquare  = (Obs-Esp)²/Esp\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a><span class="fu">CrossTable</span>(t, <span class="at">expected =</span> <span class="cn">TRUE</span>, <span class="at">prop.r =</span> <span class="cn">FALSE</span>, </span>
+<span id="cb13-2"><a href=""></a>           <span class="at">prop.t =</span> <span class="cn">FALSE</span>, <span class="at">prop.c =</span> <span class="cn">FALSE</span>, <span class="at">prop.chisq =</span> <span class="cn">TRUE</span>, <span class="at">chisq=</span><span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ 
+   Cell Contents
+|-------------------------|
+|                       N |
+|              Expected N |
+| Chi-square contribution |
+|-------------------------|
+
+ 
+Total Observations in Table:  300 
+
+ 
+             |  
+             |     Black |       Red | Row Total | 
+-------------|-----------|-----------|-----------|
+  Industrial |       115 |        85 |       200 | 
+             |    96.667 |   103.333 |           | 
+             |     3.477 |     3.253 |           | 
+-------------|-----------|-----------|-----------|
+       Rural |        30 |        70 |       100 | 
+             |    48.333 |    51.667 |           | 
+             |     6.954 |     6.505 |           | 
+-------------|-----------|-----------|-----------|
+Column Total |       145 |       155 |       300 | 
+-------------|-----------|-----------|-----------|
+
+ 
+Statistics for All Table Factors
+
+
+Pearson's Chi-squared test 
+------------------------------------------------------------
+Chi^2 =  20.1891     d.f. =  1     p =  7.015156e-06 
+
+Pearson's Chi-squared test with Yates' continuity correction 
+------------------------------------------------------------
+Chi^2 =  19.10289     d.f. =  1     p =  1.238571e-05 
+
+ </code></pre>
+</div>
+</div>
+</section>
+<section id="testing-rows" class="slide level2">
+<h2>Testing rows</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Black LB</a></li><li><a href="#tabset-4-2">Red LB</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href=""></a>t[,<span class="dv">1</span>] <span class="co"># first line, Blacks</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Industrial      Rural 
+       115         30 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">1</span>])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Industrial      Rural 
+      72.5       72.5 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Chi-squared test for given probabilities
+
+data:  t[, 1]
+X-squared = 49.828, df = 1, p-value = 1.679e-12</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-4-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href=""></a>t[,<span class="dv">2</span>] <span class="co"># second line, Reds</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Industrial      Rural 
+        85         70 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">2</span>])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Industrial      Rural 
+      77.5       77.5 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Chi-squared test for given probabilities
+
+data:  t[, 2]
+X-squared = 1.4516, df = 1, p-value = 0.2283</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="testing-columns" class="slide level2">
+<h2>Testing columns</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Industrial</a></li><li><a href="#tabset-5-2">Rural</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href=""></a>t[<span class="dv">1</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Black   Red 
+  115    85 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">1</span>,])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Black   Red 
+  100   100 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">1</span>,])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Chi-squared test for given probabilities
+
+data:  t[1, ]
+X-squared = 4.5, df = 1, p-value = 0.03389</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-5-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href=""></a>t[<span class="dv">2</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Black   Red 
+   30    70 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">2</span>,])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Black   Red 
+   50    50 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">2</span>,])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Chi-squared test for given probabilities
+
+data:  t[2, ]
+X-squared = 16, df = 1, p-value = 6.334e-05</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="distributions" class="slide level2">
+<h2>Distributions</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Data</a></li><li><a href="#tabset-6-2">Graph</a></li><li><a href="#tabset-6-3">Chi square test</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href=""></a>pop<span class="ot">&lt;-</span><span class="fu">tribble</span>(</span>
+<span id="cb39-2"><a href=""></a>  <span class="sc">~</span>age, <span class="sc">~</span>country, <span class="sc">~</span>pop,</span>
+<span id="cb39-3"><a href=""></a>       <span class="st">"0-10"</span>,<span class="st">"UK"</span>, <span class="dv">50</span>,</span>
+<span id="cb39-4"><a href=""></a>       <span class="st">"0-10"</span>,<span class="st">"BRA"</span>, <span class="dv">120</span>,</span>
+<span id="cb39-5"><a href=""></a>       <span class="st">"11-20"</span>,<span class="st">"UK"</span>, <span class="dv">70</span>,</span>
+<span id="cb39-6"><a href=""></a>       <span class="st">"11-20"</span>,<span class="st">"BRA"</span>, <span class="dv">140</span>,</span>
+<span id="cb39-7"><a href=""></a>       <span class="st">"21-30"</span>,<span class="st">"UK"</span>, <span class="dv">110</span>,</span>
+<span id="cb39-8"><a href=""></a>       <span class="st">"21-30"</span>,<span class="st">"BRA"</span>, <span class="dv">150</span>,</span>
+<span id="cb39-9"><a href=""></a>       <span class="st">"31-40"</span>,<span class="st">"UK"</span>, <span class="dv">150</span>,</span>
+<span id="cb39-10"><a href=""></a>       <span class="st">"31-40"</span>,<span class="st">"BRA"</span>, <span class="dv">180</span>,</span>
+<span id="cb39-11"><a href=""></a>       <span class="st">"40-50"</span>,<span class="st">"UK"</span>, <span class="dv">180</span>,</span>
+<span id="cb39-12"><a href=""></a>       <span class="st">"40-50"</span>,<span class="st">"BRA"</span>, <span class="dv">180</span>,</span>
+<span id="cb39-13"><a href=""></a>       <span class="st">"50-60"</span>,<span class="st">"UK"</span>, <span class="dv">150</span>,</span>
+<span id="cb39-14"><a href=""></a>       <span class="st">"50-60"</span>,<span class="st">"BRA"</span>, <span class="dv">90</span>,</span>
+<span id="cb39-15"><a href=""></a>       <span class="st">"60-70"</span>,<span class="st">"UK"</span>, <span class="dv">130</span>,</span>
+<span id="cb39-16"><a href=""></a>       <span class="st">"60-70"</span>,<span class="st">"BRA"</span>, <span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+
+</div></div>
+</div>
+<div id="tabset-6-2">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href=""></a>pop <span class="sc">|&gt;</span> </span>
+<span id="cb40-2"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>age, <span class="at">y=</span> pop, <span class="at">color=</span>country, <span class="at">fill=</span>country))<span class="sc">+</span></span>
+<span id="cb40-3"><a href=""></a>  <span class="fu">geom_col</span>(<span class="at">position=</span><span class="st">"dodge"</span>)<span class="sc">+</span></span>
+<span id="cb40-4"><a href=""></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">18</span>),</span>
+<span id="cb40-5"><a href=""></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">18</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="06__freq_tests_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</div>
+<div id="tabset-6-3">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href=""></a>pop <span class="sc">|&gt;</span> </span>
+<span id="cb41-2"><a href=""></a>  <span class="fu">group_by</span>(country, age) <span class="sc">%&gt;%</span> </span>
+<span id="cb41-3"><a href=""></a>  <span class="co">#summarise(count = sum(Number)) %&gt;% </span></span>
+<span id="cb41-4"><a href=""></a>  <span class="fu">spread</span>(country, pop, <span class="at">fill =</span> <span class="dv">0</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb41-5"><a href=""></a>  <span class="fu">column_to_rownames</span>(<span class="st">"age"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb41-6"><a href=""></a>  <span class="fu">as.matrix</span>() <span class="ot">-&gt;</span> t2</span>
+<span id="cb41-7"><a href=""></a>  <span class="fu">chisq.test</span>(t2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  t2
+X-squared = 108.97, df = 6, p-value &lt; 2.2e-16</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href=""></a>  <span class="fu">chisq.test</span>(t2)<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        BRA    UK
+0-10   88.4  81.6
+11-20 109.2 100.8
+21-30 135.2 124.8
+31-40 171.6 158.4
+40-50 187.2 172.8
+50-60 124.8 115.2
+60-70  93.6  86.4</code></pre>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</section>
+<section id="loglinear-models" class="slide level2">
+<h2>Loglinear models</h2>
+<ul>
+<li>Based on contingency tables with multiple levels</li>
+<li>Can model data</li>
+<li>Based on odds ratio</li>
+</ul>
+<div class="fragment">
+<!-- -->
+<h3 id="beautiful">BEAUTIFUL</h3>
+</div>
+</section>
+<section id="multiple-contingency-tables" class="slide level2">
+<h2>Multiple contingency tables</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href=""></a><span class="fu">library</span>(MASS)</span>
+<span id="cb45-2"><a href=""></a>pop <span class="sc">|&gt;</span> </span>
+<span id="cb45-3"><a href=""></a>  <span class="fu">rename</span>(<span class="at">male=</span>pop) <span class="sc">|&gt;</span> </span>
+<span id="cb45-4"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">female=</span><span class="fu">ifelse</span>(country<span class="sc">==</span><span class="st">"UK"</span>, male<span class="sc">^</span><span class="fl">1.01</span>, male<span class="sc">^</span><span class="fl">1.03</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb45-5"><a href=""></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> male<span class="sc">:</span>female, <span class="at">names_to =</span> <span class="st">"sex"</span>)<span class="ot">-&gt;</span>dat.mod</span>
+<span id="cb45-6"><a href=""></a></span>
+<span id="cb45-7"><a href=""></a>model1<span class="ot">&lt;-</span><span class="fu">glm</span>(value<span class="sc">~</span>age<span class="sc">*</span>country<span class="sc">*</span>sex, <span class="at">data=</span>dat.mod, <span class="at">family=</span><span class="st">"poisson"</span>)</span>
+<span id="cb45-8"><a href=""></a></span>
+<span id="cb45-9"><a href=""></a><span class="fu">summary</span>(model1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = value ~ age * country * sex, family = "poisson", 
+    data = dat.mod)
+
+Coefficients:
+                             Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                 4.9311165  0.0849614  58.039  &lt; 2e-16 ***
+age11-20                    0.1587752  0.1156595   1.373 0.169820    
+age21-30                    0.2298379  0.1138185   2.019 0.043452 *  
+age31-40                    0.4176291  0.1094192   3.817 0.000135 ***
+age40-50                    0.4176291  0.1094192   3.817 0.000135 ***
+age50-60                   -0.2963125  0.1301017  -2.278 0.022754 *  
+age60-70                   -0.9017328  0.1581257  -5.703 1.18e-08 ***
+countryUK                  -0.9799733  0.1626381  -6.025 1.69e-09 ***
+sexmale                    -0.1436248  0.1247067  -1.152 0.249444    
+age11-20:countryUK          0.1810618  0.2151774   0.841 0.400094    
+age21-30:countryUK          0.5665041  0.2021407   2.803 0.005070 ** 
+age31-40:countryUK          0.6919694  0.1937682   3.571 0.000355 ***
+age40-50:countryUK          0.8761141  0.1909965   4.587 4.50e-06 ***
+age50-60:countryUK          1.4059109  0.2061553   6.820 9.13e-12 ***
+age60-70:countryUK          1.8667994  0.2270755   8.221  &lt; 2e-16 ***
+age11-20:sexmale           -0.0046245  0.1698626  -0.027 0.978280    
+age21-30:sexmale           -0.0066943  0.1671965  -0.040 0.968062    
+age31-40:sexmale           -0.0121640  0.1608149  -0.076 0.939706    
+age40-50:sexmale           -0.0121640  0.1608149  -0.076 0.939706    
+age50-60:sexmale            0.0086305  0.1907115   0.045 0.963905    
+age60-70:sexmale            0.0262641  0.2309482   0.114 0.909458    
+countryUK:sexmale           0.1045045  0.2340608   0.446 0.655247    
+age11-20:countryUK:sexmale  0.0012598  0.3099407   0.004 0.996757    
+age21-30:countryUK:sexmale -0.0011903  0.2914648  -0.004 0.996742    
+age31-40:countryUK:sexmale  0.0011778  0.2794667   0.004 0.996637    
+age40-50:countryUK:sexmale -0.0006454  0.2755433  -0.002 0.998131    
+age50-60:countryUK:sexmale -0.0196166  0.2976762  -0.066 0.947458    
+age60-70:countryUK:sexmale -0.0358192  0.3280075  -0.109 0.913042    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance:  5.3238e+02  on 27  degrees of freedom
+Residual deviance: -1.0851e-14  on  0  degrees of freedom
+AIC: Inf
+
+Number of Fisher Scoring iterations: 3</code></pre>
+</div>
+</div>
+</section>
+<section id="frequency-tests" class="slide level2">
+<h2>Frequency tests</h2>
+<ul>
+<li>Chi-square test</li>
+<li>Z-test</li>
+<li>G test</li>
+<li>Binomial tests</li>
+<li>Loglinear models*</li>
+</ul>
+</section>
+<section id="key-points" class="slide level2">
+<h2>Key points</h2>
+<ul>
+<li>Can you identify when you need a frequency test?</li>
+<li>Are you able to extract the info from the tables and graphics?</li>
+<li>Can you interpret correctly the results?</li>
+</ul>
+</section>
+<section id="types-of-frequency-test" class="slide level2">
+<h2>Types of frequency test</h2>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Observed vs Expected</a></li><li><a href="#tabset-7-2">Independency</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">face</th>
+<th style="text-align: right;">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">tip</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">toss</td>
+<td style="text-align: right;">24</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Chi-squared test for given probabilities
+
+data:  coin[, 2]
+X-squared = 0.17647, df = 1, p-value = 0.6744</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-7-2">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">face</th>
+<th style="text-align: right;">no</th>
+<th style="text-align: right;">yes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">tip</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">39</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">toss</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">12</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     no yes
+[1,] 33  33
+[2,] 18  18</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Chi-squared test for given probabilities
+
+data:  c(27, 24, 39, 12)
+X-squared = 14.471, df = 3, p-value = 0.00233</code></pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
