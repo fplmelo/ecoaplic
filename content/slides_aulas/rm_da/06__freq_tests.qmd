@@ -1,5 +1,5 @@
 ---
-title: "5-Frequency Tests"
+title: "6-Frequency Tests"
 subtitle: " "
 author: "Felipe Melo"
 institute: "Nottingham Trent University - UK"
