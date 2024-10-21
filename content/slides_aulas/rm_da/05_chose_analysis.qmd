@@ -423,5 +423,10 @@ plot_grid(cat_x_cat,num_x_cat, cat_x_num,num_x_num)
 
 ```
 
+## A change in our timetable
+
+![](img/timetable.png)
+
 
 ## End of DA class{.center}
+
