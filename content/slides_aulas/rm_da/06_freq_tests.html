@@ -412,7 +412,9 @@ Felipe Melo
 <ul>
 <li>Know when to use frequency tests</li>
 <li>Work with tables and graphs</li>
-<li>Understand the logic of independence between variables</li>
+<li>Goodness of fit tests</li>
+<li>Independency tests</li>
+<li>Homogeneity tests</li>
 </ul>
 </section>
 <section id="types-of-variables-review" class="slide level2">
@@ -646,7 +648,7 @@ Felipe Melo
 <span id="cb6-2"><a href=""></a>  <span class="fu">group_by</span>(Habitat, Colour) <span class="sc">|&gt;</span> </span>
 <span id="cb6-3"><a href=""></a>  <span class="fu">summarize</span>(<span class="at">count =</span> <span class="fu">sum</span>(Number)) <span class="sc">|&gt;</span> </span>
 <span id="cb6-4"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">prop=</span>count<span class="sc">/</span><span class="fu">sum</span>(count)) <span class="sc">|&gt;</span>   <span class="co"># our new proportion variable</span></span>
-<span id="cb6-5"><a href=""></a>  <span class="fu">select</span>(Habitat, Colour, prop) <span class="sc">|&gt;</span> </span>
+<span id="cb6-5"><a href=""></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(Habitat, Colour, prop) <span class="sc">%&gt;%</span> </span>
 <span id="cb6-6"><a href=""></a>  <span class="fu">spread</span>(Habitat, prop) <span class="sc">|&gt;</span> </span>
 <span id="cb6-7"><a href=""></a>  <span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
@@ -882,45 +884,81 @@ Column Total |       145 |       155 |       300 |
 <li>2/3 of LB are found in Industrial areas</li>
 <li>It is rare fo find a black LB in rural areas</li>
 <li>Red LB don’t show any habitat preference</li>
-<li>Black LB prefer Industrual areas</li>
+<li>Black LB prefer Industrial areas</li>
 </ul>
 <div class="fragment">
 <ul>
-<li><strong>How many more infor can we extract from this table?</strong></li>
+<li><strong>How many more info can we extract from this table?</strong></li>
 </ul>
 </div>
 </section>
-<section id="drug-abuse-and-marihuana" class="slide level2">
-<h2>Drug abuse and Marihuana</h2>
+<section id="types-do-frequency-tests" class="slide level2 center">
+<h2>Types do frequency tests</h2>
+</section>
+<section id="tests-for-independence" class="slide level2">
+<h2>Tests for independence</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Table</a></li><li><a href="#tabset-4-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th style="text-align: left;">Marihuana</th>
-<th style="text-align: right;">abuse</th>
-<th style="text-align: right;">no abuse</th>
+<th style="text-align: left;">Naruto fan</th>
+<th style="text-align: right;">watched Ghibli</th>
+<th style="text-align: right;">never watched Ghibli</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">no</td>
 <td style="text-align: right;">35</td>
 <td style="text-align: right;">205</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">No</td>
+<td style="text-align: left;">yes</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">48</td>
 </tr>
 </tbody>
 </table>
-<div class="fragment">
-<ul>
-<li>Marihuana leads to other drugs?</li>
-</ul>
+</div>
+<div id="tabset-4-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a>naruto<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">35</span>,<span class="dv">205</span>,<span class="dv">8</span>,<span class="dv">48</span>), <span class="at">nrow=</span><span class="dv">2</span>, <span class="at">byrow=</span><span class="cn">TRUE</span>)</span>
+<span id="cb13-2"><a href=""></a><span class="fu">chisq.test</span>(naruto)<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          [,1]      [,2]
+[1,] 34.864865 205.13514
+[2,]  8.135135  47.86486</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href=""></a><span class="fu">proportions</span>(naruto[<span class="dv">1</span>,])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1458333 0.8541667</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a><span class="fu">proportions</span>(naruto[<span class="dv">2</span>,])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1428571 0.8571429</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href=""></a><span class="fu">chisq.test</span>(naruto)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test with Yates' continuity correction
+
+data:  naruto
+X-squared = 5.9938e-30, df = 1, p-value = 1</code></pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 </section>
 <section id="placebo-effect" class="slide level2">
 <h2>Placebo effect</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Table</a></li><li><a href="#tabset-5-2">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -951,78 +989,68 @@ Column Total |       145 |       155 |       300 |
 <li>Treatment improves positive resolution</li>
 </ul>
 </div>
-</section>
-<section id="the-frequency-tests" class="slide level2 center">
-<h2>The frequency tests</h2>
+</div>
+<div id="tabset-5-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href=""></a>placebo<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">43</span>,<span class="dv">31</span>,<span class="dv">27</span>,<span class="dv">12</span>,<span class="dv">24</span>,<span class="dv">28</span>), <span class="at">nrow=</span><span class="dv">2</span>, <span class="at">byrow=</span><span class="cn">TRUE</span>)</span>
+<span id="cb21-2"><a href=""></a><span class="fu">rownames</span>(placebo)<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"cure-yes"</span>, <span class="st">"cure-no"</span>)</span>
+<span id="cb21-3"><a href=""></a><span class="fu">colnames</span>(placebo)<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"treatment"</span>,<span class="st">"placebo"</span>,<span class="st">"no treatment"</span>)</span>
+<span id="cb21-4"><a href=""></a>exp.placebo<span class="ot">&lt;-</span><span class="fu">chisq.test</span>(placebo)<span class="sc">$</span>expected</span>
+<span id="cb21-5"><a href=""></a>exp.placebo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>         treatment  placebo no treatment
+cure-yes  33.66667 33.66667     33.66667
+cure-no   21.33333 21.33333     21.33333</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href=""></a><span class="fu">chisq.test</span>(placebo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  placebo
+X-squared = 10.619, df = 2, p-value = 0.004945</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="chi-square-test" class="slide level2">
 <h2>Chi-square test</h2>
-<p><span class="math display">\[Chisquare  = (Obs-Esp)²/Esp\]</span></p>
+<p><span class="math display">\[Chi-squared  = \sum(Obs-Esp)²/Esp\]</span></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a><span class="fu">CrossTable</span>(t, <span class="at">expected =</span> <span class="cn">TRUE</span>, <span class="at">prop.r =</span> <span class="cn">FALSE</span>, </span>
-<span id="cb13-2"><a href=""></a>           <span class="at">prop.t =</span> <span class="cn">FALSE</span>, <span class="at">prop.c =</span> <span class="cn">FALSE</span>, <span class="at">prop.chisq =</span> <span class="cn">TRUE</span>, <span class="at">chisq=</span><span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href=""></a><span class="fu">chisq.test</span>(placebo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
- 
-   Cell Contents
-|-------------------------|
-|                       N |
-|              Expected N |
-| Chi-square contribution |
-|-------------------------|
+    Pearson's Chi-squared test
 
- 
-Total Observations in Table:  300 
-
- 
-             |  
-             |     Black |       Red | Row Total | 
--------------|-----------|-----------|-----------|
-  Industrial |       115 |        85 |       200 | 
-             |    96.667 |   103.333 |           | 
-             |     3.477 |     3.253 |           | 
--------------|-----------|-----------|-----------|
-       Rural |        30 |        70 |       100 | 
-             |    48.333 |    51.667 |           | 
-             |     6.954 |     6.505 |           | 
--------------|-----------|-----------|-----------|
-Column Total |       145 |       155 |       300 | 
--------------|-----------|-----------|-----------|
-
- 
-Statistics for All Table Factors
-
-
-Pearson's Chi-squared test 
-------------------------------------------------------------
-Chi^2 =  20.1891     d.f. =  1     p =  7.015156e-06 
-
-Pearson's Chi-squared test with Yates' continuity correction 
-------------------------------------------------------------
-Chi^2 =  19.10289     d.f. =  1     p =  1.238571e-05 
-
- </code></pre>
+data:  placebo
+X-squared = 10.619, df = 2, p-value = 0.004945</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href=""></a><span class="fu">sum</span>((placebo<span class="sc">-</span>exp.placebo)<span class="sc">^</span><span class="dv">2</span><span class="sc">/</span>exp.placebo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 10.61881</code></pre>
 </div>
 </div>
 </section>
 <section id="testing-rows" class="slide level2">
 <h2>Testing rows</h2>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Black LB</a></li><li><a href="#tabset-4-2">Red LB</a></li></ul>
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Black LB</a></li><li><a href="#tabset-6-2">Red LB</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1">
+<div id="tabset-6-1">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href=""></a>t[,<span class="dv">1</span>] <span class="co"># first line, Blacks</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href=""></a>t[,<span class="dv">1</span>] <span class="co"># first line, Blacks</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Industrial      Rural 
        115         30 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">1</span>])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">1</span>])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Industrial      Rural 
       72.5       72.5 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Chi-squared test for given probabilities
@@ -1032,19 +1060,19 @@ X-squared = 49.828, df = 1, p-value = 1.679e-12</code></pre>
 </div>
 </div>
 </div>
-<div id="tabset-4-2">
+<div id="tabset-6-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href=""></a>t[,<span class="dv">2</span>] <span class="co"># second line, Reds</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href=""></a>t[,<span class="dv">2</span>] <span class="co"># second line, Reds</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Industrial      Rural 
         85         70 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">2</span>])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">2</span>])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Industrial      Rural 
       77.5       77.5 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href=""></a><span class="fu">chisq.test</span>(t[,<span class="dv">2</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Chi-squared test for given probabilities
@@ -1060,21 +1088,21 @@ X-squared = 1.4516, df = 1, p-value = 0.2283</code></pre>
 <section id="testing-columns" class="slide level2">
 <h2>Testing columns</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Industrial</a></li><li><a href="#tabset-5-2">Rural</a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Industrial</a></li><li><a href="#tabset-7-2">Rural</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1">
+<div id="tabset-7-1">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href=""></a>t[<span class="dv">1</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href=""></a>t[<span class="dv">1</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Black   Red 
   115    85 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">1</span>,])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">1</span>,])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Black   Red 
   100   100 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">1</span>,])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">1</span>,])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Chi-squared test for given probabilities
@@ -1084,19 +1112,19 @@ X-squared = 4.5, df = 1, p-value = 0.03389</code></pre>
 </div>
 </div>
 </div>
-<div id="tabset-5-2">
+<div id="tabset-7-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href=""></a>t[<span class="dv">2</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href=""></a>t[<span class="dv">2</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Black   Red 
    30    70 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">2</span>,])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">2</span>,])<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Black   Red 
    50    50 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">2</span>,])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href=""></a><span class="fu">chisq.test</span>(t[<span class="dv">2</span>,])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Chi-squared test for given probabilities
@@ -1109,62 +1137,62 @@ X-squared = 16, df = 1, p-value = 6.334e-05</code></pre>
 </div>
 </div>
 </section>
-<section id="distributions" class="slide level2">
-<h2>Distributions</h2>
+<section id="test-for-homogeneity" class="slide level2">
+<h2>Test for homogeneity</h2>
 <div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Data</a></li><li><a href="#tabset-6-2">Graph</a></li><li><a href="#tabset-6-3">Chi square test</a></li></ul>
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Data</a></li><li><a href="#tabset-8-2">Graph</a></li><li><a href="#tabset-8-3">Chi square test</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1">
+<div id="tabset-8-1">
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href=""></a>pop<span class="ot">&lt;-</span><span class="fu">tribble</span>(</span>
-<span id="cb39-2"><a href=""></a>  <span class="sc">~</span>age, <span class="sc">~</span>country, <span class="sc">~</span>pop,</span>
-<span id="cb39-3"><a href=""></a>       <span class="st">"0-10"</span>,<span class="st">"UK"</span>, <span class="dv">50</span>,</span>
-<span id="cb39-4"><a href=""></a>       <span class="st">"0-10"</span>,<span class="st">"BRA"</span>, <span class="dv">120</span>,</span>
-<span id="cb39-5"><a href=""></a>       <span class="st">"11-20"</span>,<span class="st">"UK"</span>, <span class="dv">70</span>,</span>
-<span id="cb39-6"><a href=""></a>       <span class="st">"11-20"</span>,<span class="st">"BRA"</span>, <span class="dv">140</span>,</span>
-<span id="cb39-7"><a href=""></a>       <span class="st">"21-30"</span>,<span class="st">"UK"</span>, <span class="dv">110</span>,</span>
-<span id="cb39-8"><a href=""></a>       <span class="st">"21-30"</span>,<span class="st">"BRA"</span>, <span class="dv">150</span>,</span>
-<span id="cb39-9"><a href=""></a>       <span class="st">"31-40"</span>,<span class="st">"UK"</span>, <span class="dv">150</span>,</span>
-<span id="cb39-10"><a href=""></a>       <span class="st">"31-40"</span>,<span class="st">"BRA"</span>, <span class="dv">180</span>,</span>
-<span id="cb39-11"><a href=""></a>       <span class="st">"40-50"</span>,<span class="st">"UK"</span>, <span class="dv">180</span>,</span>
-<span id="cb39-12"><a href=""></a>       <span class="st">"40-50"</span>,<span class="st">"BRA"</span>, <span class="dv">180</span>,</span>
-<span id="cb39-13"><a href=""></a>       <span class="st">"50-60"</span>,<span class="st">"UK"</span>, <span class="dv">150</span>,</span>
-<span id="cb39-14"><a href=""></a>       <span class="st">"50-60"</span>,<span class="st">"BRA"</span>, <span class="dv">90</span>,</span>
-<span id="cb39-15"><a href=""></a>       <span class="st">"60-70"</span>,<span class="st">"UK"</span>, <span class="dv">130</span>,</span>
-<span id="cb39-16"><a href=""></a>       <span class="st">"60-70"</span>,<span class="st">"BRA"</span>, <span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href=""></a>pop<span class="ot">&lt;-</span><span class="fu">tribble</span>(</span>
+<span id="cb53-2"><a href=""></a>  <span class="sc">~</span>age, <span class="sc">~</span>country, <span class="sc">~</span>pop,</span>
+<span id="cb53-3"><a href=""></a>       <span class="st">"0-10"</span>,<span class="st">"UK"</span>, <span class="dv">50</span>,</span>
+<span id="cb53-4"><a href=""></a>       <span class="st">"0-10"</span>,<span class="st">"BRA"</span>, <span class="dv">120</span>,</span>
+<span id="cb53-5"><a href=""></a>       <span class="st">"11-20"</span>,<span class="st">"UK"</span>, <span class="dv">70</span>,</span>
+<span id="cb53-6"><a href=""></a>       <span class="st">"11-20"</span>,<span class="st">"BRA"</span>, <span class="dv">140</span>,</span>
+<span id="cb53-7"><a href=""></a>       <span class="st">"21-30"</span>,<span class="st">"UK"</span>, <span class="dv">110</span>,</span>
+<span id="cb53-8"><a href=""></a>       <span class="st">"21-30"</span>,<span class="st">"BRA"</span>, <span class="dv">150</span>,</span>
+<span id="cb53-9"><a href=""></a>       <span class="st">"31-40"</span>,<span class="st">"UK"</span>, <span class="dv">150</span>,</span>
+<span id="cb53-10"><a href=""></a>       <span class="st">"31-40"</span>,<span class="st">"BRA"</span>, <span class="dv">180</span>,</span>
+<span id="cb53-11"><a href=""></a>       <span class="st">"40-50"</span>,<span class="st">"UK"</span>, <span class="dv">180</span>,</span>
+<span id="cb53-12"><a href=""></a>       <span class="st">"40-50"</span>,<span class="st">"BRA"</span>, <span class="dv">180</span>,</span>
+<span id="cb53-13"><a href=""></a>       <span class="st">"50-60"</span>,<span class="st">"UK"</span>, <span class="dv">150</span>,</span>
+<span id="cb53-14"><a href=""></a>       <span class="st">"50-60"</span>,<span class="st">"BRA"</span>, <span class="dv">90</span>,</span>
+<span id="cb53-15"><a href=""></a>       <span class="st">"60-70"</span>,<span class="st">"UK"</span>, <span class="dv">130</span>,</span>
+<span id="cb53-16"><a href=""></a>       <span class="st">"60-70"</span>,<span class="st">"BRA"</span>, <span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 </div></div>
 </div>
-<div id="tabset-6-2">
+<div id="tabset-8-2">
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href=""></a>pop <span class="sc">|&gt;</span> </span>
-<span id="cb40-2"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>age, <span class="at">y=</span> pop, <span class="at">color=</span>country, <span class="at">fill=</span>country))<span class="sc">+</span></span>
-<span id="cb40-3"><a href=""></a>  <span class="fu">geom_col</span>(<span class="at">position=</span><span class="st">"dodge"</span>)<span class="sc">+</span></span>
-<span id="cb40-4"><a href=""></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">18</span>),</span>
-<span id="cb40-5"><a href=""></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">18</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href=""></a>pop <span class="sc">|&gt;</span> </span>
+<span id="cb54-2"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>age, <span class="at">y=</span> pop, <span class="at">color=</span>country, <span class="at">fill=</span>country))<span class="sc">+</span></span>
+<span id="cb54-3"><a href=""></a>  <span class="fu">geom_col</span>(<span class="at">position=</span><span class="st">"dodge"</span>)<span class="sc">+</span></span>
+<span id="cb54-4"><a href=""></a>  <span class="fu">theme</span>(<span class="at">axis.text=</span><span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">18</span>),</span>
+<span id="cb54-5"><a href=""></a>        <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">18</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="06_freq_tests_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
+<p><img data-src="06_freq_tests_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
 </figure>
 </div>
 </div>
 </div></div>
 </div>
-<div id="tabset-6-3">
+<div id="tabset-8-3">
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href=""></a>pop <span class="sc">|&gt;</span> </span>
-<span id="cb41-2"><a href=""></a>  <span class="fu">group_by</span>(country, age) <span class="sc">%&gt;%</span> </span>
-<span id="cb41-3"><a href=""></a>  <span class="co">#summarise(count = sum(Number)) %&gt;% </span></span>
-<span id="cb41-4"><a href=""></a>  <span class="fu">spread</span>(country, pop, <span class="at">fill =</span> <span class="dv">0</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb41-5"><a href=""></a>  <span class="fu">column_to_rownames</span>(<span class="st">"age"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb41-6"><a href=""></a>  <span class="fu">as.matrix</span>() <span class="ot">-&gt;</span> t2</span>
-<span id="cb41-7"><a href=""></a>  <span class="fu">chisq.test</span>(t2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href=""></a>pop <span class="sc">|&gt;</span> </span>
+<span id="cb55-2"><a href=""></a>  <span class="fu">group_by</span>(country, age) <span class="sc">%&gt;%</span> </span>
+<span id="cb55-3"><a href=""></a>  <span class="co">#summarise(count = sum(Number)) %&gt;% </span></span>
+<span id="cb55-4"><a href=""></a>  <span class="fu">spread</span>(country, pop, <span class="at">fill =</span> <span class="dv">0</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb55-5"><a href=""></a>  <span class="fu">column_to_rownames</span>(<span class="st">"age"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb55-6"><a href=""></a>  <span class="fu">as.matrix</span>() <span class="ot">-&gt;</span> t2</span>
+<span id="cb55-7"><a href=""></a>  <span class="fu">chisq.test</span>(t2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -1173,16 +1201,84 @@ X-squared = 16, df = 1, p-value = 6.334e-05</code></pre>
 data:  t2
 X-squared = 108.97, df = 6, p-value &lt; 2.2e-16</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href=""></a>  <span class="fu">chisq.test</span>(t2)<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href=""></a>  <span class="fu">chisq.test</span>(t2)<span class="sc">$</span>observed<span class="sc">-</span><span class="fu">chisq.test</span>(t2)<span class="sc">$</span>expected</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        BRA    UK
-0-10   88.4  81.6
-11-20 109.2 100.8
-21-30 135.2 124.8
-31-40 171.6 158.4
-40-50 187.2 172.8
-50-60 124.8 115.2
-60-70  93.6  86.4</code></pre>
+0-10   31.6 -31.6
+11-20  30.8 -30.8
+21-30  14.8 -14.8
+31-40   8.4  -8.4
+40-50  -7.2   7.2
+50-60 -34.8  34.8
+60-70 -43.6  43.6</code></pre>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</section>
+<section id="goodness-of-fit" class="slide level2">
+<h2>Goodness of fit</h2>
+<div class="panel-tabset">
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Data</a></li><li><a href="#tabset-9-2">Graph</a></li><li><a href="#tabset-9-3">Test</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href=""></a>pop <span class="sc">%&gt;%</span> </span>
+<span id="cb59-2"><a href=""></a>  <span class="fu">spread</span>(country, pop, <span class="at">fill=</span><span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb59-3"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">world=</span>(BRA<span class="sc">+</span>UK)<span class="sc">/</span><span class="dv">2</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb59-4"><a href=""></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> BRA<span class="sc">:</span>world, <span class="at">names_to =</span> <span class="st">"place"</span>)<span class="ot">-&gt;</span>pop2</span>
+<span id="cb59-5"><a href=""></a>pop2  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 21 × 3
+   age   place value
+   &lt;chr&gt; &lt;chr&gt; &lt;dbl&gt;
+ 1 0-10  BRA     120
+ 2 0-10  UK       50
+ 3 0-10  world    85
+ 4 11-20 BRA     140
+ 5 11-20 UK       70
+ 6 11-20 world   105
+ 7 21-30 BRA     150
+ 8 21-30 UK      110
+ 9 21-30 world   130
+10 31-40 BRA     180
+# ℹ 11 more rows</code></pre>
+</div>
+</div></div>
+</div>
+<div id="tabset-9-2">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href=""></a>pop2 <span class="sc">%&gt;%</span></span>
+<span id="cb61-2"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>age,<span class="at">y=</span>value, <span class="at">colour=</span>place, <span class="at">fill=</span>place))<span class="sc">+</span></span>
+<span id="cb61-3"><a href=""></a>  <span class="fu">geom_col</span>(<span class="at">position =</span> <span class="st">"dodge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="06_freq_tests_files/figure-revealjs/unnamed-chunk-24-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</div>
+<div id="tabset-9-3">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href=""></a>pop2 <span class="sc">%&gt;%</span> </span>
+<span id="cb62-2"><a href=""></a>  <span class="fu">spread</span>(place, value, <span class="at">fill =</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb62-3"><a href=""></a>  <span class="fu">column_to_rownames</span>(<span class="st">"age"</span>)<span class="ot">-&gt;</span> pop3</span>
+<span id="cb62-4"><a href=""></a>  <span class="fu">chisq.test</span>(pop3<span class="sc">$</span>BR, pop3<span class="sc">$</span>world)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's Chi-squared test
+
+data:  pop3$BR and pop3$world
+X-squared = 35, df = 30, p-value = 0.2426</code></pre>
 </div>
 </div></div>
 </div>
@@ -1204,15 +1300,15 @@ X-squared = 108.97, df = 6, p-value &lt; 2.2e-16</code></pre>
 <section id="multiple-contingency-tables" class="slide level2">
 <h2>Multiple contingency tables</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href=""></a><span class="fu">library</span>(MASS)</span>
-<span id="cb45-2"><a href=""></a>pop <span class="sc">|&gt;</span> </span>
-<span id="cb45-3"><a href=""></a>  <span class="fu">rename</span>(<span class="at">male=</span>pop) <span class="sc">|&gt;</span> </span>
-<span id="cb45-4"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">female=</span><span class="fu">ifelse</span>(country<span class="sc">==</span><span class="st">"UK"</span>, male<span class="sc">^</span><span class="fl">1.01</span>, male<span class="sc">^</span><span class="fl">1.03</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb45-5"><a href=""></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> male<span class="sc">:</span>female, <span class="at">names_to =</span> <span class="st">"sex"</span>)<span class="ot">-&gt;</span>dat.mod</span>
-<span id="cb45-6"><a href=""></a></span>
-<span id="cb45-7"><a href=""></a>model1<span class="ot">&lt;-</span><span class="fu">glm</span>(value<span class="sc">~</span>age<span class="sc">*</span>country<span class="sc">*</span>sex, <span class="at">data=</span>dat.mod, <span class="at">family=</span><span class="st">"poisson"</span>)</span>
-<span id="cb45-8"><a href=""></a></span>
-<span id="cb45-9"><a href=""></a><span class="fu">summary</span>(model1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href=""></a><span class="fu">library</span>(MASS)</span>
+<span id="cb64-2"><a href=""></a>pop <span class="sc">|&gt;</span> </span>
+<span id="cb64-3"><a href=""></a>  <span class="fu">rename</span>(<span class="at">male=</span>pop) <span class="sc">|&gt;</span> </span>
+<span id="cb64-4"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">female=</span><span class="fu">ifelse</span>(country<span class="sc">==</span><span class="st">"UK"</span>, male<span class="sc">^</span><span class="fl">1.01</span>, male<span class="sc">^</span><span class="fl">1.03</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb64-5"><a href=""></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> male<span class="sc">:</span>female, <span class="at">names_to =</span> <span class="st">"sex"</span>)<span class="ot">-&gt;</span>dat.mod</span>
+<span id="cb64-6"><a href=""></a></span>
+<span id="cb64-7"><a href=""></a>model1<span class="ot">&lt;-</span><span class="fu">glm</span>(value<span class="sc">~</span>age<span class="sc">*</span>country<span class="sc">*</span>sex, <span class="at">data=</span>dat.mod, <span class="at">family=</span><span class="st">"poisson"</span>)</span>
+<span id="cb64-8"><a href=""></a></span>
+<span id="cb64-9"><a href=""></a><span class="fu">summary</span>(model1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -1283,9 +1379,9 @@ Number of Fisher Scoring iterations: 3</code></pre>
 <section id="types-of-frequency-test" class="slide level2">
 <h2>Types of frequency test</h2>
 <div class="panel-tabset">
-<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Observed vs Expected</a></li><li><a href="#tabset-7-2">Independency</a></li></ul>
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Observed vs Expected</a></li><li><a href="#tabset-10-2">Independency</a></li></ul>
 <div class="tab-content">
-<div id="tabset-7-1">
+<div id="tabset-10-1">
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top">
@@ -1316,7 +1412,7 @@ X-squared = 0.17647, df = 1, p-value = 0.6744</code></pre>
 </div>
 </div>
 </div>
-<div id="tabset-7-2">
+<div id="tabset-10-2">
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top">

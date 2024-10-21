@@ -34,7 +34,9 @@ library(gtable)
 
 - Know when to use frequency tests
 - Work with tables and graphs
-- Understand the logic of independence between variables
+- Goodness of fit tests
+- Independency tests
+- Homogeneity tests
 
 
 ## Types of variables (review)
@@ -169,7 +171,7 @@ ladybirds |>
   group_by(Habitat, Colour) |> 
   summarize(count = sum(Number)) |> 
   mutate(prop=count/sum(count)) |>   # our new proportion variable
-  select(Habitat, Colour, prop) |> 
+  dplyr::select(Habitat, Colour, prop) %>% 
   spread(Habitat, prop) |> 
   kable()
 ```
@@ -257,25 +259,46 @@ CrossTable(t)
 - 2/3 of LB are found in Industrial areas 
 - It is rare fo find a black LB in rural areas
 - Red LB don't show any habitat preference
-- Black LB prefer Industrual areas
+- Black LB prefer Industrial areas
 
 :::{.fragment}
-- **How many more infor can we extract from this table?**
+- **How many more info can we extract from this table?**
 :::
 
-## Drug abuse and Marihuana
+## Types do frequency tests{.center}
 
-| Marihuana | abuse| no abuse|
+## Tests for independence
+
+:::{.panel-tabset}
+
+## Table
+
+| Naruto fan | watched Ghibli | never watched Ghibli|
 |:----------|-----:|---:|
-|Yes |   35|  205|
-|No      |    8|  48|
+|no |   35|  205|
+|yes      |    8|  48|
 
-:::{.fragment}
-- Marihuana leads to other drugs?
+## Code
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+naruto<-matrix(c(35,205,8,48), nrow=2, byrow=TRUE)
+chisq.test(naruto)$expected
+proportions(naruto[1,])
+proportions(naruto[2,])
+chisq.test(naruto)
+
+```
+
 
 :::
 
 ## Placebo effect
+
+:::{.panel-tabset}
+## Table
 
 | Cure | treatment| placebo| no treatment|
 |:----------|-----:|---:|---:|
@@ -287,19 +310,34 @@ CrossTable(t)
 - Treatment improves positive resolution
 
 :::
+## Code
+```{r}
+#| include: true
+#| echo: true
+#| output-location: default
+placebo<-matrix(c(43,31,27,12,24,28), nrow=2, byrow=TRUE)
+rownames(placebo)<-c("cure-yes", "cure-no")
+colnames(placebo)<-c("treatment","placebo","no treatment")
+exp.placebo<-chisq.test(placebo)$expected
+exp.placebo
+chisq.test(placebo)
+```
 
-## The frequency tests{.center}
+:::
 
 ## Chi-square test
 
-$$Chisquare  = (Obs-Esp)²/Esp$$
+$$Chi-squared  = \sum(Obs-Esp)²/Esp$$
 
 ```{r}
 #| include: true
 #| echo: true
 #| output-location: default
-CrossTable(t, expected = TRUE, prop.r = FALSE, 
-           prop.t = FALSE, prop.c = FALSE, prop.chisq = TRUE, chisq=FALSE)
+
+chisq.test(placebo)
+
+sum((placebo-exp.placebo)^2/exp.placebo)
+
 ```
 
 ## Testing rows
@@ -360,7 +398,7 @@ chisq.test(t[2,])
 ```
 :::
 
-## Distributions
+## Test for homogeneity
 :::{.panel-tabset}
 ## Data
 
@@ -413,9 +451,55 @@ pop |>
   as.matrix() -> t2
   chisq.test(t2)
 
-  chisq.test(t2)$expected
+  chisq.test(t2)$observed-chisq.test(t2)$expected
 
 ```
+
+:::
+
+## Goodness of fit
+
+:::{.panel-tabset}
+
+## Data
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+
+pop %>% 
+  spread(country, pop, fill=0) %>% 
+  mutate(world=(BRA+UK)/2) %>% 
+  pivot_longer(cols = BRA:world, names_to = "place")->pop2
+pop2  
+```
+
+## Graph
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+pop2 %>%
+  ggplot(aes(x=age,y=value, colour=place, fill=place))+
+  geom_col(position = "dodge")
+
+```
+## Test
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+
+pop2 %>% 
+  spread(place, value, fill = 0) %>% 
+  column_to_rownames("age")-> pop3
+  chisq.test(pop3$BR, pop3$world)
+
+
+```
+
+
 
 :::
 
