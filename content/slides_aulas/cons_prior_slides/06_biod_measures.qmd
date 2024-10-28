@@ -33,17 +33,17 @@ format:
 [American Museum of Natural History](https://www.amnh.org/research/center-for-biodiversity-conservation/what-is-biodiversity)
 :::
 
-## Muldimensionality of diversity
+## Multi-dimensionality of diversity
 ![](img/bio_dim.jpeg)
 
 
 
 ## Many dimensions of diversity
 
-![](https://www.pnas.org/cms/10.1073/pnas.1706461114/asset/bbb1d3e7-2432-4c42-881a-93edc98b2841/assets/graphic/pnas.1706461114fig02.jpeg){fig-align="center"}
+![](img/pnas_brum.webp){fig-align="center"}
 
 :::{.footer}
-[Brum et al 2017](https://www.pnas.org/doi/10.1073/pnas.1706461114?doi=10.1073/pnas.1706461114)
+[Brum et al 2017](https://www.pnas.org/cms/10.1073/pnas.1706461114/asset/bbb1d3e7-2432-4c42-881a-93edc98b2841/assets/graphic/pnas.1706461114fig02.jpeg)
 :::
 
 ## Taxonomic diversity{.center}
@@ -100,9 +100,9 @@ How abundances are distributes across types
 
 ## The scale of diversity
 
-![](https://i2.wp.com/www.differencebetween.com/wp-content/uploads/2021/10/Alpha-Beta-and-Gamma-Diversity.jpg?resize=768%2C363&ssl=1)
+![](img/scales.png){fig-align="center"}
 
-## Alpha diversiy
+## How are diversities related?
 
 ::: columns
 :::{.column width="50%"}
@@ -128,9 +128,18 @@ $$
 :::
 :::
 
-##
+## Alpha Diversity
 
-![](https://i2.wp.com/www.differencebetween.com/wp-content/uploads/2021/10/Alpha-Beta-and-Gamma-Diversity.jpg?resize=768%2C363&ssl=1)
+![](img/alpha_plants.webp)
+
+From: [Global patterns of vascular plant alpha diversity](https://www.nature.com/articles/s41467-022-32063-z)
+
+## Alpha Diversity
+
+![](img/alpha_scorp.jpg)
+
+From: [Altitudinal distribution of alpha, beta, and gamma diversity of pseudoscorpions](https://www.sciencedirect.com/science/article/pii/S1146609X20300175vvvvv)
+
 
 ## Beta diverrsity
 
@@ -167,6 +176,7 @@ library(vegan)
 :::{.panel-tabset}
 ## For presence/absence
 ```{r}
+library(betapart)
 data(ceram.s)
 ceram.dist<-beta.pair(ceram.s, index.family="jac")
 ceram.dist
@@ -187,6 +197,7 @@ plot(fit)
 ```
 
 :::
+
 
 ## Applications for conservation
 
@@ -283,8 +294,8 @@ plot(fit)
 ## Today's review
 - Diversity is much more than number of species
 - Important to understand: alpha, beta and gamma
-- Phylogeny is evolutive history
-- Functional divesity is key for modern interpretation on the value fo biodiversity
+- Phylogeny is evolution history
+- Functional diversity is key for modern interpretation on the value fo biodiversity
 
 
 ## The end{.center}
