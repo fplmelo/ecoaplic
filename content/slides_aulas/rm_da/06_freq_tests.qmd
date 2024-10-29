@@ -327,7 +327,7 @@ chisq.test(placebo)
 
 ## Chi-square test
 
-$$Chi-squared  = \sum(Obs-Esp)²/Esp$$
+$$Chi-squared  = \sum(Obs-Exp)²/Exp$$
 
 ```{r}
 #| include: true
