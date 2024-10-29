@@ -547,31 +547,6 @@ summary(model1)
 - Are you able to extract the info from the tables and graphics?
 - Can you interpret correctly the results?
 
-## Types of frequency test
-
-:::{.panel-tabset}
-## Observed vs Expected
-```{r}
-coin<-tibble(face=c("tip","toss"), value=c(27,24))
-kable(coin)
-chisq.test(coin[,2]) # using only the numerical value
-```
-
-## Independency
-
-```{r}
-
-coin2<-tibble(face=rep(c("tip","toss"),2), biased=c("no","no","yes","yes"), value=c(27,24, 39,12)) |> 
-  spread(biased, value)
-kable(coin2)
-
-chisq.test(coin2[,-1])$expected
-
-chisq.test(x=c(27,24, 39,12), p = c(25.5,25.5,25.5,25.5), rescale.p=TRUE)
-
-```
-
-:::
 
 ## End of DA class{.center}
 
