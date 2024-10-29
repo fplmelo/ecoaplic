@@ -18,8 +18,10 @@ format:
     title-block-banner: true
 
 ---
-
+## R packages for this class
 ```{r}
+#| echo: true
+#| 
 library(tidyverse)
 library(palmerpenguins)
 #install.packages("gmodels")
