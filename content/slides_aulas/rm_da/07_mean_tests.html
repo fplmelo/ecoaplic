@@ -935,8 +935,125 @@ Kruskal-Wallis chi-squared = 244.14, df = 2, p-value &lt; 2.2e-16</code></pre>
 <h2>Paired designs</h2>
 
 <img data-src="img/paired.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="paired" class="slide level2">
-<h2>Paired</h2>
+<section id="paired-graphs" class="slide level2">
+<h2>Paired graphs</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Pairs in space</a></li><li><a href="#tabset-6-2">Repeated measures</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href=""></a><span class="co"># Weight of the mice before treatment</span></span>
+<span id="cb36-2"><a href=""></a>blockA <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="fl">200.1</span>, <span class="fl">190.9</span>, <span class="fl">192.7</span>, <span class="dv">213</span>, <span class="fl">241.4</span>, <span class="fl">196.9</span>, <span class="fl">172.2</span>, <span class="fl">185.5</span>, <span class="fl">205.2</span>, <span class="fl">193.7</span>)</span>
+<span id="cb36-3"><a href=""></a><span class="co"># Weight of the mice after treatment</span></span>
+<span id="cb36-4"><a href=""></a>blockB <span class="ot">&lt;-</span><span class="fu">c</span>(<span class="fl">392.9</span>, <span class="fl">393.2</span>, <span class="fl">345.1</span>, <span class="dv">393</span>, <span class="dv">434</span>, <span class="fl">427.9</span>, <span class="dv">422</span>, <span class="fl">383.9</span>, <span class="fl">392.3</span>, <span class="fl">352.2</span>)</span>
+<span id="cb36-5"><a href=""></a><span class="co"># Create a data frame</span></span>
+<span id="cb36-6"><a href=""></a>my_data2 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>( </span>
+<span id="cb36-7"><a href=""></a>                <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"blockA"</span>, <span class="st">"blockB"</span>), <span class="at">each =</span> <span class="dv">10</span>),</span>
+<span id="cb36-8"><a href=""></a>                <span class="at">weight =</span> <span class="fu">c</span>(blockA,  blockB)</span>
+<span id="cb36-9"><a href=""></a>                )</span>
+<span id="cb36-10"><a href=""></a></span>
+<span id="cb36-11"><a href=""></a>my_data2 <span class="sc">%&gt;%</span> </span>
+<span id="cb36-12"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">subject=</span><span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,<span class="dv">2</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb36-13"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(group,weight))<span class="sc">+</span></span>
+<span id="cb36-14"><a href=""></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">fill=</span>group), <span class="at">alpha=</span><span class="fl">0.5</span>)<span class="sc">+</span></span>
+<span id="cb36-15"><a href=""></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">group=</span>subject))<span class="sc">+</span></span>
+<span id="cb36-16"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">size=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</div>
+<div id="tabset-6-2">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/phylo.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
+</figure>
+</div>
+<p>source: <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0113109">Santos et al 2015</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="more-than-two-independent-samples" class="slide level2">
+<h2>More than two independent samples</h2>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">2-way ANOVA graph</a></li><li><a href="#tabset-7-2">2-way ANOVA Code</a></li><li><a href="#tabset-7-3">2-way ANOVA with interaction</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href=""></a>ToothGrowth<span class="sc">$</span>dose<span class="ot">&lt;-</span><span class="fu">as.factor</span>(ToothGrowth<span class="sc">$</span>dose)</span>
+<span id="cb37-2"><a href=""></a>ToothGrowth <span class="sc">%&gt;%</span> </span>
+<span id="cb37-3"><a href=""></a>  <span class="fu">ggboxplot</span>(<span class="at">x =</span> <span class="st">"dose"</span>, <span class="at">y =</span> <span class="st">"len"</span>, <span class="at">color =</span> <span class="st">"supp"</span>,</span>
+<span id="cb37-4"><a href=""></a>          <span class="at">palette =</span> <span class="fu">c</span>(<span class="st">"#00AFBB"</span>, <span class="st">"#E7B800"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</div>
+<div id="tabset-7-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href=""></a><span class="fu">anova</span>(<span class="fu">lm</span>(len<span class="sc">~</span>dose<span class="sc">+</span>supp, <span class="at">data =</span> ToothGrowth))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: len
+          Df  Sum Sq Mean Sq F value    Pr(&gt;F)    
+dose       2 2426.43 1213.22  82.811 &lt; 2.2e-16 ***
+supp       1  205.35  205.35  14.017 0.0004293 ***
+Residuals 56  820.43   14.65                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-7-3">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href=""></a><span class="co"># These two calls are equivalent</span></span>
+<span id="cb40-2"><a href=""></a>res.aov3 <span class="ot">&lt;-</span> <span class="fu">aov</span>(len <span class="sc">~</span> supp <span class="sc">*</span> dose, <span class="at">data =</span> ToothGrowth)</span>
+<span id="cb40-3"><a href=""></a>res.aov3 <span class="ot">&lt;-</span> <span class="fu">aov</span>(len <span class="sc">~</span> supp <span class="sc">+</span> dose <span class="sc">+</span> supp<span class="sc">:</span>dose, <span class="at">data =</span> ToothGrowth)</span>
+<span id="cb40-4"><a href=""></a><span class="fu">summary</span>(res.aov3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            Df Sum Sq Mean Sq F value   Pr(&gt;F)    
+supp         1  205.4   205.4  15.572 0.000231 ***
+dose         2 2426.4  1213.2  92.000  &lt; 2e-16 ***
+supp:dose    2  108.3    54.2   4.107 0.021860 *  
+Residuals   54  712.1    13.2                     
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="post-hoc-comparisons" class="slide level2">
+<h2>Post-hoc comparisons</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>  Tukey multiple comparisons of means
+    95% family-wise confidence level
+
+Fit: aov(formula = len ~ supp + dose + supp:dose, data = ToothGrowth)
+
+$dose
+        diff       lwr       upr   p adj
+1-0.5  9.130  6.362488 11.897512 0.0e+00
+2-0.5 15.495 12.727488 18.262512 0.0e+00
+2-1    6.365  3.597488  9.132512 2.7e-06</code></pre>
+</div>
+</div>
 </section>
 <section id="end-of-da-class" class="slide level2 center">
 <h2>End of DA class</h2>

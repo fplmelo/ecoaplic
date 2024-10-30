@@ -392,7 +392,82 @@ penguins %>%
 
 ![](img/paired.png){fig-align=center}
 
-## Paired
+## Paired graphs
+:::{.panel-tabset}
+## Pairs in space
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+
+# Weight of the mice before treatment
+blockA <-c(200.1, 190.9, 192.7, 213, 241.4, 196.9, 172.2, 185.5, 205.2, 193.7)
+# Weight of the mice after treatment
+blockB <-c(392.9, 393.2, 345.1, 393, 434, 427.9, 422, 383.9, 392.3, 352.2)
+# Create a data frame
+my_data2 <- data.frame( 
+                group = rep(c("blockA", "blockB"), each = 10),
+                weight = c(blockA,  blockB)
+                )
+
+my_data2 %>% 
+  mutate(subject=rep(1:10,2)) %>% 
+  ggplot(aes(group,weight))+
+  geom_boxplot(aes(fill=group), alpha=0.5)+
+  geom_line(aes(group=subject))+
+  geom_point(size=2)
+  
+```
+
+## Repeated measures
+![](img/phylo.png){fig-align="center" width="60%"}
+
+source: [Santos et al 2015](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0113109)
+
+:::
+
+## More than two independent samples
+:::{.panel-tabset}
+## 2-way ANOVA graph
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+ToothGrowth$dose<-as.factor(ToothGrowth$dose)
+ToothGrowth %>% 
+  ggboxplot(x = "dose", y = "len", color = "supp",
+          palette = c("#00AFBB", "#E7B800"))
+
+```
+
+## 2-way ANOVA Code
+
+```{r}
+#| include: true
+#| echo: true
+anova(lm(len~dose+supp, data = ToothGrowth))
+
+```
+
+## 2-way ANOVA with interaction
+```{r}
+#| include: true
+#| echo: true
+# These two calls are equivalent
+res.aov3 <- aov(len ~ supp * dose, data = ToothGrowth)
+res.aov3 <- aov(len ~ supp + dose + supp:dose, data = ToothGrowth)
+summary(res.aov3)
+```
+
+:::
+
+## Post-hoc comparisons
+
+```{r}
+TukeyHSD(res.aov3, which = "dose")
+```
+
+
 
 ## End of DA class{.center}
 
