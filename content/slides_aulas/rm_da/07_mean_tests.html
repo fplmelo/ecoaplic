@@ -529,7 +529,7 @@ mean of x
 <section id="one-sided-differences" class="slide level2">
 <h2>One-sided differences</h2>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Context</a></li><li><a href="#tabset-2-2">Code</a></li><li><a href="#tabset-2-3">Plot</a></li><li><a href="#tabset-2-4">Test</a></li><li><a href="#tabset-2-5">Is it normal?</a></li><li><a href="#tabset-2-6">Non-parametirc test</a></li></ul>
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Context</a></li><li><a href="#tabset-2-2">Code</a></li><li><a href="#tabset-2-3">Plot</a></li><li><a href="#tabset-2-4">t-test</a></li><li><a href="#tabset-2-5">Is it normal?</a></li><li><a href="#tabset-2-6">Non-parametirc test</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1">
 <p><a href="https://www.statista.com/statistics/1093256/novel-coronavirus-2019ncov-deaths-worldwide-by-country/" rel="nofollow"><img src="https://www.statista.com/graphic/1/1093256/novel-coronavirus-2019ncov-deaths-worldwide-by-country.jpg" alt="Statistic: Number of novel coronavirus (COVID-19) deaths worldwide as of May 2, 2023, by country and territory | Statista" style="width: 100%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;"></a><br>Find more statistics at <a href="https://www.statista.com" rel="nofollow">Statista</a></p>
@@ -637,13 +637,306 @@ alternative hypothesis: true location is less than 3261</code></pre>
 <section id="two-independent-groups" class="slide level2">
 <h2>Two independent groups</h2>
 <div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1"></a></li></ul>
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Data</a></li><li><a href="#tabset-3-2">Plot</a></li><li><a href="#tabset-3-3">Check assumptions</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href=""></a><span class="co"># Data in two numeric vectors</span></span>
+<span id="cb15-2"><a href=""></a>women_weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">38.9</span>, <span class="fl">61.2</span>, <span class="fl">73.3</span>, <span class="fl">21.8</span>, <span class="fl">63.4</span>, <span class="fl">64.6</span>, <span class="fl">48.4</span>, <span class="fl">48.8</span>, <span class="fl">48.5</span>)</span>
+<span id="cb15-3"><a href=""></a>men_weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">67.8</span>, <span class="dv">60</span>, <span class="fl">63.4</span>, <span class="dv">76</span>, <span class="fl">89.4</span>, <span class="fl">73.3</span>, <span class="fl">67.3</span>, <span class="fl">61.3</span>, <span class="fl">62.4</span>) </span>
+<span id="cb15-4"><a href=""></a><span class="co"># Create a data frame</span></span>
+<span id="cb15-5"><a href=""></a>my_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>( </span>
+<span id="cb15-6"><a href=""></a>                <span class="at">group =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Woman"</span>, <span class="st">"Man"</span>), <span class="at">each =</span> <span class="dv">9</span>),</span>
+<span id="cb15-7"><a href=""></a>                <span class="at">weight =</span> <span class="fu">c</span>(women_weight,  men_weight)</span>
+<span id="cb15-8"><a href=""></a>                )</span>
+<span id="cb15-9"><a href=""></a>my_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output cell-output-stdout">
+<pre><code>   group weight
+1  Woman   38.9
+2  Woman   61.2
+3  Woman   73.3
+4  Woman   21.8
+5  Woman   63.4
+6  Woman   64.6
+7  Woman   48.4
+8  Woman   48.8
+9  Woman   48.5
+10   Man   67.8
+11   Man   60.0
+12   Man   63.4
+13   Man   76.0
+14   Man   89.4
+15   Man   73.3
+16   Man   67.3
+17   Man   61.3
+18   Man   62.4</code></pre>
+</div>
+</div></div>
+</div>
+<div id="tabset-3-2">
+<div class="cell columns column-output-location">
+<div class="column">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a><span class="fu">library</span>(<span class="st">"ggpubr"</span>)</span>
+<span id="cb17-2"><a href=""></a><span class="fu">ggboxplot</span>(my_data, <span class="at">x =</span> <span class="st">"group"</span>, <span class="at">y =</span> <span class="st">"weight"</span>, </span>
+<span id="cb17-3"><a href=""></a>          <span class="at">color =</span> <span class="st">"group"</span>, <span class="at">palette =</span> <span class="fu">c</span>(<span class="st">"#00AFBB"</span>, <span class="st">"#E7B800"</span>),</span>
+<span id="cb17-4"><a href=""></a>        <span class="at">ylab =</span> <span class="st">"Weight"</span>, <span class="at">xlab =</span> <span class="st">"Groups"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div></div>
+</div>
+<div id="tabset-3-3">
+<ul>
+<li>Are the two samples independents?</li>
+<li>Are the data from each of the 2 groups follow a normal distribution?</li>
+<li>Do the two populations have the same variances?</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="testing-normal-distribution" class="slide level2">
+<h2>Testing normal distribution</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href=""></a><span class="co"># Shapiro-Wilk normality test for Men's weights</span></span>
+<span id="cb18-2"><a href=""></a><span class="fu">with</span>(my_data, <span class="fu">shapiro.test</span>(weight[group <span class="sc">==</span> <span class="st">"Man"</span>]))<span class="co"># p = 0.1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  weight[group == "Man"]
+W = 0.86425, p-value = 0.1066</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href=""></a><span class="co"># Shapiro-Wilk normality test for Women's weights</span></span>
+<span id="cb20-2"><a href=""></a><span class="fu">with</span>(my_data, <span class="fu">shapiro.test</span>(weight[group <span class="sc">==</span> <span class="st">"Woman"</span>])) <span class="co"># p = 0.6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Shapiro-Wilk normality test
+
+data:  weight[group == "Woman"]
+W = 0.94266, p-value = 0.6101</code></pre>
+</div>
+</div>
+</section>
+<section id="testing-equal-variances" class="slide level2">
+<h2>Testing equal variances</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href=""></a><span class="fu">var.test</span>(weight <span class="sc">~</span> group, <span class="at">data =</span> my_data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    F test to compare two variances
+
+data:  weight by group
+F = 0.36134, num df = 8, denom df = 8, p-value = 0.1714
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.08150656 1.60191315
+sample estimates:
+ratio of variances 
+         0.3613398 </code></pre>
+</div>
+</div>
+</section>
+<section id="unpaired-two-samples-t-test" class="slide level2">
+<h2>Unpaired two-samples t-test</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href=""></a><span class="fu">t.test</span>(women_weight, men_weight, <span class="at">var.equal =</span> <span class="cn">TRUE</span>) <span class="co"># method 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Two Sample t-test
+
+data:  women_weight and men_weight
+t = -2.7842, df = 16, p-value = 0.01327
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -29.748019  -4.029759
+sample estimates:
+mean of x mean of y 
+ 52.10000  68.98889 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href=""></a><span class="fu">t.test</span>(weight <span class="sc">~</span> group, <span class="at">data =</span> my_data, <span class="at">var.equal =</span> <span class="cn">TRUE</span>) <span class="co"># Method 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Two Sample t-test
+
+data:  weight by group
+t = 2.7842, df = 16, p-value = 0.01327
+alternative hypothesis: true difference in means between group Man and group Woman is not equal to 0
+95 percent confidence interval:
+  4.029759 29.748019
+sample estimates:
+  mean in group Man mean in group Woman 
+           68.98889            52.10000 </code></pre>
+</div>
+</div>
+</section>
+<section id="non-parametric-test" class="slide level2">
+<h2>Non-parametric test</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Wilcoxon</a></li><li><a href="#tabset-4-2">Data</a></li><li><a href="#tabset-4-3">Calculaion</a></li><li><a href="#tabset-4-4">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<p><img data-src="https://datatab.net/assets/tutorial/Wilcoxon-Test.png"></p>
+<p>source:<a href="https://datatab.net/tutorial/wilcoxon-test" class="uri">https://datatab.net/tutorial/wilcoxon-test</a></p>
+</div>
+<div id="tabset-4-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href=""></a>my_data <span class="sc">%&gt;%</span> </span>
+<span id="cb28-2"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">subject =</span> <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>,<span class="dv">2</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb28-3"><a href=""></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> group, </span>
+<span id="cb28-4"><a href=""></a>              <span class="at">values_from =</span> weight) <span class="sc">%&gt;%</span> </span>
+<span id="cb28-5"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">diff=</span>Woman<span class="sc">-</span>Man) <span class="sc">%&gt;%</span> </span>
+<span id="cb28-6"><a href=""></a>  <span class="fu">arrange</span>(diff) <span class="sc">%&gt;%</span> </span>
+<span id="cb28-7"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">signal=</span><span class="fu">ifelse</span>(diff<span class="sc">&gt;</span><span class="dv">0</span>, <span class="st">"pos"</span>, <span class="st">"neg"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb28-8"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">rank=</span><span class="dv">9</span><span class="sc">:</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 9 × 6
+  subject Woman   Man   diff signal  rank
+    &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;  &lt;int&gt;
+1       4  21.8  76   -54.2  neg        9
+2       1  38.9  67.8 -28.9  neg        8
+3       5  63.4  89.4 -26    neg        7
+4       7  48.4  67.3 -18.9  neg        6
+5       9  48.5  62.4 -13.9  neg        5
+6       8  48.8  61.3 -12.5  neg        4
+7       6  64.6  73.3  -8.7  neg        3
+8       2  61.2  60     1.20 pos        2
+9       3  73.3  63.4   9.9  pos        1</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-4-3">
+<p><img data-src="https://datatab.net/assets/tutorial/Calculate-Wilcoxon-test.png"></p>
+</div>
+<div id="tabset-4-4">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href=""></a><span class="fu">wilcox.test</span>(weight <span class="sc">~</span> group, <span class="at">data =</span> my_data,</span>
+<span id="cb30-2"><a href=""></a>                   <span class="at">exact =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Wilcoxon rank sum test with continuity correction
+
+data:  weight by group
+W = 66, p-value = 0.02712
+alternative hypothesis: true location shift is not equal to 0</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="more-than-two-independent-groups" class="slide level2">
+<h2>More than two independent groups</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">ANOVA</a></li><li><a href="#tabset-5-2">Sum of Squares</a></li><li><a href="#tabset-5-3">Visualising</a></li><li><a href="#tabset-5-4">Anova Table</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href=""></a><span class="fu">anova</span>(<span class="fu">lm</span>(bill_length_mm<span class="sc">~</span>species, <span class="at">data=</span>penguins))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: bill_length_mm
+           Df Sum Sq Mean Sq F value    Pr(&gt;F)    
+species     2 7194.3  3597.2   410.6 &lt; 2.2e-16 ***
+Residuals 339 2969.9     8.8                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-5-2">
+<p><span class="math display">\[SS=\sum_{i=0}^{n} (X_i - \bar{X})^2\]</span></p>
+<p>See <a href="https://www.youtube.com/watch?v=8PEMXgayXBg">this video</a> to understand the logic of an ANOVA</p>
+</div>
+<div id="tabset-5-3">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-18-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-4">
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top" data-quarto-postprocess="true">
+<caption>ANOVA Table</caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;" data-quarto-table-cell-role="th">Source.of.Variation</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Sum.of.Squares..SS.</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Degrees.of.Freedom..df.</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">Mean.Square..MS.</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">F.value</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">p.value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Between Groups</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">50.00</td>
+<td style="text-align: center;">4.5</td>
+<td style="text-align: center;">0.05</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Within Groups (Error)</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">13.33</td>
+<td style="text-align: center;">NA</td>
+<td style="text-align: center;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Total</td>
+<td style="text-align: center;">300</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">NA</td>
+<td style="text-align: center;">NA</td>
+<td style="text-align: center;">NA</td>
+</tr>
+</tbody>
+</table>
+
 
 </div>
 </div>
 </div>
+</div>
+</div>
+</section>
+<section id="kruskal-wallis-non-parametric" class="slide level2">
+<h2>Kruskal-Wallis (non-parametric)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href=""></a><span class="fu">kruskal.test</span>(bill_length_mm<span class="sc">~</span>species, <span class="at">data=</span>penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Kruskal-Wallis rank sum test
+
+data:  bill_length_mm by species
+Kruskal-Wallis chi-squared = 244.14, df = 2, p-value &lt; 2.2e-16</code></pre>
+</div>
+</div>
+
+<img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section>
+<section id="paired-designs" class="slide level2">
+<h2>Paired designs</h2>
+
+<img data-src="img/paired.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="paired" class="slide level2">
+<h2>Paired</h2>
 </section>
 <section id="end-of-da-class" class="slide level2 center">
 <h2>End of DA class</h2>
