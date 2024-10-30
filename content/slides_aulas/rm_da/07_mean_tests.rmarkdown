@@ -1,0 +1,270 @@
+---
+title: "7-Mean Tests"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+library(ggpubr)
+
+```
+
+
+
+
+## You should know today:
+
+- Know when to use mean tests
+- Understand means and variances
+- Parametric nd non-parametric versions
+- T-tests, ANOVA, etc...
+- Paired tests
+
+
+## Types of variables (review)
+
+::::{.columns}
+:::{.column .fragment}
+**Categorical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_3.png)
+
+:::
+
+:::{.column .fragment}
+**Numerical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_4.png)
+
+:::
+::::
+
+## Back to the toolbox
+
+![](img/toolkit.png){fig-align="center"}
+
+## Basics
+
+![](img/comparing-means.png){fig-align="center"}
+
+## One-Sample
+
+![](https://statstest.b-cdn.net/wp-content/uploads/2020/02/Single-Sample-T-Test-1-1024x512.png)
+
+## Assumptions
+
+- Continuous
+- Normally Distributed
+- Random Sample
+- Enough Data
+
+![](https://statstest.b-cdn.net/wp-content/uploads/2020/02/Screen-Shot-2020-02-06-at-5.23.39-PM.png){.absolute right=10 top=30 width=50%}
+
+## Let's code it
+
+:::{.panel-tabset}
+
+## Penguins
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png){width="40%" fig-align="left"}
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png){.absolute width="40%" right=10 bottom=80}
+
+## Code
+
+
+
+```{r}
+#| label: table
+#| include: true
+#| echo: true
+set.seed(586)
+x<-rnorm(50)
+t.test(x, mu = 0, alternative = "two.sided")
+
+```
+
+
+
+## Example
+
+
+
+```{r}
+#| label: penguins
+#| include: true
+#| echo: true
+penguins %>% 
+  filter(species=="Adelie") %>% 
+  select(bill_length_mm)->x
+
+t.test(x, mu = 43.92, alternative = "two.sided")
+
+```
+
+
+
+## Graph
+
+
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+penguins %>% 
+ggdensity(x = "bill_length_mm",
+   add = "mean", rug = TRUE,
+   color = "#00AFBB", fill = "#00AFBB")+
+  geom_vline(xintercept = 38.79139)
+```
+
+
+:::
+
+## One-sided differences
+:::{.panel-tabset}
+## Context
+
+<a href="https://www.statista.com/statistics/1093256/novel-coronavirus-2019ncov-deaths-worldwide-by-country/" rel="nofollow"><img src="https://www.statista.com/graphic/1/1093256/novel-coronavirus-2019ncov-deaths-worldwide-by-country.jpg" alt="Statistic: Number of novel coronavirus (COVID-19) deaths worldwide as of May 2, 2023, by country and territory | Statista" style="width: 100%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;"/></a><br />Find more statistics at  <a href="https://www.statista.com" rel="nofollow">Statista</a>
+
+## Code
+
+
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+
+# Fetch the data from Our World in Data. RUN ONLY ONCE
+url <- "https://covid.ourworldindata.org/data/owid-covid-data.csv"
+df <- read_csv(url)
+
+# Prepare the data
+df_latest <- df %>%
+  group_by(location) %>%
+  slice_tail(n = 1) %>%
+  mutate(deaths_per_million = total_deaths / population * 1000000)
+df_latest %>% 
+  filter(location=="Brazil") %>% 
+  select(deaths_per_million)
+
+```
+
+
+
+## Plot
+
+
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+
+ggplot(df_latest, aes(x = deaths_per_million)) +
+  geom_histogram(fill = "steelblue") +
+  labs(title = "COVID-19 Deaths per Million") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))+
+  geom_vline(xintercept=3261)
+
+```
+
+
+## Test
+
+
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+
+t.test(df_latest$deaths_per_million, 
+       mu = 3261, 
+       alternative = "less")
+
+
+```
+
+
+
+## Is it normal?
+
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+
+shapiro.test(df_latest$deaths_per_million) ## Non-normal!!
+
+```
+
+
+
+## Non-parametirc test
+
+
+
+```{r}
+#| include: true
+#| echo: true
+#| output-location: column
+
+wilcox.test(df_latest$deaths_per_million,
+            mu = 3261,
+            alternative = "less")
+
+```
+
+
+
+:::
+
+## Two independent groups
+:::{.panel-tabset}
+##
+
+:::
+
+
+## End of DA class{.center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
