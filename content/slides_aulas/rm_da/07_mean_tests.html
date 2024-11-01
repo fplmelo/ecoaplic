@@ -835,9 +835,20 @@ alternative hypothesis: true location shift is not equal to 0</code></pre>
 <section id="more-than-two-independent-groups" class="slide level2">
 <h2>More than two independent groups</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">ANOVA</a></li><li><a href="#tabset-5-2">Sum of Squares</a></li><li><a href="#tabset-5-3">Visualising</a></li><li><a href="#tabset-5-4">Anova Table</a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Context</a></li><li><a href="#tabset-5-2">ANOVA</a></li><li><a href="#tabset-5-3">Sum of Squares</a></li><li><a href="#tabset-5-4">Visualising</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-17-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-2">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href=""></a><span class="fu">anova</span>(<span class="fu">lm</span>(bill_length_mm<span class="sc">~</span>species, <span class="at">data=</span>penguins))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -852,68 +863,74 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 </div>
 </div>
 </div>
-<div id="tabset-5-2">
+<div id="tabset-5-3">
 <p><span class="math display">\[SS=\sum_{i=0}^{n} (X_i - \bar{X})^2\]</span></p>
 <p>See <a href="https://www.youtube.com/watch?v=8PEMXgayXBg">this video</a> to understand the logic of an ANOVA</p>
 </div>
-<div id="tabset-5-3">
+<div id="tabset-5-4">
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-18-1.png" width="960"></p>
+<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-5-4">
+</div>
+</div>
+</section>
+<section id="anova-table" class="slide level2">
+<h2>Anova Table</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table class="caption-top" data-quarto-postprocess="true">
-<caption>ANOVA Table</caption>
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 20%">
+<col style="width: 24%">
+<col style="width: 17%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">Source.of.Variation</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Sum.of.Squares..SS.</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Degrees.of.Freedom..df.</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Mean.Square..MS.</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">F.value</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">p.value</th>
+<th style="text-align: left;">Source of Variation</th>
+<th style="text-align: right;">Sum of Squares (SS)</th>
+<th style="text-align: right;">Degrees of Freedom (df)</th>
+<th style="text-align: right;">Mean Square (MS)</th>
+<th style="text-align: right;">F-value</th>
+<th style="text-align: right;">p-value</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Between Groups</td>
-<td style="text-align: center;">100</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">50.00</td>
-<td style="text-align: center;">4.5</td>
-<td style="text-align: center;">0.05</td>
+<td style="text-align: left;">Between Groups</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">50.00</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">0.05</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Within Groups (Error)</td>
-<td style="text-align: center;">200</td>
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">13.33</td>
-<td style="text-align: center;">NA</td>
-<td style="text-align: center;">NA</td>
+<td style="text-align: left;">Within Groups (Error)</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">13.33</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Total</td>
-<td style="text-align: center;">300</td>
-<td style="text-align: center;">17</td>
-<td style="text-align: center;">NA</td>
-<td style="text-align: center;">NA</td>
-<td style="text-align: center;">NA</td>
+<td style="text-align: left;">Total</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-</div>
-</div>
 </div>
 </div>
 </section>
@@ -930,7 +947,7 @@ Kruskal-Wallis chi-squared = 244.14, df = 2, p-value &lt; 2.2e-16</code></pre>
 </div>
 </div>
 
-<img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section>
+<img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch"></section>
 <section id="paired-designs" class="slide level2">
 <h2>Paired designs</h2>
 
@@ -938,7 +955,7 @@ Kruskal-Wallis chi-squared = 244.14, df = 2, p-value &lt; 2.2e-16</code></pre>
 <section id="paired-graphs" class="slide level2">
 <h2>Paired graphs</h2>
 <div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Pairs in space</a></li><li><a href="#tabset-6-2">Repeated measures</a></li></ul>
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Pairs in space</a></li><li><a href="#tabset-6-2">Pairs in time</a></li></ul>
 <div class="tab-content">
 <div id="tabset-6-1">
 <div class="cell columns column-output-location">
@@ -963,7 +980,7 @@ Kruskal-Wallis chi-squared = 244.14, df = 2, p-value &lt; 2.2e-16</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
+<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -996,7 +1013,7 @@ Kruskal-Wallis chi-squared = 244.14, df = 2, p-value &lt; 2.2e-16</code></pre>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
+<p><img data-src="07_mean_tests_files/figure-revealjs/unnamed-chunk-24-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1041,6 +1058,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
 <section id="post-hoc-comparisons" class="slide level2">
 <h2>Post-hoc comparisons</h2>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href=""></a><span class="fu">TukeyHSD</span>(res.aov3, <span class="at">which =</span> <span class="st">"dose"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Tukey multiple comparisons of means
     95% family-wise confidence level

@@ -211,6 +211,8 @@ wilcox.test(df_latest$deaths_per_million,
 
 :::
 
+
+
 ## Two independent groups
 :::{.panel-tabset}
 ## Data
@@ -322,6 +324,19 @@ wilcox.test(weight ~ group, data = my_data,
 
 ## More than two independent groups
 :::{.panel-tabset}
+## Context
+
+```{r}
+penguins %>% 
+  ggplot(aes(species, bill_length_mm, 
+             color=species, 
+             fill=species))+
+  geom_violin(alpha=0.5)+
+  geom_jitter()+
+  theme_minimal()
+```
+
+
 ## ANOVA
 
 ```{r}
@@ -350,10 +365,13 @@ penguins %>%
 
 ```
 
+
+:::
+
 ## Anova Table
 
 ```{r}
-anova_table <- data.frame(
+anova_table <- tibble(
   `Source of Variation` = c("Between Groups", "Within Groups (Error)", "Total"),
   `Sum of Squares (SS)` = c(100, 200, 300),
   `Degrees of Freedom (df)` = c(2, 15, 17),
@@ -361,12 +379,10 @@ anova_table <- data.frame(
   `F-value` = c(4.5, NA, NA),
   `p-value` = c(0.05, NA, NA)
 )
-
-kable(anova_table, format = "html", align = "c", caption = "ANOVA Table")
+anova_table %>% 
+  kable(digits = 2)
 
 ```
-
-:::
 
 ## Kruskal-Wallis (non-parametric)
 
@@ -419,7 +435,7 @@ my_data2 %>%
   
 ```
 
-## Repeated measures
+## Pairs in time
 ![](img/phylo.png){fig-align="center" width="60%"}
 
 source: [Santos et al 2015](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0113109)
@@ -464,6 +480,8 @@ summary(res.aov3)
 ## Post-hoc comparisons
 
 ```{r}
+#| include: true
+#| echo: true
 TukeyHSD(res.aov3, which = "dose")
 ```
 

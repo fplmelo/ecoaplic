@@ -1,0 +1,137 @@
+---
+title: "7.1 - How to write good abstracts"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+library(ggpubr)
+
+```
+
+
+## You should know today:
+
+- Identify a good and a bad abstract
+- Elements of a abstract
+- Why abstracts are important
+
+## Why to write abstracts
+:::{.columns}
+
+:::{.column}
+- They are the most read part of a paper (after title)
+- They also serve as index
+- Capture the atention
+- Inform the crucial
+:::
+
+:::{.column}
+![](https://plos.org/wp-content/uploads/2020/07/How-to-write-a-great-title-funnel_Abstract_1b-2048x1337.png)
+:::
+:::
+
+source:<https://plos.org/resource/how-to-write-a-great-abstract/>
+
+## Main components{.center}
+
+## State of the art/Background
+
+![](https://www.orielstat.com/blog/wp-content/uploads/2018/05/Degree-of-Innovation-Ford-to-Driverless-car-e1583442189533.png){fig-align=center}
+
+source:<https://www.orielstat.com/blog/eu-mdr-state-of-the-art/>{style="font-size: 50%;"}
+
+## Knowldege gaps (premium)
+
+![](img/know_gaps.png)
+
+<https://medium.com/mind-cafe/the-three-gaps-in-knowledge-that-define-the-quality-of-our-lives-86f772acb898>{style="font-size: 50%;"}
+
+## Objectives and Aims
+
+:::{.columns}
+
+:::{.column}
+At this point you should:
+
+- Question
+- Hypothesis
+- Implications
+
+Than you know exactly the objective
+:::
+
+:::{.column}
+![](https://media1.tenor.com/m/JsS1AQuKxxcAAAAd/drawify-goal.gif)
+:::
+:::
+
+## Methods
+
+:::{.columns}
+
+:::{.column}
+Please be brief:
+
+- Relevant procedures
+- Effort
+- Experimental Design
+
+
+:::
+
+:::{.column}
+![](https://media1.tenor.com/m/0DGtmzPFal0AAAAd/overflow-overpour.gif)
+:::
+:::
+
+## Results
+
+Just the most important!!
+
+![](https://ggplot2-book.org/arranging-plots_files/figure-html/unnamed-chunk-4-1.png)
+
+## Conlusions
+
+Feedback the theory!!
+
+![](img/sci_flux.png){fig-align=center}
+
+## Live examples
+
+## End of DA class{.center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
