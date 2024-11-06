@@ -1,0 +1,120 @@
+---
+title: "8.1 - How to write Introductions"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+
+## You should know today:
+
+- Understand the flow of texts
+- Elements of a good introduction
+- The funnel analogy
+
+## The funnel of scientific writing
+![](img/funnel.png)
+
+## The funnel of scientific writing
+![](img/funnel2.png){fig-align="center"}
+
+source: [Structure and Style Tips for Writing Your Literature Review](https://precisionconsultingblog.com/structure-and-style-tips-for-writing-your-literature-review/)
+
+## Slices of an Introduction{.center}
+
+## MEAL plan
+- **Main Idea**: The main idea of your paragraph should be stated in the opening sentence, and everything in the paragraph should support this idea.
+
+- **Evidence**: The specific information that supports your main idea.
+
+- **Analysis**: your interpretation of the evidence. 
+
+- **Link**: ties everything together and also lead to the next paragraph.
+
+## Example
+
+![](img/meal.png){fig-align=center}
+
+## Suggested reading for MEAL plan
+
+[The MEAL Plan Paragraph Structure](https://moxielearn.ai/blog/writing-an-academic-paragraph-the-meal-plan-for-structuring-your-ideas)
+
+<img src=https://thefusioneer.com/wp-content/uploads/2023/11/Fibonacci-Sequence-feature-image-1024x683.jpeg>
+
+## More examples
+
+[The plant ecology of nature-based solutions for people, biodiversity and climate
+](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.14441)
+
+## Plan your paragraphs
+
+1 - Broad problem
+2 - Details that demand attention
+3 - Show how important is to fill this gap
+4 - Present a few predictions and its implications
+5 - Make your hypotheses and aims clear
+
+## Each journal has a different approach
+
+![](img/nature.png)
+
+source:[Elements of style](https://www.nature.com/articles/nphys724)
+
+## Trainning
+
+![](img/virology.png)
+
+source:[Increased Incidence of Rhinovirus](https://onlinelibrary.wiley.com/doi/full/10.1155/2024/8841838)
+
+## Trainning
+
+![](img/agriculture.png)
+
+source:[Environment, Soil, and Digestate Interaction](https://www.mdpi.com/2073-4395/14/11/2612)
+
+## Trainning
+
+![](img/one_earth.png)
+
+source:[Sustainable-use marine protected areas](https://www.cell.com/one-earth/fulltext/S2590-3322(24)00480-9)
+
+## Good Introductions
+
+- Capture form the very first sentence
+- Easy to read
+- Clearly present
+  - Theory
+  - Gaps
+  - Hypothesis
+  - Implications
+
+
+## End of DA class{.center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
