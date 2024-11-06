@@ -1,0 +1,310 @@
+---
+title: "8-Correlation Tests"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+library(ggpubr)
+library(broom)
+
+
+```
+
+
+## You should know today:
+
+- Know when to use correlation tests
+- Understand covariances
+- Parametric nd non-parametric versions
+- Pearson's and Spearman's
+- Multiple Correlations
+
+
+## Types of variables (review)
+
+::::{.columns}
+:::{.column .fragment}
+**Categorical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_3.png)
+
+:::
+
+:::{.column .fragment}
+**Numerical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_4.png)
+
+:::
+::::
+
+## Back to the toolbox
+
+![](img/toolkit.png){fig-align="center"}
+
+## Numerical vs Numerical
+
+```{r}
+#| label: num_num_graph
+#| 
+penguins %>% 
+  na.omit() %>% 
+  ggplot(aes(
+    x= bill_length_mm, 
+    y= flipper_length_mm,
+    color=species))+
+  geom_point()-> num_x_num
+
+num_x_num
+```
+
+## Why correlations?
+
+- When you don't expect **effects**
+- When you can't explain**effects**
+- When you want to reduce dimensions of data
+
+## Is it logic to expect and effect?
+
+```{r}
+#| 
+#| 
+penguins %>% 
+  na.omit() %>% 
+  ggplot(aes(
+    x= bill_length_mm, 
+    y= flipper_length_mm,
+    color=species))+
+  geom_point()-> num_x_num
+
+num_x_num
+
+```
+
+## Is it logic to expect and effect
+
+```{r}
+mtcars %>% 
+  ggplot(aes(hp, mpg))+
+  geom_point(size=3)+
+  labs(y="Miles per galon (Mi/gal)", x="Horsepower (Foot/Pound/Second)")
+  
+```
+
+## Pearson's correlation
+
+**Assumptions**
+
+- Normal distribution
+
+
+
+```{r}
+#| echo: true
+
+cor.test(mtcars$hp, mtcars$mpg)
+
+```
+
+## Spearmen's correlation
+
+**Assumptions**
+
+- Non-Normal distribution
+
+
+
+```{r}
+#| echo: true
+
+cor.test(mtcars$hp, mtcars$mpg, method = "spearman")
+
+```
+
+
+## Multiple correlations
+
+```{r}
+#| echo: true
+
+mtcars %>% 
+  select(mpg:qsec) %>% 
+  cor %>% 
+  round(.,2)->res
+res
+```
+
+
+## Visualizing
+```{r}
+#| echo: true
+#| output-location: default
+if (!require("corrplot")) install.packages("corrplot")
+
+corrplot(res, type = "upper", order = "hclust", 
+         tl.col = "black", tl.srt = 45)
+
+```
+
+## Checking p-values
+
+```{r}
+#| echo: true
+
+if (!require("Hmisc")) install.packages("Hmisc")
+res2<-rcorr(res, type = c("pearson", "spearman"))
+res2
+
+```
+
+
+## More ways to evaluate correlations
+
+```{r}
+#| echo: true
+data <- iris[, 1:4] # Numerical variables
+groups <- iris[, 5] # Factor variable (groups)
+
+```
+
+```{r}
+
+pairs(data)
+
+```
+
+## More ways to evaluate correlations
+
+```{r}
+# Function to add correlation coefficients
+panel.cor <- function(x, y, digits = 2, prefix = "", cex.cor, ...) {
+    usr <- par("usr")
+    on.exit(par(usr))
+    par(usr = c(0, 1, 0, 1))
+    Cor <- abs(cor(x, y)) # Remove abs function if desired
+    txt <- paste0(prefix, format(c(Cor, 0.123456789), digits = digits)[1])
+    if(missing(cex.cor)) {
+        cex.cor <- 0.4 / strwidth(txt)
+    }
+    text(0.5, 0.5, txt,
+         cex = 1 + cex.cor * Cor) # Resize the text by level of correlation
+}
+
+# Plotting the correlation matrix
+pairs(data,
+      upper.panel = panel.cor,    # Correlation panel
+      lower.panel = panel.smooth) # Smoothed regression lines
+```
+
+## More ways to evaluate correlations
+
+```{r}
+#| echo: true
+library(psych)
+
+corPlot(data, cex = 1.2)
+```
+
+## More ways to evaluate correlations
+```{r}
+#| echo: true
+#| include: true
+#| output-location: slide
+
+par(mfrow = c(2, 3))
+
+# Circles
+corrplot(cor(data), method = "circle",
+        title = "method = 'circle'",
+        tl.pos = "n", mar = c(2, 1, 3, 1)) 
+# Squares 
+corrplot(cor(data), method = "square",
+        title = "method = 'square'",
+        tl.pos = "n", mar = c(2, 1, 3, 1)) 
+# Ellipses
+corrplot(cor(data), method = "ellipse",
+         title = "method = 'ellipse'",
+         tl.pos = "n", mar = c(2, 1, 3, 1)) 
+# Correlations
+corrplot(cor(data), method = "number",
+         title = "method = 'number'",
+         tl.pos = "n", mar = c(2, 1, 3, 1)) 
+# Pie charts
+corrplot(cor(data), method = "pie",
+         title = "method = 'pie'",
+         tl.pos = "n", mar = c(2, 1, 3, 1)) 
+# Colors
+corrplot(cor(data), method = "color",
+         title = "method = 'color'",
+         tl.pos = "n", mar = c(2, 1, 3, 1)) 
+
+```
+
+## Using ggplot+GGally
+
+```{r}
+#| echo: true
+#| include: true
+#| output-location: slide
+
+if (!require("GGally")) install.packages("GGally")
+library(GGally)
+
+ggpairs(penguins[,c(1,3:7)], ggplot2::aes(colour = species))
+
+```
+
+## Correlations are powerful
+
+- Describe data structure
+- Helps to understand complex phenomena
+
+## Let's examine
+![](img/corr.webp){fig-align=center}
+
+## More examples
+
+![](img/examples_corr.jpg)
+
+## Correlation vs Causation
+
+![](img/causation-correlation.webp)
+
+## Correlation vs Causation
+
+![](img/causation-correlation2.webp)
+
+## End of DA class{.center}
+
+
+
+
+
+
+
+
+
+
+
