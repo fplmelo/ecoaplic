@@ -1,0 +1,399 @@
+---
+title: "9-Linear Models"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+library(ggpubr)
+library(broom)
+
+
+```
+
+
+## You should know today:
+
+- Know when to use linear models
+- Understand outputs of LM
+- How to prepare for LM
+- Multiple linear models
+
+
+## Types of variables (review)
+
+::::{.columns}
+:::{.column .fragment}
+**Categorical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_3.png)
+
+:::
+
+:::{.column .fragment}
+**Numerical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_4.png)
+
+:::
+::::
+
+## Back to the toolbox
+
+![](img/toolkit.png){fig-align="center"}
+
+## Numerical vs Numerical
+
+```{r}
+#| label: num_num_graph
+#| 
+penguins %>% 
+  na.omit() %>% 
+  ggplot(aes(
+    x= bill_length_mm, 
+    y= flipper_length_mm,
+    color=species))+
+  geom_point()-> num_x_num
+
+num_x_num
+```
+
+## Why linear models?
+
+- When you do expect **effects**
+- When you are able to explain**effects**
+- You want predictive values
+
+## Is it logic to expect and effect?
+
+```{r}
+
+penguins %>% 
+  na.omit() %>% 
+  ggplot(aes(
+    x= bill_length_mm, 
+    y= flipper_length_mm,
+    color=species))+
+  geom_point()-> num_x_num
+
+num_x_num
+
+```
+
+## Is it logic to expect and effect
+
+```{r}
+mtcars %>% 
+  ggplot(aes(hp, mpg))+
+  geom_point(size=3)+
+  labs(y="Miles per galon (Mi/gal)", x="Horsepower (Foot/Pound/Second)")
+  
+```
+
+## The logic of linear models
+
+$$
+y=a+bx
+$$
+
+```{r}
+ggplot(data=cars, aes(speed, dist))+
+  geom_point()+
+  geom_smooth(method="lm", se=FALSE)+
+  theme_bw()
+```
+
+## Components of LMs
+
+*response* = *factor* + *error*
+
+**in R**
+
+*lm(response~factor)*
+
+- Error is calculated by the function
+
+## Response component
+
+
+$$
+y=a+bx + error
+$$
+
+```{r}
+ggplot(data=cars, aes(speed, dist))+
+  geom_point()+
+  geom_smooth(method="lm", se=FALSE)+
+  theme_bw()
+```
+
+## Screening *response*
+
+:::{.columns}
+:::{.column}
+- Know the distribution of your data
+  - Normal
+  - Poisson
+  - Binomial
+  - etc...
+:::
+:::{.column}
+![](img/dist_types.png)
+:::
+:::
+
+##
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ZNNRRICIKKsUyFDQY4V-VA.png)
+
+## The explanatory (linear component)
+
+:::{.columns}
+:::{.column}
+- Can be additive when independent
+  - y = a + b~1~x~1~ + b~2~x~2~...
+- Can be multiplicative
+  - y = a +  b~1~x~1~ * b~2~x~2~
+
+:::
+:::{.column}
+```{r}
+library(plotly)
+data(mtcars)
+library(mgcv)
+mod <- lm(qsec ~ hp + wt + hp:wt, data=mtcars)
+
+hp.seq <- seq(min(mtcars$hp, na.rm=TRUE), max(mtcars$hp, na.rm=TRUE), length=25)
+wt.seq <- seq(min(mtcars$wt, na.rm=TRUE), max(mtcars$wt, na.rm=TRUE), length=25)
+
+predfun <- function(x,y){
+  newdat <- data.frame(hp = x, wt=y)
+  predict(mod, newdata=newdat)
+}
+
+fit <- outer(hp.seq, wt.seq, Vectorize(predfun))
+
+plot_ly() %>% 
+  add_markers(x = ~mtcars$hp, y=mtcars$wt, z=mtcars$qsec) %>% 
+  add_surface(x = ~hp.seq, y = ~wt.seq, z = t(fit))
+
+```
+:::
+:::
+
+## Linear Models (mean)
+:::{.columns}
+:::{.column}
+ - *Statistish*: y = Xβ + ε
+ - R syntax: lm(y~1)
+:::
+:::{.column}
+
+
+```{r}
+#|echo: true
+#|include: true
+lm(qsec~1, data=mtcars)
+
+## equal mean() function
+mean(mtcars$qsec)
+
+```
+
+:::
+:::
+
+## Linear Models (effect)
+:::{.columns}
+:::{.column}
+ - *Statistish*: $$ y_i = \alpha + \beta*x_i + \epsilon_i $$
+ - R syntax: 
+ lm(y~x)
+ 
+:::
+:::{.column}
+
+```{r}
+#|echo: true
+#|include: true
+
+lm(qsec~hp, data=mtcars)
+
+
+```
+:::
+:::
+
+## Linear Models (effect)
+
+```{r}
+#|echo: true
+#|include: true
+
+mtcars %>% 
+  ggplot(aes(hp, qsec))+
+  geom_point()+
+  geom_smooth(method = "lm", se = FALSE)+
+  theme_bw()
+```
+
+## Linear Models (error)
+:::{.columns}
+:::{.column}
+ - *Statistish*: $$ y_i = \alpha + \beta*x_i + \epsilon_i $$
+ - R syntax: 
+ lm(y~x) 
+  remember: R calculates the error
+ 
+:::
+:::{.column}
+
+```{r}
+#|echo: true
+#|include: true
+
+m1<-lm(qsec~hp, data=mtcars)
+anova(m1)
+
+m1$residuals
+```
+:::
+:::
+## Linear Models (error)
+
+```{r}
+#|echo: true
+#|include: true
+
+intercept <- 20.55635
+slope <- -0.01846 
+mtcars$fitted <- intercept + slope * mtcars$hp
+
+
+mtcars %>% 
+  ggplot(aes(hp, qsec))+
+  geom_smooth(method = "lm", se = FALSE)+
+  geom_segment(aes(xend = hp, yend = fitted, color = "residuals"))+
+  geom_point()+
+  theme_bw()
+```
+
+## Strength vs. Fitness
+
+:::{.columsn}
+:::{.column}
+**Slope**
+```{r}
+#| echo: false
+#| 
+set.seed(123)
+
+# Create sample data for two groups
+n <- 100
+group <- rep(c("A", "B"), each = n)
+x <- rnorm(2 * n, mean = 10, sd = 2)
+
+# Generate y values with different slopes
+y <- c(2 * x[1:n] + rnorm(n, sd = 5), 3.5 * x[(n+1):(2*n)] + rnorm(n, sd = 5))
+
+# Combine data into a data frame
+data <- data.frame(group, x, y)
+
+# Inspect data
+
+ggplot(data, aes(x = x, y = y, color = group)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Comparison of Regression Slopes",
+       x = "X", y = "Y")
+
+```
+
+
+:::
+:::{.column}
+**R²**
+```{r}
+data %>% 
+  filter(group=="A")->d1
+lm(y~x, data=d1)->md1
+summary(md1)$r.squared 
+data %>% 
+  filter(group=="B")->d2
+lm(y~x, data=d2)->md2
+summary(md2)$r.squared 
+
+```
+
+:::
+:::
+
+## ANCOVA
+
+```{r}
+ggplot(data, aes(x = x, y = y, color = group)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "Comparison of Regression Slopes",
+       x = "X", y = "Y")
+```
+
+## ANCOVA example 1
+
+```{r}
+penguins %>% 
+  ggplot(aes(body_mass_g, bill_length_mm, color=species, fill-species))+
+  geom_point()+
+  geom_smooth(method = "lm", se=FALSE)
+```
+
+## ANCOVA example 2
+
+```{r}
+penguins %>% 
+  ggplot(aes(species, bill_length_mm, color=body_mass_g))+
+  geom_jitter(size=2)
+```
+
+## LM
+
+```{r}
+
+ancov1<-lm(bill_length_mm~body_mass_g+species+body_mass_g:species,data=penguins)
+summary(ancov1)
+
+```
+
+
+## End of DA class{.center}
+
+
+
+
+
+
+
+
+
+
+
