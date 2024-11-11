@@ -95,7 +95,7 @@ Manu - Peru
 
 ## Species-focused conservation
 
-![](https://imagens.ebc.com.br/ssHQbA5eVOGutrcvUXriNWv6whY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/ave_cyanopsitta_spixii_ararinha_azul_foto_camile_ugarini.jpg?itok=RsYMXNq9)
+![](img/spix.webp)
 
 Spix macaw
 
@@ -107,7 +107,7 @@ Spix macaw
 
 Blobfish
 
-## Tha majority is not systematic {.center}
+## The majority is not systematic {.center}
 
 ## Representativeness
 
