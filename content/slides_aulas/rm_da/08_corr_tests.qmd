@@ -86,7 +86,7 @@ num_x_num
 - When you can't explain **effects**
 - When you want to reduce dimensions of data
 
-## Is it logic to expect and effect?
+## Is it logic to expect an effect?
 
 ```{r}
 
