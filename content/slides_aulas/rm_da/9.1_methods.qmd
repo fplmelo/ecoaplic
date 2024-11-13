@@ -1,0 +1,101 @@
+---
+title: "9.1-Methods"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+library(ggpubr)
+library(broom)
+
+
+```
+
+
+## You should know today:
+
+- Basics of writing methods
+- Strucure of methods
+- Methdos vs methodology
+- Good practices
+
+## Methods vs. Methodology
+
+"The "method" refers to the specific techniques and procedures used to collect and analyze data, whereas "methodology" encompasses the overall research design, including the theoretical framework, research questions, and the research approach. "
+
+Source:<https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4857923>
+
+## Readers must be guided
+
+![](https://lirp.cdn-website.com/8ca1f11c/dms3rep/multi/opt/SSP_220228_UPMC+Illustrations_Graphical+Abstract+Example-1920w.png)
+
+## Descriptions needed
+- Study area
+
+![](img/landscape.webp)
+
+## Descriptions needed
+- Taxonomic group
+![](img/canis.png)
+
+## Experimental desing
+
+![](https://helpfulprofessor.com/wp-content/uploads/2022/10/experimental-design-1024x724.jpg){fig-align=center}
+
+## Experimental desing
+
+![](https://cdn.sanity.io/images/oq9f4n1v/production/1e966861c0c41786ff6da35cafe28daf20929b14-573x325.svg)
+
+## Data Analyses
+
+[Don't just list the tests used]{style="color:red;"}
+
+**Common errors**: "I used t-test and linear models to analyse data..."
+
+**Best practices:** 
+
+- "To test the association between X and Y I used a t-test..."
+
+- "We calculated the diversity of birds using Hill Numbers instead of common diversity indexes such as Simpson or Shannon because..."
+
+## Ask others to read your methods
+
+Everyone must be able to understand and replicate your experiment
+
+- Lack of reproducibility is a big problem in science
+
+![](https://media.springernature.com/w300/springer-static/image/art%3A10.1038%2F533452a/MediaObjects/41586_2016_BF533452a_Figd_HTML.jpg?as=webp)
+
+## End of RM class{.center}
+
+
+
+
+
+
+
+
+
+
+

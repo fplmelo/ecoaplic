@@ -258,28 +258,20 @@ mtcars %>%
 ```
 
 ## Linear Models (error)
-:::{.columns}
-:::{.column}
  - *Statistish*: $$ y_i = \alpha + \beta*x_i + \epsilon_i $$
  - R syntax: 
  lm(y~x) 
   remember: R calculates the error
  
-:::
-:::{.column}
-
 ```{r}
 #|echo: true
 #|include: true
 
 m1<-lm(qsec~hp, data=mtcars)
 anova(m1)
-
-m1$residuals
 ```
-:::
-:::
-## Linear Models (error)
+
+## Linear Models (residuals)
 
 ```{r}
 #|echo: true
@@ -297,6 +289,23 @@ mtcars %>%
   geom_point()+
   theme_bw()
 ```
+
+## Linear Models (residuals)
+
+```{r}
+#|echo: true
+#|include: true
+
+ggplot(data=as.data.frame(m1$residuals), aes(x=m1$residuals, fill="#ffa054"))+
+  geom_density()+
+  theme(legend.position = "none")
+  
+```
+
+```{r}
+shapiro.test(m1$residuals)
+```
+
 
 ## Strength vs. Fitness
 
@@ -361,28 +370,73 @@ ggplot(data, aes(x = x, y = y, color = group)) +
 ## ANCOVA example 1
 
 ```{r}
+#| echo: true
+ancov1<-lm(bill_length_mm~body_mass_g+
+             species+
+             body_mass_g*species, 
+           data=penguins)
+summary(ancov1)
+
+```
+
+## ANCOVA example 1
+
+```{r}
+#| echo: true
+anova(ancov1)
+```
+
+
+
+## ANCOVA example 1
+
+```{r}
 penguins %>% 
   ggplot(aes(body_mass_g, bill_length_mm, color=species, fill-species))+
   geom_point()+
   geom_smooth(method = "lm", se=FALSE)
+
 ```
 
-## ANCOVA example 2
+
+## LM outputs (version 1)
 
 ```{r}
-penguins %>% 
-  ggplot(aes(species, bill_length_mm, color=body_mass_g))+
-  geom_jitter(size=2)
+#| echo: true
+summary(m1)
+
 ```
 
-## LM
-
+## LM outputs (version 1)
 ```{r}
-
-ancov1<-lm(bill_length_mm~body_mass_g+species+body_mass_g:species,data=penguins)
+#| echo: true
 summary(ancov1)
 
 ```
+
+## LM outputs (version 2)
+
+```{r}
+#| echo: true
+anova(m1)
+```
+
+## LM outputs (version 2)
+```{r}
+#| echo: true
+anova(ancov1)
+
+```
+
+## Predicting values wiht LM
+
+```{r}
+#| echo: true
+summary(mtcars$hp)
+new_hp<-data.frame(hp=c(25,550,2500))
+predict(m1, new_hp)
+```
+
 
 
 ## End of DA class{.center}
