@@ -5,7 +5,7 @@ author: "Felipe Melo"
 format:
   revealjs:
     theme: [default, custom.scss]
-    incremental: true
+    incremental: false
     chalkboard: true
     logo: img/ntu_logo.png
     #footer: "Conservation Priorities"
@@ -37,7 +37,7 @@ format:
 - Environment and socio-economic structures are interlinked
 - Power imbalances drive problems and [solutions]{style="color: red;"}
 
-![](https://hhsbanner.com/wp-content/uploads/2020/12/800px-Lacanja_burn.jpg){.absolute height="400" width=1000}
+![](https://hhsbanner.com/wp-content/uploads/2020/12/800px-Lacanja_burn.jpg){fig-align="center" width=800}
 
 ## 
 <iframe width="1056" height="594" src="https://www.youtube.com/embed/m2TbrtCGbhQ" title="Forget Shorter Showers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
