@@ -82,7 +82,7 @@ num_x_num
 ## Why linear models?
 
 - When you do expect **effects**
-- When you are able to explain**effects**
+- When you are able to explain **effects**
 - You want predictive values
 
 ## Is it logic to expect and effect?
