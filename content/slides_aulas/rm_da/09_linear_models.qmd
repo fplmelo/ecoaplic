@@ -82,7 +82,7 @@ num_x_num
 ## Why linear models?
 
 - When you do expect **effects**
-- When you are able to explain**effects**
+- When you are able to explain **effects**
 - You want predictive values
 
 ## Is it logic to expect and effect?
@@ -172,7 +172,42 @@ ggplot(data=cars, aes(speed, dist))+
 :::{.column}
 - Can be additive when independent
   - y = a + b~1~x~1~ + b~2~x~2~...
-- Can be multiplicative
+
+
+:::
+:::{.column}
+```{r}
+library(plotly)
+data(mtcars)
+library(mgcv)
+mod <- lm(qsec ~ hp + wt + hp:wt, data=mtcars)
+
+mod2 <- lm(qsec ~ hp:wt, data=mtcars)
+
+hp.seq <- seq(min(mtcars$hp, na.rm=TRUE), max(mtcars$hp, na.rm=TRUE), length=25)
+wt.seq <- seq(min(mtcars$wt, na.rm=TRUE), max(mtcars$wt, na.rm=TRUE), length=25)
+
+predfun <- function(x,y){
+  newdat <- data.frame(hp = x, wt=y)
+  predict(mod, newdata=newdat)
+}
+
+fit <- outer(hp.seq, wt.seq, Vectorize(predfun))
+
+plot_ly() %>% 
+  add_markers(x = ~mtcars$hp, y=mtcars$wt, z=mtcars$qsec) %>% 
+  add_surface(x = ~hp.seq, y = ~wt.seq, z = t(fit))
+
+```
+:::
+:::
+
+## The explanatory (linear component)
+
+:::{.columns}
+:::{.column}
+
+- Can be multiplicative when interactions are present
   - y = a +  b~1~x~1~ * b~2~x~2~
 
 :::
@@ -183,12 +218,14 @@ data(mtcars)
 library(mgcv)
 mod <- lm(qsec ~ hp + wt + hp:wt, data=mtcars)
 
+mod2 <- lm(qsec ~ hp:wt, data=mtcars)
+
 hp.seq <- seq(min(mtcars$hp, na.rm=TRUE), max(mtcars$hp, na.rm=TRUE), length=25)
 wt.seq <- seq(min(mtcars$wt, na.rm=TRUE), max(mtcars$wt, na.rm=TRUE), length=25)
 
 predfun <- function(x,y){
   newdat <- data.frame(hp = x, wt=y)
-  predict(mod, newdata=newdat)
+  predict(mod2, newdata=newdat)
 }
 
 fit <- outer(hp.seq, wt.seq, Vectorize(predfun))
