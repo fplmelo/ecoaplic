@@ -1,0 +1,120 @@
+---
+title: "10.1-Results session"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+library(ggpubr)
+library(broom)
+
+
+```
+
+
+## You should know today:
+
+- How to write results
+- Clarity and good practices
+- Importance of visualization
+
+## Use the same order as in methods
+:::{.columns}
+:::{.column}
+**Methods**
+
+- Measure A
+
+- Measure B
+
+- Measure C
+
+:::
+
+:::{.column}
+**Results**
+
+- Text with A
+
+- Table with B
+
+- Graph with C
+
+:::
+:::
+
+## Care about accuracy
+
+Tables and Graphs should not be repeated in text
+
+![](http://www.clips.edu.au/wp-content/uploads/table_anatomy.png){fig-align=center}
+
+:::{.footer}
+
+[Communicating results with scientific graphs](https://www.clips.edu.au/displaying-data/)
+
+:::
+
+## Care about accuracy
+
+Tables and Graphs should not be repeated in text
+
+![](http://www.clips.edu.au/wp-content/uploads/graph_anatomy.png){fig-align=center}
+
+:::{.footer}
+
+[Communicating results with scientific graphs](https://www.clips.edu.au/displaying-data/)
+
+:::
+
+## Legends
+
+![](http://www.clips.edu.au/wp-content/uploads/figurelegend1_lrg.png){fig-align=center}
+
+:::{.footer}
+
+[Communicating results with scientific graphs](https://www.clips.edu.au/displaying-data/)
+
+:::
+
+## Use nice figures
+
+![](img/nice-figs.png){fig-align=center}
+
+:::{.footer}
+
+[ggplot2 gallery](https://r-graph-gallery.com/ggplot2-package.html)
+:::
+
+## Don't discuss but give a taste
+
+- "X was greater than Y, thus suggesting that our hypothesis was correct"
+
+- "We found an important increase of 25% on X when compared to Y"
+
+- "Species diversity in habitat A was 2.3 higher than in habitat B, thus suggesting a positive effect of habitat feature X"
+
+## End of Class RM
+
+
