@@ -1,0 +1,189 @@
+---
+title: "11-Non-linear Models"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+library(ggpubr)
+library(broom)
+
+
+```
+
+
+## You should know today:
+
+- Know when to use linear models
+- Understand outputs of LM
+- How to prepare for LM
+- Multiple linear models
+
+
+## Types of variables (review)
+
+::::{.columns}
+:::{.column .fragment}
+**Categorical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_3.png)
+
+:::
+
+:::{.column .fragment}
+**Numerical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_4.png)
+
+:::
+::::
+
+## Back to the toolbox
+
+![](img/toolkit.png){fig-align="center"}
+
+## Numerical vs Numerical/Categorical
+
+```{r}
+#| label: num_num_graph
+
+m1<-glm(sex~body_mass_g,family= binomial,data = penguins)
+d1<-as.data.frame(penguins$body_mass_g)
+d1 %>% 
+  rename(body_mass_g="penguins$body_mass_g")->d1
+
+predict<-predict(m1, d1, type="response") 
+penguins |> 
+  mutate(prob=ifelse(sex=="male", 1,0)) %>% 
+  na.omit() |> 
+  ggplot(aes(body_mass_g, prob))+
+  geom_jitter(height=0.05,alpha=0.4)+
+  stat_smooth(method="glm", se=FALSE, fullrange=TRUE, 
+              method.args = list(family=binomial))
+ 
+```
+
+## Logistic Model
+
+```{r}
+#| label: "m1"
+#| echo: true
+m1<-glm(sex~body_mass_g,family= "binomial",data = penguins)
+summary(m1)
+```
+
+## Understanding the outputs
+
+```{r}
+#| echo: true
+#| output-location: default
+summary(m1)
+
+```
+
+## Formula of General Linear Models
+Call:
+
+glm(formula = sex ~ body_mass_g, family = "binomial", data = penguins)
+
+## Distribution Family
+Call:
+
+glm(formula = sex ~ body_mass_g, family = **"?????"**, data = penguins)
+
+## Generalized Linear Models
+
+- Range of Y is restricted (e.g. counts, proportions, binary, duration)
+- Effects are no additive (interactions are present)
+- Variance depends on th mean (larger mean => larger variance)
+
+Generalized linear models specify a non-linear **link function** and
+variance function to allow for such things, while maintaining the
+simple interpretation of linear models.
+
+## Visualisation
+
+```{r}
+#| echo: true
+library(AER)    
+library(tidyverse)
+data(CASchools)
+
+CASchools %>% 
+  mutate(size=students/teachers) %>% 
+  mutate(score=(read+math)/2)->CASchools
+head(CASchools)
+
+```
+
+## Check the "shape" of the correlation
+
+```{r}
+CASchools %>% 
+  ggplot(aes(income, score))+
+  geom_point()+
+  theme_bw()
+
+```
+
+## Testing a linear model
+
+```{r}
+linear_model<- lm(score ~ income, data = CASchools)
+summary(linear_model)
+```
+
+## Tenting a quadratic model
+
+```{r}
+quadratic_model <- lm(score ~ income + I(income^2), data = CASchools)
+summary(quadratic_model)
+```
+
+## Visualising
+
+```{r}
+CASchools %>% 
+  ggplot(aes(income, score))+
+  geom_point()+
+  stat_smooth(method = "lm", se=F, formula= y~x+I(x^2))+
+  stat_smooth(method = "lm", se=F, color="red")
+
+```
+
+## Comparing models
+
+```{r}
+
+anova(linear_model, quadratic_model)
+```
+
+## Poisson distribution
+
+
+
+
+## End of Class DA
+
+

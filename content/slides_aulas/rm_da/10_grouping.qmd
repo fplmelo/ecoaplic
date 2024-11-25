@@ -1,0 +1,243 @@
+---
+title: "10-Logistic Models"
+subtitle: " "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+library(ggpubr)
+library(broom)
+
+
+```
+
+
+## You should know today:
+
+- Know when to use linear models
+- Understand outputs of LM
+- How to prepare for LM
+- Multiple linear models
+
+
+## Types of variables (review)
+
+::::{.columns}
+:::{.column .fragment}
+**Categorical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_3.png)
+
+:::
+
+:::{.column .fragment}
+**Numerical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_4.png)
+
+:::
+::::
+
+## Back to the toolbox
+
+![](img/toolkit.png){fig-align="center"}
+
+## Numerical vs Categorical
+
+```{r}
+#| label: num_num_graph
+
+m1<-glm(sex~body_mass_g,family= binomial,data = penguins)
+d1<-as.data.frame(penguins$body_mass_g)
+d1 %>% 
+  rename(body_mass_g="penguins$body_mass_g")->d1
+
+predict<-predict(m1, d1, type="response") 
+penguins |> 
+  mutate(prob=ifelse(sex=="male", 1,0)) %>% 
+  na.omit() |> 
+  ggplot(aes(body_mass_g, prob))+
+  geom_jitter(height=0.05,alpha=0.4)+
+  stat_smooth(method="glm", se=FALSE, fullrange=TRUE, 
+              method.args = list(family=binomial))
+ 
+```
+
+## Logistic Model
+
+```{r}
+#| label: "m1"
+#| echo: true
+m1<-glm(sex~body_mass_g,family= "binomial",data = penguins)
+summary(m1)
+```
+
+## Understanding the outputs
+
+```{r}
+#| echo: true
+#| output-location: default
+summary(m1)
+
+```
+
+## Formula
+Call:
+
+glm(formula = sex ~ body_mass_g, family = "binomial", data = penguins)
+
+## Coefficients
+
+```{r}
+summary(m1)
+```
+
+## Coefficients
+
+sex = -5.1625+0.0012*body mass
+
+- if a penguin weights 0, than it has a negative probability of having a sex (meaningless)
+- **the likelihood of being "male" increases by a factor of 0.0012 for each gram (g) of increase in weight.**
+ 
+## Deviance
+
+```{r}
+summary(m1)
+```
+
+## Deviance & Pseudo-R²
+
+```{r}
+#| echo: true
+null<-m1$null.deviance/-2
+model<-m1$deviance/-2
+(null-model)/null
+
+```
+
+This is the overall effect size of our model
+
+<h2>Not very high<h2>
+
+## Logistic Models for frequency data
+
+```{r}
+m2<-glm(sex~.,family = "binomial", data=penguins)
+summary(m2)
+
+```
+
+## Deviance & Pseudo-R²
+
+```{r}
+#| echo: true
+null2<-m2$null.deviance/-2
+model2<-m2$deviance/-2
+(null2-model2)/null2
+
+```
+
+This is the overall effect size of our model
+
+<h2>Fair enough<h2>
+
+## Final Model
+```{r}
+#| echo: true
+m3<-glm(sex~bill_length_mm+
+          bill_depth_mm+
+          body_mass_g, 
+        family = "binomial", 
+        data=penguins)
+summary(m3)
+```
+
+## Deviance & Pseudo-R²
+
+```{r}
+#| echo: true
+null3<-m3$null.deviance/-2
+model3<-m3$deviance/-2
+(null3-model3)/null3
+
+```
+
+This is the overall effect size of our model
+
+<h2>Still fair enough<h2>
+
+## Odds ratio
+
+![](https://www.scalestatistics.com/uploads/3/0/4/1/30413390/7973756_orig.jpg)
+
+## Example 1 - Penguin's sex
+
+sex = -5.1625+0.0012*body mass
+
+- if a penguin weights 0, than it has a negative probability of having a sex (meaningless)
+- **the likelihood of being "male" increases by a factor of 0.0012 for each gram (g) of increase in weight.**
+
+## Example 1 - Penguin's sex
+
+```{r}
+#| echo: true 
+penguins %>% 
+  mutate(size=ifelse(body_mass_g>4202, "large", "small"))->penguins2
+
+  xtabs(~size+sex, data=penguins2)
+
+```
+
+```{r}
+#| echo: true 
+#| 
+(53/92)
+(112/76)
+
+(53/92)/(112/76)
+  
+```
+
+Check [this video](https://www.youtube.com/watch?v=8nm0G-1uJzA) for a great explanation on logs ratio
+
+## Modeling probabilities
+
+```{r}
+penguins2 %>% 
+  na.omit() %>% 
+  mutate(fitted=m1$fitted.values) %>% 
+  ggplot(aes(body_mass_g,fitted, color=size))+
+  geom_point()
+  
+```
+
+## Review
+
+- Separate variables into meaningful groups
+- Calculate odds and probabilities
+- Model the likelihood of an "event"
+
+## End of Class DA
+
+
