@@ -79,7 +79,7 @@ format:
 
 ## Hydropower vs Conservation
 
-![](https://www.science.org/cms/10.1126/sciadv.abe1470/asset/ae872450-a435-4b3a-8c30-510fceec88bd/assets/graphic/abe1470-f1.jpeg)
+![](img/amaz_power.jpeg)
 
 :::footer
 [How green can Amazon hydropower be? ](https://doi.org/10.1126/sciadv.abe1470)
@@ -87,7 +87,7 @@ format:
 
 ## Hydropower vs Conservation
 
-![](https://www.science.org/cms/10.1126/sciadv.abe1470/asset/ae872450-a435-4b3a-8c30-510fceec88bd/assets/graphic/abe1470-f1.jpeg)
+![](img/amaz_power2.jpg)
 
 :::footer
 [How green can Amazon hydropower be? ](https://doi.org/10.1126/sciadv.abe1470)
@@ -128,7 +128,7 @@ format:
 
 ## <iframe width="1271" height="715" src="https://www.youtube.com/embed/9GorqroigqM" title="Story of Stuff (2007, versão oficial)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Seeting conservation priorities under climate change{.center}
+## Seting conservation priorities under climate change{.center}
 
 ## Complex tasks
 ![](img/cc_consprior.png){heigth=1200}
@@ -137,22 +137,16 @@ format:
 [How to set conservation priorities](https://theconversation.com/how-to-set-conservation-priorities-in-response-to-climate-change-81928#:~:text=Assigning%20levels%20of%20threat%20to,adaptive%20variation%20into%20the%20population.)
 :::
 
-## Complex tasks
-![](img/cc_consprior.png){heigth=1200}
-
-:::footer
-[How to set conservation priorities](https://theconversation.com/how-to-set-conservation-priorities-in-response-to-climate-change-81928#:~:text=Assigning%20levels%20of%20threat%20to,adaptive%20variation%20into%20the%20population.)
-:::
 
 ## How robust is it?
-![](img/cc_prior.jpg){width=700}
+![](img/cc_prior.jpg){width=700 fig-align=center}
 
 :::footer
 [How robust are global conservation priorities to climate change?](https://www.sciencedirect.com/science/article/pii/S0959378013001222#fig0010)
 :::
 
 ## How robust is it?
-![](img/cc_prior2.jpg){width=700}
+![](img/cc_prior2.jpg){width=700 fig-align=center}
 
 :::footer
 [How robust are global conservation priorities to climate change?](https://www.sciencedirect.com/science/article/pii/S0959378013001222#fig0010)
