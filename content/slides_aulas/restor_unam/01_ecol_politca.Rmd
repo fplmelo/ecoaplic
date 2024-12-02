@@ -9,7 +9,7 @@ output:
     lib_dir: libs
     css: ["robot","tamu-fonts", "custom_slides.css"]
     nature:
-      ratio: '16:9'
+      ratio: "16:9"
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false

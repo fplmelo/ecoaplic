@@ -3,13 +3,13 @@ title: "Dimensiones Sociales de la Restauración"
 subtitle: "Clase 1 - Ecología Política"
 author: "Felipe Melo"
 institute: "Laboratório de Ecologia Aplicada - UFPE"
-date: "2024-07-07"
+date: "2024-12-02"
 output:
   xaringan::moon_reader:
     lib_dir: libs
     css: ["robot","tamu-fonts", "custom_slides.css"]
     nature:
-      ratio: '16:9'
+      ratio: "16:9"
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
