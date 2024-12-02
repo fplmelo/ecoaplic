@@ -84,15 +84,6 @@ penguins |>
  
 ```
 
-## Logistic Model
-
-```{r}
-#| label: "m1"
-#| echo: true
-m1<-glm(sex~body_mass_g,family= "binomial",data = penguins)
-summary(m1)
-```
-
 ## Understanding the outputs
 
 ```{r}
@@ -111,6 +102,8 @@ glm(formula = sex ~ body_mass_g, family = "binomial", data = penguins)
 Call:
 
 glm(formula = sex ~ body_mass_g, family = **"?????"**, data = penguins)
+
+## Generalized Linear Models{.center}
 
 ## Generalized Linear Models
 
@@ -181,8 +174,108 @@ anova(linear_model, quadratic_model)
 
 ## Poisson distribution
 
+We often use the Poisson distribution to model count data, that is that our response variable takes nonnegative integers. If Y∼Poi(λ)
+with λ>0
+
+```{r}
+#| include: false
+set.seed(2023)
+s1 <- data.frame('data' = rpois(n = 1000, lambda = 0.5))
+s2 <- data.frame('data' = rpois(n = 1000, lambda = 2))
+s3 <- data.frame('data' = rpois(n = 1000, lambda = 10))
+
+p1 <- s1 %>% ggplot() +
+  geom_bar(aes(x = data, y = stat(count / sum(count))), width = 0.5,
+               fill = 'firebrick3') +
+  labs(x = 'y', y = 'proportion', title = lambda~ '= 0.5') +
+  theme_minimal()
+  scale_color_gradient(low="firebrick1", high="firebrick4")
+p2 <- s2 %>% ggplot() +
+  geom_bar(aes(x = data, y = stat(count / sum(count))), width = 0.75,
+           fill = 'firebrick3') +
+  labs(x = 'y', y = 'proportion', title = lambda~ '= 2') +
+  theme_minimal()
+p3 <- s3 %>% ggplot() +
+  geom_bar(aes(x = data, y = stat(count / sum(count))), width = 0.75,
+           fill = 'firebrick3') +
+  labs(x = 'y', y = 'proportion', title = lambda~ '= 10') +
+  theme_minimal()
+library(gridExtra)
 
 
+```
+
+```{r}
+grid.arrange(p1, p2, p3, nrow = 1)
+```
+
+## Poisson distribution PMF
+
+$$
+P(Y = y) = \frac{\lambda^{y}  e^{- \lambda}}{y!}
+$$
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/1280px-Poisson_pmf.svg.png)
+
+## Poisson Model
+
+$$
+ln(\lambda) = \beta_0+\beta_1x_1
+$$
+
+$$
+\lambda = e^{\beta_0+\beta_1x_1}
+$$
+- In R
+
+glm(response~explanatory, family=poisson, data)
+
+## Let's model
+
+```{r}
+advert<-read.csv("https://raw.githubusercontent.com/equitable-equations/youtube/refs/heads/main/Poisson%20regression/advertising.csv")
+
+advert %>% 
+  ggplot(aes(level,count))+
+  geom_point()+
+  geom_smooth(method = "lm",se=F)+
+  geom_smooth(method = "glm", se=F,
+              method.args = list(family=poisson), 
+              color="red")+
+  labs(x="Advert intesity", y="Views")
+```
+
+## Let's model
+
+```{r}
+poiss_model<-glm(count~level, family=poisson, data=advert)
+poiss_model
+```
+
+$$\lambda = e^{-1.29+0.37x_1}$$
+
+## Overdispersion
+
+![](https://bookdown.org/roback/bookdown-BeyondMLR/bookdown-BeyondMLR_files/figure-html/OLSpois-1.png)
+
+
+## Overdispersion Model
+```{r}
+data(RecreationDemand)
+
+poiss_model2<-glm(trips ~ ., data = RecreationDemand, family = poisson)
+summary(poiss_model2)
+dispersiontest(poiss_model2, trafo = 1)
+```
+
+## Overdispersion Model
+```{r}
+data(RecreationDemand)
+
+poiss_model3<-glm(trips ~ ., data = RecreationDemand, family = quasipoisson)
+summary(poiss_model3)
+
+```
 
 ## End of Class DA
 

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="10_nonlinear_files/libs/clipboard/clipboard.min.js"></script>
-<script src="10_nonlinear_files/libs/quarto-html/tabby.min.js"></script>
-<script src="10_nonlinear_files/libs/quarto-html/popper.min.js"></script>
-<script src="10_nonlinear_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="10_nonlinear_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="10_nonlinear_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="10_nonlinear_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="10_nonlinear_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="10_grouping_files/libs/clipboard/clipboard.min.js"></script>
+<script src="10_grouping_files/libs/quarto-html/tabby.min.js"></script>
+<script src="10_grouping_files/libs/quarto-html/popper.min.js"></script>
+<script src="10_grouping_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="10_grouping_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="10_grouping_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="10_grouping_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="10_grouping_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Felipe Melo">
-  <title>11-Non-linear Models</title>
+  <title>10-Logistic Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="10_nonlinear_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="10_nonlinear_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="10_grouping_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="10_grouping_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -95,13 +95,13 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="10_nonlinear_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="10_nonlinear_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="10_nonlinear_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="10_nonlinear_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="10_nonlinear_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="10_nonlinear_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="10_nonlinear_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="10_grouping_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="10_grouping_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="10_grouping_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="10_grouping_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="10_grouping_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="10_grouping_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="10_grouping_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -393,7 +393,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">11-Non-linear Models</h1>
+  <h1 class="title">10-Logistic Models</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -431,18 +431,19 @@ Felipe Melo
 <h2>Back to the toolbox</h2>
 
 <img data-src="img/toolkit.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="numerical-vs-numericalcategorical" class="slide level2">
-<h2>Numerical vs Numerical/Categorical</h2>
+<section id="numerical-vs-categorical" class="slide level2">
+<h2>Numerical vs Categorical</h2>
 
-<img data-src="10_nonlinear_files/figure-revealjs/num_num_graph-1.png" width="960" class="r-stretch"></section>
-<section id="understanding-the-outputs" class="slide level2">
-<h2>Understanding the outputs</h2>
+<img data-src="10_grouping_files/figure-revealjs/num_num_graph-1.png" width="960" class="r-stretch"></section>
+<section id="logistic-model" class="slide level2">
+<h2>Logistic Model</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">summary</span>(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a>m1<span class="ot">&lt;-</span><span class="fu">glm</span>(sex<span class="sc">~</span>body_mass_g,<span class="at">family=</span> <span class="st">"binomial"</span>,<span class="at">data =</span> penguins)</span>
+<span id="cb1-2"><a href=""></a><span class="fu">summary</span>(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
-glm(formula = sex ~ body_mass_g, family = binomial, data = penguins)
+glm(formula = sex ~ body_mass_g, family = "binomial", data = penguins)
 
 Coefficients:
               Estimate Std. Error z value Pr(&gt;|z|)    
@@ -462,259 +463,265 @@ Number of Fisher Scoring iterations: 4</code></pre>
 </div>
 </div>
 </section>
-<section id="formula-of-general-linear-models" class="slide level2">
-<h2>Formula of General Linear Models</h2>
+<section id="understanding-the-outputs" class="slide level2">
+<h2>Understanding the outputs</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">summary</span>(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = sex ~ body_mass_g, family = "binomial", data = penguins)
+
+Coefficients:
+              Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept) -5.1625416  0.7243906  -7.127 1.03e-12 ***
+body_mass_g  0.0012398  0.0001727   7.177 7.10e-13 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 461.61  on 332  degrees of freedom
+Residual deviance: 396.64  on 331  degrees of freedom
+  (11 observations deleted due to missingness)
+AIC: 400.64
+
+Number of Fisher Scoring iterations: 4</code></pre>
+</div>
+</div>
+</section>
+<section id="formula" class="slide level2">
+<h2>Formula</h2>
 <p>Call:</p>
 <p>glm(formula = sex ~ body_mass_g, family = “binomial”, data = penguins)</p>
 </section>
-<section id="distribution-family" class="slide level2">
-<h2>Distribution Family</h2>
-<p>Call:</p>
-<p>glm(formula = sex ~ body_mass_g, family = <strong>“?????”</strong>, data = penguins)</p>
+<section id="coefficients" class="slide level2">
+<h2>Coefficients</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = sex ~ body_mass_g, family = "binomial", data = penguins)
+
+Coefficients:
+              Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept) -5.1625416  0.7243906  -7.127 1.03e-12 ***
+body_mass_g  0.0012398  0.0001727   7.177 7.10e-13 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 461.61  on 332  degrees of freedom
+Residual deviance: 396.64  on 331  degrees of freedom
+  (11 observations deleted due to missingness)
+AIC: 400.64
+
+Number of Fisher Scoring iterations: 4</code></pre>
+</div>
+</div>
 </section>
-<section id="generalized-linear-models" class="slide level2 center">
-<h2>Generalized Linear Models</h2>
-</section>
-<section id="generalized-linear-models-1" class="slide level2">
-<h2>Generalized Linear Models</h2>
+<section id="coefficients-1" class="slide level2">
+<h2>Coefficients</h2>
+<p>sex = -5.1625+0.0012*body mass</p>
 <ul>
-<li>Range of Y is restricted (e.g.&nbsp;counts, proportions, binary, duration)</li>
-<li>Effects are no additive (interactions are present)</li>
-<li>Variance depends on th mean (larger mean =&gt; larger variance)</li>
+<li>if a penguin weights 0, than it has a negative probability of having a sex (meaningless)</li>
+<li><strong>the likelihood of being “male” increases by a factor of 0.0012 for each gram (g) of increase in weight.</strong></li>
 </ul>
-<p>Generalized linear models specify a non-linear <strong>link function</strong> and variance function to allow for such things, while maintaining the simple interpretation of linear models.</p>
 </section>
-<section id="visualisation" class="slide level2">
-<h2>Visualisation</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="fu">library</span>(AER)    </span>
-<span id="cb3-2"><a href=""></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb3-3"><a href=""></a><span class="fu">data</span>(CASchools)</span>
-<span id="cb3-4"><a href=""></a></span>
-<span id="cb3-5"><a href=""></a>CASchools <span class="sc">%&gt;%</span> </span>
-<span id="cb3-6"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">size=</span>students<span class="sc">/</span>teachers) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-7"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">score=</span>(read<span class="sc">+</span>math)<span class="sc">/</span><span class="dv">2</span>)<span class="ot">-&gt;</span>CASchools</span>
-<span id="cb3-8"><a href=""></a><span class="fu">head</span>(CASchools)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  district                          school  county grades students teachers
-1    75119              Sunol Glen Unified Alameda  KK-08      195    10.90
-2    61499            Manzanita Elementary   Butte  KK-08      240    11.15
-3    61549     Thermalito Union Elementary   Butte  KK-08     1550    82.90
-4    61457 Golden Feather Union Elementary   Butte  KK-08      243    14.00
-5    61523        Palermo Union Elementary   Butte  KK-08     1335    71.50
-6    62042         Burrel Union Elementary  Fresno  KK-08      137     6.40
-  calworks   lunch computer expenditure    income   english  read  math
-1   0.5102  2.0408       67    6384.911 22.690001  0.000000 691.6 690.0
-2  15.4167 47.9167      101    5099.381  9.824000  4.583333 660.5 661.9
-3  55.0323 76.3226      169    5501.955  8.978000 30.000002 636.3 650.9
-4  36.4754 77.0492       85    7101.831  8.978000  0.000000 651.9 643.5
-5  33.1086 78.4270      171    5235.988  9.080333 13.857677 641.8 639.9
-6  12.3188 86.9565       25    5580.147 10.415000 12.408759 605.7 605.4
-      size  score
-1 17.88991 690.80
-2 21.52466 661.20
-3 18.69723 643.60
-4 17.35714 647.70
-5 18.67133 640.85
-6 21.40625 605.55</code></pre>
-</div>
-</div>
-</section>
-<section id="check-the-shape-of-the-correlation" class="slide level2">
-<h2>Check the “shape” of the correlation</h2>
-
-<img data-src="10_nonlinear_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
-<section id="testing-a-linear-model" class="slide level2">
-<h2>Testing a linear model</h2>
+<section id="deviance" class="slide level2">
+<h2>Deviance</h2>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
-lm(formula = score ~ income, data = CASchools)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--39.574  -8.803   0.603   9.032  32.530 
+glm(formula = sex ~ body_mass_g, family = "binomial", data = penguins)
 
 Coefficients:
-            Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept) 625.3836     1.5324  408.11   &lt;2e-16 ***
-income        1.8785     0.0905   20.76   &lt;2e-16 ***
+              Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept) -5.1625416  0.7243906  -7.127 1.03e-12 ***
+body_mass_g  0.0012398  0.0001727   7.177 7.10e-13 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 13.39 on 418 degrees of freedom
-Multiple R-squared:  0.5076,    Adjusted R-squared:  0.5064 
-F-statistic: 430.8 on 1 and 418 DF,  p-value: &lt; 2.2e-16</code></pre>
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 461.61  on 332  degrees of freedom
+Residual deviance: 396.64  on 331  degrees of freedom
+  (11 observations deleted due to missingness)
+AIC: 400.64
+
+Number of Fisher Scoring iterations: 4</code></pre>
 </div>
 </div>
 </section>
-<section id="tenting-a-quadratic-model" class="slide level2">
-<h2>Tenting a quadratic model</h2>
+<section id="deviance-pseudo-r²" class="slide level2">
+<h2>Deviance &amp; Pseudo-R²</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>null<span class="ot">&lt;-</span>m1<span class="sc">$</span>null.deviance<span class="sc">/-</span><span class="dv">2</span></span>
+<span id="cb7-2"><a href=""></a>model<span class="ot">&lt;-</span>m1<span class="sc">$</span>deviance<span class="sc">/-</span><span class="dv">2</span></span>
+<span id="cb7-3"><a href=""></a>(null<span class="sc">-</span>model)<span class="sc">/</span>null</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1407346</code></pre>
+</div>
+</div>
+<p>This is the overall effect size of our model</p>
+<h2>
+Not very high
+</h2><h2>
+</h2></section>
+<section id="logistic-models-for-frequency-data" class="slide level2">
+<h2>Logistic Models for frequency data</h2>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
-lm(formula = score ~ income + I(income^2), data = CASchools)
-
-Residuals:
-    Min      1Q  Median      3Q     Max 
--44.416  -9.048   0.440   8.347  31.639 
+glm(formula = sex ~ ., family = "binomial", data = penguins)
 
 Coefficients:
-             Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept) 607.30174    3.04622 199.362  &lt; 2e-16 ***
-income        3.85099    0.30426  12.657  &lt; 2e-16 ***
-I(income^2)  -0.04231    0.00626  -6.758 4.71e-11 ***
+                    Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)       310.553424 632.100857   0.491  0.62321    
+speciesChinstrap   -7.624848   1.714564  -4.447 8.70e-06 ***
+speciesGentoo      -8.766260   2.679151  -3.272  0.00107 ** 
+islandDream         0.394305   0.817853   0.482  0.62972    
+islandTorgersen    -0.513102   0.849231  -0.604  0.54571    
+bill_length_mm      0.627014   0.134709   4.655 3.25e-06 ***
+bill_depth_mm       1.613122   0.338498   4.766 1.88e-06 ***
+flipper_length_mm   0.037682   0.051547   0.731  0.46476    
+body_mass_g         0.005717   0.001090   5.244 1.58e-07 ***
+year               -0.195493   0.316257  -0.618  0.53648    
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 12.72 on 417 degrees of freedom
-Multiple R-squared:  0.5562,    Adjusted R-squared:  0.554 
-F-statistic: 261.3 on 2 and 417 DF,  p-value: &lt; 2.2e-16</code></pre>
-</div>
-</div>
-</section>
-<section id="visualising" class="slide level2">
-<h2>Visualising</h2>
+(Dispersion parameter for binomial family taken to be 1)
 
-<img data-src="10_nonlinear_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
-<section id="comparing-models" class="slide level2">
-<h2>Comparing models</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>Analysis of Variance Table
-
-Model 1: score ~ income
-Model 2: score ~ income + I(income^2)
-  Res.Df   RSS Df Sum of Sq      F    Pr(&gt;F)    
-1    418 74905                                  
-2    417 67510  1    7394.9 45.677 4.713e-11 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
-</div>
-</div>
-</section>
-<section id="poisson-distribution" class="slide level2">
-<h2>Poisson distribution</h2>
-<p>We often use the Poisson distribution to model count data, that is that our response variable takes nonnegative integers. If Y∼Poi(λ) with λ&gt;0</p>
-
-<img data-src="10_nonlinear_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
-<section id="poisson-distribution-pmf" class="slide level2">
-<h2>Poisson distribution PMF</h2>
-<p><span class="math display">\[
-P(Y = y) = \frac{\lambda^{y}  e^{- \lambda}}{y!}
-\]</span></p>
-
-<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Poisson_pmf.svg/1280px-Poisson_pmf.svg.png" class="r-stretch"></section>
-<section id="poisson-model" class="slide level2">
-<h2>Poisson Model</h2>
-<p><span class="math display">\[
-ln(\lambda) = \beta_0+\beta_1x_1
-\]</span></p>
-<p><span class="math display">\[
-\lambda = e^{\beta_0+\beta_1x_1}
-\]</span> - In R</p>
-<p>glm(response~explanatory, family=poisson, data)</p>
-</section>
-<section id="lets-model" class="slide level2">
-<h2>Let’s model</h2>
-
-<img data-src="10_nonlinear_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
-<section id="lets-model-1" class="slide level2">
-<h2>Let’s model</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:  glm(formula = count ~ level, family = poisson, data = advert)
-
-Coefficients:
-(Intercept)        level  
-    -1.2904       0.3756  
-
-Degrees of Freedom: 59 Total (i.e. Null);  58 Residual
-Null Deviance:      267.5 
-Residual Deviance: 97.33    AIC: 287.1</code></pre>
-</div>
-</div>
-<p><span class="math display">\[\lambda = e^{-1.29+0.37x_1}\]</span></p>
-</section>
-<section id="overdispersion" class="slide level2">
-<h2>Overdispersion</h2>
-
-<img data-src="https://bookdown.org/roback/bookdown-BeyondMLR/bookdown-BeyondMLR_files/figure-html/OLSpois-1.png" class="r-stretch"></section>
-<section id="overdispersion-model" class="slide level2">
-<h2>Overdispersion Model</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-glm(formula = trips ~ ., family = poisson, data = RecreationDemand)
-
-Coefficients:
-             Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)  0.264993   0.093722   2.827  0.00469 ** 
-quality      0.471726   0.017091  27.602  &lt; 2e-16 ***
-skiyes       0.418214   0.057190   7.313 2.62e-13 ***
-income      -0.111323   0.019588  -5.683 1.32e-08 ***
-userfeeyes   0.898165   0.078985  11.371  &lt; 2e-16 ***
-costC       -0.003430   0.003118  -1.100  0.27131    
-costS       -0.042536   0.001670 -25.467  &lt; 2e-16 ***
-costH        0.036134   0.002710  13.335  &lt; 2e-16 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-(Dispersion parameter for poisson family taken to be 1)
-
-    Null deviance: 4849.7  on 658  degrees of freedom
-Residual deviance: 2305.8  on 651  degrees of freedom
-AIC: 3074.9
-
-Number of Fisher Scoring iterations: 7</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-    Overdispersion test
-
-data:  poiss_model2
-z = 2.4116, p-value = 0.007941
-alternative hypothesis: true alpha is greater than 0
-sample estimates:
- alpha 
-5.5658 </code></pre>
-</div>
-</div>
-</section>
-<section id="overdispersion-model-1" class="slide level2">
-<h2>Overdispersion Model</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-glm(formula = trips ~ ., family = quasipoisson, data = RecreationDemand)
-
-Coefficients:
-             Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)  0.264993   0.235209   1.127  0.26031    
-quality      0.471726   0.042891  10.998  &lt; 2e-16 ***
-skiyes       0.418214   0.143527   2.914  0.00369 ** 
-income      -0.111323   0.049160  -2.265  0.02387 *  
-userfeeyes   0.898165   0.198224   4.531 6.98e-06 ***
-costC       -0.003430   0.007824  -0.438  0.66129    
-costS       -0.042536   0.004192 -10.148  &lt; 2e-16 ***
-costH        0.036134   0.006800   5.314 1.48e-07 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-(Dispersion parameter for quasipoisson family taken to be 6.298289)
-
-    Null deviance: 4849.7  on 658  degrees of freedom
-Residual deviance: 2305.8  on 651  degrees of freedom
-AIC: NA
+    Null deviance: 461.61  on 332  degrees of freedom
+Residual deviance: 125.66  on 323  degrees of freedom
+  (11 observations deleted due to missingness)
+AIC: 145.66
 
 Number of Fisher Scoring iterations: 7</code></pre>
 </div>
 </div>
+</section>
+<section id="deviance-pseudo-r²-1" class="slide level2">
+<h2>Deviance &amp; Pseudo-R²</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href=""></a>null2<span class="ot">&lt;-</span>m2<span class="sc">$</span>null.deviance<span class="sc">/-</span><span class="dv">2</span></span>
+<span id="cb10-2"><a href=""></a>model2<span class="ot">&lt;-</span>m2<span class="sc">$</span>deviance<span class="sc">/-</span><span class="dv">2</span></span>
+<span id="cb10-3"><a href=""></a>(null2<span class="sc">-</span>model2)<span class="sc">/</span>null2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7277702</code></pre>
+</div>
+</div>
+<p>This is the overall effect size of our model</p>
+<h2>
+Fair enough
+</h2><h2>
+</h2></section>
+<section id="final-model" class="slide level2">
+<h2>Final Model</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href=""></a>m3<span class="ot">&lt;-</span><span class="fu">glm</span>(sex<span class="sc">~</span>bill_length_mm<span class="sc">+</span></span>
+<span id="cb12-2"><a href=""></a>          bill_depth_mm<span class="sc">+</span></span>
+<span id="cb12-3"><a href=""></a>          body_mass_g, </span>
+<span id="cb12-4"><a href=""></a>        <span class="at">family =</span> <span class="st">"binomial"</span>, </span>
+<span id="cb12-5"><a href=""></a>        <span class="at">data=</span>penguins)</span>
+<span id="cb12-6"><a href=""></a><span class="fu">summary</span>(m3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+glm(formula = sex ~ bill_length_mm + bill_depth_mm + body_mass_g, 
+    family = "binomial", data = penguins)
+
+Coefficients:
+                 Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)    -6.056e+01  7.081e+00  -8.552  &lt; 2e-16 ***
+bill_length_mm  9.151e-02  4.416e-02   2.072   0.0382 *  
+bill_depth_mm   2.063e+00  2.469e-01   8.356  &lt; 2e-16 ***
+body_mass_g     5.061e-03  6.348e-04   7.971 1.57e-15 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 461.61  on 332  degrees of freedom
+Residual deviance: 159.89  on 329  degrees of freedom
+  (11 observations deleted due to missingness)
+AIC: 167.89
+
+Number of Fisher Scoring iterations: 7</code></pre>
+</div>
+</div>
+</section>
+<section id="deviance-pseudo-r²-2" class="slide level2">
+<h2>Deviance &amp; Pseudo-R²</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href=""></a>null3<span class="ot">&lt;-</span>m3<span class="sc">$</span>null.deviance<span class="sc">/-</span><span class="dv">2</span></span>
+<span id="cb14-2"><a href=""></a>model3<span class="ot">&lt;-</span>m3<span class="sc">$</span>deviance<span class="sc">/-</span><span class="dv">2</span></span>
+<span id="cb14-3"><a href=""></a>(null3<span class="sc">-</span>model3)<span class="sc">/</span>null3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.6536294</code></pre>
+</div>
+</div>
+<p>This is the overall effect size of our model</p>
+<h2>
+Still fair enough
+</h2><h2>
+</h2></section>
+<section id="odds-ratio" class="slide level2">
+<h2>Odds ratio</h2>
+
+<img data-src="https://www.scalestatistics.com/uploads/3/0/4/1/30413390/7973756_orig.jpg" class="r-stretch"></section>
+<section id="example-1---penguins-sex" class="slide level2">
+<h2>Example 1 - Penguin’s sex</h2>
+<p>sex = -5.1625+0.0012*body mass</p>
+<ul>
+<li>if a penguin weights 0, than it has a negative probability of having a sex (meaningless)</li>
+<li><strong>the likelihood of being “male” increases by a factor of 0.0012 for each gram (g) of increase in weight.</strong></li>
+</ul>
+</section>
+<section id="example-1---penguins-sex-1" class="slide level2">
+<h2>Example 1 - Penguin’s sex</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href=""></a>penguins <span class="sc">%&gt;%</span> </span>
+<span id="cb16-2"><a href=""></a>  <span class="fu">mutate</span>(<span class="at">size=</span><span class="fu">ifelse</span>(body_mass_g<span class="sc">&gt;</span><span class="dv">4202</span>, <span class="st">"large"</span>, <span class="st">"small"</span>))<span class="ot">-&gt;</span>penguins2</span>
+<span id="cb16-3"><a href=""></a></span>
+<span id="cb16-4"><a href=""></a>  <span class="fu">xtabs</span>(<span class="sc">~</span>size<span class="sc">+</span>sex, <span class="at">data=</span>penguins2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       sex
+size    female male
+  large     53   92
+  small    112   76</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href=""></a>(<span class="dv">53</span><span class="sc">/</span><span class="dv">92</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.576087</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href=""></a>(<span class="dv">112</span><span class="sc">/</span><span class="dv">76</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.473684</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href=""></a>(<span class="dv">53</span><span class="sc">/</span><span class="dv">92</span>)<span class="sc">/</span>(<span class="dv">112</span><span class="sc">/</span><span class="dv">76</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.3909161</code></pre>
+</div>
+</div>
+<p>Check <a href="https://www.youtube.com/watch?v=8nm0G-1uJzA">this video</a> for a great explanation on logs ratio</p>
+</section>
+<section id="modeling-probabilities" class="slide level2">
+<h2>Modeling probabilities</h2>
+
+<img data-src="10_grouping_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+<section id="review" class="slide level2">
+<h2>Review</h2>
+<ul>
+<li>Separate variables into meaningful groups</li>
+<li>Calculate odds and probabilities</li>
+<li>Model the likelihood of an “event”</li>
+</ul>
 </section>
 <section id="end-of-class-da" class="slide level2">
 <h2>End of Class DA</h2>
@@ -729,20 +736,20 @@ Number of Fisher Scoring iterations: 7</code></pre>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="10_nonlinear_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="10_grouping_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="10_nonlinear_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="10_nonlinear_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="10_nonlinear_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="10_nonlinear_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="10_nonlinear_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="10_nonlinear_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="10_nonlinear_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="10_nonlinear_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="10_nonlinear_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="10_nonlinear_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="10_grouping_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
