@@ -1,0 +1,71 @@
+---
+title: "11 - Module Review 1"
+subtitle: " "
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Conservation Priorities"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+## This review is intended to:
+
+- Pinpoint the most important subjects discussed
+- General clarifications
+- [Simulation for the exam]{style="color: red;"} 
+
+
+## Broad Subject 1 - A broad view of conservation
+
+- What are the challenges of conservation?
+- What are the sources of bias?
+- History, current trends, etc...
+- Opinion is important, neutrality should be avoided
+
+## Subject 2 - Core principles and tools of SCP
+- What are Systematic Conservation Plans?
+- What are the tools and core principles
+- Have some examples in mind...
+
+## What are the challenges of conservation?
+
+- Number of the biodiversity crisis
+  - Is society aware of the magnitude of life on Earth?
+  - Do you manage extinction numbers?
+  
+## What are the sources of bias?
+
+- Conservation is based on data
+  - Known and unknown taxa
+  - Flag species, charismatic species, key species
+  - Area-based conservation & Other effective conservation measures
+  - Social meaning of PA
+
+## History of Conservation
+- How conservation movement evolved?
+- Land, freshwater and marine
+- What are the actual trends in terms of types of conservation actions?
+
+## How to write in 1500 words +/- 10%?
+- 3 pages single spaced
+- Plan your writing
+- Why, How and What
+- Use examples (but not only)
+- Make sure you express YOUR thoughts
+- Draw conclusions
+
+## The end
+
+
+
+
+

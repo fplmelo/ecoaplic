@@ -1,0 +1,36 @@
+---
+title: "12 - Module Review 2"
+subtitle: " "
+author: "Felipe Melo"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    logo: img/ntu_logo.png
+    #footer: "Conservation Priorities"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+
+
+## Subject 3 - Climate change
+- What is climate changes, causes and consequences for the biodiversity?
+- Differ natural processes from human-driven causes of CC
+- How species respond to climate change?
+- How climate change overlaps with other human-caused disturbances?
+- Bear in mind examples of biodiversity responses to CC
+
+## Subject 4 - Political Ecology
+- Know how to define Political Ecology
+- Relevant principles of Political Ecology
+- How can PE help conservation?
+
+## Subject 5 - Applications
+- Apply all your knowledge to make critical evaluation of conservation priorities
+
