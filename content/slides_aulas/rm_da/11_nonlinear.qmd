@@ -154,7 +154,7 @@ linear_model<- lm(score ~ income, data = CASchools)
 summary(linear_model)
 ```
 
-## Tenting a quadratic model
+## Testing a quadratic model
 
 ```{r}
 quadratic_model <- lm(score ~ income + I(income^2), data = CASchools)
@@ -179,9 +179,91 @@ CASchools %>%
 anova(linear_model, quadratic_model)
 ```
 
-## Poisson distribution
+## Examples of quadratic distribution
+
+![](img/boom.jpg)
+
+## Poisson distributions
+:::{.columns}
+:::{.column}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Chewing_gum_on_a_sidewalk_in_Reykjav%C3%ADk.JPG/800px-Chewing_gum_on_a_sidewalk_in_Reykjav%C3%ADk.JPG)
+:::
+:::{.column}
+$$
+λ=mean 
+$$
+
+$$
+k = occurences
+$$
 
 
+$$
+probability = {\displaystyle {\frac {\lambda ^{k}e^{-\lambda }}{k!}}.}
+$$
+:::
+:::
+
+
+## Poisson distributions
+
+```{r}
+library(datasets) # include library datasets after installation
+hist(warpbreaks$breaks)
+
+```
+
+
+## Poisson Models
+
+```{r}
+
+poisson.model<-glm(breaks ~ wool + tension, warpbreaks, family = poisson(link = "log"))
+summary(poisson.model)
+
+```
+
+## Interpreting the coefficients
+
+In the Poisson distribution formula, lambda (λ) is the mean number of events within a given interval of time or space
+
+```{r}
+library(broom)
+library(tidyverse)
+poisson.model %>% 
+  broom::tidy() %>% 
+  gt::gt()
+
+```
+
+$$
+\lambda = e^{3.69-0.20x1-0.32x2-0.51x3}
+$$
+
+Number of breaks decreases by 0.81 when wool type changes from A to B
+
+## Poisson Models (predict)
+
+```{r}
+# make a dataframe with new data
+newdata = data.frame(wool = "B", tension = "M")
+
+# use 'predict()' to run model on new data
+predict(poisson.model, newdata = newdata, type = "response")
+
+```
+
+## Visulaising
+
+```{r}
+
+warpbreaks %>% 
+  ggplot(aes(tension, breaks, color=wool))+
+  geom_boxplot()+
+  geom_smooth(method = "glm",
+              se=F,
+              method.args=list(family="poisson"))
+```
 
 
 ## End of Class DA
