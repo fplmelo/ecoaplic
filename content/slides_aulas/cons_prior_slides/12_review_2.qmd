@@ -18,13 +18,13 @@ format:
 ---
 
 
-
 ## Subject 3 - Climate change
 - What is climate changes, causes and consequences for the biodiversity?
 - Differ natural processes from human-driven causes of CC
 - How species respond to climate change?
 - How climate change overlaps with other human-caused disturbances?
 - Bear in mind examples of biodiversity responses to CC
+
 
 ## Subject 4 - Political Ecology
 - Know how to define Political Ecology
@@ -33,4 +33,7 @@ format:
 
 ## Subject 5 - Applications
 - Apply all your knowledge to make critical evaluation of conservation priorities
+- When using examples to describe problems and solutions, put your learning in practice
+
+
 
