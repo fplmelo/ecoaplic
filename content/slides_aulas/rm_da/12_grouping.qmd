@@ -1,0 +1,114 @@
+---
+title: "12-Multivariate Analyses"
+subtitle: "Grouping techniques "
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: img/ntu_logo.png
+    footer: "Research Methods & Data Analysis"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+    title-block-banner: true
+
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+#install.packages("gmodels")
+library(gmodels)
+library(kableExtra)
+library(gtable)
+library(ggpubr)
+library(broom)
+
+
+```
+
+
+## You should know today:
+
+- How to make use of multivariate analyses
+- Understand grouping techniques
+- Reduction of dimensions
+
+
+
+## Types of variables (review)
+
+::::{.columns}
+:::{.column .fragment}
+**Categorical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_3.png)
+
+:::
+
+:::{.column .fragment}
+**Numerical**
+
+![](https://static-assets.codecademy.com/Courses/Hypothesis-Testing/Intro_to_variable_types_4.png)
+
+:::
+::::
+
+## Back to the toolbox
+
+![](img/toolkit.png){fig-align="center"}
+
+## Why Multivariate Analyses?
+
+![](https://imgs.xkcd.com/comics/linear_regression.png){fig-align=center}
+
+## Why Multivariate Analyses?
+
+- Uncover patterns, trends and dependencies on data
+- Grouping
+- Reduction in dimensionality
+
+## When MA is important?
+
+![](https://upload.wikimedia.org/wikipedia/commons/6/66/Univariate_vs._Multivariate.jpg){fig-align="center"}
+
+## When MA is important?
+
+![](https://science.uct.ac.za/sites/default/files/content_migration/science_uct_ac_za/708/images/Multivariate.png){fig-align="center"}
+
+## Types of MA
+![](https://www.shimadzu.com/an/sites/shimadzu.com.an/files/d7/ckeditor/an/uv/support/uv/ap/n9j25k000003abud-img/n9j25k000003ac2n.jpg)
+
+:::{.footer}
+[source](https://www.shimadzu.com/an/service-support/technical-support/technical-information/uv-vis/uv-ap/multivariate/index.html)
+:::
+
+## Grouping
+
+```{r}
+library("FactoMineR")
+library("factoextra")
+
+iris.pca <- PCA(iris[,-5], graph = FALSE)
+
+
+fviz_pca_ind(iris.pca,
+             geom.ind = "point", # show points only (nbut not "text")
+             col.ind = iris$Species, # color by groups
+             palette = c("#00AFBB", "#E7B800", "#FC4E07"),
+             addEllipses = TRUE, # Concentration ellipses
+             legend.title = "Groups"
+             )
+
+```
+
+![](https://www.sthda.com/english/sthda-upload/figures/principal-component-methods/006-principal-component-analysis-individuals-factor-map-color-by-groups-1.png)
+
+## End of Class DA
+
+
