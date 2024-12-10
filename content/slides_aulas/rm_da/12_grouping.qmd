@@ -109,6 +109,148 @@ fviz_pca_ind(iris.pca,
 
 ![](https://www.sthda.com/english/sthda-upload/figures/principal-component-methods/006-principal-component-analysis-individuals-factor-map-color-by-groups-1.png)
 
+## Cluster Analysis
+
+```{r}
+clusters <- hclust(dist(iris[, 3:4]))
+plot(clusters)
+
+```
+
+## Cluster Analysis
+
+![](https://blog.bismart.com/hubfs/Imported_Blog_Media/Clustering%26clasification-Animales-Sep-26-2023-09-13-22-7262-AM.gif)
+
+## CLuster Analysis
+
+```{r}
+
+ggplot(iris, aes(Petal.Length, Petal.Width, col=Species)) + geom_point() + ggtitle("iris scatter plot")
+
+```
+
+## Cluster Analysis (K-means)
+
+```{r}
+#| echo: true
+set.seed(55)
+cluster.iris <- kmeans(iris[, 3:4], 3, nstart = 20)
+cluster.iris
+```
+
+## Cluster Analysis (K-means)
+
+```{r}
+#| echo: true
+
+table(cluster.iris$cluster, iris$Species)
+
+```
+
+## Distance methods
+
+Euclidean
+
+```{r}
+#| echo: true
+dist(iris[,1:4])
+
+```
+
+## Euclidean distance
+
+![](img/euclidean.png)
+
+## Non-Euclidean grouping
+Non-metric multidimensional scaling
+
+```{r}
+#| include: false
+#| echo: true
+
+library(vegan)
+nmds<-metaMDS(iris[,1:4])
+```
+
+
+```{r}
+#| echo: true
+
+nmds$points
+```
+
+## Principal Component Analysis{.center}
+
+## PCA
+
+```{r}
+library("FactoMineR")
+library("factoextra")
+
+iris.pca <- PCA(iris[,-5], graph = FALSE)
+
+iris.pca
+
+```
+
+## PCA - Eigenvectors
+
+```{r}
+iris.pca$eig
+
+```
+
+## PCA - Loadings of variables
+
+```{r}
+iris.pca$var
+
+```
+
+## PCA - Loadings of observations
+
+```{r}
+
+iris.pca$ind
+
+```
+
+## PCA - Summary
+
+```{r}
+#| echo: true
+summary(iris.pca)
+```
+
+## PCA visualization
+
+```{r}
+fviz_pca_var(iris.pca, col.var="contrib",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+             repel = TRUE # Avoid text overlapping
+             )
+
+```
+
+
+## PCA visualization
+
+```{r}
+fviz_pca_ind(iris.pca, col.ind = "cos2",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07") )
+```
+
+## PCA visualization
+
+```{r}
+fviz_pca_ind(iris.pca,
+             label = "none", # hide individual labels
+             habillage = iris$Species, # color by groups
+             palette = c("#00AFBB", "#E7B800", "#FC4E07"),
+             addEllipses = TRUE # Concentration ellipses
+             )
+```
+
 ## End of Class DA
 
 
