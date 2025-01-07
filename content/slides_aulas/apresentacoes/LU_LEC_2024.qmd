@@ -1,0 +1,93 @@
+---
+title: "Biocultural restoration"
+subtitle: "challenges for an inclusive 'planetary repair'"
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    #logo: libs/ntu_logo.png
+    footer: "LEC Winter Conference 2024"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## Please define "repair"
+
+- Gemini - **Repair** means to restore something that is damaged, broken, or not working correctly back to good condition or working order. It involves fixing, mending, or replacing parts to make it functional again.
+
+- ChatGPT - The term **"repair"** refers to the process of fixing or restoring something that is damaged, broken, or not functioning properly. It involves making necessary adjustments, replacements, or improvements to bring an object, system, or condition back to its original or working state.
+
+
+
+## Can you define Planetary Repair?
+:::{.columns}
+:::{.column}
+ Image spontaneously presented by Gemini :point_down:
+![](libs/prt.jpg)
+
+:::
+
+:::{.column}
+
+Planetary Repair is a relatively new and evolving concept that focuses on actively **restoring** the Earth's natural systems to a **healthy** state. It goes beyond simply mitigating damage and aims to actively **reverse** environmental degradation and promote ecological restoration.
+
+:::
+:::
+
+## Can you provide an image of Planetary Repair?
+*Chat-GPT
+
+![](libs/pr_img.webp)
+
+
+## Biocultural "Repair"
+
+![](libs/bicult_model.png){fig-align=center}
+
+## Biocultural "Repair"
+
+![](libs/rest_scenarios.png){fig-align=center}
+
+## Arising question?
+
+
+What are the new features of "Planetary Repairs?
+
+::: {style="font-size: 70%;"}
+
+| | Virtuous Stewardship | Pragmatic Wise Use | Autonomous Nature | Planetary Repair|
+|---|---|---|---|---|
+| Values | Rights to live | Practical usefulness | Natural processes | ???
+| Beliefs | Nature is under pressure | Biodiversity provides stability | Nature is dynamic | ???
+| Human-nature relationship |Nature is dependent on humans | We are allowed to make use of nature | Human influence as negative | ???
+
+Moidified from [Hertog & Turnhout (2018)](https://onlinelibrary.wiley.com/doi/10.1111/rec.12680)
+
+
+:::
+
+
+## {background-image="libs/otromundo.jpg" background-size=contain}
+
+## Thank you{.center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
