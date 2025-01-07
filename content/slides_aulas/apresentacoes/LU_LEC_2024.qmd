@@ -10,7 +10,7 @@ format:
     incremental: true
     chalkboard: true
     #logo: libs/ntu_logo.png
-    footer: "LEC Winter Conference 2024"
+    footer: "LEC Winter Conference 2025"
     slide-number: true
     transition: slide
     background-transition: fade
@@ -28,7 +28,7 @@ format:
 :::{.columns}
 :::{.column}
  Image spontaneously presented by Gemini :point_down:
-![](libs/prt.jpg)
+![](libs/prt.jpg){width=80%}
 
 :::
 
