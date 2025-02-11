@@ -8,7 +8,7 @@
 <link href="ARES_RC_2024_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="ARES_RC_2024_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="ARES_RC_2024_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.555">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Felipe Melo">
   <title>BioRestNet: a network of biocultural restoration</title>
@@ -374,8 +374,7 @@ Felipe Melo
 <li class="fragment">Would benefit from interdisciplinary</li>
 <li class="fragment">Largely related to nature and livelihoods</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="tek-for-assessing-landscapes" class="slide level2">
 <h2>TEK for Assessing Landscapes</h2>
@@ -389,8 +388,7 @@ Felipe Melo
 <li class="fragment">Landscape Biographies</li>
 <li class="fragment">Unforeseen landscape metrics</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="tek-for-ecology" class="slide level2">
 <h2>TEK for Ecology</h2>
@@ -404,8 +402,7 @@ Felipe Melo
 <li class="fragment">Role of secondary succession</li>
 <li class="fragment">Technical recommendations</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="tek-for-adding-value-to-restoration" class="slide level2">
 <h2>TEK for adding value to restoration</h2>
@@ -418,8 +415,7 @@ Felipe Melo
 <li class="fragment">Enforcement of alternative knowledge systems</li>
 <li class="fragment">Environmental Justice</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="why-a-network" class="slide level2">
 <h2>Why a network?</h2>
@@ -434,8 +430,7 @@ Felipe Melo
 <li>Strengthen actions</li>
 <li>Disseminate models</li>
 </ul>
-</div>
-</div>
+</div></div>
 </div>
 </section>
 <section id="an-example-from-the-brazilian-caatinga" class="slide level2">
@@ -453,8 +448,7 @@ Felipe Melo
 </div>
 </div><div class="column" style="width:50%;">
 <p><img data-src="libs/biocult.png" class="absolute" style="top: 50px; right: 20px; "></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>
@@ -501,8 +495,7 @@ Felipe Melo
 <p><img data-src="libs/traits_plants.jpg"></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="libs/zootrait.jpeg"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="module-2---landscape-scale" class="slide level2 center">
 <h2>Module 2 - Landscape Scale</h2>
@@ -522,8 +515,7 @@ Felipe Melo
 <li class="fragment">16 cluster</li>
 <li class="fragment">10 plots per cluster</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="module-3---local-manipulative-experiment" class="slide level2">
 <h2>Module 3 - Local manipulative experiment</h2>
@@ -536,8 +528,7 @@ Felipe Melo
 <li class="fragment">Functional diversity</li>
 <li class="fragment">Measure Ecosystem Functions</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="how-to-mainstream-biocultural-restoration" class="slide level2">
 <h2>How to mainstream Biocultural Restoration?</h2>
@@ -810,18 +801,7 @@ Felipe Melo
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -853,7 +833,29 @@ Felipe Melo
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -861,7 +863,7 @@ Felipe Melo
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

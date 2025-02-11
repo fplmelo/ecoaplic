@@ -1,0 +1,130 @@
+---
+title: "Grade Report on RM&DA 24-25"
+author: "Felipe Melo"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: libs/ntu_logo.png
+    footer: "Research Methods & Data Analyses 2024-25"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+
+---
+
+## Why this presentation?
+
+- This is a brief summary of the grades of this cohort
+- Intends to provide an overview of the 24-25 population
+- Understand strengths and weakenesses
+- Provide overall feedback
+
+## Overview
+
+```{r}
+#| include: false
+#| echo: true
+grades_rmda <- read.csv("~/Google Drive/NTU/teaching/RMDA/grades_rmda.csv")
+
+```
+
+- 70 exams submitted :anguished:
+- 48% Distinction + Commendation :sunglasses:
+- Only 5 failed :persevere:
+- 2 weeks of reading of hundreds of pages and codes :tired_face:
+
+## Distribution of grades
+
+```{r}
+library(tidyverse)
+library(ggrepel)
+
+# Add label position
+grades_rmda %>% 
+  mutate_all(na_if,"") %>% 
+  na.omit() %>% 
+  count(grade) %>%
+  # group_by(grade) %>%          # now required with changes to dplyr::count()
+  mutate(prop = prop.table(n)) -> grades_rmda 
+grades_rmda %>% 
+  mutate(csum = rev(cumsum(rev(n))), 
+         pos = n/2 + lead(csum, 1),
+         pos = if_else(is.na(pos), n/2, pos)) %>% 
+mutate(grade=fct_relevel(grade,c("FLOW","FMID","PLOW","PMID","PHIGH","CLOW","CMID","CHIGH","DLOW","DMID","DHIGH","DEXC"))) %>% 
+  ggplot(aes(x=grade, y= n, fill=grade)) +
+  geom_col()
+  #geom_bar(stat="identity", width=1, color="white") +
+  #coord_polar("y", start=0) +
+  #geom_text(aes(x = 1.6, label = scales::percent(prop, accuracy = .1)), position = position_stack(vjust = .5)) +
+  #scale_fill_discrete(direction=-1)+
+  #theme_void() # remove background, grid, numeric labels
+
+  
+```
+Generally good grades, distributed towards higher marks
+
+## What about each session?
+
+```{r}
+grades_rmda <- read.csv("~/Google Drive/NTU/teaching/RMDA/grades_rmda.csv")
+
+grades_rmda %>% 
+  pivot_longer(cols= title:norms,
+               names_to = "session",
+               values_to = "mark",
+               values_drop_na = TRUE) %>%
+  mutate_all(na_if,"") %>%
+  na.omit() -> grades_per_question
+
+grades_per_question %>% 
+  mutate(mark=fct_relevel(mark,c("FLOW","FMID","FMARG", "PLOW","PMID","PHIGH","CLOW","CMID","CHIGH","DLOW","DMID","DHIGH","DEXC"))) %>% 
+  group_by(session, mark) %>% 
+  summarise(n=n()) %>% 
+  mutate(session=factor(session, levels = c("title","intro","meth","res","disc","norms"))) %>% 
+  ggplot(aes(session, n, fill=mark))+
+  geom_col(position = "fill")+
+  #theme_bw()+theme(legend.position = "none")+
+  theme(text = element_text(size=20))+
+  labs(x= "Session", y = "Proportion of grades")
+
+```
+
+Nice title pages, variation in all other aspects. attention to norms, where many failed
+
+## Negative Highlights
+
+- Poorly commented R scripts or Rpubs persists
+- Lots of misinterpretations of figures and analyses
+- Unnecessary complex analyses
+- Excessive descriptive analyses in the papers rather than in the scripts
+
+## Positive Highlights
+- Good grades reflect ability of the cohort to thrive. Well done!
+- Incorporation of ethics statements
+- Some interesting creative approaches for figures, tables and analyses
+
+
+## Things to improve in the RM&DA Module
+- Next year's data will be on Pokemons (really) to expand reasoning 
+- Invest on well-commented scripts rather than a whole paper
+
+## Final comments
+:::{columns}
+
+:::{.column}
+- I am very happy with the overall performance of the cohort
+- This is a difficult module and we all learned from challenges
+- Stats is a never-ending learning process, keep practicing
+:::
+
+:::{.column}
+
+![](https://www.davidzeleny.net/anadat-r/lib/exe/fetch.php/obrazky:logo-of-heart_200.png){width="180%"}
+
+:::
+:::
+
+
