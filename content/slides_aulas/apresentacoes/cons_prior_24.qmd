@@ -1,0 +1,190 @@
+---
+title: "Conservation Priorities 2024-25"
+author: "Felipe Melo"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: libs/ntu_logo.png
+    footer: "ARES Research Conference 2024"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## Questions
+
+1)  Please write a critical piece of text commenting on how difficult it is to set priorities for conservation in face of many actors involved and power imbalances among them. Use an example of prioritization to illustrate the positive and negative aspects every exercise of prioritization carries, inherently.
+
+2)  Describe and comment on the utility of the most used spatial tools (e.g. GIS) for setting priorities for conservation. Use any known exercise that resulted into public policies for conservation, either nationally or globally.
+
+## Questions
+
+3)  Critically assess why human-induced climate change may affect the robustness of public policies generated after exercises of prioritization for conservation.
+
+4)  Comment on the utility of political ecology to pursue environmental justice within conservation measures.
+
+5)  Critically evaluate the strengths and weaknesses of one of the following conservation prioritization frameworks:
+  a) Biodiversity Hotspots
+  b) Half-earth
+  c) Convivial Conservation
+
+```{r echo=FALSE}
+library(tidyverse)
+cons_prior <- read.csv("~/Google Drive/NTU/teaching/cons_prior/CP_24_25/grades_corrected.csv")
+
+cons_prior %>% 
+  pivot_longer(cols= q1:q5,
+               names_to = "question",
+               values_to = "mark",
+               values_drop_na = TRUE) %>% 
+  mutate(outcome=ifelse(mark<50 & mark>45, "FMARG",
+                  ifelse(mark<44 & mark>40, "FMID",
+                  ifelse(mark<=40 & mark>0, "FLOW",
+                  ifelse(mark>=50 & mark<54, "PLOW",
+                  ifelse(mark>53 & mark<57, "PMID",
+                  ifelse(mark>56 & mark<60, "PHIGH",
+                  ifelse(mark>59 & mark<64, "CLOW",
+                  ifelse(mark>63 & mark<67, "CMID",
+                  ifelse(mark>66 & mark<70, "CHIGH",
+                  ifelse(mark>69 & mark<78, "DLOW",
+                  ifelse(mark>77 & mark<85, "DMID",
+                  ifelse(mark>84 & mark<93, "DHIGH", 
+                  ifelse(mark>=93,"DEXC", "ZERO"
+                         ))))))))))))))->cons_prior
+
+```
+
+## Preferred Questions
+
+::::: columns
+::: {.column width="60%"}
+
+```{r echo=FALSE, fig.height=8}
+cons_prior %>% 
+  mutate(across(c(3,4),factor)) %>% 
+  ggplot(aes(x=question,fill=question))+
+  geom_bar(stat="count")+
+  theme_bw()+theme(legend.position = "none")+
+  theme(text = element_text(size=20))-> graf1
+
+graf1
+  
+```
+:::
+
+::: {.column width="40%"}
+-   Conservation Frameworks was the preferred
+-   Follows power imbalances in conservation priorities
+-   Very even, compared to previous years
+:::
+:::::
+
+## Performance per question
+
+::::: columns
+::: {.column width="60%"}
+```{r, echo = FALSE, fig.height=8}
+
+cons_prior$outcome<-as.factor(cons_prior$outcome)
+#levels(cons_prior$outcome)
+cons_prior %>% 
+  mutate(outcome = fct_relevel(outcome, c("PMID","CMID","CHIGH", "DLOW","DMID","DHIGH","DEXC"))) %>% 
+  group_by(question, outcome) %>% 
+  summarise(n=n()) %>% 
+  ggplot(aes(question, n, fill=outcome))+
+    geom_col(position = "fill")+
+  #theme_bw()+theme(legend.position = "none")+
+  theme(text = element_text(size=20))+
+  labs(x= "Question", y = "Proportion")->graf2
+graf2
+
+```
+:::
+
+::: {.column width="40%"}
+-   Climate change **needs more attention**
+-   Preferred questions has higher percentage of DEXC
+-   Comprehension on **political ecology** varies enormously
+:::
+:::::
+
+## Distribution of students' scores
+
+::::: columns
+::: {.column width="60%"}
+```{r echo=FALSE, fig.height=8}
+
+cons_prior %>%
+  group_by(name, id) %>%
+  na.omit() %>% 
+  summarise(grade = mean(mark)) %>%
+  mutate(outcome=ifelse(grade<50 & grade>45, "FMARG",
+                  ifelse(grade<44 & grade>40, "FMID",
+                  ifelse(grade<=40 & grade>0, "FLOW",
+                  ifelse(grade>=50 & grade<54, "PLOW",
+                  ifelse(grade>53 & grade<57, "PMID",
+                  ifelse(grade>56 & grade<60, "PHIGH",
+                  ifelse(grade>59 & grade<64, "CLOW",
+                  ifelse(grade>63 & grade<67, "CMID",
+                  ifelse(grade>66 & grade<70, "CHIGH",
+                  ifelse(grade>69 & grade<78, "DLOW",
+                  ifelse(grade>77 & grade<85, "DMID",
+                  ifelse(grade>84 & grade<93, "DHIGH", 
+                  ifelse(grade>=93,"DEXC", "ZERO"
+                         )))))))))))))) ->grades_final
+
+grades_final$outcome<-as.factor(grades_final$outcome)
+#levels(grades_final$outcome)
+
+data<-as.data.frame(table(grades_final$outcome))
+data %>% 
+  mutate(Var1 = fct_relevel(Var1, c("PHIGH","CLOW",  "CMID", "DLOW","DMID","DHIGH","DEXC"))) %>% 
+  ggplot(aes(x = "", y = Freq, fill = Var1)) +
+  geom_col(color = "White") +
+  geom_text(aes(label = Freq),
+            position = position_stack(vjust = 0.5)) +
+  coord_polar(theta = "y")+
+  guides(fill=guide_legend(title="Grade"))+
+  theme(legend.title = element_text(size=30))+
+  theme(legend.text = element_text(size=30))+
+
+   theme_void()
+
+```
+:::
+
+::: {.column width="40%"}
+-   0% failed (n=0)
+-   18% Distinction Excelence (n=6)
+-   40% Distinction High
+:::
+:::::
+
+## Highlights
+
+-   Clearly, an open book exam is a great opportunity for good grades
+-   Naïve arguments are still presented throughout the answers to most questions. This reflects lack of reading that leads to weak argumentation.
+-   Excess of examples and lack of in-depth analyses is also an issue
+
+
+## Highlights
+
+-   There were very good, concise and comprehensive answers (gold standard).
+-   Good answers = domain of concepts + critical thinking + deep argumentation
+-  I am glad of how students used political ecology in their responses.
+
+## Tips to improve
+
+-   Reading is certainly needed. The lack of sharp thinking reflect poor reading habits
+-   Avoid overuse of examples. They illustrate but cannot form the core of arguing and do not substitute the use of concepts
+-   Though Turnitin didn't detect significant plagiarism, sometimes the use of A.I. is noticed.
+
+## Final thoughts
+
+-   An exam where you must choose 3 out of 5 must not be seen as a big issue at your stage (Masters' degree)
+-   Come to see me if you want to receive specific suggestions to improve your learning process
+-   This is just an exam, it does not define what you are and will be as a professional (no matter the grade obtained)
+
