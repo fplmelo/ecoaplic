@@ -203,6 +203,8 @@ iris.pca$eig
 ## PCA - Loadings of variables
 
 ```{r}
+#| echo: true
+#| include: true
 iris.pca$var
 
 ```
