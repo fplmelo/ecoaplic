@@ -10,7 +10,7 @@ format:
     incremental: true
     chalkboard: true
     logo: libs/ntu_logo.png
-    footer: "ARES Research Conference 2024"
+    footer: "NTU-EAC Conference 2025"
     slide-number: true
     transition: slide
     background-transition: fade

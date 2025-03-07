@@ -61,5 +61,7 @@ All the online teaching will take place through Microsoft Teams. Please do take 
 
 We will communicate on weekly basis the details of the upcoming session, so please check the Upcoming sessions and materials section at the top of the NOW page.
 
+## See presentation of the summary of grades of the cohort 24-25
 
+[HERE](www.ecoaplic.org/slides_aulas/apresentacoes/grades_rmda.html#/title-slide)
 

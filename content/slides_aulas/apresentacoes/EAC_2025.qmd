@@ -1,0 +1,234 @@
+---
+title: "BioRestNet: a network of biocultural restoration"
+subtitle: "challenges for an inclusive restoration"
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: libs/ntu_logo.png
+    footer: "NTU-EAC Conference 2025"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## {background-image="libs/vaqueiro.png"}
+
+## {background-image="libs/maasai_cattle.png" background-size="cover"}
+
+## What are the current challenges of ecological restoration?
+
+- Improved techniques of restoration :+1:
+- Informed planning :+1:
+- Geopolitical momentum :+1:
+- Environmental justice :-1:
+- Ecological knowledge gaps :-1:
+
+## How to pursue environmental justice and develop a competitive research agenda on restoration?{.center}
+
+## Traditional Ecological Knowledge - TEK
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/seedcol.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   Knowledge frontier
+-   De-colonial perspective
+-   Would benefit from interdisciplinary
+-   Largely related to nature and livelihoods
+:::
+::::
+
+## New Environmental Technologies - NET
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/NET.png)
+
+:::
+
+:::{.column width="50%"}
+- Popularization of knowledge
+- Empowerment of IP&LC
+- Knowledge frontier
+:::
+::::
+
+## Why a network?
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](https://www.lebow.drexel.edu/sites/default/files/legacy/story/1501077931-network.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   It is the best way to scale up restoration
+-   Allows sharing of knowledge
+-   Strengthen actions
+-   Disseminate models
+:::
+::::
+:::
+
+
+## An example from the Brazilian Caatinga
+
+::::{.columns}
+
+:::{.column width="50%"}
+:::{.nonincremental}
+
+- Culturally important species [Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+- Database on plant uses
+- Multiple benefits
+- Maintain natural features
+
+
+![](libs/sena_highlight.png){.absolute bottom=0 width=40%}
+:::
+:::
+
+:::{.column width="50%"}
+
+![](libs/biocult.png){.absolute top=50 right=20}
+:::
+::::
+
+## 
+
+![](libs/hudson.png){fig-align=center, width=95%}
+
+Toscano et al (*in press*) Cons Biol
+
+## Goals of the BioRestNet
+:::{.nonincremental}
+
+* A worldwide workgroup on the contribution of TEK and NET to restoration
+* Ecological assessments of TEK
+* Generate participatory models of restoration
+* Citizen Science promotion (Earthwatch Project led by Dr. Antonio Uzal)
+
+:::
+
+## BioRestNet in Kenya
+
+## Module 1 - Biocultural Inventory{.center}
+
+## Assessment of Cultural Keystone Species (CKS)
+
+![](libs/firstnations.jpg){.r-stack}
+source: [Conservation through Reconciliation](https://conservation-reconciliation.ca/)
+
+## Benefit of CKS to people
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/bnf.png)
+
+:::
+
+:::{.column width="50%"}
+
+- Functional profile of CKS
+- Trends at the landscape scale
+- Recommendations for restoration
+
+:::
+::::
+
+## Module 2 - Landscape Scale{.center}
+
+
+## Monitoring Working Landscapes
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/ldsf.png)
+
+:::
+
+:::{.column width="50%"}
+- [The Land Degradation Surveillance Framework (LDSF)](http://landscapeportal.org/blog/2015/03/25/the-land-degradation-surveillance-framework-ldsf/)
+- 100km² landscapes
+- 16 cluster
+- 10 plots per cluster
+:::
+::::
+
+
+## Module 3 - Local manipulative experiment
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/plots_enarau.png)
+
+:::
+
+:::{.column width="50%"}
+
+- Simulate traditional management
+- Functional diversity
+- Measure Ecosystem Functions
+- Assess biotic invasion
+
+:::
+::::
+
+## Future of BioRestNet
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+- Bring more partners via perspective sharing
+- Plan for regular meetings and activities
+- Symposium ATBC 2025 Mexico
+:::
+
+:::{.column width="50%"}
+
+![](libs/biocult_model.png){width=80%}
+:::
+::::
+
+## Improving partnership
+
+![](libs/networking.png){fig-align="center"}
+
+  
+
+## {background-image="libs/biorestnet.jpeg"}
+
+
+
+# Thank you
+
+felipe.melo@ntu.ac.uk
+
+![www.ecoaplic.org](www.ecoaplic.org)
+
+![](libs/qr_ecoaplic.png){fig-align=center width=35%}
+
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
