@@ -1,6 +1,6 @@
 ---
 title: "BioRestNet: a network of biocultural restoration"
-subtitle: "challenges for an inclusive restoration"
+subtitle: " "
 author: "Felipe Melo"
 institute: "Nottingham Trent University - UK"
 from: markdown+emoji
