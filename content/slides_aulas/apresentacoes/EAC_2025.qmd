@@ -120,10 +120,11 @@ Toscano et al (*in press*) Cons Biol
 
 ## Module 1 - Biocultural Inventory{.center}
 
-## Assessment of Cultural Keystone Species (CKS)
+## Cultural Keystone Species (CKS)
 
-![](libs/firstnations.jpg){.r-stack}
-source: [Conservation through Reconciliation](https://conservation-reconciliation.ca/)
+![](libs/cks_black.jpg){fig-align="center" width=70%}
+
+source: [Sigert et al 2023](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2654)
 
 ## Benefit of CKS to people
 
@@ -143,6 +144,8 @@ source: [Conservation through Reconciliation](https://conservation-reconciliatio
 :::
 ::::
 
+![](libs/model_rest.jpg){width=60% fig-align=center}
+
 ## Module 2 - Landscape Scale{.center}
 
 
@@ -157,11 +160,12 @@ source: [Conservation through Reconciliation](https://conservation-reconciliatio
 :::{.column width="50%"}
 - [The Land Degradation Surveillance Framework (LDSF)](http://landscapeportal.org/blog/2015/03/25/the-land-degradation-surveillance-framework-ldsf/)
 - 100km² landscapes
-- 16 cluster
-- 10 plots per cluster
+- Vegetation surveys
+- Bioacoustic monitoring
 :::
 ::::
 
+![](libs/bioacoustics.webp){fig-align=center width=60%}
 
 ## Module 3 - Local manipulative experiment
 
