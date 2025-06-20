@@ -1,0 +1,111 @@
+---
+title: "Por una Ecología del (desde el) Sur"
+subtitle: "Red Latino Americana de Ecología"
+author: "Felipe Melo"
+institute: "Universidade Federal de Pernambuco - UFPE <br> Nottingham Trent University - UK <br> Presidente ABECO" 
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    logo: libs/redlatam.png
+    footer: "ELAC 2025"
+    slide-number: true
+---
+
+## Please define Planetary Repair
+
+Planetary Repair is a relatively new and evolving concept that focuses on actively **restoring** the Earth's natural systems to a **healthy** state. It goes beyond simply mitigating damage and aims to actively **reverse** environmental degradation and promote ecological restoration.
+
+## Can you provide an image of Planetary Repair?
+:::{.columns}
+:::{.column}
+ Gemini :point_down:
+![](libs/prt.jpg){width=80%}
+
+:::
+
+:::{.column}
+
+Chat-GPT :point_down:
+
+![](libs/pr_img.webp){width=82%}
+
+:::
+:::
+
+## Porque devemos nos preocupar?
+:::{.columns}
+:::{.column}
+- A ciência é uma construção colonial
+  - Ecologia, Biologia da Conservação, etc...
+- A atuação política ambiental é colonial
+  - Agendas das Big ONGs (p.ex. WWF, Greenpeace)
+- Qual a contribuição de AL?
+:::
+
+:::{.column}
+
+![Extinction Rebellion in London Aug. 25, 2021. (EPA Photo)](https://idsb.tmgrup.com.tr/ly/uploads/images/2021/08/26/139419.jpg){.center width=82%}
+
+:::
+:::
+
+## O modelo de sociedades científicas de Ecologia (SCE){.center}
+
+## 
+
+:::{.columns}
+:::{.column}
+<h2>**Confêrencias**</h2>
+
+![](libs/scme_c.png)
+![](libs/rebeco.jpeg)
+![](libs/trinacional.png)
+
+:::
+
+:::{.column}
+<h2>**Revistas**</h2>
+
+![](libs/boletin_scme.png){width=40%}
+![](libs/pecon_capa.png){width=40%}
+![](libs/ea.png){width=40%}
+
+:::
+:::
+
+## Desafios das SCE
+:::{.incremental}
+- **Financeiros**
+  - Custear funcionamento básico
+- **Organizacionais**
+  - Diretorias voluntárias
+  - Baixa articulação nacional e regional
+- **Políticos**
+  - Construir relevância política
+
+:::
+
+## O potencial da RedLatamEco
+:::{.columns}
+:::{.column}
+
+![](libs/redlatam.png)
+
+:::
+
+:::{.column}
+
+- Maximimizar esforços
+- Publicações
+- Eventos
+  - presenciais e online
+
+:::
+:::
+
+## Inspriação
+
+
