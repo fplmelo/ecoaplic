@@ -37,7 +37,7 @@ format:
 :::
 :::
 
-## Centro de Pesquisas Ambientais do Nordeste - CEPAN
+## Centro de Pesquisas Ambientais do Nordeste
 
 :::{.columns}
 :::{.column}
@@ -56,3 +56,13 @@ cepan.org.br
 
 :::
 :::
+
+## Financiamiento
+
+![](https://iucn.org/sites/default/files/crm-members-image/ng_1221_fund_boticario_4d728adca404d3c87abe190a996ccd33_1221.jpg){.absolute top=100 left=0 width="350"}
+
+![](https://pages.cnpem.br/ssc/wp-content/uploads/sites/94/2018/02/logotipo-serrapilheira-horizontal.jpg){.absolute top=400 left=300 width="350"}
+
+![](libs/funbio.png){.absolute top=100 left=500 width="350"}
+
+## Gracias{.center}
