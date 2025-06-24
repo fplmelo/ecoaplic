@@ -9,7 +9,7 @@ format:
     theme: [default, custom.scss]
     incremental: false
     chalkboard: true
-    logo: libs/redlatam.png
+    #logo: libs/redlatam.png
     footer: "ELAC 2025"
     slide-number: true
 ---
@@ -102,10 +102,43 @@ Chat-GPT :point_down:
 - Publicações
 - Eventos
   - presenciais e online
+- Aproximar os Ecólogos de AL
 
 :::
 :::
 
-## Inspriação
+## Inspiração
+
+![](libs/clacso.webp)
+  
+
+## Podemos ser diferentes
+
+:::{.columns}
+:::{.column}
+![](libs/pecon_capa.png){width=80%}
+
+:::
+
+:::{.column}
+:::{.incremental}
+- Fator de Imapcto **4.1**
+- Melhor Revista da área em AL
+- Custa **22mil USD/ano** para ABECO
+  - Já foi patrocinada por empresas, mas hoje...
+  - <span style="color: red;">Estamos devendo!!!</span>
+- Podemos transformar a PECON numa revista de AL?
+
+:::
+:::
+:::
+
+## Congresso Latino Americano de Ecologia
+
+![](libs/cong_latam.png)
+
+*logo gerado por IA
+
+##
 
 

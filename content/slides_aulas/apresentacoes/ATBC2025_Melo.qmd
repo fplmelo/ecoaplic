@@ -1,0 +1,99 @@
+---
+title: "Biocultural Restoration of working landscapes"
+subtitle: "challenges for an inclusive restoration"
+author: "Felipe Melo"
+institute: "Nottingham Trent University - UK <br> Universidade Federal de Pernambuco - BRA"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    #logo: libs/ntu_logo.png
+    footer: "ATBC 2025, Oaxaca, Mexico"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## {background-image="libs/vaqueiro.png"}
+
+## {background-image="libs/maasai_cattle.png" background-size="cover"}
+
+## {background-image="libs/biocult_def.png" background-size="80%"}
+
+## {background-image="libs/biocult_def2.png" background-size="80%"}
+
+
+## State of the art of restoration
+:::{.columns}
+:::{.column}
+- Techniques of restoration :+1:
+- Informed planning :+1:
+- Geopolitical momentum :+1:
+- [Environmental justice]{style="color: red"} :-1:
+- [Knowledge gaps]{style="color: red"} :-1:
+
+:::
+:::{.column}
+::: {.fragment .fade-in}
+![](libs/rest_tree.jpeg)
+Chazdon & Brancalion (2019)
+:::
+:::
+:::
+
+## Traditional Ecological Knowledge
+
+![](libs/tek_aek.webp){fig-align="center" width=500}
+
+[Albuquerque et al 2021](https://link.springer.com/article/10.1007/s10113-021-01774-2)
+
+
+
+## An example from the Brazilian Caatinga
+
+::::{.columns}
+
+:::{.column width="50%"}
+:::{.nonincremental}
+
+- Culturally important species [Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+- Database on plant uses
+- Multiple benefits
+- Maintain natural features
+
+:::
+:::
+
+:::{.column width="50%"}
+
+![](libs/biocult.png){.absolute top=50 right=20}
+:::
+::::
+
+## 
+
+![](libs/hudson.png){fig-align=center, width=95%}
+
+[Silva et al (2025) Cons Biol](https://conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.70036)
+
+##
+
+![](libs/div_func_hudson.jpg){fig-align=center, width=95%}
+
+## Towards a Biocultural Restoration
+:::{.nonincremental}
+* Principle 1 - Landscapes are live
+
+<iframe width="1503" height="602" src="https://www.youtube.com/embed/b4eLTYUcj7k" title="Our Forests | Timelapse in Google Earth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::
+## Towards a Biocultural Restoration
+
+![](libs/biocult_framework.png){fig-align="center"}
+
+
+
+
+
+
