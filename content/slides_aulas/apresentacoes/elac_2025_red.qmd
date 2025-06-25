@@ -139,6 +139,7 @@ Chat-GPT :point_down:
 
 *logo gerado por IA
 
-##
+## {background-image="libs/red.jpeg" background-size="cover"}
+
 
 
