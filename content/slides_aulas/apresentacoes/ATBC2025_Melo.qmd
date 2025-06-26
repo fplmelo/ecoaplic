@@ -82,15 +82,27 @@ Chazdon & Brancalion (2019)
 
 ![](libs/div_func_hudson.jpg){fig-align=center, width=95%}
 
-## Towards a Biocultural Restoration
-:::{.nonincremental}
-* Principle 1 - Landscapes are live
+## Towards a Biocultural Restoration{.center}
 
-<iframe width="1503" height="602" src="https://www.youtube.com/embed/b4eLTYUcj7k" title="Our Forests | Timelapse in Google Earth" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-:::
-## Towards a Biocultural Restoration
+## Landscapes are live
+
+![](libs/anthromes.jpg){fig-align="center" width="120%"}
+
+## Political Ecology
+
+![](https://springmag.ca/wp-content/uploads/2019/10/systemchangenotclimatechange-1200x600.jpg){fig-align="center" width="120%"}
+
+## Traditional Ecological Knowledge
+
+![](libs/redario.png){fig-align="center" width="120%"}
+
+![](libs/logo_redario.png){.absolute top=550}
+
+## Biocultural Restoration
 
 ![](libs/biocult_framework.png){fig-align="center"}
+
+## {background-image="libs/otromundo.jpg" background-size="contain"}
 
 
 
