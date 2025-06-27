@@ -51,24 +51,24 @@ Chazdon & Brancalion (2019)
 
 
 
-## An example from the Brazilian Caatinga
+## Cultural Keystone Species
 
 ::::{.columns}
 
 :::{.column width="50%"}
 :::{.nonincremental}
 
-- Culturally important species [Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
-- Database on plant uses
-- Multiple benefits
-- Maintain natural features
+- 12% of the Caatinga flora cover 53% of the traditional values 
+- Multiple benefits (food, health, etc...)
+- Preserves phylogenetic diversity
 
 :::
 :::
 
 :::{.column width="50%"}
 
-![](libs/biocult.png){.absolute top=50 right=20}
+![](libs/fun_bioc.jpg){width=120%}
+[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
 :::
 ::::
 
@@ -84,13 +84,23 @@ Chazdon & Brancalion (2019)
 
 ## Towards a Biocultural Restoration{.center}
 
+
 ## Landscapes are live
 
-![](libs/anthromes.jpg){fig-align="center" width="120%"}
+![](libs/forest_people.jpg){fig-align="center" width="120%"}
+
+Alencar et al (under review)
 
 ## Political Ecology
 
 ![](https://springmag.ca/wp-content/uploads/2019/10/systemchangenotclimatechange-1200x600.jpg){fig-align="center" width="120%"}
+
+## Political Ecology
+
+![](libs/forest_poverty.jpg){fig-align=center, width=95%}
+
+Alencar et al (2025)
+
 
 ## Traditional Ecological Knowledge
 
