@@ -1,0 +1,69 @@
+---
+title: "Why and how to create networks of collaboration"
+subtitle: "... and survive to the attempt"
+author: "Felipe Melo"
+institute: "Nottingham Trent University"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    #logo: libs/ntu_logo.png
+    footer: "KIT Day on 'success'"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## {background-image="https://scholarlykitchen.sspnet.org/wp-content/uploads/2017/04/iStock-614250216.jpg" background-size="80%"}
+
+## Ecological Networks
+:::{.columns}
+:::{.column}
+
+![](libs/nested.png)
+
+:::
+:::{.column}
+
+- Generalists?
+- Specialist?
+
+:::
+:::
+
+## Building collaboration takes time...
+
+Let's have a look...
+
+[![](libs/scholar.png)](https://scholar.google.com.br/citations?hl=pt-BR&user=ytoqEukAAAAJ&view_op=list_works&sortby=pubdate)
+
+![](libs/scopus_colab.png)
+
+## What do you have to offer?
+
+![](libs/phd_1.gif)
+
+## Innovative ideas?
+
+![](libs/phd2.jpeg)
+
+## Big dataset?
+
+![](libs/edit-csv-excel.png)
+
+## Time?
+![](libs/phd013013s.gif)
+
+## True tips... from my perspective
+
+- Develop multi-task skills
+- Collaborate horizontally (with colleagues)
+- Make sense of what "time" means
+- ENJOY YOUR WORK
+
+## Listen to Pepe Mujica
+
+<iframe width="1128" height="635" src="https://www.youtube.com/embed/4GX6a2WEA1Q" title="Jose&#39;s interview - URUGUAY - #HUMAN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
