@@ -4,6 +4,7 @@ subtitle: " "
 author: "Felipe Melo"
 format:
   revealjs:
+    theme: [default, custom.scss]
     incremental: true
     chalkboard: true
     logo: img/ntu_logo.png
@@ -26,7 +27,7 @@ format:
 
 ::: {.column width="50%"}
 
-### *something that is very important and must be dealt with before other things*
+*something that is very important and must be dealt with before other things*
 
 :::
 
@@ -38,7 +39,7 @@ format:
 
 :::{.fragment}
 
-### Chosing priorities in conservation can be an ethical problem
+Chosing priorities in conservation can be an ethical problem
 
 :::
 
@@ -61,7 +62,7 @@ format:
 ::: {.column width="50%"}
 [Church of Forest- Ethiopia](https://emergencemagazine.org/film/the-church-forests-of-ethiopia/)
 
-<img src=https://emergencemagazine.org/app/uploads/2021/01/CF_drone2_WEB-1024x575.jpg>
+![](https://emergencemagazine.org/app/uploads/2021/01/CF_drone2_WEB-1024x575.jpg)
 
 "small pockets of old-growth forest still surround Ethiopia’s churches" 
 
@@ -89,7 +90,7 @@ Manu - Peru
 ## Indigenous Lands
 
 
-![](https://wheretheleavesfall.com/media/images/2021-08-15-07.35.40.original.jpg){.absolute left=0 width="1000" height="600"}
+![](https://newstaco.com/wp-content/uploads/2011/05/Dan%C3%A7a-em-homenagem-aos-mortos.-Festa-do-Kuarup-na-aldeia-Kamaiur%C3%A1.-Foto-Marcello-Casal-Jr.-ABr.jpeg){.absolute left=0 width="1000" height="600"}
 
 ![](https://www.mott.org/wp-content/uploads/2017/03/Xingu-Basin-Map.jpg){.absolute top=100 left=0 width="250" height="300"}
 
@@ -106,7 +107,7 @@ Sami - Finland
 
 ## Species-focused conservation
 
-![](https://imagens.ebc.com.br/ssHQbA5eVOGutrcvUXriNWv6whY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/ave_cyanopsitta_spixii_ararinha_azul_foto_camile_ugarini.jpg?itok=RsYMXNq9)
+![](https://imgs.mongabay.com/wp-content/uploads/sites/20/2024/07/11122941/ARARINHA_AZUL-788-768x512.jpg)
 
 Spix macaw
 
