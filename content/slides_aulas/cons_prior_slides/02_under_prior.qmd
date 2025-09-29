@@ -8,7 +8,7 @@ format:
     incremental: true
     chalkboard: true
     logo: img/ntu_logo.png
-    footer: "Conservation Priorities 2023"
+    footer: "Conservation Priorities 2025"
     slide-number: true
     transition: slide
     background-transition: fade
