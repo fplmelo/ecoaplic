@@ -1,0 +1,197 @@
+---
+title: "Ecologia Política da Restauração da Caatinga"
+subtitle: ""
+author: "Felipe Melo"
+institute: "Laboratório de Ecologia Aplicada - UFPE"
+date: "`r Sys.Date()`"
+format:
+   revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+    #logo: 
+    #footer: "NTU research seminars"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+    #auto-stretch: true
+     
+---
+
+
+## {background-image="libs/caat_verde.jpg" background-size="cover" background-position="center" .center .middle}
+
+## {background-image="libs/caat_seca.jpg" background-size="cover" background-position="center" .center .middle}
+
+## {background-image="libs/caat_verde2.jpg" background-size="cover" background-position="center" .center .middle}
+
+## {background-image="libs/caat_seca2.jpg" background-size="cover" background-position="center" .center .middle}
+
+## {background-image="libs/lear.jpg" background-size="cover" background-position="center" .center .middle}
+
+## {background-image="libs/tatu2.png" background-size="cover" background-position="center" .center .middle}
+
+## {background-image="libs/vaqueiro.png" background-size="cover" background-position="center" .center .middle}
+
+## {background-image="libs/pessoas.png" background-size="cover" background-position="center" .center .middle}
+
+## A paisagem socioecológica Caatinga
+
+
+Grupos sociais vulneráveis
+[Hummel 2016](Social Vulnerability to Natural Hazards in Brazil)
+
+<img src="libs/sovi.png" width=90%>
+
+
+## {background-image="libs/mapbiom_caat.jpg" background-size="cover" background-position="center" .center .middle}
+
+## {background-image="libs/desmat_caat.jpg" background-size="cover" background-position="center" .center .middle}
+
+## Ecologia política da restauração
+::: columns
+::: {.column width="45%"}
+
+- Reconhecer os atores afetados
+- Combater desigualdades
+- Valorizar conhecimentos locais
+- Recuperar/Conservar a diversidade socioecológica
+
+:::
+
+::: {.column width="55%"}
+
+<img src="libs/ecolpol.jpg">
+
+:::
+:::
+
+## {background-image="libs/roca_caat.jpg" background-size="cover" background-position="center" .center .middle}
+
+
+## Perturbação Crônica
+
+<img src="libs/chronic.png" width= 600>
+
+[Antongiovanni et al (2020)](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2664.13686)
+
+
+## Bodes e Caatinga (Herbivoria)
+
+:::{columns}
+:::{.column}
+
+- Áreas de uso de 100ha
+- Hábito generalista
+- Reduzem biomassa de herbáceas
+- Preferência por hábitats abertos
+
+
+:::
+
+:::{.column}
+
+<img src="libs/bodes.png" width= 650>
+
+:::
+:::
+
+fontes: [Jamelli et al 2021](https://www.sciencedirect.com/science/article/abs/pii/S0140196321000987) e [Menezes et al 2020](https://onlinelibrary.wiley.com/doi/epdf/10.1002/ldr.3693)
+
+## Respostas da Vegetação ao Clima e Fertilidade
+
+<img src=libs/pinho_fig3.png width = 550>
+
+## Respostas da Vegetação ao Clima e Fertilidade
+
+<img src=libs/pinho_fig2.png width = 650>
+
+
+## {background-image="libs/drone.png" background-size="cover" background-position="center" .center .middle}
+
+
+## Invasão Biológica vs. Comunidade de Plantas
+
+Modifica a composição taxonômica
+
+<img src= libs/nmds_vag.png width = 650>
+
+## Estratégia fucnional das plantas da neo-Caatinga
+
+<img src=libs/csr_vag.png>
+
+
+## {background-image="libs/homen_caatinga.jpg" background-size="cover" background-position="center" .center .middle}
+
+## {background-image="libs/wef.png" background-size="90%"}
+
+## Cultural Keystone Species
+
+::::{.columns}
+
+:::{.column width="50%"}
+:::{.nonincremental}
+
+- 12% of the Caatinga flora cover 53% of the traditional values 
+- Multiple benefits (food, health, etc...)
+- Preserves phylogenetic diversity
+
+:::
+:::
+
+:::{.column width="50%"}
+
+![](libs/fun_bioc.jpg){width=120%}
+
+:::
+:::
+
+## 
+
+![](libs/hudson.png){fig-align=center, width=95%}
+
+##
+
+![](libs/div_func_hudson.jpg){fig-align=center, width=95%}
+
+## Towards a Biocultural Restoration{.center}
+
+
+## Landscapes are live
+
+![](libs/forest_people.jpg){fig-align="center" width="120%"}
+
+Alencar et al (under review)
+
+## Political Ecology
+
+![](https://springmag.ca/wp-content/uploads/2019/10/systemchangenotclimatechange-1200x600.jpg){fig-align="center" width="120%"}
+
+## Political Ecology
+
+![](libs/forest_poverty.jpg){fig-align=center, width=95%}
+
+Alencar et al (2025)
+
+
+## Traditional Ecological Knowledge
+
+![](libs/redario.png){fig-align="center" width="120%"}
+
+![](libs/logo_redario.png){.absolute top=550}
+
+## Biocultural Restoration
+
+![](libs/biocult_framework.png){fig-align="center"}
+
+## {background-image="libs/otromundo.jpg" background-size="contain"}
+
+
+# Obrigado
+
+felipe.plmelo@ufpe.br
+
+![www.ecoaplic.org](www.ecoaplic.org)
+
+![](libs/qr_ecoaplic.png){fig-align=center width=35%}
+
