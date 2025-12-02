@@ -1,30 +1,42 @@
 ---
-title: "The Armadillo's Goal"
+title: "O Gol do Tatu-Bola"
 author: "Felipe Melo"
-format: revealjs
-editor: visual
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: false
+    chalkboard: true
+    #logo: libs/ntu_logo.png
+    footer: "Ecologia de Ambientes Terrestres 2025"
+    slide-number: true
+    transition: slide
+    background-transition: fade
+
 ---
 
-## 2014 FIFA Word Cup
+## 2014 Copa do Mundo da FIFA
 
-### The shame
+### A vergonha
 
 <img src="https://i.dailymail.co.uk/i/pix/2014/07/09/article-2685283-1F7FDE1D00000578-666_634x620.jpg" width="900"/>
 
-## The opportunity
+## A oportunidade
 
 :::: {.columns}
 
-::: {.column width="50%"} 
+::: {.column width="50%"}
 
-Fuleco = **Foo**tball + **Eco**logy
+Fuleco = **Fu**tebol + **Eco**logia
 
-<img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Mascote_Copa.png"/> 
+<img src="https://upload.wikimedia.org/wikipedia/pt/b/bf/Mascote_Copa.png"/>
 
 :::
 
 ::: {.column width="50%"} 
+
 <img src="libs/tatu.png"/> 
+
 :::
 
 ::::
@@ -38,6 +50,7 @@ Fuleco = **Foo**tball + **Eco**logy
 :::: {.columns}
 
 ::: {.column width="50%"} 
+
 Hyper-diverse tropical dry forest
 
 <img src="https://ars.els-cdn.com/content/image/3-s2.0-B9780124095489119840-f11984-01-9780128160961.jpg"/>
@@ -46,41 +59,41 @@ Hyper-diverse tropical dry forest
 
 ::: {.column width="50%"}
 
--   \< 5% within Protected Areas
--   High level of economic poverty
--   Forest-dependent people
+-   < 5% declarado como AP (em 2014)
+-   Muita probreza econômica
+-   Alta dependência de recursos naturais
 
-<img src="libs/caat_seca2.jpg" width="400"/> 
+<img src="libs/caat_seca2.jpg" width="300"/>
 
 :::
 
 ::::
 
-## The challenge
+## O Desafio
 
 :::: {.columns}
 
-::: {.column width="60%"} 
+::: {.column width="60%"}
 
-1 - Conservation plan
+1 - Plano de ação para o Tatu-Bola
 
-2 - Invest on the "Parks of the cup"
+2 - Cumprir o investimento anunciado para o "Parques da Copa"
 
-3 - Create 1k ha of PA for each goal scored
+3 - Criar 1mil ha de AP para cada gol marcado
 
 :::
 
-::: {.column width="40%"} 
+::: {.column width="40%"}
 
 <img src="libs/fuleco1.png"/>
 
-<img src="libs/capa_bio.jpg" width="300"/> 
+<img src="libs/capa_bio.jpg" width="300"/>
 
 :::
 
 ::::
 
-## Armadillo 1 x 0 Threats
+## Tatu-bola 1 x 0 Ameaças
 
 :::: {.columns}
 
@@ -98,7 +111,7 @@ Hyper-diverse tropical dry forest
 
 ::::
 
-## Armadillo 1 x 1 Threats
+## Tatu-bola 1 x 1 Ameaças
 
 :::: {.columns}
 
@@ -116,9 +129,9 @@ Hyper-diverse tropical dry forest
 
 ::::
 
-### Brazil invests only R$ 1.02 per hectare of protected area
+### Brasil investe apenas R$ 1.02 por hectare de área protegida
 
-## Armadillo 2 x 1 Threats
+## Tatu-bola 2 x 1 Ameaças
 
 :::: {.columns}
 
@@ -130,22 +143,22 @@ Hyper-diverse tropical dry forest
 
 ::: {.column width="40%"}
 
--   110k hectares of Protected Area
--   Named after the Armadillo
+-   110k hectares RVS Tatu-Bola
+-   Criado à partir de um trabalho intenso, rápido e inclusivo
 
 :::
 
 ::::
 
-## An endless game...
+## O jogo ainda não acabou
 
-### unsolved conflicts
+### Conflitos permanentes
 
 <img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2019/09/Chato.jpg?fit=1152%2C768&amp;ssl=1"/>
 
-## An endless game...
+## O jogo ainda não acabou
 
-### unsolved conflicts
+### Conflitos permanentes
 
 <img src="https://i0.wp.com/oeco.org.br/wp-content/uploads/2022/12/Producao-de-caprinos-e-ovinos-e-uma-atividade-desenvolvida-ha-seculos-na-comunidade-rural-Ico-de-Ne-Gomes-muito-antes-da-delimitacao-da-area-da-Reserva-Tatu-Bola-em-Petrolina-Foto-Acervo-pessoal-Lucival.jpeg?w=960&amp;ssl=1"/>
 
@@ -155,4 +168,9 @@ Hyper-diverse tropical dry forest
 
 </iframe>
 
-## The end?
+##
+
+![](libs/marco_zero_tatu.png)
+
+
+## Fim?
