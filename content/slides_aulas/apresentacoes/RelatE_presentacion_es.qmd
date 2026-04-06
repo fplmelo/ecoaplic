@@ -1,0 +1,216 @@
+---
+title: "Infraestructuras de Investigación en Ecología en América Latina"
+subtitle: "Proyecto RelatE — Franja B | CNPq"
+author: "Red Latinoamericana de Ecología (RelatE)"
+date: "2025"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: fade
+    background-transition: fade
+    footer: "RelatE · OCEAL"
+    scrollable: true
+lang: es
+---
+
+## El Problema {background-color="#f8fdf9"}
+
+::: {.columns}
+::: {.column width="60%"}
+Dos tipos de infraestructura son fundamentales para el desarrollo de la Ecología en AL:
+
+- 🏕️ **Físicas** — estaciones biológicas de investigación
+- 🔗 **Intelectuales** — redes de colaboración y proyectos de larga duración
+
+:::
+::: {.column width="40%"}
+
+::: {.destaque}
+**El legado histórico** de las inversiones en estas infraestructuras impulsó la ecología regional — pero su papel nunca ha sido sistemáticamente evaluado.
+:::
+:::
+:::
+
+---
+
+## Objetivo General {background-color="#f8fdf9"}
+
+<br>
+
+> Comprender el **papel estratégico de las infraestructuras de investigación científica en ecología** — estaciones de campo y redes de colaboración de larga duración — y evaluar su contribución al desarrollo **nacional, regional e internacional** de una ecología latinoamericana.
+
+
+---
+
+## Red de Instituciones Participantes {background-color="#f8fdf9"}
+
+| País | Rol | Enfoque Geográfico |
+|------|-----|--------------------|
+| 🇧🇷 **Brasil** | Coordinación general | Brasil + articulación regional |
+| 🇲🇽 **México** | Hub regional | América Central (GT, CR, PA, HN, SV, NI, BZ) |
+| 🇦🇷 **Argentina** | Hub regional | Cono Sur (PY, UY, CL, BO + Argentina) |
+| 🇨🇴 **Colombia** | Hub regional | Norte de AS y Caribe (VE, EC, PE, GY + Caribe) |
+
+<br>
+
+
+---
+
+## Enfoque Metodológico {background-color="#f8fdf9" .center}
+
+## 📊 Cienciometría
+Análisis cuantitativo a partir de **Web of Science** y **Scopus**:
+
+- Volumen e impacto de publicaciones
+- Investigadores y tesis formados
+- Redes de coautoría interinstitucional
+- Evolución histórica de la productividad
+- Perfil científico de los líderes
+
+
+## 🗣️ Análisis Cualitativo
+Entrevistas estructuradas con coordinadores y gestores, organizadas en 4 ejes:
+
+- Sostenibilidad financiera
+- Historia y consolidación institucional
+- Interfaz con políticas públicas
+- Relaciones de poder y autonomía científica
+
+::: {.destaque}
+El enfoque mixto — **cienciometría + ecología política + historia de la ciencia** — es en sí mismo una innovación metodológica del proyecto.
+:::
+
+---
+
+## Cronograma en 3 Años {background-color="#f8fdf9"}
+
+| Meta | Período | Actividad Principal |
+|------|---------|---------------------|
+| **1** | Año 1 — T1 | Consolidación de los equipos regionales |
+| **2** | Año 1 — T1 a Año 2 — T2 | Diseño metodológico y relevamientos |
+| **3** | Todo el proyecto (36 meses) | Reuniones mensuales y talleres en línea |
+| **4** | Hitos 12 y 36 meses | ⭐ Talleres presenciales en Recife + misiones técnicas |
+| **5** | Año 2 — T3 a Año 3 — T2 | Incorporación de datos al OCEAL |
+| **6** | Año 3 — T1 a T3 | Publicación de artículos y white paper |
+
+<br>
+
+::: {.destaque}
+**3 talleres** · **Reuniones mensuales en línea** · **Misiones científicas** a los 3 núcleos regionales
+:::
+
+---
+
+## Productos Esperados {background-color="#f8fdf9"}
+
+::: {.columns}
+::: {.column width="50%"}
+### 📄 Artículos Científicos 
+1. Distribución de las estaciones de investigación en AL
+2. Redes de colaboración y excelencia académica
+3. Proyectos de larga duración y formación de investigadores
+4. Historia y política de las estaciones biológicas
+5. Ecología política de las infraestructuras
+6. Epistemología de la ecología latinoamericana
+:::
+::: {.column width="50%"}
+### 🌐 Plataforma OCEAL
+
+- Mapa georreferenciado de estaciones
+- Directorio de proyectos y grupos
+- Directorio de investigadores (integrado a RelatE)
+- Oportunidades de movilidad académica
+- Experiencias exitosas
+- Políticas públicas y ecología
+:::
+:::
+
+---
+
+## Impacto y Relevancia Estratégica {background-color="#f8fdf9"}
+
+::: {.columns}
+::: {.column width="50%"}
+**Para la ciencia:**
+
+- Primera evaluación sistemática y comparativa de las infraestructuras de investigación ecológica en AL
+- Datos para decisiones de inversión en C&T
+- Identificación de brechas y núcleos de excelencia
+:::
+::: {.column width="50%"}
+**Para la región:**
+
+- Consolidación de **RelatE** como sociedad científica regional
+- **OCEAL** como observatorio permanente
+- Insumos para políticas de conservación (IPBES, CBD, UICN)
+:::
+:::
+
+<br>
+
+::: {.destaque}
+El proyecto posiciona a América Latina no solo como **objeto de estudio** de la ecología global, sino como **protagonista en la construcción de su propio conocimiento científico**.
+:::
+
+---
+
+## Presupuesto {background-color="#f8fdf9"}
+
+| Rubro | Total (R$) | % |
+|-------|-----------|---|
+| **Becas** | 260.940 | 49,2% |
+| PDJ (30 meses) | 156.000 | 29,4% |
+| DTI-B (12 meses) | 46.800 | 8,8% |
+| DES + DEJ (misiones) | 58.140 | 10,9% |
+| **Gastos corrientes** | 269.496 | 50,8% |
+| Misiones científicas | 101.760 | 19,2% |
+| Talleres (2) | 107.936 | 20,4% |
+| Plataforma OCEAL | 41.000 | 7,7% |
+| Servicios y consumibles | 18.800 | 3,5% |
+| **TOTAL** | **530.436** | **100%** |
+
+<br><br>
+
+## Presupuesto {background-color="#f8fdf9"}
+
+
+::: {.destaque}
+**Franja B — Redes Emergentes**
+
+Límite: R$ 600.000,00
+
+Solicitado: **R$ 530.436,00**
+:::
+
+<br>
+
+::: {.destaque}
+Equilibrio entre **formación de investigadores** (becas) y **ejecución científica** (gastos corrientes), con foco en misiones e integración regional.
+:::
+
+---
+
+## ¿Por qué debería ser parte de este Proyecto? {background-color="#f8fdf9"}
+
+<br>
+
+
+::: {.columns}
+::: {.column width="33%"}
+### 🔍 Inédito
+Primera evaluación rigurosa y regionalmente situada de las infraestructuras de investigación ecológica en América Latina
+:::
+::: {.column width="33%"}
+### 🤝 Estratégico
+Ancla y fortalece dos iniciativas emergentes de cooperación regional: **RelatE** y **OCEAL**
+:::
+::: {.column width="33%"}
+### 🌱 Duradero
+Productos que trascienden el financiamiento: plataforma permanente, red consolidada, investigadores formados
+:::
+:::
+
+<br><br>
+
+> *"Este proyecto representa no solo una contribución académica relevante, sino una agenda científica estratégica para la soberanía ecológica de la región."*

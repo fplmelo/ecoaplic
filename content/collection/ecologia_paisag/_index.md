@@ -33,11 +33,11 @@ Ecologia de paisagens é uma disciplina que aborda definições e ferramentas ac
 
 ## Horário da disciplina
 
-Quartas-feiras 8-11h (aguardando sala )
-
-## Conteúdo programático
+Quintas-feiras 10-13h (aguardando sala )
 
 
 ## Professor responsável
+
+Felipe Melo
 
 
