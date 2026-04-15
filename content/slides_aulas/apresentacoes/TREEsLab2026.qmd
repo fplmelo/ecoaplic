@@ -1,0 +1,295 @@
+---
+title: "Ecologia Política da Restauração da Caatinga:"
+subtitle: "Relações entre Pobreza, Cultura e Biodiversidade"
+author: "Felipe Melo"
+institute: "Universidade Federal de Pernambuco - UFPE"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+   # logo: libs/sobre.png
+    footer: ""
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## {background-image="libs/vaqueiro.png"}
+
+## {background-image="libs/roca_caat.jpg"}
+
+## {background-image="libs/homen_caatinga.jpg"}
+
+
+## As Caatingas
+
+![](libs/caat_martius.jpg)
+![](libs/livro_ze.jpg){.absolute top=20 right=10 width=40%}
+<br>
+Há muitas neo-Caatingas
+
+## A Catinga é um anthroma? 
+![](libs/anthromes.png){fig-align=center width=150%}
+
+Fonte: Erle Ellis
+
+## {background-image="libs/desmat_caat.jpg" background-size="contain"}
+
+## 26 milhões de pessoas
+
+![](libs/desn_pop_caat.png)
+
+## Erros históricos da "Conservação"
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/keep_out.png)
+:::
+:::{.column width="50%"}
+
+- Expulsão de comunidades tradicionais
+- Aumento da pobreza
+- Conflitos por terra
+- Modelos excludentes
+
+:::
+::::
+
+## RVS-Tatu-Bola (110k ha)
+
+<img src="https://i0.wp.com/www.oeco.org.br/wp-content/uploads/2015/12/Per%C3%ADmetro.png" width="600"/>
+
+Melo et al (2014)
+
+![](https://s2.glbimg.com/CPWvRArhEa4kFbgS0CNV3WAQSxM=/1200x630/s.glbimg.com/jo/g1/f/original/2014/05/18/tatu.jpg){.absolute top=20 right=10 width=30%}
+
+![](libs/capa_bio.jpg){.absolute top=200 right=10 width=30%}
+
+## Desigualdade
+
+![](libs/worldbank_iplc.jpeg){fig-align=center width=150%}
+
+## A importância de IP&LC
+
+![](libs/iplc_land.png){fig-align=center width=150%}
+
+## {background-image="libs/pessoas.png" background-size="cover"}
+
+
+## Qual o papel da restauração nesse contexto?{.center}
+
+
+## A restauração avança!
+
+- Oferecer métodos confiávies :+1:
+- Planejamento sistemático :+1:
+- Importância geopolítica :+1:
+- [Justiça Ambiental]{style="color:red"} :-1:
+- [Transdisciplinaridade]{style="color:red"} :-1:
+
+## Como construir uma agenda de pesquisa/ação para desenvolver o potencial inclusivo da restauração?{.center}
+
+
+## Conhecimentos Ecológicos Locais - CEL
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/seedcol.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   Fonteira de conhecimento
+-   Ajudam a decolonizar a ciência
+-   Precisa ser reconhecido
+-   Está ameaçado
+:::
+::::
+
+
+## A Caatinga como um laboratório vivo de Restauração Biocultural {.center}
+
+## E se perguntássemos às pessoas?
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+::: {style="font-size: 90%;"}
+- Espécies culturalmente importantes
+- Multípos benefícios (lenha, medicinal, etc...)
+- Relativamente aundantes
+- Mantém diversidade
+
+[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+:::
+:::
+:::{.column width="50%"}
+
+![](libs/biocult.png){width=90%}
+:::
+::::
+:::
+
+## 8% das espécies > 50% dos usos
+![](libs/fun_bioc.jpg){fig-align=center, width=85%}
+
+[Sena et al (2022)](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+
+## 
+![](libs/hudson.png){fig-align=center, width=95%}
+
+Silva et al (2025)
+
+## Restauração não pode ser apolítica
+![](libs/ipbes_nexus.png){fig-align=center, width=105%}
+
+[IPBES Nexus-Report 2025 & Melo et al 2021](https://www.nature.com/articles/s41893-020-00608-z)
+
+## Desigualdade de acesso à terra{.center}
+
+![](libs/land_study.png)
+
+## Quem é dono da Caatinga?
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+
+- ~ 1 milhão de propriedades em 1204 municípios
+  - 97.8% pequenas
+       - 17.9 Mha
+       - 51% Vegetação Nativa
+  - 2.2% Grande propriedades
+       - 15.2 Mha
+       - 69% Vegetação Nativa
+:::
+
+:::{.column width="50%"}
+
+
+![](libs/share_land.png)
+
+:::
+::::
+:::
+
+## Déficit de vegetação
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/deficit1.png){width=90%}
+
+:::
+:::{.column width="50%"}
+
+![](libs/deficit2.png){width=90%}
+
+
+:::
+::::
+:::
+
+
+
+## Estratégias diferenciadas 
+| Tipo de déficit | Estratégia de Restauração | 
+|-----|:-----|
+| Grandes propriedades     | Restauração ativa; adequação legal; cadeia de suprimentos   | 
+| Pequenas pripriedades   | Agrofloresta; Restauração Biocultural  |
+| Híbrido      | Combinações de medidas de acordo ao contexto     | 
+
+## Espacializando as estratégias
+![](libs/deficit4.png){fig-align=center}
+
+
+## Caatinga mata fome?{.center}
+
+## Segurança alimentar e Caatinga
+![](libs/fore_food.png){.absolute right=300}
+![](libs/ldd_lucas.png){.absolute top=80 right=20 width=50%}
+
+## Caatinga vs. Desenvolvimento
+
+![](libs/gec_pic.png){fig-align=center, width=120%}
+
+Fonte: [Alencar et al 2025](https://www.sciencedirect.com/science/article/pii/S1389934125001509)
+
+## Dinâmica população-ambiente
+
+![](libs/fig_catChange.jpg){fig-align=center, width=120%, height=150%}
+
+fonte: Alencar et al in press PNAS
+
+
+
+## Restauração é feita de gente
+
+
+::::{.columns}
+
+:::{.column width="30%"}
+![](libs/recaa.png)
+
+:::
+:::{.column width="70%"}
+- Gentes da Caatinga (coletivos)
+- Saberes da Caatinga (ciência)
+- Olhos da Caatinga (monitoramento)
+- Águas da Caatinga (segurança hídrica)
+
+:::
+
+::::
+
+## Principais lições
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+- Incluir camadas de informação social
+- Considerar as diferentes desigualdades
+- Não reproduzir injustiças
+- Priorizar as oportunidades localmente
+:::
+
+:::{.column width="50%"}
+
+![](libs/biocult_model.png){width=80%}
+
+:::
+::::
+:::
+
+## Agradecimentos
+
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](libs/cnpq.png)
+![](libs/ufpe.png)
+:::
+
+:::{.column width="50%"}
+::: {style="font-size: 80%;"}
+- Adriana Pelegrinni Manhães (UFRJ)
+- Pedro Sena & Biu Rodigues (CEPAN)
+- Luke Parry (Lancaster University - UK)
+- Lucas Alencar (Uni Manchester - UK)
+- Antonio Uzal (NTU -UK)
+- Andrew Gichira (CERK, Quênia)
+:::
+:::
+::::
+:::
+
+
+## Obrigado
+
+felipe.plmelo@ufpe.br
+
+![www.ecoaplic.org](www.ecoaplic.org)
+
+![](libs/qr_ecoaplic.png){fig-align=center width=35%}
+
+
+
