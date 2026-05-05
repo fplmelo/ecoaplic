@@ -1,0 +1,1075 @@
+---
+title: "Comparação entre Comunidades Ecológicas"
+subtitle: "Métricas, Métodos e Exemplos Práticos"
+author: "Ecologia de Comunidades"
+date: today
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: slide
+    chalkboard: true
+    highlight-style: github
+    code-line-numbers: true
+    smaller: false
+    css: styles.css
+    logo: ""
+   # footer: "Ecologia de Comunidades — Comparação entre Comunidades"
+execute:
+  echo: true
+  eval: false
+---
+
+## O que é uma Comunidade Ecológica?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Conjunto de **populações de diferentes espécies** que coexistem em um local e tempo
+- Interagem entre si e com o ambiente
+- Apresentam **estrutura** e **organização** próprias
+- São **dinâmicas**: mudam ao longo do tempo e espaço
+
+:::
+
+::: {.column width="50%"}
+![Recifes de coral](https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Blue_Linckia_Starfish.JPG/960px-Blue_Linckia_Starfish.JPG){fig-align="center" width="80%"}
+:::
+
+::::
+
+---
+
+## Por que Comparar Comunidades?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Avaliar **impactos ambientais** e perturbações
+- Monitorar **mudanças ao longo do tempo**
+- Comparar habitats distintos
+- Entender padrões de **biodiversidade**
+- Embasar decisões de **conservação**
+:::
+
+::: {.column width="50%"}
+![](https://www.iitianacademy.com/wp-content/uploads/2025/06/Screenshot-2025-06-21-203925-768x988.png)
+:::
+
+::::
+
+---
+
+## A Ecologia é uma "Bagunça"
+
+- Na genética de populações:
+  - **Seleção** — mudanças nas frequências alélicas
+  - **Deriva** — mudanças estocásticas
+  - **Mutação** — fonte de nova variação
+  - **Fluxo gênico** — entrada/saída de alelos
+- [Vellend (2010)](https://www.researchgate.net/publication/44689600_Conceptual_Synthesis_in_Community_Ecology) propõe uma **síntese unificada** da disciplina
+
+---
+
+## Os 4 Processos de Vellend (2010)
+
+| Ecologia de Comunidades | Genética de Populações |
+|---|---|
+| **Seleção** | Seleção |
+| **Deriva** | Deriva genética |
+| **Especiação** | Mutação |
+| **Dispersão** | Fluxo gênico |
+
+- Esses processos **não são excludentes** — interagem continuamente
+- A teoria geral: *espécies entram via especiação e dispersão; abundâncias relativas são moldadas por deriva e seleção*
+
+##
+
+![Espécies são adicionadas via especiação e dispersão; abundâncias relativas são moldadas por deriva e seleção (Vellend 2010)](fig4_vellend.png){fig-align=center}
+
+## Processo 1: Seleção 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Definição**: diferenças determinísticas de *fitness*
+- Três formas principais:
+  - **Seleção constante**: uma espécie sempre "ganha"
+  - **Seleção dependente da densidade** : favorece coexistência estável
+  - **Seleção variável** no espaço/tempo: permite coexistência via *trade-offs*
+:::
+
+::: {.column width="50%"}
+![](https://news.uchicago.edu/sites/default/files/styles/gallery/public/images/2021-12/secondary-succession.jpg)
+:::
+::::
+
+## Processo 2: Deriva Ecológica (*Drift*)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Definição**: mudanças **estocásticas** nas abundâncias relativas das espécies
+- Resulta de nascimentos e mortes como processos aleatórios em populações finitas
+- Com deriva pura (sem seleção): todas as espécies têm a mesma probabilidade de fixação
+- **Neutralidade**: quando indivíduos de todas as espécies têm parâmetros demográficos idênticos
+- Hubbell (2001): *Teoria Neutra Unificada* — bases da deriva ecológica
+- Importância da deriva aumenta quando:
+  - Comunidades são **pequenas**
+  - Diferenças de *fitness* entre espécies são **fracas**
+  - Distúrbios **reduzem** o tamanho da comunidade
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: simulacao-deriva
+
+# Deriva ecológica pura (sem seleção)
+# Modelo de urna de Moran
+
+simular_deriva <- function(J, n_gen, freq_ini = 0.5) {
+  freq <- numeric(n_gen)
+  freq[1] <- freq_ini
+  N_A <- round(J * freq_ini)
+
+  for (i in 2:n_gen) {
+    # Evento de nascimento/morte aleatório
+    N_A <- rbinom(1, J, N_A / J)
+    freq[i] <- N_A / J
+    if (N_A == 0 | N_A == J) break
+  }
+  return(freq)
+}
+
+set.seed(42)
+plot(NULL, xlim = c(1, 200), ylim = c(0, 1),
+     xlab = "Geração", ylab = "Frequência de sp. A",
+     main = "Deriva ecológica pura (J = 100)")
+for (i in 1:10) {
+  lines(simular_deriva(100, 200),
+        col = adjustcolor("tomato", 0.6))
+}
+```
+:::
+
+::::
+
+---
+
+## Processo 3: Especiação (*Speciation*)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Definição**: criação de novas espécies
+- Equivale à **mutação** na genética de populações — fonte última de diversidade
+- Opera em escalas de **tempo e espaço** muito maiores que seleção e deriva
+- Determina o **pool regional de espécies**, que por sua vez molda comunidades locais
+- *Hipótese do pool de espécies* (Taylor et al. 1990): habitats mais antigos ou mais representados geram mais espécies adaptadas a eles
+- Padrões que dependem de especiação:
+  - **Anomalias de diversidade** entre regiões com condições similares
+  - **Gradientes de diversidade** com altitude, latitude ou produtividade
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: pool-especies
+
+# Ilustração: diversidade local aumenta
+# com o tamanho do pool regional
+
+library(vegan)
+
+# Relação local-regional de riqueza
+# (padrão amplamente documentado)
+
+set.seed(1)
+S_regional <- seq(10, 200, by = 10)
+S_local    <- 3 + 0.25 * S_regional +
+              rnorm(length(S_regional), 0, 3)
+S_local    <- pmax(2, S_local)
+
+plot(S_regional, S_local,
+     pch  = 16, col = "steelblue",
+     xlab = "Riqueza regional",
+     ylab = "Riqueza local",
+     main = "Relação local-regional de riqueza")
+abline(lm(S_local ~ S_regional),
+       col = "tomato", lwd = 2)
+legend("topleft",
+       legend = "Regressão linear",
+       col = "tomato", lwd = 2)
+```
+:::
+
+::::
+
+---
+
+## Processo 4: Dispersão (*Dispersal*)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Definição**: movimento de organismos no espaço
+- Equivale ao **fluxo gênico** na genética de populações
+- Conecta comunidades locais → **metacomunidades**
+- Efeitos da dispersão dependem de sua interação com seleção e deriva:
+  - **Dispersão baixa**: deriva domina → comunidades divergem
+  - **Dispersão moderada**: riqueza local é **maximizada**
+  - **Dispersão alta**: competidores superiores dominam globalmente → riqueza cai
+- Modelos de dispersão:
+  - **Ilha-continente**: dispersão unidirecional de fonte infinita
+  - **Metacomunidade**: rede de patches interconectados
+
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: dispersao-riqueza
+
+# Riqueza local em função da taxa de dispersão
+# (baseado em Cadotte 2006)
+
+set.seed(7)
+dispersao  <- seq(0, 1, by = 0.05)
+riqueza    <- 15 * dispersao * (1 - dispersao) * 4 +
+              rnorm(length(dispersao), 0, 0.5)
+riqueza    <- pmax(1, riqueza)
+
+plot(dispersao, riqueza,
+     type = "b", pch = 16,
+     col  = "steelblue", lwd = 2,
+     xlab = "Taxa de dispersão",
+     ylab = "Riqueza local média",
+     main = "Riqueza local vs. dispersão\n(unimodal — máximo intermediário)")
+abline(v = 0.5, lty = 2, col = "tomato")
+text(0.52, max(riqueza) * 0.95,
+     "Dispersão\nótima", col = "tomato", cex = 0.8)
+```
+:::
+
+::::
+
+---
+
+## Interações entre os 4 Processos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Os 4 processos raramente atuam **isoladamente**
+- Podem ser combinados de **12 formas** distintas para gerar modelos
+  - (especiação e dispersão exigem ao menos seleção **ou** deriva para serem operacionais)
+- Exemplos de interações:
+  - **Seleção + Deriva**: resultados determinísticos com ruído estocástico
+  - **Deriva + Dispersão**: Teoria da Biogeografia de Ilhas (MacArthur & Wilson 1967)
+  - **Deriva + Dispersão + Especiação**: Teoria Neutra de Hubbell (2001)
+  - **Seleção + Dispersão**: metacomunidades com *species sorting* e *mass effects*
+  - **Todos os 4**: teoria geral de comunidades (Vellend 2010)
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: interacao-deriva-selecao
+
+# Deriva + Seleção: resultado estocástico
+# mas com tendência determinística
+
+simular_deriva_selecao <- function(J, s, n_gen) {
+  N_A <- round(J * 0.5)
+  freq <- numeric(n_gen)
+  freq[1] <- N_A / J
+  for (i in 2:n_gen) {
+    p   <- N_A / J
+    p_s <- p * (1 + s) / (p * (1 + s) + (1 - p))
+    N_A <- rbinom(1, J, p_s)
+    freq[i] <- N_A / J
+    if (N_A == 0 | N_A == J) break
+  }
+  return(freq)
+}
+
+set.seed(10)
+plot(NULL, xlim = c(1, 100), ylim = c(0, 1),
+     xlab = "Geração", ylab = "Frequência sp. A",
+     main = "Deriva + Seleção (s=0.05, J=50)")
+for (i in 1:15)
+  lines(simular_deriva_selecao(50, 0.05, 100),
+        col = adjustcolor("steelblue", 0.5))
+```
+:::
+
+::::
+
+---
+
+## Tabela 2 — As 12 Combinações de Processos e Teorias
+
+:::: {.columns}
+
+::: {.column width="50%"}
+| # | Sel. | Der. | Esp. | Disp. | Teoria / Modelo |
+|:-:|:---:|:---:|:---:|:----:|---|
+| 1 | ✓ | | | | Modelos de nicho (competição por recursos, predador-presa, teias tróficas) |
+| 2 | | ✓ | | | Teoria Neutra I (estocasticidade demográfica) |
+| 3 | ✓ | ✓ | | | Modelos nicho-neutro (qualquer modelo de nicho com estocasticidade) |
+| 4 | ✓ | | ✓ | | Ecologia histórica I (hipótese do pool, gradientes de diversidade) |
+| 5 | | ✓ | ✓ | | Teoria Neutra II (não espacial) |
+| 6 | ✓ | | | ✓ | Metacomunidades determinísticas (*mass effects*, teias tróficas espaciais) |
+:::
+
+::: {.column width="50%"}
+| # | Sel. | Der. | Esp. | Disp. | Teoria / Modelo |
+|:-:|:---:|:---:|:---:|:----:|---|
+| 7 | | ✓ | | ✓ | Biogeografia de Ilhas (MacArthur & Wilson 1967) |
+| 8 | ✓ | ✓ | ✓ | | Ecologia histórica II |
+| 9 | ✓ | | ✓ | ✓ | Ecologia histórica III |
+| 10 | | ✓ | ✓ | ✓ | Teoria Neutra IV (espacial — Hubbell 2001) |
+| 11 | ✓ | ✓ | | ✓ | Metacomunidades estocásticas (*trade-off* colonização-competição) |
+| 12 | ✓ | ✓ | ✓ | ✓ | **Teoria geral de comunidades (Vellend 2010)** |
+
+::: {style="font-size: 0.7em; color: gray; margin-top: 8px;"}
+*Sel. = Seleção; Der. = Deriva; Esp. = Especiação; Disp. = Dispersão*
+:::
+:::
+
+::::
+
+---
+
+## Padrões em Comunidades: A "Caixa Preta"
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Os 4 processos geram padrões amplamente estudados:
+  - Relação espécies-área
+  - Distribuição de abundâncias relativas
+  - Gradiente latitudinal de diversidade
+  - Relação diversidade-distância (decaimento de similaridade)
+  - Relações diversidade-produtividade e diversidade-distúrbio
+- **Problema central**: a maioria dos padrões tem **múltiplas explicações** possíveis
+- Exemplo: relação espécies-área pode ser explicada por **deriva** (extinção menor em ilhas grandes), **dispersão** (maior área = maior alvo), **seleção** (maior heterogeneidade ambiental) e **especiação** (mais oportunidades em ilhas grandes)
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: relacao-especies-area
+
+# Relação espécies-área clássica
+# log(S) = log(c) + z * log(A)
+
+set.seed(42)
+A <- 10^seq(0, 5, length.out = 30)   # área (ha)
+z <- 0.28                              # coef. típico
+c <- 2.5
+S <- c * A^z * exp(rnorm(30, 0, 0.1))
+
+plot(log10(A), log10(S),
+     pch  = 16, col = "steelblue",
+     xlab = "log₁₀ Área (ha)",
+     ylab = "log₁₀ Riqueza (S)",
+     main = "Relação Espécies-Área\n(z = 0.28)")
+abline(lm(log10(S) ~ log10(A)),
+       col = "tomato", lwd = 2)
+legend("topleft",
+       legend = paste("z =", z),
+       col = "tomato", lwd = 2)
+```
+:::
+
+::::
+
+---
+
+## Teoria Neutra de Hubbell (2001)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Caso especial: **apenas Deriva + Dispersão + Especiação** (sem seleção)
+- Pressuposto: todos os indivíduos são **ecologicamente equivalentes** (*neutralidade*)
+- Comunidade local determinada por:
+  - **Tamanho** da metacomunidade (*J*~M~)
+  - **Taxa de especiação** (ν)
+  - **Taxa de dispersão** (*m*)
+- Surpreendentemente capaz de descrever curvas de abundância observadas em florestas tropicais
+- Críticas: ignora diferenças reais entre espécies → evidências de seleção existem
+- Contribuição: formalizou a **deriva** como processo legítimo, não apenas "ruído"
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: teoria-neutra
+
+# Simulação de distribuição de abundâncias
+# sob modelo neutro simplificado
+
+set.seed(99)
+
+# Metacomunidade com 50 espécies
+n_sp   <- 50
+J_meta <- 5000
+
+# Abundâncias iniciais (log-normal como proxy neutro)
+abund  <- rlnorm(n_sp, meanlog = 3, sdlog = 1.5)
+abund  <- round(abund / sum(abund) * J_meta)
+
+# Curva de distribuição de abundâncias (SAD)
+abund_ord <- sort(abund[abund > 0], decreasing = TRUE)
+
+plot(log10(abund_ord),
+     type = "h", col = "steelblue",
+     lwd  = 2,
+     xlab = "Rank de abundância",
+     ylab = "log₁₀ Abundância",
+     main = "Distribuição de abundâncias (SAD)\nModelo neutro simulado")
+```
+:::
+
+::::
+
+---
+
+## Metacomunidades: Dispersão como Eixo Central
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Metacomunidade**: conjunto de comunidades locais conectadas por dispersão
+- Holyoak et al. (2005) reconheceram 4 perspectivas:
+  - **Neutralidade**: deriva + dispersão (sem seleção)
+  - **Dinâmica de patches**: *trade-off* colonização-competição
+  - **Species sorting**: seleção filtra espécies por gradiente ambiental
+  - **Mass effects**: dispersão mantém espécies em habitats desfavoráveis
+- No framework de Vellend: as 4 perspectivas são combinações dos 4 processos → **não são categorias fundamentais**
+- Diversidade beta é a assinatura espacial das metacomunidades
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: metacomunidade-dispersao
+
+library(vegan)
+data(dune)
+data(dune.env)
+
+# Partição da variância: ambiente vs. espaço
+# (reflexo de seleção vs. dispersão/deriva)
+
+# Coordenadas geográficas simuladas (dune não tem)
+set.seed(5)
+xy <- data.frame(
+  x = runif(20, 0, 100),
+  y = runif(20, 0, 100)
+)
+
+# Variáveis de Moran (PCNM / dbMEM) - proxy espacial
+library(vegan)
+dune_hel <- decostand(dune, "hellinger")
+rda_env  <- rda(dune_hel ~ A1 + Moisture,
+                data = dune.env)
+RsquareAdj(rda_env)   # variância explicada pelo ambiente
+
+# Interpretação:
+# Variância explicada por ambiente → seleção
+# Variância espacial pura → dispersão/deriva
+```
+:::
+
+::::
+
+---
+
+## Implicações do Framework para o Ensino e a Pesquisa
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Para o ensino**: organiza toda a ecologia de comunidades em torno de 4 processos — mais coerente que listagem de padrões e interações
+- **Para a pesquisa**: permite **localizar qualquer teoria** na Tabela 2 → evita reinvenção da roda
+- **Para aplicações**: conservação e manejo podem ser guiados por identificar qual processo é dominante:
+  - Fragmentação → limita **dispersão**
+  - Invasões → alteram **seleção**
+  - Perda de habitat → intensifica **deriva**
+  - Extinções locais → afetam o **pool** via especiação
+- Desafio permanente: **inferir processo a partir de padrão** — a "caixa preta" continua
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: partição-processo
+
+# Exemplo: detectar a "impressão digital"
+# da seleção vs. deriva com betadisper
+
+library(vegan)
+data(dune)
+data(dune.env)
+
+dist_BC <- vegdist(dune, method = "bray")
+
+# PERMANOVA: testa seleção (efeito ambiental)
+set.seed(1)
+adonis2(dist_BC ~ Management + A1,
+        data = dune.env,
+        permutations = 999)
+
+# betadisper: testa dispersão intra-grupo
+# (proxy de deriva / variabilidade estocástica)
+disp <- betadisper(dist_BC,
+                   dune.env$Management)
+anova(disp)
+```
+:::
+
+::::
+
+---
+
+## Resumo — Vellend (2010)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Mensagem central:**
+
+- A ecologia de comunidades tem uma **teoria geral** — ela só precisava ser explicitada
+- Os 4 processos são **logicamente completos**: toda teoria específica é uma combinação deles
+- A teoria geral ecoa a **Síntese Moderna** da biologia evolutiva
+- Padrões têm **múltiplas causas** — isso não é fraqueza da ecologia, é sua natureza
+
+**Citação-chave:**
+
+> *"Species are added to communities via speciation and dispersal, and the relative abundances of these species are then shaped by drift and selection"* — Vellend (2010)
+:::
+
+::: {.column width="50%"}
+| Processo | Análogo evolutivo | Escala típica |
+|---|---|---|
+| **Seleção** | Seleção natural | Local / Regional |
+| **Deriva** | Deriva genética | Local |
+| **Especiação** | Mutação | Regional / Global |
+| **Dispersão** | Fluxo gênico | Local / Regional |
+
+**Leitura complementar:**
+
+- Vellend (2016). *The Theory of Ecological Communities*. Princeton University Press.
+- Hubbell (2001). *The Unified Neutral Theory of Biodiversity and Biogeography*. Princeton.
+- Holyoak et al. (2005). *Metacommunities*. University of Chicago Press.
+:::
+
+::::
+
+
+## Riqueza de Espécies (*S*)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Número total de **espécies presentes** em uma comunidade
+- Métrica mais simples e intuitiva
+- Não considera a **distribuição** de abundâncias
+- Sensível ao **esforço amostral**
+- Pode ser corrigida por:
+  - rarefação
+  - estimadores de riqueza (Chao1, ACE)
+- Comparações válidas exigem **igual esforço amostral**
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: riqueza
+
+library(vegan)
+data(dune)
+
+# Riqueza por sítio (número de espécies)
+S <- specnumber(dune)
+print(S)
+
+# Riqueza total do conjunto
+sum(colSums(dune) > 0)
+
+# Curva de acumulação de espécies
+curva <- specaccum(dune, method = "random")
+plot(curva,
+     xlab = "Sítios amostrados",
+     ylab = "Riqueza acumulada")
+```
+:::
+
+::::
+
+---
+
+## Abundância e Equitabilidade
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Abundância total**: soma dos indivíduos por sítio
+- **Abundância relativa**: proporção de cada espécie
+- **Índice de Shannon (H')**: mede diversidade considerando riqueza e equitabilidade
+- **Índice de Simpson (D)**: probabilidade de dois indivíduos pertencerem a espécies diferentes
+- **Equitabilidade de Pielou (J')**: H' / H'máx
+  - varia de 0 (dominância) a 1 (equitativo)
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: diversidade
+
+library(vegan)
+data(dune)
+
+# Índice de Shannon
+H <- diversity(dune, index = "shannon")
+
+# Índice de Simpson
+D <- diversity(dune, index = "simpson")
+
+# Equitabilidade de Pielou
+S <- specnumber(dune)
+J <- H / log(S)
+
+# Resumo por sítio
+dados_div <- data.frame(
+  Riqueza    = S,
+  Shannon    = round(H, 2),
+  Simpson    = round(D, 2),
+  Equitabil. = round(J, 2)
+)
+head(dados_div)
+```
+:::
+
+::::
+
+---
+
+## Rarefação: Comparando Riqueza Justa
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Comunidades com **diferentes tamanhos amostrais** não devem ter riqueza comparada diretamente
+- **Rarefação**: reamostrar todas as comunidades para o mesmo *N* mínimo
+- Permite comparações **mais honestas** de riqueza
+- Não descarta informação — apenas padroniza
+- Implementada com `rarefy()` ou `rrarefy()` no `vegan`
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: rarefacao
+
+library(vegan)
+data(BCI)  # floresta tropical BCI
+
+# Abundância total por sítio
+N <- rowSums(BCI)
+min(N)  # menor esforço amostral
+
+# Riqueza esperada com N mínimo
+S_raref <- rarefy(BCI, sample = min(N))
+
+# Curvas de rarefação
+rarecurve(BCI[1:10, ],
+          step   = 20,
+          sample = min(N),
+          xlab   = "Indivíduos",
+          ylab   = "Riqueza esperada",
+          label  = FALSE)
+abline(v = min(N), lty = 2, col = "red")
+```
+:::
+
+::::
+
+---
+
+## Composição de Espécies
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Quais** espécies estão presentes — não apenas quantas
+- Comunidades com mesma riqueza podem ser **completamente distintas**
+- Avaliada por índices de **similaridade/dissimilaridade**:
+  - **Jaccard** (presença/ausência)
+  - **Bray-Curtis** (abundâncias)
+  - **Sørensen** (presença/ausência, ponderado)
+- Resultado: **matriz de distâncias** entre pares de comunidades
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: composicao
+
+library(vegan)
+data(dune)
+
+# Dissimilaridade de Bray-Curtis
+dist_BC <- vegdist(dune, method = "bray")
+
+# Dissimilaridade de Jaccard
+# (presença/ausência)
+dist_J <- vegdist(dune,
+                  method = "jaccard",
+                  binary = TRUE)
+
+# Visualizando as primeiras distâncias
+as.matrix(dist_BC)[1:5, 1:5]
+```
+:::
+
+::::
+
+---
+
+## Índices de Similaridade: Comparativo
+
+:::: {.columns}
+
+::: {.column width="50%"}
+| Índice | Dados | Fórmula |
+|---|---|---|
+| **Jaccard** | P/A | $a / (a+b+c)$ |
+| **Sørensen** | P/A | $2a / (2a+b+c)$ |
+| **Bray-Curtis** | Abund. | $1 - 2W/(A+B)$ |
+
+- *a* = sp. compartilhadas
+- *b*, *c* = sp. exclusivas de cada comunidade
+- *W* = soma dos mínimos de abundância
+- Bray-Curtis: mais recomendado para **abundâncias**
+- Jaccard/Sørensen: para dados de **inventário**
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: similaridade-plot
+
+library(vegan)
+data(dune)
+
+# Cálculo manual de Bray-Curtis
+# entre sítios 1 e 2
+com1 <- dune[1, ]
+com2 <- dune[2, ]
+
+W <- sum(pmin(com1, com2))
+A <- sum(com1)
+B <- sum(com2)
+
+BC <- 1 - (2 * W) / (A + B)
+cat("Bray-Curtis (1 vs 2):", round(BC, 3))
+
+# Usando vegan
+vegdist(dune[1:2, ], method = "bray")
+```
+:::
+
+::::
+
+---
+
+## Ordenação: NMDS
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **NMDS** (Non-metric Multidimensional Scaling): técnica de ordenação exploratória
+- Reduz a matriz de distâncias em 2 (ou 3) dimensões
+- Pontos próximos = comunidades mais **similares**
+- Avaliado pelo **stress**: < 0.1 excelente, < 0.2 aceitável
+- Não assume distribuição dos dados
+- Ideal para dados ecológicos com **muitos zeros**
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: nmds
+
+library(vegan)
+data(dune)
+data(dune.env)
+
+# NMDS com Bray-Curtis
+set.seed(42)
+nmds <- metaMDS(dune,
+                distance = "bray",
+                k        = 2,
+                trymax   = 100)
+
+cat("Stress:", round(nmds$stress, 3))
+
+# Gráfico básico
+plot(nmds, type = "t")
+
+# Com grupos por uso do solo
+ordiplot(nmds, display = "sites")
+ordihull(nmds,
+         groups = dune.env$Management,
+         draw   = "polygon",
+         alpha  = 80)
+```
+:::
+
+::::
+
+---
+
+## Ordenação: PCoA e PCA
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **PCoA** (Principal Coordinates Analysis): ordena qualquer matriz de distâncias
+- **PCA** (Principal Component Analysis): usa distância euclidiana (dados transformados)
+- Diferença do NMDS: axes têm **interpretação métrica** (% da variância explicada)
+- Transformação de **Hellinger** recomendada antes de PCA em dados de comunidades
+  - reduz o efeito dos zeros
+  - estabiliza variâncias
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: pcoa-pca
+
+library(vegan)
+data(dune)
+
+# PCoA com Bray-Curtis
+dist_BC <- vegdist(dune, method = "bray")
+pcoa    <- wcmdscale(dist_BC, eig = TRUE)
+
+# Variância explicada
+eig_pct <- 100 * pcoa$eig / sum(pcoa$eig[pcoa$eig > 0])
+cat("Eixo 1:", round(eig_pct[1], 1), "%")
+cat("Eixo 2:", round(eig_pct[2], 1), "%")
+
+# PCA com transformação Hellinger
+dune_hel <- decostand(dune, "hellinger")
+pca      <- rda(dune_hel)
+biplot(pca, scaling = 2)
+```
+:::
+
+::::
+
+---
+
+## Análise de Diversidade Beta
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Diversidade beta (β)**: variação na composição entre comunidades
+- Pode ser decomposta em:
+  - **Reposição** (*turnover*): substituição de espécies
+  - **Aninhamento** (*nestedness*): subconjuntos de espécies
+- Pacote `betapart` realiza essa decomposição
+- Alta reposição → gradientes ambientais acentuados
+- Alto aninhamento → perda progressiva de espécies
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: beta-diversidade
+
+library(betapart)
+data(ceram.s)  # dados do pacote betapart
+
+# Partição da diversidade beta (P/A)
+beta_pair <- beta.pair(ceram.s,
+                       index.family = "sorensen")
+
+# Componentes:
+# beta.sim  = turnover (reposição)
+# beta.sne  = nestedness
+# beta.sor  = total (Sørensen)
+
+# Resumo estatístico
+summary(as.vector(
+  as.matrix(beta_pair$beta.sim)
+))
+
+# Mapa de calor de dissimilaridade
+image(as.matrix(beta_pair$beta.sor),
+      main = "Dissimilaridade total (Sørensen)")
+```
+:::
+
+::::
+
+---
+
+## Teste Estatístico: PERMANOVA
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **PERMANOVA** (adonis2): testa se grupos diferem em **composição**
+- Análogo a uma ANOVA multivariada, mas por permutações
+- Pode incluir múltiplas variáveis explicativas
+- Retorna R² (variância explicada) e valor-p
+- **Atenção**: sensível a diferenças na **dispersão intra-grupo**
+  - verificar com `betadisper()`
+- Requer variável de agrupamento (ex: tratamento, habitat)
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: permanova
+
+library(vegan)
+data(dune)
+data(dune.env)
+
+# Dissimilaridade de Bray-Curtis
+dist_BC <- vegdist(dune, method = "bray")
+
+# PERMANOVA
+set.seed(42)
+perm <- adonis2(dist_BC ~ Management,
+                data    = dune.env,
+                permutations = 999)
+print(perm)
+
+# Homogeneidade de dispersão
+disp <- betadisper(dist_BC,
+                   dune.env$Management)
+anova(disp)
+boxplot(disp, main = "Dispersão por grupo")
+```
+:::
+
+::::
+
+---
+
+## Exemplo Completo: Pipeline de Análise
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Fluxo típico de análise:**
+
+1. Importar e inspecionar a matriz
+2. Calcular métricas alfa (H', S, J')
+3. Calcular dissimilaridade (Bray-Curtis)
+4. Ordenar comunidades (NMDS ou PCoA)
+5. Testar diferenças com PERMANOVA
+6. Verificar homogeneidade (betadisper)
+7. Decompor beta-diversidade (betapart)
+8. Interpretar resultados biologicamente
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: pipeline
+
+library(vegan)
+data(dune); data(dune.env)
+
+# 1. Métricas alfa
+alfa <- data.frame(
+  S = specnumber(dune),
+  H = diversity(dune)
+)
+
+# 2. Dissimilaridade
+d <- vegdist(dune, "bray")
+
+# 3. Ordenação
+set.seed(1)
+ord <- metaMDS(dune, k = 2)
+
+# 4. Teste de hipótese
+adonis2(d ~ Management,
+        data = dune.env)
+
+# 5. Visualização final
+plot(ord, type = "n")
+points(ord,
+       col  = as.numeric(dune.env$Management),
+       pch  = 16, cex = 1.5)
+legend("topright",
+       legend = levels(dune.env$Management),
+       col    = 1:4, pch = 16)
+```
+:::
+
+::::
+
+---
+
+## Resumo dos Conceitos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+| Conceito | Métrica | Função R |
+|---|---|---|
+| Riqueza | *S* | `specnumber()` |
+| Diversidade | H', D | `diversity()` |
+| Equitabilidade | J' | H' / log(S) |
+| Rarefação | S esperado | `rarefy()` |
+| Dissimilaridade | Bray-Curtis | `vegdist()` |
+| Ordenação | NMDS, PCoA | `metaMDS()` |
+| Teste | PERMANOVA | `adonis2()` |
+| Beta-div. | turn. + nest. | `beta.pair()` |
+:::
+
+::: {.column width="50%"}
+**Boas práticas:**
+
+- Sempre verificar **esforço amostral** antes de comparar riquezas
+- Escolher índice de dissimilaridade adequado ao **tipo de dado**
+- Validar PERMANOVA com **betadisper**
+- Interpretar ordenações com **stress** ou **% variância**
+- Reportar tanto **diversidade alfa** quanto **beta**
+- Usar **gráficos** para comunicar padrões multivariados
+- Documentar **código reproduzível** (R Markdown / Quarto)
+:::
+
+::::
+
+---
+
+## Referências e Recursos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Livros fundamentais:**
+
+- Magurran, A. E. (2004). *Measuring Biological Diversity*. Blackwell.
+- Legendre & Legendre (2012). *Numerical Ecology*. Elsevier.
+- Gotelli & Ellison (2004). *A Primer of Ecological Statistics*. Sinauer.
+
+**Artigos-chave:**
+
+- Baselga (2010). Betapart decomposition — *Global Ecology & Biogeography*
+- Anderson et al. (2011). PERMANOVA — *Methods in Ecology & Evolution*
+:::
+
+::: {.column width="50%"}
+**Pacotes R principais:**
+
+- `vegan` — análises multivariadas de comunidades
+- `betapart` — decomposição de beta-diversidade
+- `iNEXT` — rarefação e extrapolação de diversidade
+- `BiodiversityR` — interface gráfica para `vegan`
+- `ggordiplots` — gráficos de ordenação com ggplot2
+
+**Recursos online:**
+
+- CRAN Task View: *Environmetrics*
+- Vegan tutoriais: [cran.r-project.org/vegan](https://cran.r-project.org/package=vegan)
+- Curso de Ecologia Numérica com R (Borcard et al.)
+:::
+
+::::
