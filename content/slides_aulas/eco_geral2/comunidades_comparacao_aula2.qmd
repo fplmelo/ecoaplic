@@ -1,0 +1,539 @@
+---
+title: "Comparação entre Comunidades Ecológicas"
+subtitle: "Métricas, Métodos e Exemplos Práticos"
+author: "Ecologia de Comunidades"
+date: today
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: slide
+    chalkboard: true
+    highlight-style: github
+    code-line-numbers: true
+    smaller: false
+    css: styles.css
+    logo: ""
+   # footer: "Ecologia de Comunidades — Comparação entre Comunidades"
+execute:
+  echo: true
+  eval: false
+scrolable: true
+
+---
+
+
+
+## Riqueza de Espécies (*S*)
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Número total de **espécies presentes** em uma comunidade
+- Métrica mais simples e intuitiva
+- Não considera a **distribuição** de abundâncias
+- Sensível ao **esforço amostral**
+- Pode ser corrigida por:
+  - rarefação
+  - estimadores de riqueza (Chao1, ACE)
+- Comparações válidas exigem **igual esforço amostral**
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: riqueza
+
+library(vegan)
+data(dune)
+
+# Riqueza por sítio (número de espécies)
+S <- specnumber(dune)
+print(S)
+
+# Riqueza total do conjunto
+sum(colSums(dune) > 0)
+
+# Curva de acumulação de espécies
+curva <- specaccum(dune, method = "random")
+plot(curva,
+     xlab = "Sítios amostrados",
+     ylab = "Riqueza acumulada")
+```
+:::
+
+::::
+
+---
+
+## Abundância e Equitabilidade
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Abundância total**: soma dos indivíduos por sítio
+- **Abundância relativa**: proporção de cada espécie
+- **Índice de Shannon (H')**: mede diversidade considerando riqueza e equitabilidade
+- **Índice de Simpson (D)**: probabilidade de dois indivíduos pertencerem a espécies diferentes
+- **Equitabilidade de Pielou (J')**: H' / H'máx
+  - varia de 0 (dominância) a 1 (equitativo)
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: diversidade
+
+library(vegan)
+data(dune)
+
+# Índice de Shannon
+H <- diversity(dune, index = "shannon")
+
+# Índice de Simpson
+D <- diversity(dune, index = "simpson")
+
+# Equitabilidade de Pielou
+S <- specnumber(dune)
+J <- H / log(S)
+
+# Resumo por sítio
+dados_div <- data.frame(
+  Riqueza    = S,
+  Shannon    = round(H, 2),
+  Simpson    = round(D, 2),
+  Equitabil. = round(J, 2)
+)
+head(dados_div)
+```
+:::
+
+::::
+
+---
+
+## Rarefação: Comparando Riqueza Justa
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Comunidades com **diferentes tamanhos amostrais** não devem ter riqueza comparada diretamente
+- **Rarefação**: reamostrar todas as comunidades para o mesmo *N* mínimo
+- Permite comparações **mais honestas** de riqueza
+- Não descarta informação — apenas padroniza
+- Implementada com `rarefy()` ou `rrarefy()` no `vegan`
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: rarefacao
+
+library(vegan)
+data(BCI)  # floresta tropical BCI
+
+# Abundância total por sítio
+N <- rowSums(BCI)
+min(N)  # menor esforço amostral
+
+# Riqueza esperada com N mínimo
+S_raref <- rarefy(BCI, sample = min(N))
+
+# Curvas de rarefação
+rarecurve(BCI[1:10, ],
+          step   = 20,
+          sample = min(N),
+          xlab   = "Indivíduos",
+          ylab   = "Riqueza esperada",
+          label  = FALSE)
+abline(v = min(N), lty = 2, col = "red")
+```
+:::
+
+::::
+
+---
+
+## Composição de Espécies
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Quais** espécies estão presentes — não apenas quantas
+- Comunidades com mesma riqueza podem ser **completamente distintas**
+- Avaliada por índices de **similaridade/dissimilaridade**:
+  - **Jaccard** (presença/ausência)
+  - **Bray-Curtis** (abundâncias)
+  - **Sørensen** (presença/ausência, ponderado)
+- Resultado: **matriz de distâncias** entre pares de comunidades
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: composicao
+
+library(vegan)
+data(dune)
+
+# Dissimilaridade de Bray-Curtis
+dist_BC <- vegdist(dune, method = "bray")
+
+# Dissimilaridade de Jaccard
+# (presença/ausência)
+dist_J <- vegdist(dune,
+                  method = "jaccard",
+                  binary = TRUE)
+
+# Visualizando as primeiras distâncias
+as.matrix(dist_BC)[1:5, 1:5]
+```
+:::
+
+::::
+
+---
+
+## Índices de Similaridade: Comparativo
+
+:::: {.columns}
+
+::: {.column width="50%"}
+| Índice | Dados | Fórmula |
+|---|---|---|
+| **Jaccard** | P/A | $a / (a+b+c)$ |
+| **Sørensen** | P/A | $2a / (2a+b+c)$ |
+| **Bray-Curtis** | Abund. | $1 - 2W/(A+B)$ |
+
+- *a* = sp. compartilhadas
+- *b*, *c* = sp. exclusivas de cada comunidade
+- *W* = soma dos mínimos de abundância
+- Bray-Curtis: mais recomendado para **abundâncias**
+- Jaccard/Sørensen: para dados de **inventário**
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: similaridade-plot
+
+library(vegan)
+data(dune)
+
+# Cálculo manual de Bray-Curtis
+# entre sítios 1 e 2
+com1 <- dune[1, ]
+com2 <- dune[2, ]
+
+W <- sum(pmin(com1, com2))
+A <- sum(com1)
+B <- sum(com2)
+
+BC <- 1 - (2 * W) / (A + B)
+cat("Bray-Curtis (1 vs 2):", round(BC, 3))
+
+# Usando vegan
+vegdist(dune[1:2, ], method = "bray")
+```
+:::
+
+::::
+
+---
+
+## Ordenação: NMDS
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **NMDS** (Non-metric Multidimensional Scaling): técnica de ordenação exploratória
+- Reduz a matriz de distâncias em 2 (ou 3) dimensões
+- Pontos próximos = comunidades mais **similares**
+- Avaliado pelo **stress**: < 0.1 excelente, < 0.2 aceitável
+- Não assume distribuição dos dados
+- Ideal para dados ecológicos com **muitos zeros**
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: nmds
+
+library(vegan)
+data(dune)
+data(dune.env)
+
+# NMDS com Bray-Curtis
+set.seed(42)
+nmds <- metaMDS(dune,
+                distance = "bray",
+                k        = 2,
+                trymax   = 100)
+
+cat("Stress:", round(nmds$stress, 3))
+
+# Gráfico básico
+plot(nmds, type = "t")
+
+# Com grupos por uso do solo
+ordiplot(nmds, display = "sites")
+ordihull(nmds,
+         groups = dune.env$Management,
+         draw   = "polygon",
+         alpha  = 80)
+```
+:::
+
+::::
+
+---
+
+## Ordenação: PCoA e PCA
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **PCoA** (Principal Coordinates Analysis): ordena qualquer matriz de distâncias
+- **PCA** (Principal Component Analysis): usa distância euclidiana (dados transformados)
+- Diferença do NMDS: axes têm **interpretação métrica** (% da variância explicada)
+- Transformação de **Hellinger** recomendada antes de PCA em dados de comunidades
+  - reduz o efeito dos zeros
+  - estabiliza variâncias
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: pcoa-pca
+
+library(vegan)
+data(dune)
+
+# PCoA com Bray-Curtis
+dist_BC <- vegdist(dune, method = "bray")
+pcoa    <- wcmdscale(dist_BC, eig = TRUE)
+
+# Variância explicada
+eig_pct <- 100 * pcoa$eig / sum(pcoa$eig[pcoa$eig > 0])
+cat("Eixo 1:", round(eig_pct[1], 1), "%")
+cat("Eixo 2:", round(eig_pct[2], 1), "%")
+
+# PCA com transformação Hellinger
+dune_hel <- decostand(dune, "hellinger")
+pca      <- rda(dune_hel)
+biplot(pca, scaling = 2)
+```
+:::
+
+::::
+
+---
+
+## Análise de Diversidade Beta
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **Diversidade beta (β)**: variação na composição entre comunidades
+- Pode ser decomposta em:
+  - **Reposição** (*turnover*): substituição de espécies
+  - **Aninhamento** (*nestedness*): subconjuntos de espécies
+- Pacote `betapart` realiza essa decomposição
+- Alta reposição → gradientes ambientais acentuados
+- Alto aninhamento → perda progressiva de espécies
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: beta-diversidade
+
+library(betapart)
+data(ceram.s)  # dados do pacote betapart
+
+# Partição da diversidade beta (P/A)
+beta_pair <- beta.pair(ceram.s,
+                       index.family = "sorensen")
+
+# Componentes:
+# beta.sim  = turnover (reposição)
+# beta.sne  = nestedness
+# beta.sor  = total (Sørensen)
+
+# Resumo estatístico
+summary(as.vector(
+  as.matrix(beta_pair$beta.sim)
+))
+
+# Mapa de calor de dissimilaridade
+image(as.matrix(beta_pair$beta.sor),
+      main = "Dissimilaridade total (Sørensen)")
+```
+:::
+
+::::
+
+---
+
+## Teste Estatístico: PERMANOVA
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- **PERMANOVA** (adonis2): testa se grupos diferem em **composição**
+- Análogo a uma ANOVA multivariada, mas por permutações
+- Pode incluir múltiplas variáveis explicativas
+- Retorna R² (variância explicada) e valor-p
+- **Atenção**: sensível a diferenças na **dispersão intra-grupo**
+  - verificar com `betadisper()`
+- Requer variável de agrupamento (ex: tratamento, habitat)
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: permanova
+
+library(vegan)
+data(dune)
+data(dune.env)
+
+# Dissimilaridade de Bray-Curtis
+dist_BC <- vegdist(dune, method = "bray")
+
+# PERMANOVA
+set.seed(42)
+perm <- adonis2(dist_BC ~ Management,
+                data    = dune.env,
+                permutations = 999)
+print(perm)
+
+# Homogeneidade de dispersão
+disp <- betadisper(dist_BC,
+                   dune.env$Management)
+anova(disp)
+boxplot(disp, main = "Dispersão por grupo")
+```
+:::
+
+::::
+
+---
+
+## Exemplo Completo: Pipeline de Análise
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Fluxo típico de análise:**
+
+1. Importar e inspecionar a matriz
+2. Calcular métricas alfa (H', S, J')
+3. Calcular dissimilaridade (Bray-Curtis)
+4. Ordenar comunidades (NMDS ou PCoA)
+5. Testar diferenças com PERMANOVA
+6. Verificar homogeneidade (betadisper)
+7. Decompor beta-diversidade (betapart)
+8. Interpretar resultados biologicamente
+:::
+
+::: {.column width="50%"}
+```{r}
+#| label: pipeline
+
+library(vegan)
+data(dune); data(dune.env)
+
+# 1. Métricas alfa
+alfa <- data.frame(
+  S = specnumber(dune),
+  H = diversity(dune)
+)
+
+# 2. Dissimilaridade
+d <- vegdist(dune, "bray")
+
+# 3. Ordenação
+set.seed(1)
+ord <- metaMDS(dune, k = 2)
+
+# 4. Teste de hipótese
+adonis2(d ~ Management,
+        data = dune.env)
+
+# 5. Visualização final
+plot(ord, type = "n")
+points(ord,
+       col  = as.numeric(dune.env$Management),
+       pch  = 16, cex = 1.5)
+legend("topright",
+       legend = levels(dune.env$Management),
+       col    = 1:4, pch = 16)
+```
+:::
+
+::::
+
+---
+
+## Resumo dos Conceitos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+| Conceito | Métrica | Função R |
+|---|---|---|
+| Riqueza | *S* | `specnumber()` |
+| Diversidade | H', D | `diversity()` |
+| Equitabilidade | J' | H' / log(S) |
+| Rarefação | S esperado | `rarefy()` |
+| Dissimilaridade | Bray-Curtis | `vegdist()` |
+| Ordenação | NMDS, PCoA | `metaMDS()` |
+| Teste | PERMANOVA | `adonis2()` |
+| Beta-div. | turn. + nest. | `beta.pair()` |
+:::
+
+::: {.column width="50%"}
+**Boas práticas:**
+
+- Sempre verificar **esforço amostral** antes de comparar riquezas
+- Escolher índice de dissimilaridade adequado ao **tipo de dado**
+- Validar PERMANOVA com **betadisper**
+- Interpretar ordenações com **stress** ou **% variância**
+- Reportar tanto **diversidade alfa** quanto **beta**
+- Usar **gráficos** para comunicar padrões multivariados
+- Documentar **código reproduzível** (R Markdown / Quarto)
+:::
+
+::::
+
+---
+
+## Referências e Recursos
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Livros fundamentais:**
+
+- Magurran, A. E. (2004). *Measuring Biological Diversity*. Blackwell.
+- Legendre & Legendre (2012). *Numerical Ecology*. Elsevier.
+- Gotelli & Ellison (2004). *A Primer of Ecological Statistics*. Sinauer.
+
+**Artigos-chave:**
+
+- Baselga (2010). Betapart decomposition — *Global Ecology & Biogeography*
+- Anderson et al. (2011). PERMANOVA — *Methods in Ecology & Evolution*
+:::
+
+::: {.column width="50%"}
+**Pacotes R principais:**
+
+- `vegan` — análises multivariadas de comunidades
+- `betapart` — decomposição de beta-diversidade
+- `iNEXT` — rarefação e extrapolação de diversidade
+- `BiodiversityR` — interface gráfica para `vegan`
+- `ggordiplots` — gráficos de ordenação com ggplot2
+
+**Recursos online:**
+
+- CRAN Task View: *Environmetrics*
+- Vegan tutoriais: [cran.r-project.org/vegan](https://cran.r-project.org/package=vegan)
+- Curso de Ecologia Numérica com R (Borcard et al.)
+:::
+
+::::
+
+
+## Fim {.center}

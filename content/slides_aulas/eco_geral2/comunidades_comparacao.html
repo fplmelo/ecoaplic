@@ -9,9 +9,8 @@
 <link href="comunidades_comparacao_files/libs/quarto-html/quarto-syntax-highlighting-a06763021a52c43c40a351ac8b799b8f.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.36">
 
-  <meta name="author" content="Ecologia de Comunidades">
-  <meta name="dcterms.date" content="2026-05-04">
-  <title>Comparação entre Comunidades Ecológicas</title>
+  <meta name="author" content="Felipe Melo">
+  <title>Bases Teóricas para o estudo de Comunidades Ecológicas</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -32,72 +31,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-      }
-    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-    div.sourceCode
-      { color: #24292e;  }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #24292e; } /* Normal */
-    code span.al { color: #ff5555; font-weight: bold; } /* Alert */
-    code span.an { color: #6a737d; } /* Annotation */
-    code span.at { color: #d73a49; } /* Attribute */
-    code span.bn { color: #005cc5; } /* BaseN */
-    code span.bu { color: #d73a49; } /* BuiltIn */
-    code span.cf { color: #d73a49; } /* ControlFlow */
-    code span.ch { color: #032f62; } /* Char */
-    code span.cn { color: #005cc5; } /* Constant */
-    code span.co { color: #6a737d; } /* Comment */
-    code span.cv { color: #6a737d; } /* CommentVar */
-    code span.do { color: #6a737d; } /* Documentation */
-    code span.dt { color: #d73a49; } /* DataType */
-    code span.dv { color: #005cc5; } /* DecVal */
-    code span.er { color: #ff5555; text-decoration: underline; } /* Error */
-    code span.ex { color: #d73a49; font-weight: bold; } /* Extension */
-    code span.fl { color: #005cc5; } /* Float */
-    code span.fu { color: #6f42c1; } /* Function */
-    code span.im { color: #032f62; } /* Import */
-    code span.in { color: #6a737d; } /* Information */
-    code span.kw { color: #d73a49; } /* Keyword */
-    code span.op { color: #24292e; } /* Operator */
-    code span.ot { color: #6f42c1; } /* Other */
-    code span.pp { color: #d73a49; } /* Preprocessor */
-    code span.re { color: #6a737d; } /* RegionMarker */
-    code span.sc { color: #005cc5; } /* SpecialChar */
-    code span.ss { color: #032f62; } /* SpecialString */
-    code span.st { color: #032f62; } /* String */
-    code span.va { color: #e36209; } /* Variable */
-    code span.vs { color: #032f62; } /* VerbatimString */
-    code span.wa { color: #ff5555; } /* Warning */
   </style>
   <link rel="stylesheet" href="comunidades_comparacao_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
   <link rel="stylesheet" href="styles.css">
@@ -200,18 +133,16 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Comparação entre Comunidades Ecológicas</h1>
-  <p class="subtitle">Métricas, Métodos e Exemplos Práticos</p>
+  <h1 class="title">Bases Teóricas para o estudo de Comunidades Ecológicas</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Ecologia de Comunidades 
+Felipe Melo 
 </div>
 </div>
 </div>
 
-  <p class="date">2026-05-04</p>
 </section>
 <section id="o-que-é-uma-comunidade-ecológica" class="slide level2">
 <h2>O que é uma Comunidade Ecológica?</h2>
@@ -299,8 +230,6 @@ Ecologia de Comunidades
 <img data-src="fig4_vellend.png" class="r-stretch quarto-figure-center"><p class="caption">Espécies são adicionadas via especiação e dispersão; abundâncias relativas são moldadas por deriva e seleção (Vellend 2010)</p></section>
 <section id="processo-1-seleção" class="slide level2">
 <h2>Processo 1: Seleção</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <ul>
 <li><strong>Definição</strong>: diferenças determinísticas de <em>fitness</em></li>
 <li>Três formas principais:
@@ -310,19 +239,15 @@ Ecologia de Comunidades
 <li><strong>Seleção variável</strong> no espaço/tempo: permite coexistência via <em>trade-offs</em></li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="https://news.uchicago.edu/sites/default/files/styles/gallery/public/images/2021-12/secondary-succession.jpg"></p>
-</div></div>
+</section>
+<section id="processo-1-seleção-1" class="slide level2">
+<h2>Processo 1: Seleção</h2>
+<p><img data-src="https://news.uchicago.edu/sites/default/files/styles/gallery/public/images/2021-12/secondary-succession.jpg" class="fragment absolute quarto-figure quarto-figure-center" style=""> <img data-src="https://projetocolabora.com.br/wp-content/uploads/2021/06/capibaribe1-edit-1536x1152.jpg" class="fragment absolute quarto-figure quarto-figure-center" style=""></p>
 </section>
 <section id="processo-2-deriva-ecológica-drift" class="slide level2">
 <h2>Processo 2: Deriva Ecológica (<em>Drift</em>)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <ul>
 <li><strong>Definição</strong>: mudanças <strong>estocásticas</strong> nas abundâncias relativas das espécies</li>
-<li>Resulta de nascimentos e mortes como processos aleatórios em populações finitas</li>
-<li>Com deriva pura (sem seleção): todas as espécies têm a mesma probabilidade de fixação</li>
-<li><strong>Neutralidade</strong>: quando indivíduos de todas as espécies têm parâmetros demográficos idênticos</li>
 <li>Hubbell (2001): <em>Teoria Neutra Unificada</em> — bases da deriva ecológica</li>
 <li>Importância da deriva aumenta quando:
 <ul>
@@ -331,128 +256,51 @@ Ecologia de Comunidades
 <li>Distúrbios <strong>reduzem</strong> o tamanho da comunidade</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="co"># Deriva ecológica pura (sem seleção)</span></span>
-<span id="cb1-2"><a href=""></a><span class="co"># Modelo de urna de Moran</span></span>
-<span id="cb1-3"><a href=""></a></span>
-<span id="cb1-4"><a href=""></a>simular_deriva <span class="ot">&lt;-</span> <span class="cf">function</span>(J, n_gen, <span class="at">freq_ini =</span> <span class="fl">0.5</span>) {</span>
-<span id="cb1-5"><a href=""></a>  freq <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n_gen)</span>
-<span id="cb1-6"><a href=""></a>  freq[<span class="dv">1</span>] <span class="ot">&lt;-</span> freq_ini</span>
-<span id="cb1-7"><a href=""></a>  N_A <span class="ot">&lt;-</span> <span class="fu">round</span>(J <span class="sc">*</span> freq_ini)</span>
-<span id="cb1-8"><a href=""></a></span>
-<span id="cb1-9"><a href=""></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span>n_gen) {</span>
-<span id="cb1-10"><a href=""></a>    <span class="co"># Evento de nascimento/morte aleatório</span></span>
-<span id="cb1-11"><a href=""></a>    N_A <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="dv">1</span>, J, N_A <span class="sc">/</span> J)</span>
-<span id="cb1-12"><a href=""></a>    freq[i] <span class="ot">&lt;-</span> N_A <span class="sc">/</span> J</span>
-<span id="cb1-13"><a href=""></a>    <span class="cf">if</span> (N_A <span class="sc">==</span> <span class="dv">0</span> <span class="sc">|</span> N_A <span class="sc">==</span> J) <span class="cf">break</span></span>
-<span id="cb1-14"><a href=""></a>  }</span>
-<span id="cb1-15"><a href=""></a>  <span class="fu">return</span>(freq)</span>
-<span id="cb1-16"><a href=""></a>}</span>
-<span id="cb1-17"><a href=""></a></span>
-<span id="cb1-18"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb1-19"><a href=""></a><span class="fu">plot</span>(<span class="cn">NULL</span>, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">200</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>),</span>
-<span id="cb1-20"><a href=""></a>     <span class="at">xlab =</span> <span class="st">"Geração"</span>, <span class="at">ylab =</span> <span class="st">"Frequência de sp. A"</span>,</span>
-<span id="cb1-21"><a href=""></a>     <span class="at">main =</span> <span class="st">"Deriva ecológica pura (J = 100)"</span>)</span>
-<span id="cb1-22"><a href=""></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) {</span>
-<span id="cb1-23"><a href=""></a>  <span class="fu">lines</span>(<span class="fu">simular_deriva</span>(<span class="dv">100</span>, <span class="dv">200</span>),</span>
-<span id="cb1-24"><a href=""></a>        <span class="at">col =</span> <span class="fu">adjustcolor</span>(<span class="st">"tomato"</span>, <span class="fl">0.6</span>))</span>
-<span id="cb1-25"><a href=""></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
 </section>
-<section id="processo-3-especiação-speciation" class="slide level2">
-<h2>Processo 3: Especiação (<em>Speciation</em>)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="processo-2-deriva-ecológica-drift-1" class="slide level2">
+<h2>Processo 2: Deriva Ecológica (<em>Drift</em>)</h2>
+
+<img data-src="deriva.png" class="r-stretch"></section>
+<section id="processo-3-especiação" class="slide level2">
+<h2>Processo 3: Especiação</h2>
 <ul>
 <li><strong>Definição</strong>: criação de novas espécies</li>
-<li>Equivale à <strong>mutação</strong> na genética de populações — fonte última de diversidade</li>
-<li>Opera em escalas de <strong>tempo e espaço</strong> muito maiores que seleção e deriva</li>
-<li>Determina o <strong>pool regional de espécies</strong>, que por sua vez molda comunidades locais</li>
-<li><em>Hipótese do pool de espécies</em> (Taylor et al.&nbsp;1990): habitats mais antigos ou mais representados geram mais espécies adaptadas a eles</li>
+<li>Equivale à <strong>mutação</strong> na genética de populações</li>
+<li>Determina o <strong>pool regional de espécies</strong> (Div Gama)</li>
+<li><em>Hipótese do pool de espécies</em> (Taylor et al.&nbsp;1990): habitats mais antigos geram mais espécies adaptadas a eles</li>
 <li>Padrões que dependem de especiação:
 <ul>
-<li><strong>Anomalias de diversidade</strong> entre regiões com condições similares</li>
+<li><strong>Beta Diversidade</strong> entre regiões com condições similares</li>
 <li><strong>Gradientes de diversidade</strong> com altitude, latitude ou produtividade</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="co"># Ilustração: diversidade local aumenta</span></span>
-<span id="cb2-2"><a href=""></a><span class="co"># com o tamanho do pool regional</span></span>
-<span id="cb2-3"><a href=""></a></span>
-<span id="cb2-4"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb2-5"><a href=""></a></span>
-<span id="cb2-6"><a href=""></a><span class="co"># Relação local-regional de riqueza</span></span>
-<span id="cb2-7"><a href=""></a><span class="co"># (padrão amplamente documentado)</span></span>
-<span id="cb2-8"><a href=""></a></span>
-<span id="cb2-9"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb2-10"><a href=""></a>S_regional <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">10</span>, <span class="dv">200</span>, <span class="at">by =</span> <span class="dv">10</span>)</span>
-<span id="cb2-11"><a href=""></a>S_local    <span class="ot">&lt;-</span> <span class="dv">3</span> <span class="sc">+</span> <span class="fl">0.25</span> <span class="sc">*</span> S_regional <span class="sc">+</span></span>
-<span id="cb2-12"><a href=""></a>              <span class="fu">rnorm</span>(<span class="fu">length</span>(S_regional), <span class="dv">0</span>, <span class="dv">3</span>)</span>
-<span id="cb2-13"><a href=""></a>S_local    <span class="ot">&lt;-</span> <span class="fu">pmax</span>(<span class="dv">2</span>, S_local)</span>
-<span id="cb2-14"><a href=""></a></span>
-<span id="cb2-15"><a href=""></a><span class="fu">plot</span>(S_regional, S_local,</span>
-<span id="cb2-16"><a href=""></a>     <span class="at">pch  =</span> <span class="dv">16</span>, <span class="at">col =</span> <span class="st">"steelblue"</span>,</span>
-<span id="cb2-17"><a href=""></a>     <span class="at">xlab =</span> <span class="st">"Riqueza regional"</span>,</span>
-<span id="cb2-18"><a href=""></a>     <span class="at">ylab =</span> <span class="st">"Riqueza local"</span>,</span>
-<span id="cb2-19"><a href=""></a>     <span class="at">main =</span> <span class="st">"Relação local-regional de riqueza"</span>)</span>
-<span id="cb2-20"><a href=""></a><span class="fu">abline</span>(<span class="fu">lm</span>(S_local <span class="sc">~</span> S_regional),</span>
-<span id="cb2-21"><a href=""></a>       <span class="at">col =</span> <span class="st">"tomato"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span>
-<span id="cb2-22"><a href=""></a><span class="fu">legend</span>(<span class="st">"topleft"</span>,</span>
-<span id="cb2-23"><a href=""></a>       <span class="at">legend =</span> <span class="st">"Regressão linear"</span>,</span>
-<span id="cb2-24"><a href=""></a>       <span class="at">col =</span> <span class="st">"tomato"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
 </section>
-<section id="processo-4-dispersão-dispersal" class="slide level2">
-<h2>Processo 4: Dispersão (<em>Dispersal</em>)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="processo-3-especiação-1" class="slide level2">
+<h2>Processo 3: Especiação</h2>
+
+<img data-src="speciation.png" class="r-stretch"></section>
+<section id="processo-4-dispersão" class="slide level2">
+<h2>Processo 4: Dispersão</h2>
 <ul>
-<li><strong>Definição</strong>: movimento de organismos no espaço</li>
+<li><strong>Definição</strong>: movimento de organismos no espaço
+<ul>
 <li>Equivale ao <strong>fluxo gênico</strong> na genética de populações</li>
 <li>Conecta comunidades locais → <strong>metacomunidades</strong></li>
+</ul></li>
 <li>Efeitos da dispersão dependem de sua interação com seleção e deriva:
 <ul>
 <li><strong>Dispersão baixa</strong>: deriva domina → comunidades divergem</li>
 <li><strong>Dispersão moderada</strong>: riqueza local é <strong>maximizada</strong></li>
 <li><strong>Dispersão alta</strong>: competidores superiores dominam globalmente → riqueza cai</li>
 </ul></li>
-<li>Modelos de dispersão:
-<ul>
-<li><strong>Ilha-continente</strong>: dispersão unidirecional de fonte infinita</li>
-<li><strong>Metacomunidade</strong>: rede de patches interconectados</li>
-</ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="co"># Riqueza local em função da taxa de dispersão</span></span>
-<span id="cb3-2"><a href=""></a><span class="co"># (baseado em Cadotte 2006)</span></span>
-<span id="cb3-3"><a href=""></a></span>
-<span id="cb3-4"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">7</span>)</span>
-<span id="cb3-5"><a href=""></a>dispersao  <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="at">by =</span> <span class="fl">0.05</span>)</span>
-<span id="cb3-6"><a href=""></a>riqueza    <span class="ot">&lt;-</span> <span class="dv">15</span> <span class="sc">*</span> dispersao <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> dispersao) <span class="sc">*</span> <span class="dv">4</span> <span class="sc">+</span></span>
-<span id="cb3-7"><a href=""></a>              <span class="fu">rnorm</span>(<span class="fu">length</span>(dispersao), <span class="dv">0</span>, <span class="fl">0.5</span>)</span>
-<span id="cb3-8"><a href=""></a>riqueza    <span class="ot">&lt;-</span> <span class="fu">pmax</span>(<span class="dv">1</span>, riqueza)</span>
-<span id="cb3-9"><a href=""></a></span>
-<span id="cb3-10"><a href=""></a><span class="fu">plot</span>(dispersao, riqueza,</span>
-<span id="cb3-11"><a href=""></a>     <span class="at">type =</span> <span class="st">"b"</span>, <span class="at">pch =</span> <span class="dv">16</span>,</span>
-<span id="cb3-12"><a href=""></a>     <span class="at">col  =</span> <span class="st">"steelblue"</span>, <span class="at">lwd =</span> <span class="dv">2</span>,</span>
-<span id="cb3-13"><a href=""></a>     <span class="at">xlab =</span> <span class="st">"Taxa de dispersão"</span>,</span>
-<span id="cb3-14"><a href=""></a>     <span class="at">ylab =</span> <span class="st">"Riqueza local média"</span>,</span>
-<span id="cb3-15"><a href=""></a>     <span class="at">main =</span> <span class="st">"Riqueza local vs. dispersão</span><span class="sc">\n</span><span class="st">(unimodal — máximo intermediário)"</span>)</span>
-<span id="cb3-16"><a href=""></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fl">0.5</span>, <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">col =</span> <span class="st">"tomato"</span>)</span>
-<span id="cb3-17"><a href=""></a><span class="fu">text</span>(<span class="fl">0.52</span>, <span class="fu">max</span>(riqueza) <span class="sc">*</span> <span class="fl">0.95</span>,</span>
-<span id="cb3-18"><a href=""></a>     <span class="st">"Dispersão</span><span class="sc">\n</span><span class="st">ótima"</span>, <span class="at">col =</span> <span class="st">"tomato"</span>, <span class="at">cex =</span> <span class="fl">0.8</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
 </section>
+<section id="processo-4-dispersão-1" class="slide level2">
+<h2>Processo 4: Dispersão</h2>
+
+<img data-src="dispersao.png" class="r-stretch"></section>
 <section id="interações-entre-os-4-processos" class="slide level2">
 <h2>Interações entre os 4 Processos</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <ul>
 <li>Os 4 processos raramente atuam <strong>isoladamente</strong></li>
 <li>Podem ser combinados de <strong>12 formas</strong> distintas para gerar modelos
@@ -468,39 +316,14 @@ Ecologia de Comunidades
 <li><strong>Todos os 4</strong>: teoria geral de comunidades (Vellend 2010)</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="co"># Deriva + Seleção: resultado estocástico</span></span>
-<span id="cb4-2"><a href=""></a><span class="co"># mas com tendência determinística</span></span>
-<span id="cb4-3"><a href=""></a></span>
-<span id="cb4-4"><a href=""></a>simular_deriva_selecao <span class="ot">&lt;-</span> <span class="cf">function</span>(J, s, n_gen) {</span>
-<span id="cb4-5"><a href=""></a>  N_A <span class="ot">&lt;-</span> <span class="fu">round</span>(J <span class="sc">*</span> <span class="fl">0.5</span>)</span>
-<span id="cb4-6"><a href=""></a>  freq <span class="ot">&lt;-</span> <span class="fu">numeric</span>(n_gen)</span>
-<span id="cb4-7"><a href=""></a>  freq[<span class="dv">1</span>] <span class="ot">&lt;-</span> N_A <span class="sc">/</span> J</span>
-<span id="cb4-8"><a href=""></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span>n_gen) {</span>
-<span id="cb4-9"><a href=""></a>    p   <span class="ot">&lt;-</span> N_A <span class="sc">/</span> J</span>
-<span id="cb4-10"><a href=""></a>    p_s <span class="ot">&lt;-</span> p <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">+</span> s) <span class="sc">/</span> (p <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">+</span> s) <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">-</span> p))</span>
-<span id="cb4-11"><a href=""></a>    N_A <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="dv">1</span>, J, p_s)</span>
-<span id="cb4-12"><a href=""></a>    freq[i] <span class="ot">&lt;-</span> N_A <span class="sc">/</span> J</span>
-<span id="cb4-13"><a href=""></a>    <span class="cf">if</span> (N_A <span class="sc">==</span> <span class="dv">0</span> <span class="sc">|</span> N_A <span class="sc">==</span> J) <span class="cf">break</span></span>
-<span id="cb4-14"><a href=""></a>  }</span>
-<span id="cb4-15"><a href=""></a>  <span class="fu">return</span>(freq)</span>
-<span id="cb4-16"><a href=""></a>}</span>
-<span id="cb4-17"><a href=""></a></span>
-<span id="cb4-18"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">10</span>)</span>
-<span id="cb4-19"><a href=""></a><span class="fu">plot</span>(<span class="cn">NULL</span>, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">100</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">1</span>),</span>
-<span id="cb4-20"><a href=""></a>     <span class="at">xlab =</span> <span class="st">"Geração"</span>, <span class="at">ylab =</span> <span class="st">"Frequência sp. A"</span>,</span>
-<span id="cb4-21"><a href=""></a>     <span class="at">main =</span> <span class="st">"Deriva + Seleção (s=0.05, J=50)"</span>)</span>
-<span id="cb4-22"><a href=""></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>)</span>
-<span id="cb4-23"><a href=""></a>  <span class="fu">lines</span>(<span class="fu">simular_deriva_selecao</span>(<span class="dv">50</span>, <span class="fl">0.05</span>, <span class="dv">100</span>),</span>
-<span id="cb4-24"><a href=""></a>        <span class="at">col =</span> <span class="fu">adjustcolor</span>(<span class="st">"steelblue"</span>, <span class="fl">0.5</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
 </section>
-<section id="tabela-2-as-12-combinações-de-processos-e-teorias" class="slide level2">
-<h2>Tabela 2 — As 12 Combinações de Processos e Teorias</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="interações-entre-os-4-processos-1" class="slide level2">
+<h2>Interações entre os 4 Processos</h2>
+
+<img data-src="interact.jpg" class="r-stretch"></section>
+<section id="as-12-combinações-de-processos-e-teorias" class="slide level2 scrollable">
+<h2>As 12 Combinações de Processos e Teorias</h2>
+<div class="scrollable">
 <table class="caption-top">
 <colgroup>
 <col style="width: 11%">
@@ -569,29 +392,6 @@ Ecologia de Comunidades
 <td style="text-align: center;">✓</td>
 <td>Metacomunidades determinísticas (<em>mass effects</em>, teias tróficas espaciais)</td>
 </tr>
-</tbody>
-</table>
-</div><div class="column" style="width:50%;">
-<table class="caption-top">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 18%">
-<col style="width: 22%">
-<col style="width: 11%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">#</th>
-<th style="text-align: center;">Sel.</th>
-<th style="text-align: center;">Der.</th>
-<th style="text-align: center;">Esp.</th>
-<th style="text-align: center;">Disp.</th>
-<th>Teoria / Modelo</th>
-</tr>
-</thead>
-<tbody>
 <tr class="odd">
 <td style="text-align: center;">7</td>
 <td style="text-align: center;"></td>
@@ -642,15 +442,10 @@ Ecologia de Comunidades
 </tr>
 </tbody>
 </table>
-<div style="font-size: 0.7em; color: gray; margin-top: 8px;">
-<p><em>Sel. = Seleção; Der. = Deriva; Esp. = Especiação; Disp. = Dispersão</em></p>
 </div>
-</div></div>
 </section>
 <section id="padrões-em-comunidades-a-caixa-preta" class="slide level2">
 <h2>Padrões em Comunidades: A “Caixa Preta”</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <ul>
 <li>Os 4 processos geram padrões amplamente estudados:
 <ul>
@@ -660,37 +455,21 @@ Ecologia de Comunidades
 <li>Relação diversidade-distância (decaimento de similaridade)</li>
 <li>Relações diversidade-produtividade e diversidade-distúrbio</li>
 </ul></li>
+</ul>
+</section>
+<section id="exemplos" class="slide level2">
+<h2>Exemplos</h2>
+<ul>
 <li><strong>Problema central</strong>: a maioria dos padrões tem <strong>múltiplas explicações</strong> possíveis</li>
 <li>Exemplo: relação espécies-área pode ser explicada por <strong>deriva</strong> (extinção menor em ilhas grandes), <strong>dispersão</strong> (maior área = maior alvo), <strong>seleção</strong> (maior heterogeneidade ambiental) e <strong>especiação</strong> (mais oportunidades em ilhas grandes)</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="co"># Relação espécies-área clássica</span></span>
-<span id="cb5-2"><a href=""></a><span class="co"># log(S) = log(c) + z * log(A)</span></span>
-<span id="cb5-3"><a href=""></a></span>
-<span id="cb5-4"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb5-5"><a href=""></a>A <span class="ot">&lt;-</span> <span class="dv">10</span><span class="sc">^</span><span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="at">length.out =</span> <span class="dv">30</span>)   <span class="co"># área (ha)</span></span>
-<span id="cb5-6"><a href=""></a>z <span class="ot">&lt;-</span> <span class="fl">0.28</span>                              <span class="co"># coef. típico</span></span>
-<span id="cb5-7"><a href=""></a>c <span class="ot">&lt;-</span> <span class="fl">2.5</span></span>
-<span id="cb5-8"><a href=""></a>S <span class="ot">&lt;-</span> c <span class="sc">*</span> A<span class="sc">^</span>z <span class="sc">*</span> <span class="fu">exp</span>(<span class="fu">rnorm</span>(<span class="dv">30</span>, <span class="dv">0</span>, <span class="fl">0.1</span>))</span>
-<span id="cb5-9"><a href=""></a></span>
-<span id="cb5-10"><a href=""></a><span class="fu">plot</span>(<span class="fu">log10</span>(A), <span class="fu">log10</span>(S),</span>
-<span id="cb5-11"><a href=""></a>     <span class="at">pch  =</span> <span class="dv">16</span>, <span class="at">col =</span> <span class="st">"steelblue"</span>,</span>
-<span id="cb5-12"><a href=""></a>     <span class="at">xlab =</span> <span class="st">"log₁₀ Área (ha)"</span>,</span>
-<span id="cb5-13"><a href=""></a>     <span class="at">ylab =</span> <span class="st">"log₁₀ Riqueza (S)"</span>,</span>
-<span id="cb5-14"><a href=""></a>     <span class="at">main =</span> <span class="st">"Relação Espécies-Área</span><span class="sc">\n</span><span class="st">(z = 0.28)"</span>)</span>
-<span id="cb5-15"><a href=""></a><span class="fu">abline</span>(<span class="fu">lm</span>(<span class="fu">log10</span>(S) <span class="sc">~</span> <span class="fu">log10</span>(A)),</span>
-<span id="cb5-16"><a href=""></a>       <span class="at">col =</span> <span class="st">"tomato"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span>
-<span id="cb5-17"><a href=""></a><span class="fu">legend</span>(<span class="st">"topleft"</span>,</span>
-<span id="cb5-18"><a href=""></a>       <span class="at">legend =</span> <span class="fu">paste</span>(<span class="st">"z ="</span>, z),</span>
-<span id="cb5-19"><a href=""></a>       <span class="at">col =</span> <span class="st">"tomato"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
 </section>
+<section id="espécie-área" class="slide level2">
+<h2>Espécie-Área</h2>
+
+<img data-src="sar.jpeg" class="r-stretch"></section>
 <section id="teoria-neutra-de-hubbell-2001" class="slide level2">
 <h2>Teoria Neutra de Hubbell (2001)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <ul>
 <li>Caso especial: <strong>apenas Deriva + Dispersão + Especiação</strong> (sem seleção)</li>
 <li>Pressuposto: todos os indivíduos são <strong>ecologicamente equivalentes</strong> (<em>neutralidade</em>)</li>
@@ -700,86 +479,32 @@ Ecologia de Comunidades
 <li><strong>Taxa de especiação</strong> (ν)</li>
 <li><strong>Taxa de dispersão</strong> (<em>m</em>)</li>
 </ul></li>
-<li>Surpreendentemente capaz de descrever curvas de abundância observadas em florestas tropicais</li>
-<li>Críticas: ignora diferenças reais entre espécies → evidências de seleção existem</li>
 <li>Contribuição: formalizou a <strong>deriva</strong> como processo legítimo, não apenas “ruído”</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a><span class="co"># Simulação de distribuição de abundâncias</span></span>
-<span id="cb6-2"><a href=""></a><span class="co"># sob modelo neutro simplificado</span></span>
-<span id="cb6-3"><a href=""></a></span>
-<span id="cb6-4"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">99</span>)</span>
-<span id="cb6-5"><a href=""></a></span>
-<span id="cb6-6"><a href=""></a><span class="co"># Metacomunidade com 50 espécies</span></span>
-<span id="cb6-7"><a href=""></a>n_sp   <span class="ot">&lt;-</span> <span class="dv">50</span></span>
-<span id="cb6-8"><a href=""></a>J_meta <span class="ot">&lt;-</span> <span class="dv">5000</span></span>
-<span id="cb6-9"><a href=""></a></span>
-<span id="cb6-10"><a href=""></a><span class="co"># Abundâncias iniciais (log-normal como proxy neutro)</span></span>
-<span id="cb6-11"><a href=""></a>abund  <span class="ot">&lt;-</span> <span class="fu">rlnorm</span>(n_sp, <span class="at">meanlog =</span> <span class="dv">3</span>, <span class="at">sdlog =</span> <span class="fl">1.5</span>)</span>
-<span id="cb6-12"><a href=""></a>abund  <span class="ot">&lt;-</span> <span class="fu">round</span>(abund <span class="sc">/</span> <span class="fu">sum</span>(abund) <span class="sc">*</span> J_meta)</span>
-<span id="cb6-13"><a href=""></a></span>
-<span id="cb6-14"><a href=""></a><span class="co"># Curva de distribuição de abundâncias (SAD)</span></span>
-<span id="cb6-15"><a href=""></a>abund_ord <span class="ot">&lt;-</span> <span class="fu">sort</span>(abund[abund <span class="sc">&gt;</span> <span class="dv">0</span>], <span class="at">decreasing =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb6-16"><a href=""></a></span>
-<span id="cb6-17"><a href=""></a><span class="fu">plot</span>(<span class="fu">log10</span>(abund_ord),</span>
-<span id="cb6-18"><a href=""></a>     <span class="at">type =</span> <span class="st">"h"</span>, <span class="at">col =</span> <span class="st">"steelblue"</span>,</span>
-<span id="cb6-19"><a href=""></a>     <span class="at">lwd  =</span> <span class="dv">2</span>,</span>
-<span id="cb6-20"><a href=""></a>     <span class="at">xlab =</span> <span class="st">"Rank de abundância"</span>,</span>
-<span id="cb6-21"><a href=""></a>     <span class="at">ylab =</span> <span class="st">"log₁₀ Abundância"</span>,</span>
-<span id="cb6-22"><a href=""></a>     <span class="at">main =</span> <span class="st">"Distribuição de abundâncias (SAD)</span><span class="sc">\n</span><span class="st">Modelo neutro simulado"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
 </section>
+<section id="teoria-neutra-de-hubbell-2001-1" class="slide level2">
+<h2>Teoria Neutra de Hubbell (2001)</h2>
+
+<img data-src="neutral.jpg" class="r-stretch"></section>
 <section id="metacomunidades-dispersão-como-eixo-central" class="slide level2">
 <h2>Metacomunidades: Dispersão como Eixo Central</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
 <ul>
-<li><strong>Metacomunidade</strong>: conjunto de comunidades locais conectadas por dispersão</li>
-<li>Holyoak et al.&nbsp;(2005) reconheceram 4 perspectivas:
+<li><strong>Metacomunidade</strong>: conjunto de comunidades locais conectadas por dispersão
 <ul>
 <li><strong>Neutralidade</strong>: deriva + dispersão (sem seleção)</li>
 <li><strong>Dinâmica de patches</strong>: <em>trade-off</em> colonização-competição</li>
-<li><strong>Species sorting</strong>: seleção filtra espécies por gradiente ambiental</li>
-<li><strong>Mass effects</strong>: dispersão mantém espécies em habitats desfavoráveis</li>
+<li><strong>Filtros</strong>: seleção filtra espécies por gradiente ambiental</li>
+<li><strong>Efeitos de massa</strong>: dispersão mantém espécies em habitats desfavoráveis</li>
 </ul></li>
-<li>No framework de Vellend: as 4 perspectivas são combinações dos 4 processos → <strong>não são categorias fundamentais</strong></li>
-<li>Diversidade beta é a assinatura espacial das metacomunidades</li>
+<li><strong>Diversidade beta</strong> é a assinatura espacial das metacomunidades</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb7-2"><a href=""></a><span class="fu">data</span>(dune)</span>
-<span id="cb7-3"><a href=""></a><span class="fu">data</span>(dune.env)</span>
-<span id="cb7-4"><a href=""></a></span>
-<span id="cb7-5"><a href=""></a><span class="co"># Partição da variância: ambiente vs. espaço</span></span>
-<span id="cb7-6"><a href=""></a><span class="co"># (reflexo de seleção vs. dispersão/deriva)</span></span>
-<span id="cb7-7"><a href=""></a></span>
-<span id="cb7-8"><a href=""></a><span class="co"># Coordenadas geográficas simuladas (dune não tem)</span></span>
-<span id="cb7-9"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">5</span>)</span>
-<span id="cb7-10"><a href=""></a>xy <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb7-11"><a href=""></a>  <span class="at">x =</span> <span class="fu">runif</span>(<span class="dv">20</span>, <span class="dv">0</span>, <span class="dv">100</span>),</span>
-<span id="cb7-12"><a href=""></a>  <span class="at">y =</span> <span class="fu">runif</span>(<span class="dv">20</span>, <span class="dv">0</span>, <span class="dv">100</span>)</span>
-<span id="cb7-13"><a href=""></a>)</span>
-<span id="cb7-14"><a href=""></a></span>
-<span id="cb7-15"><a href=""></a><span class="co"># Variáveis de Moran (PCNM / dbMEM) - proxy espacial</span></span>
-<span id="cb7-16"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb7-17"><a href=""></a>dune_hel <span class="ot">&lt;-</span> <span class="fu">decostand</span>(dune, <span class="st">"hellinger"</span>)</span>
-<span id="cb7-18"><a href=""></a>rda_env  <span class="ot">&lt;-</span> <span class="fu">rda</span>(dune_hel <span class="sc">~</span> A1 <span class="sc">+</span> Moisture,</span>
-<span id="cb7-19"><a href=""></a>                <span class="at">data =</span> dune.env)</span>
-<span id="cb7-20"><a href=""></a><span class="fu">RsquareAdj</span>(rda_env)   <span class="co"># variância explicada pelo ambiente</span></span>
-<span id="cb7-21"><a href=""></a></span>
-<span id="cb7-22"><a href=""></a><span class="co"># Interpretação:</span></span>
-<span id="cb7-23"><a href=""></a><span class="co"># Variância explicada por ambiente → seleção</span></span>
-<span id="cb7-24"><a href=""></a><span class="co"># Variância espacial pura → dispersão/deriva</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
 </section>
-<section id="implicações-do-framework-para-o-ensino-e-a-pesquisa" class="slide level2">
-<h2>Implicações do Framework para o Ensino e a Pesquisa</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="metacomunidades-dispersão-como-eixo-central-1" class="slide level2">
+<h2>Metacomunidades: Dispersão como Eixo Central</h2>
+
+<img data-src="metacom.jpg" class="r-stretch"></section>
+<section id="implicações" class="slide level2">
+<h2>Implicações</h2>
 <ul>
 <li><strong>Para o ensino</strong>: organiza toda a ecologia de comunidades em torno de 4 processos — mais coerente que listagem de padrões e interações</li>
 <li><strong>Para a pesquisa</strong>: permite <strong>localizar qualquer teoria</strong> na Tabela 2 → evita reinvenção da roda</li>
@@ -792,589 +517,24 @@ Ecologia de Comunidades
 </ul></li>
 <li>Desafio permanente: <strong>inferir processo a partir de padrão</strong> — a “caixa preta” continua</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a><span class="co"># Exemplo: detectar a "impressão digital"</span></span>
-<span id="cb8-2"><a href=""></a><span class="co"># da seleção vs. deriva com betadisper</span></span>
-<span id="cb8-3"><a href=""></a></span>
-<span id="cb8-4"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb8-5"><a href=""></a><span class="fu">data</span>(dune)</span>
-<span id="cb8-6"><a href=""></a><span class="fu">data</span>(dune.env)</span>
-<span id="cb8-7"><a href=""></a></span>
-<span id="cb8-8"><a href=""></a>dist_BC <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(dune, <span class="at">method =</span> <span class="st">"bray"</span>)</span>
-<span id="cb8-9"><a href=""></a></span>
-<span id="cb8-10"><a href=""></a><span class="co"># PERMANOVA: testa seleção (efeito ambiental)</span></span>
-<span id="cb8-11"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb8-12"><a href=""></a><span class="fu">adonis2</span>(dist_BC <span class="sc">~</span> Management <span class="sc">+</span> A1,</span>
-<span id="cb8-13"><a href=""></a>        <span class="at">data =</span> dune.env,</span>
-<span id="cb8-14"><a href=""></a>        <span class="at">permutations =</span> <span class="dv">999</span>)</span>
-<span id="cb8-15"><a href=""></a></span>
-<span id="cb8-16"><a href=""></a><span class="co"># betadisper: testa dispersão intra-grupo</span></span>
-<span id="cb8-17"><a href=""></a><span class="co"># (proxy de deriva / variabilidade estocástica)</span></span>
-<span id="cb8-18"><a href=""></a>disp <span class="ot">&lt;-</span> <span class="fu">betadisper</span>(dist_BC,</span>
-<span id="cb8-19"><a href=""></a>                   dune.env<span class="sc">$</span>Management)</span>
-<span id="cb8-20"><a href=""></a><span class="fu">anova</span>(disp)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
 </section>
-<section id="resumo-vellend-2010" class="slide level2">
-<h2>Resumo — Vellend (2010)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Mensagem central:</strong></p>
+<section id="resumo" class="slide level2">
+<h2>Resumo</h2>
 <ul>
-<li>A ecologia de comunidades tem uma <strong>teoria geral</strong> — ela só precisava ser explicitada</li>
-<li>Os 4 processos são <strong>logicamente completos</strong>: toda teoria específica é uma combinação deles</li>
+<li>A ecologia de comunidades tem uma <strong>teoria geral</strong></li>
+<li>Os 4 processos são <strong>concomitantes</strong></li>
 <li>A teoria geral ecoa a <strong>Síntese Moderna</strong> da biologia evolutiva</li>
 <li>Padrões têm <strong>múltiplas causas</strong> — isso não é fraqueza da ecologia, é sua natureza</li>
 </ul>
-<p><strong>Citação-chave:</strong></p>
-<blockquote>
-<p><em>“Species are added to communities via speciation and dispersal, and the relative abundances of these species are then shaped by drift and selection”</em> — Vellend (2010)</p>
-</blockquote>
-</div><div class="column" style="width:50%;">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Processo</th>
-<th>Análogo evolutivo</th>
-<th>Escala típica</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Seleção</strong></td>
-<td>Seleção natural</td>
-<td>Local / Regional</td>
-</tr>
-<tr class="even">
-<td><strong>Deriva</strong></td>
-<td>Deriva genética</td>
-<td>Local</td>
-</tr>
-<tr class="odd">
-<td><strong>Especiação</strong></td>
-<td>Mutação</td>
-<td>Regional / Global</td>
-</tr>
-<tr class="even">
-<td><strong>Dispersão</strong></td>
-<td>Fluxo gênico</td>
-<td>Local / Regional</td>
-</tr>
-</tbody>
-</table>
 <p><strong>Leitura complementar:</strong></p>
 <ul>
 <li>Vellend (2016). <em>The Theory of Ecological Communities</em>. Princeton University Press.</li>
 <li>Hubbell (2001). <em>The Unified Neutral Theory of Biodiversity and Biogeography</em>. Princeton.</li>
 <li>Holyoak et al.&nbsp;(2005). <em>Metacommunities</em>. University of Chicago Press.</li>
 </ul>
-</div></div>
 </section>
-<section id="riqueza-de-espécies-s" class="slide level2">
-<h2>Riqueza de Espécies (<em>S</em>)</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Número total de <strong>espécies presentes</strong> em uma comunidade</li>
-<li>Métrica mais simples e intuitiva</li>
-<li>Não considera a <strong>distribuição</strong> de abundâncias</li>
-<li>Sensível ao <strong>esforço amostral</strong></li>
-<li>Pode ser corrigida por:
-<ul>
-<li>rarefação</li>
-<li>estimadores de riqueza (Chao1, ACE)</li>
-</ul></li>
-<li>Comparações válidas exigem <strong>igual esforço amostral</strong></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb9-2"><a href=""></a><span class="fu">data</span>(dune)</span>
-<span id="cb9-3"><a href=""></a></span>
-<span id="cb9-4"><a href=""></a><span class="co"># Riqueza por sítio (número de espécies)</span></span>
-<span id="cb9-5"><a href=""></a>S <span class="ot">&lt;-</span> <span class="fu">specnumber</span>(dune)</span>
-<span id="cb9-6"><a href=""></a><span class="fu">print</span>(S)</span>
-<span id="cb9-7"><a href=""></a></span>
-<span id="cb9-8"><a href=""></a><span class="co"># Riqueza total do conjunto</span></span>
-<span id="cb9-9"><a href=""></a><span class="fu">sum</span>(<span class="fu">colSums</span>(dune) <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
-<span id="cb9-10"><a href=""></a></span>
-<span id="cb9-11"><a href=""></a><span class="co"># Curva de acumulação de espécies</span></span>
-<span id="cb9-12"><a href=""></a>curva <span class="ot">&lt;-</span> <span class="fu">specaccum</span>(dune, <span class="at">method =</span> <span class="st">"random"</span>)</span>
-<span id="cb9-13"><a href=""></a><span class="fu">plot</span>(curva,</span>
-<span id="cb9-14"><a href=""></a>     <span class="at">xlab =</span> <span class="st">"Sítios amostrados"</span>,</span>
-<span id="cb9-15"><a href=""></a>     <span class="at">ylab =</span> <span class="st">"Riqueza acumulada"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="abundância-e-equitabilidade" class="slide level2">
-<h2>Abundância e Equitabilidade</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>Abundância total</strong>: soma dos indivíduos por sítio</li>
-<li><strong>Abundância relativa</strong>: proporção de cada espécie</li>
-<li><strong>Índice de Shannon (H’)</strong>: mede diversidade considerando riqueza e equitabilidade</li>
-<li><strong>Índice de Simpson (D)</strong>: probabilidade de dois indivíduos pertencerem a espécies diferentes</li>
-<li><strong>Equitabilidade de Pielou (J’)</strong>: H’ / H’máx
-<ul>
-<li>varia de 0 (dominância) a 1 (equitativo)</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb10-2"><a href=""></a><span class="fu">data</span>(dune)</span>
-<span id="cb10-3"><a href=""></a></span>
-<span id="cb10-4"><a href=""></a><span class="co"># Índice de Shannon</span></span>
-<span id="cb10-5"><a href=""></a>H <span class="ot">&lt;-</span> <span class="fu">diversity</span>(dune, <span class="at">index =</span> <span class="st">"shannon"</span>)</span>
-<span id="cb10-6"><a href=""></a></span>
-<span id="cb10-7"><a href=""></a><span class="co"># Índice de Simpson</span></span>
-<span id="cb10-8"><a href=""></a>D <span class="ot">&lt;-</span> <span class="fu">diversity</span>(dune, <span class="at">index =</span> <span class="st">"simpson"</span>)</span>
-<span id="cb10-9"><a href=""></a></span>
-<span id="cb10-10"><a href=""></a><span class="co"># Equitabilidade de Pielou</span></span>
-<span id="cb10-11"><a href=""></a>S <span class="ot">&lt;-</span> <span class="fu">specnumber</span>(dune)</span>
-<span id="cb10-12"><a href=""></a>J <span class="ot">&lt;-</span> H <span class="sc">/</span> <span class="fu">log</span>(S)</span>
-<span id="cb10-13"><a href=""></a></span>
-<span id="cb10-14"><a href=""></a><span class="co"># Resumo por sítio</span></span>
-<span id="cb10-15"><a href=""></a>dados_div <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb10-16"><a href=""></a>  <span class="at">Riqueza    =</span> S,</span>
-<span id="cb10-17"><a href=""></a>  <span class="at">Shannon    =</span> <span class="fu">round</span>(H, <span class="dv">2</span>),</span>
-<span id="cb10-18"><a href=""></a>  <span class="at">Simpson    =</span> <span class="fu">round</span>(D, <span class="dv">2</span>),</span>
-<span id="cb10-19"><a href=""></a>  <span class="at">Equitabil. =</span> <span class="fu">round</span>(J, <span class="dv">2</span>)</span>
-<span id="cb10-20"><a href=""></a>)</span>
-<span id="cb10-21"><a href=""></a><span class="fu">head</span>(dados_div)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="rarefação-comparando-riqueza-justa" class="slide level2">
-<h2>Rarefação: Comparando Riqueza Justa</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Comunidades com <strong>diferentes tamanhos amostrais</strong> não devem ter riqueza comparada diretamente</li>
-<li><strong>Rarefação</strong>: reamostrar todas as comunidades para o mesmo <em>N</em> mínimo</li>
-<li>Permite comparações <strong>mais honestas</strong> de riqueza</li>
-<li>Não descarta informação — apenas padroniza</li>
-<li>Implementada com <code>rarefy()</code> ou <code>rrarefy()</code> no <code>vegan</code></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb11-2"><a href=""></a><span class="fu">data</span>(BCI)  <span class="co"># floresta tropical BCI</span></span>
-<span id="cb11-3"><a href=""></a></span>
-<span id="cb11-4"><a href=""></a><span class="co"># Abundância total por sítio</span></span>
-<span id="cb11-5"><a href=""></a>N <span class="ot">&lt;-</span> <span class="fu">rowSums</span>(BCI)</span>
-<span id="cb11-6"><a href=""></a><span class="fu">min</span>(N)  <span class="co"># menor esforço amostral</span></span>
-<span id="cb11-7"><a href=""></a></span>
-<span id="cb11-8"><a href=""></a><span class="co"># Riqueza esperada com N mínimo</span></span>
-<span id="cb11-9"><a href=""></a>S_raref <span class="ot">&lt;-</span> <span class="fu">rarefy</span>(BCI, <span class="at">sample =</span> <span class="fu">min</span>(N))</span>
-<span id="cb11-10"><a href=""></a></span>
-<span id="cb11-11"><a href=""></a><span class="co"># Curvas de rarefação</span></span>
-<span id="cb11-12"><a href=""></a><span class="fu">rarecurve</span>(BCI[<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, ],</span>
-<span id="cb11-13"><a href=""></a>          <span class="at">step   =</span> <span class="dv">20</span>,</span>
-<span id="cb11-14"><a href=""></a>          <span class="at">sample =</span> <span class="fu">min</span>(N),</span>
-<span id="cb11-15"><a href=""></a>          <span class="at">xlab   =</span> <span class="st">"Indivíduos"</span>,</span>
-<span id="cb11-16"><a href=""></a>          <span class="at">ylab   =</span> <span class="st">"Riqueza esperada"</span>,</span>
-<span id="cb11-17"><a href=""></a>          <span class="at">label  =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb11-18"><a href=""></a><span class="fu">abline</span>(<span class="at">v =</span> <span class="fu">min</span>(N), <span class="at">lty =</span> <span class="dv">2</span>, <span class="at">col =</span> <span class="st">"red"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="composição-de-espécies" class="slide level2">
-<h2>Composição de Espécies</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>Quais</strong> espécies estão presentes — não apenas quantas</li>
-<li>Comunidades com mesma riqueza podem ser <strong>completamente distintas</strong></li>
-<li>Avaliada por índices de <strong>similaridade/dissimilaridade</strong>:
-<ul>
-<li><strong>Jaccard</strong> (presença/ausência)</li>
-<li><strong>Bray-Curtis</strong> (abundâncias)</li>
-<li><strong>Sørensen</strong> (presença/ausência, ponderado)</li>
-</ul></li>
-<li>Resultado: <strong>matriz de distâncias</strong> entre pares de comunidades</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb12-2"><a href=""></a><span class="fu">data</span>(dune)</span>
-<span id="cb12-3"><a href=""></a></span>
-<span id="cb12-4"><a href=""></a><span class="co"># Dissimilaridade de Bray-Curtis</span></span>
-<span id="cb12-5"><a href=""></a>dist_BC <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(dune, <span class="at">method =</span> <span class="st">"bray"</span>)</span>
-<span id="cb12-6"><a href=""></a></span>
-<span id="cb12-7"><a href=""></a><span class="co"># Dissimilaridade de Jaccard</span></span>
-<span id="cb12-8"><a href=""></a><span class="co"># (presença/ausência)</span></span>
-<span id="cb12-9"><a href=""></a>dist_J <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(dune,</span>
-<span id="cb12-10"><a href=""></a>                  <span class="at">method =</span> <span class="st">"jaccard"</span>,</span>
-<span id="cb12-11"><a href=""></a>                  <span class="at">binary =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb12-12"><a href=""></a></span>
-<span id="cb12-13"><a href=""></a><span class="co"># Visualizando as primeiras distâncias</span></span>
-<span id="cb12-14"><a href=""></a><span class="fu">as.matrix</span>(dist_BC)[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="índices-de-similaridade-comparativo" class="slide level2">
-<h2>Índices de Similaridade: Comparativo</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Índice</th>
-<th>Dados</th>
-<th>Fórmula</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Jaccard</strong></td>
-<td>P/A</td>
-<td><span class="math inline">\(a / (a+b+c)\)</span></td>
-</tr>
-<tr class="even">
-<td><strong>Sørensen</strong></td>
-<td>P/A</td>
-<td><span class="math inline">\(2a / (2a+b+c)\)</span></td>
-</tr>
-<tr class="odd">
-<td><strong>Bray-Curtis</strong></td>
-<td>Abund.</td>
-<td><span class="math inline">\(1 - 2W/(A+B)\)</span></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><em>a</em> = sp. compartilhadas</li>
-<li><em>b</em>, <em>c</em> = sp. exclusivas de cada comunidade</li>
-<li><em>W</em> = soma dos mínimos de abundância</li>
-<li>Bray-Curtis: mais recomendado para <strong>abundâncias</strong></li>
-<li>Jaccard/Sørensen: para dados de <strong>inventário</strong></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb13-2"><a href=""></a><span class="fu">data</span>(dune)</span>
-<span id="cb13-3"><a href=""></a></span>
-<span id="cb13-4"><a href=""></a><span class="co"># Cálculo manual de Bray-Curtis</span></span>
-<span id="cb13-5"><a href=""></a><span class="co"># entre sítios 1 e 2</span></span>
-<span id="cb13-6"><a href=""></a>com1 <span class="ot">&lt;-</span> dune[<span class="dv">1</span>, ]</span>
-<span id="cb13-7"><a href=""></a>com2 <span class="ot">&lt;-</span> dune[<span class="dv">2</span>, ]</span>
-<span id="cb13-8"><a href=""></a></span>
-<span id="cb13-9"><a href=""></a>W <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">pmin</span>(com1, com2))</span>
-<span id="cb13-10"><a href=""></a>A <span class="ot">&lt;-</span> <span class="fu">sum</span>(com1)</span>
-<span id="cb13-11"><a href=""></a>B <span class="ot">&lt;-</span> <span class="fu">sum</span>(com2)</span>
-<span id="cb13-12"><a href=""></a></span>
-<span id="cb13-13"><a href=""></a>BC <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> (<span class="dv">2</span> <span class="sc">*</span> W) <span class="sc">/</span> (A <span class="sc">+</span> B)</span>
-<span id="cb13-14"><a href=""></a><span class="fu">cat</span>(<span class="st">"Bray-Curtis (1 vs 2):"</span>, <span class="fu">round</span>(BC, <span class="dv">3</span>))</span>
-<span id="cb13-15"><a href=""></a></span>
-<span id="cb13-16"><a href=""></a><span class="co"># Usando vegan</span></span>
-<span id="cb13-17"><a href=""></a><span class="fu">vegdist</span>(dune[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>, ], <span class="at">method =</span> <span class="st">"bray"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="ordenação-nmds" class="slide level2">
-<h2>Ordenação: NMDS</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>NMDS</strong> (Non-metric Multidimensional Scaling): técnica de ordenação exploratória</li>
-<li>Reduz a matriz de distâncias em 2 (ou 3) dimensões</li>
-<li>Pontos próximos = comunidades mais <strong>similares</strong></li>
-<li>Avaliado pelo <strong>stress</strong>: &lt; 0.1 excelente, &lt; 0.2 aceitável</li>
-<li>Não assume distribuição dos dados</li>
-<li>Ideal para dados ecológicos com <strong>muitos zeros</strong></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb14-2"><a href=""></a><span class="fu">data</span>(dune)</span>
-<span id="cb14-3"><a href=""></a><span class="fu">data</span>(dune.env)</span>
-<span id="cb14-4"><a href=""></a></span>
-<span id="cb14-5"><a href=""></a><span class="co"># NMDS com Bray-Curtis</span></span>
-<span id="cb14-6"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb14-7"><a href=""></a>nmds <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(dune,</span>
-<span id="cb14-8"><a href=""></a>                <span class="at">distance =</span> <span class="st">"bray"</span>,</span>
-<span id="cb14-9"><a href=""></a>                <span class="at">k        =</span> <span class="dv">2</span>,</span>
-<span id="cb14-10"><a href=""></a>                <span class="at">trymax   =</span> <span class="dv">100</span>)</span>
-<span id="cb14-11"><a href=""></a></span>
-<span id="cb14-12"><a href=""></a><span class="fu">cat</span>(<span class="st">"Stress:"</span>, <span class="fu">round</span>(nmds<span class="sc">$</span>stress, <span class="dv">3</span>))</span>
-<span id="cb14-13"><a href=""></a></span>
-<span id="cb14-14"><a href=""></a><span class="co"># Gráfico básico</span></span>
-<span id="cb14-15"><a href=""></a><span class="fu">plot</span>(nmds, <span class="at">type =</span> <span class="st">"t"</span>)</span>
-<span id="cb14-16"><a href=""></a></span>
-<span id="cb14-17"><a href=""></a><span class="co"># Com grupos por uso do solo</span></span>
-<span id="cb14-18"><a href=""></a><span class="fu">ordiplot</span>(nmds, <span class="at">display =</span> <span class="st">"sites"</span>)</span>
-<span id="cb14-19"><a href=""></a><span class="fu">ordihull</span>(nmds,</span>
-<span id="cb14-20"><a href=""></a>         <span class="at">groups =</span> dune.env<span class="sc">$</span>Management,</span>
-<span id="cb14-21"><a href=""></a>         <span class="at">draw   =</span> <span class="st">"polygon"</span>,</span>
-<span id="cb14-22"><a href=""></a>         <span class="at">alpha  =</span> <span class="dv">80</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="ordenação-pcoa-e-pca" class="slide level2">
-<h2>Ordenação: PCoA e PCA</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>PCoA</strong> (Principal Coordinates Analysis): ordena qualquer matriz de distâncias</li>
-<li><strong>PCA</strong> (Principal Component Analysis): usa distância euclidiana (dados transformados)</li>
-<li>Diferença do NMDS: axes têm <strong>interpretação métrica</strong> (% da variância explicada)</li>
-<li>Transformação de <strong>Hellinger</strong> recomendada antes de PCA em dados de comunidades
-<ul>
-<li>reduz o efeito dos zeros</li>
-<li>estabiliza variâncias</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb15-2"><a href=""></a><span class="fu">data</span>(dune)</span>
-<span id="cb15-3"><a href=""></a></span>
-<span id="cb15-4"><a href=""></a><span class="co"># PCoA com Bray-Curtis</span></span>
-<span id="cb15-5"><a href=""></a>dist_BC <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(dune, <span class="at">method =</span> <span class="st">"bray"</span>)</span>
-<span id="cb15-6"><a href=""></a>pcoa    <span class="ot">&lt;-</span> <span class="fu">wcmdscale</span>(dist_BC, <span class="at">eig =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb15-7"><a href=""></a></span>
-<span id="cb15-8"><a href=""></a><span class="co"># Variância explicada</span></span>
-<span id="cb15-9"><a href=""></a>eig_pct <span class="ot">&lt;-</span> <span class="dv">100</span> <span class="sc">*</span> pcoa<span class="sc">$</span>eig <span class="sc">/</span> <span class="fu">sum</span>(pcoa<span class="sc">$</span>eig[pcoa<span class="sc">$</span>eig <span class="sc">&gt;</span> <span class="dv">0</span>])</span>
-<span id="cb15-10"><a href=""></a><span class="fu">cat</span>(<span class="st">"Eixo 1:"</span>, <span class="fu">round</span>(eig_pct[<span class="dv">1</span>], <span class="dv">1</span>), <span class="st">"%"</span>)</span>
-<span id="cb15-11"><a href=""></a><span class="fu">cat</span>(<span class="st">"Eixo 2:"</span>, <span class="fu">round</span>(eig_pct[<span class="dv">2</span>], <span class="dv">1</span>), <span class="st">"%"</span>)</span>
-<span id="cb15-12"><a href=""></a></span>
-<span id="cb15-13"><a href=""></a><span class="co"># PCA com transformação Hellinger</span></span>
-<span id="cb15-14"><a href=""></a>dune_hel <span class="ot">&lt;-</span> <span class="fu">decostand</span>(dune, <span class="st">"hellinger"</span>)</span>
-<span id="cb15-15"><a href=""></a>pca      <span class="ot">&lt;-</span> <span class="fu">rda</span>(dune_hel)</span>
-<span id="cb15-16"><a href=""></a><span class="fu">biplot</span>(pca, <span class="at">scaling =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="análise-de-diversidade-beta" class="slide level2">
-<h2>Análise de Diversidade Beta</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>Diversidade beta (β)</strong>: variação na composição entre comunidades</li>
-<li>Pode ser decomposta em:
-<ul>
-<li><strong>Reposição</strong> (<em>turnover</em>): substituição de espécies</li>
-<li><strong>Aninhamento</strong> (<em>nestedness</em>): subconjuntos de espécies</li>
-</ul></li>
-<li>Pacote <code>betapart</code> realiza essa decomposição</li>
-<li>Alta reposição → gradientes ambientais acentuados</li>
-<li>Alto aninhamento → perda progressiva de espécies</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href=""></a><span class="fu">library</span>(betapart)</span>
-<span id="cb16-2"><a href=""></a><span class="fu">data</span>(ceram.s)  <span class="co"># dados do pacote betapart</span></span>
-<span id="cb16-3"><a href=""></a></span>
-<span id="cb16-4"><a href=""></a><span class="co"># Partição da diversidade beta (P/A)</span></span>
-<span id="cb16-5"><a href=""></a>beta_pair <span class="ot">&lt;-</span> <span class="fu">beta.pair</span>(ceram.s,</span>
-<span id="cb16-6"><a href=""></a>                       <span class="at">index.family =</span> <span class="st">"sorensen"</span>)</span>
-<span id="cb16-7"><a href=""></a></span>
-<span id="cb16-8"><a href=""></a><span class="co"># Componentes:</span></span>
-<span id="cb16-9"><a href=""></a><span class="co"># beta.sim  = turnover (reposição)</span></span>
-<span id="cb16-10"><a href=""></a><span class="co"># beta.sne  = nestedness</span></span>
-<span id="cb16-11"><a href=""></a><span class="co"># beta.sor  = total (Sørensen)</span></span>
-<span id="cb16-12"><a href=""></a></span>
-<span id="cb16-13"><a href=""></a><span class="co"># Resumo estatístico</span></span>
-<span id="cb16-14"><a href=""></a><span class="fu">summary</span>(<span class="fu">as.vector</span>(</span>
-<span id="cb16-15"><a href=""></a>  <span class="fu">as.matrix</span>(beta_pair<span class="sc">$</span>beta.sim)</span>
-<span id="cb16-16"><a href=""></a>))</span>
-<span id="cb16-17"><a href=""></a></span>
-<span id="cb16-18"><a href=""></a><span class="co"># Mapa de calor de dissimilaridade</span></span>
-<span id="cb16-19"><a href=""></a><span class="fu">image</span>(<span class="fu">as.matrix</span>(beta_pair<span class="sc">$</span>beta.sor),</span>
-<span id="cb16-20"><a href=""></a>      <span class="at">main =</span> <span class="st">"Dissimilaridade total (Sørensen)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="teste-estatístico-permanova" class="slide level2">
-<h2>Teste Estatístico: PERMANOVA</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>PERMANOVA</strong> (adonis2): testa se grupos diferem em <strong>composição</strong></li>
-<li>Análogo a uma ANOVA multivariada, mas por permutações</li>
-<li>Pode incluir múltiplas variáveis explicativas</li>
-<li>Retorna R² (variância explicada) e valor-p</li>
-<li><strong>Atenção</strong>: sensível a diferenças na <strong>dispersão intra-grupo</strong>
-<ul>
-<li>verificar com <code>betadisper()</code></li>
-</ul></li>
-<li>Requer variável de agrupamento (ex: tratamento, habitat)</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb17-2"><a href=""></a><span class="fu">data</span>(dune)</span>
-<span id="cb17-3"><a href=""></a><span class="fu">data</span>(dune.env)</span>
-<span id="cb17-4"><a href=""></a></span>
-<span id="cb17-5"><a href=""></a><span class="co"># Dissimilaridade de Bray-Curtis</span></span>
-<span id="cb17-6"><a href=""></a>dist_BC <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(dune, <span class="at">method =</span> <span class="st">"bray"</span>)</span>
-<span id="cb17-7"><a href=""></a></span>
-<span id="cb17-8"><a href=""></a><span class="co"># PERMANOVA</span></span>
-<span id="cb17-9"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">42</span>)</span>
-<span id="cb17-10"><a href=""></a>perm <span class="ot">&lt;-</span> <span class="fu">adonis2</span>(dist_BC <span class="sc">~</span> Management,</span>
-<span id="cb17-11"><a href=""></a>                <span class="at">data    =</span> dune.env,</span>
-<span id="cb17-12"><a href=""></a>                <span class="at">permutations =</span> <span class="dv">999</span>)</span>
-<span id="cb17-13"><a href=""></a><span class="fu">print</span>(perm)</span>
-<span id="cb17-14"><a href=""></a></span>
-<span id="cb17-15"><a href=""></a><span class="co"># Homogeneidade de dispersão</span></span>
-<span id="cb17-16"><a href=""></a>disp <span class="ot">&lt;-</span> <span class="fu">betadisper</span>(dist_BC,</span>
-<span id="cb17-17"><a href=""></a>                   dune.env<span class="sc">$</span>Management)</span>
-<span id="cb17-18"><a href=""></a><span class="fu">anova</span>(disp)</span>
-<span id="cb17-19"><a href=""></a><span class="fu">boxplot</span>(disp, <span class="at">main =</span> <span class="st">"Dispersão por grupo"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="exemplo-completo-pipeline-de-análise" class="slide level2">
-<h2>Exemplo Completo: Pipeline de Análise</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Fluxo típico de análise:</strong></p>
-<ol type="1">
-<li>Importar e inspecionar a matriz</li>
-<li>Calcular métricas alfa (H’, S, J’)</li>
-<li>Calcular dissimilaridade (Bray-Curtis)</li>
-<li>Ordenar comunidades (NMDS ou PCoA)</li>
-<li>Testar diferenças com PERMANOVA</li>
-<li>Verificar homogeneidade (betadisper)</li>
-<li>Decompor beta-diversidade (betapart)</li>
-<li>Interpretar resultados biologicamente</li>
-</ol>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href=""></a><span class="fu">library</span>(vegan)</span>
-<span id="cb18-2"><a href=""></a><span class="fu">data</span>(dune); <span class="fu">data</span>(dune.env)</span>
-<span id="cb18-3"><a href=""></a></span>
-<span id="cb18-4"><a href=""></a><span class="co"># 1. Métricas alfa</span></span>
-<span id="cb18-5"><a href=""></a>alfa <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb18-6"><a href=""></a>  <span class="at">S =</span> <span class="fu">specnumber</span>(dune),</span>
-<span id="cb18-7"><a href=""></a>  <span class="at">H =</span> <span class="fu">diversity</span>(dune)</span>
-<span id="cb18-8"><a href=""></a>)</span>
-<span id="cb18-9"><a href=""></a></span>
-<span id="cb18-10"><a href=""></a><span class="co"># 2. Dissimilaridade</span></span>
-<span id="cb18-11"><a href=""></a>d <span class="ot">&lt;-</span> <span class="fu">vegdist</span>(dune, <span class="st">"bray"</span>)</span>
-<span id="cb18-12"><a href=""></a></span>
-<span id="cb18-13"><a href=""></a><span class="co"># 3. Ordenação</span></span>
-<span id="cb18-14"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
-<span id="cb18-15"><a href=""></a>ord <span class="ot">&lt;-</span> <span class="fu">metaMDS</span>(dune, <span class="at">k =</span> <span class="dv">2</span>)</span>
-<span id="cb18-16"><a href=""></a></span>
-<span id="cb18-17"><a href=""></a><span class="co"># 4. Teste de hipótese</span></span>
-<span id="cb18-18"><a href=""></a><span class="fu">adonis2</span>(d <span class="sc">~</span> Management,</span>
-<span id="cb18-19"><a href=""></a>        <span class="at">data =</span> dune.env)</span>
-<span id="cb18-20"><a href=""></a></span>
-<span id="cb18-21"><a href=""></a><span class="co"># 5. Visualização final</span></span>
-<span id="cb18-22"><a href=""></a><span class="fu">plot</span>(ord, <span class="at">type =</span> <span class="st">"n"</span>)</span>
-<span id="cb18-23"><a href=""></a><span class="fu">points</span>(ord,</span>
-<span id="cb18-24"><a href=""></a>       <span class="at">col  =</span> <span class="fu">as.numeric</span>(dune.env<span class="sc">$</span>Management),</span>
-<span id="cb18-25"><a href=""></a>       <span class="at">pch  =</span> <span class="dv">16</span>, <span class="at">cex =</span> <span class="fl">1.5</span>)</span>
-<span id="cb18-26"><a href=""></a><span class="fu">legend</span>(<span class="st">"topright"</span>,</span>
-<span id="cb18-27"><a href=""></a>       <span class="at">legend =</span> <span class="fu">levels</span>(dune.env<span class="sc">$</span>Management),</span>
-<span id="cb18-28"><a href=""></a>       <span class="at">col    =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">pch =</span> <span class="dv">16</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="resumo-dos-conceitos" class="slide level2">
-<h2>Resumo dos Conceitos</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Conceito</th>
-<th>Métrica</th>
-<th>Função R</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Riqueza</td>
-<td><em>S</em></td>
-<td><code>specnumber()</code></td>
-</tr>
-<tr class="even">
-<td>Diversidade</td>
-<td>H’, D</td>
-<td><code>diversity()</code></td>
-</tr>
-<tr class="odd">
-<td>Equitabilidade</td>
-<td>J’</td>
-<td>H’ / log(S)</td>
-</tr>
-<tr class="even">
-<td>Rarefação</td>
-<td>S esperado</td>
-<td><code>rarefy()</code></td>
-</tr>
-<tr class="odd">
-<td>Dissimilaridade</td>
-<td>Bray-Curtis</td>
-<td><code>vegdist()</code></td>
-</tr>
-<tr class="even">
-<td>Ordenação</td>
-<td>NMDS, PCoA</td>
-<td><code>metaMDS()</code></td>
-</tr>
-<tr class="odd">
-<td>Teste</td>
-<td>PERMANOVA</td>
-<td><code>adonis2()</code></td>
-</tr>
-<tr class="even">
-<td>Beta-div.</td>
-<td>turn. + nest.</td>
-<td><code>beta.pair()</code></td>
-</tr>
-</tbody>
-</table>
-</div><div class="column" style="width:50%;">
-<p><strong>Boas práticas:</strong></p>
-<ul>
-<li>Sempre verificar <strong>esforço amostral</strong> antes de comparar riquezas</li>
-<li>Escolher índice de dissimilaridade adequado ao <strong>tipo de dado</strong></li>
-<li>Validar PERMANOVA com <strong>betadisper</strong></li>
-<li>Interpretar ordenações com <strong>stress</strong> ou <strong>% variância</strong></li>
-<li>Reportar tanto <strong>diversidade alfa</strong> quanto <strong>beta</strong></li>
-<li>Usar <strong>gráficos</strong> para comunicar padrões multivariados</li>
-<li>Documentar <strong>código reproduzível</strong> (R Markdown / Quarto)</li>
-</ul>
-</div></div>
-</section>
-<section id="referências-e-recursos" class="slide level2">
-<h2>Referências e Recursos</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Livros fundamentais:</strong></p>
-<ul>
-<li>Magurran, A. E. (2004). <em>Measuring Biological Diversity</em>. Blackwell.</li>
-<li>Legendre &amp; Legendre (2012). <em>Numerical Ecology</em>. Elsevier.</li>
-<li>Gotelli &amp; Ellison (2004). <em>A Primer of Ecological Statistics</em>. Sinauer.</li>
-</ul>
-<p><strong>Artigos-chave:</strong></p>
-<ul>
-<li>Baselga (2010). Betapart decomposition — <em>Global Ecology &amp; Biogeography</em></li>
-<li>Anderson et al.&nbsp;(2011). PERMANOVA — <em>Methods in Ecology &amp; Evolution</em></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><strong>Pacotes R principais:</strong></p>
-<ul>
-<li><code>vegan</code> — análises multivariadas de comunidades</li>
-<li><code>betapart</code> — decomposição de beta-diversidade</li>
-<li><code>iNEXT</code> — rarefação e extrapolação de diversidade</li>
-<li><code>BiodiversityR</code> — interface gráfica para <code>vegan</code></li>
-<li><code>ggordiplots</code> — gráficos de ordenação com ggplot2</li>
-</ul>
-<p><strong>Recursos online:</strong></p>
-<ul>
-<li>CRAN Task View: <em>Environmetrics</em></li>
-<li>Vegan tutoriais: <a href="https://cran.r-project.org/package=vegan">cran.r-project.org/vegan</a></li>
-<li>Curso de Ecologia Numérica com R (Borcard et al.)</li>
-</ul>
-</div></div>
+<section id="fim" class="slide level2 center">
+<h2>Fim</h2>
 
 </section>
     </div>
@@ -1594,44 +754,6 @@ Ecologia de Comunidades
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
