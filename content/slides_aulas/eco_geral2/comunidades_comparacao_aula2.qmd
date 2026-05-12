@@ -23,7 +23,6 @@ scrolable: true
 ---
 
 
-
 ## Riqueza de Espécies (*S*)
 
 :::: {.columns}
@@ -79,6 +78,7 @@ plot(curva,
 :::
 
 ::: {.column width="50%"}
+
 ```{r}
 #| label: diversidade
 
