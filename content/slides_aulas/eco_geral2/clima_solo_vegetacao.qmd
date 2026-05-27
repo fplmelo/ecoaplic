@@ -7,16 +7,12 @@ date-format: "MMMM [de] YYYY"
 lang: pt-BR
 format:
   revealjs:
-    theme: [default]
+   # theme: [default]
     slide-number: true
     progress: true
     transition: fade
     background-transition: slide
     highlight-style: monokai
-    toc: true
-    toc-depth: 1
-    toc-title: "Roteiro"
-    footer: "Ecologia 2 — UFPE | Clima, Solo e Vegetação"
     chalkboard: true
     fig-align: center
     scrollable: true
@@ -57,9 +53,9 @@ theme_aula <- function(base = 12) {
 ::: {.column width="55%"}
 **Clima define:**
 
-- Limites fisiológicos das espécies (temperatura mínima/máxima, déficit hídrico)
-- Produtividade primária líquida (NPP) — a base energética das comunidades
-- Fenologia: quando reproduzir, crescer, dormir
+- Limites fisiológicos das espécies
+- Produtividade primária líquida 
+- Fenologia
 - Regimes de distúrbio (seca, fogo, geada)
 
 :::
@@ -77,44 +73,18 @@ theme_aula <- function(base = 12) {
 :::
 ::::
 
-::: {.callout-note}
-Clima, solo e vegetação não são filtros independentes — formam um **sistema acoplado** de retroalimentações.
-:::
-
----
-
-## Variáveis Bioclimáticas (WorldClim / CHELSA)
-
-As **19 variáveis bioclimáticas** condensam séries históricas de temperatura e precipitação em parâmetros ecologicamente relevantes:
-
-| Grupo | Variáveis | Relevância ecológica |
-|-------|-----------|---------------------|
-| Temperatura | BIO1–BIO11 | Limites de distribuição, fenologia, metabolismo |
-| Precipitação | BIO12–BIO19 | Balanço hídrico, sazonalidade, seca fisiológica |
-
-**As mais usadas em modelos de nicho:**
-
-- **BIO1** — Temperatura média anual
-- **BIO4** — Sazonalidade térmica (desvio-padrão × 100)
-- **BIO12** — Precipitação anual total
-- **BIO15** — Sazonalidade pluviométrica (coef. de variação)
-
-::: {.callout-tip}
-**Conexão com diversidade:** modelos de distribuição de espécies (SDM / ENM) usam variáveis bioclimáticas para estimar o **nicho climático** de cada espécie — a base da biogeografia preditiva.
-:::
-
 ---
 
 ## Energia, Água e o Triângulo da Diversidade
 
-A hipótese **Energia-Água** (O'Brien 1998; Francis & Currie 2003) unifica dois motores clássicos da diversidade:
+A hipótese **Energia-Água** unifica dois motores clássicos da diversidade:
 
 :::: {.columns}
 ::: {.column width="52%"}
 ```{r energy-water, fig.height=4}
 set.seed(42)
 prec  <- seq(100, 2800, length.out = 80)
-temp  <- seq(5, 30, length.out = 80)
+temp  <- seq(5, 50, length.out = 80)
 grid  <- expand.grid(P = prec, T = temp)
 grid$S <- with(grid,
   30 + 0.06*P - 0.00001*P^2 + 2.5*T - 0.04*T^2 +
@@ -130,7 +100,7 @@ ggplot(grid, aes(P, T, fill = S)) +
        y = "Temperatura média anual (°C)",
        title = "Espaço climático e riqueza de espécies",
        subtitle = "Máximo na região quente-úmida") +
-  theme_aula(11)
+  theme_aula(13)
 ```
 :::
 ::: {.column width="48%"}
@@ -141,10 +111,6 @@ ggplot(grid, aes(P, T, fill = S)) +
 - A diversidade é máxima quando **ambos** são elevados
 - Déficit de qualquer um cria filtros fisiológicos severos
 
-**No Brasil:**
-- Amazônia: alta T + alta P → máxima riqueza
-- Caatinga: alta T + baixa P → filtro hídrico intenso
-- Pampa: baixa T + P moderada → filtro térmico
 :::
 ::::
 
@@ -189,45 +155,7 @@ p1 / p2
 
 ---
 
-## Zonas de Vida de Holdridge e Biomas Brasileiros
-
-Robert Holdridge (1947) classificou os biomas globais por **temperatura, precipitação e evapotranspiração potencial**:
-
-:::: {.columns}
-::: {.column width="50%"}
-**Eixos do sistema Holdridge:**
-
-- Temperatura biotermal (média anual)
-- Precipitação total anual
-- Razão de evapotranspiração potencial (PER)
-
-**Zonas de vida no Brasil:**
-
-| Zona | Bioma correspondente |
-|------|---------------------|
-| Floresta tropical úmida | Amazônia |
-| Floresta tropical seca | Mata de Araucária |
-| Estepe espinhosa | Caatinga |
-| Savana | Cerrado |
-| Pradaria úmida | Pampa |
-:::
-::: {.column width="50%"}
-**Relevância para diversidade:**
-
-- Cada zona de vida tem um **envelope climático** definido
-- Espécies se distribuem dentro desses envelopes → **nicho climático**
-- Zonas de transição (ecótonos) concentram alta β-diversidade
-- Mudanças climáticas = deslocamento de zonas de vida = reorganização de comunidades
-
-::: {.callout-important}
-O sistema Holdridge prediz **que tipo de bioma** deveria ocorrer em cada local apenas com dados climáticos — base da modelagem de distribuição de espécies.
-:::
-:::
-::::
-
----
-
-## Mudanças Climáticas e Distribuições de Espécies
+## Mudanças climáticas e distribuições de dspécies
 
 **Projeções para biomas brasileiros (IPCC AR6, cenário SSP3-7.0):**
 
@@ -257,16 +185,14 @@ ggplot(df_cc, aes(delta_T, delta_P, size = risco, colour = biomas,
 ```
 
 # Solo como Filtro Ecológico {background-color="#3b1f0a"}
-## Edafologia, endemismo e beta-diversidade
+## Solo, endemismo e beta-diversidade
 
 ---
 
 ## Solo: Muito Além de "Substrato"
 
-> O solo é um **ecossistema vivo** que filtra, armazena e transforma — e sua variação espacial é um dos maiores geradores de beta-diversidade em plantas.
+> O solo é um **ecossistema vivo** que filtra, armazena e transforma .
 
-:::: {.columns}
-::: {.column width="55%"}
 **Propriedades edáficas que filtram a flora:**
 
 | Propriedade | Efeito na comunidade |
@@ -278,19 +204,6 @@ ggplot(df_cc, aes(delta_T, delta_P, size = risco, colour = biomas,
 | Profundidade efetiva | Limita enraizamento; determina capacidade de suporte |
 | Matéria orgânica | Diversidade microbiana e ciclagem de nutrientes |
 
-:::
-::: {.column width="45%"}
-**Conceito-chave:**
-
-**Filtragem edáfica** — o solo age como um filtro que seleciona, dentre as espécies capazes de chegar a um local (pool regional), apenas aquelas com adaptações para aquelas condições.
-
-Espécies **calcícolas** → solos ricos em Ca (Caatinga sobre calcário)
-
-Espécies **psamófilas** → solos arenosos (restinga, areias brancas amazônicas)
-
-Espécies **hiperacidófilas** → solos muito ácidos (campinas)
-:::
-::::
 
 ---
 
@@ -298,32 +211,8 @@ Espécies **hiperacidófilas** → solos muito ácidos (campinas)
 
 O Cerrado é o bioma onde a relação **solo × vegetação × diversidade** é mais evidente no Brasil:
 
-```{r cerrado-solo, fig.height=3.8}
-fitofisionomias <- c("Campo\nLimpo","Campo\nSujo","Campo\nCerrado",
-                     "Cerrado\nS.S.","Cerradão","Mata de\nGaleria")
-saturacao_bases <- c(5, 8, 12, 18, 35, 55)    # % sat. por bases
-profundidade    <- c(30, 50, 70, 100, 150, 200) # cm
-riqueza_arb     <- c(10, 25, 45, 70, 90, 110)  # sp. lenhosas/ha
-
-df_cer <- data.frame(fitofisionomias, saturacao_bases,
-                     profundidade, riqueza_arb)
-df_cer$fitofisionomias <- factor(df_cer$fitofisionomias,
-                                  levels = fitofisionomias)
-
-p_a <- ggplot(df_cer, aes(saturacao_bases, riqueza_arb,
-                           colour = fitofisionomias, size = profundidade)) +
-  geom_point(alpha = 0.9) +
-  geom_smooth(aes(group = 1), method = "lm", se = FALSE,
-              colour = "#3b1f0a", linewidth = 0.8, linetype = "dashed") +
-  scale_colour_viridis_d(option = "inferno", begin = 0.1, end = 0.9,
-                         name = "Fisionomia") +
-  scale_size_continuous(name = "Profun-\nidade (cm)", range = c(3, 10)) +
-  labs(x = "Saturação por bases (%)", y = "Riqueza de lenhosas (sp/ha)",
-       title = "Solo e riqueza de lenhosas no Cerrado",
-       subtitle = "Gradiente distrófico → eutrófico") +
-  theme_aula(11)
-p_a
-```
+![](https://www.embrapa.br/documents/58057223/91052416/bioma_cerrado_vegetacao_Biomas_s_solo.jpg/bb3f037b-2152-dff7-21c3-08865a7e6867?t=1721337817351)
+fonte: Embrapa
 
 ::: {.callout-tip}
 **Beta-diversidade edáfica:** a transição de campo limpo distrófico para mata de galeria eutrófica gera alta β via turnover — comunidades co-ocorrem no espaço, mas são edaficamente segregadas.
@@ -337,41 +226,21 @@ Alguns tipos de solo criam "ilhas pedológicas" com **flora altamente endêmica*
 
 :::: {.columns}
 ::: {.column width="50%"}
-**Campos Rupestres (Cerrado/Mata Atlântica)**
-- Quartzito / itabirito aflorante
-- Solo esquelético, raso, pH 3,5–4,5
-- Teor de Al extremamente alto
-- **> 15% das espécies de plantas do Brasil** em < 1% da área
-- Endemismo > 60% em alguns grupos (orquídeas, sempre-vivas)
 
-**Campinas Amazônicas (areias brancas)**
-- Espodossolos hiper-distróficos
-- pH < 4, quase sem nutrientes
-- Flora especializada: plantas com raízes proteóides, micorrízicas obrigatórias
-- Alta beta entre campinas e floresta adjacente
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Vegeta%C3%A7%C3%A3o_desenvolvendo-se_sobre_substrato_ferruginoso_%28canga%29_no_Parque_Estadual_do_Itacolomi%2C_em_Ouro_Preto%2C_Minas_Gerais.jpg/960px-Vegeta%C3%A7%C3%A3o_desenvolvendo-se_sobre_substrato_ferruginoso_%28canga%29_no_Parque_Estadual_do_Itacolomi%2C_em_Ouro_Preto%2C_Minas_Gerais.jpg)
+
 
 :::
 ::: {.column width="50%"}
-**Caatinga sobre Calcário**
-- Afloramentos de calcário (Chapada do Araripe, Vale do Jequitinhonha)
-- Solo raso, pH alcalino, rico em Ca e Mg
-- Flora distinta da caatinga típica
-- Cavernas calcárias: fauna endêmica de invertebrados
 
-**Solos de Mangue (gleissolos sulfídricos)**
-- Anaeróbios, rico em H₂S
-- Seleciona flora com pneumatóforos e vivíparos
-- Alta β em relação a qualquer outra formação costeira
+![](https://upload.wikimedia.org/wikipedia/commons/e/eb/Campinarana.jpg)
 
-::: {.callout-important}
-Solos especiais são **hotspots de endemismo** — destruí-los é extinguir espécies que não ocorrem em nenhum outro lugar.
-:::
 :::
 ::::
 
 ---
 
-## Solo, Diversidade Alfa e Diversidade Beta: Conectando as Escalas
+## Solo,  Alfa e Beta
 
 ```{r solo-escalas, fig.height=4}
 set.seed(77)
@@ -416,21 +285,7 @@ p1 | p2
 
 ## Formação do Solo, Clima e Vegetação: O Triângulo Pedológico
 
-```
-         CLIMA
-        (T, P, PER)
-          /    \
- intemperismo   evapotrans-
- físico-químico  piração
-        /          \
-      SOLO  ←────→  VEGETAÇÃO
-  (estrutura,         (cobertura,
-   nutrientes,         raízes,
-   pH, CTC)           matéria orgânica)
-       ↑
-  material de origem
-  (geologia, topografia)
-```
+![](https://escolaeducacao.com.br/wp-content/uploads/2016/07/formacao-dos-solos.jpg)
 
 **Retroalimentações:**
 
@@ -452,65 +307,15 @@ Em escalas de tempo geológicas, o clima "cria" o solo por meio do intemperismo.
 
 > A vegetação não é apenas **resposta** aos fatores abióticos — ela é também **causa** de diversidade, ao criar estrutura, microclimas e recursos.
 
-**Mecanismos pelo qual a vegetação eleva a diversidade:**
+1. **Estratificação vertical**
 
-:::: {.columns}
-::: {.column width="55%"}
-1. **Estratificação vertical** → multiplica nichos espaciais  
-   *(dossel, sub-bosque, arbustivo, herbáceo, serrapilheira)*
+2. **Heterogeneidade horizontal** 
 
-2. **Heterogeneidade horizontal** → clareiras, bordas, manchas
+3. **Arquitetura de plantas individuais** 
 
-3. **Arquitetura de plantas individuais** → epífitas, lianas, hemiparasitas
+4. **Engenharia ecossistêmica**
 
-4. **Engenharia ecossistêmica** → modifica temperatura, umidade, luz
-
-5. **Provisão de recursos** → flores, frutos, néctar, cavidades, folhas mortas
-
-:::
-::: {.column width="45%"}
-```{r estratificacao, fig.height=3.8}
-camadas <- c("Solo/\nSerrapilheira","Herbáceo\n(0–0,5m)","Arbustivo\n(0,5–3m)",
-             "Sub-\nbosque","Dossel\nintermed.","Dossel\nsuperior",
-             "Emergentes\n(>30m)")
-sp_aves <- c(12, 8, 22, 35, 28, 18, 7)
-sp_insetos <- c(45, 30, 60, 75, 65, 40, 15)
-
-df_str <- data.frame(
-  camada = factor(camadas, levels = camadas),
-  aves = sp_aves, insetos = sp_insetos / 4
-) |> pivot_longer(-camada, names_to = "grupo", values_to = "riqueza")
-
-ggplot(df_str, aes(riqueza, camada, fill = grupo)) +
-  geom_col(position = "dodge", width = 0.65) +
-  scale_fill_manual(values = c("#4fa3d1","#7ec850"),
-                    labels = c("Aves","Insetos (÷4)")) +
-  labs(x = "Riqueza relativa", y = NULL, fill = NULL,
-       title = "Riqueza de espécies por estrato") +
-  theme_aula(10) + theme(legend.position = "top")
-```
-:::
-::::
-
----
-
-## Os Biomas Brasileiros como Gradiente de Fisionomias
-
-Cada bioma representa um ponto no espaço **clima–solo–estrutura da vegetação**:
-
-| Bioma | Fisionomia dominante | Clima | Solo típico | α arbórea (sp/ha) |
-|-------|---------------------|-------|-------------|-------------------|
-| Amazônia | Floresta ombrófila densa | Quente-úmido, asazonal | Latossolo amarelo dist. | 200–300 |
-| Mata Atlântica | Floresta estacional/ombrófila | Quente, sazonalidade variável | Argissolo, Cambissolo | 80–180 |
-| Cerrado | Savana (gradiente) | Quente, sazonal (6 m seca) | Latossolo vermelho dist. | 30–90 |
-| Caatinga | Floresta/arbustal xerófilo | Quente, seco, variável | Neossolo, Luvisso | 20–60 |
-| Pantanal | Savana inundável | Quente, pulso hídrico | Gleissolo, Neossolo flúvico | 40–80 |
-| Pampa | Pradaria (campo) | Subtropical, geadas | Argissolo, Planossolo | < 5 |
-| Campos Rupestres | Mosaico sobre rocha | Variado, fogo frequente | Neossolo litólico | 30–70 |
-
-::: {.callout-tip}
-O gradiente Amazônia → Caatinga ilustra perfeitamente como **temperatura + precipitação + solo** determinam a fisionomia e, dentro dela, a riqueza local (α).
-:::
+5. **Provisão de recursos** 
 
 ---
 
@@ -562,9 +367,7 @@ A **inclinação da curva de Hill** (de q=0 para q=2) indica quanto a equitabili
 
 ---
 
-## Ecótonos: Zonas de Transição e Alta Beta-Diversidade
-
-**Ecótonos** são zonas de transição entre dois biomas ou fitofisionomias adjacentes:
+## Ecótonos: Zonas de alta Beta-Diversidade
 
 :::: {.columns}
 ::: {.column width="55%"}
@@ -575,87 +378,20 @@ A **inclinação da curva de Hill** (de q=0 para q=2) indica quanto a equitabili
 - Alta **heterogeneidade microambiental** em curta distância
 - Alta **beta-diversidade** mesmo em escalas locais
 
-**Ecótonos brasileiros de alta relevância:**
-
-- Cerrado ↔ Caatinga (zona de tensão no Piauí/BA)
-- Mata Atlântica ↔ Cerrado (transição em MG/SP)
-- Amazônia ↔ Cerrado (arco do desmatamento, MT)
-- Mangue ↔ Restinga (litoral nordestino)
 :::
 ::: {.column width="45%"}
-```
-─── Bioma A ───┬─── Ecótono ───┬─── Bioma B ───
-               │               │
-  Espécies de  │  sp. A + sp. B│  Espécies de
-  A (α = 40)   │  + sp. borda  │  B (α = 35)
-               │  (α = 50–60)  │
-               │               │
-   β(A,B) alta → α ecótono > α de A ou B isolados
-```
-**Efeito de borda** (negativo):
-Fragmentação cria ecótonos artificiais
-→ espécies de interior perdem área
-→ beta por aninhamento cresce
-:::
-::::
 
-# Biogeografia {background-color="#1e0a38"}
-## Distribuição, dispersão e montagem de comunidades
-
----
-
-## O Que é Biogeografia?
-
-> **Biogeografia** é o estudo dos padrões espaciais e temporais de distribuição dos organismos e dos processos históricos e ecológicos que os geram.
-
-**Duas abordagens complementares:**
-
-:::: {.columns}
-::: {.column width="50%"}
-**Biogeografia Histórica**
-
-- Foco em eventos evolutivos e geológicos
-- Deriva continental, vicariância, dispersão de longa distância
-- Áreas de endemismo, filogeografia
-- *Pergunta:* Por que determinados grupos estão onde estão?
-- Escala: milhões de anos
-
-:::
-::: {.column width="50%"}
-**Biogeografia Ecológica**
-
-- Foco em processos ecológicos atuais
-- Nicho climático, competição, dispersão, filtros de habitat
-- Modelos de nicho (SDM/ENM)
-- *Pergunta:* O que limita a distribuição atual das espécies?
-- Escala: anos a milênios
+![](https://oeco.org.br/wp-content/uploads/2017/06/PNSC18.jpg)
 
 :::
 ::::
 
-::: {.callout-important}
-As **métricas de diversidade** (α, β, γ, Hill) se conectam com a biogeografia ao descrever os **padrões** que os processos biogeográficos geram no espaço.
-:::
-
----
-
-## Regiões Biogeográficas e o Brasil
-
-O Brasil está na **Região Neotropical**, subdividida em **províncias biogeográficas**:
+## Regiões Biogeográficas do Brasil
 
 :::: {.columns}
 ::: {.column width="55%"}
-**Principais províncias no Brasil** (Morrone 2014):
 
-| Província | Bioma principal | Endemismo |
-|-----------|----------------|-----------|
-| Amazônica | Amazônia | Altíssimo |
-| Cerrado | Cerrado | Alto |
-| Caatinga | Caatinga | Moderado |
-| Atlântica | Mata Atlântica | Altíssimo |
-| Chaquenha | Pantanal/Chaco | Moderado |
-| Paranaense | Mata de Araucária | Alto |
-| Pampeana | Pampa | Moderado |
+![](https://upload.wikimedia.org/wikipedia/commons/9/91/Mapa_dos_Biomas_Brasileiro.webp)
 
 :::
 ::: {.column width="45%"}
@@ -671,82 +407,8 @@ A alta β-diversidade entre províncias brasileiras reflete **história biogeogr
 
 ---
 
-## Teoria da Biogeografia de Ilhas (MacArthur & Wilson 1967)
-
-Um dos modelos mais influentes da ecologia — e com ampla aplicação além de ilhas oceânicas:
-
-$$S_{eq} = \frac{c \cdot A^z \cdot I}{E}$$
-
-**Premissas do modelo:**
-
-:::: {.columns}
-::: {.column width="55%"}
-```{r island-biogeog, fig.height=3.5}
-area   <- seq(1, 1000, by = 10)
-S_perto <- 20 * area^0.28  # ilha próxima ao continente
-S_longe <- 20 * area^0.18  # ilha distante
-S_great <- 20 * area^0.35  # ilha de habitat maior / maior colonização
-
-df_isl <- data.frame(
-  area   = rep(area, 3),
-  S      = c(S_perto, S_longe, S_great),
-  tipo   = rep(c("Próxima ao continente\n(alta imigração)",
-                 "Distante do continente\n(baixa imigração)",
-                 "Área de alta qualidade\n(baixa extinção)"),
-               each = length(area))
-)
-
-ggplot(df_isl, aes(area, S, colour = tipo)) +
-  geom_line(linewidth = 1.2) +
-  scale_x_log10() + scale_y_log10() +
-  scale_colour_manual(values = c("#1a5a8a","#7b4f1a","#3d7a22")) +
-  labs(x = "Área da ilha (ha, escala log)",
-       y = "Riqueza de equilíbrio (log)",
-       title = "Modelo de Biogeografia de Ilhas",
-       colour = NULL) +
-  theme_aula(10) + theme(legend.position = "top")
-```
-:::
-::: {.column width="45%"}
-**Taxa de imigração (I):** decresce com a distância ao continente-fonte
-
-**Taxa de extinção (E):** decresce com a área da ilha
-
-**Equilíbrio dinâmico:** $S_{eq}$ é mantido por extinções e colonizações contínuas
-
-**Aplicações além de ilhas:**
-- Fragmentos florestais
-- Topos de serras (refúgios)
-- Lagoas isoladas
-- Manchas de habitat urbano
-:::
-::::
-
----
-
 ## Dispersão, Filtragem e Montagem de Comunidades
 
-**Como as espécies chegam a um lugar e como o ambiente seleciona quem fica?**
-
-```
-POOL REGIONAL DE ESPÉCIES (γ)
-         │
-    ← dispersão →
-    (limitação de
-     dispersão)
-         │
-         ▼
-POOL DE IMIGRANTES POTENCIAIS
-         │
-    ← filtragem →
-    ① Abiôtica: clima, solo, hidrologia
-    ② Biótica: competição, predação, mutualismo
-         │
-         ▼
-COMUNIDADE LOCAL OBSERVADA (α)
-```
-
-**Implicações para métricas de diversidade:**
 
 - **Alta limitação de dispersão** → β alta mesmo sem gradiente ambiental (deriva)
 - **Alta filtragem ambiental** → β alta correlacionada com gradientes climáticos/edáficos
@@ -758,105 +420,16 @@ A partição da β-diversidade em turnover vs. aninhamento ajuda a inferir **qua
 
 ---
 
-## Vicariância, Dispersão e Padrões de Endemismo
-
-**Como espécies chegaram a ser onde são — história evolutiva e ecológica:**
-
-:::: {.columns}
-::: {.column width="50%"}
-**Vicariância:**
-- Fragmentação de uma população ancestral por barreira geográfica (rio, montanha, glaciação)
-- Gera **espécies irmãs** com distribuições alopátricas
-- Exemplo clássico: *Jacamaralcyon tridactyla* (Mata Atlântica) vs. parentes amazônicos após recuo florestal
-
-**Dispersão de longa distância:**
-- Colonização de uma nova área por poucos indivíduos
-- Efeito fundador → menor diversidade genética
-- Exemplo: colonização da Mata Atlântica pernambucana por espécies amazônicas durante corredores úmidos pleistocênicos
-
-:::
-::: {.column width="50%"}
-**Centros de endemismo no Brasil:**
-
-- **Refúgios pleistocênicos** (teoria dos refúgios, Haffer 1969): areas de floresta persistiram como "ilhas" durante glaciações → alta diversidade acumulada
-- **Chapada Diamantina / Campos Rupestres**: isolamento altitudinal por milhões de anos → radiações adaptativas locais
-- **Mata Atlântica pernambucana**: isolada da Amazônia → alta taxa de endemismo de plantas e répteis
-
-::: {.callout-note}
-Endemismo alto + diversidade α alta = região de **máxima diversidade γ** → prioridade de conservação de primeira ordem.
-:::
-:::
-::::
-
----
-
-## Biogeografia de Ilhas Aplicada a Fragmentos: Mata Atlântica
-
-A Mata Atlântica pernambucana é o **melhor laboratório natural** de biogeografia de ilhas no Brasil:
-
-:::: {.columns}
-::: {.column width="55%"}
-```{r mata-pe, fig.height=4}
-set.seed(12)
-area_frag   <- c(1, 2, 5, 8, 15, 25, 40, 60, 90, 150,
-                 250, 400, 700, 1200, 3000)
-iso_media   <- c(15, 12, 8, 7, 5, 4, 3, 2.5, 2, 1.5, 1, 0.8, 0.5, 0.3, 0.1)
-
-sp_aves <- 12 * area_frag^0.22 * exp(-0.15 * iso_media) +
-           rnorm(length(area_frag), 0, 2)
-sp_mamif <- 4 * area_frag^0.30 * exp(-0.20 * iso_media) +
-            rnorm(length(area_frag), 0, 1)
-
-df_pe <- data.frame(area_frag, sp_aves = pmax(3, sp_aves),
-                    sp_mamif = pmax(1, sp_mamif))
-df_pe_long <- df_pe |> pivot_longer(-area_frag,
-                                     names_to = "grupo", values_to = "sp")
-
-ggplot(df_pe_long, aes(area_frag, sp, colour = grupo, shape = grupo)) +
-  geom_point(size = 3, alpha = 0.8) +
-  geom_smooth(method = "lm", formula = y ~ log(x), se = FALSE,
-              linewidth = 1.1) +
-  scale_x_log10(labels = scales::comma) +
-  scale_colour_manual(values = c("#4fa3d1","#7b4f1a"),
-                      labels = c("Aves","Mamíferos médios")) +
-  scale_shape_manual(values = c(16, 17),
-                     labels = c("Aves","Mamíferos médios")) +
-  labs(x = "Área do fragmento (ha, log)",
-       y = "Riqueza de espécies",
-       title = "Relação área–espécies em fragmentos de Mata Atlântica (PE)",
-       colour = NULL, shape = NULL) +
-  theme_aula(11) + theme(legend.position = "top")
-```
-:::
-::: {.column width="45%"}
-**O que o gráfico mostra:**
-
-- Riqueza cresce com a área (S = c·A^z)
-- z maior para mamíferos (mais sensíveis à área)
-- z menor para aves (maior capacidade de dispersão)
-
-**Implicações para o PAPP (Pernambuco):**
-
-- Fragmentos < 10 ha perdem mamíferos de médio/grande porte
-- Aves de sub-bosque: limiar ~50 ha para populações mínimas viáveis
-- Corredores ecológicos reequilibram extinção e imigração
-
-**Beta-diversidade entre fragmentos:**
-Alta β via aninhamento (fragmentos menores têm subconjuntos dos maiores)
-:::
-::::
-
----
 
 ## Gradientes de Diversidade e Biogeografia: Síntese
 
 ```{r synthesis, fig.height=4}
 biomas_ord <- c("Pampa","Pantanal","Caatinga","Cerrado",
-                "Mata Atlântica","Amazônia","Campos\nRupestres")
-alpha_med  <- c(25, 55, 50, 75, 130, 250, 60)
-beta_med   <- c(1.8, 2.5, 3.2, 4.0, 3.8, 2.5, 5.0)
+                "Mata Atlântica","Amazônia")
+alpha_med  <- c(25, 55, 50, 75, 130, 250)
+beta_med   <- c(1.8, 2.5, 3.2, 4.0, 3.8, 2.5)
 gamma_med  <- alpha_med * beta_med
-endemismo  <- c(15, 25, 40, 45, 55, 50, 65)   # % de espécies endêmicas
+endemismo  <- c(15, 25, 40, 45, 55, 50)   # % de espécies endêmicas
 
 df_syn <- data.frame(biomas_ord = factor(biomas_ord, levels = biomas_ord),
                      alpha_med, beta_med, gamma_med, endemismo)
@@ -991,72 +564,12 @@ Em escala regional (> 100 km): o **clima** se torna dominante.
 
 ---
 
-## Modelos de Nicho Ecológico (SDM/ENM): Conceitos
-
-**O que é um modelo de distribuição de espécies?**
-
-> Um SDM (Species Distribution Model) estima a probabilidade de ocorrência de uma espécie em um ponto geográfico com base nas condições ambientais naquele ponto — traduzindo o **nicho climático** em mapa de distribuição potencial.
-
-**Pipeline típico:**
-
-```
-OCORRÊNCIAS          VARIÁVEIS             MODELO
-(registros de    +   AMBIENTAIS        →   ESTATÍSTICO     →   MAPA
- campo/coleções)     (BIO1–BIO19,          (MaxEnt, RF,         de adequa-
-                      solo, altitude)       BRT, GLM)           bilidade
-```
-
-**Conexão com diversidade:**
-
-- Sobrepor SDMs de múltiplas espécies → **riqueza potencial** por pixel
-- Comparar riqueza modelada vs. observada → detectar sub-amostragem
-- Projetar SDMs em cenários futuros → prever mudanças em α, β e γ
-- Calcular **β-diversidade de nicho** entre espécies próximas
-
-::: {.callout-warning}
-SDMs modelam o **nicho climático realizado**, não o fundamental. A ausência de uma espécie de uma área pode ser limitação de dispersão, não inadequação climática!
-:::
-
----
 
 ## Aplicação: Modelagem da Caatinga e Mudanças Climáticas
 
-**Cenário simulado: como a área adequada para plantas endêmicas da Caatinga muda com o aquecimento?**
 
-```{r caatinga-sdm, fig.height=3.6}
-set.seed(23)
-temp_atual <- seq(22, 32, length.out = 50)
-temp_futura <- temp_atual + 3.5   # SSP3-7.0
+![](https://s2-umsoplaneta.glbimg.com/MWxzQg290_UCP1URKttCZJ2skLA=/0x0:1140x680/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_7d5b9b5029304d27b7ef8a7f28b4d70f/internal_photos/bs/2024/p/K/1s0MjvQIi3RpV9rLBkAg/rpf-caatinga-2023-12-info-1140.jpeg){fig-align=center}
 
-adequabilidade_atual <- dnorm(temp_atual,  mean = 26.5, sd = 2.8)
-adequabilidade_futura <- dnorm(temp_futura, mean = 26.5, sd = 2.8)
-
-df_sdm <- data.frame(
-  temp = c(temp_atual, temp_futura),
-  adeq = c(adequabilidade_atual, adequabilidade_futura),
-  cenario = rep(c("Clima atual (1970–2000)","Clima futuro (2071–2100, SSP3)"),
-                each = 50)
-)
-
-ggplot(df_sdm, aes(temp, adeq, colour = cenario, fill = cenario)) +
-  geom_line(linewidth = 1.3) +
-  geom_ribbon(aes(ymin = 0, ymax = adeq), alpha = 0.2) +
-  scale_colour_manual(values = c("#1a5a8a","#c0392b")) +
-  scale_fill_manual(values  = c("#1a5a8a","#c0392b")) +
-  geom_vline(xintercept = c(22, 32), linetype = "dashed",
-             colour = "grey50", alpha = 0.6) +
-  annotate("text", x = 22.5, y = 0.12,
-           label = "Limiar térmico\natual", size = 3, colour = "grey40") +
-  annotate("text", x = 31.5, y = 0.12,
-           label = "Limiar térmico\nfuturo?", size = 3, colour = "#c0392b") +
-  labs(x = "Temperatura média anual (°C)",
-       y = "Adequabilidade climática (relativa)",
-       title = "Deslocamento do nicho climático — espécie endêmica da Caatinga",
-       colour = NULL, fill = NULL) +
-  theme_aula(11) + theme(legend.position = "top")
-```
-
-**Consequências para diversidade:** Redução na área climaticamente adequada → redução de α local; mudança de composição entre locais → aumento de β temporal; possível aumento de γ se houver deslocamento para novas áreas (mas perda líquida em áreas já marginais).
 
 ---
 
@@ -1118,108 +631,6 @@ ggplot(df_frame, aes(x, y)) +
 
 ---
 
-## Aplicação em R: Diversidade ao Longo de Gradientes
-
-```{r r-aplicacao, echo=TRUE, eval=FALSE}
-library(vegan)
-library(tidyverse)
-
-# 1. Carregar matriz de comunidade (linhas = parcelas, colunas = sp.)
-dados <- read.csv("comunidade.csv", row.names = 1)
-ambiente <- read.csv("variaveis_amb.csv", row.names = 1)
-
-# 2. Diversidade alfa por parcela (Hill: q=0, 1, 2)
-alpha_q0 <- specnumber(dados)              # riqueza
-alpha_q1 <- exp(diversity(dados, "shannon"))  # exp(H')
-alpha_q2 <- diversity(dados, "invsimpson")    # 1/D
-
-# 3. Gradiente × diversidade alfa
-df_plot <- data.frame(
-  precipitacao = ambiente$prec_anual,
-  riqueza = alpha_q0, shannon = alpha_q1, simpson = alpha_q2
-)
-
-# 4. Beta-diversidade (Bray-Curtis) e ordenação
-dist_bc  <- vegdist(dados, "bray")
-nmds_ord <- metaMDS(dist_bc, k = 2, trace = FALSE)
-
-# 5. Correlação ambiente × composição (PERMANOVA)
-resultado <- adonis2(dist_bc ~ prec_anual + pH + argila,
-                     data = ambiente, permutations = 999)
-print(resultado)
-```
-
-::: {.callout-tip}
-O `adonis2` (PERMANOVA) permite testar **qual variável ambiental** (clima, solo ou vegetação) explica mais da β-diversidade — conectando diretamente os conceitos desta aula com análises práticas.
-:::
-
----
-
-## Síntese: O Que Determina a Diversidade de um Lugar?
-
-| Escala | Fator dominante | Métrica mais sensível | Exemplo brasileiro |
-|--------|----------------|----------------------|--------------------|
-| Global | Clima (T, P) | Riqueza / Hill q=0 | Amazônia vs. Pampa |
-| Regional | Biogeografia histórica + Clima | Diversidade γ + endemismo | Caatinga vs. Mata Atlântica |
-| Paisagem | Heterogeneidade de habitat | β-diversidade (Sørensen) | Mosaico Cerrado |
-| Local | Solo + microclima | Hill q=1 e q=2 | Campos rupestres |
-| Muito local | Interações bióticas | Equitabilidade / Hill q=2 | Interior de floresta |
-
-**Regras gerais emergentes desta aula:**
-
-1. Quanto mais **heterogêneo** o clima/solo/vegetação → maior β → maior γ
-2. Alta α não implica alta γ sem complementaridade de habitats (β alta)
-3. Os **números de Hill** permitem comparar diversidades em qualquer escala
-4. **Biogeografia** determina o pool disponível; **filtragem** decide quem fica
-5. **Solos especiais** concentram endemismo desproporcional à área
-
----
-
-## Leituras Recomendadas
-
-**Artigos e livros fundamentais:**
-
-- Whittaker, R.H. (1972). Evolution and measurement of species diversity. *Taxon*, 21, 213–251.
-- Holdridge, L.R. (1947). Determination of world plant formations from simple climatic data. *Science*, 105, 367–368.
-- MacArthur, R.H. & Wilson, E.O. (1967). *The Theory of Island Biogeography*. Princeton Univ. Press.
-- Morrone, J.J. (2014). Biogeographical regionalisation of the Neotropical region. *Zootaxa*, 3782(1), 1–110.
-- Hijmans, R.J. et al. (2005). Very high resolution interpolated climate surfaces for global land areas. *Int. J. Climatology*, 25, 1965–1978.
-- Legendre, P. & Legendre, L. (2012). *Numerical Ecology* (3ª ed.). Elsevier.
-- Ratter, J.A. et al. (1997). The Brazilian Cerrado vegetation and threats to its biodiversity. *Annals of Botany*, 80, 223–230.
-
-**Recursos online:**
-
-- WorldClim: [worldclim.org](https://worldclim.org) — variáveis bioclimáticas globais
-- CHELSA: alta resolução para regiões complexas
-- SpeciesLink: registros de ocorrência brasileiros
-- GBIF: [gbif.org](https://gbif.org) — ocorrências globais
-
----
-
-## Próxima Aula
-
-:::: {.columns}
-::: {.column width="60%"}
-**Interações Bióticas e Estrutura de Comunidades**
-
-- Competição, predação e mutualismo como estruturadores de α-diversidade
-- Redes de interação ecológica (redes de polinização, predação)
-- Hipótese da perturbação intermediária
-- Efeito cascata trófica e diversidade
-- Redundância funcional
-:::
-::: {.column width="40%"}
-**Para a próxima semana:**
-
-- Instale o pacote `biomod2` para modelagem de nicho
-- Leia: MacArthur & Wilson (1967), caps. 1–3
-- Exercício de diversidade em biomas brasileiros disponível no Moodle
-
-:::
-::::
-
----
-
 ## {background-color="#0d2b4a"}
 
 <br><br>
@@ -1234,6 +645,4 @@ O `adonis2` (PERMANOVA) permite testar **qual variável ambiental** (clima, solo
 
 <br>
 
-::: {style="text-align:center; color:#c8e6f5; font-size:0.9em;"}
-Slides e scripts R disponíveis no Moodle · Ecologia 2 · UFPE
-:::
+
