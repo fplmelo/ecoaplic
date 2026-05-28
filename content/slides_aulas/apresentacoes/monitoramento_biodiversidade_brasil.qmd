@@ -1,0 +1,722 @@
+---
+title: "Programas de Monitoramento da Biodiversidade no Brasil"
+subtitle: "PPBio · PELD · BPBES · Simbiose · SisBR · Biota FAPESP"
+author: ""
+date: today
+lang: pt
+format:
+  revealjs:
+    theme: [default]
+    slide-number: true
+    progress: true
+    logo: ""
+    footer: "Monitoramento da Biodiversidade no Brasil"
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-fold: true
+    scrollable: true
+    width: 1280
+    height: 720
+    margin: 0.08
+    title-slide-attributes:
+      data-background-color: "#1B4332"
+      data-background-image: ""
+execute:
+  echo: false
+  warning: false
+---
+
+## {background-color="#1B4332"}
+
+::: {.columns}
+::: {.column width="60%"}
+
+### Por que monitorar a biodiversidade?
+
+O Brasil abriga **~20% da biodiversidade global**, mas enfrenta:
+
+- Perda acelerada de habitat
+- Espécies ameaçadas de extinção
+- Lacunas críticas de conhecimento
+
+> *"Não é possível conservar o que não se conhece, e não se pode conhecer sem monitorar."*
+
+:::
+::: {.column width="40%"}
+
+```{=html}
+<div style="background:#2D6A4F; border-radius:16px; padding:24px; text-align:center; color:white; font-size:1.1em; margin-top:30px;">
+  <div style="font-size:3em; font-weight:bold;">~120.000</div>
+  <div>espécies conhecidas</div>
+  <br>
+  <div style="font-size:3em; font-weight:bold;">6</div>
+  <div>biomas continentais</div>
+  <br>
+  <div style="font-size:3em; font-weight:bold;">5.570</div>
+  <div>municípios a monitorar</div>
+</div>
+```
+
+:::
+:::
+
+---
+
+## Panorama dos Programas Nacionais {background-color="#F0F4F0"}
+
+```{=html}
+<div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; margin-top:20px;">
+
+  <div style="background:#1B4332; color:white; border-radius:12px; padding:20px;">
+    <div style="font-size:1.4em; font-weight:bold; margin-bottom:6px;">PPBio</div>
+    <div style="font-size:0.85em; opacity:0.9;">Programa de Pesquisa em Biodiversidade</div>
+    <div style="font-size:0.75em; margin-top:10px; border-top:1px solid rgba(255,255,255,0.3); padding-top:8px;">MCTIC · desde 2004</div>
+  </div>
+
+  <div style="background:#2D6A4F; color:white; border-radius:12px; padding:20px;">
+    <div style="font-size:1.4em; font-weight:bold; margin-bottom:6px;">PELD</div>
+    <div style="font-size:0.85em; opacity:0.9;">Pesquisa Ecológica de Longa Duração</div>
+    <div style="font-size:0.75em; margin-top:10px; border-top:1px solid rgba(255,255,255,0.3); padding-top:8px;">CNPq · desde 1994</div>
+  </div>
+
+  <div style="background:#40916C; color:white; border-radius:12px; padding:20px;">
+    <div style="font-size:1.4em; font-weight:bold; margin-bottom:6px;">BPBES</div>
+    <div style="font-size:0.85em; opacity:0.9;">Plataforma Brasileira de Biodiversidade e Serviços Ecossistêmicos</div>
+    <div style="font-size:0.75em; margin-top:10px; border-top:1px solid rgba(255,255,255,0.3); padding-top:8px;">Independente · desde 2015</div>
+  </div>
+
+  <div style="background:#52B788; color:white; border-radius:12px; padding:20px;">
+    <div style="font-size:1.4em; font-weight:bold; margin-bottom:6px;">Simbiose</div>
+    <div style="font-size:0.85em; opacity:0.9;">Sistema de Monitoramento da Biodiversidade</div>
+    <div style="font-size:0.75em; margin-top:10px; border-top:1px solid rgba(255,255,255,0.3); padding-top:8px;">MMA · em implantação</div>
+  </div>
+
+  <div style="background:#74C69D; color:#1B4332; border-radius:12px; padding:20px;">
+    <div style="font-size:1.4em; font-weight:bold; margin-bottom:6px;">SisBR</div>
+    <div style="font-size:0.85em;">Sistema de Informação sobre a Biodiversidade Brasileira</div>
+    <div style="font-size:0.75em; margin-top:10px; border-top:1px solid rgba(27,67,50,0.3); padding-top:8px;">MMA/MCTI · desde 2012</div>
+  </div>
+
+  <div style="background:#95D5B2; color:#1B4332; border-radius:12px; padding:20px;">
+    <div style="font-size:1.4em; font-weight:bold; margin-bottom:6px;">Biota FAPESP</div>
+    <div style="font-size:0.85em;">Programa de Pesquisa em Biodiversidade</div>
+    <div style="font-size:0.75em; margin-top:10px; border-top:1px solid rgba(27,67,50,0.3); padding-top:8px;">FAPESP · desde 1999</div>
+  </div>
+
+</div>
+```
+
+---
+
+## PPBio — Programa de Pesquisa em Biodiversidade {background-color="#F0F4F0"}
+
+::: {.columns}
+::: {.column width="55%"}
+
+**Missão:** Gerar, sistematizar e disseminar conhecimento sobre a biodiversidade brasileira para subsidiar políticas públicas e conservação.
+
+**Características principais:**
+
+- Rede nacional de parcelas permanentes padronizadas (RAPELD)
+- Inventários multi-táxon em todos os biomas
+- Dados abertos e compartilhados na plataforma CRIA/SpeciesLink
+- Integração entre pesquisa, formação e gestão
+
+**Biomas cobertos:** Amazônia, Cerrado, Caatinga, Mata Atlântica, Pampa e Pantanal
+
+:::
+::: {.column width="45%"}
+
+```{=html}
+<div style="background:#1B4332; color:white; border-radius:14px; padding:24px; margin-top:10px;">
+  <div style="font-size:1em; font-weight:bold; margin-bottom:16px; border-bottom:1px solid rgba(255,255,255,0.3); padding-bottom:8px;">📊 Números do PPBio</div>
+  <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
+    <span style="opacity:0.85;">Redes temáticas</span>
+    <span style="font-weight:bold; font-size:1.2em;">+30</span>
+  </div>
+  <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
+    <span style="opacity:0.85;">Parcelas RAPELD</span>
+    <span style="font-weight:bold; font-size:1.2em;">+1.000</span>
+  </div>
+  <div style="display:flex; justify-content:space-between; margin-bottom:12px;">
+    <span style="opacity:0.85;">Publicações geradas</span>
+    <span style="font-weight:bold; font-size:1.2em;">+2.500</span>
+  </div>
+  <div style="display:flex; justify-content:space-between;">
+    <span style="opacity:0.85;">Instituições parceiras</span>
+    <span style="font-weight:bold; font-size:1.2em;">+80</span>
+  </div>
+</div>
+```
+
+:::
+:::
+
+---
+
+## PPBio — Protocolo RAPELD e Redes {background-color="#F0F4F0"}
+
+::: {.columns}
+::: {.column width="50%"}
+
+**Protocolo RAPELD**
+
+Sistema integrado de **RAP** (Rapid Assessment Program) e **ELD** (Ecological Long-term Data):
+
+1. **Módulos padronizados** de 5 km × 1 km
+2. **Trilhas** em cotas altimétricas constantes
+3. **Parcelas permanentes** de 250 m
+4. Protocolos para flora, fauna, solo e água
+
+**Vantagem:** Permite comparações entre biomas e ao longo do tempo.
+
+:::
+::: {.column width="50%"}
+
+**Redes Temáticas PPBio**
+
+```{=html}
+<ul style="list-style:none; padding:0; margin:0;">
+  <li style="background:#2D6A4F; color:white; border-radius:8px; padding:10px 14px; margin-bottom:8px;">🌿 Rede Amazônia (INPA)</li>
+  <li style="background:#40916C; color:white; border-radius:8px; padding:10px 14px; margin-bottom:8px;">🌵 Rede Caatinga (UFERSA/UFPB)</li>
+  <li style="background:#52B788; color:white; border-radius:8px; padding:10px 14px; margin-bottom:8px;">🌾 Rede Cerrado (UnB/UFG)</li>
+  <li style="background:#74C69D; color:#1B4332; border-radius:8px; padding:10px 14px; margin-bottom:8px;">🌊 Rede Costeira/Marinha (UFPA)</li>
+  <li style="background:#95D5B2; color:#1B4332; border-radius:8px; padding:10px 14px;">🦋 Rede Mata Atlântica (UFES/UFRJ)</li>
+</ul>
+```
+
+:::
+:::
+
+---
+
+## PELD — Pesquisa Ecológica de Longa Duração {background-color="#F0F4F0"}
+
+::: {.columns}
+::: {.column width="58%"}
+
+**O que é?**
+Programa do CNPq inspirado na rede americana LTER (*Long-Term Ecological Research*), criado em **1994**.
+
+**Premissas fundamentais:**
+
+- Processos ecológicos demandam **décadas** de observação
+- Mudanças climáticas e uso da terra só são detectáveis no longo prazo
+- Cada sítio é um **laboratório a céu aberto** contínuo
+- Dados históricos são patrimônio científico nacional
+
+**Governança:** Comitê Científico + Coordenador Nacional (CNPq)
+
+:::
+::: {.column width="42%"}
+
+```{=html}
+<div style="background:#1B4332; border-radius:14px; padding:22px; color:white;">
+  <div style="font-weight:bold; margin-bottom:14px; font-size:1.05em;">Sítios PELD ativos (2022–2026)</div>
+  <div style="background:rgba(255,255,255,0.1); border-radius:8px; padding:10px; margin-bottom:10px;">
+    <span style="font-size:1.6em; font-weight:bold;">36</span><br>
+    <span style="font-size:0.85em; opacity:0.9;">sítios em todo o Brasil</span>
+  </div>
+  <div style="background:rgba(255,255,255,0.1); border-radius:8px; padding:10px; margin-bottom:10px;">
+    <span style="font-size:1.6em; font-weight:bold;">+30 anos</span><br>
+    <span style="font-size:0.85em; opacity:0.9;">de dados em alguns sítios</span>
+  </div>
+  <div style="background:rgba(255,255,255,0.1); border-radius:8px; padding:10px;">
+    <span style="font-size:1.6em; font-weight:bold;">6</span><br>
+    <span style="font-size:0.85em; opacity:0.9;">biomas representados</span>
+  </div>
+</div>
+```
+
+:::
+:::
+
+---
+
+## PELD — Contribuições e Exemplos de Sítios {background-color="#F0F4F0"}
+
+```{=html}
+<div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:16px; margin-top:10px;">
+
+  <div style="border-left:5px solid #1B4332; background:white; border-radius:0 10px 10px 0; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+    <div style="font-weight:bold; color:#1B4332; font-size:1.05em;">🌊 PELD Pantanal (UFMS)</div>
+    <div style="font-size:0.88em; margin-top:6px; color:#333;">Monitoramento do pulso de inundação e sua influência sobre peixes, macrófitas e aves aquáticas desde 2001.</div>
+  </div>
+
+  <div style="border-left:5px solid #2D6A4F; background:white; border-radius:0 10px 10px 0; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+    <div style="font-weight:bold; color:#2D6A4F; font-size:1.05em;">🌿 PELD Amazônia Central (INPA)</div>
+    <div style="font-size:0.88em; margin-top:6px; color:#333;">Dinâmica florestal em fragmentos — base do Projeto Dinâmica Biológica de Fragmentos Florestais (PDBFF).</div>
+  </div>
+
+  <div style="border-left:5px solid #40916C; background:white; border-radius:0 10px 10px 0; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+    <div style="font-weight:bold; color:#40916C; font-size:1.05em;">🌊 PELD Recifes de Coral (UFRN)</div>
+    <div style="font-size:0.88em; margin-top:6px; color:#333;">Monitoramento do branqueamento, recuperação e impacto do turismo nos recifes costeiros do Nordeste.</div>
+  </div>
+
+  <div style="border-left:5px solid #52B788; background:white; border-radius:0 10px 10px 0; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+    <div style="font-weight:bold; color:#52B788; font-size:1.05em;">🌾 PELD Cerrado (UFG/UnB)</div>
+    <div style="font-size:0.88em; margin-top:6px; color:#333;">Efeito do fogo, pastejo e desmatamento sobre a vegetação, solo e invertebrados no Cerrado central.</div>
+  </div>
+
+</div>
+
+<div style="margin-top:16px; background:#F0F4F0; border-radius:10px; padding:14px; font-size:0.88em; color:#555; text-align:center;">
+  💡 Dados do PELD são depositados no <strong>portal IBICT</strong> e na rede internacional <strong>LTER Network</strong>
+</div>
+```
+
+---
+
+## BPBES — Plataforma Brasileira de Biodiversidade {background-color="#F0F4F0"}
+
+::: {.columns}
+::: {.column width="55%"}
+
+**O que é?**
+Interface nacional entre **ciência e políticas públicas**, nos moldes da IPBES global (*Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services*).
+
+**Funções centrais:**
+
+- Produzir **avaliações** do estado da biodiversidade brasileira
+- Identificar **lacunas de conhecimento**
+- Traduzir ciência em linguagem para **tomadores de decisão**
+- Articular pesquisadores, governo e sociedade civil
+
+**Marco:** Publicou em 2018 o primeiro **Relatório Temático sobre Polinização** no Brasil.
+
+:::
+::: {.column width="45%"}
+
+```{=html}
+<div style="background:#1B4332; color:white; border-radius:14px; padding:22px;">
+  <div style="font-weight:bold; margin-bottom:14px; font-size:1.05em;">Avaliações BPBES publicadas</div>
+
+  <div style="background:rgba(255,255,255,0.12); border-radius:8px; padding:12px; margin-bottom:10px;">
+    <div style="font-weight:bold;">🐝 Polinização (2018)</div>
+    <div style="font-size:0.82em; opacity:0.9; margin-top:4px;">Declínio de polinizadores e risco para a agricultura</div>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.12); border-radius:8px; padding:12px; margin-bottom:10px;">
+    <div style="font-weight:bold;">💧 Recursos Hídricos (2019)</div>
+    <div style="font-size:0.82em; opacity:0.9; margin-top:4px;">Biodiversidade aquática e serviços ecossistêmicos</div>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.12); border-radius:8px; padding:12px; margin-bottom:10px;">
+    <div style="font-weight:bold;">🌾 Agrobiodiversidade (2021)</div>
+    <div style="font-size:0.82em; opacity:0.9; margin-top:4px;">Raças crioulas e sementes nativas em risco</div>
+  </div>
+
+  <div style="background:rgba(255,255,255,0.12); border-radius:8px; padding:12px;">
+    <div style="font-weight:bold;">🦋 Avaliação Geral (2023)</div>
+    <div style="font-size:0.82em; opacity:0.9; margin-top:4px;">Estado da biodiversidade nos biomas brasileiros</div>
+  </div>
+</div>
+```
+
+:::
+:::
+
+---
+
+## Simbiose — Sistema de Monitoramento da Biodiversidade {background-color="#F0F4F0"}
+
+::: {.columns}
+::: {.column width="55%"}
+
+**Contexto**
+Criado no âmbito do **Ministério do Meio Ambiente (MMA)** para cumprir as metas da **COP-15 (Kunming-Montreal, 2022)** — especialmente a Meta 21 sobre sistemas de informação.
+
+**Objetivos:**
+
+- Integrar dados de monitoramento de todos os programas nacionais
+- Alimentar o painel nacional de **indicadores de biodiversidade**
+- Conectar o Brasil ao **GBIF** e ao **GEO BON** internacionais
+- Apoiar o relatório nacional para a **CDB** (Convenção sobre Diversidade Biológica)
+
+**Caráter inovador:** Usa sensoriamento remoto, IA e crowdsourcing.
+
+:::
+::: {.column width="45%"}
+
+```{=html}
+<div style="background:#2D6A4F; color:white; border-radius:14px; padding:22px;">
+  <div style="font-weight:bold; margin-bottom:16px; font-size:1.05em;">Pilares do Simbiose</div>
+
+  <div style="display:flex; align-items:flex-start; margin-bottom:14px;">
+    <div style="background:rgba(255,255,255,0.2); border-radius:8px; padding:8px 12px; font-weight:bold; min-width:40px; text-align:center; margin-right:12px;">1</div>
+    <div><strong>Dados in situ</strong><br><span style="font-size:0.84em; opacity:0.9;">Coletas de campo padronizadas em rede nacional</span></div>
+  </div>
+
+  <div style="display:flex; align-items:flex-start; margin-bottom:14px;">
+    <div style="background:rgba(255,255,255,0.2); border-radius:8px; padding:8px 12px; font-weight:bold; min-width:40px; text-align:center; margin-right:12px;">2</div>
+    <div><strong>Sensoriamento remoto</strong><br><span style="font-size:0.84em; opacity:0.9;">Satélites Sentinel, Landsat e MapBiomas</span></div>
+  </div>
+
+  <div style="display:flex; align-items:flex-start; margin-bottom:14px;">
+    <div style="background:rgba(255,255,255,0.2); border-radius:8px; padding:8px 12px; font-weight:bold; min-width:40px; text-align:center; margin-right:12px;">3</div>
+    <div><strong>Ciência cidadã</strong><br><span style="font-size:0.84em; opacity:0.9;">iNaturalist Brasil, WikiAves, Flora do Brasil</span></div>
+  </div>
+
+  <div style="display:flex; align-items:flex-start;">
+    <div style="background:rgba(255,255,255,0.2); border-radius:8px; padding:8px 12px; font-weight:bold; min-width:40px; text-align:center; margin-right:12px;">4</div>
+    <div><strong>Coleções científicas</strong><br><span style="font-size:0.84em; opacity:0.9;">Museus e herbários via SisBR/SpeciesLink</span></div>
+  </div>
+</div>
+```
+
+:::
+:::
+
+---
+
+## SisBR — Sistema de Informação sobre a Biodiversidade Brasileira {background-color="#F0F4F0"}
+
+::: {.columns}
+::: {.column width="52%"}
+
+**O que é?**
+Portal nacional de dados primários sobre a biodiversidade, gerido pelo **MMA** e **MCTI**, que agrega registros de ocorrências de espécies de diversas fontes.
+
+**Fontes de dados integradas:**
+
+- Coleções biológicas e herbários nacionais
+- Dados do INPA, MNRJ, MN/UFRJ
+- Registros do **SpeciesLink** (CRIA)
+- Ocorrências da **REBIO/RPPN** e UCs federais
+- Dados de pesquisas PPBio e PELD
+
+**Padrão de dados:** Darwin Core (DwC), compatível com GBIF.
+
+:::
+::: {.column width="48%"}
+
+```{=html}
+<div style="background:#1B4332; color:white; border-radius:14px; padding:22px;">
+  <div style="font-weight:bold; margin-bottom:16px;">📦 Volume de dados (2024)</div>
+  <div style="background:rgba(255,255,255,0.1); border-radius:8px; padding:12px; margin-bottom:10px; text-align:center;">
+    <div style="font-size:2em; font-weight:bold;">+23 milhões</div>
+    <div style="font-size:0.85em; opacity:0.85;">registros de ocorrência</div>
+  </div>
+  <div style="background:rgba(255,255,255,0.1); border-radius:8px; padding:12px; margin-bottom:10px; text-align:center;">
+    <div style="font-size:2em; font-weight:bold;">+800</div>
+    <div style="font-size:0.85em; opacity:0.85;">coleções e datasets publicadores</div>
+  </div>
+  <div style="background:rgba(255,255,255,0.1); border-radius:8px; padding:12px; text-align:center;">
+    <div style="font-size:2em; font-weight:bold;">+110.000</div>
+    <div style="font-size:0.85em; opacity:0.85;">táxons representados</div>
+  </div>
+</div>
+
+<div style="margin-top:12px; background:#D8F3DC; border-radius:8px; padding:10px; font-size:0.82em; color:#1B4332; text-align:center;">
+  🌐 <strong>sibbr.gov.br</strong> · Nó oficial do Brasil no <strong>GBIF</strong>
+</div>
+```
+
+:::
+:::
+
+---
+
+## Biota FAPESP — Programa de Pesquisa em Biodiversidade {background-color="#F0F4F0"}
+
+::: {.columns}
+::: {.column width="55%"}
+
+**O que é?**
+Programa da **FAPESP** (Fundação de Amparo à Pesquisa do Estado de São Paulo), lançado em **1999**, dedicado a caracterizar, conservar e promover o uso sustentável da biodiversidade paulista e brasileira.
+
+**Fases do programa:**
+
+| Fase | Período | Foco |
+|------|---------|------|
+| 1ª | 1999–2010 | Inventário e caracterização |
+| 2ª | 2011–presente | Restauração e serviços ecossistêmicos |
+| Biota Síntese | 2023– | Modelagem e conservação integrada |
+
+:::
+::: {.column width="45%"}
+
+```{=html}
+<div style="background:#40916C; color:white; border-radius:14px; padding:22px;">
+  <div style="font-weight:bold; margin-bottom:14px;">🏆 Impacto científico</div>
+
+  <div style="display:flex; justify-content:space-between; background:rgba(255,255,255,0.15); border-radius:8px; padding:10px; margin-bottom:8px;">
+    <span>Projetos financiados</span>
+    <strong>+350</strong>
+  </div>
+  <div style="display:flex; justify-content:space-between; background:rgba(255,255,255,0.15); border-radius:8px; padding:10px; margin-bottom:8px;">
+    <span>Artigos publicados</span>
+    <strong>+6.000</strong>
+  </div>
+  <div style="display:flex; justify-content:space-between; background:rgba(255,255,255,0.15); border-radius:8px; padding:10px; margin-bottom:8px;">
+    <span>Pesquisadores envolvidos</span>
+    <strong>+1.200</strong>
+  </div>
+  <div style="display:flex; justify-content:space-between; background:rgba(255,255,255,0.15); border-radius:8px; padding:10px; margin-bottom:8px;">
+    <span>Espécies novas descritas</span>
+    <strong>+1.000</strong>
+  </div>
+  <div style="display:flex; justify-content:space-between; background:rgba(255,255,255,0.15); border-radius:8px; padding:10px;">
+    <span>Bolsas concedidas</span>
+    <strong>+5.000</strong>
+  </div>
+</div>
+```
+
+:::
+:::
+
+---
+
+## Biota FAPESP — Legados e Produtos {background-color="#F0F4F0"}
+
+```{=html}
+<div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; margin-top:10px;">
+
+  <div style="background:white; border-radius:12px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.08); border-top:4px solid #1B4332;">
+    <div style="font-size:1.5em; margin-bottom:8px;">📰</div>
+    <div style="font-weight:bold; color:#1B4332; margin-bottom:6px;">Biota Neotropica</div>
+    <div style="font-size:0.85em; color:#444;">Revista científica de acesso aberto criada pelo programa, indexada no Web of Science. Referência em biodiversidade neotropical.</div>
+  </div>
+
+  <div style="background:white; border-radius:12px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.08); border-top:4px solid #2D6A4F;">
+    <div style="font-size:1.5em; margin-bottom:8px;">🗺️</div>
+    <div style="font-weight:bold; color:#2D6A4F; margin-bottom:6px;">Atlas da Mata Atlântica</div>
+    <div style="font-size:0.85em; color:#444;">Mapeamento detalhado dos remanescentes florestais e espécies ameaçadas no estado de São Paulo.</div>
+  </div>
+
+  <div style="background:white; border-radius:12px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.08); border-top:4px solid #40916C;">
+    <div style="font-size:1.5em; margin-bottom:8px;">🌿</div>
+    <div style="font-weight:bold; color:#40916C; margin-bottom:6px;">Flora do Estado de SP</div>
+    <div style="font-size:0.85em; color:#444;">Checklist completo das plantas vasculares — base para políticas de licenciamento ambiental.</div>
+  </div>
+
+  <div style="background:white; border-radius:12px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.08); border-top:4px solid #52B788;">
+    <div style="font-size:1.5em; margin-bottom:8px;">🔬</div>
+    <div style="font-weight:bold; color:#52B788; margin-bottom:6px;">Espécies novas</div>
+    <div style="font-size:0.85em; color:#444;">Mais de 1.000 espécies descritas para a ciência, especialmente em grupos como plantas, invertebrados e microrganismos.</div>
+  </div>
+
+  <div style="background:white; border-radius:12px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.08); border-top:4px solid #74C69D;">
+    <div style="font-size:1.5em; margin-bottom:8px;">📊</div>
+    <div style="font-weight:bold; color:#52B788; margin-bottom:6px;">Biota Síntese (2023)</div>
+    <div style="font-size:0.85em; color:#444;">Nova fase integrando dados moleculares, ecológicos e climáticos para modelagem de conservação em larga escala.</div>
+  </div>
+
+  <div style="background:white; border-radius:12px; padding:18px; box-shadow:0 2px 10px rgba(0,0,0,0.08); border-top:4px solid #95D5B2;">
+    <div style="font-size:1.5em; margin-bottom:8px;">🌳</div>
+    <div style="font-weight:bold; color:#40916C; margin-bottom:6px;">Restauração Florestal</div>
+    <div style="font-size:0.85em; color:#444;">Protocolos e planos de restauração usados pela SABESP e prefeituras no entorno de mananciais.</div>
+  </div>
+
+</div>
+```
+
+---
+
+## Comparativo entre os Programas {background-color="#F0F4F0"}
+
+```{=html}
+<table style="width:100%; border-collapse:separate; border-spacing:0 6px; font-size:0.85em; margin-top:10px;">
+  <thead>
+    <tr style="background:#1B4332; color:white;">
+      <th style="padding:12px 14px; border-radius:8px 0 0 8px; text-align:left;">Programa</th>
+      <th style="padding:12px 14px; text-align:center;">Escala</th>
+      <th style="padding:12px 14px; text-align:center;">Horizonte</th>
+      <th style="padding:12px 14px; text-align:center;">Foco</th>
+      <th style="padding:12px 14px; border-radius:0 8px 8px 0; text-align:center;">Dados abertos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background:#D8F3DC;">
+      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#1B4332;">PPBio</td>
+      <td style="padding:10px 14px; text-align:center;">Nacional</td>
+      <td style="padding:10px 14px; text-align:center;">Longo prazo</td>
+      <td style="padding:10px 14px; text-align:center;">Inventário multi-táxon</td>
+      <td style="padding:10px 14px; text-align:center; border-radius:0 8px 8px 0;">✅ SpeciesLink</td>
+    </tr>
+    <tr style="background:#F0F4F0;">
+      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#2D6A4F;">PELD</td>
+      <td style="padding:10px 14px; text-align:center;">Nacional (sítios)</td>
+      <td style="padding:10px 14px; text-align:center;">>10 anos</td>
+      <td style="padding:10px 14px; text-align:center;">Dinâmica ecológica</td>
+      <td style="padding:10px 14px; text-align:center; border-radius:0 8px 8px 0;">✅ IBICT/LTER</td>
+    </tr>
+    <tr style="background:#D8F3DC;">
+      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#40916C;">BPBES</td>
+      <td style="padding:10px 14px; text-align:center;">Nacional</td>
+      <td style="padding:10px 14px; text-align:center;">Por avaliação</td>
+      <td style="padding:10px 14px; text-align:center;">Ciência-política</td>
+      <td style="padding:10px 14px; text-align:center; border-radius:0 8px 8px 0;">✅ Relatórios PDF</td>
+    </tr>
+    <tr style="background:#F0F4F0;">
+      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#52B788;">Simbiose</td>
+      <td style="padding:10px 14px; text-align:center;">Nacional (integrador)</td>
+      <td style="padding:10px 14px; text-align:center;">Contínuo</td>
+      <td style="padding:10px 14px; text-align:center;">Indicadores / metas CDB</td>
+      <td style="padding:10px 14px; text-align:center; border-radius:0 8px 8px 0;">🔄 Em implantação</td>
+    </tr>
+    <tr style="background:#D8F3DC;">
+      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#1B4332;">SisBR</td>
+      <td style="padding:10px 14px; text-align:center;">Nacional</td>
+      <td style="padding:10px 14px; text-align:center;">Histórico</td>
+      <td style="padding:10px 14px; text-align:center;">Ocorrências / coleções</td>
+      <td style="padding:10px 14px; text-align:center; border-radius:0 8px 8px 0;">✅ GBIF/DwC</td>
+    </tr>
+    <tr style="background:#F0F4F0;">
+      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#40916C;">Biota FAPESP</td>
+      <td style="padding:10px 14px; text-align:center;">SP / Brasil</td>
+      <td style="padding:10px 14px; text-align:center;">Longo prazo</td>
+      <td style="padding:10px 14px; text-align:center;">Pesquisa integrada</td>
+      <td style="padding:10px 14px; text-align:center; border-radius:0 8px 8px 0;">✅ Biota Neotropica</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+---
+
+## Desafios e Lacunas do Monitoramento Nacional {background-color="#F0F4F0"}
+
+::: {.columns}
+::: {.column width="50%"}
+
+**Lacunas geográficas**
+
+```{=html}
+<ul style="list-style:none; padding:0;">
+  <li style="padding:8px; background:#FFF3CD; border-radius:6px; margin-bottom:6px; font-size:0.9em;">⚠️ Amazônia ocidental sub-representada</li>
+  <li style="padding:8px; background:#FFF3CD; border-radius:6px; margin-bottom:6px; font-size:0.9em;">⚠️ Zona costeira e marinha deficitária</li>
+  <li style="padding:8px; background:#FFF3CD; border-radius:6px; margin-bottom:6px; font-size:0.9em;">⚠️ Pampa e Pantanal com poucos sítios</li>
+  <li style="padding:8px; background:#FFF3CD; border-radius:6px; font-size:0.9em;">⚠️ Interior do Nordeste pouco amostrado</li>
+</ul>
+```
+
+**Lacunas taxonômicas**
+
+```{=html}
+<ul style="list-style:none; padding:0; margin-top:10px;">
+  <li style="padding:8px; background:#F8D7DA; border-radius:6px; margin-bottom:6px; font-size:0.9em;">🔴 Invertebrados (~80% das espécies)</li>
+  <li style="padding:8px; background:#F8D7DA; border-radius:6px; margin-bottom:6px; font-size:0.9em;">🔴 Fungos e microrganismos do solo</li>
+  <li style="padding:8px; background:#F8D7DA; border-radius:6px; font-size:0.9em;">🔴 Organismos aquáticos continentais</li>
+</ul>
+```
+
+:::
+::: {.column width="50%"}
+
+**Desafios institucionais**
+
+```{=html}
+<ul style="list-style:none; padding:0;">
+  <li style="padding:10px; background:white; border-radius:8px; margin-bottom:8px; border-left:4px solid #DC3545; font-size:0.88em; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <strong>Financiamento descontinuado</strong><br>Programas vulneráveis a cortes orçamentários
+  </li>
+  <li style="padding:10px; background:white; border-radius:8px; margin-bottom:8px; border-left:4px solid #FD7E14; font-size:0.88em; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <strong>Fragmentação entre programas</strong><br>Falta de protocolo único de padronização
+  </li>
+  <li style="padding:10px; background:white; border-radius:8px; margin-bottom:8px; border-left:4px solid #FFC107; font-size:0.88em; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <strong>Crise do taxonomista</strong><br>Envelhecimento e escassez de especialistas
+  </li>
+  <li style="padding:10px; background:white; border-radius:8px; border-left:4px solid #17A2B8; font-size:0.88em; box-shadow:0 1px 4px rgba(0,0,0,0.07);">
+    <strong>Interoperabilidade de dados</strong><br>Sistemas e padrões ainda não totalmente integrados
+  </li>
+</ul>
+```
+
+:::
+:::
+
+---
+
+## Perspectivas: Marco Global de Kunming-Montreal {background-color="#F0F4F0"}
+
+::: {.columns}
+::: {.column width="55%"}
+
+**COP-15 (Canadá, 2022) — Acordo "30×30"**
+
+O Brasil assinou o **Marco Global de Biodiversidade**, comprometendo-se a:
+
+- Proteger **30% do território** terrestre e marinho até 2030
+- Restaurar **30% dos ecossistemas** degradados
+- Reduzir em 50% as espécies ameaçadas de extinção
+- Integrar biodiversidade nos planos setoriais
+
+**Papel dos programas de monitoramento:**
+São a **espinha dorsal** para reportar avanços às metas, por meio de indicadores baseados em dados do PPBio, PELD, SisBR e Simbiose.
+
+:::
+::: {.column width="45%"}
+
+```{=html}
+<div style="background:#1B4332; color:white; border-radius:14px; padding:22px;">
+  <div style="font-weight:bold; margin-bottom:14px;">Metas prioritárias para o Brasil</div>
+
+  <div style="background:rgba(255,255,255,0.12); border-radius:8px; padding:10px; margin-bottom:8px; font-size:0.88em;">
+    <strong>Meta 2 —</strong> Restauração efetiva de 30% dos ecossistemas
+  </div>
+  <div style="background:rgba(255,255,255,0.12); border-radius:8px; padding:10px; margin-bottom:8px; font-size:0.88em;">
+    <strong>Meta 3 —</strong> 30% de áreas protegidas terrestres e marinhas
+  </div>
+  <div style="background:rgba(255,255,255,0.12); border-radius:8px; padding:10px; margin-bottom:8px; font-size:0.88em;">
+    <strong>Meta 4 —</strong> Redução de ameaças às espécies (extinção zero)
+  </div>
+  <div style="background:rgba(255,255,255,0.12); border-radius:8px; padding:10px; font-size:0.88em;">
+    <strong>Meta 21 —</strong> Sistemas de informação e dados abertos acessíveis
+  </div>
+</div>
+```
+
+:::
+:::
+
+---
+
+## Conclusão e Mensagens-Chave {background-color="#1B4332"}
+
+::: {.columns}
+::: {.column width="60%"}
+
+```{=html}
+<div style="color:white;">
+
+<div style="background:rgba(255,255,255,0.12); border-radius:12px; padding:16px; margin-bottom:14px;">
+  <div style="font-weight:bold; font-size:1.05em; margin-bottom:6px;">🔬 Complementaridade</div>
+  <div style="font-size:0.88em; opacity:0.9;">Os programas são complementares: PPBio e PELD geram dados primários; BPBES os analisa para políticas; SisBR e Simbiose os integram e disseminam; Biota FAPESP aprofunda o conhecimento regional.</div>
+</div>
+
+<div style="background:rgba(255,255,255,0.12); border-radius:12px; padding:16px; margin-bottom:14px;">
+  <div style="font-weight:bold; font-size:1.05em; margin-bottom:6px;">💡 Necessidade de integração</div>
+  <div style="font-size:0.88em; opacity:0.9;">A maior prioridade é a <strong>interoperabilidade</strong> e padronização entre os sistemas para produzir indicadores confiáveis para as metas nacionais e internacionais.</div>
+</div>
+
+<div style="background:rgba(255,255,255,0.12); border-radius:12px; padding:16px;">
+  <div style="font-weight:bold; font-size:1.05em; margin-bottom:6px;">🌎 Oportunidade histórica</div>
+  <div style="font-size:0.88em; opacity:0.9;">O Brasil, com sua megadiversidade e tradição científica, tem posição única para liderar o monitoramento da biodiversidade global no contexto do Marco Kunming-Montreal.</div>
+</div>
+
+</div>
+```
+
+:::
+::: {.column width="40%"}
+
+```{=html}
+<div style="background:rgba(255,255,255,0.1); border-radius:14px; padding:22px; color:white; text-align:center;">
+  <div style="font-size:0.9em; opacity:0.7; margin-bottom:6px;">PORTAIS DE ACESSO</div>
+  <div style="margin-bottom:10px; font-size:0.9em;">🌐 <strong>sibbr.gov.br</strong></div>
+  <div style="margin-bottom:10px; font-size:0.9em;">🌐 <strong>ppbio.inpa.gov.br</strong></div>
+  <div style="margin-bottom:10px; font-size:0.9em;">🌐 <strong>peld.ibict.br</strong></div>
+  <div style="margin-bottom:10px; font-size:0.9em;">🌐 <strong>bpbes.net.br</strong></div>
+  <div style="margin-bottom:10px; font-size:0.9em;">🌐 <strong>biota.org.br</strong></div>
+  <div style="margin-bottom:10px; font-size:0.9em;">🌐 <strong>gbif.org</strong></div>
+  <div style="font-size:0.75em; opacity:0.6; margin-top:20px; border-top:1px solid rgba(255,255,255,0.2); padding-top:10px;">
+    Slides produzidos com Quarto + RevealJS
+  </div>
+</div>
+```
+
+:::
+:::
