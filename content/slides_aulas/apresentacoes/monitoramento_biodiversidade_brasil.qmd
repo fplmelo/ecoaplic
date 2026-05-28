@@ -508,7 +508,7 @@ Programa de São Paulo, lanzado en **1999**, dedicado a caracterizar, conservar 
 
 <div style="background:rgba(255,255,255,0.12); border-radius:12px; padding:16px;">
   <div style="font-weight:bold; font-size:1.05em; margin-bottom:6px;">🌎 Oportunidad histórica</div>
-  <div style="font-size:0.88em; opacity:0.9;">Brasil, tiene una posición única para liderar el monitoreo de la biodiversidad Sul Americana</div>
+  <div style="font-size:0.88em; opacity:0.9;">Tenemos una posición única para concretizar el monitoreo de la biodiversidad Sul Americana</div>
 </div>
 
 </div>
