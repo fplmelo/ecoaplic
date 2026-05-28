@@ -1,6 +1,6 @@
 ---
 title: "Programas de Monitoreo de la Biodiversidad en Brasil"
-subtitle: "PPBio · PELD · BPBES · Sinbiose · SisBR · Biota FAPESP"
+subtitle: "PPBio · PELD · BPBES · Sinbiose · SiBBR · Biota FAPESP"
 author: "Felipe Melo"
 institute: "Universidade Federal de Pernambuco"
 date: ""
