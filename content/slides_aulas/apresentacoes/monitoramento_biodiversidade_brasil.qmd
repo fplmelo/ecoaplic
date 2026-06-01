@@ -414,17 +414,15 @@ Programa de São Paulo, lanzado en **1999**, dedicado a caracterizar, conservar 
       <td style="padding:10px 14px; text-align:center; border-radius:0 8px 8px 0;">✅ Informes PDF</td>
     </tr>
     <tr style="background:#F0F4F0;">
-      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#52B788;">Simbiose</td>
+      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#52B788;">SinBiose</td>
       <td style="padding:10px 14px; text-align:center;">Nacional</td>
       <td style="padding:10px 14px; text-align:center;">Continuo</td>
       <td style="padding:10px 14px; text-align:center;">Indicadores / metas CDB</td>
       <td style="padding:10px 14px; text-align:center; border-radius:0 8px 8px 0;">🔄 En implantación</td>
     </tr>
     <tr style="background:#D8F3DC;">
-      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#1B4332;">SisBR</td>
-      <td style="padding:10px 14px; text-align:center;">Nacional</td>
-      <td style="padding:10px 14px; text-align:center;">Histórico</td>
-      <td style="padding:10px 14px; text-align:center;">Presencias / colecciones</td>
+      <td style="padding:10px 14px; border-radius:8px 0 0 8px; font-weight:bold; color:#1B4332;">SiBBrx; text-align:center;">Histórico</td>
+      <td style="padding:10px 14px; text-align:center;">Ocurrencias / colecciones</td>
       <td style="padding:10px 14px; text-align:center; border-radius:0 8px 8px 0;">✅ GBIF/DwC</td>
     </tr>
     <tr style="background:#F0F4F0;">
