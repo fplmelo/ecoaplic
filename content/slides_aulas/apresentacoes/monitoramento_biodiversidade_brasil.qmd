@@ -94,8 +94,8 @@ Brasil alberga **~20% de la biodiversidad global**, pero enfrenta:
 
   <div style="background:#74C69D; color:#1B4332; border-radius:12px; padding:20px;">
     <div style="font-size:1.4em; font-weight:bold; margin-bottom:6px;">SiBBr</div>
-    <div style="font-size:0.85em;">Sistema de Información sobre la Biodiversidad en Áreas Protegidas</div>
-    <div style="font-size:0.75em; margin-top:10px; border-top:1px solid rgba(27,67,50,0.3); padding-top:8px;">MMA/MCTI · desde 2012</div>
+    <div style="font-size:0.85em;">Sistema de Información sobre la Biodiversidad Brasileña</div>
+    <div style="font-size:0.75em; margin-top:10px; border-top:1px solid rgba(27,67,50,0.3); padding-top:8px;">MCTI · desde 2012</div>
   </div>
 
   <div style="background:#95D5B2; color:#1B4332; border-radius:12px; padding:20px;">
