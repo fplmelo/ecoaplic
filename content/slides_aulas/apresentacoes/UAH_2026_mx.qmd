@@ -4,6 +4,7 @@ subtitle: "Relaciones entre Pobreza, Cultura y Biodiversidad"
 author: "Felipe Melo"
 institute: "Universidad Federal de Pernambuco - UFPE"
 from: markdown+emoji
+chalkboard: true
 format:
   revealjs:
     theme: [default, custom.scss]
