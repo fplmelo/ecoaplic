@@ -1,0 +1,292 @@
+---
+title: "Ecología Política de la Restauración:"
+subtitle: "Relaciones entre Pobreza, Cultura y Biodiversidad"
+author: "Felipe Melo"
+institute: "Universidad Federal de Pernambuco - UFPE"
+from: markdown+emoji
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    chalkboard: true
+   # logo: libs/sobre.png
+    footer: ""
+    slide-number: true
+    transition: slide
+    background-transition: fade
+---
+
+## {background-image="libs/vaqueiro.png"}
+
+## {background-image="libs/roca_caat.jpg"}
+
+## {background-image="libs/homen_caatinga.jpg"}
+
+
+## Las Caatingas
+
+![](libs/caat_martius.jpg)
+![](libs/livro_ze.jpg){.absolute top=20 right=10 width=40%}
+<br>
+Hay muchas neo-Caatingas
+
+## ¿La Caatinga es un antroma?
+![](libs/anthromes.png){fig-align=center width=150%}
+
+Fuente: Erle Ellis
+
+## {background-image="libs/desmat_caat.jpg" background-size="contain"}
+
+## 26 millones de personas
+
+![](libs/desn_pop_caat.png)
+
+## Errores históricos de la Conservación
+
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/keep_out.png)
+:::
+:::{.column width="50%"}
+
+- Expulsión de comunidades tradicionales
+- Aumento de la pobreza
+- Conflictos por la tierra
+- Modelos excluyentes
+
+:::
+::::
+
+## RVS-Tatu-Bola (110k ha)
+
+<img src="https://i0.wp.com/www.oeco.org.br/wp-content/uploads/2015/12/Per%C3%ADmetro.png" width="600"/>
+
+[Melo et al (2014) Biotropica](https://doi.org/10.1111/btp.12114)
+
+![](https://s2.glbimg.com/CPWvRArhEa4kFbgS0CNV3WAQSxM=/1200x630/s.glbimg.com/jo/g1/f/original/2014/05/18/tatu.jpg){.absolute top=20 right=10 width=30%}
+
+![](libs/capa_bio.jpg){.absolute top=200 right=10 width=30%}
+
+
+## La importancia de los PI&CL
+
+![](libs/iplc_land.png){fig-align=center width=150%}
+
+## {background-image="libs/pessoas.png" background-size="cover"}
+
+
+## ¿Cuál es el papel de la restauración en este contexto?{.center}
+
+
+## ¡La restauración avanza!
+
+- Ofrecer métodos confiables :+1:
+- Planificación sistemática :+1:
+- Importancia geopolítica :+1:
+- [Justicia Ambiental]{style="color:red"} :-1:
+- [Transdisciplinariedad]{style="color:red"} :-1:
+
+## ¿Cómo construir una agenda de investigación/acción para desarrollar el potencial inclusivo de la restauración?{.center}
+
+
+## Conocimientos Ecológicos Locales - CEL
+
+::::{.columns}
+:::{.column width="50%"}
+![](libs/seedcol.jpg){width=600}
+
+:::
+:::{.column width="50%"}
+-   Frontera de conocimiento
+-   Ayudan a descolonizar la ciencia
+-   Necesitan ser reconocidos
+-   Están amenazados
+:::
+::::
+
+
+## La Caatinga como laboratorio vivo de Restauración Biocultural {.center}
+
+## ¿Y si le preguntáramos a las personas?
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+::: {style="font-size: 90%;"}
+- Especies culturalmente importantes
+- Múltiples beneficios (leña, medicinal, etc.)
+- Relativamente abundantes
+- Mantienen diversidad
+
+[Sena et al (2022), Restoration Ecology](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+:::
+:::
+:::{.column width="50%"}
+
+![](libs/biocult.png){.absolute width="50%" top="55" right="00"}
+:::
+::::
+:::
+
+## 8% de las especies > 50% de los usos
+![](libs/fun_bioc.jpg){fig-align=center, width=85%}
+
+[Sena et al (2022), Restoration Ecology](https://onlinelibrary.wiley.com/doi/abs/10.1111/rec.13599)
+
+## 
+![](libs/hudson.png){fig-align=center, width=95%}
+
+[Silva et al (2025) Conservation Biology](https://doi.org/10.1111/cobi.70036)
+
+## La restauración no puede ser apolítica
+![](libs/ipbes_nexus.png){fig-align=center, width=105%}
+
+[IPBES Nexus-Report 2025 & Melo et al 2021](https://www.nature.com/articles/s41893-020-00608-z)
+
+## Desigualdad en el acceso a la tierra{.center}
+
+![](libs/land_study.png)
+
+## ¿Quién es dueño de la Caatinga?
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+
+- ~ 1 millón de propiedades en 1204 municipios
+  - 97.8% pequeñas
+       - 17.9 Mha
+       - 51% Vegetación Nativa
+  - 2.2% Grandes propiedades
+       - 15.2 Mha
+       - 69% Vegetación Nativa
+:::
+
+:::{.column width="50%"}
+
+
+![](libs/share_land.png)
+
+:::
+::::
+:::
+
+## Déficit de vegetación
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+
+![](libs/deficit1.png){width=90%}
+
+:::
+:::{.column width="50%"}
+
+![](libs/deficit2.png){width=90%}
+
+
+:::
+::::
+:::
+
+
+
+## Estrategias diferenciadas
+| Tipo de déficit | Estrategia de Restauración |
+|-----|:-----|
+| Grandes propiedades     | Restauración activa; adecuación legal; cadena de suministro   |
+| Pequeñas propiedades   | Agroforestería; Restauración Biocultural  |
+| Híbrido      | Combinaciones de medidas según el contexto     |
+
+## Espacializando las estrategias
+![](libs/deficit4.png){fig-align=center}
+
+
+## ¿La Caatinga alimenta?{.center}
+
+## Seguridad alimentaria y Caatinga
+![](libs/fore_food.png){.absolute right=300}
+![](libs/ldd_lucas.png){.absolute top=80 right=20 width=50%}
+
+## Caatinga vs. Desarrollo
+
+![](libs/gec_pic.png){fig-align=center, width=120%}
+
+Fuente: [Alencar et al 2025](https://www.sciencedirect.com/science/article/pii/S1389934125001509)
+
+## Dinámica población-ambiente
+
+![](libs/fig_catChange.jpg){fig-align=center, width=120%, height=150%}
+
+Fuente: Alencar et al en prensa PNAS
+
+
+
+## La restauración está hecha de personas
+
+
+::::{.columns}
+
+:::{.column width="30%"}
+![](libs/recaa.png)
+
+:::
+:::{.column width="70%"}
+- Gentes de la Caatinga (colectivos)
+- Saberes de la Caatinga (ciencia)
+- Ojos de la Caatinga (monitoreo)
+- Aguas de la Caatinga (seguridad hídrica)
+
+:::
+
+::::
+
+## Principales lecciones
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+- Incluir capas de información social
+- Considerar las diferentes desigualdades
+- No reproducir injusticias
+- Priorizar las oportunidades localmente
+:::
+
+:::{.column width="50%"}
+
+![](libs/biocult_model.png){.absolute width=50% top=20 right=-50}
+
+:::
+::::
+:::
+
+## Agradecimientos
+
+:::{.nonincremental}
+::::{.columns}
+:::{.column width="50%"}
+![](libs/cnpq.png)
+![](libs/ufpe.png)
+![](https://tethys-engineering.pnnl.gov/sites/default/files/taxonomy-images/nottingham.png){.absolute top=400 left=300}
+:::
+
+:::{.column width="50%"}
+::: {style="font-size: 80%;"}
+- Adriana Pelegrinni Manhães (UFRJ)
+- Pedro Sena & Biu Rodrigues (CEPAN)
+- Luke Parry (Lancaster University - UK)
+- Lucas Alencar (Uni Manchester - UK)
+- Antonio Uzal (NTU - UK)
+- Andrew Gichira (CERK, Kenia)
+:::
+:::
+::::
+:::
+
+
+## Gracias
+
+felipe.plmelo@ufpe.br
+
+![www.ecoaplic.org](www.ecoaplic.org)
+
+![](libs/qr_ecoaplic.png){fig-align=center width=35%}
+
+
