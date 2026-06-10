@@ -12,7 +12,7 @@ format:
     background-transition: fade
     highlight-style: github
     logo: ""
-    footer: "Sucessão Ecológica | Biomas Brasileiros"
+    footer: ""
     css: styles.css
     chalkboard: false
     incremental: false
@@ -356,11 +356,9 @@ Espécies reais ocupam posições **intermediárias** no triângulo (CS, SR, CR,
 
 ---
 
-# Módulo 3 {background-color="#1b5e20"}
+## Módulo 3 Sucessão Primária e Secundária {background-color="#1b5e20".center}
 
-## Sucessão Primária e Secundária
 
----
 
 ## Sucessão Primária — Colonização do Zero
 
@@ -403,18 +401,22 @@ Espécies reais ocupam posições **intermediárias** no triângulo (CS, SR, CR,
 <h4>⚡ Fase Pioneira (0–5 anos)</h4>
 Herbáceas, cipós e arbustos heliófilos colonizam rapidamente
 <br><br>
+![](https://imgs.mongabay.com/wp-content/uploads/sites/29/2022/02/01172600/2.-Wet-forest-landscape-Tefe-Brazil_credits-Frans-Bongers-1200x800.jpg)
+
 Ex.: *Cecropia*, *Trema*, *Piper* em clareiras amazônicas
 </div>
 <div class="card">
 <h4>🌿 Fase Inicial (5–20 anos)</h4>
 Árvores pioneiras formam dossel inicial; sombreamento exclui herbáceas
 <br><br>
+![](https://images.tcdn.com.br/img/img_prod/1386006/sementes_guapuruvu_ou_ficheira_schizolobium_parahy_1_20260207112757_58416f04525d.jpg){width =70%}
 Ex.: *Schizolobium parahyba* (guapuruvu) na Mata Atlântica
 </div>
 <div class="card">
 <h4>🌳 Fase Avançada (20+ anos)</h4>
 Espécies tolerantes à sombra recrutam sob o dossel; diversidade aumenta
 <br><br>
+![](https://upload.wikimedia.org/wikipedia/commons/2/24/Eschweilera_ovata%2C_embiriba_-_Flickr_-_Tarciso_Le%C3%A3o_%282%29.jpg)
 Ex.: *Euterpe oleracea*, *Eschweilera* spp. na Amazônia
 </div>
 </div>
@@ -430,7 +432,7 @@ Ex.: *Euterpe oleracea*, *Eschweilera* spp. na Amazônia
 |----------------|----------|------------|
 | Substrato | Sem solo/biota | Solo pré-existente |
 | Velocidade | Muito lenta | Mais rápida |
-| Bank de sementes | Ausente | Presente |
+| Banco de sementes | Ausente | Presente |
 | Facilitação | Essencial | Moderada |
 | Fator limitante | Nutrientes, substrato | Luz, competição |
 | Duração estimada | Séculos-milênios | Décadas-século |
@@ -453,16 +455,15 @@ Porém: **espécies raras e lianas tardias levam 200+ anos** para retornar.
 
 ---
 
-# Módulo 4 {background-color="#1b5e20"}
+# Módulo 4 - Distúrbio e Sucessão Ecológica {background-color="#1b5e20"}
 
-## Distúrbio e Sucessão Ecológica
 
 ---
 
 ## O Conceito de Distúrbio
 
 ::: {.destaque}
-**Distúrbio** (Pickett & White, 1985): evento discreto no tempo que perturba a estrutura de ecossistemas, comunidades ou populações e altera recursos, disponibilidade de substrato ou ambiente físico.
+**Distúrbio**: evento discreto no tempo que perturba a estrutura de ecossistemas, comunidades ou populações e altera recursos, disponibilidade de substrato ou ambiente físico.
 :::
 
 <div class="grid-3" style="margin-top:0.8em;">
@@ -498,18 +499,54 @@ Grande: queimadas de savanas
 <div class="grid-2" style="margin-top:0.8em;">
 <div>
 
+```{r}
+# Instale os pacotes se necessário: install.packages(c("ggplot2", "tibble"))
+library(ggplot2)
+library(tibble)
+
+# 1. Criando os dados simulados para a curva
+# Usamos uma função quadrática invertida para gerar a parábola perfeita
+dados <- tibble(
+  disturbio = seq(0, 10, length.out = 100),
+  diversidade = -0.2 * (disturbio - 5)^2 + 6
+)
+
+# 2. Criando o gráfico com ggplot2
+ggplot(dados, aes(x = disturbio, y = diversidade)) +
+  # Linha da hipótese
+  geom_line(color = "#2c3e50", size = 1.2) +
+  
+  # Sombreamento sob a curva para efeito estético (opcional)
+  geom_area(fill = "#3498db", alpha = 0.1) +
+  
+  # Customização dos eixos (padrão conceitual, sem números)
+  scale_x_continuous(breaks = c(1, 5, 9), labels = c("Baixo", "Intermediário", "Alto")) +
+  scale_y_continuous(breaks = NULL) + # Remove números do eixo Y já que é conceitual
+  
+  # Títulos e Rótulos
+  labs(
+    title = "Hipótese do Distúrbio Intermediário (HDI)",
+    subtitle = "A diversidade de espécies é maximizada em níveis intermediários de perturbação",
+    x = "Frequência / Intensidade do Distúrbio",
+    y = "Diversidade de Espécies (Riqueza)"
+  ) +
+  
+  # Anotações conceituais no gráfico
+  annotate("text", x = 1, y = 1.5, label = "Exclusão\nCompetitiva", color = "#7f8c8d", fontface = "italic", size = 3.5) +
+  annotate("text", x = 5, y = 5.5, label = "Pico de\nDiversidade", color = "#27ae60", fontface = "bold", size = 4) +
+  annotate("text", x = 9, y = 1.5, label = "Alta\nMortalidade", color = "#c0392b", fontface = "italic", size = 3.5) +
+  
+  # Tema visual limpo
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", color = "#2c3e50", hjust = 0.5),
+    plot.subtitle = element_text(color = "#7f8c8d", hjust = 0.5, size = 11),
+    axis.title = element_text(face = "bold"),
+    panel.grid.major = element_line(color = "#f0f3f4"),
+    panel.grid.minor = element_blank()
+  )
 ```
-Diversidade
-     │
-  alta│         ╭─╮
-     │        ╭╯   ╰╮
-  med│       ╱       ╲
-     │     ╱           ╲
-  baix│───╱               ╲───
-     └──────────────────────►
-     Baixo   Intermediário  Alto
-          Nível de distúrbio
-```
+
 
 - **Baixo distúrbio:** competidores excluem espécies
 - **Intermediário:** diversidade máxima
@@ -555,9 +592,9 @@ Diversidade
   - Degradação do banco de sementes
   - Perda de dispersores (aves, morcegos)
   - Solo compactado por maquinário
-  - "Savaneização" com gramíneas exóticas
+  - "Savanização" com gramíneas exóticas
 
-**Consequência:** em ~40% das áreas desmatadas, a floresta secundária **não consegue se reestabelecer** sem intervenção ativa de restauração.
+**Consequência:** Em áreas com perturbações sucessivas, a floresta secundária **não consegue se reestabelecer** sem intervenção ativa de restauração.
 </div>
 </div>
 
@@ -574,11 +611,7 @@ Diversidade
 - **Frequência:** 0,5–2% da área florestal/ano
 - Criam **mosaico** de patches em diferentes estágios
 
-**Dinâmica de clareira na Amazônia:**
-1. Queda → explosão de luz no sub-bosque
-2. *Cecropia*, *Heliconia*, cipós colonizam (< 1 ano)
-3. Árvores secundárias fecham (2–5 anos)
-4. Espécies tolerantes à sombra recrutam (5–20 anos)
+![](https://neomondo.org.br/wp-content/uploads/2021/02/fapesp-neomondo-sustentabilidade-tecnologia.png)
 </div>
 <div>
 
@@ -598,9 +631,8 @@ Clareiras grandes (> 200 m²) na Floresta Atlântica são colonizadas preferenci
 
 ---
 
-# Módulo 5 {background-color="#1b5e20"}
+# Módulo 5 - Ecologia Funcional e Sucessão {background-color="#1b5e20"}
 
-## Ecologia Funcional e Sucessão
 
 ---
 
@@ -661,9 +693,6 @@ Clareiras grandes (> 200 m²) na Floresta Atlântica são colonizadas preferenci
 O "espectro econômico foliar" organiza espécies em um eixo de aquisição rápida (*fast*) a conservação (*slow*) de recursos — padrão universal, incluindo florestas tropicais brasileiras.
 :::
 
-**Na Mata Atlântica:**
-- Pioneiras (*Cecropia*): SLA ~ 25 m²/kg, madeira ~0,3 g/cm³
-- Tardias (*Cariniana*): SLA ~10 m²/kg, madeira ~0,75 g/cm³
 
 </div>
 </div>
@@ -705,8 +734,6 @@ Estudos em áreas com diferentes históricos de fogo no Cerrado de Brasília mos
 
 ## Facilitação e Inibição na Perspectiva Funcional
 
-**Modelos de Connell & Slatyer (1977):**
-
 <div class="grid-3" style="margin-top:0.8em;">
 <div class="card">
 <h4>✅ Facilitação</h4>
@@ -730,262 +757,7 @@ Ex.: Palmeiras (*Euterpe edulis*) germinam no sub-bosque e crescem durante déca
 
 ---
 
-# Módulo 6 {background-color="#1b5e20"}
-
-## Sucessão nos Biomas Brasileiros
-
----
-
-## Biomas do Brasil — Contexto
-
-<div class="grid-2">
-<div>
-
-O Brasil abriga **6 biomas terrestres** reconhecidos oficialmente pelo IBGE, além de ecossistemas costeiros e aquáticos.
-
-| Bioma | Área (km²) | % Brasil |
-|-------|-----------|---------|
-| Amazônia | 4.196.943 | ~49% |
-| Cerrado | 2.036.448 | ~24% |
-| Mata Atlântica | 1.110.182 | ~13% |
-| Caatinga | 844.453 | ~10% |
-| Pampa | 176.496 | ~2% |
-| Pantanal | 150.355 | ~2% |
-
-</div>
-<div class="card-dark">
-<h4>🌿 Por que os biomas brasileiros são únicos para estudar sucessão?</h4>
-
-- **Megadiversidade:** 15–20% da biodiversidade mundial
-- **Gradientes climáticos** extremos (hiper-úmido → semi-árido)
-- **Perturbações naturais** diversas (fogo, inundação, seca)
-- **Histórico humano** de uso e degradação
-- **Endemismo alto** → espécies com estratégias únicas
-- Laboratório natural para testar teorias ecológicas
-</div>
-</div>
-
----
-
-## Sucessão na Amazônia
-
-<div class="grid-2">
-<div>
-
-**Características do processo:**
-
-- Floresta de **alta resiliência** quando banco de sementes intacto
-- Diversidade arbórea: 300–600 spp./ha → sucessão altamente variável
-- **Capoeiras** (florestas secundárias) são abundantes e ecologicamente importantes
-- Síndrome de dispersão zoocórica dominante → dependência de fauna
-
-**Sequência típica pós-corte:**
-1. Gramíneas e *Cecropia* (0–3 anos)
-2. Dossel de pioneiras (3–10 anos)
-3. Sub-bosque diversificado (10–25 anos)
-4. Floresta secundária madura (25–80 anos)
-5. Convergência com floresta primária (80–200 anos+)
-</div>
-<div>
-
-::: {.destaque}
-**"Floresta degradada vs. floresta secundária"**
-
-Após desmatamento com maquinário pesado, degradação de solo e invasão por *Urochloa brizantha* (braquiária), muitas áreas entram em **sucessão travada** — sem intervenção ativa, permanecem como vegetação degradada por décadas.
-:::
-
-**Traços-chave de pioneiras amazônicas:**
-- *Cecropia* spp. — SLA alto, crescimento rápido, N-fixação via simbiose com *Azteca*
-- *Vismia* spp. — colonizadoras de solos compactados
-- *Inga* spp. — leguminosas facilitadoras de nitrogênio
-</div>
-</div>
-
----
-
-## Sucessão no Cerrado
-
-<div class="grid-2">
-<div>
-
-**O Cerrado é uma savana-floresta pirofítica:**
-
-- Fogo como **agente estruturador primário** (natural e manejado)
-- Gradiente fisionômico: campo limpo → campo cerrado → cerradão
-- **Estrutura subterrânea** (glomérulos, xilopódios) como legado de sucessão
-
-**Após fogo:** 
-- Rebrota de espécies lenhosas via órgãos subterrâneos (semanas)
-- Germinação de herbáceas (primeira chuva)
-- Recuperação de cobertura arbórea (3–5 anos)
-- Biomassa pré-fogo restaurada (5–10 anos)
-
-</div>
-<div class="card-dark">
-<h4>🔥 Gradiente fisionômico e fogo</h4>
-
-```
-Campo limpo ←──── mais fogo ──────
-        ↑
-Campo cerrado   ← fogo intermediário
-        ↑
-Cerrado s.s.    ← fogo moderado
-        ↑
-Cerradão        ← pouco/sem fogo
-        ↑
-Mata de galeria ← sem fogo (ripária)
-```
-
-A **ausência total de fogo** por décadas converte campos em cerradão — mas reduz diversidade de herbáceas.
-
-</div>
-</div>
-
----
-
-## Sucessão na Mata Atlântica
-
-<div class="grid-2">
-<div>
-
-**Bioma altamente fragmentado (< 12% remanescente):**
-
-- Extensão latitudinal enorme → diversidade de regimes climáticos
-- **Alta taxa de endemismo** torna a sucessão crítica para conservação
-- Restauração ativa é amplamente praticada
-
-**Fatores moduladores da sucessão:**
-- Tamanho do fragmento de origem
-- Disponibilidade de dispersores (aves, morcegos)
-- Uso anterior do solo (pastagem vs. agricultura)
-- Conectividade da paisagem
-
-</div>
-<div>
-
-**Espécies-chave em cada fase:**
-
-| Fase | Espécie | Papel |
-|------|---------|-------|
-| Pioneira | *Cecropia glaziovii* | Dossel inicial, abrigo |
-| Pioneira | *Trema micrantha* | Enriquecimento do solo |
-| Inicial | *Schizolobium parahyba* | Biomassa rápida |
-| Intermediária | *Inga marginata* | Facilitação N |
-| Tardia | *Euterpe edulis* | Sub-bosque denso |
-| Tardia | *Cariniana legalis* | Emergente maduro |
-
-</div>
-</div>
-
----
-
-## Sucessão na Caatinga
-
-<div class="grid-2">
-<div>
-
-**Bioma com dinâmica guiada pela seca:**
-
-- Regime hídrico **altamente sazonal e imprevisível** (ENSO)
-- Vegetação caducifólia: folhas como mecanismo de tolerância ao estresse
-- **Banco de sementes persistente** — fundamental para regeneração pós-seca
-
-**Após abandono de áreas agrícolas:**
-1. *Mimosa tenuiflora* (jurema-preta) coloniza rapidamente
-2. Cactos e bromélias estabelecem-se em 5–10 anos
-3. Diversificação lenta com espécies de maior porte (10–30 anos)
-4. *Schinopsis brasiliensis* (braúna), *Amburana cearensis* — tardias
-
-</div>
-<div class="card-dark">
-<h4>💧 Seca como filtro funcional</h4>
-
-Traços selecionados positivamente na Caatinga:
-
-- **CAM** e suculência (*Cereus*, *Opuntia*)
-- **Caducifolia** — queda foliar antes da estação seca
-- **Raízes dimórficas** — superficiais (chuva) + profundas (reserva)
-- **Sementes dormentes** que aguardam condições ideais
-- **Rebrotamento de cepas** — *Mimosa*, *Cnidoscolus*
-
-A sucessão na Caatinga é **mais lenta e menos previsível** que em biomas mais úmidos.
-</div>
-</div>
-
----
-
-## Sucessão no Pantanal
-
-<div class="grid-2">
-<div>
-
-**O pulso de inundação como motor sucessional:**
-
-- Inundação sazonal: 3–7 meses/ano em algumas sub-regiões
-- Cria **gradiente topográfico-hidrológico** que determina fisionomias
-- **Não é uma sucessão linear** — é um ciclo anual de reorganização
-
-**Gradiente inundação → terra firme:**
-
-```
-Lagoa → Macrófitas flutuantes
-      → Vegetação aquática emergente
-      → Campo úmido (inundado 6+ meses)
-      → Campo sazonal (inundado 2–4 meses)
-      → Cerrado sazonalmente inundado
-      → Cerradão de terra firme
-```
-
-</div>
-<div>
-
-::: {.destaque}
-**Camalotal** (*Eichhornia* spp., *Pontederia* spp.) é a unidade de sucessão aquática mais dinâmica do Pantanal — ciclos anuais completos de colonização, crescimento e decomposição.
-:::
-
-**Espécies-chave:**
-- *Vochysia divergens* (cambará) — invasora de campos após perturbação hidrológica; indica mudanças no regime de inundação
-- *Hymenachne amplexicaulis* — gramínea de campos inundáveis, colonizadora eficiente
-- *Inga vera* — facilitadora em matas ciliares ripárias
-</div>
-</div>
-
----
-
-## Sucessão no Pampa
-
-<div class="grid-2">
-<div>
-
-**Campo subtropical com longa história de pastejo:**
-
-- Bioma dominado por **gramíneas C3 e C4** com estrato herbáceo diverso
-- Distúrbios históricos: pastejo de ungulados nativos (hoje bovinos), geada, granizo
-- **Poucos estudos** sobre sucessão primária no Pampa
-
-**Dinâmica sucessional:**
-- Campos degradados por pastejo excessivo → dominância de *Andropogon lateralis* e *Paspalum* spp.
-- Exclusão do pastejo → aumento de lenhosas (*Baccharis*, *Eryngium*)
-- Invasão de *Urochloa humidicola* em áreas úmidas
-
-</div>
-<div class="card-dark">
-<h4>🐄 Pastejo como distúrbio modulador</h4>
-
-No Pampa gaúcho, o pastejo controlado **mantém a diversidade de gramíneas**:
-
-- Pastejo moderado → diversidade alta (análogo à HDI)
-- Superpastejo → invasoras dominam, solo compactado
-- Exclusão total → arbustificação com *Baccharis trimera*
-
-→ **"Campos sem manejo se fecham"** — contrariando a intuição conservacionista, a biodiversidade campestre pode diminuir sem pastejo racional.
-
-</div>
-</div>
-
----
-
-## Síntese: Teoria e Padrões Brasileiros
+## Síntese: Teoria e Padrões de Biomas Brasileiros
 
 <div class="grid-2">
 <div>
@@ -1067,16 +839,9 @@ Não apenas diversidade de espécies, mas de funções (polinizadores, dispersor
 <div class="card-dark">
 <h4>🌡️ Novos estados alternativos estáveis</h4>
 
-A teoria dos **estados alternativos estáveis** (Scheffer et al. 2001) é central para entender os biomas brasileiros sob pressão:
+A teoria dos **estados alternativos estáveis** é central para entender os biomas brasileiros sob pressão:
 
-**Floresta ↔ Savana** (Amazônia)
-- Floresta: mantida por reciclagem de chuva e feedback evapotranspiratório
-- Savana: se desmatamento + seca rompem o ciclo hidrológico
-
-**Cerrado ↔ Campo degradado**
-- Fogo frequente + invasoras gramíneas → estado alternativo de baixa biomassa lenhosa
-
-Transições são **abruptas e difíceis de reverter**.
+![](tippingpoint.jpg)
 </div>
 </div>
 
@@ -1142,43 +907,12 @@ Modelos dinâmicos de vegetação global (TRIFFID, JSBACH, ED2) integram traços
 
 ---
 
-## Referências Fundamentais
-
-<div style="font-size: 0.78em; column-count: 2; column-gap: 2em;">
-
-**Teóricas clássicas:**
-- Clements, F.E. (1916). *Plant Succession*. Carnegie Institution.
-- Gleason, H.A. (1926). The individualistic concept of plant association. *Bull. Torrey Bot. Club* 53:7–26.
-- MacArthur & Wilson (1967). *The Theory of Island Biogeography*. Princeton UP.
-- Grime, J.P. (1977). Evidence for the existence of three primary strategies in plants. *American Naturalist* 111:1169–1194.
-- Connell, J.H. & Slatyer, R.O. (1977). Mechanisms of succession. *American Naturalist* 111:1119–1144.
-- Connell, J.H. (1978). Diversity in tropical rain forests and coral reefs. *Science* 199:1302–1310.
-
-**Funcionais e modernas:**
-- Díaz, S. et al. (2016). The global spectrum of plant form and function. *Nature* 529:167–171.
-- Westoby, M. et al. (2002). Plant ecological strategies. *Annual Review of Ecology and Systematics* 33:125–159.
-- Scheffer, M. et al. (2001). Catastrophic shifts in ecosystems. *Nature* 413:591–596.
-
-**Biomas brasileiros:**
-- Oliveira-Filho, A.T. & Fontes, M.A.L. (2000). Patterns of floristic differentiation among Atlantic Forests. *Biotropica* 32:793–810.
-- Hoffmann, W.A. et al. (2012). Ecological thresholds at the savanna-forest boundary. *Ecology Letters* 15:759–768.
-- Neri, A.V. et al. (2012). Diversidade de estratégias de regeneração no Cerrado. *Acta Botanica Brasilica*.
-- Melo, F.P.L. et al. (2013). Priority setting for scaling up tropical forest restoration. *Biological Conservation* 163:98–107.
-- Lovejoy, T.E. & Nobre, C. (2018). Amazon tipping point. *Science Advances* 4:eaat2340.
-
-</div>
-
----
-
 # Obrigado! {background-color="#2C5F2D"}
 
 <div style="color:white; font-size:1.1em; margin-top:1.5em;">
 **Sucessão Ecológica nos Biomas Brasileiros**
 </div>
 
-<div style="color:#a5d6a7; margin-top:1em;">
-Da teoria de Clements e Gleason às fronteiras da ecologia funcional — o Brasil como laboratório natural para entender a dinâmica da vida.
-</div>
 
 <div style="margin-top:2em; color:#c8e6c9; font-size:0.9em;">
 
