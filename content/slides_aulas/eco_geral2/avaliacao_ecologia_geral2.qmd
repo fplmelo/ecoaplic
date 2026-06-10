@@ -1,0 +1,526 @@
+---
+title: "Avaliação Final — Ecologia Geral 2"
+subtitle: "Departamento de Botânica | Centro de Biociências | UFPE"
+author: "Disciplina de Ecologia Geral 2"
+date: "Semestre 2025.2"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-title: "Sumário"
+    toc-depth: 2
+    toc-location: left
+    number-sections: false
+    code-fold: false
+    fig-align: center
+    css: styles.css
+    self-contained: true
+    smooth-scroll: true
+    page-layout: full
+    grid:
+      sidebar-width: 260px
+      body-width: 860px
+execute:
+  echo: false
+  warning: false
+---
+
+```{=html}
+<style>
+/* ── Paleta inspirada no semiárido/Mata Atlântica ── */
+:root {
+  --caatinga:     #8B5E3C;
+  --folha:        #3A6B35;
+  --terra:        #C4894A;
+  --ceu-seco:     #E8D5B0;
+  --pedra:        #6B6560;
+  --branco-areia: #FAF7F2;
+  --tinta:        #1C1C1C;
+  --destaque:     #B84B2B;
+  --azul-agua:    #2E6B8A;
+}
+
+body {
+  background-color: var(--branco-areia);
+  color: var(--tinta);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* Cabeçalho visual */
+.hero-banner {
+  background: linear-gradient(135deg, #3A6B35 0%, #8B5E3C 55%, #C4894A 100%);
+  color: white;
+  padding: 2.8rem 2.5rem 2.2rem;
+  border-radius: 6px;
+  margin-bottom: 2.2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: "🌵 🌿 🦜 🌳 🦋";
+  position: absolute;
+  bottom: 0.4rem;
+  right: 1.2rem;
+  font-size: 1.4rem;
+  opacity: 0.35;
+  letter-spacing: 0.4rem;
+}
+
+.hero-banner h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.01em;
+  border: none;
+}
+
+.hero-banner .subtitulo {
+  font-size: 1.05rem;
+  opacity: 0.88;
+  font-style: italic;
+}
+
+.hero-banner .meta {
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  opacity: 0.75;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Caixas de instrução */
+.box-instrucao {
+  border-left: 5px solid var(--caatinga);
+  background: #FFF8F0;
+  padding: 1.1rem 1.4rem;
+  border-radius: 0 6px 6px 0;
+  margin: 1.4rem 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.97rem;
+}
+
+.box-instrucao strong {
+  color: var(--caatinga);
+}
+
+.box-atencao {
+  border-left: 5px solid var(--destaque);
+  background: #FEF2EF;
+  padding: 1rem 1.4rem;
+  border-radius: 0 6px 6px 0;
+  margin: 1.4rem 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.95rem;
+}
+
+/* Cenário */
+.cenario-box {
+  background: linear-gradient(to bottom right, #EAF2E8, #F7F0E4);
+  border: 1.5px solid #B8CFB5;
+  border-radius: 8px;
+  padding: 1.6rem 2rem;
+  margin: 1.8rem 0 2rem;
+  position: relative;
+}
+
+.cenario-box::before {
+  content: "CENÁRIO";
+  position: absolute;
+  top: -0.75rem;
+  left: 1.2rem;
+  background: var(--folha);
+  color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  padding: 0.18rem 0.7rem;
+  border-radius: 3px;
+}
+
+/* Questões */
+.questao-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 1.8rem 2rem;
+  margin-bottom: 2rem;
+  border-top: 4px solid var(--folha);
+}
+
+.questao-card.caatinga-top {
+  border-top-color: var(--caatinga);
+}
+
+.questao-card.terra-top {
+  border-top-color: var(--terra);
+}
+
+.questao-card.agua-top {
+  border-top-color: var(--azul-agua);
+}
+
+.questao-card.destaque-top {
+  border-top-color: var(--destaque);
+}
+
+.questao-numero {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pedra);
+  margin-bottom: 0.4rem;
+}
+
+.questao-titulo {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--tinta);
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.competencias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.tag {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
+
+.tag-conceito  { background: #E8F5E9; color: #2E7D32; border: 1px solid #A5D6A7; }
+.tag-aplicacao { background: #FFF3E0; color: #E65100; border: 1px solid #FFCC80; }
+.tag-raciocinio{ background: #E3F2FD; color: #1565C0; border: 1px solid #90CAF9; }
+.tag-profund   { background: #F3E5F5; color: #6A1B9A; border: 1px solid #CE93D8; }
+
+.valor-questao {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.82rem;
+  color: var(--pedra);
+  margin-top: 0.5rem;
+}
+
+.valor-questao span {
+  font-weight: 700;
+  color: var(--tinta);
+}
+
+/* Orientações para redação */
+.orientacoes {
+  font-size: 0.93rem;
+  color: #444;
+  margin-top: 0.8rem;
+  padding-left: 1rem;
+  border-left: 3px dotted #ccc;
+}
+
+/* Tabela de critérios */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+th {
+  background: var(--folha);
+  color: white;
+  padding: 0.65rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #E0DAD2;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background: #F5F1EB;
+}
+
+/* Rodapé */
+.rodape {
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  border-top: 2px solid #DDD5C8;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.82rem;
+  color: var(--pedra);
+  text-align: center;
+  line-height: 1.9;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+  .hero-banner h1 { font-size: 1.45rem; }
+  .questao-card { padding: 1.2rem 1rem; }
+}
+
+h2 {
+  color: var(--folha);
+  font-size: 1.25rem;
+  border-bottom: 2px solid #D4E8D0;
+  padding-bottom: 0.35rem;
+  margin-top: 2.4rem;
+}
+
+h3 {
+  color: var(--caatinga);
+  font-size: 1.05rem;
+  margin-top: 1.6rem;
+}
+
+hr { border-color: #DDD5C8; }
+</style>
+```
+
+```{=html}
+<div class="hero-banner">
+  <div class="subtitulo">Universidade Federal de Pernambuco · Departamento de Botânica · CB</div>
+  <h1>Avaliação Final Integradora</h1>
+  <div class="subtitulo">Ecologia Geral 2 — Ecologia de Comunidades & Aplicações</div>
+  <div class="meta">Semestre 2025.2 &nbsp;·&nbsp; Avaliação Domiciliar com Consulta &nbsp;·&nbsp; Valor: 10,0 pontos</div>
+</div>
+```
+
+---
+
+## Instruções Gerais
+
+```{=html}
+<div class="box-instrucao">
+<strong>Leia com atenção antes de começar.</strong>
+
+Esta avaliação é individual e domiciliar. Você poderá consultar livros, artigos e anotações de aula. O prazo de entrega, o formato de entrega e o canal de submissão serão informados pelo docente responsável.
+</div>
+
+<div class="box-atencao">
+⚠️ <strong>Sobre autoria e integridade acadêmica:</strong> As respostas devem refletir sua própria compreensão, articulação e raciocínio. Respostas excessivamente genéricas, sem ancoragem no cenário proposto, ou que não demonstrem capacidade de aplicar os conceitos de forma contextualizada, não receberão pontuação integral — independentemente da fluência textual. A docência avaliará <em>como</em> você pensa, não apenas <em>o que</em> você escreve.
+</div>
+```
+
+**Critérios de avaliação por questão:**
+
+| Dimensão | O que será observado |
+|---|---|
+| **Precisão conceitual** | Uso correto e rigoroso de termos, definições e princípios ecológicos |
+| **Aplicação** | Capacidade de relacionar conceitos ao cenário e à região neotropical |
+| **Raciocínio abstrato** | Elaboração de hipóteses, relações causais e inferências não triviais |
+| **Profundidade** | Integração entre tópicos, citação de mecanismos e discussão de nuances |
+
+---
+
+## O Cenário
+
+```{=html}
+<div class="cenario-box">
+```
+
+Você é pesquisador(a) recém-contratado(a) pelo **Programa de Restauração da Caatinga e Mata Atlântica Nordestina**, vinculado à UFPE. Seu primeiro projeto envolve uma área de **800 hectares** no **Agreste pernambucano**, uma zona de transição entre a Caatinga e a Mata Atlântica — faixa denominada localmente como *"Mata Seca de Brejos de Altitude"*.
+
+A região apresenta o seguinte histórico de uso da terra:
+
+- **Décadas de 1970–1990:** pecuária extensiva e exploração madeireira, com supressão quase total da vegetação nativa.
+- **1990–2010:** abandono gradual das atividades econômicas; recolonização espontânea por espécies pioneiras (principalmente *Croton* spp. e gramíneas exóticas como *Melinis minutiflora*).
+- **2010–2020:** tentativas pontuais de restauração ativa sem planejamento baseado em evidências.
+- **2020–presente:** monitoramento contínuo de parcelas permanentes, coleta de dados de solo, clima, diversidade florística e fauna de polinizadores e dispersores.
+
+Os dados preliminares indicam: **alta variabilidade espacial de solos** (desde latossolos profundos nas cotas mais altas até solos rasos e rochosos em encostas), **dois gradientes climáticos marcados** (altitude e continentalidade), e **fragmentação severa** da paisagem, com a área de estudo situada entre dois remanescentes de vegetação nativa a 12 km de distância.
+
+```{=html}
+</div>
+```
+
+> **Importante:** Todas as questões devem ser respondidas tendo este cenário como ponto de partida. Respostas dissociadas do contexto apresentado não receberão pontuação máxima.
+
+---
+
+## Questões
+
+```{=html}
+<div class="questao-card">
+<div class="questao-numero">Questão 1 · Bases teóricas de comunidades</div>
+<div class="questao-titulo">A natureza da comunidade: entre a integração e o individualismo</div>
+```
+
+Ao iniciar o mapeamento florístico da área, você e sua equipe observam que a distribuição das espécies lenhosas **não** forma agrupamentos discretos e bem delimitados ao longo do gradiente altitudinal — em vez disso, cada espécie parece atingir seu pico de abundância em pontos distintos do gradiente, com sobreposições amplas entre elas.
+
+**(a)** Esse padrão é mais consistente com a visão **clementsiana** (superorganismo) ou com a visão **gleassoniana** (continuum individualístico) de comunidade? Justifique sua resposta com base no que foi observado, explicando os pressupostos e as implicações práticas de cada perspectiva para o manejo desta área. *(2,0 pt)*
+
+**(b)** Considerando que, ao mesmo tempo, você observa certas combinações de espécies que se repetem de forma não aleatória em microsítios de solo similar — como você integraria essa evidência com sua resposta ao item (a)? Que abordagem teórica contemporânea permitiria acomodar ambos os padrões simultaneamente? *(1,0 pt)*
+
+```{=html}
+<div class="competencias">
+  <span class="tag tag-conceito">Precisão conceitual</span>
+  <span class="tag tag-raciocinio">Raciocínio abstrato</span>
+  <span class="tag tag-profund">Profundidade</span>
+</div>
+<div class="valor-questao">Valor total: <span>3,0 pt</span></div>
+</div>
+```
+
+---
+
+```{=html}
+<div class="questao-card caatinga-top">
+<div class="questao-numero">Questão 2 · Comunidades no espaço e no tempo</div>
+<div class="questao-titulo">Biogeografia de ilhas e a fragmentação como laboratório</div>
+```
+
+A área de estudo pode ser interpretada como uma "ilha" de habitat restaurável em uma matriz de pastagem degradada, com dois "continentes" (remanescentes nativos) a 12 km de distância.
+
+**(a)** Aplique os princípios da **Teoria da Biogeografia de Ilhas (TBI)** de MacArthur & Wilson para prever a dinâmica esperada de riqueza de espécies de aves florestais nesta área ao longo dos próximos 20 anos de restauração. Considere explicitamente os parâmetros de **área**, **distância** e **taxa de equilíbrio** em sua análise. *(1,5 pt)*
+
+**(b)** Um colega sugere que a TBI é insuficiente para explicar a montagem de comunidades em paisagens fragmentadas como essa e propõe usar a **Teoria Metapopulacional** e o conceito de **metacomunidade**. Em que aspectos específicos essa abordagem agrega informação que a TBI não contempla? Utilize um exemplo concreto com ao menos uma espécie ou grupo funcional plausível para a região. *(1,0 pt)*
+
+```{=html}
+<div class="competencias">
+  <span class="tag tag-conceito">Precisão conceitual</span>
+  <span class="tag tag-aplicacao">Aplicação</span>
+  <span class="tag tag-profund">Profundidade</span>
+</div>
+<div class="valor-questao">Valor total: <span>2,5 pt</span></div>
+</div>
+```
+
+---
+
+```{=html}
+<div class="questao-card terra-top">
+<div class="questao-numero">Questão 3 · Determinantes abióticos da montagem de comunidades</div>
+<div class="questao-titulo">Solo e clima como filtros da comunidade</div>
+```
+
+Os dados de solo coletados nas parcelas permanentes revelam que, nas encostas rochosas (solos rasos, pH ácido, baixo teor de P), a cobertura vegetal é dominada por **cactáceas** e **bromeliáceas terrestres**, enquanto nas cotas mais altas (latossolos profundos, maior umidade edáfica) predominam espécies arbóreas de folhas largas com alta área foliar específica (AFE).
+
+**(a)** Utilizando o conceito de **filtros abióticos** e **espaço de nicho**, explique de que forma as propriedades do solo e o microclima estão atuando como filtros na montagem das comunidades vegetais observadas. Diferencie claramente o papel do **filtro de habitat** do papel da **limitação de dispersão** para os padrões descritos. *(1,5 pt)*
+
+**(b)** *Questão-problema:* Se você introduzir artificialmente mudas de uma espécie arbórea de alto dossel — típica da Mata Atlântica — nos microsítios rochosos com solos rasos, qual seria sua previsão sobre o estabelecimento a longo prazo dessa espécie? Desenvolva seu raciocínio mencionando ao menos dois processos ecológicos distintos que atuariam sobre essas plantas nos primeiros 5 anos. *(1,0 pt)*
+
+```{=html}
+<div class="competencias">
+  <span class="tag tag-conceito">Precisão conceitual</span>
+  <span class="tag tag-aplicacao">Aplicação</span>
+  <span class="tag tag-raciocinio">Raciocínio abstrato</span>
+</div>
+<div class="valor-questao">Valor total: <span>2,5 pt</span></div>
+</div>
+```
+
+---
+
+```{=html}
+<div class="questao-card agua-top">
+<div class="questao-numero">Questão 4 · Sucessão Ecológica</div>
+<div class="questao-titulo">Trajetórias sucessionais em um sistema perturbado</div>
+```
+
+Os dados de monitoramento das parcelas entre 2010 e 2025 mostram que, em metade das parcelas abandonadas, a comunidade vegetal evoluiu de gramíneas exóticas para um estágio dominado por arbustos nativos (*Croton*, *Mimosa*, *Cnidoscolus*). Na outra metade, a cobertura de *Melinis minutiflora* permaneceu dominante por mais de 12 anos, sem sinais de substituição.
+
+**(a)** Identifique e nomeie o fenômeno que está impedindo a sucessão nas parcelas com persistência da gramínea exótica. Como ele pode ser explicado à luz da teoria de **estados alternativos estáveis**? *(1,0 pt)*
+
+**(b)** Considerando os modelos clássicos de sucessão (Facilitação, Tolerância, Inibição — Connell & Slatyer, 1977), em qual(is) modelo(s) cada uma das duas trajetórias observadas (substituição vs. persistência da gramínea) melhor se encaixa? Justifique com base nos mecanismos subjacentes. *(1,0 pt)*
+
+**(c)** Proponha **uma única intervenção de manejo** — fundamentada ecologicamente — que poderia "desbloquear" a trajetória sucessional nas parcelas estagnadas. Explique o mecanismo ecológico pelo qual essa intervenção agiria. *(0,5 pt)*
+
+```{=html}
+<div class="competencias">
+  <span class="tag tag-conceito">Precisão conceitual</span>
+  <span class="tag tag-aplicacao">Aplicação</span>
+  <span class="tag tag-raciocinio">Raciocínio abstrato</span>
+  <span class="tag tag-profund">Profundidade</span>
+</div>
+<div class="valor-questao">Valor total: <span>2,5 pt</span></div>
+</div>
+```
+
+---
+
+```{=html}
+<div class="questao-card destaque-top">
+<div class="questao-numero">Questão 5 · Integração e Restauração de Ecossistemas</div>
+<div class="questao-titulo">Síntese: do diagnóstico ao plano ecologicamente fundamentado</div>
+```
+
+Esta questão exige que você integre os conhecimentos de toda a disciplina.
+
+Seu programa recebeu financiamento para restaurar **ativamente** 200 hectares da área nos próximos 3 anos. O objetivo declarado é *"recuperar a estrutura e a funcionalidade de comunidades biológicas características dos Brejos de Altitude pernambucanos"*.
+
+**Redija um texto dissertativo** (mínimo 40 linhas, máximo 70 linhas) que responda simultaneamente às seguintes dimensões:
+
+1. **Diagnóstico teórico:** Com base no cenário apresentado, quais são os principais obstáculos ecológicos à restauração passiva desta área? Utilize ao menos **quatro** conceitos ou mecanismos distintos trabalhados na disciplina.
+
+2. **Estratégia de restauração:** Proponha e justifique uma estratégia de restauração ativa que leve em conta a heterogeneidade espacial (solo/clima) da área, o isolamento do fragmento e a presença de espécies invasoras. Sua proposta deve ser coerente com os princípios ecológicos discutidos, não apenas uma lista de ações.
+
+3. **Indicadores de sucesso:** Como você saberia, ao final de 10 anos, se a restauração foi bem-sucedida em termos de comunidades biológicas? Proponha dois indicadores baseados em padrões ou processos ecológicos (não apenas cobertura vegetal), explicando o raciocínio por trás de cada um.
+
+```{=html}
+<div class="orientacoes">
+<em>Orientação de escrita:</em> Priorize coesão argumentativa. Respostas que listem tópicos sem articulação entre eles, ou que descrevem ações sem fundamentação nos mecanismos ecológicos subjacentes, não receberão pontuação plena.
+</div>
+
+<div class="competencias">
+  <span class="tag tag-conceito">Precisão conceitual</span>
+  <span class="tag tag-aplicacao">Aplicação</span>
+  <span class="tag tag-raciocinio">Raciocínio abstrato</span>
+  <span class="tag tag-profund">Profundidade</span>
+</div>
+<div class="valor-questao">Valor total: <span>3,0 pt</span></div>
+</div>
+```
+
+---
+
+## Distribuição de Pontos
+
+| Questão | Tema principal | Pontos |
+|---|---|:---:|
+| Q1 (a+b) | Bases teóricas de comunidades | 3,0 |
+| Q2 (a+b) | Biogeografia e metacomunidades | 2,5 |
+| Q3 (a+b) | Filtros abióticos (solo e clima) | 2,5 |
+| Q4 (a+b+c) | Sucessão ecológica | 2,5 |
+| Q5 | Integração: Restauração de ecossistemas | 3,0 |
+| **Total** | | **13,5 → convertidos para 10,0** |
+
+> A soma das questões totaliza 13,5 pontos. A nota final será proporcional a 10,0, permitindo alguma flexibilidade e premiando respostas excepcionais.
+
+---
+
+## Referências de Base
+
+As obras abaixo foram trabalhadas ao longo do semestre e são recomendadas como apoio para a prova:
+
+- Begon, M., Townsend, C.R. & Harper, J.L. (2007). *Ecologia: de Indivíduos a Ecossistemas*. Artmed. (caps. 16–21)
+- Ricklefs, R.E. & Relyea, R. (2016). *A Economia da Natureza*. Guanabara Koogan.
+- Holyoak, M., Leibold, M.A. & Holt, R.D. (2005). *Metacommunities: Spatial Dynamics and Ecological Communities*. University of Chicago Press.
+- Connell, J.H. & Slatyer, R.O. (1977). Mechanisms of succession in natural communities. *American Naturalist*, 111, 1119–1144.
+- Sfair, J.C. et al. (2018). Roteiro para restauração ecológica na Caatinga. *Cerne*, 24(1).
+- MacArthur, R.H. & Wilson, E.O. (1967). *The Theory of Island Biogeography*. Princeton University Press.
+
+---
+
+```{=html}
+<div class="rodape">
+  Universidade Federal de Pernambuco · Departamento de Botânica · Centro de Biociências<br>
+  Disciplina: Ecologia Geral 2 · Semestre 2025.2<br>
+  <em>"A ecologia é a ciência das relações — e toda restauração começa por entendê-las."</em>
+</div>
+```
