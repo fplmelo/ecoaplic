@@ -41,6 +41,8 @@ weight: 2
 
 - [FLARE 2024](https://ecoaplic.org/slides_aulas/apresentacoes/FLARE_2024#/title-slide)
 
+- [Aula Lisboa 2025](https://ecoaplic.org/slides_aulas/apresentacoes/Aula_Lisboa#/title-slide)
+
 
 
 
