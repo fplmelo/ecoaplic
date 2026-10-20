@@ -7,8 +7,12 @@ from: markdown+emoji
 chalkboard: true
 format:
   revealjs:
+    # width: 1600
+    # height: 900
+    # min-scale: 0.2
+    # max-scale: 2.0
     theme: [default, custom.scss]
-    incremental: true
+    incremental: false
     chalkboard: true
    # logo: libs/sobre.png
     footer: ""
@@ -43,7 +47,7 @@ format:
 :::
 :::
 :::{.fragment}
-![](/libs/mixed_know.jpeg){width=70% fig-align=center}
+![](/libs/mixed_know.jpeg){width=50% fig-align=center}
 :::
 
 ## ¿Qué estamos restaurando?
@@ -51,16 +55,6 @@ format:
 
 Fuente: Erle Ellis
 
-
-## Errores históricos de la Conservación
-
-<img src="https://i0.wp.com/www.oeco.org.br/wp-content/uploads/2015/12/Per%C3%ADmetro.png" width="600"/>
-
-[Melo et al (2014) Biotropica](https://doi.org/10.1111/btp.12114)
-
-![](https://s2.glbimg.com/CPWvRArhEa4kFbgS0CNV3WAQSxM=/1200x630/s.glbimg.com/jo/g1/f/original/2014/05/18/tatu.jpg){.absolute top=70 right=10 width=30%}
-
-![](libs/capa_bio.jpg){.absolute top=250 right=10 width=30%}
 
 
 ## La importancia de los PI&CL
@@ -97,8 +91,6 @@ Fuente: Erle Ellis
 ::::
 
 
-## La Caatinga como laboratorio vivo de Restauración Biocultural {.center}
-
 ## ¿Y si le preguntáramos a las personas?
 :::{.nonincremental}
 ::::{.columns}
@@ -133,12 +125,6 @@ Fuente: Erle Ellis
 
 ![](libs/div_func_hudson.jpg){fig-align=center, width=95%}
 
-
-## La restauración no puede ser apolítica
-![](libs/ipbes_nexus.png){fig-align=center, width=105%}
-
-[IPBES Nexus-Report 2025 & Melo et al 2021](https://www.nature.com/articles/s41893-020-00608-z)
-
 ## ¿Quién es dueño de la Caatinga?
 :::{.nonincremental}
 ::::{.columns}
@@ -156,18 +142,12 @@ Fuente: Erle Ellis
 :::{.column width="50%"}
 
 
-![](libs/share_land.png)
+![](libs/share_land.png){width=80%}
 
+[Melo et al (2023) Landscape & Urban Planning]()
 :::
 ::::
 :::
-
-## Estrategias diferenciadas
-| Tipo de déficit | Estrategia de Restauración |
-|-----|:-----|
-| Grandes propiedades     | Restauración activa; adecuación legal; cadena de suministro   |
-| Pequeñas propiedades   | Agroforestería; Restauración Biocultural  |
-| Híbrido      | Combinaciones de medidas según el contexto     |
 
 ## Espacializando las estrategias
 ![](libs/deficit4.png){fig-align=center}
@@ -187,7 +167,7 @@ Fuente: [Alencar et al 2025](https://www.sciencedirect.com/science/article/pii/S
 
 ![](libs/fig_catChange.jpg){fig-align=center, width=120%, height=150%}
 
-Fuente: Alencar et al en prenta PNAS
+Fuente:[ Alencar et al en prenta PNAS]()
 
 
 
@@ -223,7 +203,7 @@ Fuente: Alencar et al en prenta PNAS
 ![](/libs/guide.png)
 :::
 :::{.column}
-![](/libs/maestria.png)
+![](/libs/maestria.png){width=80%}
 :::
 :::
 
