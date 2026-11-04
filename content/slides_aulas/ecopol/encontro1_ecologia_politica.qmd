@@ -1,0 +1,252 @@
+---
+title: "Encontro 1: Introdução à Ecologia Política"
+subtitle: "Desconstruindo a Neutralidade Técnica na Conservação e Manejo da Flora"
+author: "Felipe Melo"
+format:
+  revealjs:
+    # theme: forest
+    slide-number: true
+    show-slide-number: all
+    controls: true
+    progress: true
+    history: true
+    transition: slide
+    scrollable: true
+    preview-links: auto
+    width: 1280
+    height: 720
+    margin: 0.08
+lang: pt-BR
+---
+
+# Provocação Inicial {.smaller}
+
+## A Visão da Ecologia Tradicional
+::: {.columns}
+
+::: {.column width="50%"}
+
+- Mapeia distribuição de espécies e riqueza florística.
+- Analisa taxas de desmatamento e métricas de fragmentação.
+- Propõe reservas biológicas e modelos matemáticos de restauração.
+- **Pressuposto:** A ciência fornece diagnósticos e soluções *tecnicamente neutras*.
+:::
+
+::: {.column width="50%"}
+![](https://biodiversitymapping.org/wp-content/uploads/2016/11/Brazil_mammals_total_richness_small.png)
+:::
+
+:::
+
+
+## A Lente da Ecologia Política
+- **Quem** perde e **quem** ganha quando uma área de vegetação é protegida?
+- Como o conhecimento botânico formal se relaciona com os saberes locais?
+- A degradação ambiental é causada pela "pobreza/superpopulação" ou por estruturas históricas de acesso à terra?
+- **Pressuposto:** *Toda ação de conservação ou restauração é um exercício de poder.*
+
+## {background-image="https://osbrasisesuasmemorias.com.br/wp-content/uploads/2018/04/foto_capa.jpg" background-size="cover"}
+
+
+# O Mito da Ecologia Apolítica {.smaller}
+
+## O "Mito da Neutralidade"
+
+:::{.fragment}
+::: {.callout-warning title=Cuidado}
+Tratar os problemas ambientais apenas como falhas técnicas ou falta de informação mascara as verdadeiras causas da degradação e perpetua injustiças sociais.
+:::
+:::
+:::{.fragment}
+
+- **Ecologia Apolítica:**
+  - Fatores genéricos: "crescimento populacional", "ignorância do agricultor", "falta de fiscalização".
+  - Favorece soluções tecnocráticas e de mercado.
+  - Ignora as relações de produção, heranças coloniais e desigualdades de classe/gênero.
+
+:::
+
+
+
+
+## Afinal, o que é Ecologia Política? {.smaller}
+
+::: {.columns}
+
+::: {.column width="60%"}
+> "A Ecologia Política analisa as inter-relações dialéticas entre a política, a economia e as dinâmicas ecológicas, investigando como o poder molda o acesso, o controle e a transformação da natureza."
+> 
+> — *Adaptado de Robbins (2012) & Peet et al. (2011)*
+
+![](https://www.ncronline.org/files/2023-06/P815%20EnviroJustice%20hi%20res.jpg){width=70%}
+:::
+
+::: {.column width="40%"}
+### Três Pilares Centrais
+1. **A Natureza é Politizada:** Não há ecossistema imune às relações socioeconômicas.
+2. **Distribuição desigual:** Os custos e benefícios das mudanças ambientais são distribuídos de forma desigual.
+3. **Construção do Conhecimento:** O que conta como "ciência válida" vs. "saber empírico/informal".
+:::
+
+:::
+
+
+
+## Crítica à "Tragédia dos Comuns"{.smaller}
+
+| Abordagem Tradicional / Apolítica | Diagnóstico Crítico da Ecologia Política |
+| :--- | :--- |
+| **Pobreza causa degradação:** Populações locais destroem a flora por necessidade imediata. | **Marginalização induzida:** Grandes empreendimentos e expropriação empurram comunidades para terras frágeis. |
+| **A "Tragédia dos Comuns" (Hardin):** Recursos de uso comum estão fadados ao esgotamento sem privatização ou controle estatal. | **Sistemas Tradicionais de Manejo:** Confusão entre "acesso livre" e regimes comunitários ancestrais de governança |
+| **Solução puramente técnica:** Aumento de cercas, patrulhamento e multas ambientais. | **Justiça Territorial:** Garantia de direitos de posse e fortalecimento do manejo comunitário. |
+
+
+
+## As Cinco Teses da Ecologia Política (Paul Robbins) {.smaller}
+
+1. **Degradação e Marginalização:** Sistemas produtivos globais forçam comunidades locais a superexplorar recursos para sobreviver, gerando um ciclo de degradação e exclusão.
+2. **Conservação e Controle (Green Grabbing):** A conservação da biodiversidade é frequentemente usada pelo Estado e elites para tomar controle de terras e criminalizar práticas tradicionais ("Conservação Fortaleza").
+3. **Conflito e Acesso:** Mudanças no acesso a recursos florestais geram conflitos entre atores com diferentes níveis de poder (ex.: comunidades vs. mineradoras/agronegócio).
+4. **Identidade Ecológica e Movimentos Sociais:** Grupos marginalizados criam novas identidades e alianças políticas para defender seus territórios e a vegetação local.
+5. **Objetos Ecológicos e Atores Políticos:** Conceitos ambientais ("floresta primária", "espécie invasora", "área degradada") não são apenas fatos biológicos, mas construções carregadas de intenções políticas.
+
+---
+
+## Tipologias do Poder na Conservação {.smaller}
+
+::: {.callout-note}
+### Por que o Poder Importa na Conservação?
+Sem compreender como o poder opera, projetos de conservação de espécies ou restauração de ecossistemas correm o risco de fracassar, reproduzir injustiças ou atuar como ferramentas de dominação.
+:::
+
+O estudo de **Shackleton et al. (2023)** sistematiza **quatro dimensões fundamentais do poder** para a prática e pesquisa ambiental:
+
+1. **Poder Centrado em Atores** (*Actor-Centered Power*)
+2. **Poder Institucional** (*Institutional Power*)
+3. **Poder Estrutural** (*Structural Power*)
+4. **Poder Discursivo / Biopoder** (*Discursive Power*)
+
+---
+
+## As 4 Dimensões do Poder na Prática (1/2) {.smaller}
+
+::: {.columns}
+
+::: {.column width="50%"}
+### 1. Poder Centrado em Atores
+- **Definição:** A capacidade de um ator de influenciar diretamente as decisões de outro (autoridade, coerção, persuasão).
+- **Exemplo na Conservação:** Um órgão ambiental impondo restrições diretas ao uso de plantas medicinais por comunidades locais, ou uma grande empresa obtendo licenças prioritárias.
+- **Foco:** Atores-chave, redes de influência e tomada de decisão visível.
+:::
+
+::: {.column width="50%"}
+### 2. Poder Institucional
+- **Definição:** As regras do jogo — formais (leis, decretos, Código Florestal) e informais (normas comunitárias) — que determinam quem participa.
+- **Exemplo na Conservação:** Critérios burocráticos de licenciamento que exigem consultorias caras, excluindo pequenos produtores e comunidades tradicionais do processo decisório.
+- **Foco:** Leis, governança, procedimentos burocráticos e agendas.
+:::
+
+:::
+
+## As 4 Dimensões do Poder na Prática (2/2) {.smaller}
+
+::: {.columns}
+
+::: {.column width="50%"}
+### 3. Poder Estrutural
+- **Definição:** Condições econômicas, históricas e raciais profundas que moldam assimetrias de longo prazo sem necessidade de ação direta imediata.
+- **Exemplo na Flora:** A concentração fundiária histórica (latifúndio) que limita o acesso à terra fértil para reflorestamento ou conservação comunitária.
+- **Foco:** Capitalismo, heranças coloniais, patriarcado e desigualdades de classe.
+:::
+
+::: {.column width="50%"}
+### 4. Poder Discursivo / Biopoder
+- **Definição:** O poder de produzir a "verdade", definir conceitos e determinar o que é considerado conhecimento legítimo vs. inválido.
+- **Exemplo na Flora:** A rotulação do conhecimento botânico tradicional sobre espécies nativas como "não-científico", enquanto modelos matemáticos externos são tidos como verdades absolutas.
+- **Foco:** Narrativas, legitimação científica, enquadramentos (*framing*).
+:::
+
+:::
+
+## Perspectivas Não-Ocidentais e Mais-que-Humanas {.smaller}
+
+::: {.callout-tip}
+### Expandindo a Fronteira da Ecologia Política
+A ecologia política contemporânea dialoga com epistemologias Indígenas, Afro-diaspóricas e a virada ontológica (Shackleton et al., 2023).
+:::
+
+- **Agência Mais-que-Humana:**
+  - Plantas e ecossistemas não são apenas "objetos passivos de conservação" ou "recursos econômicos".
+  - Em muitas cosmovisões tradicionais, a flora é habitada por sujeitos, parentes e entidades com direitos e agência própria.
+
+- **Conhecimento Ecológico Tradicional (CET):**
+  - Sistemas sofisticados de classificação, manejo e conservação de espécies vegetais desenvolvidos ao longo de gerações.
+  - A descolonização da Botânica exige reconhecer o CET em pé de igualdade com a taxonomia e ecologia ocidentais.
+
+## Aplicação Prática: A Ecologia Política da Restauração {.smaller}
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Restauração Tecnocrática ("Modo Reparo")
+- Foco exclusivo em metas volumétricas (ex.: "1 milhão de árvores plantadas").
+- Priorização de espécies de rápido crescimento ou interesse comercial.
+- Enxerga a restauração como serviço ambiental neutro para compensação de danos industriais (*greenwashing*).
+- Frequentemente marginaliza o conhecimento e a força de trabalho local.
+:::
+
+::: {.column width="50%"}
+### Restauração Biocultural
+- Integração da recuperação da flora com a revitalização das culturas locais.
+- Valorização de **Espécies Culturais Chave** (*Cultural Keystone Species*) para alimentação, remédios e rituais.
+- Foco na governança comunitária e nos direitos territoriais.
+- Pergunta fundamental: *"Restauração para quem e conduzida por quem?"* (Elias et al., 2021).
+:::
+
+:::
+
+---
+
+## Princípios para Navegar o Poder na Conservação {.smaller}
+
+De acordo com **Shackleton et al. (2023)**, biólogos devem adotar seis práticas reflexivas:
+
+1. **Esclarecer Valores Pessoais e Epistemológicos:** Reconhecer de onde vem seu olhar científico e suas pressuposições.
+2. **Analisar Impactos em Múltiplas Escalas:** Avaliar como políticas globais/nacionais afetam o cotidiano de quem vive no território.
+3. **Mapear Vencedores e Perdedores:** Identificar quem ganha e quem perde com cada intervenção de conservação ou manejo.
+4. **Compreender as Fontes de Conflito:** Tratar o conflito não como um "obstáculo a ser eliminado", mas como sintoma de assimetrias de poder.
+5. **Escrutinar Mecanismos Participativos:** Evitar a "participação simbólica" (*tokenismo*) que serve apenas para legitimar decisões pré-tomadas.
+6. **Avaliar a Legitimidade de Intervir:** Questionar criticamente: *Nós temos o direito de impor este projeto neste território?*
+
+## O Conflito na Criação de uma Unidade de Conservação da Natureza {.smaller}
+
+::: {.callout-important}
+### Cenário Hipotético Baseado em Casos Reais no Nordeste
+Uma área de relevante interesse ecológico na Caatinga/Mata Atlântica é delimitada para a criação de um Parque Nacional de Proteção Integral para resguardar espécies vegetais ameaçadas de extinção. 
+
+Comunidades tradicionais que manejam sustentavelmente a flora local (extrativismo de plantas medicinais, frutos nativos e pastoreio tradicional) são notificadas de que devem deixar a área e que o extrativismo passará a ser proibido.
+:::
+
+:::{.fragment}
+### Questões (15 min):
+1. **Poder Centrado em Atores & Institucional:** Quais órgãos e regras estão definindo quem pode permanecer no território?
+2. **Poder Discursivo:** Como a ciência botânica formal está sendo utilizada para justificar a exclusão?
+3. **Proposta de Repensar:** Como este projeto poderia ser reestruturado sob a ótica da Ecologia Política e da Restauração Biocultural?
+:::
+
+## Roteiro do Curso e Próximos Passos {.smaller}
+
+- **Encontro 1 (Hoje):** *Introdução à Ecologia Política: Poder, Discursos e a Natureza Politizada.*
+- **Encontro 2 (Próximo):** *Conflitos Socioambientais, Mercantilização da Flora e Neoliberalização da Conservação* (Mercados de Carbono, Valoração de Serviços Ecossistêmicos).
+- **Encontro 3:** *Ecologia Política da Restauração e Saberes Locais* (Restauração Biocultural, Abordagens Feministas e Decoloniais no Nordeste e Amazônia).
+- **Encontro 4:** *Seminários dos Estudantes* (Apresentação e análise crítica de estudos de caso aplicados à Biologia Vegetal).
+
+::: {.callout-tip}
+### Leitura Principal para o Encontro 1:
+- [Shackleton et al. (2023) — *Navigating power in conservation*](https://www.dora.lib4ri.ch/wsl/dload/wsl%3A32741/PDF/Shackleton-2023-Navigating_power_in_conservation-(published_version).pdf)
+:::
+
+::: {.callout-tip}
+### Leitura Principal para o Encontro 2:
+- [Büscher et al. (2012) — *Towards a Synthesized Critique of Neoliberal Biodiversity Conservation*](https://www.researchgate.net/publication/233029281_Towards_a_Synthesized_Critique_of_Neoliberal_Biodiversity_Conservation).
+:::
