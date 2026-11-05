@@ -1,6 +1,6 @@
 ---
 title: "Encontro 1: Introdução à Ecologia Política"
-subtitle: "Desconstruindo a Neutralidade Técnica na Conservação e Manejo da Flora"
+subtitle: "Desconstruindo a Neutralidade Técnica na Conservação e Manejo da Biodiversidade"
 author: "Felipe Melo"
 format:
   revealjs:
