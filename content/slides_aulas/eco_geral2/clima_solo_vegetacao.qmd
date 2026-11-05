@@ -243,6 +243,9 @@ Alguns tipos de solo criam "ilhas pedológicas" com **flora altamente endêmica*
 ## Solo,  Alfa e Beta
 
 ```{r solo-escalas, fig.height=4}
+#| code-fold: true
+
+
 set.seed(77)
 # Simula gradiente de fertilidade do solo (eixo x) e diversidade
 fertilidade <- seq(2, 60, length.out = 50)
