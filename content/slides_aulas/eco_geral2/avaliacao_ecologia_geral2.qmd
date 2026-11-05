@@ -1,8 +1,8 @@
 ---
 title: "Avaliação Final — Ecologia Geral 2"
 subtitle: "Departamento de Botânica | Centro de Biociências | UFPE"
-author: "Disciplina de Ecologia Geral 2"
-date: "Semestre 2025.2"
+author: "Felipe Melo"
+date: ""
 format:
   html:
     theme: cosmo
@@ -297,7 +297,7 @@ hr { border-color: #DDD5C8; }
   <div class="subtitulo">Universidade Federal de Pernambuco · Departamento de Botânica · CB</div>
   <h1>Avaliação Final Integradora</h1>
   <div class="subtitulo">Ecologia Geral 2 — Ecologia de Comunidades & Aplicações</div>
-  <div class="meta">Semestre 2025.2 &nbsp;·&nbsp; Avaliação Domiciliar com Consulta &nbsp;·&nbsp; Valor: 10,0 pontos</div>
+  <div class="meta">Semestre 2026.1 &nbsp;·&nbsp; Avaliação Presencial com Consulta Prévia &nbsp;·&nbsp; Valor: 10,0 pontos</div>
 </div>
 ```
 
@@ -309,11 +309,11 @@ hr { border-color: #DDD5C8; }
 <div class="box-instrucao">
 <strong>Leia com atenção antes de começar.</strong>
 
-Esta avaliação é individual e domiciliar. Você poderá consultar livros, artigos e anotações de aula. O prazo de entrega, o formato de entrega e o canal de submissão serão informados pelo docente responsável.
+Esta avaliação é individual e deve ser estudada antes para ser respondida na pŕoxima quianta-feira dia 18 de Junho de 2026. Você poderá consultar livros, artigos e anotações de aula, estude mesmo mas em casa. Você terá que escrver com suas palavras e não poderá usar anotações no dia da prova. 
 </div>
 
 <div class="box-atencao">
-⚠️ <strong>Sobre autoria e integridade acadêmica:</strong> As respostas devem refletir sua própria compreensão, articulação e raciocínio. Respostas excessivamente genéricas, sem ancoragem no cenário proposto, ou que não demonstrem capacidade de aplicar os conceitos de forma contextualizada, não receberão pontuação integral — independentemente da fluência textual. A docência avaliará <em>como</em> você pensa, não apenas <em>o que</em> você escreve.
+⚠️ <strong>Sobre autoria e integridade acadêmica:</strong> As respostas devem refletir sua própria compreensão, articulação e raciocínio. Respostas excessivamente genéricas, sem ancoragem no cenário proposto, ou que não demonstrem capacidade de aplicar os conceitos de forma contextualizada, não receberão pontuação integral — independentemente da fluência textual. Eu vou avaliar <em>como</em> você pensa, não apenas <em>o que</em> você escreve.
 </div>
 ```
 
@@ -334,7 +334,35 @@ Esta avaliação é individual e domiciliar. Você poderá consultar livros, art
 <div class="cenario-box">
 ```
 
-Você é pesquisador(a) recém-contratado(a) pelo **Programa de Restauração da Caatinga e Mata Atlântica Nordestina**, vinculado à UFPE. Seu primeiro projeto envolve uma área de **800 hectares** no **Agreste pernambucano**, uma zona de transição entre a Caatinga e a Mata Atlântica — faixa denominada localmente como *"Mata Seca de Brejos de Altitude"*.
+Você é pesquisador(a) recém-contratado(a) pelo **Programa de Restauração dos Biomas de Pernambuco**, vinculado à UFPE. Seu primeiro projeto envolve uma área de **800 hectares** no **Agreste pernambucano**, uma zona de transição entre a Caatinga e a Mata Atlântica — faixa denominada localmente como [*"Mata Seca de Brejos de Altitude"*](https://parqueserradoscavalos.caruaru.pe.gov.br/wp-content/uploads/2019/12/Srie-Biodiversidade-09-Brejos-de-Altitude-em-Pernambuco-e-Paraba-Histria-Natural-Ecologia-e-Conservao.pdf).
+
+![](brejos.png)
+
+Os brejos de altitude são "ilhas" de floresta úmida (Mata Atlântica) encravadas na região semiárida do Nordeste brasileiro (Caatinga). A sua origem biogeográfica e a rica biodiversidade que abrigam são explicadas principalmente por flutuações climáticas históricas ocorridas durante o período Quaternário (especialmente no Pleistoceno).
+
+O processo biogeográfico baseia-se nos seguintes pontos principais:
+
+**1. Teoria dos Refúgios Florestais e Flutuações Climáticas**
+Durante as fases glaciais do Quaternário, o clima global tornou-se mais frio e seco. No Nordeste do Brasil, a caatinga se expandiu, e as florestas úmidas (que antes ocupavam áreas contínuas) retraíram-se, sobrevivendo apenas em refúgios isolados no topo de serras e planaltos (geralmente acima de 500 a 600 metros de altitude). Nessas altitudes, o relevo provoca chuvas orográficas e mantém temperaturas mais amenas e maior umidade, permitindo a sobrevivência da vegetação florestal.
+
+Nas fases interglaciais (mais quentes e úmidas), as florestas se expandiam a partir desses refúgios, chegando a se reconectar temporariamente com as florestas costeiras e amazônicas.
+
+**2. Conexões Históricas (Pontes Biogeográficas)**
+A biota dos brejos de altitude revela uma origem mista, evidenciando que essas ilhas de mata estiveram conectadas a dois grandes blocos florestais sul-americanos:
+
+Mata Atlântica Costeira: É a influência biogeográfica predominante. A proximidade geográfica facilitou conexões frequentes durante os períodos mais úmidos, explicando por que a maior parte das espécies de plantas, aves e anfíbios dos brejos é compartilhada com a floresta costeira.
+
+Amazônia: Diversos estudos taxonômicos (de plantas, borboletas e aves) identificam espécies que são disjunções amazônicas. Isso sugere a existência de "corredores" antigos de floresta úmida que cortavam o atual semiárido, interligando a Amazônia ao Nordeste do Brasil em períodos passados de umidade extrema.
+
+**3. Isolamento e Endemismo**
+O subsequente retorno do clima seco (como o observado atualmente) isolou novamente essas florestas no topo das serras, cercadas pelo "mar" de Caatinga. Esse isolamento prolongado funcionou como um laboratório evolutivo:
+
+Algumas espécies de climas úmidos ficaram ilhadas e adaptaram-se localmente.
+
+O isolamento geográfico impediu o fluxo gênico com as populações da costa ou da Amazônia, levando ao surgimento de espécies endêmicas (exclusivas) de animais e plantas em determinados brejos.
+
+Em resumo, os brejos de altitude são relíquias biogeográficas de antigas florestas contínuas, cuja origem e composição atual resultam da dinâmica de expansão, retração, isolamento e conexão florestal moldada pelas mudanças climáticas do passado.
+
 
 A região apresenta o seguinte histórico de uso da terra:
 
@@ -363,7 +391,7 @@ Os dados preliminares indicam: **alta variabilidade espacial de solos** (desde l
 
 Ao iniciar o mapeamento florístico da área, você e sua equipe observam que a distribuição das espécies lenhosas **não** forma agrupamentos discretos e bem delimitados ao longo do gradiente altitudinal — em vez disso, cada espécie parece atingir seu pico de abundância em pontos distintos do gradiente, com sobreposições amplas entre elas.
 
-**(a)** Esse padrão é mais consistente com a visão **clementsiana** (superorganismo) ou com a visão **gleassoniana** (continuum individualístico) de comunidade? Justifique sua resposta com base no que foi observado, explicando os pressupostos e as implicações práticas de cada perspectiva para o manejo desta área. *(2,0 pt)*
+**(a)** Esse padrão é mais consistente com a visão **clementsiana** (superorganismo) ou com a visão **gleassoniana** (continuum individualístico) de comunidade? Justifique sua resposta com base no que foi observado, explicando os pressupostos e as implicações práticas de cada perspectiva para o manejo desta área. *(1,5 pt)*
 
 **(b)** Considerando que, ao mesmo tempo, você observa certas combinações de espécies que se repetem de forma não aleatória em microsítios de solo similar — como você integraria essa evidência com sua resposta ao item (a)? Que abordagem teórica contemporânea permitiria acomodar ambos os padrões simultaneamente? *(1,0 pt)*
 
@@ -373,7 +401,7 @@ Ao iniciar o mapeamento florístico da área, você e sua equipe observam que a 
   <span class="tag tag-raciocinio">Raciocínio abstrato</span>
   <span class="tag tag-profund">Profundidade</span>
 </div>
-<div class="valor-questao">Valor total: <span>3,0 pt</span></div>
+<div class="valor-questao">Valor total: <span>2,5 pt</span></div>
 </div>
 ```
 
@@ -385,11 +413,11 @@ Ao iniciar o mapeamento florístico da área, você e sua equipe observam que a 
 <div class="questao-titulo">Biogeografia de ilhas e a fragmentação como laboratório</div>
 ```
 
-A área de estudo pode ser interpretada como uma "ilha" de habitat restaurável em uma matriz de pastagem degradada, com dois "continentes" (remanescentes nativos) a 12 km de distância.
+A área de estudo pode ser interpretada como arquipélagos de habitats em uma matriz de pastagem degradada.
 
-**(a)** Aplique os princípios da **Teoria da Biogeografia de Ilhas (TBI)** de MacArthur & Wilson para prever a dinâmica esperada de riqueza de espécies de aves florestais nesta área ao longo dos próximos 20 anos de restauração. Considere explicitamente os parâmetros de **área**, **distância** e **taxa de equilíbrio** em sua análise. *(1,5 pt)*
+**(a)** Aplique os princípios da **Teoria da Biogeografia de Ilhas (TBI)** de MacArthur & Wilson para descrever a dinâmica esperada de riqueza de espécies de aves florestais nos brejos de altitude considerando que a restauração promovida por sua equipe aumenta a conectividade das manchas de brejo. Considere explicitamente os parâmetros de **área**, **distância** e **taxas de colonização e extinção** em sua análise hipotética. *(1,5 pt)*
 
-**(b)** Um colega sugere que a TBI é insuficiente para explicar a montagem de comunidades em paisagens fragmentadas como essa e propõe usar a **Teoria Metapopulacional** e o conceito de **metacomunidade**. Em que aspectos específicos essa abordagem agrega informação que a TBI não contempla? Utilize um exemplo concreto com ao menos uma espécie ou grupo funcional plausível para a região. *(1,0 pt)*
+**(b)** Um colega sugere que a TBI é insuficiente para explicar a montagem de comunidades em paisagens fragmentadas como essa e propõe usar a **A spintese Moderna da Ecologia de Comunidades (Vellend 2010)** e as métricas de diversidade **alfa, beta e gama**. Em que aspectos específicos essa abordagem agrega informação que a TBI não contempla? Combine as duas abordagens para explicar a distribuição da diversidade entre os brejos de altitude. *(1,0 pt)*
 
 ```{=html}
 <div class="competencias">
@@ -437,7 +465,7 @@ Os dados de monitoramento das parcelas entre 2010 e 2025 mostram que, em metade 
 
 **(a)** Identifique e nomeie o fenômeno que está impedindo a sucessão nas parcelas com persistência da gramínea exótica. Como ele pode ser explicado à luz da teoria de **estados alternativos estáveis**? *(1,0 pt)*
 
-**(b)** Considerando os modelos clássicos de sucessão (Facilitação, Tolerância, Inibição — Connell & Slatyer, 1977), em qual(is) modelo(s) cada uma das duas trajetórias observadas (substituição vs. persistência da gramínea) melhor se encaixa? Justifique com base nos mecanismos subjacentes. *(1,0 pt)*
+**(b)** Considerando os modelos clássicos de sucessão (Facilitação, Tolerância, Inibição), em qual(is) modelo(s) cada uma das duas trajetórias observadas (substituição vs. persistência da gramínea) melhor se encaixa? Justifique com base nos mecanismos subjacentes. *(1,0 pt)*
 
 **(c)** Proponha **uma única intervenção de manejo** — fundamentada ecologicamente — que poderia "desbloquear" a trajetória sucessional nas parcelas estagnadas. Explique o mecanismo ecológico pelo qual essa intervenção agiria. *(0,5 pt)*
 
@@ -454,66 +482,16 @@ Os dados de monitoramento das parcelas entre 2010 e 2025 mostram que, em metade 
 
 ---
 
-```{=html}
-<div class="questao-card destaque-top">
-<div class="questao-numero">Questão 5 · Integração e Restauração de Ecossistemas</div>
-<div class="questao-titulo">Síntese: do diagnóstico ao plano ecologicamente fundamentado</div>
-```
-
-Esta questão exige que você integre os conhecimentos de toda a disciplina.
-
-Seu programa recebeu financiamento para restaurar **ativamente** 200 hectares da área nos próximos 3 anos. O objetivo declarado é *"recuperar a estrutura e a funcionalidade de comunidades biológicas características dos Brejos de Altitude pernambucanos"*.
-
-**Redija um texto dissertativo** (mínimo 40 linhas, máximo 70 linhas) que responda simultaneamente às seguintes dimensões:
-
-1. **Diagnóstico teórico:** Com base no cenário apresentado, quais são os principais obstáculos ecológicos à restauração passiva desta área? Utilize ao menos **quatro** conceitos ou mecanismos distintos trabalhados na disciplina.
-
-2. **Estratégia de restauração:** Proponha e justifique uma estratégia de restauração ativa que leve em conta a heterogeneidade espacial (solo/clima) da área, o isolamento do fragmento e a presença de espécies invasoras. Sua proposta deve ser coerente com os princípios ecológicos discutidos, não apenas uma lista de ações.
-
-3. **Indicadores de sucesso:** Como você saberia, ao final de 10 anos, se a restauração foi bem-sucedida em termos de comunidades biológicas? Proponha dois indicadores baseados em padrões ou processos ecológicos (não apenas cobertura vegetal), explicando o raciocínio por trás de cada um.
-
-```{=html}
-<div class="orientacoes">
-<em>Orientação de escrita:</em> Priorize coesão argumentativa. Respostas que listem tópicos sem articulação entre eles, ou que descrevem ações sem fundamentação nos mecanismos ecológicos subjacentes, não receberão pontuação plena.
-</div>
-
-<div class="competencias">
-  <span class="tag tag-conceito">Precisão conceitual</span>
-  <span class="tag tag-aplicacao">Aplicação</span>
-  <span class="tag tag-raciocinio">Raciocínio abstrato</span>
-  <span class="tag tag-profund">Profundidade</span>
-</div>
-<div class="valor-questao">Valor total: <span>3,0 pt</span></div>
-</div>
-```
-
----
-
 ## Distribuição de Pontos
 
 | Questão | Tema principal | Pontos |
 |---|---|:---:|
-| Q1 (a+b) | Bases teóricas de comunidades | 3,0 |
+| Q1 (a+b) | Bases teóricas de comunidades | 2,5 |
 | Q2 (a+b) | Biogeografia e metacomunidades | 2,5 |
 | Q3 (a+b) | Filtros abióticos (solo e clima) | 2,5 |
 | Q4 (a+b+c) | Sucessão ecológica | 2,5 |
-| Q5 | Integração: Restauração de ecossistemas | 3,0 |
-| **Total** | | **13,5 → convertidos para 10,0** |
+| **Total** | | **10,0** |
 
-> A soma das questões totaliza 13,5 pontos. A nota final será proporcional a 10,0, permitindo alguma flexibilidade e premiando respostas excepcionais.
-
----
-
-## Referências de Base
-
-As obras abaixo foram trabalhadas ao longo do semestre e são recomendadas como apoio para a prova:
-
-- Begon, M., Townsend, C.R. & Harper, J.L. (2007). *Ecologia: de Indivíduos a Ecossistemas*. Artmed. (caps. 16–21)
-- Ricklefs, R.E. & Relyea, R. (2016). *A Economia da Natureza*. Guanabara Koogan.
-- Holyoak, M., Leibold, M.A. & Holt, R.D. (2005). *Metacommunities: Spatial Dynamics and Ecological Communities*. University of Chicago Press.
-- Connell, J.H. & Slatyer, R.O. (1977). Mechanisms of succession in natural communities. *American Naturalist*, 111, 1119–1144.
-- Sfair, J.C. et al. (2018). Roteiro para restauração ecológica na Caatinga. *Cerne*, 24(1).
-- MacArthur, R.H. & Wilson, E.O. (1967). *The Theory of Island Biogeography*. Princeton University Press.
 
 ---
 
@@ -521,6 +499,5 @@ As obras abaixo foram trabalhadas ao longo do semestre e são recomendadas como 
 <div class="rodape">
   Universidade Federal de Pernambuco · Departamento de Botânica · Centro de Biociências<br>
   Disciplina: Ecologia Geral 2 · Semestre 2025.2<br>
-  <em>"A ecologia é a ciência das relações — e toda restauração começa por entendê-las."</em>
-</div>
+ </div>
 ```
