@@ -66,7 +66,22 @@ Tratar os problemas ambientais apenas como falhas técnicas ou falta de informa�
 
 :::
 
+## Ex 1: Mapas de priorização
 
+
+![](https://iiasa.ac.at/sites/default/files/2023-01/Figure1.png)
+
+## Ex 2: Metas de restauração ("repair mode")
+
+![](https://www.iis-rio.org/wp-content/uploads/2020/10/figure-1-_single-map-960x516.jpg){fig-align=center}
+
+fonte: [IIS](https://www.iis-rio.org/en/publications/nature-global-priority-areas-for-ecosystem-restoration/)
+
+## Ex 3: Valoração monetária da natureza
+
+![](https://www.researchgate.net/profile/Karin-Limburg/publication/40203553/figure/fig1/AS:395742863740929@1471363859759/Global-map-of-the-value-of-ecosystem-services-See-Supplementary-Information-and-Table-2.png){fig-align=center}
+
+Fonte: [Costanza et al (1996) ](https://www.researchgate.net/publication/40203553_The_Total_Value_of_the_World's_Ecosystem_Services_and_Natural_Capital)
 
 
 ## Afinal, o que é Ecologia Política? {.smaller}
@@ -82,6 +97,7 @@ Tratar os problemas ambientais apenas como falhas técnicas ou falta de informa�
 :::
 
 ::: {.column width="40%"}
+
 ### Três Pilares Centrais
 1. **A Natureza é Politizada:** Não há ecossistema imune às relações socioeconômicas.
 2. **Distribuição desigual:** Os custos e benefícios das mudanças ambientais são distribuídos de forma desigual.
@@ -90,7 +106,9 @@ Tratar os problemas ambientais apenas como falhas técnicas ou falta de informa�
 
 :::
 
+## Ferramentas teóricas
 
+![](/img/toolsecopol.png)
 
 ## Crítica à "Tragédia dos Comuns"{.smaller}
 
@@ -110,7 +128,72 @@ Tratar os problemas ambientais apenas como falhas técnicas ou falta de informa�
 4. **Identidade Ecológica e Movimentos Sociais:** Grupos marginalizados criam novas identidades e alianças políticas para defender seus territórios e a vegetação local.
 5. **Objetos Ecológicos e Atores Políticos:** Conceitos ambientais ("floresta primária", "espécie invasora", "área degradada") não são apenas fatos biológicos, mas construções carregadas de intenções políticas.
 
----
+
+## 1. **Degradação e Marginalização** 
+:::{.columns}
+:::{.column}
+
+Sistemas produtivos globais forçam comunidades locais a superexplorar recursos para sobreviver, gerando um ciclo de degradação e exclusão
+
+:::
+:::{.column}
+![](https://www.raisg.org/wp-content/uploads/2019/07/Formigas-sobem-as-escadas.jpg)
+:::
+:::
+
+## 2. **Conservação e Controle (Green Grabbing)** 
+:::{.columns}
+:::{.column}
+A conservação da biodiversidade é frequentemente usada pelo Estado e elites para tomar controle de terras e criminalizar práticas tradicionais ("Conservação Fortaleza")
+:::
+:::{.column}
+
+![](https://mst.org.br/wp-content/uploads/2010/09/Coleta-legal-de-ovos-de-tartaruga-marinha-na-Costa-Rica.jpg)
+
+:::
+:::
+
+## 3. **Conflito e Acesso** 
+:::{.columns}
+:::{.column}
+
+Mudanças no acesso a recursos florestais geram conflitos entre atores com diferentes níveis de poder (ex.: comunidades vs. mineradoras/agronegócio)
+
+:::
+:::{.column}
+![](https://clasolo.files.wordpress.com/2008/06/mujeres-ezln.jpg)
+:::
+:::
+
+## 4. **Identidade Ecológica e Movimentos Sociais** 
+:::{.columns}
+:::{.column}
+
+Grupos marginalizados criam novas identidades e alianças políticas para defender seus territórios
+
+:::
+:::{.column}
+![](https://imgs.mongabay.com/wp-content/uploads/sites/29/2020/06/16160327/yarang-carol-quintanilha-isa3-e1592323793419.jpeg)
+:::
+:::
+
+
+## 5.**Objetos Ecológicos e Atores Políticos** 
+:::{.columns}
+:::{.column}
+
+Conceitos ambientais ("floresta primária", "espécie invasora", "área degradada") não são apenas fatos biológicos, mas construções carregadas de intenções políticas
+
+:::
+:::{.column}
+![](https://conteudo.imguol.com.br/c/galeria/c3/2021/07/29/ritual-em-homenagem-a-pachamama-1627586610219_v2_900x506.jpg)
+:::
+:::
+
+::: {.notes}
+**Notas para o docente:**
+- Invitar a los estudiantes a reflexionar cuál de estas cinco tesis resuena con mayor fuerza en sus propios sistemas de estudio o áreas de trabajo de campo en el posgrado.
+:::
 
 ## Tipologias do Poder na Conservação {.smaller}
 
@@ -162,7 +245,7 @@ O estudo de **Shackleton et al. (2023)** sistematiza **quatro dimensões fundame
 ::: {.column width="50%"}
 ### 4. Poder Discursivo / Biopoder
 - **Definição:** O poder de produzir a "verdade", definir conceitos e determinar o que é considerado conhecimento legítimo vs. inválido.
-- **Exemplo na Flora:** A rotulação do conhecimento botânico tradicional sobre espécies nativas como "não-científico", enquanto modelos matemáticos externos são tidos como verdades absolutas.
+- **Exemplo na Conservação:** A rotulação do conhecimento botânico tradicional sobre espécies nativas como "não-científico", enquanto modelos matemáticos externos são tidos como verdades absolutas.
 - **Foco:** Narrativas, legitimação científica, enquadramentos (*framing*).
 :::
 
